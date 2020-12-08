@@ -8,13 +8,6 @@
 Helper to get configured URLs to be used in the webshop.
 Generated URLs consider configured categories for several webshop pages and settings for trailing slashes or item URL patterns.
 
-[WARNING]
-.Deprecated! 
-====
-
-detlef
-
-====
 
 
 ===== Namespace
