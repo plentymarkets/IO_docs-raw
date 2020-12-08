@@ -3,11 +3,22 @@
 :source-highlighter: prettify
 :sectids!:
 
+== VariationUrlBuilder
+
+
 [[io__variationurlbuilder]]
-==== VariationUrlBuilder
+== VariationUrlBuilder
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be removed in 6.0.0
+    
+====
 
 
 ===== Namespace
@@ -18,94 +29,18 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public static fillItemUrl($itemData):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$itemData`
+
 |
+    |urlPathMap
+    |
+|
+    |requestedItems
+    |
+|
+    |pluginNamespace
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public buildUrl($itemId, $variationId, $lang = null):IO\Services\UrlBuilder\UrlQuery
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_urlquery[`UrlQuery`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$itemId`
-|
-
-|link:http://php.net/int[int^]
-a|`$variationId`
-|
-
-|link:http://php.net/string[string^]
-a|`$lang`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getSuffix($itemId, $variationId, $withVariationId = true):string
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$itemId`
-|
-
-|link:http://php.net/int[int^]
-a|`$variationId`
-|
-
-|link:http://php.net/bool[bool^]
-a|`$withVariationId`
-|
-|===
-
 

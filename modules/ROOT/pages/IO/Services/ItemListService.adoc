@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__itemlistservice]]
-==== ItemListService
+== ItemListService
 
+
+[[io__itemlistservice]]
+== ItemListService
+
+summary: 
 
 
 
@@ -13,24 +17,6 @@
 ===== Namespace
 
 `IO\Services`
-
-
-
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public getItemList():void
-
-----
-
-    
-
-
 
 
 

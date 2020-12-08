@@ -3,11 +3,22 @@
 :source-highlighter: prettify
 :sectids!:
 
+== UrlQuery
+
+
 [[io__urlquery]]
-==== UrlQuery
+== UrlQuery
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be removed in 6.0.0
+    
+====
 
 
 ===== Namespace
@@ -18,193 +29,18 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public static shouldAppendTrailingSlash():bool
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public __construct($path = null, $lang = null):void
-
-----
-
-    
-
-
-
-
-
-UrlQuery constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$path`
+
 |
-
-|link:http://php.net/string[string^]
-a|`$lang`
+    |domain
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public append($suffix):IO\Services\UrlBuilder\UrlQuery
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_urlquery[`UrlQuery`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$suffix`
+    |path
+    |
 |
+    |lang
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public join($path):IO\Services\UrlBuilder\UrlQuery
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_urlquery[`UrlQuery`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$path`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public toAbsoluteUrl($includeLanguage = false):string
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/bool[bool^]
-a|`$includeLanguage`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public toRelativeUrl($includeLanguage = false):string
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/bool[bool^]
-a|`$includeLanguage`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getPath($includeLanguage = false):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/bool[bool^]
-a|`$includeLanguage`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public equals($path):bool
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$path`
-|
-|===
-
 

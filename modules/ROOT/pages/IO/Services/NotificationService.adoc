@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__notificationservice]]
-==== NotificationService
+== NotificationService
 
+
+[[io__notificationservice]]
+== NotificationService
+
+summary: 
 
 
 
@@ -18,214 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($sessionStorageRepository):void
-
-----
-
-    
-
-
-
-
-
-BasketService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-a|`$sessionStorageRepository`
+
 |
+    |sessionStorageRepository
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getNotifications($clear = true):array
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/bool[bool^]
-a|`$clear`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public log($message, $code, $placeholder = []):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$message`
-|
-
-|link:http://php.net/int[int^]
-a|`$code`
-|
-
-|link:http://php.net/array[array^]
-a|`$placeholder`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public info($message, $code, $placeholder = []):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$message`
-|
-
-|link:http://php.net/int[int^]
-a|`$code`
-|
-
-|link:http://php.net/array[array^]
-a|`$placeholder`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public warn($message, $code, $placeholder = []):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$message`
-|
-
-|link:http://php.net/int[int^]
-a|`$code`
-|
-
-|link:http://php.net/array[array^]
-a|`$placeholder`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public error($message, $code, $placeholder = []):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$message`
-|
-
-|link:http://php.net/int[int^]
-a|`$code`
-|
-
-|link:http://php.net/array[array^]
-a|`$placeholder`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public success($message, $code, $placeholder = []):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$message`
-|
-
-|link:http://php.net/int[int^]
-a|`$code`
-|
-
-|link:http://php.net/array[array^]
-a|`$placeholder`
-|
-|===
-
 

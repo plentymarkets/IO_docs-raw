@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__orderbykeyfilter]]
-==== OrderByKeyFilter
+== OrderByKeyFilter
 
+
+[[io__orderbykeyfilter]]
+== OrderByKeyFilter
+
+summary: 
 
 
 
@@ -18,36 +22,12 @@
 
 
 
+.Properties
+|===
+|Type |Name |Description
 
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-ItemImagesFilter constructor.
-
-[source%nowrap, php]
-----
-
-public getFilters():array
-
-----
-
-    
-
-
-
-
-
-
+|link:http://php.net/array[array^]
+    |filters
+    |
+|===
 

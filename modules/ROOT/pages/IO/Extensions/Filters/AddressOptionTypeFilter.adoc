@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__addressoptiontypefilter]]
-==== AddressOptionTypeFilter
+== AddressOptionTypeFilter
 
+
+[[io__addressoptiontypefilter]]
+== AddressOptionTypeFilter
+
+summary: 
 
 
 
@@ -18,51 +22,12 @@
 
 
 
+.Properties
+|===
+|Type |Name |Description
 
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-AddressOptionTypeFilter constructor.
-
-[source%nowrap, php]
-----
-
-public getFilters():array
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public addressOptionType():void
-
-----
-
-    
-
-
-
-
-
-
+|link:http://php.net/array[array^]
+    |filters
+    |
+|===
 

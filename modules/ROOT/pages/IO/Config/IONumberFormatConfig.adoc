@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__ionumberformatconfig]]
-==== IONumberFormatConfig
+== IONumberFormatConfig
 
+
+[[io__ionumberformatconfig]]
+== IONumberFormatConfig
+
+summary: 
 
 
 
@@ -18,30 +22,21 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($configRepository):void
-
-----
-
-    
-
-
-
-
-
-PluginConfig constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_plugin_configrepository[`ConfigRepository`]
-a|`$configRepository`
-|
-|===
 
+|
+    |numberDecimals
+    |
+|
+    |separatorDecimal
+    |
+|
+    |separatorThousands
+    |
+|
+    |useLocaleCurrencyFormat
+    |
+|===
 

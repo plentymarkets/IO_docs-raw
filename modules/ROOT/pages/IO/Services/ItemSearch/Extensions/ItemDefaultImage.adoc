@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__itemdefaultimage]]
-==== ItemDefaultImage
+== ItemDefaultImage
 
+
+[[io__itemdefaultimage]]
+== ItemDefaultImage
+
+summary: 
 
 
 
@@ -18,45 +22,24 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public getSearch($parentSearchBuilder):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$parentSearchBuilder`
+    |allImagesRequested
+    |
 |
+    |itemImagesRequested
+    |
+|
+    |variationImagesRequested
+    |
+|
+    |itemImageSettings
+    |
+|
+    |cache
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public transformResult():void
-
-----
-
-    
-
-
-
-
-
-
 

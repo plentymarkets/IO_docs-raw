@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__variationstandardcategoryfields]]
-==== VariationStandardCategoryFields
+== VariationStandardCategoryFields
 
+
+[[io__variationstandardcategoryfields]]
+== VariationStandardCategoryFields
+
+summary: 
 
 
 

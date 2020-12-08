@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__propertynamefilter]]
-==== PropertyNameFilter
+== PropertyNameFilter
 
+
+[[io__propertynamefilter]]
+== PropertyNameFilter
+
+summary: 
 
 
 
@@ -18,75 +22,24 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($authHelper):void
-
-----
-
-    
-
-
-
-
-
-PropertySelectionValueNameFilter constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
-a|`$authHelper`
+
 |
+    |authHelper
+    |
+|
+    |propertyRepository
+    |
+|
+    |propertySelectionRepository
+    |
+|link:http://php.net/array[array^]
+    |filters
+    |
+|
+    |cache
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getFilters():array
-
-----
-
-    
-
-
-
-
-
-Return the available filter methods
-
-[source%nowrap, php]
-----
-
-public getPropertyName():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getPropertySelectionValueName():void
-
-----
-
-    
-
-
-
-
-
-
 

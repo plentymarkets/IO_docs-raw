@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__abstractfunction]]
-==== AbstractFunction
+== AbstractFunction
 
+
+[[io__abstractfunction]]
+== AbstractFunction
+
+summary: 
 
 
 
@@ -18,36 +22,12 @@
 
 
 
+.Properties
+|===
+|Type |Name |Description
 
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-AbstractFunction constructor.
-
-[source%nowrap, php]
-----
-
-public getFunctions():array
-
-----
-
-    
-
-
-
-
-
-Return the available functions
+|link:http://php.net/array[array^]
+    |functions
+    |
+|===
 

@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__propertyfaker]]
-==== PropertyFaker
+== PropertyFaker
 
+
+[[io__propertyfaker]]
+== PropertyFaker
+
+summary: 
 
 
 
@@ -18,69 +22,33 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public fill($data):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$data`
+    |isList
+    |
 |
+    |range
+    |
+|
+    |index
+    |
+|
+    |list
+    |
+|
+    |lang
+    |
+|
+    |esLang
+    |
+|
+    |plentyId
+    |
+|
+    |translationCounter
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public __construct($app):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$app`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public static resetGlobals():void
-
-----
-
-    
-
-
-
-
-
-
 

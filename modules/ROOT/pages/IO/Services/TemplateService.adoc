@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__templateservice]]
-==== TemplateService
+== TemplateService
 
+
+[[io__templateservice]]
+== TemplateService
+
+summary: 
 
 
 
@@ -18,114 +22,21 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public forceNoIndex($forceNoIndex):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$forceNoIndex`
+    |currentTemplate
+    |
 |
+    |currentTemplateData
+    |
+|
+    |shouldBeCached
+    |
+|
+    |forceNoIndex
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public isNoIndexForced():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public shouldBeCached():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public disableCacheForTemplate():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getCurrentTemplate():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public setCurrentTemplate($template):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$template`
-|
-|===
-
 

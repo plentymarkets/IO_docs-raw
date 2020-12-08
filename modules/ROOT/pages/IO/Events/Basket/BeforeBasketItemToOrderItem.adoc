@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__beforebasketitemtoorderitem]]
-==== BeforeBasketItemToOrderItem
+== BeforeBasketItemToOrderItem
 
+
+[[io__beforebasketitemtoorderitem]]
+== BeforeBasketItemToOrderItem
+
+summary: 
 
 
 
@@ -14,48 +18,6 @@
 
 `IO\Events\Basket`
 
-
-
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($basketItem):void
-
-----
-
-    
-
-
-
-
-
-BasketItemEvent constructor.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Basket.adoc#basket_models_basketitem[`BasketItem`]
-a|`$basketItem`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getBasketItem():Plenty\Modules\Basket\Models\BasketItem
-
-----
-
-    
-
-
-====== *Return type:*        xref:Basket.adoc#basket_models_basketitem[`BasketItem`]
 
 
 

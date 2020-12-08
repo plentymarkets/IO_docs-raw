@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__categoryservice]]
-==== CategoryService
+== CategoryService
 
+
+[[io__categoryservice]]
+== CategoryService
+
+summary: 
 
 
 
@@ -18,148 +22,36 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($categoryRepository, $webstoreConfigurationRepository, $authGuard, $contactRepository):void
-
-----
-
-    
-
-
-
-
-
-CategoryService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Category.adoc#category_contracts_categoryrepositorycontract[`CategoryRepositoryContract`]
-a|`$categoryRepository`
+
 |
-
-|        xref:Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
-a|`$webstoreConfigurationRepository`
+    |categoryRepository
+    |
 |
-
-|        xref:Miscellaneous.adoc#miscellaneous_guards_authguard[`AuthGuard`]
-a|`$authGuard`
+    |webstoreConfigurationRepository
+    |
 |
-
-|        xref:Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
-a|`$contactRepository`
+    |contactRepository
+    |
 |
+    |currentCategory
+    |
+|link:http://php.net/array[array^]
+    |currentCategoryTree
+    |
+|
+    |authGuard
+    |
+|
+    |currentItem
+    |
+|
+    |webstoreId
+    |
+|
+    |cache
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public setCurrentCategoryID($catID):void
-
-----
-
-    
-
-
-
-
-
-Set the current category by ID.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$catID`
-|The id of the current category
-|===
-
-
-[source%nowrap, php]
-----
-
-public setCurrentCategory($cat):void
-
-----
-
-    
-
-
-
-
-
-Set the current category by ID.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Category.adoc#category_models_category[`Category`]
-a|`$cat`
-|The current category
-|===
-
-
-[source%nowrap, php]
-----
-
-public getCurrentCategory():Plenty\Modules\Category\Models\Category
-
-----
-
-    
-
-
-====== *Return type:*        xref:Category.adoc#category_models_category[`Category`]
-
-
-
-
-[source%nowrap, php]
-----
-
-public get($catID, $lang = null):Plenty\Modules\Category\Models\Category
-
-----
-
-    
-
-
-====== *Return type:*        xref:Category.adoc#category_models_category[`Category`]
-
-
-Get a category by ID
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$catID`
-|The category ID
-
-|link:http://php.net/string[string^]
-a|`$lang`
-|The language to get the category
-|===
-
-
-[source%nowrap, php]
-----
-
-public getForPlentyId():void
-
-----
-
-    
-
-
-
-
-
-
 

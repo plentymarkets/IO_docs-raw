@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__iositemappattern]]
-==== IOSitemapPattern
+== IOSitemapPattern
 
+
+[[io__iositemappattern]]
+== IOSitemapPattern
+
+summary: 
 
 
 
@@ -18,30 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public handle($sitemapPattern):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Plugin.adoc#plugin_events_loadsitemappattern[`LoadSitemapPattern`]
-a|`$sitemapPattern`
-|
-|===
 
+|
+    |contentRoutes
+    |
+|===
 

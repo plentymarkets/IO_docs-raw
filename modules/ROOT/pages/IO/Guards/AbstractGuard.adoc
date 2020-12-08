@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__abstractguard]]
-==== AbstractGuard
+== AbstractGuard
 
+
+[[io__abstractguard]]
+== AbstractGuard
+
+summary: 
 
 
 
@@ -18,86 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public assertOrRedirect($expected, $redirectUri):void
-
-----
-
-    
-
-
-
-
-
-Redirect to given URI if expected value equals return value of AbstractGuard::assert()
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$expected`
-|The value to compare with return value of AbstractGuard::asssert()
-
-|link:http://php.net/string[string^]
-a|`$redirectUri`
-|The URI to redirect to
+    |pluginNamespace
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public static redirect($uri, $params = []):void
-
-----
-
-    
-
-
-
-
-
-Redirect to a given URI. Appends params as query string.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$uri`
-|The URI to redirect to.
-
-|link:http://php.net/array[array^]
-a|`$params`
-|A map of params to append to URI as query string.
-|===
-
-
-[source%nowrap, php]
-----
-
-public static getUrl($uri = null):string
-
-----
-
-    
-
-
-
-
-
-Transform a given URI to an URL by prepending used protocol and server name.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$uri`
-|
-|===
-
 

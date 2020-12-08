@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__orderitemtype]]
-==== OrderItemType
+== OrderItemType
 
+
+[[io__orderitemtype]]
+== OrderItemType
+
+summary: 
 
 
 

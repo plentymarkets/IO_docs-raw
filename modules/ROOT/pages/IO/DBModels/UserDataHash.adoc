@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__userdatahash]]
-==== UserDataHash
+== UserDataHash
 
+
+[[io__userdatahash]]
+== UserDataHash
+
+summary: 
 
 
 
@@ -18,718 +22,66 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public getTableName():string
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public jsonSerialize():void
-
-----
-
-    
-
-
-
-
-
-Specify data which should be serialized to JSON
-
-[source%nowrap, php]
-----
-
-public fillByAttributes($attributes):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|
-a|`$attributes`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public __get($key):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public __set($key, $value):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
 
 |
-a|`$value`
+    |id
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public attributesToArray():array
-
-----
-
-    
-
-
-
-
-
-Convert the model&#039;s attributes to an array.
-
-[source%nowrap, php]
-----
-
-public getAttribute($key):void
-
-----
-
-    
-
-
-
-
-
-Get an attribute from the model.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
+    |type
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public getAttributeValue($key):void
-
-----
-
-    
-
-
-
-
-
-Get a plain attribute
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
+    |plentyId
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public hasGetMutator($key):bool
-
-----
-
-    
-
-
-
-
-
-Determine if a get mutator exists for an attribute.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
+    |contactId
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public setAttribute($key, $value):Plenty\Modules\Plugin\DataBase\Contracts
-
-----
-
-    
-
-
-====== *Return type:*        xref:Plugin.adoc#plugin_database_contracts[`Contracts`]
-
-
-Set a given attribute on the model.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
+    |hash
+    |
 |
-
+    |data
+    |
 |
-a|`$value`
+    |createdAt
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public hasSetMutator($key):bool
-
-----
-
-    
-
-
-
-
-
-Determine if a set mutator exists for an attribute.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
+    |expiresAt
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public fillJsonAttribute($key, $value):Plenty\Modules\Plugin\DataBase\Contracts
-
-----
-
-    
-
-
-====== *Return type:*        xref:Plugin.adoc#plugin_database_contracts[`Contracts`]
-
-
-Set a given JSON attribute on the model.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
+    |primaryKeyFieldName
+    |
 |
-
+    |primaryKeyFieldType
+    |
 |
-a|`$value`
+    |autoIncrementPrimaryKey
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public fromJson($value, $asObject = false):void
-
-----
-
-    
-
-
-
-
-
-Decode the given JSON back into an array or object.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$value`
-|
-
-|link:http://php.net/bool[bool^]
-a|`$asObject`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public fromDateTime($value):string
-
-----
-
-    
-
-
-
-
-
-Convert a DateTime to a storable string.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$value`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getDates():array
-
-----
-
-    
-
-
-
-
-
-Get the attributes that should be converted to dates.
-
-[source%nowrap, php]
-----
-
-public setDateFormat($format):Plenty\Modules\Plugin\DataBase\Contracts
-
-----
-
-    
-
-
-====== *Return type:*        xref:Plugin.adoc#plugin_database_contracts[`Contracts`]
-
-
-Set the date format used by the model.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$format`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public hasCast($key, $types = null):bool
-
-----
-
-    
-
-
-
-
-
-Determine whether an attribute should be cast to a native type.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
-
-|
-a|`$types`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getCasts():array
-
-----
-
-    
-
-
-
-
-
-Get the casts array.
-
-[source%nowrap, php]
-----
-
-public getAttributes():array
-
-----
-
-    
-
-
-
-
-
-Get all of the current attributes on the model.
-
-[source%nowrap, php]
-----
-
-public setRawAttributes($attributes, $sync = false):Plenty\Modules\Plugin\DataBase\Contracts
-
-----
-
-    
-
-
-====== *Return type:*        xref:Plugin.adoc#plugin_database_contracts[`Contracts`]
-
-
-Set the array of model attributes. No checking is done.
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |textFields
+    |
 |link:http://php.net/array[array^]
-a|`$attributes`
-|
-
-|link:http://php.net/bool[bool^]
-a|`$sync`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getOriginal($key = null, $default = null):void
-
-----
-
-    
-
-
-
-
-
-Get the model&#039;s original attribute values.
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |attributes
+    |The model's attributes.
+|link:http://php.net/array[array^]
+    |original
+    |The model attribute's original state.
+|link:http://php.net/array[array^]
+    |changes
+    |The changed model attributes.
+|link:http://php.net/array[array^]
+    |casts
+    |The attributes that should be cast to native types.
+|link:http://php.net/array[array^]
+    |dates
+    |The attributes that should be mutated to dates.
 |link:http://php.net/string[string^]
-a|`$key`
-|
-
-|
-a|`$default`
-|
+    |dateFormat
+    |The storage format of the model's date columns.
+|link:http://php.net/array[array^]
+    |mutatorCache
+    |The cache of the mutated attributes for each class.
 |===
-
-
-[source%nowrap, php]
-----
-
-public only($attributes):array
-
-----
-
-    
-
-
-
-
-
-Get a subset of the model&#039;s attributes.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$attributes`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public syncOriginal():Plenty\Modules\Plugin\DataBase\Contracts
-
-----
-
-    
-
-
-====== *Return type:*        xref:Plugin.adoc#plugin_database_contracts[`Contracts`]
-
-
-Sync the original attributes with the current.
-
-[source%nowrap, php]
-----
-
-public syncOriginalAttribute($attribute):Plenty\Modules\Plugin\DataBase\Contracts
-
-----
-
-    
-
-
-====== *Return type:*        xref:Plugin.adoc#plugin_database_contracts[`Contracts`]
-
-
-Sync a single original attribute with its current value.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$attribute`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public syncChanges():Plenty\Modules\Plugin\DataBase\Contracts
-
-----
-
-    
-
-
-====== *Return type:*        xref:Plugin.adoc#plugin_database_contracts[`Contracts`]
-
-
-Sync the changed attributes.
-
-[source%nowrap, php]
-----
-
-public isDirty($attributes = null):bool
-
-----
-
-    
-
-
-
-
-
-Determine if the model or given attribute(s) have been modified.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$attributes`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public isClean($attributes = null):bool
-
-----
-
-    
-
-
-
-
-
-Determine if the model or given attribute(s) have remained the same.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$attributes`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public wasChanged($attributes = null):bool
-
-----
-
-    
-
-
-
-
-
-Determine if the model or given attribute(s) have been modified.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$attributes`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getDirty():array
-
-----
-
-    
-
-
-
-
-
-Get the attributes that have been changed since last sync.
-
-[source%nowrap, php]
-----
-
-public getChanges():array
-
-----
-
-    
-
-
-
-
-
-Get the attributes that were changed.
-
-[source%nowrap, php]
-----
-
-public getMutatedAttributes():array
-
-----
-
-    
-
-
-
-
-
-Get the mutated attributes for a given instance.
-
-[source%nowrap, php]
-----
-
-public static cacheMutatedAttributes($class):void
-
-----
-
-    
-
-
-
-
-
-Extract and cache all the mutated attributes of a class.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$class`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public relationLoaded():void
-
-----
-
-    
-
-
-
-
-
-
 

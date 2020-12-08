@@ -3,11 +3,22 @@
 :source-highlighter: prettify
 :sectids!:
 
+== UnitService
+
+
 [[io__unitservice]]
-==== UnitService
+== UnitService
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be removed in 6.0.0
+    
+====
 
 
 ===== Namespace
@@ -18,62 +29,21 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($unitNameRepository, $unitRepository):void
-
-----
-
-    
-
-
-
-
-
-UnitService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Item.adoc#item_contracts_unitnamerepositorycontract[`UnitNameRepositoryContract`]
-a|`$unitNameRepository`
-|
 
-|        xref:Item.adoc#item_contracts_unitrepositorycontract[`UnitRepositoryContract`]
-a|`$unitRepository`
 |
+    |unitNameRepository
+    |
+|
+    |unitRepository
+    |
+|link:http://php.net/array[array^]
+    |aMeasureUnits
+    |
+|
+    |cache
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getUnitById($unitId, $lang = &quot;de&quot;):Plenty\Modules\Item\Unit\Models\UnitName
-
-----
-
-    
-
-
-====== *Return type:*        xref:Item.adoc#item_models_unitname[`UnitName`]
-
-
-Get the unit by ID
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$unitId`
-|
-
-|link:http://php.net/string[string^]
-a|`$lang`
-|
-|===
-
 

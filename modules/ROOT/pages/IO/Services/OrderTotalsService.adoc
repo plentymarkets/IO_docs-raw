@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__ordertotalsservice]]
-==== OrderTotalsService
+== OrderTotalsService
 
+
+[[io__ordertotalsservice]]
+== OrderTotalsService
+
+summary: 
 
 
 
@@ -16,56 +20,5 @@
 
 
 
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public getAllTotals($order):array
-
-----
-
-    
-
-
-
-
-
-Get all order totals which are relevant for the OrderDetails-modal
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Order.adoc#order_models_order[`Order`]
-a|`$order`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public highlightNetPrices($order):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$order`
-|
-|===
 
 

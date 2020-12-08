@@ -3,110 +3,27 @@
 :source-highlighter: prettify
 :sectids!:
 
+== SortingHelper
+
+
 [[io__sortinghelper]]
-==== SortingHelper
+== SortingHelper
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be deleted in 6.0.0
+    
+====
 
 
 ===== Namespace
 
 `IO\Services\ItemSearch\Helper`
-
-
-
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public getSorting($sortingConfig = null, $isCategory = true):array
-
-----
-
-    
-
-
-
-
-
-Get sorting values from plugin configuration
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$sortingConfig`
-|The configuration value from plugin
-
-|link:http://php.net/bool[bool^]
-a|`$isCategory`
-|Get default sorting configuration for category or for search
-|===
-
-
-[source%nowrap, php]
-----
-
-public getCategorySorting($sortingConfig = null):array
-
-----
-
-    
-
-
-
-
-
-Get sorting values for categories from config
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$sortingConfig`
-|The configuration value
-|===
-
-
-[source%nowrap, php]
-----
-
-public getSearchSorting($sortingConfig = null):array
-
-----
-
-    
-
-
-
-
-
-Get sorting values for searches from config
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$sortingConfig`
-|The configuration value
-|===
-
-
-[source%nowrap, php]
-----
-
-public getUsedItemName():string
-
-----
-
-    
-
-
 
 
 

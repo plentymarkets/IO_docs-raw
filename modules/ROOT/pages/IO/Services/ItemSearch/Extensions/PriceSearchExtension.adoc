@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__pricesearchextension]]
-==== PriceSearchExtension
+== PriceSearchExtension
 
+Search and append all prices for each item in search result.
+[[io__pricesearchextension]]
+== PriceSearchExtension
+
+summary: 
 
 
 
@@ -18,69 +22,15 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($quantities = []):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$quantities`
+    |quantities
+    |
 |
+    |pluginNamespace
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getSearch($parentSearchBuilder):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$parentSearchBuilder`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public transformResult():void
-
-----
-
-    
-
-
-
-
-
-
 

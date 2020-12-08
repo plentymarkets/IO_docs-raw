@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__localizedorderfaker]]
-==== LocalizedOrderFaker
+== LocalizedOrderFaker
 
+
+[[io__localizedorderfaker]]
+== LocalizedOrderFaker
+
+summary: 
 
 
 
@@ -18,60 +22,33 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public fill():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public __construct($app):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$app`
+    |isList
+    |
 |
+    |range
+    |
+|
+    |index
+    |
+|
+    |list
+    |
+|
+    |lang
+    |
+|
+    |esLang
+    |
+|
+    |plentyId
+    |
+|
+    |translationCounter
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public static resetGlobals():void
-
-----
-
-    
-
-
-
-
-
-
 

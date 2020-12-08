@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__component]]
-==== Component
+== Component
 
+
+[[io__component]]
+== Component
+
+summary: 
 
 
 
@@ -18,90 +22,15 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public getFunctions():array
-
-----
-
-    
-
-
-
-
-
-Return the available filter methods
-
-[source%nowrap, php]
-----
-
-public component($path):void
-
-----
-
-    
-
-
-
-
-
-Push the component to the component stack
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$path`
-|
+
+|link:http://php.net/array[array^]
+    |components
+    |
+|link:http://php.net/array[array^]
+    |functions
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public hasComponentTemplate():bool
-
-----
-
-    
-
-
-
-
-
-Check whether a component template exists
-
-[source%nowrap, php]
-----
-
-public getComponentTemplate():string
-
-----
-
-    
-
-
-
-
-
-Get the component from the component stack
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-AbstractFunction constructor.
 

@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__shufflefilter]]
-==== ShuffleFilter
+== ShuffleFilter
 
+
+[[io__shufflefilter]]
+== ShuffleFilter
+
+summary: 
 
 
 
@@ -18,60 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-ShuffleFilter constructor.
-
-[source%nowrap, php]
-----
-
-public getFilters():array
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public shuffle($arrayToShuffle):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|
-a|`$arrayToShuffle`
-|
-|===
 
+|link:http://php.net/array[array^]
+    |filters
+    |
+|===
 

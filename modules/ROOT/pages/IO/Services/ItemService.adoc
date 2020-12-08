@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__itemservice]]
-==== ItemService
+== ItemService
 
+
+[[io__itemservice]]
+== ItemService
+
+summary: 
 
 
 
@@ -18,158 +22,24 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($app, $itemRepository, $sessionStorageRepository):void
-
-----
-
-    
-
-
-
-
-
-ItemService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
-a|`$app`
+
 |
-
-|        xref:Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
-a|`$itemRepository`
+    |app
+    |
 |
-
-|        xref:Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-a|`$sessionStorageRepository`
+    |itemRepository
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public getItem($itemId):array
-
-----
-
-    
-
-
-
-
-
-Get an item by ID
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$itemId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getItems($itemIds):array
-
-----
-
-    
-
-
-
-
-
-Get a list of items with the specified item IDs
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |sessionStorageRepository
+    |SessionStorageRepositoryContract
 |link:http://php.net/array[array^]
-a|`$itemIds`
+    |additionalItemSortingMap
+    |
 |
+    |cache
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getItemImage($itemId):string
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$itemId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getVariation($variationId):array
-
-----
-
-    
-
-
-
-
-
-Get an item variation by ID
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$variationId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getVariations($variationIds):array
-
-----
-
-    
-
-
-
-
-
-Get a list of item variations with the specified variation IDs
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$variationIds`
-|
-|===
-
 

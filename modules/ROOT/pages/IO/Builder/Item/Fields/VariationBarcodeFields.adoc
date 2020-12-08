@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__variationbarcodefields]]
-==== VariationBarcodeFields
+== VariationBarcodeFields
 
+
+[[io__variationbarcodefields]]
+== VariationBarcodeFields
+
+summary: 
 
 
 

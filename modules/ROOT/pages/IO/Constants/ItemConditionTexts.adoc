@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__itemconditiontexts]]
-==== ItemConditionTexts
+== ItemConditionTexts
 
+
+[[io__itemconditiontexts]]
+== ItemConditionTexts
+
+summary: 
 
 
 
@@ -17,4 +21,13 @@
 
 
 
+
+.Properties
+|===
+|Type |Name |Description
+
+|link:http://php.net/array[array^]
+    |itemConditionTexts
+    |
+|===
 

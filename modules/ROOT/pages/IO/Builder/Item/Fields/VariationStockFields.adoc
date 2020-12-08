@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__variationstockfields]]
-==== VariationStockFields
+== VariationStockFields
 
+
+[[io__variationstockfields]]
+== VariationStockFields
+
+summary: 
 
 
 

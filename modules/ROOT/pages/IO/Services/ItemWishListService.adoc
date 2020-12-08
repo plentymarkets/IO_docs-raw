@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__itemwishlistservice]]
-==== ItemWishListService
+== ItemWishListService
 
+
+[[io__itemwishlistservice]]
+== ItemWishListService
+
+summary: 
 
 
 
@@ -18,151 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($sessionStorageRepositoryContract):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$sessionStorageRepositoryContract`
-|
+    |itemWishListRepo
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public addItemWishListEntry($variationId, $quantity):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$variationId`
-|
-
-|link:http://php.net/int[int^]
-a|`$quantity`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public isItemInWishList($variationId):bool
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$variationId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getItemWishList():array
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getCountedItemWishList():int
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public removeItemWishListEntry($variationId):bool
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$variationId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public migrateGuestItemWishList():void
-
-----
-
-    
-
-
-
-
-
-
 

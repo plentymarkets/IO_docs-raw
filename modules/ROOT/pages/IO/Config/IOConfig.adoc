@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__ioconfig]]
-==== IOConfig
+== IOConfig
 
+
+[[io__ioconfig]]
+== IOConfig
+
+summary: 
 
 
 
@@ -18,21 +22,12 @@
 
 
 
+.Properties
+|===
+|Type |Name |Description
 
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-
+|
+    |format
+    |
+|===
 

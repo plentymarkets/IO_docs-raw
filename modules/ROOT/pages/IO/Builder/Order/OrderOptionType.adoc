@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__orderoptiontype]]
-==== OrderOptionType
+== OrderOptionType
 
+
+[[io__orderoptiontype]]
+== OrderOptionType
+
+summary: 
 
 
 

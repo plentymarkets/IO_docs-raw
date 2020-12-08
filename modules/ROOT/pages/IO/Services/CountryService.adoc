@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__countryservice]]
-==== CountryService
+== CountryService
 
+
+[[io__countryservice]]
+== CountryService
+
+summary: 
 
 
 
@@ -18,169 +22,15 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($countryRepository):void
-
-----
-
-    
-
-
-
-
-
-CountryService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Order.adoc#order_contracts_countryrepositorycontract[`CountryRepositoryContract`]
-a|`$countryRepository`
+
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public getActiveCountriesList($lang = null):array
-
-----
-
-    
-
-
-
-
-
-List all active countries
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$lang`
+    |countryRepository
+    |
 |
+    |activeCountries
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getActiveCountryNameMap($language):array
-
-----
-
-    
-
-
-
-
-
-Get a list of names for the active countries
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$language`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getShippingCountryId():int
-
-----
-
-    
-
-
-
-
-
-Get the ID of the current shipping country
-
-[source%nowrap, php]
-----
-
-public setShippingCountryId($shippingCountryId):void
-
-----
-
-    
-
-
-
-
-
-Set the ID of the current shipping country
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$shippingCountryId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getCountryById($countryId):Plenty\Modules\Order\Shipping\Countries\Models\Country
-
-----
-
-    
-
-
-====== *Return type:*        xref:Order.adoc#order_models_country[`Country`]
-
-
-Get a specific country by ID
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$countryId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getCountryName($countryId, $lang = null):string
-
-----
-
-    
-
-
-
-
-
-Get the name of specific country
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$countryId`
-|
-
-|link:http://php.net/string[string^]
-a|`$lang`
-|
-|===
-
 

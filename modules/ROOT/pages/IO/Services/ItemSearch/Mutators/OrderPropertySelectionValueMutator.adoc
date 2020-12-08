@@ -3,58 +3,27 @@
 :source-highlighter: prettify
 :sectids!:
 
+== OrderPropertySelectionValueMutator
+
+
 [[io__orderpropertyselectionvaluemutator]]
-==== OrderPropertySelectionValueMutator
+== OrderPropertySelectionValueMutator
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be deleted in 6.0.0
+    
+====
 
 
 ===== Namespace
 
 `IO\Services\ItemSearch\Mutators`
-
-
-
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public mutate($data):array
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$data`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getDependencies():array
-
-----
-
-    
-
-
 
 
 

@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__twigserviceprovider]]
-==== TwigServiceProvider
+== TwigServiceProvider
 
+
+[[io__twigserviceprovider]]
+== TwigServiceProvider
+
+summary: 
 
 
 
@@ -13,168 +17,6 @@
 ===== Namespace
 
 `IO\Extensions`
-
-
-
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getName():string
-
-----
-
-    
-
-
-
-
-
-Return the name of the extension. The name must be unique.
-
-[source%nowrap, php]
-----
-
-public getFilters():array
-
-----
-
-    
-
-
-
-
-
-Return a list of filters to add.
-
-[source%nowrap, php]
-----
-
-public getFunctions():array
-
-----
-
-    
-
-
-
-
-
-Return a list of functions to add.
-
-[source%nowrap, php]
-----
-
-public getGlobals():array
-
-----
-
-    
-
-
-
-
-
-Return a map of global helper objects to add.
-
-[source%nowrap, php]
-----
-
-public initRuntime($environment):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$environment`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getTokenParsers():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getNodeVisitors():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getTests():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getOperators():void
-
-----
-
-    
-
-
 
 
 

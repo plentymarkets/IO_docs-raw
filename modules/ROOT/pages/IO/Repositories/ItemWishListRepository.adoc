@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__itemwishlistrepository]]
-==== ItemWishListRepository
+== ItemWishListRepository
 
+
+[[io__itemwishlistrepository]]
+== ItemWishListRepository
+
+summary: 
 
 
 
@@ -18,140 +22,15 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($dataBase, $contactRepository):void
-
-----
-
-    
-
-
-
-
-
-ItemWishListRepository constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Plugin.adoc#plugin_contracts_database[`DataBase`]
-a|`$dataBase`
+
 |
-
-|        xref:Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
-a|`$contactRepository`
+    |db
+    |
 |
+    |contactRepository
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getItemWishList():array
-
-----
-
-    
-
-
-
-
-
-List all watched variationIds for contact
-
-[source%nowrap, php]
-----
-
-public getCountedItemWishList():int
-
-----
-
-    
-
-
-
-
-
-Get count WishList entries
-
-[source%nowrap, php]
-----
-
-public isItemInWishList($variationId):bool
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$variationId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public addItemWishListEntry($variationId, $quantity = 1):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$variationId`
-|
-
-|link:http://php.net/int[int^]
-a|`$quantity`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public removeItemWishListEntry($variationId):bool
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$variationId`
-|
-|===
-
 

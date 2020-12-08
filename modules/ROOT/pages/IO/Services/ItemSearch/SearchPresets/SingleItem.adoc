@@ -3,11 +3,26 @@
 :source-highlighter: prettify
 :sectids!:
 
+== SingleItem
+
+Search preset for single items
+Available options:
+- itemId:        Item id to get
+- variationId:   Variation id to get. If not defined, plugin configuration will be considered if main or child variation should be displayed.
+- setCategory:   Flag indicating if item should be set as current item to be displayed in breadcrumbs
 [[io__singleitem]]
-==== SingleItem
+== SingleItem
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be deleted in 6.0.0
+    
+====
 
 
 ===== Namespace
@@ -16,32 +31,5 @@
 
 
 
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public static getSearchFactory($options):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$options`
-|
-|===
 
 

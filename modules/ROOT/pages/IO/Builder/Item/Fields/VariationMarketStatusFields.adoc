@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__variationmarketstatusfields]]
-==== VariationMarketStatusFields
+== VariationMarketStatusFields
 
+
+[[io__variationmarketstatusfields]]
+== VariationMarketStatusFields
+
+summary: 
 
 
 

@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__localizedorder]]
-==== LocalizedOrder
+== LocalizedOrder
 
+
+[[io__localizedorder]]
+== LocalizedOrder
+
+summary: 
 
 
 
@@ -18,862 +22,171 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public static wrap($order, $data):IO\Models\LocalizedOrder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_localizedorder[`LocalizedOrder`]
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Order.adoc#order_models_order[`Order`]
-a|`$order`
+
 |
-
-|link:http://php.net/array[array^]
-a|`$data`
+    |order
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public toArray():array
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public isReturnable():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static wrapList($elements, $args):array
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |orderData
+    |
 |
-a|`$elements`
+    |status
+    |
 |
-
-|link:http://php.net/array[array^]
-a|`$args`
+    |shippingProvider
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public static wrapPaginated($paginated, $args):Plenty\Repositories\Models\PaginatedResult
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
-a|`$paginated`
+    |shippingProfileName
+    |
 |
-
-|link:http://php.net/array[array^]
-a|`$args`
+    |shippingProfileId
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public __construct($attributes = []):void
-
-----
-
-    
-
-
-
-
-
-Create a new Eloquent model instance.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$attributes`
+    |trackingURL
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public static clearBootedModels():void
-
-----
-
-    
-
-
-
-
-
-Clear the list of booted models so they will be re-booted.
-
-[source%nowrap, php]
-----
-
-public static withoutTouching($callback):void
-
-----
-
-    
-
-
-
-
-
-Disables relationship model touching for the current class during given callback scope.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/callable[callable^]
-a|`$callback`
+    |paymentMethodName
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public static withoutTouchingOn($models, $callback):void
-
-----
-
-    
-
-
-
-
-
-Disables relationship model touching for the given model classes during given callback scope.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$models`
+    |paymentMethodIcon
+    |
 |
-
-|link:http://php.net/callable[callable^]
-a|`$callback`
+    |paymentStatus
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public static isIgnoringTouch($class = null):bool
-
-----
-
-    
-
-
-
-
-
-Determine if the given model is ignoring touches.
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |variations
+    |
+|
+    |itemURLs
+    |
+|
+    |itemImages
+    |
+|
+    |isReturnable
+    |
+|
+    |highlightNetPrices
+    |
+|
+    |totals
+    |
+|
+    |allowPaymentMethodSwitchFrom
+    |
+|
+    |paymentMethodListForSwitch
+    |
+|
+    |connection
+    |The connection name for the model.
 |link:http://php.net/string[string^]
-a|`$class`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public fill($attributes):Illuminate\Database\Eloquent
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_database_eloquent[`Eloquent`]
-
-
-Fill the model with an array of attributes.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$attributes`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public forceFill($attributes):Illuminate\Database\Eloquent
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_database_eloquent[`Eloquent`]
-
-
-Fill the model with an array of attributes. Force mass assignment.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$attributes`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public qualifyColumn($column):string
-
-----
-
-    
-
-
-
-
-
-Qualify the given column name by the model&#039;s table.
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |table
+    |The table associated with the model.
 |link:http://php.net/string[string^]
-a|`$column`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public newInstance($attributes = [], $exists = false):Illuminate\Database\Eloquent
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_database_eloquent[`Eloquent`]
-
-
-Create a new instance of the given model.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$attributes`
-|
-
+    |primaryKey
+    |The primary key for the model.
+|link:http://php.net/string[string^]
+    |keyType
+    |The "type" of the primary key ID.
 |link:http://php.net/bool[bool^]
-a|`$exists`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public newFromBuilder($attributes = [], $connection = null):Illuminate\Database\Eloquent
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_database_eloquent[`Eloquent`]
-
-
-Create a new model instance that is existing.
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |incrementing
+    |Indicates if the IDs are auto-incrementing.
 |link:http://php.net/array[array^]
-a|`$attributes`
-|
-
+    |with
+    |The relations to eager load on every query.
+|link:http://php.net/array[array^]
+    |withCount
+    |The relationship counts that should be eager loaded on every query.
+|link:http://php.net/int[int^]
+    |perPage
+    |The number of models to return for pagination.
+|link:http://php.net/bool[bool^]
+    |exists
+    |Indicates if the model exists.
+|link:http://php.net/bool[bool^]
+    |wasRecentlyCreated
+    |Indicates if the model was inserted during the current request lifecycle.
+|        xref:Miscellaneous.adoc#miscellaneous_database_connectionresolverinterface[`ConnectionResolverInterface`]
+    |resolver
+    |The connection resolver instance.
+|        xref:Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
+    |dispatcher
+    |The event dispatcher instance.
+|link:http://php.net/array[array^]
+    |booted
+    |The array of booted models.
+|link:http://php.net/array[array^]
+    |traitInitializers
+    |The array of trait initializers that will be called on each new instance.
+|link:http://php.net/array[array^]
+    |globalScopes
+    |The array of global scopes on the model.
+|link:http://php.net/array[array^]
+    |ignoreOnTouch
+    |The list of models classes that should not be affected with touch.
+|link:http://php.net/array[array^]
+    |attributes
+    |The model's attributes.
+|link:http://php.net/array[array^]
+    |original
+    |The model attribute's original state.
+|link:http://php.net/array[array^]
+    |changes
+    |The changed model attributes.
+|link:http://php.net/array[array^]
+    |casts
+    |The attributes that should be cast to native types.
+|link:http://php.net/array[array^]
+    |dates
+    |The attributes that should be mutated to dates.
 |link:http://php.net/string[string^]
-a|`$connection`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public static on($connection = null):Illuminate\Database\Eloquent\Illuminate\Database\Eloquent\Builder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_eloquent_builder[`Builder`]
-
-
-Begin querying the model on a given connection.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$connection`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public static onWriteConnection():Illuminate\Database\Eloquent\Illuminate\Database\Query\Builder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_query_builder[`Builder`]
-
-
-Begin querying the model on the write connection.
-
-[source%nowrap, php]
-----
-
-public static all($columns = []):void
-
-----
-
-    
-
-
-
-
-
-Get all of the models from the database.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$columns`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public static with($relations):Illuminate\Database\Eloquent\Illuminate\Database\Eloquent\Builder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_eloquent_builder[`Builder`]
-
-
-Begin querying a model with eager loading.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$relations`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public load($relations):Illuminate\Database\Eloquent
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_database_eloquent[`Eloquent`]
-
-
-Eager load relations on the model.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$relations`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public loadMissing($relations):Illuminate\Database\Eloquent
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_database_eloquent[`Eloquent`]
-
-
-Eager load relations on the model if they are not already eager loaded.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$relations`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public loadCount($relations):Illuminate\Database\Eloquent
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_database_eloquent[`Eloquent`]
-
-
-Eager load relation counts on the model.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$relations`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public update($attributes = [], $options = []):bool
-
-----
-
-    
-
-
-
-
-
-Update the model in the database.
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |dateFormat
+    |The storage format of the model's date columns.
 |link:http://php.net/array[array^]
-a|`$attributes`
-|
-
+    |appends
+    |The accessors to append to the model's array form.
+|link:http://php.net/bool[bool^]
+    |snakeAttributes
+    |Indicates whether attributes are snake cased on arrays.
 |link:http://php.net/array[array^]
-a|`$options`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public push():bool
-
-----
-
-    
-
-
-
-
-
-Save the model and all of its relationships.
-
-[source%nowrap, php]
-----
-
-public save($options = []):bool
-
-----
-
-    
-
-
-
-
-
-Save the model to the database.
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |mutatorCache
+    |The cache of the mutated attributes for each class.
 |link:http://php.net/array[array^]
-a|`$options`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public saveOrFail($options = []):bool
-
-----
-
-    
-
-
-
-
-
-Save the model to the database using transaction.
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |dispatchesEvents
+    |The event map for the model.
 |link:http://php.net/array[array^]
-a|`$options`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public static destroy($ids):int
-
-----
-
-    
-
-
-
-
-
-Destroy the models for the given IDs.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$ids`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public delete():bool
-
-----
-
-    
-
-
-
-
-
-Delete the model from the database.
-
-[source%nowrap, php]
-----
-
-public forceDelete():bool
-
-----
-
-    
-
-
-
-
-
-Force a hard delete on a soft deleted model.
-
-[source%nowrap, php]
-----
-
-public static query():Illuminate\Database\Eloquent\Illuminate\Database\Eloquent\Builder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_eloquent_builder[`Builder`]
-
-
-Begin querying the model.
-
-[source%nowrap, php]
-----
-
-public newQuery():Illuminate\Database\Eloquent\Illuminate\Database\Eloquent\Builder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_eloquent_builder[`Builder`]
-
-
-Get a new query builder for the model&#039;s table.
-
-[source%nowrap, php]
-----
-
-public newModelQuery():void
-
-----
-
-    
-
-
-
-
-
-Get a new query builder that doesn&#039;t have any global scopes or eager loading.
-
-[source%nowrap, php]
-----
-
-public newQueryWithoutRelationships():Illuminate\Database\Eloquent\Illuminate\Database\Eloquent\Builder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_eloquent_builder[`Builder`]
-
-
-Get a new query builder with no relationships loaded.
-
-[source%nowrap, php]
-----
-
-public registerGlobalScopes($builder):Illuminate\Database\Eloquent\Illuminate\Database\Eloquent\Builder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_eloquent_builder[`Builder`]
-
-
-Register the global scopes for this builder instance.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_eloquent_builder[`Builder`]
-a|`$builder`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public newQueryWithoutScopes():void
-
-----
-
-    
-
-
-
-
-
-Get a new query builder that doesn&#039;t have any global scopes.
-
-[source%nowrap, php]
-----
-
-public newQueryWithoutScope($scope):Illuminate\Database\Eloquent\Illuminate\Database\Eloquent\Builder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_eloquent_builder[`Builder`]
-
-
-Get a new query instance without a given scope.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$scope`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public newQueryForRestoration($ids):Illuminate\Database\Eloquent\Illuminate\Database\Eloquent\Builder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_eloquent_builder[`Builder`]
-
-
-Get a new query to restore one or more models by their queueable IDs.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$ids`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public newEloquentBuilder($query):void
-
-----
-
-    
-
-
-
-
-
-Create a new Eloquent query builder for the model.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_query_builder[`Builder`]
-a|`$query`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public newCollection($models = []):Illuminate\Database\Eloquent\Illuminate\Database\Eloquent\Collection
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_eloquent_collection[`Collection`]
-
-
-Create a new Eloquent Collection instance.
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |observables
+    |User exposed observable events.
 |link:http://php.net/array[array^]
-a|`$models`
-|
+    |relations
+    |The loaded relationships for the model.
+|link:http://php.net/array[array^]
+    |touches
+    |The relationships that should be touched on save.
+|link:http://php.net/array[array^]
+    |manyMethods
+    |The many to many relationship methods.
+|link:http://php.net/bool[bool^]
+    |timestamps
+    |Indicates if the model should be timestamped.
+|link:http://php.net/array[array^]
+    |hidden
+    |The attributes that should be hidden for serialization.
+|link:http://php.net/array[array^]
+    |visible
+    |The attributes that should be visible in serialization.
+|link:http://php.net/array[array^]
+    |fillable
+    |The attributes that are mass assignable.
+|link:http://php.net/array[array^]
+    |guarded
+    |The attributes that aren't mass assignable.
+|link:http://php.net/bool[bool^]
+    |unguarded
+    |Indicates if all mass assignment is enabled.
 |===
-
 

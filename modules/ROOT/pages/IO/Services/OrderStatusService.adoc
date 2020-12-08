@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__orderstatusservice]]
-==== OrderStatusService
+== OrderStatusService
 
+
+[[io__orderstatusservice]]
+== OrderStatusService
+
+summary: 
 
 
 
@@ -18,66 +22,21 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($authHelper, $orderStatusRepo, $statusHistoryRepo):void
-
-----
-
-    
-
-
-
-
-
-OrderStatusService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
-a|`$authHelper`
-|
 
-|        xref:Order.adoc#order_contracts_orderstatusrepositorycontract[`OrderStatusRepositoryContract`]
-a|`$orderStatusRepo`
 |
-
-|        xref:Order.adoc#order_contracts_statushistoryrepositorycontract[`StatusHistoryRepositoryContract`]
-a|`$statusHistoryRepo`
+    |authHelper
+    |
 |
+    |orderStatusRepo
+    |
+|
+    |statusHistoryRepo
+    |
+|
+    |pluginNamespace
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getOrderStatus($orderId, $orderStatusId):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$orderId`
-|
-
-|link:http://php.net/float[float^]
-a|`$orderStatusId`
-|
-|===
-
 

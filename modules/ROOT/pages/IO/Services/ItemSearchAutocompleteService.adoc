@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__itemsearchautocompleteservice]]
-==== ItemSearchAutocompleteService
+== ItemSearchAutocompleteService
 
+
+[[io__itemsearchautocompleteservice]]
+== ItemSearchAutocompleteService
+
+summary: 
 
 
 
@@ -18,75 +22,18 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getDidYouMeanSuggestionSearchString():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getResults():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public transformResult($itemSearchResult):array
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$itemSearchResult`
-|
-|===
 
+|
+    |urlBuilderRepository
+    |
+|
+    |localizationRepository
+    |
+|
+    |webstoreConfiguration
+    |
+|===
 

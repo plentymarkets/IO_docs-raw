@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__uniqueid]]
-==== UniqueId
+== UniqueId
 
+
+[[io__uniqueid]]
+== UniqueId
+
+summary: 
 
 
 
@@ -18,75 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public construct():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getFunctions():array
-
-----
-
-    
-
-
-
-
-
-Return the available methods
-
-[source%nowrap, php]
-----
-
-public generateUniqueId($prefix = &quot;&quot;):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|
-a|`$prefix`
-|
+
+|link:http://php.net/array[array^]
+    |functions
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-AbstractFunction constructor.
 

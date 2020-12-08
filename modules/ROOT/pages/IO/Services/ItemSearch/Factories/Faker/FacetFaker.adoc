@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__facetfaker]]
-==== FacetFaker
+== FacetFaker
 
+
+[[io__facetfaker]]
+== FacetFaker
+
+summary: 
 
 
 
@@ -18,69 +22,39 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public fill($data):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$data`
+    |count
+    |
 |
+    |facetTypes
+    |
+|
+    |isList
+    |
+|
+    |range
+    |
+|
+    |index
+    |
+|
+    |list
+    |
+|
+    |lang
+    |
+|
+    |esLang
+    |
+|
+    |plentyId
+    |
+|
+    |translationCounter
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public __construct($app):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$app`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public static resetGlobals():void
-
-----
-
-    
-
-
-
-
-
-
 

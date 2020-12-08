@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__basketfaker]]
-==== BasketFaker
+== BasketFaker
 
+
+[[io__basketfaker]]
+== BasketFaker
+
+summary: 
 
 
 
@@ -17,4 +21,37 @@
 
 
 
+
+.Properties
+|===
+|Type |Name |Description
+
+|
+    |rawBasketItems
+    |
+|
+    |isList
+    |
+|
+    |range
+    |
+|
+    |index
+    |
+|
+    |list
+    |
+|
+    |lang
+    |
+|
+    |esLang
+    |
+|
+    |plentyId
+    |
+|
+    |translationCounter
+    |
+|===
 

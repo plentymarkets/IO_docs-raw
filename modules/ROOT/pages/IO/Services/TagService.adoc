@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__tagservice]]
-==== TagService
+== TagService
 
+
+[[io__tagservice]]
+== TagService
+
+summary: 
 
 
 
@@ -18,82 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($tagRepository):void
-
-----
-
-    
-
-
-
-
-
-TagService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Tag.adoc#tag_contracts_tagrepositorycontract[`TagRepositoryContract`]
-a|`$tagRepository`
+
 |
+    |tagRepository
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getTagById($tagId):Plenty\Modules\Tag\Models\Tag
-
-----
-
-    
-
-
-====== *Return type:*        xref:Tag.adoc#tag_models_tag[`Tag`]
-
-
-Get a tag by its id
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$tagId`
-|The id of the tag
-|===
-
-
-[source%nowrap, php]
-----
-
-public getTagName($tagId, $lang = null):string
-
-----
-
-    
-
-
-
-
-
-Get the name of a tag for a specific language
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$tagId`
-|The id of the tag
-
-|link:http://php.net/string[string^]
-a|`$lang`
-|The language to get the name in.
-|===
-
 

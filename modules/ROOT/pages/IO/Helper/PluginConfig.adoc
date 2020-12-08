@@ -3,11 +3,22 @@
 :source-highlighter: prettify
 :sectids!:
 
+== PluginConfig
+
+
 [[io__pluginconfig]]
-==== PluginConfig
+== PluginConfig
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be removed in 6.0.0
+    
+====
 
 
 ===== Namespace
@@ -18,21 +29,15 @@
 
 
 
+.Properties
+|===
+|Type |Name |Description
 
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-
+|
+    |pluginName
+    |
+|
+    |configRepository
+    |
+|===
 

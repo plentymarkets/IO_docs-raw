@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__tabfilter]]
-==== TabFilter
+== TabFilter
 
+
+[[io__tabfilter]]
+== TabFilter
+
+summary: 
 
 
 
@@ -18,60 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-ShuffleFilter constructor.
-
-[source%nowrap, php]
-----
-
-public getFilters():array
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public filterTabs($string):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|
-a|`$string`
-|
-|===
 
+|link:http://php.net/array[array^]
+    |filters
+    |
+|===
 

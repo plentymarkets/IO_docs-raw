@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__iosendmail]]
-==== IOSendMail
+== IOSendMail
 
+
+[[io__iosendmail]]
+== IOSendMail
+
+summary: 
 
 
 
@@ -18,54 +22,18 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($sendMailService):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$sendMailService`
+    |sendMailService
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public handle($pluginSendMail):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Plugin.adoc#plugin_events_pluginsendmail[`PluginSendMail`]
-a|`$pluginSendMail`
+    |placeholderList
+    |
 |
+    |pluginNamespace
+    |
 |===
-
 

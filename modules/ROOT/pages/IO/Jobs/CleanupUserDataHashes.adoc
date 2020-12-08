@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__cleanupuserdatahashes]]
-==== CleanupUserDataHashes
+== CleanupUserDataHashes
 
+
+[[io__cleanupuserdatahashes]]
+== CleanupUserDataHashes
+
+summary: 
 
 
 
@@ -13,24 +17,6 @@
 ===== Namespace
 
 `IO\Jobs`
-
-
-
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public handle():void
-
-----
-
-    
-
-
 
 
 

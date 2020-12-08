@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__userdatahashtablemigration_0_0_2]]
-==== UserDataHashTableMigration_0_0_2
+== UserDataHashTableMigration_0_0_2
 
+
+[[io__userdatahashtablemigration_0_0_2]]
+== UserDataHashTableMigration_0_0_2
+
+summary: 
 
 
 
@@ -16,32 +20,5 @@
 
 
 
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public run($migrate):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$migrate`
-|
-|===
 
 

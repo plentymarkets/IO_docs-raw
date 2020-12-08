@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__numberformatfilter]]
-==== NumberFormatFilter
+== NumberFormatFilter
 
+
+[[io__numberformatfilter]]
+== NumberFormatFilter
+
+summary: 
 
 
 
@@ -18,45 +22,21 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($config):void
-
-----
-
-    
-
-
-
-
-
-NumberFormatFilter constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_plugin_configrepository[`ConfigRepository`]
-a|`$config`
+
 |
+    |config
+    |
+|
+    |numberFormatter
+    |
+|link:http://php.net/array[array^]
+    |filters
+    |
+|
+    |cache
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getFilters():array
-
-----
-
-    
-
-
-
-
-
-Return the available filter methods
 

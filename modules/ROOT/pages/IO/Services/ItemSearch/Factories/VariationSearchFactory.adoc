@@ -3,11 +3,22 @@
 :source-highlighter: prettify
 :sectids!:
 
+== VariationSearchFactory
+
+Concrete factory to build variation searches
 [[io__variationsearchfactory]]
-==== VariationSearchFactory
+== VariationSearchFactory
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be deleted in 6.0.0
+    
+====
 
 
 ===== Namespace
@@ -18,21 +29,12 @@
 
 
 
+.Properties
+|===
+|Type |Name |Description
 
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-
+|
+    |isAdminPreview
+    |
+|===
 

@@ -3,11 +3,22 @@
 :source-highlighter: prettify
 :sectids!:
 
+== LanguageMap
+
+
 [[io__languagemap]]
-==== LanguageMap
+== LanguageMap
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be removed in 6.0.0
+    
+====
 
 
 ===== Namespace
@@ -18,69 +29,15 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public static getLocale():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static getLanguageCode($countryCode = null):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$countryCode`
+    |locales
+    |
 |
+    |languages
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public static getCountryCode($language = null):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$language`
-|
-|===
-
 

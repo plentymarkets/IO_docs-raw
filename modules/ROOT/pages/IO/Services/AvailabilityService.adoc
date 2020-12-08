@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__availabilityservice]]
-==== AvailabilityService
+== AvailabilityService
 
+
+[[io__availabilityservice]]
+== AvailabilityService
+
+summary: 
 
 
 
@@ -18,69 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($availabilityRepository):void
-
-----
-
-    
-
-
-
-
-
-AvailabilityService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Item.adoc#item_contracts_availabilityrepositorycontract[`AvailabilityRepositoryContract`]
-a|`$availabilityRepository`
+
 |
+    |availabilityRepository
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getAvailabilityById($availabilityId):Plenty\Modules\Item\Availability\Models\Availability
-
-----
-
-    
-
-
-====== *Return type:*        xref:Item.adoc#item_models_availability[`Availability`]
-
-
-Get the item availability by ID
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$availabilityId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getAvailabilities():array
-
-----
-
-    
-
-
-
-
-
-
 

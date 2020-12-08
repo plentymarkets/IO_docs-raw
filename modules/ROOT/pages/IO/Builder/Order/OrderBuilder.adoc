@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__orderbuilder]]
-==== OrderBuilder
+== OrderBuilder
 
+
+[[io__orderbuilder]]
+== OrderBuilder
+
+summary: 
 
 
 
@@ -18,36 +22,15 @@
 
 
 
+.Properties
+|===
+|Type |Name |Description
 
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public prepare():void
-
-----
-
-    
-
-
-
-
-
-
+|
+    |app
+    |
+|
+    |basketService
+    |
+|===
 

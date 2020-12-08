@@ -3,11 +3,23 @@
 :source-highlighter: prettify
 :sectids!:
 
+== UserSession
+
+
 [[io__usersession]]
-==== UserSession
+== UserSession
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 4.3.0<br />
+Use AccountService instead
+    
+====
 
 
 ===== Namespace
@@ -18,60 +30,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($accountService):void
-
-----
-
-    
-
-
-
-
-
-UserSession constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Frontend.adoc#frontend_services_accountservice[`AccountService`]
-a|`$accountService`
+
 |
+    |accountService
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getCurrentContactId():int
-
-----
-
-    
-
-
-
-
-
-Get the current contact ID
-
-[source%nowrap, php]
-----
-
-public isContactLoggedIn():bool
-
-----
-
-    
-
-
-
-
-
-Check whether contact is logged in
 

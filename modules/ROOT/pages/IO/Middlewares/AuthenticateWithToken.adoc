@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__authenticatewithtoken]]
-==== AuthenticateWithToken
+== AuthenticateWithToken
 
+
+[[io__authenticatewithtoken]]
+== AuthenticateWithToken
+
+summary: 
 
 
 
@@ -18,58 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public before($request):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_http_request[`Request`]
-a|`$request`
-|
+
+|link:http://php.net/bool[bool^]
+    |includeRestRoutes
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public after($request, $response):Plenty\Plugin\Http\Response
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_http_response[`Response`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_http_request[`Request`]
-a|`$request`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_http_response[`Response`]
-a|`$response`
-|
-|===
-
 

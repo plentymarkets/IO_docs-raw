@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__apiresponse]]
-==== ApiResponse
+== ApiResponse
 
+
+[[io__apiresponse]]
+== ApiResponse
+
+summary: 
 
 
 
@@ -18,150 +22,27 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($dispatcher, $response, $notificationService):void
-
-----
-
-    
-
-
-
-
-
-ApiResponse constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
-a|`$dispatcher`
-|
 
-|        xref:Miscellaneous.adoc#miscellaneous_http_response[`Response`]
-a|`$response`
+|link:http://php.net/array[array^]
+    |eventData
+    |
 |
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_notificationservice[`NotificationService`]
-a|`$notificationService`
+    |dispatcher
+    |
+|link:http://php.net/mixed[mixed^]
+    |data
+    |
+|link:http://php.net/array[array^]
+    |headers
+    |
+|        xref:Miscellaneous.adoc#miscellaneous_null|_response[`Response`]
+    |response
+    |
 |
+    |notificationService
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public error($code, $message = null):IO\Api\ApiResponse
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$code`
-|
-
-|
-a|`$message`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public success($code, $message = null):IO\Api\ApiResponse
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$code`
-|
-
-|
-a|`$message`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public info($code, $message = null):IO\Api\ApiResponse
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$code`
-|
-
-|
-a|`$message`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public header($key, $value):IO\Api\ApiResponse
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
-
-|link:http://php.net/string[string^]
-a|`$value`
-|
-|===
-
 

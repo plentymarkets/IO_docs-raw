@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__ioafterbuildplugins]]
-==== IOAfterBuildPlugins
+== IOAfterBuildPlugins
 
+
+[[io__ioafterbuildplugins]]
+== IOAfterBuildPlugins
+
+summary: 
 
 
 
@@ -18,30 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public handle($afterBuildPlugins):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|
-a|`$afterBuildPlugins`
-|
-|===
 
+|
+    |pluginNamespace
+    |
+|===
 

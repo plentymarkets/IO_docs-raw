@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__recaptcha]]
-==== ReCaptcha
+== ReCaptcha
 
+
+[[io__recaptcha]]
+== ReCaptcha
+
+summary: 
 
 
 
@@ -16,32 +20,5 @@
 
 
 
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public static verify($token):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$token`
-|
-|===
 
 

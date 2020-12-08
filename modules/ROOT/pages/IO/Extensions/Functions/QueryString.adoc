@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__querystring]]
-==== QueryString
+== QueryString
 
+Registers a global twig function to get the query string of the current request and update or add multiple parameters.
+[[io__querystring]]
+== QueryString
+
+summary: 
 
 
 
@@ -18,75 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public construct():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getFunctions():array
-
-----
-
-    
-
-
-
-
-
-Return all available twig functions to be registered globally.
-
-[source%nowrap, php]
-----
-
-public getQueryString($params = []):string
-
-----
-
-    
-
-
-
-
-
-Get the current query string from the URL.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |link:http://php.net/array[array^]
-a|`$params`
-|An associative array of parameter keys and values to replace or add to the query string.
+    |functions
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-AbstractFunction constructor.
 

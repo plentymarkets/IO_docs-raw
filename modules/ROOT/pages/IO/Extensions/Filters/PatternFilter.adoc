@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__patternfilter]]
-==== PatternFilter
+== PatternFilter
 
+
+[[io__patternfilter]]
+== PatternFilter
+
+summary: 
 
 
 
@@ -18,79 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public getFilters():array
-
-----
-
-    
-
-
-
-
-
-Return the available filter methods
-
-[source%nowrap, php]
-----
-
-public getObjectValue():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public findPattern($input, $regex):array
-
-----
-
-    
-
-
-
-
-
-Find matches in input with given regex
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$input`
-|
 
-|link:http://php.net/string[string^]
-a|`$regex`
-|
+|link:http://php.net/array[array^]
+    |filters
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-AbstractFilter constructor.
 

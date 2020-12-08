@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__contactmapservice]]
-==== ContactMapService
+== ContactMapService
 
+
+[[io__contactmapservice]]
+== ContactMapService
+
+summary: 
 
 
 
@@ -18,45 +22,15 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($cachingRepository):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$cachingRepository`
+    |cachingRepository
+    |
 |
+    |pluginNamespace
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getMapCoordinates():void
-
-----
-
-    
-
-
-
-
-
-
 

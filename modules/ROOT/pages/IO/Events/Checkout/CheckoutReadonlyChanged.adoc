@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__checkoutreadonlychanged]]
-==== CheckoutReadonlyChanged
+== CheckoutReadonlyChanged
 
+
+[[io__checkoutreadonlychanged]]
+== CheckoutReadonlyChanged
+
+summary: 
 
 
 
@@ -18,45 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($isReadonly):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$isReadonly`
-|
+    |isReadonly
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public isReadOnlyCheckout():void
-
-----
-
-    
-
-
-
-
-
-
 

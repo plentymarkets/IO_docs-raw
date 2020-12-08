@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__basketitemfaker]]
-==== BasketItemFaker
+== BasketItemFaker
 
+
+[[io__basketitemfaker]]
+== BasketItemFaker
+
+summary: 
 
 
 
@@ -18,30 +22,36 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public fill($default):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|
-a|`$default`
-|
-|===
 
+|
+    |rawBasketItems
+    |
+|
+    |isList
+    |
+|
+    |range
+    |
+|
+    |index
+    |
+|
+    |list
+    |
+|
+    |lang
+    |
+|
+    |esLang
+    |
+|
+    |plentyId
+    |
+|
+    |translationCounter
+    |
+|===
 

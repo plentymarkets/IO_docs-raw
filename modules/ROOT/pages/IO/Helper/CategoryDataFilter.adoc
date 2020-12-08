@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__categorydatafilter]]
-==== CategoryDataFilter
+== CategoryDataFilter
 
+
+[[io__categorydatafilter]]
+== CategoryDataFilter
+
+summary: 
 
 
 
@@ -13,39 +17,6 @@
 ===== Namespace
 
 `IO\Helper`
-
-
-
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public applyResultFields():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getFilteredData():void
-
-----
-
-    
-
-
 
 
 

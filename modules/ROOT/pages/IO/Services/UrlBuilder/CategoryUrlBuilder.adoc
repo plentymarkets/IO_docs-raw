@@ -3,11 +3,22 @@
 :source-highlighter: prettify
 :sectids!:
 
+== CategoryUrlBuilder
+
+
 [[io__categoryurlbuilder]]
-==== CategoryUrlBuilder
+== CategoryUrlBuilder
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be removed in 6.0.0
+    
+====
 
 
 ===== Namespace
@@ -18,38 +29,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public buildUrl($categoryId, $lang = null, $webstoreId = null):IO\Services\UrlBuilder\UrlQuery
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_urlquery[`UrlQuery`]
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$categoryId`
-|
 
-|link:http://php.net/string[string^]
-a|`$lang`
 |
-
-|link:http://php.net/int[int^]
-a|`$webstoreId`
-|
+    |pluginNamespace
+    |
 |===
-
 

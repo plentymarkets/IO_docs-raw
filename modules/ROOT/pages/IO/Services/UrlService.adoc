@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__urlservice]]
-==== UrlService
+== UrlService
 
+
+[[io__urlservice]]
+== UrlService
+
+summary: 
 
 
 
@@ -18,191 +22,15 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($webstoreConfigurationRepository):void
-
-----
-
-    
-
-
-
-
-
-UrlService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
-a|`$webstoreConfigurationRepository`
+
 |
+    |webstoreConfigurationRepository
+    |
+|
+    |cache
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getCategoryURL($categoryId, $lang = null, $webstoreId = null):Plenty\Modules\Webshop\Helpers\UrlQuery
-
-----
-
-    
-
-
-====== *Return type:*        xref:Webshop.adoc#webshop_helpers_urlquery[`UrlQuery`]
-
-
-Get canonical url for a category
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$categoryId`
-|
-
-|link:http://php.net/string[string^]
-a|`$lang`
-|
-
-|link:http://php.net/int[int^]
-a|`$webstoreId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getVariationURL($itemId, $variationId, $lang = null):Plenty\Modules\Webshop\Helpers\UrlQuery
-
-----
-
-    
-
-
-====== *Return type:*        xref:Webshop.adoc#webshop_helpers_urlquery[`UrlQuery`]
-
-
-Get canonical url for a variation
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$itemId`
-|
-
-|link:http://php.net/int[int^]
-a|`$variationId`
-|
-
-|link:http://php.net/string[string^]
-a|`$lang`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getCanonicalURL($lang = null, $ignoreCanonical = false):string
-
-----
-
-    
-
-
-
-
-
-Get canonical url for current page
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$lang`
-|
-
-|link:http://php.net/bool[bool^]
-a|`$ignoreCanonical`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getCanonicalQueryString():string
-
-----
-
-    
-
-
-
-
-
-Get query string from uri, return an empty string if its an canonical link from category details
-
-[source%nowrap, php]
-----
-
-public isCanonical($lang = null):bool
-
-----
-
-    
-
-
-
-
-
-Check if the current URL is canonical
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$lang`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getLanguageURLs():array
-
-----
-
-    
-
-
-
-
-
-Get equivalent canonical urls for each active language
-
-[source%nowrap, php]
-----
-
-public getHomepageURL():string
-
-----
-
-    
-
-
-
-
-
-Get language specific homepage url
 

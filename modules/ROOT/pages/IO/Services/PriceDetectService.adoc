@@ -3,11 +3,22 @@
 :source-highlighter: prettify
 :sectids!:
 
+== PriceDetectService
+
+
 [[io__pricedetectservice]]
-==== PriceDetectService
+== PriceDetectService
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be removed in 6.0.0
+    
+====
 
 
 ===== Namespace
@@ -18,69 +29,51 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($detectSalesPriceService, $contactRepository, $app, $checkoutRepository, $basketService, $vatInitService, $vatService):void
-
-----
-
-    
-
-
-
-
-
-PriceDetectService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_variation_detectsalespriceservice[`DetectSalesPriceService`]
-a|`$detectSalesPriceService`
-|
 
-|        xref:Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
-a|`$contactRepository`
 |
-
-|        xref:Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
-a|`$app`
+    |classId
+    |
 |
-
-|        xref:Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
-a|`$checkoutRepository`
+    |singleAccess
+    |
 |
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_basketservice[`BasketService`]
-a|`$basketService`
+    |currency
+    |
 |
-
-|        xref:Accounting.adoc#accounting_contracts_vatinitcontract[`VatInitContract`]
-a|`$vatInitService`
+    |plentyId
+    |
 |
-
-|        xref:Frontend.adoc#frontend_services_vatservice[`VatService`]
-a|`$vatService`
+    |shippingCountryId
+    |
 |
+    |detectSalesPriceService
+    |
+|
+    |contactRepository
+    |
+|
+    |app
+    |
+|
+    |checkoutRepository
+    |
+|
+    |basketService
+    |
+|
+    |vatService
+    |
+|
+    |vatInitService
+    |
+|
+    |referrerId
+    |
+|
+    |cache
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getPriceIdsForCustomer():array
-
-----
-
-    
-
-
-
-
-
-
 

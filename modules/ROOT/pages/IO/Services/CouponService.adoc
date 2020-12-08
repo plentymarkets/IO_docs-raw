@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__couponservice]]
-==== CouponService
+== CouponService
 
+
+[[io__couponservice]]
+== CouponService
+
+summary: 
 
 
 
@@ -18,90 +22,21 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($couponCampaignRepository, $basketRepository, $variationCategoryRepository, $authHelper):void
-
-----
-
-    
-
-
-
-
-
-CouponService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Order.adoc#order_contracts_couponcampaignrepositorycontract[`CouponCampaignRepositoryContract`]
-a|`$couponCampaignRepository`
-|
 
-|        xref:Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
-a|`$basketRepository`
 |
-
-|        xref:Item.adoc#item_contracts_variationcategoryrepositorycontract[`VariationCategoryRepositoryContract`]
-a|`$variationCategoryRepository`
+    |couponCampaignRepository
+    |
 |
-
-|        xref:Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
-a|`$authHelper`
+    |basketRepository
+    |
 |
+    |variationCategoryRepository
+    |
+|
+    |authHelper
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public setCoupon($couponCode):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$couponCode`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public removeCoupon($code = null):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$code`
-|
-|===
-
 

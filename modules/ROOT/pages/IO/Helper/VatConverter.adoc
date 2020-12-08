@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__vatconverter]]
-==== VatConverter
+== VatConverter
 
+
+[[io__vatconverter]]
+== VatConverter
+
+summary: 
 
 
 
@@ -18,69 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($vatRepo):void
-
-----
-
-    
-
-
-
-
-
-VatConverter constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
-a|`$vatRepo`
+
 |
+    |vatRepo
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getDefaultVat():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public convertToGross($amount):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/float[float^]
-a|`$amount`
-|
-|===
-
 

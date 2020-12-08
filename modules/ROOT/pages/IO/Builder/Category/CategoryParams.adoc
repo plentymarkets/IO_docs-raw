@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__categoryparams]]
-==== CategoryParams
+== CategoryParams
 
+
+[[io__categoryparams]]
+== CategoryParams
+
+summary: 
 
 
 
@@ -17,4 +21,22 @@
 
 
 
+
+.Properties
+|===
+|Type |Name |Description
+
+|
+    |variationShowType
+    |
+|
+    |itemsPerPage
+    |
+|
+    |orderBy
+    |
+|
+    |orderByKey
+    |
+|===
 

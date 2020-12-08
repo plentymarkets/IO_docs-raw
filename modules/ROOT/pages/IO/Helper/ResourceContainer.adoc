@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__resourcecontainer]]
-==== ResourceContainer
+== ResourceContainer
 
+
+[[io__resourcecontainer]]
+== ResourceContainer
+
+summary: 
 
 
 
@@ -18,66 +22,15 @@
 
 
 
+.Properties
+|===
+|Type |Name |Description
 
-===== Methods
-
-[source%nowrap, php]
-----
-
-public getStyleTemplates():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public addStyleTemplate():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getScriptTemplates():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public addScriptTemplate():void
-
-----
-
-    
-
-
-
-
-
-
+|
+    |styleTemplates
+    |
+|
+    |scriptTemplates
+    |
+|===
 

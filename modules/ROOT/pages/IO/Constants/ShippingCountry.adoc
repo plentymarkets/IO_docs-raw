@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__shippingcountry]]
-==== ShippingCountry
+== ShippingCountry
 
+
+[[io__shippingcountry]]
+== ShippingCountry
+
+summary: 
 
 
 
@@ -16,32 +20,5 @@
 
 
 
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public static getAddressFormat($countryId):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$countryId`
-|
-|===
 
 

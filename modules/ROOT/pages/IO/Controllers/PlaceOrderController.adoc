@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__placeordercontroller]]
-==== PlaceOrderController
+== PlaceOrderController
 
+
+[[io__placeordercontroller]]
+== PlaceOrderController
+
+summary: 
 
 
 
@@ -18,320 +22,33 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public placeOrder($orderService, $notificationService, $sessionStorageRepository, $shopUrls):IO\Controllers\Symfony\Component\HttpFoundation\Response
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_httpfoundation_response[`Response`]
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_orderservice[`OrderService`]
-a|`$orderService`
+
 |
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_notificationservice[`NotificationService`]
-a|`$notificationService`
+    |app
+    |
 |
-
-|        xref:Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-a|`$sessionStorageRepository`
+    |event
+    |
 |
-
-|        xref:Miscellaneous.adoc#miscellaneous_constants_shopurls[`ShopUrls`]
-a|`$shopUrls`
+    |categoryRepo
+    |
 |
-|===
-
-
-[source%nowrap, php]
-----
-
-public executePayment():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public __construct($app, $twig, $event, $categoryRepo, $categoryMap, $categoryService):void
-
-----
-
-    
-
-
-
-
-
-LayoutController constructor.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
-a|`$app`
+    |categoryMap
+    |
 |
-
-|        xref:Miscellaneous.adoc#miscellaneous_templates_twig[`Twig`]
-a|`$twig`
+    |categoryService
+    |Used by concrete controllers to set the current category
 |
-
-|        xref:Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
-a|`$event`
-|
-
-|        xref:Category.adoc#category_contracts_categoryrepositorycontract[`CategoryRepositoryContract`]
-a|`$categoryRepo`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_helper_categorymap[`CategoryMap`]
-a|`$categoryMap`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_categoryservice[`CategoryService`]
-a|`$categoryService`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public middleware($middleware, $options = []):Illuminate\Routing\Illuminate\Routing\ControllerMiddlewareOptions
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_routing_controllermiddlewareoptions[`ControllerMiddlewareOptions`]
-
-
-Register middleware on the controller.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$middleware`
-|
-
+    |urlService
+    |
 |link:http://php.net/array[array^]
-a|`$options`
+    |middleware
+    |The middleware registered on the controller.
 |
+    |pluginNamespace
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getMiddleware():array
-
-----
-
-    
-
-
-
-
-
-Get the middleware assigned to the controller.
-
-[source%nowrap, php]
-----
-
-public callAction($method, $parameters):Illuminate\Routing\Symfony\Component\HttpFoundation\Response
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_httpfoundation_response[`Response`]
-
-
-Execute an action on the controller.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$method`
-|
-
-|link:http://php.net/array[array^]
-a|`$parameters`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public __call($method, $parameters):void
-
-----
-
-    
-
-
-
-
-
-Handle calls to missing methods on the controller.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$method`
-|
-
-|link:http://php.net/array[array^]
-a|`$parameters`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public authorize($ability, $arguments = []):Plenty\Http\Controllers\Illuminate\Auth\Access\Response
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_access_response[`Response`]
-
-
-Authorize a given action for the current user.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$ability`
-|
-
-|
-a|`$arguments`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public authorizeForUser($user, $ability, $arguments = []):Plenty\Http\Controllers\Illuminate\Auth\Access\Response
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_access_response[`Response`]
-
-
-Authorize a given action for a user.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$user`
-|
-
-|
-a|`$ability`
-|
-
-|
-a|`$arguments`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public authorizeResource($model, $parameter = null, $options = [], $request = null):void
-
-----
-
-    
-
-
-
-
-
-Authorize a resource action based on the incoming request.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$model`
-|
-
-|link:http://php.net/string[string^]
-a|`$parameter`
-|
-
-|link:http://php.net/array[array^]
-a|`$options`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_http_request[`Request`]
-a|`$request`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public dispatchNow($job):void
-
-----
-
-    
-
-
-
-
-
-Dispatch a job to its appropriate handler in the current process.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$job`
-|
-|===
-
 

@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__contentcachevariationlinkextension]]
-==== ContentCacheVariationLinkExtension
+== ContentCacheVariationLinkExtension
 
+
+[[io__contentcachevariationlinkextension]]
+== ContentCacheVariationLinkExtension
+
+summary: 
 
 
 
@@ -13,48 +17,6 @@
 ===== Namespace
 
 `IO\Services\ItemSearch\Extensions`
-
-
-
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public getSearch($parentSearchBuilder):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$parentSearchBuilder`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public transformResult():void
-
-----
-
-    
-
-
 
 
 

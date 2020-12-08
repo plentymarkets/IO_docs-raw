@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__reducedataextension]]
-==== ReduceDataExtension
+== ReduceDataExtension
 
+Reduce result objects by filtering unnecessary entries
+[[io__reducedataextension]]
+== ReduceDataExtension
+
+summary: 
 
 
 
@@ -18,69 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($removeProperties = false):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$removeProperties`
-|
+    |removeProperties
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getSearch($parentSearchBuilder):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$parentSearchBuilder`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public transformResult():void
-
-----
-
-    
-
-
-
-
-
-
 

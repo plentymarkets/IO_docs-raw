@@ -3,11 +3,23 @@
 :source-highlighter: prettify
 :sectids!:
 
+== ShopUrls
+
+Helper to get configured URLs to be used in the webshop.
+Generated URLs consider configured categories for several webshop pages and settings for trailing slashes or item URL patterns.
 [[io__shopurls]]
-==== ShopUrls
+== ShopUrls
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+use xxjxjjx
+    
+====
 
 
 ===== Namespace
@@ -18,269 +30,93 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($dispatcher):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|
-a|`$dispatcher`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public returns($orderId, $orderAccessKey = null):string
-
-----
-
-    
-
-
-
-
-
-Get the URL of the return form for a specific order.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$orderId`
-|The id of the order to return items for.
-
-|link:http://php.net/string[string^]
-a|`$orderAccessKey`
-|Access key to authorize accessing the order. Required for guest accounts.
-|===
-
-
-[source%nowrap, php]
-----
-
-public orderPropertyFile($path):string
-
-----
-
-    
-
-
-
-
-
-Get the URL of a file stored in an order property.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$path`
-|The path to the file read from the value of the order property.
-|===
-
-
-[source%nowrap, php]
-----
-
-public orderDocumentPreview($documentId, $orderId, $orderAccessKey = null):string
-
-----
-
-    
-
-
-
-
-
-Get a preview URL for an order document.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$documentId`
-|Id of the order document to get order.
 
 |
-a|`$orderId`
-|Id of the order the document belongs to.
-
+    |urlMap
+    |
+|link:http://php.net/bool[bool^]
+    |appendTrailingSlash
+    |
 |link:http://php.net/string[string^]
-a|`$orderAccessKey`
-|Access key to authorize accessing the order. Required for guest accounts.
-|===
-
-
-[source%nowrap, php]
-----
-
-public tracking($orderId):string
-
-----
-
-    
-
-
-
-
-
-Get tracking URL for a specific order id.
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |trailingSlashSuffix
+    |
+|link:http://php.net/bool[bool^]
+    |includeLanguage
+    |
+|link:http://php.net/string[string^]
+    |basket
+    |
+|link:http://php.net/string[string^]
+    |cancellationForm
+    |
+|link:http://php.net/string[string^]
+    |cancellationRights
+    |
+|link:http://php.net/string[string^]
+    |checkout
+    |
+|link:http://php.net/string[string^]
+    |confirmation
+    |
+|link:http://php.net/string[string^]
+    |contact
+    |
+|link:http://php.net/string[string^]
+    |gtc
+    |
+|link:http://php.net/string[string^]
+    |home
+    |
+|link:http://php.net/string[string^]
+    |legalDisclosure
+    |
+|link:http://php.net/string[string^]
+    |login
+    |
+|link:http://php.net/string[string^]
+    |myAccount
+    |
+|link:http://php.net/string[string^]
+    |passwordReset
+    |
+|link:http://php.net/string[string^]
+    |privacyPolicy
+    |
+|link:http://php.net/string[string^]
+    |registration
+    |
+|link:http://php.net/string[string^]
+    |search
+    |
+|link:http://php.net/string[string^]
+    |termsConditions
+    |
+|link:http://php.net/string[string^]
+    |wishList
+    |
+|link:http://php.net/string[string^]
+    |returns
+    |
+|link:http://php.net/string[string^]
+    |returnConfirmation
+    |
+|link:http://php.net/string[string^]
+    |changeMail
+    |
+|link:http://php.net/string[string^]
+    |newsletterOptOut
+    |
+|link:http://php.net/string[string^]
+    |orderDocument
+    |
 |
-a|`$orderId`
-|Id of the order to get the tracking URL for.
-|===
-
-
-[source%nowrap, php]
-----
-
-public orderConfirmation($orderId):string
-
-----
-
-    
-
-
-
-
-
-Get the URL of the order confirmation page for a specific order id.
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |templateType
+    |
 |
-a|`$orderId`
-|Id of the order to get the confirmation URL for.
+    |cache
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public equals($urlA, $urlB):bool
-
-----
-
-    
-
-
-
-
-
-Check if two routes are equal but ignore trailing slashes.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$urlA`
-|First URL to compare.
-
-|link:http://php.net/string[string^]
-a|`$urlB`
-|Second URL to compare.
-|===
-
-
-[source%nowrap, php]
-----
-
-public getTemplateType():string
-
-----
-
-    
-
-
-
-
-
-Get type of the currently displayed page.
-
-[source%nowrap, php]
-----
-
-public setTemplateType($type):void
-
-----
-
-    
-
-
-
-
-
-Set the template type from a custom controller. If not defined the template type
-will fallback to {@see RouteConfig::CATEGORY} on custom routes.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$type`
-|The type of the template.
-|===
-
-
-[source%nowrap, php]
-----
-
-public is($routeKey):bool
-
-----
-
-    
-
-
-
-
-
-Check if current page is of a given type.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$routeKey`
-|Type to check current page against.
-|===
-
-
-[source%nowrap, php]
-----
-
-public isLegalPage():void
-
-----
-
-    
-
-
-
-
-
-Check if current page is in the list of legal pages.
 

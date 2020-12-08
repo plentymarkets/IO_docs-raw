@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__basketresultfactory]]
-==== BasketResultFactory
+== BasketResultFactory
 
+
+[[io__basketresultfactory]]
+== BasketResultFactory
+
+summary: 
 
 
 
@@ -18,36 +22,15 @@
 
 
 
+.Properties
+|===
+|Type |Name |Description
 
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public fillBasketResult():array
-
-----
-
-    
-
-
-
-
-
-Faker function for the basket view
+|
+    |basketFaker
+    |
+|
+    |basketItemFaker
+    |
+|===
 

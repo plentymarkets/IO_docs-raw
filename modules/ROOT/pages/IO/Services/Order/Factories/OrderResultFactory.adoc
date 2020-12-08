@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__orderresultfactory]]
-==== OrderResultFactory
+== OrderResultFactory
 
+
+[[io__orderresultfactory]]
+== OrderResultFactory
+
+summary: 
 
 
 
@@ -13,24 +17,6 @@
 ===== Namespace
 
 `IO\Services\Order\Factories`
-
-
-
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public fillOrderResult():void
-
-----
-
-    
-
-
 
 
 

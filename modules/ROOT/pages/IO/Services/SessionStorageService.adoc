@@ -3,11 +3,22 @@
 :source-highlighter: prettify
 :sectids!:
 
+== SessionStorageService
+
+
 [[io__sessionstorageservice]]
-==== SessionStorageService
+== SessionStorageService
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be removed in 6.0.0
+    
+====
 
 
 ===== Namespace
@@ -18,30 +29,15 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($sessionStorage):void
-
-----
-
-    
-
-
-
-
-
-SessionStorageService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
-a|`$sessionStorage`
-|
-|===
 
+|
+    |language
+    |
+|
+    |sessionStorage
+    |
+|===
 

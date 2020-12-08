@@ -3,34 +3,27 @@
 :source-highlighter: prettify
 :sectids!:
 
+== VariationSearchResultFactory
+
+
 [[io__variationsearchresultfactory]]
-==== VariationSearchResultFactory
+== VariationSearchResultFactory
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be deleted in 6.0.0
+    
+====
 
 
 ===== Namespace
 
 `IO\Services\ItemSearch\Factories`
-
-
-
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public fillSearchResults():void
-
-----
-
-    
-
-
 
 
 

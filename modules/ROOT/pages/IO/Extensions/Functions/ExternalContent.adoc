@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__externalcontent]]
-==== ExternalContent
+== ExternalContent
 
+
+[[io__externalcontent]]
+== ExternalContent
+
+summary: 
 
 
 
@@ -18,60 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public getFunctions():array
-
-----
-
-    
-
-
-
-
-
-Return the available filter methods
-
-[source%nowrap, php]
-----
-
-public getExternalContent($url):array
-
-----
-
-    
-
-
-
-
-
-Return the content retrieved from external url
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$url`
-|
+
+|link:http://php.net/array[array^]
+    |functions
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-AbstractFunction constructor.
 

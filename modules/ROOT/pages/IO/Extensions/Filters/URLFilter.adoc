@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__urlfilter]]
-==== URLFilter
+== URLFilter
 
+
+[[io__urlfilter]]
+== URLFilter
+
+summary: 
 
 
 
@@ -18,45 +22,15 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($itemService):void
-
-----
-
-    
-
-
-
-
-
-URLFilter constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_itemservice[`ItemService`]
-a|`$itemService`
+
 |
+    |itemService
+    |
+|link:http://php.net/array[array^]
+    |filters
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getFilters():array
-
-----
-
-    
-
-
-
-
-
-Return the available filter methods
 

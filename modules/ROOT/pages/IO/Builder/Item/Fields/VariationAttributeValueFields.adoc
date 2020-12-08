@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__variationattributevaluefields]]
-==== VariationAttributeValueFields
+== VariationAttributeValueFields
 
+
+[[io__variationattributevaluefields]]
+== VariationAttributeValueFields
+
+summary: 
 
 
 

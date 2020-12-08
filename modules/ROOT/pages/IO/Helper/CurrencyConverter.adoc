@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__currencyconverter]]
-==== CurrencyConverter
+== CurrencyConverter
 
+
+[[io__currencyconverter]]
+== CurrencyConverter
+
+summary: 
 
 
 
@@ -18,99 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($currencyExchangeRepo):void
-
-----
-
-    
-
-
-
-
-
-CurrencyConverter constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
-a|`$currencyExchangeRepo`
+
 |
+    |currencyExchcangeRepo
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public isCurrentCurrencyDefault():bool
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getDefaultCurrency():string
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getCurrentCurrency():string
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public convertToDefaultCurrency($amount):float
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/float[float^]
-a|`$amount`
-|
-|===
-
 

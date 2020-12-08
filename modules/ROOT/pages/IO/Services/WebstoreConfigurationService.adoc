@@ -3,11 +3,22 @@
 :source-highlighter: prettify
 :sectids!:
 
+== WebstoreConfigurationService
+
+
 [[io__webstoreconfigurationservice]]
-==== WebstoreConfigurationService
+== WebstoreConfigurationService
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be removed in 6.0.0
+    
+====
 
 
 ===== Namespace
@@ -17,112 +28,4 @@
 
 
 
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public getPlentyId():void
-
-----
-
-    
-
-
-
-
-
-Get the plenty-id
-
-[source%nowrap, php]
-----
-
-public getWebstoreConfig():void
-
-----
-
-    
-
-
-
-
-
-Get the webstore configuraion
-
-[source%nowrap, php]
-----
-
-public getActiveLanguageList():void
-
-----
-
-    
-
-
-
-
-
-Get the activate languages of the webstore
-
-[source%nowrap, php]
-----
-
-public getDefaultLanguage():void
-
-----
-
-    
-
-
-
-
-
-Get the default language of the webstore
-
-[source%nowrap, php]
-----
-
-public getDefaultParcelServiceId():void
-
-----
-
-    
-
-
-
-
-
-Get the default parcel-service-Id of the webstore
-
-[source%nowrap, php]
-----
-
-public getDefaultParcelServicePresetId():void
-
-----
-
-    
-
-
-
-
-
-Get the default parcel-service-preset-Id of the webstore
-
-[source%nowrap, php]
-----
-
-public getDefaultShippingCountryId():void
-
-----
-
-    
-
-
-
-
-
-Get the default shipping-country-Id of the webstore
 

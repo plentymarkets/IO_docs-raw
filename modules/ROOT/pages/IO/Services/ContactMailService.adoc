@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__contactmailservice]]
-==== ContactMailService
+== ContactMailService
 
+
+[[io__contactmailservice]]
+== ContactMailService
+
+summary: 
 
 
 
@@ -18,21 +22,12 @@
 
 
 
+.Properties
+|===
+|Type |Name |Description
 
-===== Methods
-
-[source%nowrap, php]
-----
-
-public sendMail():void
-
-----
-
-    
-
-
-
-
-
-
+|
+    |pluginNamespace
+    |
+|===
 

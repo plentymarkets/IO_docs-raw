@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__documentservice]]
-==== DocumentService
+== DocumentService
 
+
+[[io__documentservice]]
+== DocumentService
+
+summary: 
 
 
 
@@ -18,30 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($documentRepo):void
-
-----
-
-    
-
-
-
-
-
-DocumentService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Document.adoc#document_contracts_documentrepositorycontract[`DocumentRepositoryContract`]
-a|`$documentRepo`
-|
-|===
 
+|
+    |documentRepo
+    |
+|===
 

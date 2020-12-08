@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__additionalresources]]
-==== AdditionalResources
+== AdditionalResources
 
+
+[[io__additionalresources]]
+== AdditionalResources
+
+summary: 
 
 
 
@@ -18,66 +22,15 @@
 
 
 
+.Properties
+|===
+|Type |Name |Description
 
-===== Methods
-
-[source%nowrap, php]
-----
-
-public getFunctions():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getAdditionalScripts():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getAdditionalStyles():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-AbstractFunction constructor.
+|
+    |resourceContainer
+    |
+|link:http://php.net/array[array^]
+    |functions
+    |
+|===
 

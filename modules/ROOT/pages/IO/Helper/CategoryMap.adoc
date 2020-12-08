@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__categorymap]]
-==== CategoryMap
+== CategoryMap
 
+
+[[io__categorymap]]
+== CategoryMap
+
+summary: 
 
 
 
@@ -18,78 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($event):void
-
-----
-
-    
-
-
-
-
-
-CategoryMap constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
-a|`$event`
-|
-|===
 
-
-[source%nowrap, php]
-----
-
-public setCategoryMap($categoryMap):void
-
-----
-
-    
-
-
-
-
-
-Set the category map
-
-.*Parameters*
-|===
-|Type |Name |Description
 |link:http://php.net/array[array^]
-a|`$categoryMap`
-|
+    |categoryMap
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getID($key):int
-
-----
-
-    
-
-
-
-
-
-Get the category ID by key
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
-|===
-
 

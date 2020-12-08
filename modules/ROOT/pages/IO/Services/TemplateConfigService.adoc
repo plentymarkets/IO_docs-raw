@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__templateconfigservice]]
-==== TemplateConfigService
+== TemplateConfigService
 
+
+[[io__templateconfigservice]]
+== TemplateConfigService
+
+summary: 
 
 
 
@@ -18,30 +22,15 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($configRepository):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|
-a|`$configRepository`
-|
-|===
 
+|
+    |configRepository
+    |
+|
+    |templatePluginName
+    |
+|===
 

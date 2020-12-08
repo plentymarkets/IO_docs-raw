@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__contactbankservice]]
-==== ContactBankService
+== ContactBankService
 
+
+[[io__contactbankservice]]
+== ContactBankService
+
+summary: 
 
 
 
@@ -18,132 +22,12 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($contactPaymentRepository):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |
-a|`$contactPaymentRepository`
-|
+    |contactPaymentRepository
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getBanksOfContact():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public createContactBank($data):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$data`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public updateContactBank():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public deleteContactBank($contactBankId):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$contactBankId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public findContactBankById($contactBankId):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$contactBankId`
-|
-|===
-
 

@@ -3,11 +3,22 @@
 :source-highlighter: prettify
 :sectids!:
 
+== MultiSearchFactory
+
+Factory to build an elastic search multisearch request by collecting multiple search factory instances.
 [[io__multisearchfactory]]
-==== MultiSearchFactory
+== MultiSearchFactory
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be deleted in 6.0.0
+    
+====
 
 
 ===== Namespace
@@ -18,79 +29,18 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public getSearches():array
-
-----
-
-    
-
-
-
-
-
-Get all registered searches
-
-[source%nowrap, php]
-----
-
-public getExtensions():array
-
-----
-
-    
-
-
-
-
-
-Get all registered extensions
-
-[source%nowrap, php]
-----
-
-public addSearch($resultName, $searchBuilder):IO\Services\ItemSearch\Factories
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
-
-
-Add a search factory instance to be included in current mutlisearch request.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$resultName`
-|An unique name for the search. Results of this search will be accessible by this key.
 
-|        xref:Miscellaneous.adoc#miscellaneous_factories_basesearchfactory[`BaseSearchFactory`]
-a|`$searchBuilder`
-|A search factory
+|link:http://php.net/array[array^]
+    |searches
+    |
+|link:http://php.net/array[array^]
+    |extensions
+    |
+|
+    |pluginNamespace
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getResults():array
-
-----
-
-    
-
-
-
-
-
-Execute the multisearch and collect results.
 

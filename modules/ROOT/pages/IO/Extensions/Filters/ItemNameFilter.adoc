@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__itemnamefilter]]
-==== ItemNameFilter
+== ItemNameFilter
 
+
+[[io__itemnamefilter]]
+== ItemNameFilter
+
+summary: 
 
 
 
@@ -18,68 +22,18 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct():void
-
-----
-
-    
-
-
-
-
-
-ItemNameFilter constructor.
-
-[source%nowrap, php]
-----
-
-public getFilters():array
-
-----
-
-    
-
-
-
-
-
-Return the available filter methods
-
-[source%nowrap, php]
-----
-
-public itemName($itemData, $configName = null, $displayName = null):string
-
-----
-
-    
-
-
-
-
-
-Build the item name from the configuration
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_extensions_filters[`Filters`]
-a|`$itemData`
-|
 
-|link:http://php.net/string[string^]
-a|`$configName`
 |
-
-|link:http://php.net/string[string^]
-a|`$displayName`
+    |defaultConfigItemName
+    |
 |
+    |defaultConfigItemDisplayName
+    |
+|link:http://php.net/array[array^]
+    |filters
+    |
 |===
-
 

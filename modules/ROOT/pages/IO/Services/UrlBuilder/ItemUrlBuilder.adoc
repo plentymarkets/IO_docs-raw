@@ -3,11 +3,22 @@
 :source-highlighter: prettify
 :sectids!:
 
+== ItemUrlBuilder
+
+
 [[io__itemurlbuilder]]
-==== ItemUrlBuilder
+== ItemUrlBuilder
+
+summary: 
 
 
-
+[WARNING]
+    .Deprecated!     
+====
+    
+since 5.0.0 will be removed in 6.0.0
+    
+====
 
 
 ===== Namespace
@@ -16,36 +27,5 @@
 
 
 
-
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public buildUrl($itemId, $lang = null):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$itemId`
-|
-
-|link:http://php.net/string[string^]
-a|`$lang`
-|
-|===
 
 

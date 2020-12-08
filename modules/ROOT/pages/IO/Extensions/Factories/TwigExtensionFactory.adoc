@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__twigextensionfactory]]
-==== TwigExtensionFactory
+== TwigExtensionFactory
 
+
+[[io__twigextensionfactory]]
+== TwigExtensionFactory
+
+summary: 
 
 
 
@@ -18,92 +22,15 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public registerFunction($functionClass, $functionsList):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$functionClass`
-|
 
 |link:http://php.net/array[array^]
-a|`$functionsList`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public registerFilter($filterClass, $filtersList):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$filterClass`
-|
-
+    |functionsMap
+    |
 |link:http://php.net/array[array^]
-a|`$filtersList`
-|
+    |filtersMap
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getFunctionsMap():array
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getFiltersMap():array
-
-----
-
-    
-
-
-
-
-
-
 

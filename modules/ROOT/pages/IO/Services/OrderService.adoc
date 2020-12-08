@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__orderservice]]
-==== OrderService
+== OrderService
 
+
+[[io__orderservice]]
+== OrderService
+
+summary: 
 
 
 
@@ -18,81 +22,42 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($orderRepository, $basketService, $sessionStorageRepository, $frontendPaymentMethodRepository, $addressRepository, $urlService, $checkoutService, $customerService, $contactRepository, $giftCardRepository):void
-
-----
-
-    
-
-
-
-
-
-OrderService constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
-|        xref:Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
-a|`$orderRepository`
-|
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_basketservice[`BasketService`]
-a|`$basketService`
 |
-
-|        xref:Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-a|`$sessionStorageRepository`
+    |orderRepository
+    |
 |
-
-|        xref:Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
-a|`$frontendPaymentMethodRepository`
+    |basketService
+    |
 |
-
-|        xref:Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
-a|`$addressRepository`
+    |sessionStorageRepository
+    |
 |
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_urlservice[`UrlService`]
-a|`$urlService`
+    |frontendPaymentMethodRepository
+    |
 |
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_checkoutservice[`CheckoutService`]
-a|`$checkoutService`
+    |addressRepository
+    |
 |
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_customerservice[`CustomerService`]
-a|`$customerService`
+    |urlService
+    |
 |
-
-|        xref:Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
-a|`$contactRepository`
+    |checkoutService
+    |
 |
-
-|        xref:Webshop.adoc#webshop_contracts_giftcardrepositorycontract[`GiftCardRepositoryContract`]
-a|`$giftCardRepository`
+    |customerService
+    |
 |
+    |contactRepository
+    |
+|
+    |giftCardRepository
+    |
+|
+    |pluginNamespace
+    |
 |===
-
-
-[source%nowrap, php]
-----
-
-public placeOrder():IO\Models\LocalizedOrder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_localizedorder[`LocalizedOrder`]
-
-
-Place an order
 

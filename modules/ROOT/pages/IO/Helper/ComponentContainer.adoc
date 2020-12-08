@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__componentcontainer]]
-==== ComponentContainer
+== ComponentContainer
 
+Class ComponentContainer
+[[io__componentcontainer]]
+== ComponentContainer
+
+summary: 
 
 
 
@@ -18,84 +22,15 @@
 
 
 
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($originComponentTemplate):void
-
-----
-
-    
-
-
-
-
-
-ComponentContainer constructor.
-
-.*Parameters*
+.Properties
 |===
 |Type |Name |Description
+
 |link:http://php.net/string[string^]
-a|`$originComponentTemplate`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getOriginComponentTemplate():string
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getNewComponentTemplate():string
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public setNewComponentTemplate($newComponentTemplate):IO\Helper
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_io_helper[`Helper`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
+    |originComponentTemplate
+    |
 |link:http://php.net/string[string^]
-a|`$newComponentTemplate`
-|
+    |newComponentTemplate
+    |
 |===
-
 

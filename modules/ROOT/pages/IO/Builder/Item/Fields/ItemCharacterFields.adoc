@@ -3,9 +3,13 @@
 :source-highlighter: prettify
 :sectids!:
 
-[[io__itemcharacterfields]]
-==== ItemCharacterFields
+== ItemCharacterFields
 
+
+[[io__itemcharacterfields]]
+== ItemCharacterFields
+
+summary: 
 
 
 
