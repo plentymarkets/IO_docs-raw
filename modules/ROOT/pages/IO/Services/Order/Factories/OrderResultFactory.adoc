@@ -1,0 +1,38 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__orderresultfactory]]
+==== OrderResultFactory
+
+
+
+
+
+===== Namespace
+
+`IO\Services\Order\Factories`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public fillOrderResult():void
+
+----
+
+    
+
+
+
+
+
+
+

@@ -1,0 +1,286 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__shopurls]]
+==== ShopUrls
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Constants`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($dispatcher):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$dispatcher`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public returns($orderId, $orderAccessKey = null):string
+
+----
+
+    
+
+
+
+
+
+Get the URL of the return form for a specific order.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$orderId`
+|The id of the order to return items for.
+
+|link:http://php.net/string[string^]
+a|`$orderAccessKey`
+|Access key to authorize accessing the order. Required for guest accounts.
+|===
+
+
+[source%nowrap, php]
+----
+
+public orderPropertyFile($path):string
+
+----
+
+    
+
+
+
+
+
+Get the URL of a file stored in an order property.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$path`
+|The path to the file read from the value of the order property.
+|===
+
+
+[source%nowrap, php]
+----
+
+public orderDocumentPreview($documentId, $orderId, $orderAccessKey = null):string
+
+----
+
+    
+
+
+
+
+
+Get a preview URL for an order document.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$documentId`
+|Id of the order document to get order.
+
+|
+a|`$orderId`
+|Id of the order the document belongs to.
+
+|link:http://php.net/string[string^]
+a|`$orderAccessKey`
+|Access key to authorize accessing the order. Required for guest accounts.
+|===
+
+
+[source%nowrap, php]
+----
+
+public tracking($orderId):string
+
+----
+
+    
+
+
+
+
+
+Get tracking URL for a specific order id.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$orderId`
+|Id of the order to get the tracking URL for.
+|===
+
+
+[source%nowrap, php]
+----
+
+public orderConfirmation($orderId):string
+
+----
+
+    
+
+
+
+
+
+Get the URL of the order confirmation page for a specific order id.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$orderId`
+|Id of the order to get the confirmation URL for.
+|===
+
+
+[source%nowrap, php]
+----
+
+public equals($urlA, $urlB):bool
+
+----
+
+    
+
+
+
+
+
+Check if two routes are equal but ignore trailing slashes.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$urlA`
+|First URL to compare.
+
+|link:http://php.net/string[string^]
+a|`$urlB`
+|Second URL to compare.
+|===
+
+
+[source%nowrap, php]
+----
+
+public getTemplateType():string
+
+----
+
+    
+
+
+
+
+
+Get type of the currently displayed page.
+
+[source%nowrap, php]
+----
+
+public setTemplateType($type):void
+
+----
+
+    
+
+
+
+
+
+Set the template type from a custom controller. If not defined the template type
+will fallback to {@see RouteConfig::CATEGORY} on custom routes.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$type`
+|The type of the template.
+|===
+
+
+[source%nowrap, php]
+----
+
+public is($routeKey):bool
+
+----
+
+    
+
+
+
+
+
+Check if current page is of a given type.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$routeKey`
+|Type to check current page against.
+|===
+
+
+[source%nowrap, php]
+----
+
+public isLegalPage():void
+
+----
+
+    
+
+
+
+
+
+Check if current page is in the list of legal pages.
+

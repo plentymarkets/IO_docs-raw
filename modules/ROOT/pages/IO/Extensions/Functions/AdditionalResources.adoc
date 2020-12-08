@@ -1,0 +1,83 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__additionalresources]]
+==== AdditionalResources
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Functions`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getFunctions():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getAdditionalScripts():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getAdditionalStyles():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+AbstractFunction constructor.
+

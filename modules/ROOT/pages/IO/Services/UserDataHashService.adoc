@@ -1,0 +1,251 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__userdatahashservice]]
+==== UserDataHashService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($dataBase, $templateConfigService):void
+
+----
+
+    
+
+
+
+
+
+UserDataHashService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Plugin.adoc#plugin_contracts_database[`DataBase`]
+a|`$dataBase`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_templateconfigservice[`TemplateConfigService`]
+a|`$templateConfigService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public find($hash, $contactId = null, $plentyId = null):IO\DBModels\UserDataHash
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_dbmodels_userdatahash[`UserDataHash`]
+
+
+Get entry by hash if exists
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$hash`
+|The hash to search an entry for
+
+|link:http://php.net/int[int^]
+a|`$contactId`
+|Optionally restrict results to a contact id. Otherwise use logged in contact
+
+|link:http://php.net/int[int^]
+a|`$plentyId`
+|Use a specific plentyId. Otherwise use id of current client.
+|===
+
+
+[source%nowrap, php]
+----
+
+public findHash($type, $contactId = null, $plentyId = null):string
+
+----
+
+    
+
+
+
+
+
+Get the hash of a specific type if exists and is not expired.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$type`
+|The type to get the hash for
+
+|link:http://php.net/int[int^]
+a|`$contactId`
+|Optionally restrict results to a contact id. Otherwise use logged in contact
+
+|link:http://php.net/int[int^]
+a|`$plentyId`
+|Use a specific plentyId. Otherwise use id of current client.
+|===
+
+
+[source%nowrap, php]
+----
+
+public getData($hash, $contactId = null, $plentyId = null):void
+
+----
+
+    
+
+
+
+
+
+Get the decoded data assigned to a hash
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$hash`
+|The hash to search an entry for
+
+|link:http://php.net/int[int^]
+a|`$contactId`
+|Optionally restrict results to a contact id. Otherwise use logged in contact
+
+|link:http://php.net/int[int^]
+a|`$plentyId`
+|Use a specific plentyId. Otherwise use id of current client.
+|===
+
+
+[source%nowrap, php]
+----
+
+public create($data, $type, $ttl = null, $contactId = null, $plentyId = null):IO\DBModels\UserDataHash
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_dbmodels_userdatahash[`UserDataHash`]
+
+
+Create a new entry and assign data to the hash for later usage.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$data`
+|The data to assign to the generated hash entry
+
+|link:http://php.net/string[string^]
+a|`$type`
+|The type of the entry
+
+|link:http://php.net/int[int^]
+a|`$ttl`
+|Lifetime of the hash entry in hours. Will get the value from config if not defined.
+
+|link:http://php.net/int[int^]
+a|`$contactId`
+|Optionally restrict results to a contact id. Otherwise use logged in contact
+
+|link:http://php.net/int[int^]
+a|`$plentyId`
+|Use a specific plentyId. Otherwise use id of current client.
+|===
+
+
+[source%nowrap, php]
+----
+
+public delete($hash, $contactId = null, $plentyId = null):bool
+
+----
+
+    
+
+
+
+
+
+Remove a hash entry if exists.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$hash`
+|The hash to search an entry for
+
+|link:http://php.net/int[int^]
+a|`$contactId`
+|Optionally restrict results to a contact id. Otherwise use logged in contact
+
+|link:http://php.net/int[int^]
+a|`$plentyId`
+|Use a specific plentyId. Otherwise use id of current client.
+|===
+
+
+[source%nowrap, php]
+----
+
+public deleteAll($type = null, $contactId = null, $plentyId = null):bool
+
+----
+
+    
+
+
+
+
+
+Delete all entries
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$type`
+|Optional delete only entries for a specific type
+
+|link:http://php.net/int[int^]
+a|`$contactId`
+|Optionally restrict results to a contact id. Otherwise use logged in contact
+
+|link:http://php.net/int[int^]
+a|`$plentyId`
+|Use a specific plentyId. Otherwise use id of current client.
+|===
+
+

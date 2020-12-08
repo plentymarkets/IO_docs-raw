@@ -1,0 +1,62 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__itemurlextension]]
+==== ItemUrlExtension
+
+
+
+
+
+===== Namespace
+
+`IO\Services\ItemSearch\Extensions`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getSearch($parentSearchBuilder):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$parentSearchBuilder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public transformResult():void
+
+----
+
+    
+
+
+
+
+
+
+

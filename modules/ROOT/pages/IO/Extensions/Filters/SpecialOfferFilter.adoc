@@ -1,0 +1,89 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__specialofferfilter]]
+==== SpecialOfferFilter
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Filters`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+ItemNameFilter constructor.
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+Return the available filter methods
+
+[source%nowrap, php]
+----
+
+public specialOffer($defaultPrice, $prices, $priceType, $exact = null):string
+
+----
+
+    
+
+
+
+
+
+Build the item name from the configuration
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$defaultPrice`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_extensions_filters[`Filters`]
+a|`$prices`
+|
+
+|link:http://php.net/string[string^]
+a|`$priceType`
+|
+
+|link:http://php.net/string[string^]
+a|`$exact`
+|
+|===
+
+

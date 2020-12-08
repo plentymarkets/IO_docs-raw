@@ -1,0 +1,47 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__ionumberformatconfig]]
+==== IONumberFormatConfig
+
+
+
+
+
+===== Namespace
+
+`IO\Config`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($configRepository):void
+
+----
+
+    
+
+
+
+
+
+PluginConfig constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_plugin_configrepository[`ConfigRepository`]
+a|`$configRepository`
+|
+|===
+
+

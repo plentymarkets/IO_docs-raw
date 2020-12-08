@@ -1,0 +1,161 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__authenticationservice]]
+==== AuthenticationService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($contactAuthRepository, $sessionStorageRepository):void
+
+----
+
+    
+
+
+
+
+
+AuthenticationService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Authentication.adoc#authentication_contracts_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
+a|`$contactAuthRepository`
+|
+
+|        xref:Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public login($email, $password):int
+
+----
+
+    
+
+
+
+
+
+Perform the login with email and password
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$email`
+|
+
+|link:http://php.net/string[string^]
+a|`$password`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public loginWithContactId($contactId, $password):void
+
+----
+
+    
+
+
+
+
+
+Perform the login with customer ID and password
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$contactId`
+|
+
+|link:http://php.net/string[string^]
+a|`$password`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public logout():void
+
+----
+
+    
+
+
+
+
+
+Log out the customer
+
+[source%nowrap, php]
+----
+
+public checkPassword($password):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$password`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isLoggedIn():bool
+
+----
+
+    
+
+
+
+
+
+
+

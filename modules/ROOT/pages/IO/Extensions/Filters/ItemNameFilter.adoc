@@ -1,0 +1,85 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__itemnamefilter]]
+==== ItemNameFilter
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Filters`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+ItemNameFilter constructor.
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+Return the available filter methods
+
+[source%nowrap, php]
+----
+
+public itemName($itemData, $configName = null, $displayName = null):string
+
+----
+
+    
+
+
+
+
+
+Build the item name from the configuration
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_extensions_filters[`Filters`]
+a|`$itemData`
+|
+
+|link:http://php.net/string[string^]
+a|`$configName`
+|
+
+|link:http://php.net/string[string^]
+a|`$displayName`
+|
+|===
+
+

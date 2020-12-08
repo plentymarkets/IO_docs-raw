@@ -1,0 +1,71 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__itemsearchservice]]
+==== ItemSearchService
+
+
+
+
+
+===== Namespace
+
+`IO\Services\ItemSearch\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getResults($searches):array
+
+----
+
+    
+
+
+
+
+
+Get search results for multiple search requests.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$searches`
+|Map of search factories to execute.
+|===
+
+
+[source%nowrap, php]
+----
+
+public getResult($searchFactory):array
+
+----
+
+    
+
+
+
+
+
+Get result of a single search factory;
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_factories_basesearchfactory[`BaseSearchFactory`]
+a|`$searchFactory`
+|The factory to get results for.
+|===
+
+

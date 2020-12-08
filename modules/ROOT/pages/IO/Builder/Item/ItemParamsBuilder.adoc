@@ -1,0 +1,66 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__itemparamsbuilder]]
+==== ItemParamsBuilder
+
+
+
+
+
+===== Namespace
+
+`IO\Builder\Item`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public withParam($paramName, $paramValue):IO\Builder\Item\ItemParamsBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemparamsbuilder[`ItemParamsBuilder`]
+
+
+Set a parameter value
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_params_itemcolumnsparams[`ItemColumnsParams`]
+a|`$paramName`
+|The name of the param to set.
+
+|
+a|`$paramValue`
+|The value of the param to set.
+|===
+
+
+[source%nowrap, php]
+----
+
+public build():array
+
+----
+
+    
+
+
+
+
+
+Return the generated parameters to pass to ItemDataLayerRepository
+

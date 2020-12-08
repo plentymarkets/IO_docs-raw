@@ -1,0 +1,167 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__apiresponse]]
+==== ApiResponse
+
+
+
+
+
+===== Namespace
+
+`IO\Api`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($dispatcher, $response, $notificationService):void
+
+----
+
+    
+
+
+
+
+
+ApiResponse constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
+a|`$dispatcher`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_http_response[`Response`]
+a|`$response`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_notificationservice[`NotificationService`]
+a|`$notificationService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public error($code, $message = null):IO\Api\ApiResponse
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|
+a|`$message`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public success($code, $message = null):IO\Api\ApiResponse
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|
+a|`$message`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public info($code, $message = null):IO\Api\ApiResponse
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|
+a|`$message`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public header($key, $value):IO\Api\ApiResponse
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$key`
+|
+
+|link:http://php.net/string[string^]
+a|`$value`
+|
+|===
+
+

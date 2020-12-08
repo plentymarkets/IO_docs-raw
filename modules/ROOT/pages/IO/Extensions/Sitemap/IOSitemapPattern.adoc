@@ -1,0 +1,47 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__iositemappattern]]
+==== IOSitemapPattern
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Sitemap`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public handle($sitemapPattern):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Plugin.adoc#plugin_events_loadsitemappattern[`LoadSitemapPattern`]
+a|`$sitemapPattern`
+|
+|===
+
+

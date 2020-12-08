@@ -1,0 +1,75 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__authenticatewithtoken]]
+==== AuthenticateWithToken
+
+
+
+
+
+===== Namespace
+
+`IO\Middlewares`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public before($request):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_http_request[`Request`]
+a|`$request`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public after($request, $response):Plenty\Plugin\Http\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_http_response[`Response`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_http_request[`Request`]
+a|`$request`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_http_response[`Response`]
+a|`$response`
+|
+|===
+
+

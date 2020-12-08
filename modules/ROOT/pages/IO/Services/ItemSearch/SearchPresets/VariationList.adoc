@@ -1,0 +1,47 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__variationlist]]
+==== VariationList
+
+
+
+
+
+===== Namespace
+
+`IO\Services\ItemSearch\SearchPresets`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static getSearchFactory($options):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$options`
+|
+|===
+
+

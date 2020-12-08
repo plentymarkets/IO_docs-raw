@@ -1,0 +1,47 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__resultfieldtemplate]]
+==== ResultFieldTemplate
+
+
+
+
+
+===== Namespace
+
+`IO\Services\ItemSearch\Helper`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static get($template):string
+
+----
+
+    
+
+
+
+
+
+Get the path to result fields file from template/ theme
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$template`
+|Event to be emitted to templates/ themes
+|===
+
+

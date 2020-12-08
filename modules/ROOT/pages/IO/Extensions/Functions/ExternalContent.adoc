@@ -1,0 +1,77 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__externalcontent]]
+==== ExternalContent
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Functions`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getFunctions():array
+
+----
+
+    
+
+
+
+
+
+Return the available filter methods
+
+[source%nowrap, php]
+----
+
+public getExternalContent($url):array
+
+----
+
+    
+
+
+
+
+
+Return the content retrieved from external url
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$url`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+AbstractFunction constructor.
+

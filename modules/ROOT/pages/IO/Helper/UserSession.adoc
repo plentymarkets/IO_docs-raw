@@ -1,0 +1,77 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__usersession]]
+==== UserSession
+
+
+
+
+
+===== Namespace
+
+`IO\Helper`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($accountService):void
+
+----
+
+    
+
+
+
+
+
+UserSession constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Frontend.adoc#frontend_services_accountservice[`AccountService`]
+a|`$accountService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCurrentContactId():int
+
+----
+
+    
+
+
+
+
+
+Get the current contact ID
+
+[source%nowrap, php]
+----
+
+public isContactLoggedIn():bool
+
+----
+
+    
+
+
+
+
+
+Check whether contact is logged in
+

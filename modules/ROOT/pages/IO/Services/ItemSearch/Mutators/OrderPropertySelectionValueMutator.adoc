@@ -1,0 +1,62 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__orderpropertyselectionvaluemutator]]
+==== OrderPropertySelectionValueMutator
+
+
+
+
+
+===== Namespace
+
+`IO\Services\ItemSearch\Mutators`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public mutate($data):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$data`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getDependencies():array
+
+----
+
+    
+
+
+
+
+
+
+

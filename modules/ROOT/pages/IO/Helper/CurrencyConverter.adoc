@@ -1,0 +1,116 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__currencyconverter]]
+==== CurrencyConverter
+
+
+
+
+
+===== Namespace
+
+`IO\Helper`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($currencyExchangeRepo):void
+
+----
+
+    
+
+
+
+
+
+CurrencyConverter constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
+a|`$currencyExchangeRepo`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isCurrentCurrencyDefault():bool
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getDefaultCurrency():string
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getCurrentCurrency():string
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public convertToDefaultCurrency($amount):float
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/float[float^]
+a|`$amount`
+|
+|===
+
+

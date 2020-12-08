@@ -1,0 +1,62 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__urlfilter]]
+==== URLFilter
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Filters`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($itemService):void
+
+----
+
+    
+
+
+
+
+
+URLFilter constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_itemservice[`ItemService`]
+a|`$itemService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+Return the available filter methods
+

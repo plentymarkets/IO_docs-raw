@@ -1,0 +1,47 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__userdatahashtablemigration_0_0_1]]
+==== UserDataHashTableMigration_0_0_1
+
+
+
+
+
+===== Namespace
+
+`IO\Migrations`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public run($migrate):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$migrate`
+|
+|===
+
+

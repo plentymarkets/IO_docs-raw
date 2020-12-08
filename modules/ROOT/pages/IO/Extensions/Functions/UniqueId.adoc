@@ -1,0 +1,92 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__uniqueid]]
+==== UniqueId
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Functions`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getFunctions():array
+
+----
+
+    
+
+
+
+
+
+Return the available methods
+
+[source%nowrap, php]
+----
+
+public generateUniqueId($prefix = &quot;&quot;):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$prefix`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+AbstractFunction constructor.
+

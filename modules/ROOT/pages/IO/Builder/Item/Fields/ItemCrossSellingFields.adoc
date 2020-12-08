@@ -1,0 +1,20 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__itemcrosssellingfields]]
+==== ItemCrossSellingFields
+
+
+
+
+
+===== Namespace
+
+`IO\Builder\Item\Fields`
+
+
+
+
+

@@ -1,0 +1,47 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__iofrontendupdatedeliveryaddress]]
+==== IOFrontendUpdateDeliveryAddress
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Basket`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public handle($event):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$event`
+|
+|===
+
+

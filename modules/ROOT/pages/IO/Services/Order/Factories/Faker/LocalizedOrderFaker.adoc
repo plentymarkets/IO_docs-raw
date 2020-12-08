@@ -1,0 +1,77 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__localizedorderfaker]]
+==== LocalizedOrderFaker
+
+
+
+
+
+===== Namespace
+
+`IO\Services\Order\Factories\Faker`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public fill():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public __construct($app):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$app`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public static resetGlobals():void
+
+----
+
+    
+
+
+
+
+
+
+

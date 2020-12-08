@@ -1,0 +1,237 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__templatecontainer]]
+==== TemplateContainer
+
+
+
+
+
+===== Namespace
+
+`IO\Helper`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static get():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public setTemplate($template):IO\Helper\TemplateContainer
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_helper_templatecontainer[`TemplateContainer`]
+
+
+Set the layout to use for current request.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$template`
+|The template to use for current request.
+|===
+
+
+[source%nowrap, php]
+----
+
+public getTemplate():void
+
+----
+
+    
+
+
+
+
+
+Get the provided layout to use for current request.
+
+[source%nowrap, php]
+----
+
+public hasTemplate():void
+
+----
+
+    
+
+
+
+
+
+Check whether a separate layout plugin has set a template to use for the current request.
+
+[source%nowrap, php]
+----
+
+public getTemplateData():void
+
+----
+
+    
+
+
+
+
+
+Get the template data to pass to current template.
+
+[source%nowrap, php]
+----
+
+public setTemplateData($customData):IO\Helper\TemplateContainer
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_helper_templatecontainer[`TemplateContainer`]
+
+
+Override template data used by LayoutController when rendering a template for current request.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$customData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getTemplateKey():string
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public setTemplateKey($templateKey):IO\Helper
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_io_helper[`Helper`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$templateKey`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setContext($contextClass):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$contextClass`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getContext():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public withData($data, $identifier):IO\Helper\TemplateContainer
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_helper_templatecontainer[`TemplateContainer`]
+
+
+Add additional template data to the existing values.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$data`
+|The data to add to map.
+
+|link:http://php.net/string[string^]
+a|`$identifier`
+|An identifying string to access the given data
+|===
+
+

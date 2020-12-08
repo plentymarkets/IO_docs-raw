@@ -1,0 +1,79 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__unitservice]]
+==== UnitService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($unitNameRepository, $unitRepository):void
+
+----
+
+    
+
+
+
+
+
+UnitService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Item.adoc#item_contracts_unitnamerepositorycontract[`UnitNameRepositoryContract`]
+a|`$unitNameRepository`
+|
+
+|        xref:Item.adoc#item_contracts_unitrepositorycontract[`UnitRepositoryContract`]
+a|`$unitRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getUnitById($unitId, $lang = &quot;de&quot;):Plenty\Modules\Item\Unit\Models\UnitName
+
+----
+
+    
+
+
+====== *Return type:*        xref:Item.adoc#item_models_unitname[`UnitName`]
+
+
+Get the unit by ID
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$unitId`
+|
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+|===
+
+

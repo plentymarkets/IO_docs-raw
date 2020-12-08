@@ -1,0 +1,47 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__facetbuilder]]
+==== FacetBuilder
+
+
+
+
+
+===== Namespace
+
+`IO\Builder\Facet`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static buildFacetValues($facetValueString):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$facetValueString`
+|
+|===
+
+

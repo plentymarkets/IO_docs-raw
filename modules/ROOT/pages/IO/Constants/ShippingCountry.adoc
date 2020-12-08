@@ -1,0 +1,47 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__shippingcountry]]
+==== ShippingCountry
+
+
+
+
+
+===== Namespace
+
+`IO\Constants`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static getAddressFormat($countryId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$countryId`
+|
+|===
+
+

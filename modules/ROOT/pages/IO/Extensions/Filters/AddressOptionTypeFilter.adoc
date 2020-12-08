@@ -1,0 +1,68 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__addressoptiontypefilter]]
+==== AddressOptionTypeFilter
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Filters`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+AddressOptionTypeFilter constructor.
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public addressOptionType():void
+
+----
+
+    
+
+
+
+
+
+
+

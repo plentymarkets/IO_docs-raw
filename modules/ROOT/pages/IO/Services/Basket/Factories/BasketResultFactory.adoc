@@ -1,0 +1,53 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__basketresultfactory]]
+==== BasketResultFactory
+
+
+
+
+
+===== Namespace
+
+`IO\Services\Basket\Factories`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public fillBasketResult():array
+
+----
+
+    
+
+
+
+
+
+Faker function for the basket view
+

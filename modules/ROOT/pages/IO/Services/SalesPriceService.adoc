@@ -1,0 +1,223 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__salespriceservice]]
+==== SalesPriceService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($app, $salesPriceSearchRepo, $contactRepository, $checkoutRepository, $basketService):void
+
+----
+
+    
+
+
+
+
+
+SalesPriceService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
+a|`$app`
+|
+
+|        xref:Item.adoc#item_contracts_salespricesearchrepositorycontract[`SalesPriceSearchRepositoryContract`]
+a|`$salesPriceSearchRepo`
+|
+
+|        xref:Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
+
+|        xref:Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+a|`$checkoutRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_basketservice[`BasketService`]
+a|`$basketService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setClassId($classId):IO\Services
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$classId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setCurrency($currency):IO\Services
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$currency`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setShippingCountryId($shippingCountryId):IO\Services
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$shippingCountryId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getSalesPriceForVariation($variationId, $type = &quot;default&quot;, $quantity = 1):Plenty\Modules\Item\SalesPrice\Models\SalesPriceSearchResponse
+
+----
+
+    
+
+
+====== *Return type:*        xref:Item.adoc#item_models_salespricesearchresponse[`SalesPriceSearchResponse`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+
+|link:http://php.net/string[string^]
+a|`$type`
+|
+
+|link:http://php.net/int[int^]
+a|`$quantity`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getAllSalesPricesForVariation($variationId, $type = &quot;default&quot;, $quantity):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+
+|link:http://php.net/string[string^]
+a|`$type`
+|
+
+|link:http://php.net/int[int^]
+a|`$quantity`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public applyCurrencyConversion($salesPrice):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$salesPrice`
+|
+|===
+
+

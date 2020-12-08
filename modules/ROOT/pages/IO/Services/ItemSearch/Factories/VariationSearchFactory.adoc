@@ -1,0 +1,38 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__variationsearchfactory]]
+==== VariationSearchFactory
+
+
+
+
+
+===== Namespace
+
+`IO\Services\ItemSearch\Factories`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+

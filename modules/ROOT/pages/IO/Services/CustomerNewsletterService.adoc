@@ -1,0 +1,121 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__customernewsletterservice]]
+==== CustomerNewsletterService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($newsletterRepo):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$newsletterRepo`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public saveNewsletterData():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public saveMultipleNewsletterData():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public updateOptInStatus():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public deleteNewsletterDataByEmail($email, $emailFolder):bool
+
+----
+
+    
+
+
+
+
+
+Delete recipients from the newsletter
+Not passing the optional parameter $emailFolder deletes the recipient from all email-folders
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$email`
+|
+
+|link:http://php.net/int[int^]
+a|`$emailFolder`
+|
+|===
+
+

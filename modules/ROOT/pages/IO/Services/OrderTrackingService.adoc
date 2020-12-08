@@ -1,0 +1,79 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__ordertrackingservice]]
+==== OrderTrackingService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($orderRepo, $parcelServicePresetRepo):void
+
+----
+
+    
+
+
+
+
+
+OrderTrackingService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
+a|`$orderRepo`
+|
+
+|        xref:Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
+a|`$parcelServicePresetRepo`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getTrackingURL($order, $lang):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Order.adoc#order_models_order[`Order`]
+a|`$order`
+|
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+|===
+
+

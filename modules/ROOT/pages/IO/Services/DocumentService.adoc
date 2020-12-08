@@ -1,0 +1,47 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__documentservice]]
+==== DocumentService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($documentRepo):void
+
+----
+
+    
+
+
+
+
+
+DocumentService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Document.adoc#document_contracts_documentrepositorycontract[`DocumentRepositoryContract`]
+a|`$documentRepo`
+|
+|===
+
+

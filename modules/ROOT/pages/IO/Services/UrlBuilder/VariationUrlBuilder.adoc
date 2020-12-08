@@ -1,0 +1,111 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__variationurlbuilder]]
+==== VariationUrlBuilder
+
+
+
+
+
+===== Namespace
+
+`IO\Services\UrlBuilder`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static fillItemUrl($itemData):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$itemData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public buildUrl($itemId, $variationId, $lang = null):IO\Services\UrlBuilder\UrlQuery
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_urlquery[`UrlQuery`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getSuffix($itemId, $variationId, $withVariationId = true):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+
+|link:http://php.net/bool[bool^]
+a|`$withVariationId`
+|
+|===
+
+

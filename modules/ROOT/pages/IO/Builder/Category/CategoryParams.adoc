@@ -1,0 +1,20 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__categoryparams]]
+==== CategoryParams
+
+
+
+
+
+===== Namespace
+
+`IO\Builder\Category`
+
+
+
+
+

@@ -1,0 +1,77 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__shufflefilter]]
+==== ShuffleFilter
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Filters`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+ShuffleFilter constructor.
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public shuffle($arrayToShuffle):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$arrayToShuffle`
+|
+|===
+
+

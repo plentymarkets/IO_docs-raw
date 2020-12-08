@@ -1,0 +1,129 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__routeconfig]]
+==== RouteConfig
+
+
+
+
+
+===== Namespace
+
+`IO\Helper`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static getEnabledRoutes():array
+
+----
+
+    
+
+
+
+
+
+Get all enabled routes from the plugin config.
+
+[source%nowrap, php]
+----
+
+public static isActive($route):bool
+
+----
+
+    
+
+
+
+
+
+Check if a route is enabled and no category is linked for this page.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$route`
+|The route to check active state for.
+|===
+
+
+[source%nowrap, php]
+----
+
+public static getCategoryId($route):int
+
+----
+
+    
+
+
+
+
+
+Get the id of the category linked to a specific route.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$route`
+|The route to get the linked category id for.
+|===
+
+
+[source%nowrap, php]
+----
+
+public static overrideCategoryId($route, $categoryId):void
+
+----
+
+    
+
+
+
+
+
+Override the currently linked category id for a specific route.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$route`
+|The route to override the linked category for.
+
+|link:http://php.net/int[int^]
+a|`$categoryId`
+|The id of the category to override.
+|===
+
+
+[source%nowrap, php]
+----
+
+public static passThroughBlogRoutes():bool
+
+----
+
+    
+
+
+
+
+
+Check if blog routes should be recognized by the route service provider or not.
+

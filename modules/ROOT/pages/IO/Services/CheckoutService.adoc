@@ -1,0 +1,557 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__checkoutservice]]
+==== CheckoutService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($frontendPaymentMethodRepository, $checkout, $basketRepository, $sessionStorage, $customerService, $parcelServicePresetRepo, $currencyExchangeRepo, $basketService, $sessionStorageRepository, $webstoreConfigurationRepository, $dispatcher, $checkoutRepository, $contactRepository):void
+
+----
+
+    
+
+
+
+
+
+CheckoutService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
+a|`$frontendPaymentMethodRepository`
+|
+
+|        xref:Frontend.adoc#frontend_contracts_checkout[`Checkout`]
+a|`$checkout`
+|
+
+|        xref:Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
+a|`$basketRepository`
+|
+
+|        xref:Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
+a|`$sessionStorage`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_customerservice[`CustomerService`]
+a|`$customerService`
+|
+
+|        xref:Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
+a|`$parcelServicePresetRepo`
+|
+
+|        xref:Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
+a|`$currencyExchangeRepo`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_basketservice[`BasketService`]
+a|`$basketService`
+|
+
+|        xref:Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+
+|        xref:Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+a|`$webstoreConfigurationRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
+a|`$dispatcher`
+|
+
+|        xref:Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+a|`$checkoutRepository`
+|
+
+|        xref:Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCheckout($retry = true):array
+
+----
+
+    
+
+
+
+
+
+Get the relevant data for the checkout.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/bool[bool^]
+a|`$retry`
+|Try loading checkout again on failure (e.g. problems during calculating totals)
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCurrency():string
+
+----
+
+    
+
+
+
+
+
+Get the current currency from the session.
+
+[source%nowrap, php]
+----
+
+public setCurrency($currency):void
+
+----
+
+    
+
+
+
+
+
+Set the current currency in the session.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$currency`
+|The currency to be used.
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCurrencyList():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getCurrencyData():void
+
+----
+
+    
+
+
+
+
+
+Get the name and the symbol for the currently selected currency.
+
+[source%nowrap, php]
+----
+
+public getCurrencyPattern():array
+
+----
+
+    
+
+
+
+
+
+Get all required information about how to display monetary values.
+
+[source%nowrap, php]
+----
+
+public getMethodOfPaymentId():int
+
+----
+
+    
+
+
+
+
+
+Get the ID of the current payment method.
+
+[source%nowrap, php]
+----
+
+public setMethodOfPaymentId($methodOfPaymentID):void
+
+----
+
+    
+
+
+
+
+
+Set the ID of the current payment method.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$methodOfPaymentID`
+|Id of the method of payment to be used.
+|===
+
+
+[source%nowrap, php]
+----
+
+public preparePayment():array
+
+----
+
+    
+
+
+
+
+
+Prepare the payment.
+
+[source%nowrap, php]
+----
+
+public getMethodOfPaymentList():array
+
+----
+
+    
+
+
+
+
+
+List all available payment methods.
+
+[source%nowrap, php]
+----
+
+public getMethodOfPaymentExpressCheckoutList():array
+
+----
+
+    
+
+
+
+
+
+List all payment methods available for express checkout.
+
+[source%nowrap, php]
+----
+
+public getCheckoutPaymentDataList():array
+
+----
+
+    
+
+
+
+
+
+Get a list of the payment method data.
+
+[source%nowrap, php]
+----
+
+public getShippingProfileList():array
+
+----
+
+    
+
+
+
+
+
+Get the list of available shipping profiles.
+
+[source%nowrap, php]
+----
+
+public getShippingCountryId():int
+
+----
+
+    
+
+
+
+
+
+Get the ID of the current shipping country
+
+[source%nowrap, php]
+----
+
+public setShippingCountryId($shippingCountryId):void
+
+----
+
+    
+
+
+
+
+
+Set the id of the current shipping country.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$shippingCountryId`
+|Id of the shipping country to select.
+|===
+
+
+[source%nowrap, php]
+----
+
+public getShippingProfileId():int
+
+----
+
+    
+
+
+
+
+
+Get the ID of the current shipping profile.
+
+[source%nowrap, php]
+----
+
+public setShippingProfileId($shippingProfileId):void
+
+----
+
+    
+
+
+
+
+
+Set the ID of the current shipping profile.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$shippingProfileId`
+|Id of the shipping profile to select.
+|===
+
+
+[source%nowrap, php]
+----
+
+public getDeliveryAddressId():int
+
+----
+
+    
+
+
+
+
+
+Get the ID of the current delivery address.
+
+[source%nowrap, php]
+----
+
+public setDeliveryAddressId($deliveryAddressId):void
+
+----
+
+    
+
+
+
+
+
+Set the ID of the current delivery address.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$deliveryAddressId`
+|Id of the address to be used as delivery address when creating an order.
+|===
+
+
+[source%nowrap, php]
+----
+
+public getBillingAddressId():int
+
+----
+
+    
+
+
+
+
+
+Get the ID of the current invoice address.
+
+[source%nowrap, php]
+----
+
+public setBillingAddressId($billingAddressId):void
+
+----
+
+    
+
+
+
+
+
+Set the ID of the current invoice address.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$billingAddressId`
+|Id of the address to be used as billing address when creating an order.
+|===
+
+
+[source%nowrap, php]
+----
+
+public setDefaultShippingCountryId():void
+
+----
+
+    
+
+
+
+
+
+Reset the current shipping country to the default defined in the webstore configuration.
+
+[source%nowrap, php]
+----
+
+public getMaxDeliveryDays():array
+
+----
+
+    
+
+
+
+
+
+Get the maximum days of delivery for each shipping profile.
+
+[source%nowrap, php]
+----
+
+public setReadOnlyCheckout($readonly):void
+
+----
+
+    
+
+
+
+
+
+Set the checkout to be readonly.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/bool[bool^]
+a|`$readonly`
+|Enable/disable readonly mode for checkout.
+|===
+
+
+[source%nowrap, php]
+----
+
+public getReadOnlyCheckout():bool
+
+----
+
+    
+
+
+
+
+
+Check if checkout should display data from external checkout processes in readonly mode.
+
+[source%nowrap, php]
+----
+
+public getContactWish():string
+
+----
+
+    
+
+
+
+
+
+Returns the given contact wish from session.
+

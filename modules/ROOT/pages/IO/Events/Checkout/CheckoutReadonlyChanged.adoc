@@ -1,0 +1,62 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__checkoutreadonlychanged]]
+==== CheckoutReadonlyChanged
+
+
+
+
+
+===== Namespace
+
+`IO\Events\Checkout`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($isReadonly):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$isReadonly`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isReadOnlyCheckout():void
+
+----
+
+    
+
+
+
+
+
+
+

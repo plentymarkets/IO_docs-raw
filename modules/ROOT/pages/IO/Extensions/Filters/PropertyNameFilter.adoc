@@ -1,0 +1,92 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__propertynamefilter]]
+==== PropertyNameFilter
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Filters`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($authHelper):void
+
+----
+
+    
+
+
+
+
+
+PropertySelectionValueNameFilter constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
+a|`$authHelper`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+Return the available filter methods
+
+[source%nowrap, php]
+----
+
+public getPropertyName():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getPropertySelectionValueName():void
+
+----
+
+    
+
+
+
+
+
+
+

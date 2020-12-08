@@ -1,0 +1,53 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__abstractfilter]]
+==== AbstractFilter
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+AbstractFilter constructor.
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+Return the available filter methods
+

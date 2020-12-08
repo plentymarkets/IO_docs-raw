@@ -1,0 +1,96 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__patternfilter]]
+==== PatternFilter
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Filters`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+Return the available filter methods
+
+[source%nowrap, php]
+----
+
+public getObjectValue():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public findPattern($input, $regex):array
+
+----
+
+    
+
+
+
+
+
+Find matches in input with given regex
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$input`
+|
+
+|link:http://php.net/string[string^]
+a|`$regex`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+AbstractFilter constructor.
+

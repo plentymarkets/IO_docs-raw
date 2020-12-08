@@ -1,0 +1,38 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__itemlistservice]]
+==== ItemListService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getItemList():void
+
+----
+
+    
+
+
+
+
+
+
+

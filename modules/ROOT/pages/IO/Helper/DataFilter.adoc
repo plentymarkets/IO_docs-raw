@@ -1,0 +1,38 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__datafilter]]
+==== DataFilter
+
+
+
+
+
+===== Namespace
+
+`IO\Helper`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getFilteredData():void
+
+----
+
+    
+
+
+
+
+
+
+

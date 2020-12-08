@@ -1,0 +1,71 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__itemlastseenservice]]
+==== ItemLastSeenService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($cachingRepository):void
+
+----
+
+    
+
+
+
+
+
+ItemLastSeenService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_plugin_cachingrepository[`CachingRepository`]
+a|`$cachingRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setLastSeenItem($variationId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
+

@@ -1,0 +1,107 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__component]]
+==== Component
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Functions`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getFunctions():array
+
+----
+
+    
+
+
+
+
+
+Return the available filter methods
+
+[source%nowrap, php]
+----
+
+public component($path):void
+
+----
+
+    
+
+
+
+
+
+Push the component to the component stack
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$path`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasComponentTemplate():bool
+
+----
+
+    
+
+
+
+
+
+Check whether a component template exists
+
+[source%nowrap, php]
+----
+
+public getComponentTemplate():string
+
+----
+
+    
+
+
+
+
+
+Get the component from the component stack
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+AbstractFunction constructor.
+

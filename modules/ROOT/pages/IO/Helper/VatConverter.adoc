@@ -1,0 +1,86 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__vatconverter]]
+==== VatConverter
+
+
+
+
+
+===== Namespace
+
+`IO\Helper`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($vatRepo):void
+
+----
+
+    
+
+
+
+
+
+VatConverter constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
+a|`$vatRepo`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getDefaultVat():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public convertToGross($amount):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/float[float^]
+a|`$amount`
+|
+|===
+
+

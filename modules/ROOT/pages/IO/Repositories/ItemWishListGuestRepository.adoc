@@ -1,0 +1,202 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__itemwishlistguestrepository]]
+==== ItemWishListGuestRepository
+
+
+
+
+
+===== Namespace
+
+`IO\Repositories`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($sessionStorageRepository, $app):void
+
+----
+
+    
+
+
+
+
+
+ItemWishListGuestRepository constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
+a|`$app`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getItemWishList():array
+
+----
+
+    
+
+
+
+
+
+List all watched variationIds for contact
+
+[source%nowrap, php]
+----
+
+public getItemWishListWithData():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getItemWishListForAllPlentyIds():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getCountedItemWishList():int
+
+----
+
+    
+
+
+
+
+
+Get count WishList entries
+
+[source%nowrap, php]
+----
+
+public isItemInWishList($variationId):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public addItemWishListEntry($variationId, $quantity = 1):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+
+|link:http://php.net/int[int^]
+a|`$quantity`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public removeItemWishListEntry($variationId):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public resetItemWishList():void
+
+----
+
+    
+
+
+
+
+
+
+

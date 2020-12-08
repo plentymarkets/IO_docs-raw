@@ -1,0 +1,251 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__iorouteserviceprovider]]
+==== IORouteServiceProvider
+
+
+
+
+
+===== Namespace
+
+`IO\Providers`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public register():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public map($router, $api):void
+
+----
+
+    
+
+
+
+
+
+Define the map routes to templates or REST resources
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_routing_router[`Router`]
+a|`$router`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_routing_apirouter[`ApiRouter`]
+a|`$api`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public __call($method, $parameters):void
+
+----
+
+    
+
+
+
+
+
+Pass dynamic methods onto the router instance.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$method`
+|
+
+|link:http://php.net/array[array^]
+a|`$parameters`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public static pathsToPublish($provider = null, $group = null):array
+
+----
+
+    
+
+
+
+
+
+Get the paths to publish.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$provider`
+|
+
+|link:http://php.net/string[string^]
+a|`$group`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public static publishableProviders():array
+
+----
+
+    
+
+
+
+
+
+Get the service providers available for publishing.
+
+[source%nowrap, php]
+----
+
+public static publishableGroups():array
+
+----
+
+    
+
+
+
+
+
+Get the groups available for publishing.
+
+[source%nowrap, php]
+----
+
+public commands($commands):void
+
+----
+
+    
+
+
+
+
+
+Register the package&#039;s custom Artisan commands.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$commands`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public provides():array
+
+----
+
+    
+
+
+
+
+
+Get the services provided by the provider.
+
+[source%nowrap, php]
+----
+
+public when():array
+
+----
+
+    
+
+
+
+
+
+Get the events that trigger this service provider to register.
+
+[source%nowrap, php]
+----
+
+public isDeferred():bool
+
+----
+
+    
+
+
+
+
+
+Determine if the provider is deferred.
+
+[source%nowrap, php]
+----
+
+public getApplication():Plenty\Plugin\Application
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public getEventDispatcher():Plenty\Plugin\Events\Dispatcher
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
+
+
+
+

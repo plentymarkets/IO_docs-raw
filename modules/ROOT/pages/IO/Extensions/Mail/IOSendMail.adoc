@@ -1,0 +1,71 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__iosendmail]]
+==== IOSendMail
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Mail`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($sendMailService):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$sendMailService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public handle($pluginSendMail):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Plugin.adoc#plugin_events_pluginsendmail[`PluginSendMail`]
+a|`$pluginSendMail`
+|
+|===
+
+

@@ -1,0 +1,129 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__itemcrosssellingservice]]
+==== ItemCrossSellingService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($sessionStorageRepository, $sortingHelper):void
+
+----
+
+    
+
+
+
+
+
+ItemLastSeenService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+
+|        xref:Webshop.adoc#webshop_helpers_sortinghelper[`SortingHelper`]
+a|`$sortingHelper`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setType($type):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$type`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getType():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public setSorting($sorting):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$sorting`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getSorting():void
+
+----
+
+    
+
+
+
+
+
+
+

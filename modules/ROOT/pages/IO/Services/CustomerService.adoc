@@ -1,0 +1,637 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__customerservice]]
+==== CustomerService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($accountRepository, $coreContactRepository, $contactRepository, $contactAddressRepository, $addressRepository, $contactClassRepository, $sessionStorageRepository):void
+
+----
+
+    
+
+
+
+
+
+CustomerService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Account.adoc#account_contracts_contactaccountrepositorycontract[`ContactAccountRepositoryContract`]
+a|`$accountRepository`
+|
+
+|        xref:Account.adoc#account_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$coreContactRepository`
+|
+
+|        xref:Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
+
+|        xref:Account.adoc#account_contracts_contactaddressrepositorycontract[`ContactAddressRepositoryContract`]
+a|`$contactAddressRepository`
+|
+
+|        xref:Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
+a|`$addressRepository`
+|
+
+|        xref:Account.adoc#account_contracts_contactclassrepositorycontract[`ContactClassRepositoryContract`]
+a|`$contactClassRepository`
+|
+
+|        xref:Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getContactId():int
+
+----
+
+    
+
+
+
+
+
+Get the ID of the current contact from the session
+
+[source%nowrap, php]
+----
+
+public getContactClassData($contactClassId):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$contactClassId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public showNetPrices():bool
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public showNetPricesByContactId($contactId):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$contactId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getContactClassMinimumOrderQuantity():int
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public registerCustomer($contactData, $billingAddressData = [], $deliveryAddressData = []):Plenty\Modules\Account\Contact\Models\Contact
+
+----
+
+    
+
+
+====== *Return type:*        xref:Account.adoc#account_models_contact[`Contact`]
+
+
+Create a contact with addresses if specified
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$contactData`
+|
+
+|link:http://php.net/array[array^]
+a|`$billingAddressData`
+|
+
+|link:http://php.net/array[array^]
+a|`$deliveryAddressData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public createAccount($accountData):Plenty\Modules\Account\Models\Account
+
+----
+
+    
+
+
+====== *Return type:*        xref:Account.adoc#account_models_account[`Account`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$accountData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public createContact($contactData):void
+
+----
+
+    
+
+
+
+
+
+Create a new contact
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$contactData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getContact():Plenty\Modules\Account\Contact\Models\Contact
+
+----
+
+    
+
+
+====== *Return type:*        xref:Account.adoc#account_models_contact[`Contact`]
+
+
+Find the current contact by ID
+
+[source%nowrap, php]
+----
+
+public getContactClassId():int
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public updateContact($contactData):Plenty\Modules\Account\Contact\Models\Contact
+
+----
+
+    
+
+
+====== *Return type:*        xref:Account.adoc#account_models_contact[`Contact`]
+
+
+Update a contact
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$contactData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public updatePassword($newPassword, $contactId, $hash = &quot;&quot;):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$newPassword`
+|
+
+|link:http://php.net/int[int^]
+a|`$contactId`
+|
+
+|link:http://php.net/string[string^]
+a|`$hash`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getAddresses($typeId = null):void
+
+----
+
+    
+
+
+
+
+
+List the addresses of a contact
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$typeId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getAddress($addressId, $typeId):Plenty\Modules\Account\Address\Models\Address
+
+----
+
+    
+
+
+====== *Return type:*        xref:Account.adoc#account_models_address[`Address`]
+
+
+Get an address by ID
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$addressId`
+|
+
+|link:http://php.net/int[int^]
+a|`$typeId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public createAddress($addressData, $typeId):Plenty\Modules\Account\Address\Models\Address
+
+----
+
+    
+
+
+====== *Return type:*        xref:Account.adoc#account_models_address[`Address`]
+
+
+Create an address with the specified address type
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$addressData`
+|
+
+|link:http://php.net/int[int^]
+a|`$typeId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public updateAddress($addressId, $addressData, $typeId):Plenty\Modules\Account\Address\Models\Address
+
+----
+
+    
+
+
+====== *Return type:*        xref:Account.adoc#account_models_address[`Address`]
+
+
+Update an address
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$addressId`
+|
+
+|link:http://php.net/array[array^]
+a|`$addressData`
+|
+
+|link:http://php.net/int[int^]
+a|`$typeId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public deleteAddress($addressId, $typeId):void
+
+----
+
+    
+
+
+
+
+
+Delete an address
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$addressId`
+|
+
+|link:http://php.net/int[int^]
+a|`$typeId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getOrders($page = 1, $items = 10, $filters = []):void
+
+----
+
+    
+
+
+
+
+
+Get a list of orders for the current contact
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$page`
+|
+
+|link:http://php.net/int[int^]
+a|`$items`
+|
+
+|link:http://php.net/array[array^]
+a|`$filters`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasReturns():bool
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getReturns($page = 1, $items = 10, $filters = [], $wrapped = true):IO\Services\Plenty\Repositories\Models\PaginatedResult
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$page`
+|
+
+|link:http://php.net/int[int^]
+a|`$items`
+|
+
+|link:http://php.net/array[array^]
+a|`$filters`
+|
+
+|link:http://php.net/bool[bool^]
+a|`$wrapped`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLatestOrder():IO\Models\LocalizedOrder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_localizedorder[`LocalizedOrder`]
+
+
+Get the last order created by the current contact
+
+[source%nowrap, php]
+----
+
+public resetGuestAddresses():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getEmail():string
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getContactNumber($contactId):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$contactId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public deleteGuestAddresses():void
+
+----
+
+    
+
+
+
+
+
+
+

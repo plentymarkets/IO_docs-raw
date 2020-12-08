@@ -1,0 +1,47 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__basketitemfaker]]
+==== BasketItemFaker
+
+
+
+
+
+===== Namespace
+
+`IO\Services\Basket\Factories\Faker`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public fill($default):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$default`
+|
+|===
+
+

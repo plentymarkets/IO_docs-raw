@@ -1,0 +1,55 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__categoryurlbuilder]]
+==== CategoryUrlBuilder
+
+
+
+
+
+===== Namespace
+
+`IO\Services\UrlBuilder`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public buildUrl($categoryId, $lang = null, $webstoreId = null):IO\Services\UrlBuilder\UrlQuery
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_urlquery[`UrlQuery`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$categoryId`
+|
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+
+|link:http://php.net/int[int^]
+a|`$webstoreId`
+|
+|===
+
+

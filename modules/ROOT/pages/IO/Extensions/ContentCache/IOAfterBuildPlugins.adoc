@@ -1,0 +1,47 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__ioafterbuildplugins]]
+==== IOAfterBuildPlugins
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\ContentCache`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public handle($afterBuildPlugins):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$afterBuildPlugins`
+|
+|===
+
+

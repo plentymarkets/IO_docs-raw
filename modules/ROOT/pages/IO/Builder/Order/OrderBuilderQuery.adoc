@@ -1,0 +1,302 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__orderbuilderquery]]
+==== OrderBuilderQuery
+
+
+
+
+
+===== Namespace
+
+`IO\Builder\Order`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($app, $basketService, $type, $plentyId):void
+
+----
+
+    
+
+
+
+
+
+OrderBuilderQuery constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
+a|`$app`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_basketservice[`BasketService`]
+a|`$basketService`
+|
+
+|link:http://php.net/int[int^]
+a|`$type`
+|
+
+|link:http://php.net/int[int^]
+a|`$plentyId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public done():array
+
+----
+
+    
+
+
+
+
+
+Return the order array
+
+[source%nowrap, php]
+----
+
+public fromBasket($basket = null):IO\Builder\Order\OrderBuilderQuery
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+
+Build order from basket data
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$basket`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public withLang($lang):void
+
+----
+
+    
+
+
+
+
+
+Add the lang to the order
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public withStatus($status):IO\Builder\Order\OrderBuilderQuery
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+
+Add the status to the order
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/float[float^]
+a|`$status`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public withOwner($ownerId):IO\Builder\Order\OrderBuilderQuery
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+
+Add the owner to the order
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$ownerId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public withOrderItem($orderItem):IO\Builder\Order\OrderBuilderQuery
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+
+Add an order item to the order
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$orderItem`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public withOrderItems($orderItems):IO\Builder\Order\OrderBuilderQuery
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+
+Add order items to the order
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$orderItems`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public withAddressId($addressId, $type):IO\Builder\Order\OrderBuilderQuery
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+
+Add an address to the order
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$addressId`
+|
+
+|link:http://php.net/int[int^]
+a|`$type`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public withRelation($type, $referenceId, $relationType):IO\Builder\Order\OrderBuilderQuery
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+
+Add the relation to the order
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$type`
+|
+
+|link:http://php.net/int[int^]
+a|`$referenceId`
+|
+
+|link:http://php.net/string[string^]
+a|`$relationType`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public withContactId($customerId):IO\Builder\Order\OrderBuilderQuery
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+
+Add a contact to the order
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$customerId`
+|
+|===
+
+

@@ -1,0 +1,86 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__availabilityservice]]
+==== AvailabilityService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($availabilityRepository):void
+
+----
+
+    
+
+
+
+
+
+AvailabilityService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Item.adoc#item_contracts_availabilityrepositorycontract[`AvailabilityRepositoryContract`]
+a|`$availabilityRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getAvailabilityById($availabilityId):Plenty\Modules\Item\Availability\Models\Availability
+
+----
+
+    
+
+
+====== *Return type:*        xref:Item.adoc#item_models_availability[`Availability`]
+
+
+Get the item availability by ID
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$availabilityId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getAvailabilities():array
+
+----
+
+    
+
+
+
+
+
+
+

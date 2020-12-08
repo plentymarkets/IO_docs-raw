@@ -1,0 +1,98 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__orderservice]]
+==== OrderService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($orderRepository, $basketService, $sessionStorageRepository, $frontendPaymentMethodRepository, $addressRepository, $urlService, $checkoutService, $customerService, $contactRepository, $giftCardRepository):void
+
+----
+
+    
+
+
+
+
+
+OrderService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
+a|`$orderRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_basketservice[`BasketService`]
+a|`$basketService`
+|
+
+|        xref:Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+
+|        xref:Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
+a|`$frontendPaymentMethodRepository`
+|
+
+|        xref:Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
+a|`$addressRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_urlservice[`UrlService`]
+a|`$urlService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_checkoutservice[`CheckoutService`]
+a|`$checkoutService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_customerservice[`CustomerService`]
+a|`$customerService`
+|
+
+|        xref:Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
+
+|        xref:Webshop.adoc#webshop_contracts_giftcardrepositorycontract[`GiftCardRepositoryContract`]
+a|`$giftCardRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public placeOrder():IO\Models\LocalizedOrder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_localizedorder[`LocalizedOrder`]
+
+
+Place an order
+

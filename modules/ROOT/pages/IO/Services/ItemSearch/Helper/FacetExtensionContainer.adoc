@@ -1,0 +1,86 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__facetextensioncontainer]]
+==== FacetExtensionContainer
+
+
+
+
+
+===== Namespace
+
+`IO\Services\ItemSearch\Helper`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($dispatcher):void
+
+----
+
+    
+
+
+
+
+
+FacetExtensionContainer constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
+a|`$dispatcher`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getFacetExtensions():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public addFacetExtension($facetExtension):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_contracts_facetextension[`FacetExtension`]
+a|`$facetExtension`
+|
+|===
+
+

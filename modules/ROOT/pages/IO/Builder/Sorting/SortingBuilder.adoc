@@ -1,0 +1,101 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__sortingbuilder]]
+==== SortingBuilder
+
+
+
+
+
+===== Namespace
+
+`IO\Builder\Sorting`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static buildSorting($sortingString):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$sortingString`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public static buildDefaultSortingSearch():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public static buildDefaultSortingCategory():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public static buildNameSorting($path):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$path`
+|
+|===
+
+

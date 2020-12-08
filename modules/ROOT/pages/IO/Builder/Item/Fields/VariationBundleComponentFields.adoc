@@ -1,0 +1,20 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__variationbundlecomponentfields]]
+==== VariationBundleComponentFields
+
+
+
+
+
+===== Namespace
+
+`IO\Builder\Item\Fields`
+
+
+
+
+

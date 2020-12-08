@@ -1,0 +1,86 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__shippingservice]]
+==== ShippingService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($checkout):void
+
+----
+
+    
+
+
+
+
+
+ShippingService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Frontend.adoc#frontend_contracts_checkout[`Checkout`]
+a|`$checkout`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setShippingProfileId($shippingProfileId):void
+
+----
+
+    
+
+
+
+
+
+Set the ID of the current shipping profile
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$shippingProfileId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getMaxDeliveryDays():array
+
+----
+
+    
+
+
+
+
+
+Return an array of shipping profile ids as keys and max delivery days as values
+

@@ -1,0 +1,86 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__categoryfacet]]
+==== CategoryFacet
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Facets`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getAggregation():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public mergeIntoFacetsList($result):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$result`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public extractFilterParams($filtersList):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$filtersList`
+|
+|===
+
+

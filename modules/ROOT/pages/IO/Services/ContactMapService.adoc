@@ -1,0 +1,62 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__contactmapservice]]
+==== ContactMapService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($cachingRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$cachingRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getMapCoordinates():void
+
+----
+
+    
+
+
+
+
+
+
+

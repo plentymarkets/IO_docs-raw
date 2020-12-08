@@ -1,0 +1,77 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__fakerservice]]
+==== FakerService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getBasket():void
+
+----
+
+    
+
+
+
+
+
+Get a faked basket for shopbuilder basket templates
+
+[source%nowrap, php]
+----
+
+public getFacets():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getSelectedFacetIds($facets):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$facets`
+|
+|===
+
+

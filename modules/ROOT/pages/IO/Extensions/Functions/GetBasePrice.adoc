@@ -1,0 +1,126 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__getbaseprice]]
+==== GetBasePrice
+
+
+
+
+
+===== Namespace
+
+`IO\Extensions\Functions`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($app, $itemRepository, $columnBuilder, $filterBuilder, $paramsBuilder):void
+
+----
+
+    
+
+
+
+
+
+GetBasePrice constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
+a|`$app`
+|
+
+|        xref:Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
+a|`$itemRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+a|`$columnBuilder`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+a|`$filterBuilder`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_itemparamsbuilder[`ItemParamsBuilder`]
+a|`$paramsBuilder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getFunctions():array
+
+----
+
+    
+
+
+
+
+
+Return the available filter methods
+
+[source%nowrap, php]
+----
+
+public getBasePrice($variationId):array
+
+----
+
+    
+
+
+
+
+
+Get the base price for the specified variation
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getBasePriceList($variationIds):array
+
+----
+
+    
+
+
+
+
+
+Get base prices for a list of variations
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationIds`
+|
+|===
+
+

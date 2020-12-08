@@ -1,0 +1,301 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__orderreturnconfirmationcontroller]]
+==== OrderReturnConfirmationController
+
+
+
+
+
+===== Namespace
+
+`IO\Controllers`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public showOrderReturnConfirmation():string
+
+----
+
+    
+
+
+
+
+
+Render the order returns view
+
+[source%nowrap, php]
+----
+
+public __construct($app, $twig, $event, $categoryRepo, $categoryMap, $categoryService):void
+
+----
+
+    
+
+
+
+
+
+LayoutController constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
+a|`$app`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_templates_twig[`Twig`]
+a|`$twig`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
+a|`$event`
+|
+
+|        xref:Category.adoc#category_contracts_categoryrepositorycontract[`CategoryRepositoryContract`]
+a|`$categoryRepo`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_helper_categorymap[`CategoryMap`]
+a|`$categoryMap`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_categoryservice[`CategoryService`]
+a|`$categoryService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public middleware($middleware, $options = []):Illuminate\Routing\Illuminate\Routing\ControllerMiddlewareOptions
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_routing_controllermiddlewareoptions[`ControllerMiddlewareOptions`]
+
+
+Register middleware on the controller.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$middleware`
+|
+
+|link:http://php.net/array[array^]
+a|`$options`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getMiddleware():array
+
+----
+
+    
+
+
+
+
+
+Get the middleware assigned to the controller.
+
+[source%nowrap, php]
+----
+
+public callAction($method, $parameters):Illuminate\Routing\Symfony\Component\HttpFoundation\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_httpfoundation_response[`Response`]
+
+
+Execute an action on the controller.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$method`
+|
+
+|link:http://php.net/array[array^]
+a|`$parameters`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public __call($method, $parameters):void
+
+----
+
+    
+
+
+
+
+
+Handle calls to missing methods on the controller.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$method`
+|
+
+|link:http://php.net/array[array^]
+a|`$parameters`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public authorize($ability, $arguments = []):Plenty\Http\Controllers\Illuminate\Auth\Access\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_access_response[`Response`]
+
+
+Authorize a given action for the current user.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$ability`
+|
+
+|
+a|`$arguments`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public authorizeForUser($user, $ability, $arguments = []):Plenty\Http\Controllers\Illuminate\Auth\Access\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_access_response[`Response`]
+
+
+Authorize a given action for a user.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$user`
+|
+
+|
+a|`$ability`
+|
+
+|
+a|`$arguments`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public authorizeResource($model, $parameter = null, $options = [], $request = null):void
+
+----
+
+    
+
+
+
+
+
+Authorize a resource action based on the incoming request.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$model`
+|
+
+|link:http://php.net/string[string^]
+a|`$parameter`
+|
+
+|link:http://php.net/array[array^]
+a|`$options`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_http_request[`Request`]
+a|`$request`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public dispatchNow($job):void
+
+----
+
+    
+
+
+
+
+
+Dispatch a job to its appropriate handler in the current process.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$job`
+|
+|===
+
+

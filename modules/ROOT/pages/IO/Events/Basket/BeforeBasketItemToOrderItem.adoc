@@ -1,0 +1,62 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__beforebasketitemtoorderitem]]
+==== BeforeBasketItemToOrderItem
+
+
+
+
+
+===== Namespace
+
+`IO\Events\Basket`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($basketItem):void
+
+----
+
+    
+
+
+
+
+
+BasketItemEvent constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Basket.adoc#basket_models_basketitem[`BasketItem`]
+a|`$basketItem`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getBasketItem():Plenty\Modules\Basket\Models\BasketItem
+
+----
+
+    
+
+
+====== *Return type:*        xref:Basket.adoc#basket_models_basketitem[`BasketItem`]
+
+
+
+

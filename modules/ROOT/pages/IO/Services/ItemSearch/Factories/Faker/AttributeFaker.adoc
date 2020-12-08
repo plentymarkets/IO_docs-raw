@@ -1,0 +1,86 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__attributefaker]]
+==== AttributeFaker
+
+
+
+
+
+===== Namespace
+
+`IO\Services\ItemSearch\Factories\Faker`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public fill($data):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$data`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public __construct($app):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$app`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public static resetGlobals():void
+
+----
+
+    
+
+
+
+
+
+
+

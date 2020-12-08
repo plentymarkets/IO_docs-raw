@@ -1,0 +1,77 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+
+[[io__facetsearchfactory]]
+==== FacetSearchFactory
+
+
+
+
+
+===== Namespace
+
+`IO\Services\ItemSearch\Factories`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public create($facets):IO\Services\ItemSearch\Factories\FacetSearchFactory
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_factories_facetsearchfactory[`FacetSearchFactory`]
+
+
+Create a factory instance depending on a given set of facet values.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$facets`
+|List of active facet values. If string is given, it will be exploded by ',' to a list of values.
+|===
+
+
+[source%nowrap, php]
+----
+
+public withMinimumCount():IO\Services\ItemSearch\Factories
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+Register extension to filter facets by minimum hit count.
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
