@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== OrderPaymentStatus
-
-
 [[io__orderpaymentstatus]]
 == OrderPaymentStatus
 
-summary: 
 
 
 

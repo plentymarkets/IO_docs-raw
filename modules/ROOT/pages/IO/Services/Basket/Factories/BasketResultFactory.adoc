@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== BasketResultFactory
-
-
 [[io__basketresultfactory]]
 == BasketResultFactory
 
-summary: 
 
 
 
@@ -33,4 +28,52 @@ summary:
     |basketItemFaker
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public fillBasketResult():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public makeRawBasketItems():array
+
+----
+
+    
+
+
+
+
+
+
 

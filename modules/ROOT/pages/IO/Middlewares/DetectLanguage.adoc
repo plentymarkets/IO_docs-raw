@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== DetectLanguage
-
-
 [[io__detectlanguage]]
 == DetectLanguage
 
-summary: 
 
 
 
@@ -29,8 +24,88 @@ summary:
 |
     |DETECTED_LANGUAGE
     |
-|link:http://php.net/bool[bool^]
-    |includeRestRoutes
-    |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public before($request):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_middlewares_request[`Request`]
+a|`$request`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public after($request, $response):IO\Middlewares\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_middlewares_response[`Response`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_middlewares_request[`Request`]
+a|`$request`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_middlewares_response[`Response`]
+a|`$response`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setLanguage($language, $webstoreConfig):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$language`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_middlewares_webstoreconfiguration[`WebstoreConfiguration`]
+a|`$webstoreConfig`
+|
+|===
+
 

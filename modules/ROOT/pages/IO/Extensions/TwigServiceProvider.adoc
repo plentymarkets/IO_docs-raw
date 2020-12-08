@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== TwigServiceProvider
-
-
 [[io__twigserviceprovider]]
 == TwigServiceProvider
 
-summary: 
 
 
 
@@ -17,6 +12,84 @@ summary:
 ===== Namespace
 
 `IO\Extensions`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getName():string
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getFunctions():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getGlobals():array
+
+----
+
+    
+
+
 
 
 

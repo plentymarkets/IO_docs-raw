@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ShuffleFilter
-
-
 [[io__shufflefilter]]
 == ShuffleFilter
 
-summary: 
 
 
 
@@ -22,12 +17,60 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public shuffle($arrayToShuffle):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
-
-|link:http://php.net/array[array^]
-    |filters
-    |
+|
+a|`$arrayToShuffle`
+|
 |===
+
 

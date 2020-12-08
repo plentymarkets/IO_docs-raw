@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemConditionTexts
-
-
 [[io__itemconditiontexts]]
 == ItemConditionTexts
 
-summary: 
 
 
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== AvailabilityExtension
-
-
 [[io__availabilityextension]]
 == AvailabilityExtension
 
-summary: 
 
 
 
@@ -17,6 +12,48 @@ summary:
 ===== Namespace
 
 `IO\Services\ItemSearch\Extensions`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getSearch($parentSearchBuilder):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$parentSearchBuilder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public transformResult():void
+
+----
+
+    
+
+
 
 
 

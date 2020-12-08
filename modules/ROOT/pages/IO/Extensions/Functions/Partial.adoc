@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== Partial
-
-
 [[io__partial]]
 == Partial
 
-summary: 
 
 
 
@@ -32,8 +27,101 @@ summary:
 |
     |map
     |
-|link:http://php.net/array[array^]
-    |functions
-    |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public set():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getTemplate($key):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$key`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getFunctions():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getPartial($key):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$key`
+|
+|===
+
 

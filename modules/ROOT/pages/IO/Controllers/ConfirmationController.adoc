@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ConfirmationController
-
-
 [[io__confirmationcontroller]]
 == ConfirmationController
 
-summary: 
 
 
 
@@ -27,28 +22,88 @@ summary:
 |Type |Name |Description
 
 |
-    |app
-    |
-|
-    |event
-    |
-|
-    |categoryRepo
-    |
-|
-    |categoryMap
-    |
-|
-    |categoryService
-    |Used by concrete controllers to set the current category
-|
-    |urlService
-    |
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
-|
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public showConfirmation():string
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public checkValidity($order):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$order`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public redirect():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Controllers\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

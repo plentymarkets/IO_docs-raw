@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemSearchController
-
-
 [[io__itemsearchcontroller]]
 == ItemSearchController
 
-summary: 
 
 
 
@@ -22,30 +17,54 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public showSearch($category = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
-
 |
-    |app
-    |
+a|`$category`
 |
-    |event
-    |
-|
-    |categoryRepo
-    |
-|
-    |categoryMap
-    |
-|
-    |categoryService
-    |Used by concrete controllers to set the current category
-|
-    |urlService
-    |
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
 |===
+
+
+[source%nowrap, php]
+----
+
+public redirectToSearch($tagName = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$tagName`
+|tagName from route /tag/tagName convert to search string
+|===
+
 

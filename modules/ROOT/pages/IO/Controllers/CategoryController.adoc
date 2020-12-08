@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CategoryController
-
-
 [[io__categorycontroller]]
 == CategoryController
 
-summary: 
 
 
 
@@ -30,28 +25,138 @@ summary:
     |LANGUAGE_FROM_URL
     |
 |
-    |app
-    |
-|
-    |event
-    |
-|
-    |categoryRepo
-    |
-|
-    |categoryMap
-    |
-|
-    |categoryService
-    |Used by concrete controllers to set the current category
-|
-    |urlService
-    |
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
-|
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public showCategory($lvl1 = null, $lvl2 = null, $lvl3 = null, $lvl4 = null, $lvl5 = null, $lvl6 = null):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$lvl1`
+|Level 1 of category url. Will be null at root page
+
+|link:http://php.net/string[string^]
+a|`$lvl2`
+|Level 2 of category url.
+
+|link:http://php.net/string[string^]
+a|`$lvl3`
+|Level 3 of category url.
+
+|link:http://php.net/string[string^]
+a|`$lvl4`
+|Level 4 of category url.
+
+|link:http://php.net/string[string^]
+a|`$lvl5`
+|Level 5 of category url.
+
+|link:http://php.net/string[string^]
+a|`$lvl6`
+|Level 6 of category url.
+|===
+
+
+[source%nowrap, php]
+----
+
+public showCategoryById():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public redirectToCategory():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public redirectRoute():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public renderCategory():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Controllers\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

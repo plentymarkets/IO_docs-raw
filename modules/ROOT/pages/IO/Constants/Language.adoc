@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== Language
-
-
 [[io__language]]
 == Language
 
-summary: 
 
 
 

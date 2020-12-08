@@ -2,21 +2,58 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CurrentCategoryExtension
-
-Set current category when loading an item to be displayed in breadcrumbs or navigation templates.
 [[io__currentcategoryextension]]
 == CurrentCategoryExtension
 
-summary: 
-
+Set current category when loading an item to be displayed in breadcrumbs or navigation templates.
 
 
 
 ===== Namespace
 
 `IO\Services\ItemSearch\Extensions`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getSearch($parentSearchBuilder):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$parentSearchBuilder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public transformResult():void
+
+----
+
+    
+
+
 
 
 

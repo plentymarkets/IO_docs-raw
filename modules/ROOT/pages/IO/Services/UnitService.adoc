@@ -2,22 +2,17 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== UnitService
-
-
 [[io__unitservice]]
 == UnitService
 
-summary: 
 
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be removed in 6.0.0
-    
+
 ====
 
 
@@ -46,4 +41,206 @@ since 5.0.0 will be removed in 6.0.0
     |cache
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($unitNameRepository, $unitRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_unitnamerepositorycontract[`UnitNameRepositoryContract`]
+a|`$unitNameRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_unitrepositorycontract[`UnitRepositoryContract`]
+a|`$unitRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getUnitById($unitId, $lang = &quot;de&quot;):IO\Services\UnitName
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_unitname[`UnitName`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$unitId`
+|
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getUnitNameByKey($unitKey, $lang = null):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$unitKey`
+|
+
+|
+a|`$lang`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public static isValidUnit($sUnit):bool
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$sUnit`
+|The unit to be checked
+|===
+
+
+[source%nowrap, php]
+----
+
+public static getHTML4Unit($sUnit = &quot;SMM&quot;):string
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$sUnit`
+|One of 'MTK', 'SCM', 'SMM'
+|===
+
+
+[source%nowrap, php]
+----
+
+public fromMemoryCache():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public resetMemoryCache($key = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$key`
+|
+|===
+
 

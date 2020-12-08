@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== IORouteServiceProvider
-
-
 [[io__iorouteserviceprovider]]
 == IORouteServiceProvider
 
-summary: 
 
 
 
@@ -22,30 +17,104 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public register():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public map($router, $api):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_providers_router[`Router`]
+a|`$router`
+|
 
+|        xref:Miscellaneous.adoc#miscellaneous_providers_apirouter[`ApiRouter`]
+a|`$api`
 |
-    |isBootedPlugins
-    |
-|
-    |isCached
-    |
-|link:http://php.net/bool[bool^]
-    |isBooted
-    |
-|
-    |namespace
-    |The controller namespace for the application.
-|        xref:Miscellaneous.adoc#miscellaneous_foundation_application[`Application`]
-    |app
-    |The application instance.
-|link:http://php.net/array[array^]
-    |publishes
-    |The paths that should be published.
-|link:http://php.net/array[array^]
-    |publishGroups
-    |The paths that should be published by group.
 |===
+
+
+[source%nowrap, php]
+----
+
+public registerRedirectedRoute($router, $route, $shopUrl, $legacyController, $redirectController):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_providers_router[`Router`]
+a|`$router`
+|
+
+|link:http://php.net/string[string^]
+a|`$route`
+|
+
+|link:http://php.net/string[string^]
+a|`$shopUrl`
+|
+
+|link:http://php.net/string[string^]
+a|`$legacyController`
+|
+
+|link:http://php.net/string[string^]
+a|`$redirectController`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public registerSingleCategoryRoute():void
+
+----
+
+    
+
+
+
+
+
+
 

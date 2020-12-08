@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CategoryParams
-
-
 [[io__categoryparams]]
 == CategoryParams
 
-summary: 
 
 
 

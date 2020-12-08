@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== OrderResource
-
-
 [[io__orderresource]]
 == OrderResource
 
-summary: 
 
 
 
@@ -22,18 +17,64 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($request, $response):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_resources_request[`Request`]
+a|`$request`
+|
 
-|        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
-    |response
-    |
-|link:http://php.net/int[int^]
-    |request
-    |loll
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
+|        xref:Miscellaneous.adoc#miscellaneous_resources_apiresponse[`ApiResponse`]
+a|`$response`
+|
 |===
+
+
+[source%nowrap, php]
+----
+
+public index():IO\Api\Resources\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public store():IO\Api\Resources\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+
+
 

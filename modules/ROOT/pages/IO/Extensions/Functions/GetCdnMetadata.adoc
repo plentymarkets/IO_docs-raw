@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== GetCdnMetadata
-
-
 [[io__getcdnmetadata]]
 == GetCdnMetadata
 
-summary: 
 
 
 
@@ -22,12 +17,53 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getFunctions():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getCdnMetadata($imageUrl, $key = null, $default = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$imageUrl`
+|Resource url to get metadata for
 
-|link:http://php.net/array[array^]
-    |functions
-    |
+|link:http://php.net/string[string^]
+a|`$key`
+|Metadata key to get value for
+
+|
+a|`$default`
+|Default value to return if no value is stored in metadata
 |===
+
 

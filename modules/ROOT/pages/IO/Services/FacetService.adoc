@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== FacetService
-
-
 [[io__facetservice]]
 == FacetService
 
-summary: 
 
 
 
@@ -20,5 +15,36 @@ summary:
 
 
 
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public facetDataExists($facets, $type):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$facets`
+|
+
+|link:http://php.net/string[string^]
+a|`$type`
+|
+|===
 
 

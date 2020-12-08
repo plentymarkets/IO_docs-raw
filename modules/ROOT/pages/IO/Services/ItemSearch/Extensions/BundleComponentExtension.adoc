@@ -2,28 +2,65 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== BundleComponentExtension
-
-
 [[io__bundlecomponentextension]]
 == BundleComponentExtension
 
-summary: 
 
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be removed in 6.0.0
-    
+
 ====
 
 
 ===== Namespace
 
 `IO\Services\ItemSearch\Extensions`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getSearch($parentSearchBuilder):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$parentSearchBuilder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public transformResult():void
+
+----
+
+    
+
+
 
 
 

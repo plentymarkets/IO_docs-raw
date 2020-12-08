@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CustomerOrderReturnResource
-
-
 [[io__customerorderreturnresource]]
 == CustomerOrderReturnResource
 
-summary: 
 
 
 
@@ -29,14 +24,38 @@ summary:
 |
     |customerService
     |
-|        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
-    |response
-    |
-|link:http://php.net/int[int^]
-    |request
-    |loll
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public index():void
+
+----
+
+    
+
+
+
+
+
+
 

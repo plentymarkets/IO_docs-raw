@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== VariationBaseFields
-
-
 [[io__variationbasefields]]
 == VariationBaseFields
 
-summary: 
 
 
 

@@ -2,22 +2,17 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemSearchService
-
-Execute elastic search requests.
 [[io__itemsearchservice]]
 == ItemSearchService
 
-summary: 
-
+Execute elastic search requests.
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be deleted in 6.0.0
-    
+
 ====
 
 
@@ -37,4 +32,124 @@ since 5.0.0 will be deleted in 6.0.0
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getResults($searches):array
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$searches`
+|Map of search factories to execute.
+|===
+
+
+[source%nowrap, php]
+----
+
+public getResult($searchFactory):array
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_basesearchfactory[`BaseSearchFactory`]
+a|`$searchFactory`
+|The factory to get results for.
+|===
+
+
+[source%nowrap, php]
+----
+
+public normalizeResult($result):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_itemsearch_services[`Services`]
+a|`$result`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Services\ItemSearch\Services\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

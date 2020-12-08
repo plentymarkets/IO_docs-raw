@@ -2,25 +2,20 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
+[[io__crosssellingitems]]
 == CrossSellingItems
 
 Search preset for cross selling items
 Available options:
 - itemId:    Id of the item to get cross selling items for
 - relation:  The relation to consider when getting cross selling items
-[[io__crosssellingitems]]
-== CrossSellingItems
-
-summary: 
-
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be deleted in 6.0.0
-    
+
 ====
 
 
@@ -30,5 +25,32 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static getSearchFactory($options):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$options`
+|
+|===
 
 

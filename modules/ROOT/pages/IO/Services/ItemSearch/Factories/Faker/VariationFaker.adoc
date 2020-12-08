@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== VariationFaker
-
-
 [[io__variationfaker]]
 == VariationFaker
 
-summary: 
 
 
 
@@ -22,33 +17,45 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public fill($data):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
-
 |
-    |isList
-    |
+a|`$data`
 |
-    |range
-    |
-|
-    |index
-    |
-|
-    |list
-    |
-|
-    |lang
-    |
-|
-    |esLang
-    |
-|
-    |plentyId
-    |
-|
-    |translationCounter
-    |
 |===
+
+
+[source%nowrap, php]
+----
+
+public makeAvailability():void
+
+----
+
+    
+
+
+
+
+
+
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== PriceFaker
-
-
 [[io__pricefaker]]
 == PriceFaker
 
-summary: 
 
 
 
@@ -35,29 +30,86 @@ summary:
 |
     |numberFormatFilter
     |
-|
-    |isList
-    |
-|
-    |range
-    |
-|
-    |index
-    |
-|
-    |list
-    |
-|
-    |lang
-    |
-|
-    |esLang
-    |
-|
-    |plentyId
-    |
-|
-    |translationCounter
-    |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public fill($data):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$data`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public makeGraduatedPrices($defaultPrice):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$defaultPrice`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public makePrice():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public makePriceRaw():void
+
+----
+
+    
+
+
+
+
+
+
 

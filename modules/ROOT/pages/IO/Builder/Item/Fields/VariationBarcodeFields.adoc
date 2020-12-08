@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== VariationBarcodeFields
-
-
 [[io__variationbarcodefields]]
 == VariationBarcodeFields
 
-summary: 
 
 
 

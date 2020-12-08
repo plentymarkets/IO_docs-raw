@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== DocumentService
-
-
 [[io__documentservice]]
 == DocumentService
 
-summary: 
 
 
 
@@ -30,4 +25,55 @@ summary:
     |documentRepo
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($documentRepo):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_documentrepositorycontract[`DocumentRepositoryContract`]
+a|`$documentRepo`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getDocumentsByOrderId($orderId):IO\Services\Plenty\Repositories\Models\PaginatedResult
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$orderId`
+|
+|===
+
 

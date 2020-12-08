@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== IOSitemapPattern
-
-
 [[io__iositemappattern]]
 == IOSitemapPattern
 
-summary: 
 
 
 
@@ -30,4 +25,31 @@ summary:
     |contentRoutes
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public handle($sitemapPattern):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_sitemap_loadsitemappattern[`LoadSitemapPattern`]
+a|`$sitemapPattern`
+|
+|===
+
 

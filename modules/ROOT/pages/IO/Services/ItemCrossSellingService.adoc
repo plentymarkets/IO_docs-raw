@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemCrossSellingService
-
-
 [[io__itemcrosssellingservice]]
 == ItemCrossSellingService
 
-summary: 
 
 
 
@@ -33,4 +28,113 @@ summary:
     |sortingHelper
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($sessionStorageRepository, $sortingHelper):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_sortinghelper[`SortingHelper`]
+a|`$sortingHelper`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setType($type):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$type`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getType():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public setSorting($sorting):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$sorting`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getSorting():void
+
+----
+
+    
+
+
+
+
+
+
 

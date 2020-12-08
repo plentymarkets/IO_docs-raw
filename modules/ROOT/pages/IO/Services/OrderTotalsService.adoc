@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== OrderTotalsService
-
-
 [[io__ordertotalsservice]]
 == OrderTotalsService
 
-summary: 
 
 
 
@@ -20,5 +15,80 @@ summary:
 
 
 
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getAllTotals($order):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_order[`Order`]
+a|`$order`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCustomerAmountId($amounts):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$amounts`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public highlightNetPrices($order):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$order`
+|
+|===
 
 

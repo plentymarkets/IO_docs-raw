@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== AbstractFaker
-
-
 [[io__abstractfaker]]
 == AbstractFaker
 
-summary: 
 
 
 
@@ -57,4 +52,517 @@ summary:
     |countries
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($app):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$app`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public fill($data):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$data`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public rand($values):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$values`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public global():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public static resetGlobals():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public merge($object, $defaults):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$object`
+|The original object to merge values into
+
+|link:http://php.net/array[array^]
+a|`$defaults`
+|The values to be merged into the original object if not set
+|===
+
+
+[source%nowrap, php]
+----
+
+public get($arr, $field):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$arr`
+|The array to get the nested value from
+
+|link:http://php.net/string[string^]
+a|`$field`
+|The path to the property to read
+|===
+
+
+[source%nowrap, php]
+----
+
+public isDefined($arr, $field):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$arr`
+|The array to search the nested property in
+
+|link:http://php.net/string[string^]
+a|`$field`
+|The path to the property to check
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasAny($arr, $field, $key, $value):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$arr`
+|The object containing the list to check entries in
+
+|link:http://php.net/string[string^]
+a|`$field`
+|The path to the list inside the object to check entries
+
+|link:http://php.net/string[string^]
+a|`$key`
+|Key inside each list entry to check
+
+|
+a|`$value`
+|Expected value of each entry
+|===
+
+
+[source%nowrap, php]
+----
+
+public number():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public float():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public percentage():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public pow():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public text():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public word():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public trans():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public serial():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public hash():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public url():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public hexColor():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public timestamp():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public dateString($format = &quot;Y-m-d H:i:s&quot;):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$format`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public boolean():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public shopLanguage($skipActiveLang = false):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$skipActiveLang`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public image():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public country():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public unit():void
+
+----
+
+    
+
+
+
+
+
+
 

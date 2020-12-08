@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemWishListGuestRepository
-
-
 [[io__itemwishlistguestrepository]]
 == ItemWishListGuestRepository
 
-summary: 
 
 
 
@@ -33,4 +28,186 @@ summary:
     |plentyId
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($sessionStorageRepository, $app):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_repositories_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_repositories_application[`Application`]
+a|`$app`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getItemWishList():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getItemWishListWithData():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getItemWishListForAllPlentyIds():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getCountedItemWishList():int
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public isItemInWishList($variationId):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public addItemWishListEntry($variationId, $quantity = 1):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+
+|link:http://php.net/int[int^]
+a|`$quantity`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public removeItemWishListEntry($variationId):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public resetItemWishList():void
+
+----
+
+    
+
+
+
+
+
+
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== IONumberFormatConfig
-
-
 [[io__ionumberformatconfig]]
 == IONumberFormatConfig
 
-summary: 
 
 
 
@@ -39,4 +34,37 @@ summary:
     |useLocaleCurrencyFormat
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public load():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getPluginName():void
+
+----
+
+    
+
+
+
+
+
+
 

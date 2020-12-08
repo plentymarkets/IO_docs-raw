@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ResponseCode
-
-
 [[io__responsecode]]
 == ResponseCode
 
-summary: 
 
 
 

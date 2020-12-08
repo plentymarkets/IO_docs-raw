@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== UnitFaker
-
-
 [[io__unitfaker]]
 == UnitFaker
 
-summary: 
 
 
 
@@ -22,33 +17,30 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public fill($data):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
-
 |
-    |isList
-    |
+a|`$data`
 |
-    |range
-    |
-|
-    |index
-    |
-|
-    |list
-    |
-|
-    |lang
-    |
-|
-    |esLang
-    |
-|
-    |plentyId
-    |
-|
-    |translationCounter
-    |
 |===
+
 

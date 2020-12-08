@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== OrderOptionSubType
-
-
 [[io__orderoptionsubtype]]
 == OrderOptionSubType
 
-summary: 
 
 
 

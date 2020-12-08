@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemParamsBuilder
-
-
 [[io__itemparamsbuilder]]
 == ItemParamsBuilder
 
-summary: 
 
 
 
@@ -30,4 +25,50 @@ summary:
     |params
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public withParam($paramName, $paramValue):IO\Builder\Item\ItemParamsBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemparamsbuilder[`ItemParamsBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnsparams[`ItemColumnsParams`]
+a|`$paramName`
+|The name of the param to set.
+
+|
+a|`$paramValue`
+|The value of the param to set.
+|===
+
+
+[source%nowrap, php]
+----
+
+public build():array
+
+----
+
+    
+
+
+
+
+
+
 

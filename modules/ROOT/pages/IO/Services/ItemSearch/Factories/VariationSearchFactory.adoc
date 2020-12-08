@@ -2,22 +2,17 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== VariationSearchFactory
-
-Concrete factory to build variation searches
 [[io__variationsearchfactory]]
 == VariationSearchFactory
 
-summary: 
-
+Concrete factory to build variation searches
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be deleted in 6.0.0
-    
+
 ====
 
 
@@ -37,4 +32,1260 @@ since 5.0.0 will be deleted in 6.0.0
     |isAdminPreview
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public setAdminPreview($isAdminPreview):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/bool[bool^]
+a|`$isAdminPreview`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isActive():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public isInactive():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public hasItemId($itemId):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|Item id to filter by.
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasItemIds($itemIds):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$itemIds`
+|List of item ids to filter by.
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasVariationId($variationId):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|The variation id to filter by.
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasVariationIds($variationIds):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationIds`
+|List of variation ids to filter by.
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasAtLeastOneAvailability($availabilityIds):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$availabilityIds`
+|List of availability ids to filter by.
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasSupplier($supplierId):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$supplierId`
+|The supplier id to filter by.
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasManufacturer($manufacturerId):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$manufacturerId`
+|To filter by manufacturer
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasEachProperty($propertyIds):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$propertyIds`
+|The property ids to filter by.
+|===
+
+
+[source%nowrap, php]
+----
+
+public isMain():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public isChild():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public isHiddenInCategoryList($isHidden = true):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/bool[bool^]
+a|`$isHidden`
+|Visibility in category list to filter by.
+|===
+
+
+[source%nowrap, php]
+----
+
+public isSalable():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public isVisibleForClient($clientId = null):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$clientId`
+|The client id to filter by. If null, default client id on application will be used.
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasNameInLanguage($type = \Plenty\Modules\Item\Search\Filter\TextFilter::FILTER_ANY_NAME, $lang = null):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$type`
+|The text field to filter by ('hasAny', 'hasName1', 'hasName2', 'hasName3')
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|The language to filter by. If null, language defined in session will be used.
+|===
+
+
+[source%nowrap, php]
+----
+
+public isInCategory($categoryId):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$categoryId`
+|A category id to filter variations by.
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasAtLeastOnePrice($priceIds):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$priceIds`
+|List of price ids to filter variations by
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasPriceForCustomer():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public hasPriceInRange($priceMin, $priceMax):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/float[float^]
+a|`$priceMin`
+|
+
+|link:http://php.net/float[float^]
+a|`$priceMax`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasTag($tagId):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$tagId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasAnyTag($tagIds):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$tagIds`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public groupByTemplateConfig($key = &quot;ids.itemAttributeValue&quot;):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$key`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isCrossSellingItem($itemId, $relation):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|Item id to filter cross selling items for
+
+|link:http://php.net/string[string^]
+a|`$relation`
+|The relation of cross selling items.
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasFacets($facetValues, $clientId = null, $lang = null):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$facetValues`
+|List of facet values. If string is given, it will be exploded by ';'
+
+|link:http://php.net/int[int^]
+a|`$clientId`
+|Client id to filter facets by. If null, default client id from application will be used.
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|Language to filter facets by. If null, active language from session will be used.
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasSearchString($query, $lang = null, $searchType = \Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch::SEARCH_TYPE_EXACT, $operator = \Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch::OR_OPERATOR):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$query`
+|The search string to filter variations by
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|The language to apply search on. If null, default language from session will be used
+
+|link:http://php.net/string[string^]
+a|`$searchType`
+|Type of the search ('exact', 'fuzzy', 'autocomplete')
+
+|link:http://php.net/string[string^]
+a|`$operator`
+|Operator ot be used for search
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasNameString($query, $lang = null):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$query`
+|The search string
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|Language to apply search on. If null, default language from session will be used.
+|===
+
+
+[source%nowrap, php]
+----
+
+public withLanguage($lang = null):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$lang`
+|Language to get texts for. If null, default language from session will be used.
+|===
+
+
+[source%nowrap, php]
+----
+
+public withImages($clientId = null):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$clientId`
+|The client id to get images for. If null, default client id from application will be used.
+|===
+
+
+[source%nowrap, php]
+----
+
+public withAttributes():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public withPropertyGroups():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public withOrderPropertySelectionValues():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public withVariationProperties():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public withUrls():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+If not URL is stored in item result, a new URL will be generated and written to item data.
+
+[source%nowrap, php]
+----
+
+public withPrices($params):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$params`
+|Params to be passed to price search.
+|===
+
+
+[source%nowrap, php]
+----
+
+public withCurrentCategory():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public withDefaultImage():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public withBundleComponents():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public withLinkToContent():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public withGroupedAttributeValues():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public withReducedResults($removeProperties = false):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/bool[bool^]
+a|`$removeProperties`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public withAvailability():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public withTags():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
 

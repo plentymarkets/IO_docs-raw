@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== PropertyNameFilter
-
-
 [[io__propertynamefilter]]
 == PropertyNameFilter
 
-summary: 
 
 
 
@@ -35,11 +30,119 @@ summary:
 |
     |propertySelectionRepository
     |
-|link:http://php.net/array[array^]
-    |filters
-    |
 |
     |cache
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($authHelper):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_filters_authhelper[`AuthHelper`]
+a|`$authHelper`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getPropertyName():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getPropertySelectionValueName():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public fromMemoryCache():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public resetMemoryCache($key = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$key`
+|
+|===
+
 

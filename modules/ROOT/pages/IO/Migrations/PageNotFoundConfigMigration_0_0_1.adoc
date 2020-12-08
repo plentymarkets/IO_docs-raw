@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== PageNotFoundConfigMigration_0_0_1
-
-
 [[io__pagenotfoundconfigmigration_0_0_1]]
 == PageNotFoundConfigMigration_0_0_1
 
-summary: 
 
 
 
@@ -20,5 +15,32 @@ summary:
 
 
 
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public run($migrate):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$migrate`
+|
+|===
 
 

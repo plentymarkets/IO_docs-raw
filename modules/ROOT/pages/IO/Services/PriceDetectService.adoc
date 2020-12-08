@@ -2,22 +2,17 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== PriceDetectService
-
-
 [[io__pricedetectservice]]
 == PriceDetectService
 
-summary: 
 
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be removed in 6.0.0
-    
+
 ====
 
 
@@ -76,4 +71,131 @@ since 5.0.0 will be removed in 6.0.0
     |cache
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($detectSalesPriceService, $contactRepository, $app, $checkoutRepository, $basketService, $vatInitService, $vatService):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_detectsalespriceservice[`DetectSalesPriceService`]
+a|`$detectSalesPriceService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_application[`Application`]
+a|`$app`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+a|`$checkoutRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_basketservice[`BasketService`]
+a|`$basketService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_vatinitcontract[`VatInitContract`]
+a|`$vatInitService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_vatservice[`VatService`]
+a|`$vatService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public init():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getPriceIdsForCustomer():array
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public fromMemoryCache():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public resetMemoryCache($key = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$key`
+|
+|===
+
 

@@ -2,22 +2,17 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== MultiSearchFactory
-
-Factory to build an elastic search multisearch request by collecting multiple search factory instances.
 [[io__multisearchfactory]]
 == MultiSearchFactory
 
-summary: 
-
+Factory to build an elastic search multisearch request by collecting multiple search factory instances.
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be deleted in 6.0.0
-    
+
 ====
 
 
@@ -43,4 +38,132 @@ since 5.0.0 will be deleted in 6.0.0
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getSearches():array
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getExtensions():array
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public addSearch($resultName, $searchBuilder):IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$resultName`
+|An unique name for the search. Results of this search will be accessible by this key.
+
+|        xref:Miscellaneous.adoc#miscellaneous_factories_basesearchfactory[`BaseSearchFactory`]
+a|`$searchBuilder`
+|A search factory
+|===
+
+
+[source%nowrap, php]
+----
+
+public getResults():array
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Services\ItemSearch\Factories\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_factories_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CheckoutReadonlyChanged
-
-
 [[io__checkoutreadonlychanged]]
 == CheckoutReadonlyChanged
 
-summary: 
 
 
 
@@ -30,4 +25,46 @@ summary:
     |isReadonly
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($isReadonly):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$isReadonly`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isReadOnlyCheckout():void
+
+----
+
+    
+
+
+
+
+
+
 

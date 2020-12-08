@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== PropertyFileService
-
-
 [[io__propertyfileservice]]
 == PropertyFileService
 
-summary: 
 
 
 
@@ -17,6 +12,24 @@ summary:
 ===== Namespace
 
 `IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getPropertyFileUrl():void
+
+----
+
+    
+
+
 
 
 

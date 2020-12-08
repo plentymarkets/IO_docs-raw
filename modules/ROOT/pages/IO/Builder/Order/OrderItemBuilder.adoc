@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== OrderItemBuilder
-
-
 [[io__orderitembuilder]]
 == OrderItemBuilder
 
-summary: 
 
 
 
@@ -48,4 +43,135 @@ summary:
     |contactRepository
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($checkoutService, $vatService, $itemNameFilter, $webstoreRepository, $vatRepository, $contactRepository, $checkoutRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_order_checkoutservice[`CheckoutService`]
+a|`$checkoutService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_order_vatservice[`VatService`]
+a|`$vatService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_order_itemnamefilter[`ItemNameFilter`]
+a|`$itemNameFilter`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_order_webstorerepositorycontract[`WebstoreRepositoryContract`]
+a|`$webstoreRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_order_vatrepositorycontract[`VatRepositoryContract`]
+a|`$vatRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_order_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_order_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+a|`$checkoutRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public fromBasket($basket, $items):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_order_basket[`Basket`]
+a|`$basket`
+|
+
+|link:http://php.net/array[array^]
+a|`$items`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public basketItemToOrderItem($basketItem):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$basketItem`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getVatField($vat, $vatRate):int
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_order_vat[`Vat`]
+a|`$vat`
+|The country VAT instance.
+
+|link:http://php.net/float[float^]
+a|`$vatRate`
+|The vat rate.
+|===
+
 

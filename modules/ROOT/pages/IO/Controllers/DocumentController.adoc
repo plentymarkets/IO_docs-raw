@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== DocumentController
-
-
 [[io__documentcontroller]]
 == DocumentController
 
-summary: 
 
 
 
@@ -22,30 +17,34 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public preview($documentId, $response):IO\Controllers\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_response[`Response`]
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$documentId`
+|
 
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_response[`Response`]
+a|`$response`
 |
-    |app
-    |
-|
-    |event
-    |
-|
-    |categoryRepo
-    |
-|
-    |categoryMap
-    |
-|
-    |categoryService
-    |Used by concrete controllers to set the current category
-|
-    |urlService
-    |
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
 |===
+
 

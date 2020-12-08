@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CountryService
-
-
 [[io__countryservice]]
 == CountryService
 
-summary: 
 
 
 
@@ -33,4 +28,170 @@ summary:
     |activeCountries
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($countryRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_countryrepositorycontract[`CountryRepositoryContract`]
+a|`$countryRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getActiveCountriesList($lang = null):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getActiveCountryNameMap($language):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$language`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getShippingCountryId():int
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public setShippingCountryId($shippingCountryId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$shippingCountryId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCountryById($countryId):IO\Services\Country
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_country[`Country`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$countryId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCountryName($countryId, $lang = null):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$countryId`
+|
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+|===
+
 

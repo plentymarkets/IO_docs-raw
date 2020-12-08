@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== AbstractFilter
-
-
 [[io__abstractfilter]]
 == AbstractFilter
 
-summary: 
 
 
 
@@ -30,4 +25,37 @@ summary:
     |filters
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+
 

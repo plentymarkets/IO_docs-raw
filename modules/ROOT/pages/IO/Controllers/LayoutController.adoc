@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== LayoutController
-
-
 [[io__layoutcontroller]]
 == LayoutController
 
-summary: 
 
 
 
@@ -50,11 +45,235 @@ summary:
 |link:http://php.net/bool[bool^]
     |debug
     |
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
 |
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($app, $twig, $event, $categoryRepo, $categoryMap, $categoryService):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_application[`Application`]
+a|`$app`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_twig[`Twig`]
+a|`$twig`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_dispatcher[`Dispatcher`]
+a|`$event`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_categoryrepositorycontract[`CategoryRepositoryContract`]
+a|`$categoryRepo`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_categorymap[`CategoryMap`]
+a|`$categoryMap`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_categoryservice[`CategoryService`]
+a|`$categoryService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public abort($code, $message):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|link:http://php.net/string[string^]
+a|`$message`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public buildTemplateContainer($templateEvent, $controllerData = []):IO\Controllers\TemplateContainer
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_templatecontainer[`TemplateContainer`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$templateEvent`
+|
+
+|
+a|`$controllerData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public renderTemplate($templateEvent, $controllerData = [], $cacheContent = true):string
+
+----
+
+    
+
+
+
+
+
+Add global template data to custom data from specific controller.
+Will pass request to the plentymarkets system if no template is provided by the layout plugin.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$templateEvent`
+|
+
+|
+a|`$controllerData`
+|
+
+|link:http://php.net/bool[bool^]
+a|`$cacheContent`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public renderTemplateContainer($templateContainer, $controllerData):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_templatecontainer[`TemplateContainer`]
+a|`$templateContainer`
+|
+
+|
+a|`$controllerData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public notFound():IO\Controllers\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_response[`Response`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public checkForExistingCategory($url = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$url`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Controllers\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

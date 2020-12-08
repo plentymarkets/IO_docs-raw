@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== AdditionalResources
-
-
 [[io__additionalresources]]
 == AdditionalResources
 
-summary: 
 
 
 
@@ -29,8 +24,53 @@ summary:
 |
     |resourceContainer
     |
-|link:http://php.net/array[array^]
-    |functions
-    |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getFunctions():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getAdditionalScripts():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getAdditionalStyles():void
+
+----
+
+    
+
+
+
+
+
+
 

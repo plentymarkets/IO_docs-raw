@@ -2,22 +2,17 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== SessionStorageService
-
-
 [[io__sessionstorageservice]]
 == SessionStorageService
 
-summary: 
 
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be removed in 6.0.0
-    
+
 ====
 
 
@@ -40,4 +35,141 @@ since 5.0.0 will be removed in 6.0.0
     |sessionStorage
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($sessionStorage):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
+a|`$sessionStorage`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setSessionValue($name, $value):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$name`
+|
+
+|
+a|`$value`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getSessionValue($name):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$name`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLang():string
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getCustomer():IO\Services\Customer
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_customer[`Customer`]
+
+
+
 

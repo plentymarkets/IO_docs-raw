@@ -2,22 +2,17 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== StringUtils
-
-
 [[io__stringutils]]
 == StringUtils
 
-summary: 
 
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be removed in 6.0.0
-    
+
 ====
 
 
@@ -27,5 +22,39 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static string4URL($n):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$n`
+|
+|===
 
 

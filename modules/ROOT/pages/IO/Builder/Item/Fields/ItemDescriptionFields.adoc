@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemDescriptionFields
-
-
 [[io__itemdescriptionfields]]
 == ItemDescriptionFields
 
-summary: 
 
 
 

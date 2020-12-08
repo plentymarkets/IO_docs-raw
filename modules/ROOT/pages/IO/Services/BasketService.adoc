@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== BasketService
-
-
 [[io__basketservice]]
 == BasketService
 
-summary: 
 
 
 
@@ -60,4 +55,791 @@ summary:
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($basketItemRepository, $checkout, $vatService, $contactRepository, $basketRepository, $vatInitService, $couponService, $webstoreConfigurationRepository, $sessionStorageRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_basketitemrepositorycontract[`BasketItemRepositoryContract`]
+a|`$basketItemRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_checkout[`Checkout`]
+a|`$checkout`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_vatservice[`VatService`]
+a|`$vatService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_basketrepositorycontract[`BasketRepositoryContract`]
+a|`$basketRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_vatinitcontract[`VatInitContract`]
+a|`$vatInitService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_couponservice[`CouponService`]
+a|`$couponService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+a|`$webstoreConfigurationRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setTemplate($template):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$template`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getBasketForTemplate():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getBasket():IO\Services\Basket
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public getTotalVats():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getBasketQuantity():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getBasketItems():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getBasketItemsForOrder():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getBasketItemsForTemplate():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public removeInactiveBasketItems($basketItems = []):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$basketItems`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getSortedBasketItemOrderParams($basketItem):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$basketItem`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public checkBasketItemsLang($language = &quot;&quot;):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$language`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public checkBasketItemsCurrency():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+Use checkBasketItemsByPrice instead
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public checkBasketItemsByPrice():int
+
+----
+
+    
+
+
+
+
+
+..)
+
+[source%nowrap, php]
+----
+
+public hasTexts($basketItemData):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$basketItemData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getBasketItem($basketItemId, $appendVariation = true):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$basketItemId`
+|
+
+|link:http://php.net/bool[bool^]
+a|`$appendVariation`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public addVariationData($basketItems, $basketItemData, $sortOrderItems = false):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$basketItems`
+|
+
+|link:http://php.net/array[array^]
+a|`$basketItemData`
+|
+
+|link:http://php.net/bool[bool^]
+a|`$sortOrderItems`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public addBasketItem($data):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$data`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public addDataToBasket($data):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
+a|`$data`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public parseBasketItemOrderParams($basketOrderParams):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$basketOrderParams`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public updateBasketItem($basketItemId, $data):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$basketItemId`
+|
+
+|link:http://php.net/array[array^]
+a|`$data`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public deleteBasketItem($basketItemId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$basketItemId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public findExistingOneByData($data):IO\Services\BasketItem
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_basketitem[`BasketItem`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$data`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getBasketItemData($basketItems = []):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$basketItems`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getOrderItemData($basketItems = []):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$basketItems`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public resetBasket():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public setBillingAddressId($billingAddressId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$billingAddressId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getBillingAddressId():int
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public setDeliveryAddressId($deliveryAddressId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$deliveryAddressId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getDeliveryAddressId():int
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getMaxVatValue():float
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getBasketItemsRaw():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public filterSetItems($basketItems):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$basketItems`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getSetComponents():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public reduceBasketItem($basketItem):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$basketItem`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Services\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

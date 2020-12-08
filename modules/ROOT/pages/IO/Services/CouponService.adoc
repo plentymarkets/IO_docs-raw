@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CouponService
-
-
 [[io__couponservice]]
 == CouponService
 
-summary: 
 
 
 
@@ -39,4 +34,365 @@ summary:
     |authHelper
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($couponCampaignRepository, $basketRepository, $variationCategoryRepository, $authHelper):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_couponcampaignrepositorycontract[`CouponCampaignRepositoryContract`]
+a|`$couponCampaignRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_basketrepositorycontract[`BasketRepositoryContract`]
+a|`$basketRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_variationcategoryrepositorycontract[`VariationCategoryRepositoryContract`]
+a|`$variationCategoryRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_authhelper[`AuthHelper`]
+a|`$authHelper`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setCoupon($couponCode):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$couponCode`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public removeCoupon($code = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$code`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public checkCoupon($basket):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
+a|`$basket`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public validateBasketItemDelete($basket, $basketItem):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.9. Validation is handled b the plentymarkets core from now.
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
+a|`$basket`
+|
+
+|link:http://php.net/array[array^]
+a|`$basketItem`
+|Current basketItem
+|===
+
+
+[source%nowrap, php]
+----
+
+public validateBasketItemUpdate($basket, $data, $basketItem):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.9. Validation is handled b the plentymarkets core from now.
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
+a|`$basket`
+|
+
+|link:http://php.net/array[array^]
+a|`$data`
+|New basketItem
+
+|link:http://php.net/array[array^]
+a|`$basketItem`
+|Current basketItem
+|===
+
+
+[source%nowrap, php]
+----
+
+public isCouponMinimalOrderOnUpdate($basket, $data, $basketItem, $campaign):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
+a|`$basket`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
+a|`$data`
+|Pseudo-BasketItem
+
+|link:http://php.net/array[array^]
+a|`$basketItem`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_couponcampaign[`CouponCampaign`]
+a|`$campaign`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isCouponMinimalOrderOnDelete($basket, $basketItem, $campaign):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
+a|`$basket`
+|
+
+|link:http://php.net/array[array^]
+a|`$basketItem`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_couponcampaign[`CouponCampaign`]
+a|`$campaign`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isCouponValidForBasketItems($basket, $basketItem, $campaign):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
+a|`$basket`
+|
+
+|link:http://php.net/array[array^]
+a|`$basketItem`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_couponcampaign[`CouponCampaign`]
+a|`$campaign`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getNormalBasketItems($basket, $campaign):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
+a|`$basket`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_couponcampaign[`CouponCampaign`]
+a|`$campaign`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCategoryIds($variationId):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public effectsOnShippingCosts($campaign):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$campaign`
+|
+|===
+
 

@@ -2,15 +2,10 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== PriceSearchExtension
-
-Search and append all prices for each item in search result.
 [[io__pricesearchextension]]
 == PriceSearchExtension
 
-summary: 
-
+Search and append all prices for each item in search result.
 
 
 
@@ -33,4 +28,122 @@ summary:
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($quantities = []):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$quantities`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getSearch($parentSearchBuilder):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$parentSearchBuilder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public transformResult():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public convertPropertySurcharges($properties, $priceList):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$properties`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_extensions_variationpricelist[`VariationPriceList`]
+a|`$priceList`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Services\ItemSearch\Extensions\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_extensions_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

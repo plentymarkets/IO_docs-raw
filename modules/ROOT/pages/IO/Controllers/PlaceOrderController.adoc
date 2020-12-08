@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== PlaceOrderController
-
-
 [[io__placeordercontroller]]
 == PlaceOrderController
 
-summary: 
 
 
 
@@ -27,28 +22,109 @@ summary:
 |Type |Name |Description
 
 |
-    |app
-    |
-|
-    |event
-    |
-|
-    |categoryRepo
-    |
-|
-    |categoryMap
-    |
-|
-    |categoryService
-    |Used by concrete controllers to set the current category
-|
-    |urlService
-    |
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
-|
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public placeOrder($orderService, $notificationService, $sessionStorageRepository, $shopUrls):IO\Controllers\Symfony\Component\HttpFoundation\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_httpfoundation_response[`Response`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_orderservice[`OrderService`]
+a|`$orderService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_notificationservice[`NotificationService`]
+a|`$notificationService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_shopurls[`ShopUrls`]
+a|`$shopUrls`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public executePayment():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public handlePlaceOrderException($exception):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$exception`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Controllers\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

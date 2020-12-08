@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== LanguageResource
-
-
 [[io__languageresource]]
 == LanguageResource
 
-summary: 
 
 
 
@@ -29,14 +24,60 @@ summary:
 |
     |localizationService
     |
-|        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
-    |response
-    |
-|link:http://php.net/int[int^]
-    |request
-    |loll
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($request, $response):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_resources_request[`Request`]
+a|`$request`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_resources_apiresponse[`ApiResponse`]
+a|`$response`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public update($newLanguage):IO\Api\Resources\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$newLanguage`
+|
+|===
+
 

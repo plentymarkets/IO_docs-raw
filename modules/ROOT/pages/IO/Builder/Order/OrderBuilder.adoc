@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== OrderBuilder
-
-
 [[io__orderbuilder]]
 == OrderBuilder
 
-summary: 
 
 
 
@@ -33,4 +28,37 @@ summary:
     |basketService
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public prepare():void
+
+----
+
+    
+
+
+
+
+
+
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== AbstractFunction
-
-
 [[io__abstractfunction]]
 == AbstractFunction
 
-summary: 
 
 
 
@@ -30,4 +25,37 @@ summary:
     |functions
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getFunctions():array
+
+----
+
+    
+
+
+
+
+
+
 

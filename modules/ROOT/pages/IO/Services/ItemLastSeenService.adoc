@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemLastSeenService
-
-
 [[io__itemlastseenservice]]
 == ItemLastSeenService
 
-summary: 
 
 
 
@@ -33,4 +28,55 @@ summary:
     |basketRepository
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($cachingRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_cachingrepository[`CachingRepository`]
+a|`$cachingRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setLastSeenItem($variationId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
 

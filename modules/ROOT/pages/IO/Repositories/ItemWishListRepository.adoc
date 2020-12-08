@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemWishListRepository
-
-
 [[io__itemwishlistrepository]]
 == ItemWishListRepository
 
-summary: 
 
 
 
@@ -33,4 +28,141 @@ summary:
     |contactRepository
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($dataBase, $contactRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_repositories_database[`DataBase`]
+a|`$dataBase`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_repositories_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getItemWishList():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getCountedItemWishList():int
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public isItemInWishList($variationId):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public addItemWishListEntry($variationId, $quantity = 1):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+
+|link:http://php.net/int[int^]
+a|`$quantity`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public removeItemWishListEntry($variationId):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
 

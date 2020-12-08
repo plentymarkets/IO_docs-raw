@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CouponResource
-
-
 [[io__couponresource]]
 == CouponResource
 
-summary: 
 
 
 
@@ -22,18 +17,75 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public index():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public store():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public destroy($selector):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
-
-|        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
-    |response
-    |
-|link:http://php.net/int[int^]
-    |request
-    |loll
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
+|
+a|`$selector`
+|
 |===
+
 

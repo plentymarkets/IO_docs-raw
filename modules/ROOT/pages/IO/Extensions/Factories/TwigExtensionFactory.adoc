@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== TwigExtensionFactory
-
-
 [[io__twigextensionfactory]]
 == TwigExtensionFactory
 
-summary: 
 
 
 
@@ -33,4 +28,93 @@ summary:
     |filtersMap
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public registerFunction($functionClass, $functionsList):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$functionClass`
+|
+
+|link:http://php.net/array[array^]
+a|`$functionsList`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public registerFilter($filterClass, $filtersList):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$filterClass`
+|
+
+|link:http://php.net/array[array^]
+a|`$filtersList`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getFunctionsMap():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getFiltersMap():array
+
+----
+
+    
+
+
+
+
+
+
 

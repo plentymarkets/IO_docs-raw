@@ -2,15 +2,10 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== TemplateContainer
-
-Class TemplateContainer
 [[io__templatecontainer]]
 == TemplateContainer
 
-summary: 
-
+Class TemplateContainer
 
 
 
@@ -42,4 +37,245 @@ summary:
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static get():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public setTemplate($template):IO\Helper\TemplateContainer
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_helper_templatecontainer[`TemplateContainer`]
+
+
+Should be set in layout plugin when receiving triggered event.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$template`
+|The template to use for current request.
+|===
+
+
+[source%nowrap, php]
+----
+
+public getTemplate():void
+
+----
+
+    
+
+
+
+
+
+Will be rendered by LayoutController.
+
+[source%nowrap, php]
+----
+
+public hasTemplate():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getTemplateData():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public setTemplateData($customData):IO\Helper\TemplateContainer
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_helper_templatecontainer[`TemplateContainer`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$customData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getTemplateKey():string
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public setTemplateKey($templateKey):IO\Helper
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_io_helper[`Helper`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$templateKey`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setContext($contextClass):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$contextClass`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getContext():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public withData($data, $identifier):IO\Helper\TemplateContainer
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_helper_templatecontainer[`TemplateContainer`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$data`
+|The data to add to map.
+
+|link:http://php.net/string[string^]
+a|`$identifier`
+|An identifying string to access the given data
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Helper\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_helper_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

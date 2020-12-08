@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== RelationType
-
-
 [[io__relationtype]]
 == RelationType
 
-summary: 
 
 
 

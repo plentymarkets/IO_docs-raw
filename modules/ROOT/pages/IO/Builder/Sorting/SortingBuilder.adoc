@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== SortingBuilder
-
-
 [[io__sortingbuilder]]
 == SortingBuilder
 
-summary: 
 
 
 
@@ -20,5 +15,134 @@ summary:
 
 
 
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static buildSorting($sortingString):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$sortingString`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public static buildDefaultSortingSearch():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public static buildDefaultSortingCategory():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public static filterSortingInterface($usedSortingPriority):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$usedSortingPriority`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public static filterSortingString($sortingString):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$sortingString`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public static buildNameSorting($path):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$path`
+|
+|===
 
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== BasketItemFaker
-
-
 [[io__basketitemfaker]]
 == BasketItemFaker
 
-summary: 
 
 
 
@@ -29,29 +24,56 @@ summary:
 |
     |rawBasketItems
     |
-|
-    |isList
-    |
-|
-    |range
-    |
-|
-    |index
-    |
-|
-    |list
-    |
-|
-    |lang
-    |
-|
-    |esLang
-    |
-|
-    |plentyId
-    |
-|
-    |translationCounter
-    |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public fill($default):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$default`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setRawBasketItems($rawBasketitems):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_factories_faker[`Faker`]
+a|`$rawBasketitems`
+|
+|===
+
 

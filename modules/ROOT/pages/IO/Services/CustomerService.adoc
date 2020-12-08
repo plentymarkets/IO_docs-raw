@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CustomerService
-
-
 [[io__customerservice]]
 == CustomerService
 
-summary: 
 
 
 
@@ -51,4 +46,868 @@ summary:
     |cache
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($accountRepository, $coreContactRepository, $contactRepository, $contactAddressRepository, $addressRepository, $contactClassRepository, $sessionStorageRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_contactaccountrepositorycontract[`ContactAccountRepositoryContract`]
+a|`$accountRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_corecontactrepositorycontract[`CoreContactRepositoryContract`]
+a|`$coreContactRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_contactaddressrepositorycontract[`ContactAddressRepositoryContract`]
+a|`$contactAddressRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_addressrepositorycontract[`AddressRepositoryContract`]
+a|`$addressRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_contactclassrepositorycontract[`ContactClassRepositoryContract`]
+a|`$contactClassRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getContactId():int
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getContactClassData($contactClassId):array
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$contactClassId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public showNetPrices():bool
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public showNetPricesByContactId($contactId):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$contactId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getContactClassMinimumOrderQuantity():int
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public registerCustomer($contactData, $billingAddressData = [], $deliveryAddressData = []):IO\Services\Contact
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_contact[`Contact`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$contactData`
+|
+
+|link:http://php.net/array[array^]
+a|`$billingAddressData`
+|
+
+|link:http://php.net/array[array^]
+a|`$deliveryAddressData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public determineNewCustomerAddress():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public createAccount($accountData):IO\Services\Account
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_account[`Account`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$accountData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public mapAddressDataToAccount($addressData):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$addressData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public createContact($contactData):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$contactData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getContact():IO\Services\Contact
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_contact[`Contact`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public getContactClassId():int
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getDefaultContactClassId():int
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public updateContact($contactData):IO\Services\Contact
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_contact[`Contact`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$contactData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public updateContactWithAddressData($address):IO\Services\Contact
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_contact[`Contact`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_address[`Address`]
+a|`$address`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getContactOptionsFromAddress($addressOptions):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$addressOptions`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public updatePassword($newPassword, $contactId, $hash = &quot;&quot;):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$newPassword`
+|
+
+|link:http://php.net/int[int^]
+a|`$contactId`
+|
+
+|link:http://php.net/string[string^]
+a|`$hash`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getAddresses($typeId = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$typeId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getAddress($addressId, $typeId):IO\Services\Address
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_address[`Address`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$addressId`
+|
+
+|link:http://php.net/int[int^]
+a|`$typeId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public createAddress($addressData, $typeId):IO\Services\Address
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_address[`Address`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$addressData`
+|
+
+|link:http://php.net/int[int^]
+a|`$typeId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public buildAddressEmailOptions($options = [], $isGuest = false, $addressData = []):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$options`
+|
+
+|link:http://php.net/bool[bool^]
+a|`$isGuest`
+|
+
+|link:http://php.net/array[array^]
+a|`$addressData`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public updateAddress($addressId, $addressData, $typeId):IO\Services\Address
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_address[`Address`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$addressId`
+|
+
+|link:http://php.net/array[array^]
+a|`$addressData`
+|
+
+|link:http://php.net/int[int^]
+a|`$typeId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public deleteAddress($addressId, $typeId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$addressId`
+|
+
+|link:http://php.net/int[int^]
+a|`$typeId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getOrders($page = 1, $items = 10, $filters = []):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$page`
+|
+
+|link:http://php.net/int[int^]
+a|`$items`
+|
+
+|link:http://php.net/array[array^]
+a|`$filters`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasReturns():bool
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getReturns($page = 1, $items = 10, $filters = [], $wrapped = true):IO\Services\Plenty\Repositories\Models\PaginatedResult
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$page`
+|
+
+|link:http://php.net/int[int^]
+a|`$items`
+|
+
+|link:http://php.net/array[array^]
+a|`$filters`
+|
+
+|link:http://php.net/bool[bool^]
+a|`$wrapped`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLatestOrder():IO\Services\LocalizedOrder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_localizedorder[`LocalizedOrder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public resetGuestAddresses():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getEmail():string
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getContactNumber($contactId):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$contactId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public deleteGuestAddresses():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public fromMemoryCache():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public resetMemoryCache($key = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$key`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public sendMail($template, $emailData, $params):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$template`
+|
+
+|link:http://php.net/string[string^]
+a|`$emailData`
+|Must be a fully qualified class name
+
+|link:http://php.net/array[array^]
+a|`$params`
+|
+|===
+
 

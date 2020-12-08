@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CustomerNewsletterService
-
-
 [[io__customernewsletterservice]]
 == CustomerNewsletterService
 
-summary: 
 
 
 
@@ -30,4 +25,104 @@ summary:
     |newsletterRepo
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($newsletterRepo):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$newsletterRepo`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public saveNewsletterData():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public saveMultipleNewsletterData():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public updateOptInStatus():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public deleteNewsletterDataByEmail($email, $emailFolder):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$email`
+|
+
+|link:http://php.net/int[int^]
+a|`$emailFolder`
+|
+|===
+
 

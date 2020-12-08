@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== OrderStatusService
-
-
 [[io__orderstatusservice]]
 == OrderStatusService
 
-summary: 
 
 
 
@@ -39,4 +34,91 @@ summary:
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($authHelper, $orderStatusRepo, $statusHistoryRepo):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_authhelper[`AuthHelper`]
+a|`$authHelper`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_orderstatusrepositorycontract[`OrderStatusRepositoryContract`]
+a|`$orderStatusRepo`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_statushistoryrepositorycontract[`StatusHistoryRepositoryContract`]
+a|`$statusHistoryRepo`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getOrderStatus($orderId, $orderStatusId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$orderId`
+|
+
+|link:http://php.net/float[float^]
+a|`$orderStatusId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Services\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

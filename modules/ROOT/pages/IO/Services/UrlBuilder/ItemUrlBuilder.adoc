@@ -2,28 +2,76 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemUrlBuilder
-
-
 [[io__itemurlbuilder]]
 == ItemUrlBuilder
 
-summary: 
 
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be removed in 6.0.0
-    
+
 ====
 
 
 ===== Namespace
 
 `IO\Services\UrlBuilder`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public buildUrl($itemId, $lang = null):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public searchItemVariationId():void
+
+----
+
+    
+
+
 
 
 

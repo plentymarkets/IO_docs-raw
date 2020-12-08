@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemColumnBuilder
-
-
 [[io__itemcolumnbuilder]]
 == ItemColumnBuilder
 
-summary: 
 
 
 
@@ -33,4 +28,833 @@ summary:
     |columnParams
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public defaults():IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public build():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public withColumn($columnKey, $columnValues, $columnParams = null):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$columnKey`
+|
+
+|link:http://php.net/array[array^]
+a|`$columnValues`
+|
+
+|
+a|`$columnParams`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public addColumnFields($columnKey, $columnValues):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$columnKey`
+|
+
+|link:http://php.net/array[array^]
+a|`$columnValues`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public addColumnParams($columnKey, $columnParams):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$columnKey`
+|
+
+|link:http://php.net/array[array^]
+a|`$columnParams`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public withItemBase($itemBaseFields):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$itemBaseFields`
+|List of fields
+|===
+
+
+[source%nowrap, php]
+----
+
+public withItemCharacterList($itemCharacterFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$itemCharacterFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for ItemCharacterList
+|===
+
+
+[source%nowrap, php]
+----
+
+public withItemCrossSellingList($itemCrossSellingListFields):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$itemCrossSellingListFields`
+|List of fields
+|===
+
+
+[source%nowrap, php]
+----
+
+public withItemDescription($itemDescriptionFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$itemDescriptionFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for ItemDescription
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationAttributeValueList($variationAttributeValueListFields):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationAttributeValueListFields`
+|List of fields
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationBarcode($variationBarcodeFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationBarcodeFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for VariationBarcode
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationBarcodeList($variationBarcodeFields):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationBarcodeFields`
+|List of fields
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationBase($variationBaseFields):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationBaseFields`
+|List of fields
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationBundleComponentList($variationBundleComponentListFields):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationBundleComponentListFields`
+|List of fields
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationCategoryList($variationCategoryFields):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationCategoryFields`
+|List of fields
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationImageList($variationImageListFields):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationImageListFields`
+|List of fields
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationLinkMarketplace($variationLinkMarketplaceFields):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationLinkMarketplaceFields`
+|List of fields
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationLinkWebstore($variationLinkWebstoreFields):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationLinkWebstoreFields`
+|List of fields
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationMarketStatus($variationMarketStatusFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationMarketStatusFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for VariationMarketStatus
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationRecommendedRetailPrice($variationRecommendedPriceFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationRecommendedPriceFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for VariationRecommendedRetailPrice
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationRecommendedRetailPriceList($variationRecommendedPriceListFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationRecommendedPriceListFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for VariationRecommendedRetailPriceList
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationRetailPrice($variationRetailPriceFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationRetailPriceFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for VariationRetailPrice
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationRetailPriceList($variationRetailPriceListFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationRetailPriceListFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for VariationRetailPriceList
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationSpecialOfferRetailPrice($variationSpecialOfferRetailPriceFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationSpecialOfferRetailPriceFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for VariationSpecialOfferRetailPrice
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationSpecialOfferRetailPriceList($variationSpecialOfferRetailPriceListFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationSpecialOfferRetailPriceListFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for VariationSpecialOfferRetailPriceList
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationStandardCategory($variationStandardCategoryFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationStandardCategoryFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for VariationStandardCategory
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationStock($variationStockFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationStockFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for VariationStock
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationStockBuffer($variationStockBufferFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationStockBufferFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for VariationStockBuffer
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationStockList($variationStockFields):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationStockFields`
+|List of fields
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationSupplierList($variationSupplierFields):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationSupplierFields`
+|List of fields
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationWarehouse($variationWarehouseFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationWarehouseFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for VariationWarehouse
+|===
+
+
+[source%nowrap, php]
+----
+
+public withVariationWarehouseList($variationWarehouseFields, $):IO\Builder\Item\ItemColumnBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationWarehouseFields`
+|List of fields
+
+|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+a|`$`
+|additional params to use for VariationWarehouseList
+|===
+
 

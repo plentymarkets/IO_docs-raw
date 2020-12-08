@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CrossSellingType
-
-
 [[io__crosssellingtype]]
 == CrossSellingType
 
-summary: 
 
 
 

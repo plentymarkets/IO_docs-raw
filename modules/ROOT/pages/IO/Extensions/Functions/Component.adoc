@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== Component
-
-
 [[io__component]]
 == Component
 
-summary: 
 
 
 
@@ -29,8 +24,77 @@ summary:
 |link:http://php.net/array[array^]
     |components
     |
-|link:http://php.net/array[array^]
-    |functions
-    |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getFunctions():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public component($path):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$path`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasComponentTemplate():bool
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getComponentTemplate():string
+
+----
+
+    
+
+
+
+
+
+
 

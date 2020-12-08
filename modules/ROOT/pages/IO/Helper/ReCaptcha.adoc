@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ReCaptcha
-
-
 [[io__recaptcha]]
 == ReCaptcha
 
-summary: 
 
 
 
@@ -20,5 +15,32 @@ summary:
 
 
 
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static verify($token):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$token`
+|
+|===
 
 

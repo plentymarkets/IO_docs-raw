@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemNameFilter
-
-
 [[io__itemnamefilter]]
 == ItemNameFilter
 
-summary: 
 
 
 
@@ -32,8 +27,70 @@ summary:
 |
     |defaultConfigItemDisplayName
     |
-|link:http://php.net/array[array^]
-    |filters
-    |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public itemName($itemData, $configName = null, $displayName = null):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_extensions_filters[`Filters`]
+a|`$itemData`
+|
+
+|link:http://php.net/string[string^]
+a|`$configName`
+|
+
+|link:http://php.net/string[string^]
+a|`$displayName`
+|
+|===
+
 

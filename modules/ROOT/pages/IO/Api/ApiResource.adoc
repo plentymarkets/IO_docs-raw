@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ApiResource
-
-
 [[io__apiresource]]
 == ApiResource
 
-summary: 
 
 
 
@@ -29,14 +24,144 @@ summary:
 |        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
     |response
     |
-|link:http://php.net/int[int^]
+|
     |request
-    |loll
+    |
 |
     |defaultCode
     |
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($request, $response):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_api_request[`Request`]
+a|`$request`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+a|`$response`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public index():IO\Api\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public store():IO\Api\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public show($selector):IO\Api\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$selector`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public update($selector):IO\Api\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$selector`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public destroy($selector):IO\Api\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$selector`
+|
+|===
+
 

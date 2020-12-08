@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== IOServiceProvider
-
-
 [[io__ioserviceprovider]]
 == IOServiceProvider
 
-summary: 
 
 
 
@@ -22,18 +17,108 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public register():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public boot($twig):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
-
-|        xref:Miscellaneous.adoc#miscellaneous_foundation_application[`Application`]
-    |app
-    |The application instance.
-|link:http://php.net/array[array^]
-    |publishes
-    |The paths that should be published.
-|link:http://php.net/array[array^]
-    |publishGroups
-    |The paths that should be published by group.
+|        xref:Miscellaneous.adoc#miscellaneous_providers_twig[`Twig`]
+a|`$twig`
+|
 |===
+
+
+[source%nowrap, php]
+----
+
+public registerSingletons($classes):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$classes`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public registerMiddlewares($middlewares):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$middlewares`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public registerConfigValues():void
+
+----
+
+    
+
+
+
+
+
+
 

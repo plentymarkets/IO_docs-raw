@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== MyAccountController
-
-
 [[io__myaccountcontroller]]
 == MyAccountController
 
-summary: 
 
 
 
@@ -22,30 +17,45 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public showMyAccount($category = null):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
-
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_category[`Category`]
+a|`$category`
 |
-    |app
-    |
-|
-    |event
-    |
-|
-    |categoryRepo
-    |
-|
-    |categoryMap
-    |
-|
-    |categoryService
-    |Used by concrete controllers to set the current category
-|
-    |urlService
-    |
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
 |===
+
+
+[source%nowrap, php]
+----
+
+public redirect():void
+
+----
+
+    
+
+
+
+
+
+
 

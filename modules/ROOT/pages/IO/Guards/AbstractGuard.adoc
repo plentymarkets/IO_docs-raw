@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== AbstractGuard
-
-
 [[io__abstractguard]]
 == AbstractGuard
 
-summary: 
 
 
 
@@ -30,4 +25,126 @@ summary:
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public assert():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public assertOrRedirect($expected, $redirectUri):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$expected`
+|The value to compare with return value of AbstractGuard::asssert()
+
+|link:http://php.net/string[string^]
+a|`$redirectUri`
+|The URI to redirect to
+|===
+
+
+[source%nowrap, php]
+----
+
+public static redirect($uri, $params = []):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$uri`
+|The URI to redirect to.
+
+|link:http://php.net/array[array^]
+a|`$params`
+|A map of params to append to URI as query string.
+|===
+
+
+[source%nowrap, php]
+----
+
+public static getUrl($uri = null):string
+
+----
+
+    
+
+
+
+
+
+Will return current URL if $uri is null
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$uri`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Guards\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_guards_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

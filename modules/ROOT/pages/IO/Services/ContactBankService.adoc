@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ContactBankService
-
-
 [[io__contactbankservice]]
 == ContactBankService
 
-summary: 
 
 
 
@@ -30,4 +25,133 @@ summary:
     |contactPaymentRepository
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($contactPaymentRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$contactPaymentRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getBanksOfContact():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public createContactBank($data):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$data`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public updateContactBank():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public deleteContactBank($contactBankId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$contactBankId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public findContactBankById($contactBankId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$contactBankId`
+|
+|===
+
 

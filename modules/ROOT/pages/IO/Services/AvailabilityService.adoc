@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== AvailabilityService
-
-
 [[io__availabilityservice]]
 == AvailabilityService
 
-summary: 
 
 
 
@@ -30,4 +25,70 @@ summary:
     |availabilityRepository
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($availabilityRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_availabilityrepositorycontract[`AvailabilityRepositoryContract`]
+a|`$availabilityRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getAvailabilityById($availabilityId):IO\Services\Availability
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_availability[`Availability`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$availabilityId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getAvailabilities():array
+
+----
+
+    
+
+
+
+
+
+
 

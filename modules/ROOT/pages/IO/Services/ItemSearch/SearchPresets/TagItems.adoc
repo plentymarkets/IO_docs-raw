@@ -2,24 +2,19 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
+[[io__tagitems]]
 == TagItems
 
 Search preset for tagged variations
 Available options (see VariationList for inherited options)
 - tagIds: List of tag ids to get assigned items for
-[[io__tagitems]]
-== TagItems
-
-summary: 
-
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be deleted in 6.0.0
-    
+
 ====
 
 
@@ -29,5 +24,32 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static getSearchFactory($options):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$options`
+|
+|===
 
 

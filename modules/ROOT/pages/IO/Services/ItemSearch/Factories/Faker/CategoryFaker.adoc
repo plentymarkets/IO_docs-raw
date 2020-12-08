@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CategoryFaker
-
-
 [[io__categoryfaker]]
 == CategoryFaker
 
-summary: 
 
 
 
@@ -29,29 +24,71 @@ summary:
 |
     |types
     |
-|
-    |isList
-    |
-|
-    |range
-    |
-|
-    |index
-    |
-|
-    |list
-    |
-|
-    |lang
-    |
-|
-    |esLang
-    |
-|
-    |plentyId
-    |
-|
-    |translationCounter
-    |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public fill($data):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$data`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public makeDetailsEntry():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public makeCategoryDetails($categoryId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$categoryId`
+|
+|===
+
 

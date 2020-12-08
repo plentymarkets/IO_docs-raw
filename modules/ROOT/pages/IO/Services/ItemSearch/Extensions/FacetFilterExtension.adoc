@@ -2,15 +2,10 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== FacetFilterExtension
-
-Filter facets by configured minimum hit count.
 [[io__facetfilterextension]]
 == FacetFilterExtension
 
-summary: 
-
+Filter facets by configured minimum hit count.
 
 
 
@@ -20,5 +15,71 @@ summary:
 
 
 
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getSearch($parentSearchBuilder):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$parentSearchBuilder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public transformResult():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public sortFacets($facets):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$facets`
+|
+|===
 
 

@@ -2,28 +2,180 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== WebstoreConfigurationService
-
-
 [[io__webstoreconfigurationservice]]
 == WebstoreConfigurationService
 
-summary: 
 
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be removed in 6.0.0
-    
+
 ====
 
 
 ===== Namespace
 
 `IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getPlentyId():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 4.3.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getWebstoreConfig():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getActiveLanguageList():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getDefaultLanguage():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getDefaultParcelServiceId():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getDefaultParcelServicePresetId():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getDefaultShippingCountryId():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
 
 
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== VariationAttributeMapResource
-
-
 [[io__variationattributemapresource]]
 == VariationAttributeMapResource
 
-summary: 
 
 
 
@@ -22,18 +17,21 @@ summary:
 
 
 
-.Properties
-|===
-|Type |Name |Description
 
-|        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
-    |response
-    |
-|link:http://php.net/int[int^]
-    |request
-    |loll
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
-|===
+===== Methods
+
+[source%nowrap, php]
+----
+
+public index():IO\Api\Resources\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+
+
 

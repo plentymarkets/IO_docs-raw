@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== LocalizedOrder
-
-
 [[io__localizedorder]]
 == LocalizedOrder
 
-summary: 
 
 
 
@@ -80,113 +75,94 @@ summary:
 |
     |paymentMethodListForSwitch
     |
-|
-    |connection
-    |The connection name for the model.
-|link:http://php.net/string[string^]
-    |table
-    |The table associated with the model.
-|link:http://php.net/string[string^]
-    |primaryKey
-    |The primary key for the model.
-|link:http://php.net/string[string^]
-    |keyType
-    |The "type" of the primary key ID.
-|link:http://php.net/bool[bool^]
-    |incrementing
-    |Indicates if the IDs are auto-incrementing.
-|link:http://php.net/array[array^]
-    |with
-    |The relations to eager load on every query.
-|link:http://php.net/array[array^]
-    |withCount
-    |The relationship counts that should be eager loaded on every query.
-|link:http://php.net/int[int^]
-    |perPage
-    |The number of models to return for pagination.
-|link:http://php.net/bool[bool^]
-    |exists
-    |Indicates if the model exists.
-|link:http://php.net/bool[bool^]
-    |wasRecentlyCreated
-    |Indicates if the model was inserted during the current request lifecycle.
-|        xref:Miscellaneous.adoc#miscellaneous_database_connectionresolverinterface[`ConnectionResolverInterface`]
-    |resolver
-    |The connection resolver instance.
-|        xref:Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
-    |dispatcher
-    |The event dispatcher instance.
-|link:http://php.net/array[array^]
-    |booted
-    |The array of booted models.
-|link:http://php.net/array[array^]
-    |traitInitializers
-    |The array of trait initializers that will be called on each new instance.
-|link:http://php.net/array[array^]
-    |globalScopes
-    |The array of global scopes on the model.
-|link:http://php.net/array[array^]
-    |ignoreOnTouch
-    |The list of models classes that should not be affected with touch.
-|link:http://php.net/array[array^]
-    |attributes
-    |The model's attributes.
-|link:http://php.net/array[array^]
-    |original
-    |The model attribute's original state.
-|link:http://php.net/array[array^]
-    |changes
-    |The changed model attributes.
-|link:http://php.net/array[array^]
-    |casts
-    |The attributes that should be cast to native types.
-|link:http://php.net/array[array^]
-    |dates
-    |The attributes that should be mutated to dates.
-|link:http://php.net/string[string^]
-    |dateFormat
-    |The storage format of the model's date columns.
-|link:http://php.net/array[array^]
-    |appends
-    |The accessors to append to the model's array form.
-|link:http://php.net/bool[bool^]
-    |snakeAttributes
-    |Indicates whether attributes are snake cased on arrays.
-|link:http://php.net/array[array^]
-    |mutatorCache
-    |The cache of the mutated attributes for each class.
-|link:http://php.net/array[array^]
-    |dispatchesEvents
-    |The event map for the model.
-|link:http://php.net/array[array^]
-    |observables
-    |User exposed observable events.
-|link:http://php.net/array[array^]
-    |relations
-    |The loaded relationships for the model.
-|link:http://php.net/array[array^]
-    |touches
-    |The relationships that should be touched on save.
-|link:http://php.net/array[array^]
-    |manyMethods
-    |The many to many relationship methods.
-|link:http://php.net/bool[bool^]
-    |timestamps
-    |Indicates if the model should be timestamped.
-|link:http://php.net/array[array^]
-    |hidden
-    |The attributes that should be hidden for serialization.
-|link:http://php.net/array[array^]
-    |visible
-    |The attributes that should be visible in serialization.
-|link:http://php.net/array[array^]
-    |fillable
-    |The attributes that are mass assignable.
-|link:http://php.net/array[array^]
-    |guarded
-    |The attributes that aren't mass assignable.
-|link:http://php.net/bool[bool^]
-    |unguarded
-    |Indicates if all mass assignment is enabled.
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static wrap($order, $data):IO\Models\LocalizedOrder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_localizedorder[`LocalizedOrder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_models_order[`Order`]
+a|`$order`
+|
+
+|link:http://php.net/array[array^]
+a|`$data`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public toArray():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public isReturnable():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public static filterSetComponents($setOrderItemId, $orderItems):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$setOrderItemId`
+|
+
+|link:http://php.net/array[array^]
+a|`$orderItems`
+|
+|===
+
 

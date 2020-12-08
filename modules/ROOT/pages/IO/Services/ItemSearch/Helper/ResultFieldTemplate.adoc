@@ -2,22 +2,17 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ResultFieldTemplate
-
-
 [[io__resultfieldtemplate]]
 == ResultFieldTemplate
 
-summary: 
 
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be deleted in 6.0.0
-    
+
 ====
 
 
@@ -40,4 +35,244 @@ since 5.0.0 will be deleted in 6.0.0
     |requiredFields
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static init($template):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$template`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public static get($template):string
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$template`
+|Event to be emitted to templates/ themes
+|===
+
+
+[source%nowrap, php]
+----
+
+public static load($template):array
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$template`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setTemplate($event, $template):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$event`
+|The event to set the template for.
+
+|link:http://php.net/string[string^]
+a|`$template`
+|Path to the template to read result fields from.
+|===
+
+
+[source%nowrap, php]
+----
+
+public setTemplates($templateMap):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_itemsearch_helper[`Helper`]
+a|`$templateMap`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public requireFields($event, $field = null):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+
+
+
+Required fields are independent of the loaded result fields template and will be loaded for sure.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$event`
+|A single template event to set required fields for
+or a map between template events and list of required fields
+
+|
+a|`$field`
+|If first parameter describes a single template event
+this parameter may contain a single result field or a list of field to require.
+|===
+
+
+[source%nowrap, php]
+----
+
+public loadResultFields($fullTemplateName):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$fullTemplateName`
+|The path of the template to load contents from.
+|===
+
+
+[source%nowrap, php]
+----
+
+public static loadStaticResultFields($fullTemplateName):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$fullTemplateName`
+|The path of the template to load contents from.
+|===
+
 

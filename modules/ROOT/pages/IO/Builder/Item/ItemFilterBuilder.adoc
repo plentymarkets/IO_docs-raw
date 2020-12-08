@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemFilterBuilder
-
-
 [[io__itemfilterbuilder]]
 == ItemFilterBuilder
 
-summary: 
 
 
 
@@ -30,4 +25,2060 @@ summary:
     |filter
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public build():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public hasFilter($filterKey, $filterValue = []):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$filterKey`
+|
+
+|link:http://php.net/array[array^]
+a|`$filterValue`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasProperty($propertyId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$propertyId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasAmazonTypeProductGenre($productGenre):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$productGenre`
+|The amazon genre
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasAttribute($attributeIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$attributeIDs`
+|allowed attribute IDs
+|===
+
+
+[source%nowrap, php]
+----
+
+public notHasAttribute($attributeIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$attributeIDs`
+|The attribute IDs to Deny
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasAgeRestriction($):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$`
+|List of allowed age restrictions
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasAmazonProductType($productTypes = []):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$productTypes`
+|The amazon product types to filter
+|===
+
+
+[source%nowrap, php]
+----
+
+public notHasAmazonProductType():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public hasBarcode():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public notHasBarcode():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public hasCrossItemId($itemIDs, $dynamic, $relationship):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$itemIDs`
+|The linked item IDs
+
+|link:http://php.net/bool[bool^]
+a|`$dynamic`
+|Filter dynamic entries -> true|false
+or all entries -> null
+
+|link:http://php.net/array[array^]
+a|`$relationship`
+|The relationship between the linked items
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasId($itemIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$itemIDs`
+|The item IDs to filter
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasImage():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public notHasImage():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public hasMarkinOne($markingOneIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$markingOneIDs`
+|IDs of the markings to filter
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasMarginTwo($markingTwoIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$markingTwoIDs`
+|IDs of the markings to filter
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasProducer($producerIDs = []):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$producerIDs`
+|The producers to filter
+|===
+
+
+[source%nowrap, php]
+----
+
+public notHasProducer():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public isBundle():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public notIsBundle():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public isBundleItem():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public isColli():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public isProductionItem():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public isSpecialOrderItem():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public isStockedItem():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public isType($typeIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$typeIDs`
+|the type IDs
+|===
+
+
+[source%nowrap, php]
+----
+
+public isStoreSpecial($shopActions):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$shopActions`
+|IDs of allowed shop actions
+|===
+
+
+[source%nowrap, php]
+----
+
+public mayBeShippedWithAmazonFBA():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public notMayBeShippedWithAmazonFBA():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public wasUpdatedBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$from`
+|The start datetime of the period in unix format
+
+|link:http://php.net/string[string^]
+a|`$to`
+|The end datetime of the period in unix format
+|===
+
+
+[source%nowrap, php]
+----
+
+public descriptionContains($search, $browse):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$search`
+|string to search in item description
+
+|link:http://php.net/bool[bool^]
+a|`$browse`
+|use extended search index
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasDescription($lang):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_item_language[`Language`]
+a|`$lang`
+|the language to use
+|===
+
+
+[source%nowrap, php]
+----
+
+public notHasDescription($lang):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_item_language[`Language`]
+a|`$lang`
+|the language to use
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasListing($auctionType):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$auctionType`
+|Type of listing
+|===
+
+
+[source%nowrap, php]
+----
+
+public notHasListing($auctionType):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$auctionType`
+|Tyoe of listing
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasAttributes():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public variationNotHasAttributes():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public variationHasAttributeValue($attributes):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$attributes`
+|A Map of attributes: attributeID => attributeValue
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationhasAttributeValueSets($attributeValueSetIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$attributeValueSetIDs`
+|IDs of attribute value sets
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasAvailability($availabilityIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$availabilityIDs`
+|The availability IDs
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasBarcode($barcode):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$barcode`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasCustomNumber():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public variationHasExternalId($externalId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$externalId`
+|The external ID to filter.
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasId($variationIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationIDs`
+|The variation IDs
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasMainWarehouse($warehouseIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$warehouseIDs`
+|The warehouse IDs
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasSKU($itemId, $priceId, $attributeValueSetId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$itemId`
+|The Item ID of the SKU
+
+|link:http://php.net/string[string^]
+a|`$priceId`
+|The price ID of the SKU
+
+|link:http://php.net/string[string^]
+a|`$attributeValueSetId`
+|The attribute value set id of the SKU
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasStockLimitation($stockLimitation):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$stockLimitation`
+|Allowed stock limitations:
+0 -> No stock limitation
+1 -> limit net stock
+2 -> allow oversold
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasUnitCombinationId($unitCombinationId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$unitCombinationId`
+|The unit combination id
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationIsActive():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public variationNotIsActive():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public variationIsPrimary():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public variationIsChild():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public onlyBasicVariations():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+Otherwise, return all variations without attributes.
+
+[source%nowrap, php]
+----
+
+public variationWasAvailableUntilBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$from`
+|The start datetime of the period in unix format
+
+|link:http://php.net/string[string^]
+a|`$to`
+|The end datetime of the period in unix format
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationWasCreatedBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$from`
+|The start datetime of the period in unix format
+
+|link:http://php.net/string[string^]
+a|`$to`
+|The end datetime of the period in unix format
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationWasUpdatedBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$from`
+|The start datetime of the period in unix format
+
+|link:http://php.net/string[string^]
+a|`$to`
+|The end datetime of the period in unix format
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationWasRelatedUpdatedBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$from`
+|The start datetime of the period in unix format
+
+|link:http://php.net/string[string^]
+a|`$to`
+|The end datetime of the period in unix format
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationWasReleasedBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$from`
+|The start datetime of the period in unix format
+
+|link:http://php.net/string[string^]
+a|`$to`
+|The end datetime of the period in unix format
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasWeight($weightG):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$weightG`
+|Weight in gramm
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasWeighNet($weightG):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$weightG`
+|Weight in gramm
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasCategory($categoryID):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$categoryID`
+|The category ID
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationNotHasCategory():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public variationHasCategoryBranch($lvl1, $, $, $, $, $):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$lvl1`
+|Category ID at first layer
+
+|link:http://php.net/int[int^]
+a|`$`
+|?lvl2 Category ID at second layer
+
+|link:http://php.net/int[int^]
+a|`$`
+|?lvl3 Category ID at third layer
+
+|link:http://php.net/int[int^]
+a|`$`
+|?lvl4 Category ID at 4th layer
+
+|link:http://php.net/int[int^]
+a|`$`
+|?lvl5 Category ID at 5th layer
+
+|link:http://php.net/int[int^]
+a|`$`
+|?lvl6 Category ID at 6th layer
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationMarketHasAdditionalInformation($additionalInformation, $marketplaceId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$additionalInformation`
+|
+
+|link:http://php.net/float[float^]
+a|`$marketplaceId`
+|Referred marketplace id
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationMarketWasFirstExportedBetween($from, $to, $marketplaceId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$from`
+|The start datetime of the period in unix format
+
+|link:http://php.net/string[string^]
+a|`$to`
+|The end datetime of the period in unix format
+
+|link:http://php.net/float[float^]
+a|`$marketplaceId`
+|Referred marketplace id
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationMarketWasLastExportedBetween($from, $to, $marketplaceId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$from`
+|The start datetime of the period in unix format
+
+|link:http://php.net/string[string^]
+a|`$to`
+|The end datetime of the period in unix format
+
+|link:http://php.net/float[float^]
+a|`$marketplaceId`
+|Referred marketplace idv
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasShippingProfile($shippingProfileIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$shippingProfileIDs`
+|List of shipping profile IDs to filter.
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationNotHasShippingProfile($shippingProfileIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$shippingProfileIDs`
+|List of shipping profile IDs to deny.
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationStockHasWarehouse($warehouseIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$warehouseIDs`
+|"primary", "virtual" or the warehouse id
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationStockIsSalable():IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public variationStockHasNet($warehouseId, $stockConditionOperand, $stockConditionOperator):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$warehouseId`
+|"primary, "virtual" or the warehouse id
+
+|link:http://php.net/float[float^]
+a|`$stockConditionOperand`
+|stock value to filters
+
+|link:http://php.net/string[string^]
+a|`$stockConditionOperator`
+|the operator to compare stock value
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationStockHasNetNegative($warehouseId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$warehouseId`
+|"primary", "virtual" or warehouse id
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationStockHasNetPositive($warehouseId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$warehouseId`
+|"primary", "virtual" or warehouse id
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationStockHasNetEqualZero($warehouseId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$warehouseId`
+|"primary", "virtual" or warehouse id
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationStockHasPhysical($warehouseId, $stockConditionOperand, $stockConditionOperator):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$warehouseId`
+|"primary", "virtual" or warehouse id
+
+|link:http://php.net/float[float^]
+a|`$stockConditionOperand`
+|stock value to filters
+
+|link:http://php.net/string[string^]
+a|`$stockConditionOperator`
+|the operator to compare stock value
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationStockHasPhysicalNegative($warehouseId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$warehouseId`
+|"primary", "virtual" or warehouse id
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationStockHasPhysicalPositive($warehouseId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$warehouseId`
+|"primary", "virtual" or warehouse id
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationStockHasPhysicalEqualZero($warehouseId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$warehouseId`
+|"primary", "virtual" or warehouse id
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationStockHasReorderLevel($warehouseId, $stockConditionOperand, $stockConditionOperator):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$warehouseId`
+|"primary", "virtual" or warehouse id
+
+|link:http://php.net/float[float^]
+a|`$stockConditionOperand`
+|stock value to filters
+
+|link:http://php.net/string[string^]
+a|`$stockConditionOperator`
+|the operator to compare stock value
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationStockIsReorderLevelReached($warehouseId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$warehouseId`
+|"primary", "virtual" or warehouse id
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationStockWasUpdatedBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$from`
+|The start datetime of the period in unix format
+
+|link:http://php.net/string[string^]
+a|`$to`
+|The end datetime of the period in unix format
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasSupplier($supplierIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$supplierIDs`
+|Supplier IDs to filter.
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationNotHasSupplier($supplierIDs):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$supplierIDs`
+|Supplier IDs to deny.
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasSupplierNumber($supplierNumber):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$supplierNumber`
+|the supplier number
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationIsVisibleForMarketplace($mandatoryAllMarketplace, $mandatoryOneMarketplace):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$mandatoryAllMarketplace`
+|All listed marketplaces have to be linked with filtered item.
+
+|link:http://php.net/array[array^]
+a|`$mandatoryOneMarketplace`
+|At least one marketplace have to be linked with filtered item.
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationNotIsVisibleForMarketplace($mandatoryAllMarketplace, $mandatoryOneMarketplace):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$mandatoryAllMarketplace`
+|All listed marketplaces have to be linked with filtered item.
+
+|link:http://php.net/array[array^]
+a|`$mandatoryOneMarketplace`
+|At least one marketplace have to be linked with filtered item.
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationIsVisibleForPlentyId($mandatoryAllPlentyId, $mandatoryOnePlentyId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$mandatoryAllPlentyId`
+|All listed shops have to be linked with filtered item.
+
+|link:http://php.net/array[array^]
+a|`$mandatoryOnePlentyId`
+|At least one shop has to be linked with filtered item.
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationNotIsVisibleForPlentyId($mandatoryAllPlentyId, $mandatoryOnePlentyId):IO\Builder\Item\ItemFilterBuilder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemfilterbuilder[`ItemFilterBuilder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$mandatoryAllPlentyId`
+|All listed shops have to be linked with filtered item.
+
+|link:http://php.net/array[array^]
+a|`$mandatoryOnePlentyId`
+|At least one shop has to be linked with filtered item.
+|===
+
+
+[source%nowrap, php]
+----
+
+public variationHasRetailPrice():void
+
+----
+
+    
+
+
+
+
+
+
 

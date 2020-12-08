@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== SeoService
-
-
 [[io__seoservice]]
 == SeoService
 
-summary: 
 
 
 
@@ -20,5 +15,53 @@ summary:
 
 
 
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getRobotsInformation($returnValueErrorCase = &quot;NOINDEX&quot;, $defaultValueWithoutCategoryData = &quot;ALL&quot;):string
+
+----
+
+    
+
+
+
+
+
+Get meta robot information, with a given value for error case (defined rules in method) $returnValueErrorCase
+and a default value when category data is not set $defaultValueWithoutCategoryData.
+$defaultValueWithoutCategoryData can be changed after rule check
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$returnValueErrorCase`
+|
+
+|link:http://php.net/string[string^]
+a|`$defaultValueWithoutCategoryData`
+|
+|===
 
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== BasketItemResource
-
-
 [[io__basketitemresource]]
 == BasketItemResource
 
-summary: 
 
 
 
@@ -29,14 +24,142 @@ summary:
 |
     |basketService
     |
-|        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
-    |response
-    |
-|link:http://php.net/int[int^]
-    |request
-    |loll
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($request, $response, $basketService):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_resources_request[`Request`]
+a|`$request`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_resources_apiresponse[`ApiResponse`]
+a|`$response`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_resources_basketservice[`BasketService`]
+a|`$basketService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public index():IO\Api\Resources\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public store():IO\Api\Resources\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public show($selector):IO\Api\Resources\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$selector`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public update($selector):IO\Api\Resources\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$selector`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public destroy($selector):IO\Api\Resources\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$selector`
+|
+|===
+
 

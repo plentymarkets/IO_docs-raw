@@ -2,22 +2,17 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== FacetSearchFactory
-
-Concrete factory to build facet searches.
 [[io__facetsearchfactory]]
 == FacetSearchFactory
 
-summary: 
-
+Concrete factory to build facet searches.
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be deleted in 6.0.0
-    
+
 ====
 
 
@@ -37,4 +32,91 @@ since 5.0.0 will be deleted in 6.0.0
     |facetValues
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public create($facets):IO\Services\ItemSearch\Factories\FacetSearchFactory
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_factories_facetsearchfactory[`FacetSearchFactory`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$facets`
+|List of active facet values. If string is given, it will be exploded by ',' to a list of values.
+|===
+
+
+[source%nowrap, php]
+----
+
+public prepareSearch($source):IO\Services\ItemSearch\Factories\DocumentSearch
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_factories_documentsearch[`DocumentSearch`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_factories_includesource[`IncludeSource`]
+a|`$source`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public withMinimumCount():IO\Services\ItemSearch\Factories
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+
+
 

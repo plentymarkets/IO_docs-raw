@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CustomerMailResource
-
-
 [[io__customermailresource]]
 == CustomerMailResource
 
-summary: 
 
 
 
@@ -26,17 +21,134 @@ summary:
 |===
 |Type |Name |Description
 
-|        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
-    |response
-    |
-|link:http://php.net/int[int^]
-    |request
-    |loll
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
 |
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($request, $response):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_resources_request[`Request`]
+a|`$request`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_resources_apiresponse[`ApiResponse`]
+a|`$response`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public store():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public update($contactId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$contactId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Api\Resources\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public sendMail($template, $emailData, $params):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$template`
+|
+
+|link:http://php.net/string[string^]
+a|`$emailData`
+|Must be a fully qualified class name
+
+|link:http://php.net/array[array^]
+a|`$params`
+|
+|===
+
 

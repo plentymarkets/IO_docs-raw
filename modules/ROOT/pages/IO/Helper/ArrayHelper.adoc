@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ArrayHelper
-
-
 [[io__arrayhelper]]
 == ArrayHelper
 
-summary: 
 
 
 
@@ -17,6 +12,102 @@ summary:
 ===== Namespace
 
 `IO\Helper`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static toArray($mixed):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$mixed`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public static isAssoc($mixed):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$mixed`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public static compare():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public static get():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public static getKeys():void
+
+----
+
+    
+
+
 
 
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== GetBasePrice
-
-
 [[io__getbaseprice]]
 == GetBasePrice
 
-summary: 
 
 
 
@@ -41,8 +36,111 @@ summary:
 |
     |paramsBuilder
     |
-|link:http://php.net/array[array^]
-    |functions
-    |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($app, $itemRepository, $columnBuilder, $filterBuilder, $paramsBuilder):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_functions_application[`Application`]
+a|`$app`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_functions_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
+a|`$itemRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_functions_itemcolumnbuilder[`ItemColumnBuilder`]
+a|`$columnBuilder`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_functions_itemfilterbuilder[`ItemFilterBuilder`]
+a|`$filterBuilder`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_functions_itemparamsbuilder[`ItemParamsBuilder`]
+a|`$paramsBuilder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getFunctions():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getBasePrice($variationId):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getBasePriceList($variationIds):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationIds`
+|
+|===
+
 

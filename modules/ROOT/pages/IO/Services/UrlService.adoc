@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== UrlService
-
-
 [[io__urlservice]]
 == UrlService
 
-summary: 
 
 
 
@@ -33,4 +28,287 @@ summary:
     |cache
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($webstoreConfigurationRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+a|`$webstoreConfigurationRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCategoryURL($categoryId, $lang = null, $webstoreId = null):IO\Services\UrlQuery
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_urlquery[`UrlQuery`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$categoryId`
+|
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+
+|link:http://php.net/int[int^]
+a|`$webstoreId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getVariationURL($itemId, $variationId, $lang = null):IO\Services\UrlQuery
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_urlquery[`UrlQuery`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCanonicalURL($lang = null, $ignoreCanonical = false):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+
+|link:http://php.net/bool[bool^]
+a|`$ignoreCanonical`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCanonicalQueryString():string
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public isCanonical($lang = null):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$lang`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLanguageURLs():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getHomepageURL():string
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 4.3.0
+Use IO\Extensions\Constants\ShopUrls::$home instead.
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public redirectTo($redirectURL):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$redirectURL`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isRouteEnabled($route):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$route`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public fromMemoryCache():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public resetMemoryCache($key = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$key`
+|
+|===
+
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CategoryTreeResource
-
-
 [[io__categorytreeresource]]
 == CategoryTreeResource
 
-summary: 
 
 
 
@@ -35,14 +30,108 @@ summary:
 |
     |sessionStorageService
     |
-|        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
-    |response
-    |
-|link:http://php.net/int[int^]
-    |request
-    |loll
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($request, $response, $categoryService, $customerService, $sessionStorageService):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_resources_request[`Request`]
+a|`$request`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_resources_apiresponse[`ApiResponse`]
+a|`$response`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_resources_categoryservice[`CategoryService`]
+a|`$categoryService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_resources_customerservice[`CustomerService`]
+a|`$customerService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_resources_sessionstorageservice[`SessionStorageService`]
+a|`$sessionStorageService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public index():IO\Api\Resources\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public getChildren():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getTemplateForChildren():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public findInTree():void
+
+----
+
+    
+
+
+
+
+
+
 

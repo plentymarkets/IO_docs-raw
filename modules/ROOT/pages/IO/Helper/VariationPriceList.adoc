@@ -2,22 +2,17 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== VariationPriceList
-
-
 [[io__variationpricelist]]
 == VariationPriceList
 
-summary: 
 
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be removed in 6.0.0
-    
+
 ====
 
 
@@ -76,4 +71,407 @@ since 5.0.0 will be removed in 6.0.0
     |cache
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public static create($variationId, $itemId, $minimumOrderQuantity, $maximumOrderQuantity = null, $lot, $unit = null):IO\Helper\VariationPriceList
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_helper_variationpricelist[`VariationPriceList`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+
+|link:http://php.net/int[int^]
+a|`$minimumOrderQuantity`
+|
+
+|
+a|`$maximumOrderQuantity`
+|
+
+|link:http://php.net/int[int^]
+a|`$lot`
+|
+
+|
+a|`$unit`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public findPriceForQuantity($quantity, $type = self::TYPE_DEFAULT):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/float[float^]
+a|`$quantity`
+|
+
+|link:http://php.net/string[string^]
+a|`$type`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getGraduatedPrices($showNetPrice = false):array
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/bool[bool^]
+a|`$showNetPrice`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getBasePrice($unitPrice, $currency, $lang = null):string
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/float[float^]
+a|`$unitPrice`
+|
+
+|link:http://php.net/string[string^]
+a|`$currency`
+|
+
+|
+a|`$lang`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public toArray($quantity = null):array
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$quantity`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCalculatedPrices($quantity = null):array
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$quantity`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public convertCurrency($value):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/float[float^]
+a|`$value`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public convertGrossNet():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getDefaultPrice():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public init():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public fetchPrices():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getSearchRequest():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public preparePrice():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public fromMemoryCache():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public resetMemoryCache($key = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$key`
+|
+|===
+
 

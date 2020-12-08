@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== NotificationService
-
-
 [[io__notificationservice]]
 == NotificationService
 
-summary: 
 
 
 
@@ -30,4 +25,313 @@ summary:
     |sessionStorageRepository
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($sessionStorageRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getNotifications($clear = true):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/bool[bool^]
+a|`$clear`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public addNotification($message, $type, $code, $placeholder = []):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$message`
+|
+
+|link:http://php.net/string[string^]
+a|`$type`
+|
+
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|link:http://php.net/array[array^]
+a|`$placeholder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public log($message, $code, $placeholder = []):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$message`
+|
+
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|link:http://php.net/array[array^]
+a|`$placeholder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public info($message, $code, $placeholder = []):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$message`
+|
+
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|link:http://php.net/array[array^]
+a|`$placeholder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public warn($message, $code, $placeholder = []):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$message`
+|
+
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|link:http://php.net/array[array^]
+a|`$placeholder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public error($message, $code, $placeholder = []):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$message`
+|
+
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|link:http://php.net/array[array^]
+a|`$placeholder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public success($message, $code, $placeholder = []):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$message`
+|
+
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|link:http://php.net/array[array^]
+a|`$placeholder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public addNotificationCode($type, $code, $placeholder = []):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$type`
+|
+
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|link:http://php.net/array[array^]
+a|`$placeholder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public hasNotifications():bool
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public clearNotifications():void
+
+----
+
+    
+
+
+
+
+
+
 

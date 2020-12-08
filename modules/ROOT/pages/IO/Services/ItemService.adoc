@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemService
-
-
 [[io__itemservice]]
 == ItemService
 
-summary: 
 
 
 
@@ -42,4 +37,623 @@ summary:
     |cache
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($app, $itemRepository, $sessionStorageRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_application[`Application`]
+a|`$app`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
+a|`$itemRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getItem($itemId):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getItems($itemIds):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$itemIds`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getItemImage($itemId):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getVariation($variationId):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getVariations($variationIds):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$variationIds`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getVariationIds($itemId):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getVariationList($itemId, $withPrimary = false):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+
+|link:http://php.net/bool[bool^]
+a|`$withPrimary`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getVariationImage($variationId, $imageAccessor = &quot;urlPreview&quot;):string
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+This method will not be supported in the future. Please refrain from using it as soon as possible.
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+
+|link:http://php.net/string[string^]
+a|`$imageAccessor`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getItemForCategory($catID, $params = [], $page = 1):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$catID`
+|
+
+|link:http://php.net/array[array^]
+a|`$params`
+|
+
+|link:http://php.net/int[int^]
+a|`$page`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getVariationAttributeMap($itemId):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getVariationIsSalable($variationId):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getAttributeNameMap($itemId):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getItemURL($itemId):IO\Services\Record
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+Use UrlService instead
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_record[`Record`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getAttributeName($attributeId):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$attributeId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getAttributeValueName($attributeValueId):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$attributeValueId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getItemCrossSellingList($itemId, $crossSellingType = &quot;similar&quot;):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+
+|link:http://php.net/string[string^]
+a|`$crossSellingType`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getItemConditionText($conditionId):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$conditionId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLatestItems($limit = 5, $categoryId):IO\Services\RecordList
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_recordlist[`RecordList`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$limit`
+|
+
+|link:http://php.net/int[int^]
+a|`$categoryId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public searchItems($searchString, $params = [], $page = 1):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$searchString`
+|
+
+|link:http://php.net/array[array^]
+a|`$params`
+|
+
+|link:http://php.net/int[int^]
+a|`$page`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getAdditionalItemSorting():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public addAdditionalItemSorting($key, $translationKey):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$key`
+|
+
+|link:http://php.net/string[string^]
+a|`$translationKey`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public fromMemoryCache():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public resetMemoryCache($key = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$key`
+|
+|===
+
 

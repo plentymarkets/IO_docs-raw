@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== VariationStockBufferFields
-
-
 [[io__variationstockbufferfields]]
 == VariationStockBufferFields
 
-summary: 
 
 
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== LogLevel
-
-
 [[io__loglevel]]
 == LogLevel
 
-summary: 
 
 
 

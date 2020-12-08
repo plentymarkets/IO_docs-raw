@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemWishListController
-
-
 [[io__itemwishlistcontroller]]
 == ItemWishListController
 
-summary: 
 
 
 
@@ -22,30 +17,36 @@ summary:
 
 
 
-.Properties
-|===
-|Type |Name |Description
 
-|
-    |app
-    |
-|
-    |event
-    |
-|
-    |categoryRepo
-    |
-|
-    |categoryMap
-    |
-|
-    |categoryService
-    |Used by concrete controllers to set the current category
-|
-    |urlService
-    |
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
-|===
+===== Methods
+
+[source%nowrap, php]
+----
+
+public showWishList():string
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public redirect():void
+
+----
+
+    
+
+
+
+
+
+
 

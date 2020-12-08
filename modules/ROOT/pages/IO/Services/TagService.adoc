@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== TagService
-
-
 [[io__tagservice]]
 == TagService
 
-summary: 
 
 
 
@@ -30,4 +25,83 @@ summary:
     |tagRepository
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($tagRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_tagrepositorycontract[`TagRepositoryContract`]
+a|`$tagRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getTagById($tagId):IO\Services\Tag
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_tag[`Tag`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$tagId`
+|The id of the tag
+|===
+
+
+[source%nowrap, php]
+----
+
+public getTagName($tagId, $lang = null):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$tagId`
+|The id of the tag
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|The language to get the name in.
+|===
+
 

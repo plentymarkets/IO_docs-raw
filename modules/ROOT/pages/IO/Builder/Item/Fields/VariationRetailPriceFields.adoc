@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== VariationRetailPriceFields
-
-
 [[io__variationretailpricefields]]
 == VariationRetailPriceFields
 
-summary: 
 
 
 

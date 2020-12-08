@@ -2,22 +2,17 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== LanguageMap
-
-
 [[io__languagemap]]
 == LanguageMap
 
-summary: 
 
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be removed in 6.0.0
-    
+
 ====
 
 
@@ -40,4 +35,91 @@ since 5.0.0 will be removed in 6.0.0
     |languages
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static getLocale():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+sin  ce 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public static getLanguageCode($countryCode = null):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$countryCode`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public static getCountryCode($language = null):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$language`
+|
+|===
+
 

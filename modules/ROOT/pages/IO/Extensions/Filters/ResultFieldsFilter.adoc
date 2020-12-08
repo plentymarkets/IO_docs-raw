@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ResultFieldsFilter
-
-
 [[io__resultfieldsfilter]]
 == ResultFieldsFilter
 
-summary: 
 
 
 
@@ -22,12 +17,84 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public filterFields():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public loadResultFields($fullTemplateName):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
-
-|link:http://php.net/array[array^]
-    |filters
-    |
+|link:http://php.net/string[string^]
+a|`$fullTemplateName`
+|The path of the template to load contents from.
 |===
+
+
+[source%nowrap, php]
+----
+
+public static loadStaticResultFields($fullTemplateName):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$fullTemplateName`
+|The path of the template to load contents from.
+|===
+
 

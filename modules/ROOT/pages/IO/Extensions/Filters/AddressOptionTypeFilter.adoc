@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== AddressOptionTypeFilter
-
-
 [[io__addressoptiontypefilter]]
 == AddressOptionTypeFilter
 
-summary: 
 
 
 
@@ -22,12 +17,51 @@ summary:
 
 
 
-.Properties
-|===
-|Type |Name |Description
 
-|link:http://php.net/array[array^]
-    |filters
-    |
-|===
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public addressOptionType():void
+
+----
+
+    
+
+
+
+
+
+
 

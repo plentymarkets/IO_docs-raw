@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== VatConverter
-
-
 [[io__vatconverter]]
 == VatConverter
 
-summary: 
 
 
 
@@ -30,4 +25,70 @@ summary:
     |vatRepo
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($vatRepo):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_helper_vatrepositorycontract[`VatRepositoryContract`]
+a|`$vatRepo`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getDefaultVat():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public convertToGross($amount):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/float[float^]
+a|`$amount`
+|
+|===
+
 

@@ -2,15 +2,10 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== SortExtension
-
-Sort search results in given order
 [[io__sortextension]]
 == SortExtension
 
-summary: 
-
+Sort search results in given order
 
 
 
@@ -30,4 +25,70 @@ summary:
     |idList
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($idList = []):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$idList`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getSearch($parentSearchBuilder):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$parentSearchBuilder`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public transformResult():void
+
+----
+
+    
+
+
+
+
+
+
 

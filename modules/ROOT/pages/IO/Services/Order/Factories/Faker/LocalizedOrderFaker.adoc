@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== LocalizedOrderFaker
-
-
 [[io__localizedorderfaker]]
 == LocalizedOrderFaker
 
-summary: 
 
 
 
@@ -22,33 +17,21 @@ summary:
 
 
 
-.Properties
-|===
-|Type |Name |Description
 
-|
-    |isList
-    |
-|
-    |range
-    |
-|
-    |index
-    |
-|
-    |list
-    |
-|
-    |lang
-    |
-|
-    |esLang
-    |
-|
-    |plentyId
-    |
-|
-    |translationCounter
-    |
-|===
+===== Methods
+
+[source%nowrap, php]
+----
+
+public fill():void
+
+----
+
+    
+
+
+
+
+
+
 

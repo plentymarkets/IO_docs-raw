@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== AuthGuard
-
-
 [[io__authguard]]
 == AuthGuard
 
-summary: 
 
 
 
@@ -17,6 +12,39 @@ summary:
 ===== Namespace
 
 `IO\Guards`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public assert():bool
+
+----
+
+    
+
+
 
 
 

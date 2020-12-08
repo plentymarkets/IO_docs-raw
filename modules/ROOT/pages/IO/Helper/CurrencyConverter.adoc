@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CurrencyConverter
-
-
 [[io__currencyconverter]]
 == CurrencyConverter
 
-summary: 
 
 
 
@@ -30,4 +25,100 @@ summary:
     |currencyExchcangeRepo
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($currencyExchangeRepo):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_helper_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
+a|`$currencyExchangeRepo`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isCurrentCurrencyDefault():bool
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getDefaultCurrency():string
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getCurrentCurrency():string
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public convertToDefaultCurrency($amount):float
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/float[float^]
+a|`$amount`
+|
+|===
+
 

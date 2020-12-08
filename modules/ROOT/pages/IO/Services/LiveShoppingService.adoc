@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== LiveShoppingService
-
-
 [[io__liveshoppingservice]]
 == LiveShoppingService
 
-summary: 
 
 
 
@@ -33,4 +28,117 @@ summary:
     |ownLimitation
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getLiveShoppingData($liveShoppingId, $sorting = null):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$liveShoppingId`
+|
+
+|link:http://php.net/string[string^]
+a|`$sorting`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLiveShoppingVariations():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public filterLiveShoppingVariations($itemList):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
+a|`$itemList`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public checkStockLimit($data, $item):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
+a|`$data`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
+a|`$item`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public buildResultFields():void
+
+----
+
+    
+
+
+
+
+
+
 

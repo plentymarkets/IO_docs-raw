@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemWishList
-
-
 [[io__itemwishlist]]
 == ItemWishList
 
-summary: 
 
 
 
@@ -44,38 +39,86 @@ summary:
 |
     |createdAt
     |
-|
-    |primaryKeyFieldName
-    |
-|
-    |primaryKeyFieldType
-    |
-|
-    |autoIncrementPrimaryKey
-    |
-|
-    |textFields
-    |
-|link:http://php.net/array[array^]
-    |attributes
-    |The model's attributes.
-|link:http://php.net/array[array^]
-    |original
-    |The model attribute's original state.
-|link:http://php.net/array[array^]
-    |changes
-    |The changed model attributes.
-|link:http://php.net/array[array^]
-    |casts
-    |The attributes that should be cast to native types.
-|link:http://php.net/array[array^]
-    |dates
-    |The attributes that should be mutated to dates.
-|link:http://php.net/string[string^]
-    |dateFormat
-    |The storage format of the model's date columns.
-|link:http://php.net/array[array^]
-    |mutatorCache
-    |The cache of the mutated attributes for each class.
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getTableName():string
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public jsonSerialize():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public fillByAttributes($attributes):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$attributes`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getVarRef($varName):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$varName`
+|
+|===
+
 

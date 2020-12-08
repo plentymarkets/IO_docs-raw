@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== NumberFormatFilter
-
-
 [[io__numberformatfilter]]
 == NumberFormatFilter
 
-summary: 
 
 
 
@@ -32,11 +27,193 @@ summary:
 |
     |numberFormatter
     |
-|link:http://php.net/array[array^]
-    |filters
-    |
 |
     |cache
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($config):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_filters_configrepository[`ConfigRepository`]
+a|`$config`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public formatDateTime($value):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$value`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public trimNewlines($value):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$value`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public formatDecimal($value, $decimal_places = -1):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/float[float^]
+a|`$value`
+|
+
+|link:http://php.net/int[int^]
+a|`$decimal_places`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public formatMonetary($value, $currencyISO):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/float[float^]
+a|`$value`
+|
+
+|link:http://php.net/string[string^]
+a|`$currencyISO`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public fromMemoryCache():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public resetMemoryCache($key = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$key`
+|
+|===
+
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== URLFilter
-
-
 [[io__urlfilter]]
 == URLFilter
 
-summary: 
 
 
 
@@ -29,8 +24,106 @@ summary:
 |
     |itemService
     |
-|link:http://php.net/array[array^]
-    |filters
-    |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($itemService):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_filters_itemservice[`ItemService`]
+a|`$itemService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public buildItemURL($itemData, $withVariationId = true):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_extensions_filters[`Filters`]
+a|`$itemData`
+|
+
+|link:http://php.net/bool[bool^]
+a|`$withVariationId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public buildVariationURL($variationId):string
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+This method will not be supported in the future. Please refrain from using it as soon as possible.
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
 

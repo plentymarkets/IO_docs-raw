@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== IOSendMail
-
-
 [[io__iosendmail]]
 == IOSendMail
 
-summary: 
 
 
 
@@ -36,4 +31,94 @@ summary:
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($sendMailService):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$sendMailService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public handle($pluginSendMail):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_mail_pluginsendmail[`PluginSendMail`]
+a|`$pluginSendMail`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setPlaceholderValue():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Extensions\Mail\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_mail_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

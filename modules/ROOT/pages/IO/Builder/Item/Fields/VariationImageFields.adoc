@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== VariationImageFields
-
-
 [[io__variationimagefields]]
 == VariationImageFields
 
-summary: 
 
 
 

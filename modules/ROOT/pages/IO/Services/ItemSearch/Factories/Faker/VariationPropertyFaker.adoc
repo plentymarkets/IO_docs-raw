@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== VariationPropertyFaker
-
-
 [[io__variationpropertyfaker]]
 == VariationPropertyFaker
 
-summary: 
 
 
 
@@ -29,26 +24,71 @@ summary:
 |
     |isList
     |
-|
-    |range
-    |
-|
-    |index
-    |
-|
-    |list
-    |
-|
-    |lang
-    |
-|
-    |esLang
-    |
-|
-    |plentyId
-    |
-|
-    |translationCounter
-    |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public fill($data):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$data`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public makeProperty($propertyId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$propertyId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public makePropertyGroup():void
+
+----
+
+    
+
+
+
+
+
+
 

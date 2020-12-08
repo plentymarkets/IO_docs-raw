@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CategoryDataFilter
-
-
 [[io__categorydatafilter]]
 == CategoryDataFilter
 
-summary: 
 
 
 
@@ -17,6 +12,24 @@ summary:
 ===== Namespace
 
 `IO\Helper`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public applyResultFields():void
+
+----
+
+    
+
+
 
 
 

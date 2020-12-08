@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ApiResponse
-
-
 [[io__apiresponse]]
 == ApiResponse
 
-summary: 
 
 
 
@@ -45,4 +40,219 @@ summary:
     |notificationService
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($dispatcher, $response, $notificationService):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_api_dispatcher[`Dispatcher`]
+a|`$dispatcher`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
+a|`$response`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_api_notificationservice[`NotificationService`]
+a|`$notificationService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public error($code, $message = null):IO\Api\ApiResponse
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+This method will not be supported in the future. Please refrain from using it as soon as possible.
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|
+a|`$message`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public success($code, $message = null):IO\Api\ApiResponse
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+This method will not be supported in the future. Please refrain from using it as soon as possible.
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|
+a|`$message`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public info($code, $message = null):IO\Api\ApiResponse
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+This method will not be supported in the future. Please refrain from using it as soon as possible.
+
+====
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|
+a|`$message`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public header($key, $value):IO\Api\ApiResponse
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$key`
+|
+
+|link:http://php.net/string[string^]
+a|`$value`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public create($data, $code = \IO\Api\ResponseCode::OK, $headers = []):IO\Api\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$data`
+|
+
+|link:http://php.net/int[int^]
+a|`$code`
+|
+
+|link:http://php.net/array[array^]
+a|`$headers`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public appendNotifications():void
+
+----
+
+    
+
+
+
+
+
+
 

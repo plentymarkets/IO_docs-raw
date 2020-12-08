@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CategoryMap
-
-
 [[io__categorymap]]
 == CategoryMap
 
-summary: 
 
 
 
@@ -30,4 +25,79 @@ summary:
     |categoryMap
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($event):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_helper_dispatcher[`Dispatcher`]
+a|`$event`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setCategoryMap($categoryMap):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$categoryMap`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getID($key):int
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$key`
+|
+|===
+
 

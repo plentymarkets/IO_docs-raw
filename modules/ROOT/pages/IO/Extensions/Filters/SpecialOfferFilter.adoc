@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== SpecialOfferFilter
-
-
 [[io__specialofferfilter]]
 == SpecialOfferFilter
 
-summary: 
 
 
 
@@ -22,12 +17,72 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public specialOffer($defaultPrice, $prices, $priceType, $exact = null):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$defaultPrice`
+|
 
-|link:http://php.net/array[array^]
-    |filters
-    |
+|        xref:Miscellaneous.adoc#miscellaneous_extensions_filters[`Filters`]
+a|`$prices`
+|
+
+|link:http://php.net/string[string^]
+a|`$priceType`
+|
+
+|link:http://php.net/string[string^]
+a|`$exact`
+|
 |===
+
 

@@ -2,22 +2,17 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== VariationSearchResultFactory
-
-
 [[io__variationsearchresultfactory]]
 == VariationSearchResultFactory
 
-summary: 
 
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 5.0.0 will be deleted in 6.0.0
-    
+
 ====
 
 
@@ -27,5 +22,101 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public fillSearchResults():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public fillDocument():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public runFaker():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public loadResultFields($fullTemplateName):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$fullTemplateName`
+|The path of the template to load contents from.
+|===
+
+
+[source%nowrap, php]
+----
+
+public static loadStaticResultFields($fullTemplateName):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$fullTemplateName`
+|The path of the template to load contents from.
+|===
 
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ContactFormValidator
-
-
 [[io__contactformvalidator]]
 == ContactFormValidator
 
-summary: 
 
 
 
@@ -22,12 +17,21 @@ summary:
 
 
 
-.Properties
-|===
-|Type |Name |Description
 
-|link:http://php.net/string[string^]
-    |customMessageKey
-    |
-|===
+===== Methods
+
+[source%nowrap, php]
+----
+
+public defineAttributes():void
+
+----
+
+    
+
+
+
+
+
+
 

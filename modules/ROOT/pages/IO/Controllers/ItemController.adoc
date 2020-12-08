@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ItemController
-
-
 [[io__itemcontroller]]
 == ItemController
 
-summary: 
 
 
 
@@ -30,28 +25,161 @@ summary:
     |plentyId
     |
 |
-    |app
-    |
-|
-    |event
-    |
-|
-    |categoryRepo
-    |
-|
-    |categoryMap
-    |
-|
-    |categoryService
-    |Used by concrete controllers to set the current category
-|
-    |urlService
-    |
-|link:http://php.net/array[array^]
-    |middleware
-    |The middleware registered on the controller.
-|
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public showItem($slug = &quot;&quot;, $itemId, $variationId, $category = null):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$slug`
+|
+
+|link:http://php.net/int[int^]
+a|`$itemId`
+|The itemId read from current request url. Will be null if item url does not contain a slug.
+
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_controllers_category[`Category`]
+a|`$category`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public showItemWithoutName($itemId, $variationId):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public showItemFromAdmin($itemId):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public showItemOld():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public showItemForCategory($category):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$category`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Controllers\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

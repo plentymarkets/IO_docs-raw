@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== FacetBuilder
-
-
 [[io__facetbuilder]]
 == FacetBuilder
 
-summary: 
 
 
 
@@ -20,5 +15,32 @@ summary:
 
 
 
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static buildFacetValues($facetValueString):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$facetValueString`
+|
+|===
 
 

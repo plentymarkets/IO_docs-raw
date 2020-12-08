@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== IOConfig
-
-
 [[io__ioconfig]]
 == IOConfig
 
-summary: 
 
 
 
@@ -30,4 +25,22 @@ summary:
     |format
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
 

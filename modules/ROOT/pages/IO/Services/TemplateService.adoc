@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== TemplateService
-
-
 [[io__templateservice]]
 == TemplateService
 
-summary: 
 
 
 
@@ -39,4 +34,308 @@ summary:
     |forceNoIndex
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public forceNoIndex($forceNoIndex):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$forceNoIndex`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isNoIndexForced():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public shouldBeCached():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public disableCacheForTemplate():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getCurrentTemplate():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public setCurrentTemplate($template):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$template`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isCurrentTemplate($templateToCheck):bool
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+Use ShopUrls::is() instead
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$templateToCheck`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isHome():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+Use ShopUrls::is(RouteConfig::HOME) instead
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public isItem():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+Use ShopUrls::is(RouteConfig::ITEM) instead
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public isMyAccount():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+Use ShopUrls::is(RouteConfig::MY_ACCOUNT) instead
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public isCheckout():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+Use ShopUrls::is(RouteConfig::CHECKOUT) instead
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public isSearch():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+Use ShopUrls::is(RouteConfig::SEARCH) instead
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public isCategory():void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+Use ShopUrls::is(RouteConfig::CATEGORY) instead
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public renderTemplate():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public isCheapestSorting():void
+
+----
+
+    
+
+
+
+
+
+
 

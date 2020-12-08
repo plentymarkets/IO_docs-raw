@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== OrderItemType
-
-
 [[io__orderitemtype]]
 == OrderItemType
 
-summary: 
 
 
 

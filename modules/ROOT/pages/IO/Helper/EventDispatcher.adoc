@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== EventDispatcher
-
-
 [[io__eventdispatcher]]
 == EventDispatcher
 
-summary: 
 
 
 
@@ -17,6 +12,24 @@ summary:
 ===== Namespace
 
 `IO\Helper`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static fire():void
+
+----
+
+    
+
+
 
 
 

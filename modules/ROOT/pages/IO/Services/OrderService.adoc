@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== OrderService
-
-
 [[io__orderservice]]
 == OrderService
 
-summary: 
 
 
 
@@ -60,4 +55,603 @@ summary:
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($orderRepository, $basketService, $sessionStorageRepository, $frontendPaymentMethodRepository, $addressRepository, $urlService, $checkoutService, $customerService, $contactRepository, $giftCardRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_orderrepositorycontract[`OrderRepositoryContract`]
+a|`$orderRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_basketservice[`BasketService`]
+a|`$basketService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
+a|`$frontendPaymentMethodRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_addressrepositorycontract[`AddressRepositoryContract`]
+a|`$addressRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_urlservice[`UrlService`]
+a|`$urlService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_checkoutservice[`CheckoutService`]
+a|`$checkoutService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_customerservice[`CustomerService`]
+a|`$customerService`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_giftcardrepositorycontract[`GiftCardRepositoryContract`]
+a|`$giftCardRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public placeOrder():IO\Services\LocalizedOrder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_localizedorder[`LocalizedOrder`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public subscribeToNewsletter($email, $billingAddressId):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$email`
+|
+
+|link:http://php.net/int[int^]
+a|`$billingAddressId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public executePayment($orderId, $paymentId):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$orderId`
+|The order id to execute payment for
+
+|link:http://php.net/int[int^]
+a|`$paymentId`
+|The MoP-ID to execute
+|===
+
+
+[source%nowrap, php]
+----
+
+public findOrderById($orderId, $wrap = true):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$orderId`
+|
+
+|link:http://php.net/bool[bool^]
+a|`$wrap`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public findOrderByAccessKey():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getOrdersForContact($contactId, $page = 1, $items = 50, $filters = [], $wrapped = true):IO\Services\PaginatedResult
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_paginatedresult[`PaginatedResult`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$contactId`
+|
+
+|link:http://php.net/int[int^]
+a|`$page`
+|
+
+|link:http://php.net/int[int^]
+a|`$items`
+|
+
+|link:http://php.net/array[array^]
+a|`$filters`
+|
+
+|link:http://php.net/bool[bool^]
+a|`$wrapped`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getOrdersCompact():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getLatestOrderForContact($contactId):IO\Services\LocalizedOrder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_localizedorder[`LocalizedOrder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$contactId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getOrderPropertyByOrderId():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public isReturnActive():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public createOrderReturn():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getReturnOrder($orderId, $orderAccessKey = &quot;&quot;):IO\Services\LocalizedOrder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_localizedorder[`LocalizedOrder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$orderId`
+|
+
+|link:http://php.net/string[string^]
+a|`$orderAccessKey`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getReturnableItems($order):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_order[`Order`]
+a|`$order`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getPaymentMethodListForSwitch($currentPaymentMethodId, $orderId = null):IO\Services\Illuminate\Support\Collection
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_support_collection[`Collection`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$currentPaymentMethodId`
+|
+
+|
+a|`$orderId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public allowPaymentMethodSwitchFrom($paymentMethodId, $orderId = null):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$paymentMethodId`
+|
+
+|link:http://php.net/int[int^]
+a|`$orderId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public switchPaymentMethodForOrder($orderId, $paymentMethodId):IO\Services\LocalizedOrder
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_localizedorder[`LocalizedOrder`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$orderId`
+|
+
+|link:http://php.net/int[int^]
+a|`$paymentMethodId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public complete($order):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_order[`Order`]
+a|`$order`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public handleThrowable():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public createAndAssignDummyPayment($order):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_order[`Order`]
+a|`$order`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getPaymentProperty($typeId, $value):IO\Services\Plenty\Modules\Payment\Models\PaymentProperty
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_paymentproperty[`PaymentProperty`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$typeId`
+|
+
+|link:http://php.net/string[string^]
+a|`$value`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getReturnOrderStatus():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public sendMail($template, $emailData, $params):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$template`
+|
+
+|link:http://php.net/string[string^]
+a|`$emailData`
+|Must be a fully qualified class name
+
+|link:http://php.net/array[array^]
+a|`$params`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Services\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== ResourceContainer
-
-
 [[io__resourcecontainer]]
 == ResourceContainer
 
-summary: 
 
 
 
@@ -33,4 +28,67 @@ summary:
     |scriptTemplates
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getStyleTemplates():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public addStyleTemplate():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getScriptTemplates():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public addScriptTemplate():void
+
+----
+
+    
+
+
+
+
+
+
 

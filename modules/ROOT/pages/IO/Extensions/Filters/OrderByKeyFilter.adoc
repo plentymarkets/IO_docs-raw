@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== OrderByKeyFilter
-
-
 [[io__orderbykeyfilter]]
 == OrderByKeyFilter
 
-summary: 
 
 
 
@@ -22,12 +17,88 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getFilters():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getItemsOrderedByKey($array, $sortKey):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
-
 |link:http://php.net/array[array^]
-    |filters
-    |
+a|`$array`
+|
+
+|link:http://php.net/string[string^]
+a|`$sortKey`
+|
 |===
+
+
+[source%nowrap, php]
+----
+
+public orderArrayByKey($key):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$key`
+|
+|===
+
 

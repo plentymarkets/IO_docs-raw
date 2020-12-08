@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== TemplateConfigService
-
-
 [[io__templateconfigservice]]
 == TemplateConfigService
 
-summary: 
 
 
 
@@ -33,4 +28,115 @@ summary:
     |templatePluginName
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($configRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$configRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public get($key, $default = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$key`
+|
+
+|
+a|`$default`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getBoolean($key, $default = false):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$key`
+|
+
+|link:http://php.net/bool[bool^]
+a|`$default`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getInteger($key, $default):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$key`
+|
+
+|link:http://php.net/int[int^]
+a|`$default`
+|
+|===
+
 

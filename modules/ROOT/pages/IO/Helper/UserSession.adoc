@@ -2,23 +2,18 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== UserSession
-
-
 [[io__usersession]]
 == UserSession
 
-summary: 
 
 
 [WARNING]
-    .Deprecated!     
+.Deprecated! 
 ====
-    
+
 since 4.3.0<br />
 Use AccountService instead
-    
+
 ====
 
 
@@ -38,4 +33,77 @@ Use AccountService instead
     |accountService
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($accountService):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_helper_accountservice[`AccountService`]
+a|`$accountService`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCurrentContactId():int
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 4.3.0
+Use AccountService::getAccountContactId instead
+
+====
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public isContactLoggedIn():bool
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 4.3.0
+Use AccountService::getIsAccountLoggedIn instead
+
+====
+    
+
+
+
+
+
+
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CategoryService
-
-
 [[io__categoryservice]]
 == CategoryService
 
-summary: 
 
 
 
@@ -54,4 +49,764 @@ summary:
     |cache
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($categoryRepository, $webstoreConfigurationRepository, $authGuard, $contactRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_categoryrepositorycontract[`CategoryRepositoryContract`]
+a|`$categoryRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+a|`$webstoreConfigurationRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_authguard[`AuthGuard`]
+a|`$authGuard`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public setCurrentCategoryID($catID):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$catID`
+|The id of the current category
+|===
+
+
+[source%nowrap, php]
+----
+
+public setCurrentCategory($cat):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_category[`Category`]
+a|`$cat`
+|The current category
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCurrentCategory():IO\Services\Category
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_category[`Category`]
+
+
+
+
+[source%nowrap, php]
+----
+
+public get($catID, $lang = null):IO\Services\Category
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_category[`Category`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$catID`
+|The category ID
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|The language to get the category
+|===
+
+
+[source%nowrap, php]
+----
+
+public getForPlentyId():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getChildren($categoryId, $lang = null):void
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+This method will not be supported in the future. Please refrain from using it as soon as possible.
+
+====
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$categoryId`
+|
+
+|
+a|`$lang`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCurrentCategoryChildren($categoryId = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$categoryId`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public findInCategoryTree($categoryTree, $branch = [], $level = 1):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
+a|`$categoryTree`
+|
+
+|link:http://php.net/array[array^]
+a|`$branch`
+|
+
+|link:http://php.net/int[int^]
+a|`$level`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getURL($category, $lang = null, $):string
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_category[`Category`]
+a|`$category`
+|the category to get the URL for
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|the language to get the URL for
+
+|link:http://php.net/int[int^]
+a|`$`
+||null $webstoreId
+|===
+
+
+[source%nowrap, php]
+----
+
+public getURLById():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getDetails($category, $lang):IO\Services\CategoryDetails
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_categorydetails[`CategoryDetails`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_category[`Category`]
+a|`$category`
+|
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isCurrent($category):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$category`
+|The category to check
+|===
+
+
+[source%nowrap, php]
+----
+
+public isOpen($category):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$category`
+|The category to check
+|===
+
+
+[source%nowrap, php]
+----
+
+public isActive($category = null):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$category`
+|The category to check
+|===
+
+
+[source%nowrap, php]
+----
+
+public getItems($category = null, $params = [], $page = 1):IO\Services\PaginatedResult
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_paginatedresult[`PaginatedResult`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_category[`Category`]
+a|`$category`
+|
+
+|link:http://php.net/array[array^]
+a|`$params`
+|
+
+|link:http://php.net/int[int^]
+a|`$page`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getNavigationTree($type = null, $lang = null, $maxLevel = 2, $customerClassId):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$type`
+|Only return categories of given types
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|The language to get sitemap tree for
+
+|link:http://php.net/int[int^]
+a|`$maxLevel`
+|The deepest category level to load
+
+|link:http://php.net/int[int^]
+a|`$customerClassId`
+|The customer class id to get tree
+|===
+
+
+[source%nowrap, php]
+----
+
+public filterVisibleCategories($categoryList = []):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$categoryList`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getPartialTree():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public filterBranchEntries():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public appendBranchFields():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getNavigationList($type = &quot;all&quot;, $lang = null):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$type`
+|Only return categories of given type
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|The language to get sitemap list for
+|===
+
+
+[source%nowrap, php]
+----
+
+public filterCategoriesByTypes():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getHierarchy($catID, $bottomUp = false, $filterCategories = false):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$catID`
+|The category Id to get the parents for or 0 to use current category
+
+|link:http://php.net/bool[bool^]
+a|`$bottomUp`
+|Set true to order result from bottom (deepest category) to top (= level 1)
+
+|link:http://php.net/bool[bool^]
+a|`$filterCategories`
+|Filter categories
+|===
+
+
+[source%nowrap, php]
+----
+
+public isVisibleForWebstore():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public setCurrentItem($item):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$item`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getCurrentItem():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public isHidden($id):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$id`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public fromMemoryCache():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public resetMemoryCache($key = null):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$key`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public loadResultFields($fullTemplateName):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$fullTemplateName`
+|The path of the template to load contents from.
+|===
+
+
+[source%nowrap, php]
+----
+
+public static loadStaticResultFields($fullTemplateName):array
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$fullTemplateName`
+|The path of the template to load contents from.
+|===
+
 

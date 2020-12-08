@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== DataFilter
-
-
 [[io__datafilter]]
 == DataFilter
 
-summary: 
 
 
 
@@ -17,6 +12,93 @@ summary:
 ===== Namespace
 
 `IO\Helper`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public getFilteredData():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public filterData():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public filterDataList():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getPrefixes($resultFields):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$resultFields`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getPrefixedResultFields():void
+
+----
+
+    
+
+
 
 
 

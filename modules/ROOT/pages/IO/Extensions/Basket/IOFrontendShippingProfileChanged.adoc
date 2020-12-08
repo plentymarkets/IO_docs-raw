@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== IOFrontendShippingProfileChanged
-
-
 [[io__iofrontendshippingprofilechanged]]
 == IOFrontendShippingProfileChanged
 
-summary: 
 
 
 
@@ -20,5 +15,32 @@ summary:
 
 
 
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public handle($event):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|
+a|`$event`
+|
+|===
 
 

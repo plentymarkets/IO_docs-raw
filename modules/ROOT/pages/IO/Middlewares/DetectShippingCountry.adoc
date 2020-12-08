@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== DetectShippingCountry
-
-
 [[io__detectshippingcountry]]
 == DetectShippingCountry
 
-summary: 
 
 
 
@@ -22,12 +17,58 @@ summary:
 
 
 
-.Properties
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public before($request):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
 |===
 |Type |Name |Description
-
-|link:http://php.net/bool[bool^]
-    |includeRestRoutes
-    |
+|        xref:Miscellaneous.adoc#miscellaneous_middlewares_request[`Request`]
+a|`$request`
+|
 |===
+
+
+[source%nowrap, php]
+----
+
+public after($request, $response):IO\Middlewares\Response
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_middlewares_response[`Response`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_middlewares_request[`Request`]
+a|`$request`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_middlewares_response[`Response`]
+a|`$response`
+|
+|===
+
 

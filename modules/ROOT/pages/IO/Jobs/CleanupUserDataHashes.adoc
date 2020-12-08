@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== CleanupUserDataHashes
-
-
 [[io__cleanupuserdatahashes]]
 == CleanupUserDataHashes
 
-summary: 
 
 
 
@@ -17,6 +12,24 @@ summary:
 ===== Namespace
 
 `IO\Jobs`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public handle():void
+
+----
+
+    
+
+
 
 
 

@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== RouteConfig
-
-
 [[io__routeconfig]]
 == RouteConfig
 
-summary: 
 
 
 
@@ -33,4 +28,113 @@ summary:
     |overrides
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public static getEnabledRoutes():array
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public static isActive($route):bool
+
+----
+
+    
+
+
+
+
+
+If true the default route should be registered in the route service provider.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$route`
+|The route to check active state for.
+|===
+
+
+[source%nowrap, php]
+----
+
+public static getCategoryId($route):int
+
+----
+
+    
+
+
+
+
+
+Returns 0 if no category is linked.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$route`
+|The route to get the linked category id for.
+|===
+
+
+[source%nowrap, php]
+----
+
+public static overrideCategoryId($route, $categoryId):void
+
+----
+
+    
+
+
+
+
+
+This is used by the shopbuilder to preview a category in a special context.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$route`
+|The route to override the linked category for.
+
+|link:http://php.net/int[int^]
+a|`$categoryId`
+|The id of the category to override.
+|===
+
+
+[source%nowrap, php]
+----
+
+public static passThroughBlogRoutes():bool
+
+----
+
+    
+
+
+
+
+
+If true it should pass requests to blog routes to the old CMS.
 

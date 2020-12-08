@@ -2,14 +2,9 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-
-== AuthenticationService
-
-
 [[io__authenticationservice]]
 == AuthenticationService
 
-summary: 
 
 
 
@@ -39,4 +34,169 @@ summary:
     |pluginNamespace
     |
 |===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($contactAuthRepository, $sessionStorageRepository):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|        xref:Miscellaneous.adoc#miscellaneous_services_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
+a|`$contactAuthRepository`
+|
+
+|        xref:Miscellaneous.adoc#miscellaneous_services_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public login($email, $password):int
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$email`
+|
+
+|link:http://php.net/string[string^]
+a|`$password`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public loginWithContactId($contactId, $password):void
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$contactId`
+|
+
+|link:http://php.net/string[string^]
+a|`$password`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public logout():void
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public checkPassword($password):bool
+
+----
+
+    
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$password`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public isLoggedIn():bool
+
+----
+
+    
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getLogger($identifier):IO\Services\LoggerContract
+
+----
+
+    
+
+
+====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_loggercontract[`LoggerContract`]
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$identifier`
+|
+|===
+
 
