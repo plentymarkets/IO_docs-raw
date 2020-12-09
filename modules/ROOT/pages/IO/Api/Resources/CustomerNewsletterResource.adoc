@@ -57,7 +57,7 @@ public store():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Add an email to a newsletter
 
 [source%nowrap, php]
 ----
@@ -72,7 +72,7 @@ public destroy($selector):IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Remove an email from the newsletter
 
 .*Parameters*
 |===

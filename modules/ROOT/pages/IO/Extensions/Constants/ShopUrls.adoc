@@ -201,7 +201,7 @@ public returns($orderId, $orderAccessKey = null):string
 
 
 
-
+Get the URL of the return form for a specific order.
 
 .*Parameters*
 |===
@@ -229,7 +229,7 @@ public orderPropertyFile($path):string
 
 
 
-
+Get the URL of a file stored in an order property.
 
 .*Parameters*
 |===
@@ -253,7 +253,7 @@ public orderDocumentPreview($documentId, $orderId, $orderAccessKey = null):strin
 
 
 
-
+Get a preview URL for an order document.
 
 .*Parameters*
 |===
@@ -285,7 +285,7 @@ public tracking($orderId):string
 
 
 
-
+Get tracking URL for a specific order id.
 
 .*Parameters*
 |===
@@ -309,7 +309,7 @@ public orderConfirmation($orderId):string
 
 
 
-
+Get the URL of the order confirmation page for a specific order id.
 
 .*Parameters*
 |===
@@ -363,7 +363,7 @@ public equals($urlA, $urlB):bool
 
 
 
-
+Check if two routes are equal but ignore trailing slashes.
 
 .*Parameters*
 |===
@@ -391,7 +391,7 @@ public getTemplateType():string
 
 
 
-
+Get type of the currently displayed page.
 
 [source%nowrap, php]
 ----
@@ -406,7 +406,8 @@ public setTemplateType($type):void
 
 
 
-
+Set the template type from a custom controller. If not defined the template type
+will fallback to {@see RouteConfig::CATEGORY} on custom routes.
 
 .*Parameters*
 |===
@@ -430,7 +431,7 @@ public is($routeKey):bool
 
 
 
- @see RouteConfig for available type values.
+Check if current page is of a given type.
 
 .*Parameters*
 |===
@@ -454,9 +455,7 @@ public isLegalPage():void
 
 
 
-These contain cancellation rights, cancellation form,
-legal disclosure, terms and conditions and privacy
-policy.
+Check if current page is in the list of legal pages.
 
 [source%nowrap, php]
 ----

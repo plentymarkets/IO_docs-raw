@@ -33,5 +33,5 @@ public index():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Get variation combinations
 

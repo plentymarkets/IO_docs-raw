@@ -16,6 +16,24 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/array[array^]
+    |WRAPPED_ORDERITEM_TYPES
+    |[1,2,3,4,5,6,9,13,14]
+    |
+|link:http://php.net/string[string^]
+    |CREATED_AT
+    |'created_at'
+    |
+|link:http://php.net/string[string^]
+    |UPDATED_AT
+    |'updated_at'
+    |
+|===
+
 
 .Properties
 |===

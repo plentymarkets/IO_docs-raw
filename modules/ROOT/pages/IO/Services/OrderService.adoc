@@ -16,6 +16,20 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/array[array^]
+    |WRAPPED_ORDERITEM_TYPES
+    |[1,2,3,9,13]
+    |
+|link:http://php.net/array[array^]
+    |VISIBLE_ORDER_TYPES
+    |[1,5]
+    |
+|===
+
 
 .Properties
 |===
@@ -72,7 +86,7 @@ public __construct($orderRepository, $basketService, $sessionStorageRepository, 
 
 
 
-
+OrderService constructor.
 
 .*Parameters*
 |===
@@ -132,7 +146,7 @@ public placeOrder():IO\Services\LocalizedOrder
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_localizedorder[`LocalizedOrder`]
 
 
-
+Place an order
 
 [source%nowrap, php]
 ----
@@ -147,7 +161,7 @@ public subscribeToNewsletter($email, $billingAddressId):void
 
 
 
-
+Subscribe the customer to the newsletter, if stored in the session
 
 .*Parameters*
 |===
@@ -175,7 +189,7 @@ public executePayment($orderId, $paymentId):array
 
 
 
-
+Execute the payment for a given order.
 
 .*Parameters*
 |===
@@ -203,7 +217,7 @@ public findOrderById($orderId, $wrap = true):void
 
 
 
-
+Find an order by ID
 
 .*Parameters*
 |===
@@ -246,7 +260,7 @@ public getOrdersForContact($contactId, $page = 1, $items = 50, $filters = [], $w
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_paginatedresult[`PaginatedResult`]
 
 
-
+Get a list of orders for a contact
 
 .*Parameters*
 |===
@@ -301,7 +315,7 @@ public getLatestOrderForContact($contactId):IO\Services\LocalizedOrder
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_localizedorder[`LocalizedOrder`]
 
 
-
+Get the last order created by the current contact
 
 .*Parameters*
 |===
@@ -422,7 +436,7 @@ public getPaymentMethodListForSwitch($currentPaymentMethodId, $orderId = null):I
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_support_collection[`Collection`]
 
 
-
+List all payment methods available for switch in MyAccount
 
 .*Parameters*
 |===
@@ -506,7 +520,7 @@ public complete($order):void
 
 
 
-
+Do steps after creating the order
 
 .*Parameters*
 |===
@@ -545,7 +559,7 @@ public createAndAssignDummyPayment($order):void
 
 
 
-
+Creates a payment with amount 0 and assigns it to the given order so that the status of the given order with amount 0 is calculated correctly.
 
 .*Parameters*
 |===
@@ -569,7 +583,7 @@ public getPaymentProperty($typeId, $value):IO\Services\Plenty\Modules\Payment\Mo
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_paymentproperty[`PaymentProperty`]
 
 
-
+Returns a PaymentProperty with the given params
 
 .*Parameters*
 |===

@@ -51,7 +51,7 @@ public __construct($authHelper):void
 
 
 
-
+PropertySelectionValueNameFilter constructor.
 
 .*Parameters*
 |===
@@ -75,7 +75,7 @@ public getFilters():array
 
 
 
-
+Return the available filter methods
 
 [source%nowrap, php]
 ----

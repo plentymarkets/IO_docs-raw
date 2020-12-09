@@ -72,7 +72,7 @@ public setContactWish():void
 
 
 
-
+Set the contact wish from the request
 
 [source%nowrap, php]
 ----

@@ -16,4 +16,22 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |CONTACT
+    |'contact'
+    |
+|link:http://php.net/string[string^]
+    |ACCOUNT
+    |'account'
+    |
+|link:http://php.net/string[string^]
+    |WAREHOUSE
+    |'warehouse'
+    |
+|===
+
 

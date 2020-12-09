@@ -33,7 +33,7 @@ public __construct($request, $response):void
 
 
 
-
+VariationResource constructor.
 
 .*Parameters*
 |===
@@ -76,7 +76,7 @@ public show($variationId):IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Get variation by id
 
 .*Parameters*
 |===

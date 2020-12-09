@@ -45,7 +45,7 @@ public __construct():void
 
 
 
-
+ItemNameFilter constructor.
 
 [source%nowrap, php]
 ----
@@ -60,7 +60,7 @@ public getFilters():array
 
 
 
-
+Return the available filter methods
 
 [source%nowrap, php]
 ----
@@ -75,7 +75,7 @@ public itemName($itemData, $configName = null, $displayName = null):string
 
 
 
-
+Build the item name from the configuration
 
 .*Parameters*
 |===

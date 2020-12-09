@@ -42,7 +42,7 @@ public __construct($request, $response, $availabilityService):void
 
 
 
-
+AvailabilityResource constructor.
 
 .*Parameters*
 |===
@@ -74,7 +74,7 @@ public show($availabilityId):IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Get the Availability by Id
 
 .*Parameters*
 |===

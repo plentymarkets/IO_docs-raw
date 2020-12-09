@@ -16,4 +16,70 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |SIMILAR
+    |'Similar'
+    |
+|link:http://php.net/string[string^]
+    |EPISODE
+    |'Episode'
+    |
+|link:http://php.net/string[string^]
+    |SEASON
+    |'Season'
+    |
+|link:http://php.net/string[string^]
+    |BUNDLE
+    |'Bundle'
+    |
+|link:http://php.net/string[string^]
+    |COMPONENT
+    |'Component'
+    |
+|link:http://php.net/string[string^]
+    |VARIATION
+    |'Variation'
+    |
+|link:http://php.net/string[string^]
+    |DISPLAY_SET
+    |'DisplaySet'
+    |
+|link:http://php.net/string[string^]
+    |COLLECTION
+    |'Collection'
+    |
+|link:http://php.net/string[string^]
+    |ACCESSORY
+    |'Accessory'
+    |
+|link:http://php.net/string[string^]
+    |CUSTOMIZED
+    |'Customized'
+    |
+|link:http://php.net/string[string^]
+    |PART
+    |'Part'
+    |
+|link:http://php.net/string[string^]
+    |COMPLEMENTS
+    |'Complements'
+    |
+|link:http://php.net/string[string^]
+    |PIECE
+    |'Piece'
+    |
+|link:http://php.net/string[string^]
+    |NECCESSARY
+    |'Necessary'
+    |
+|link:http://php.net/string[string^]
+    |REPLACEMENT_PART
+    |'ReplacementPart'
+    |
+|===
+
 

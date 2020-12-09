@@ -16,6 +16,16 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/array[array^]
+    |ES_LANGUAGES
+    |['german','english','french','bulgarian','italian','spanish','turkish','dutch','portuguese','norwegian','romanian','danish','swedish','czech','russian']
+    |
+|===
+
 
 .Properties
 |===
@@ -171,7 +181,7 @@ public merge($object, $defaults):void
 
 
 
-
+Recursively merge values into an existing array
 
 .*Parameters*
 |===
@@ -199,7 +209,7 @@ public get($arr, $field):void
 
 
 
-
+Get a nested value from an array by its path (e.g. &quot;path.to.property&quot;)
 
 .*Parameters*
 |===
@@ -227,7 +237,7 @@ public isDefined($arr, $field):bool
 
 
 
-
+Check if a nested property is defined in an array
 
 .*Parameters*
 |===
@@ -255,7 +265,7 @@ public hasAny($arr, $field, $key, $value):bool
 
 
 
-
+Check if any entry of a list has a specific value.
 
 .*Parameters*
 |===

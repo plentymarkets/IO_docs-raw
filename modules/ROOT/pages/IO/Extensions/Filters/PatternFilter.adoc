@@ -33,7 +33,7 @@ public getFilters():array
 
 
 
-
+Return the available filter methods
 
 [source%nowrap, php]
 ----
@@ -63,7 +63,7 @@ public findPattern($input, $regex):array
 
 
 
-
+Find matches in input with given regex
 
 .*Parameters*
 |===

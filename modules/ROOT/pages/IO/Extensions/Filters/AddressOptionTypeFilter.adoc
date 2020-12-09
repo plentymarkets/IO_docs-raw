@@ -33,7 +33,7 @@ public __construct():void
 
 
 
-
+AddressOptionTypeFilter constructor.
 
 [source%nowrap, php]
 ----

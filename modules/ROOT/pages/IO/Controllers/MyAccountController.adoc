@@ -33,7 +33,7 @@ public showMyAccount($category = null):string
 
 
 
-
+Prepare and render the data for the my account page
 
 .*Parameters*
 |===

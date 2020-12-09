@@ -81,7 +81,7 @@ public __construct($frontendPaymentMethodRepository, $checkout, $basketRepositor
 
 
 
-
+CheckoutService constructor.
 
 .*Parameters*
 |===
@@ -153,7 +153,7 @@ public getCheckout($retry = true):array
 
 
 
-
+Get the relevant data for the checkout.
 
 .*Parameters*
 |===
@@ -184,7 +184,7 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
+Get the current currency from the session.
 
 [source%nowrap, php]
 ----
@@ -206,7 +206,7 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
+Set the current currency in the session.
 
 .*Parameters*
 |===
@@ -245,7 +245,7 @@ public getCurrencyData():void
 
 
 
-
+Get the name and the symbol for the currently selected currency.
 
 [source%nowrap, php]
 ----
@@ -260,10 +260,7 @@ public getCurrencyPattern():array
 
 
 
-This contains the configured separators for thousands and decimals,
-the number fraction digits and a pattern in the ICU format
-describing the format of monetary values.
-Also includes a map of currency iso codes and their symbols.
+Get all required information about how to display monetary values.
 
 [source%nowrap, php]
 ----
@@ -278,7 +275,7 @@ public getMethodOfPaymentId():int
 
 
 
-
+Get the ID of the current payment method.
 
 [source%nowrap, php]
 ----
@@ -293,7 +290,7 @@ public setMethodOfPaymentId($methodOfPaymentID):void
 
 
 
-
+Set the ID of the current payment method.
 
 .*Parameters*
 |===
@@ -317,7 +314,7 @@ public preparePayment():array
 
 
 
-
+Prepare the payment.
 
 [source%nowrap, php]
 ----
@@ -332,7 +329,7 @@ public getMethodOfPaymentList():array
 
 
 
-
+List all available payment methods.
 
 [source%nowrap, php]
 ----
@@ -347,7 +344,7 @@ public getMethodOfPaymentExpressCheckoutList():array
 
 
 
-
+List all payment methods available for express checkout.
 
 [source%nowrap, php]
 ----
@@ -362,7 +359,7 @@ public getCheckoutPaymentDataList():array
 
 
 
-
+Get a list of the payment method data.
 
 [source%nowrap, php]
 ----
@@ -377,7 +374,7 @@ public getShippingProfileList():array
 
 
 
-
+Get the list of available shipping profiles.
 
 [source%nowrap, php]
 ----
@@ -423,7 +420,7 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
+Get the ID of the current shipping country
 
 [source%nowrap, php]
 ----
@@ -438,7 +435,7 @@ public setShippingCountryId($shippingCountryId):void
 
 
 
-
+Set the id of the current shipping country.
 
 .*Parameters*
 |===
@@ -462,7 +459,7 @@ public getShippingProfileId():int
 
 
 
-
+Get the ID of the current shipping profile.
 
 [source%nowrap, php]
 ----
@@ -477,7 +474,7 @@ public setShippingProfileId($shippingProfileId):void
 
 
 
-
+Set the ID of the current shipping profile.
 
 .*Parameters*
 |===
@@ -501,7 +498,7 @@ public getDeliveryAddressId():int
 
 
 
-
+Get the ID of the current delivery address.
 
 [source%nowrap, php]
 ----
@@ -516,7 +513,7 @@ public setDeliveryAddressId($deliveryAddressId):void
 
 
 
-
+Set the ID of the current delivery address.
 
 .*Parameters*
 |===
@@ -540,7 +537,7 @@ public getBillingAddressId():int
 
 
 
-Will return -99 if delivery address is equal to the shipping address.
+Get the ID of the current invoice address.
 
 [source%nowrap, php]
 ----
@@ -555,7 +552,7 @@ public setBillingAddressId($billingAddressId):void
 
 
 
-
+Set the ID of the current invoice address.
 
 .*Parameters*
 |===
@@ -579,7 +576,7 @@ public setDefaultShippingCountryId():void
 
 
 
-
+Reset the current shipping country to the default defined in the webstore configuration.
 
 [source%nowrap, php]
 ----
@@ -594,7 +591,7 @@ public getMaxDeliveryDays():array
 
 
 
-Result contains an array with shipping profile ids as keys and maximum days of delivery as values.
+Get the maximum days of delivery for each shipping profile.
 
 [source%nowrap, php]
 ----
@@ -609,7 +606,7 @@ public setReadOnlyCheckout($readonly):void
 
 
 
-This will be set from external checkout processes e.g. from third party payment providers.
+Set the checkout to be readonly.
 
 .*Parameters*
 |===
@@ -633,7 +630,7 @@ public getReadOnlyCheckout():bool
 
 
 
-Any changes on checkout data will set this to false.
+Check if checkout should display data from external checkout processes in readonly mode.
 
 [source%nowrap, php]
 ----
@@ -648,7 +645,7 @@ public getContactWish():string
 
 
 
-
+Returns the given contact wish from session.
 
 [source%nowrap, php]
 ----

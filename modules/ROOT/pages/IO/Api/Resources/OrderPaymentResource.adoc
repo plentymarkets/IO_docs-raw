@@ -42,7 +42,7 @@ public __construct($request, $response):void
 
 
 
-
+OrderPaymentResource constructor.
 
 .*Parameters*
 |===

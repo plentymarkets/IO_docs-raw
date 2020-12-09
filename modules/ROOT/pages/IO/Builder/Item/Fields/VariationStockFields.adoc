@@ -16,4 +16,78 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |WAREHOUSE_ID
+    |'warehouseId'
+    |
+|link:http://php.net/string[string^]
+    |STOCK_PHYSICAL
+    |'stockPhysical'
+    |
+|link:http://php.net/string[string^]
+    |RESERVED_STOCK
+    |'reservedStock'
+    |
+|link:http://php.net/string[string^]
+    |RESERVED_EBAY
+    |'reservedEbay'
+    |
+|link:http://php.net/string[string^]
+    |REORDER_DELTA
+    |'reorderDelta'
+    |
+|link:http://php.net/string[string^]
+    |STOCK_NET
+    |'stockNet'
+    |
+|link:http://php.net/string[string^]
+    |UPDATE_AMAZON
+    |'updateAmazon'
+    |
+|link:http://php.net/string[string^]
+    |UPDATE_PIXMANIA
+    |'updatePixmania'
+    |
+|link:http://php.net/string[string^]
+    |WAREHOUSE_TYPE
+    |'warehouseType'
+    |
+|link:http://php.net/string[string^]
+    |REORDERED
+    |'reordered'
+    |
+|link:http://php.net/string[string^]
+    |RESERVED_BUNDLE
+    |'reservedBundle'
+    |
+|link:http://php.net/string[string^]
+    |AVERAGE_PURCHASE_PRICE
+    |'averagePurchasePrice'
+    |
+|link:http://php.net/string[string^]
+    |WAREHOUSE_PRIORITY
+    |'warehousePriority'
+    |
+|link:http://php.net/string[string^]
+    |LAST_UPDATE_TIMESTAMP
+    |'lastUpdateTimestamp'
+    |
+|link:http://php.net/string[string^]
+    |LAST_CALCULATE_TIMESTAMP
+    |'lastCalculateTimestamp'
+    |
+|link:http://php.net/string[string^]
+    |RESERVED_OUT_OF_STOCK
+    |'reservedOutOfStock'
+    |
+|link:http://php.net/string[string^]
+    |RESERVED_BASKET
+    |'reservedBasket'
+    |
+|===
+
 

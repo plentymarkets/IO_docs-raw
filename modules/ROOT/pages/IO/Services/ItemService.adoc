@@ -54,7 +54,7 @@ public __construct($app, $itemRepository, $sessionStorageRepository):void
 
 
 
-
+ItemService constructor.
 
 .*Parameters*
 |===
@@ -86,7 +86,7 @@ public getItem($itemId):array
 
 
 
-
+Get an item by ID
 
 .*Parameters*
 |===
@@ -110,7 +110,7 @@ public getItems($itemIds):array
 
 
 
-
+Get a list of items with the specified item IDs
 
 .*Parameters*
 |===
@@ -158,7 +158,7 @@ public getVariation($variationId):array
 
 
 
-
+Get an item variation by ID
 
 .*Parameters*
 |===
@@ -182,7 +182,7 @@ public getVariations($variationIds):array
 
 
 
-
+Get a list of item variations with the specified variation IDs
 
 .*Parameters*
 |===
@@ -293,7 +293,7 @@ public getItemForCategory($catID, $params = [], $page = 1):array
 
 
 
-
+Get all items for a specific category
 
 .*Parameters*
 |===
@@ -325,7 +325,7 @@ public getVariationAttributeMap($itemId):array
 
 
 
-
+List the attributes of an item variation
 
 .*Parameters*
 |===
@@ -404,7 +404,7 @@ Use UrlService instead
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_record[`Record`]
 
 
-
+Get the item URL
 
 .*Parameters*
 |===
@@ -428,7 +428,7 @@ public getAttributeName($attributeId):string
 
 
 
-
+Get the name of an attribute by ID
 
 .*Parameters*
 |===
@@ -452,7 +452,7 @@ public getAttributeValueName($attributeValueId):string
 
 
 
-
+Get the name of an attribute value by ID
 
 .*Parameters*
 |===
@@ -476,7 +476,7 @@ public getItemCrossSellingList($itemId, $crossSellingType = &quot;similar&quot;)
 
 
 
-
+Get a list of cross-selling items for the specified item ID
 
 .*Parameters*
 |===

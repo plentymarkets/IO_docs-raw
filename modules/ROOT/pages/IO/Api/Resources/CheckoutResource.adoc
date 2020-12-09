@@ -45,7 +45,7 @@ public __construct($request, $response, $checkoutService, $customerService):void
 
 
 
-
+CheckoutResource constructor.
 
 .*Parameters*
 |===
@@ -81,7 +81,7 @@ public index():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Get the checkout
 
 [source%nowrap, php]
 ----
@@ -96,7 +96,7 @@ public store():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Save adresses and set the checkout data
 
 [source%nowrap, php]
 ----
@@ -111,7 +111,7 @@ public update($selector = &quot;&quot;):IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Update the checkout information
 
 .*Parameters*
 |===

@@ -111,7 +111,8 @@ public deleteNewsletterDataByEmail($email, $emailFolder):bool
 
 
 
-
+Delete recipients from the newsletter
+Not passing the optional parameter $emailFolder deletes the recipient from all email-folders
 
 .*Parameters*
 |===

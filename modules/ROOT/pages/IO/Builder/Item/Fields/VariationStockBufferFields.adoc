@@ -16,4 +16,14 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |STOCK_BUFFER
+    |'stockBuffer'
+    |
+|===
+
 

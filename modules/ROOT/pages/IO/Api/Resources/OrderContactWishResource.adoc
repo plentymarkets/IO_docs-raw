@@ -33,7 +33,7 @@ public __construct($request, $response):void
 
 
 
-
+OrderContactWishResource constructor.
 
 .*Parameters*
 |===

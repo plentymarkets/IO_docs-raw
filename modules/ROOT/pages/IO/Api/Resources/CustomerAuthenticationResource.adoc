@@ -45,7 +45,7 @@ public __construct($request, $response, $authService):void
 
 
 
-
+CustomerAuthenticationResource constructor.
 
 .*Parameters*
 |===
@@ -77,7 +77,7 @@ public store():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Perform the login with email and password
 
 [source%nowrap, php]
 ----

@@ -60,7 +60,7 @@ public fillBasketResult():array
 
 
 
-
+Faker function for the basket view
 
 [source%nowrap, php]
 ----
@@ -75,5 +75,6 @@ public makeRawBasketItems():array
 
 
 
-
+Get random amount of items between 1 and 5 with random quantities between 1 and 3
+Format of array is [item, quantity]
 

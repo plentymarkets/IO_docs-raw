@@ -23,6 +23,28 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/int[int^]
+    |METER
+    |1
+    |
+|link:http://php.net/int[int^]
+    |DECIMETER
+    |2
+    |
+|link:http://php.net/int[int^]
+    |CENTIMETER
+    |3
+    |
+|link:http://php.net/int[int^]
+    |MILLIMETER
+    |4
+    |
+|===
+
 
 .Properties
 |===
@@ -58,7 +80,7 @@ public __construct($unitNameRepository, $unitRepository):void
 
 
 
-
+UnitService constructor.
 
 .*Parameters*
 |===
@@ -93,7 +115,7 @@ since 5.0.0 will be removed in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_unitname[`UnitName`]
 
 
-
+Get the unit by ID
 
 .*Parameters*
 |===
@@ -163,7 +185,7 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
+Checks if the given string unit is a valid one for the PlentyDimension.
 
 .*Parameters*
 |===
@@ -194,7 +216,7 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
+Returns HTML code for the unit (&#039;m&#039;,&#039;cm&#039; o&#039;MM&#039;)
 
 .*Parameters*
 |===

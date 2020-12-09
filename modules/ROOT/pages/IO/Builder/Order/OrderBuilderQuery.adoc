@@ -48,7 +48,7 @@ public __construct($app, $basketService, $type, $plentyId):void
 
 
 
-
+OrderBuilderQuery constructor.
 
 .*Parameters*
 |===
@@ -84,7 +84,7 @@ public done():array
 
 
 
-
+Return the order array
 
 [source%nowrap, php]
 ----
@@ -99,7 +99,7 @@ public fromBasket($basket = null):IO\Builder\Order\OrderBuilderQuery
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
 
 
-
+Build order from basket data
 
 .*Parameters*
 |===
@@ -123,7 +123,7 @@ public withLang($lang):void
 
 
 
-
+Add the lang to the order
 
 .*Parameters*
 |===
@@ -147,7 +147,7 @@ public withStatus($status):IO\Builder\Order\OrderBuilderQuery
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
 
 
-
+Add the status to the order
 
 .*Parameters*
 |===
@@ -171,7 +171,7 @@ public withOwner($ownerId):IO\Builder\Order\OrderBuilderQuery
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
 
 
-
+Add the owner to the order
 
 .*Parameters*
 |===
@@ -195,7 +195,7 @@ public withOrderItem($orderItem):IO\Builder\Order\OrderBuilderQuery
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
 
 
-
+Add an order item to the order
 
 .*Parameters*
 |===
@@ -219,7 +219,7 @@ public withOrderItems($orderItems):IO\Builder\Order\OrderBuilderQuery
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
 
 
-
+Add order items to the order
 
 .*Parameters*
 |===
@@ -243,7 +243,7 @@ public withAddressId($addressId, $type):IO\Builder\Order\OrderBuilderQuery
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
 
 
-
+Add an address to the order
 
 .*Parameters*
 |===
@@ -271,7 +271,7 @@ public withRelation($type, $referenceId, $relationType):IO\Builder\Order\OrderBu
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
 
 
-
+Add the relation to the order
 
 .*Parameters*
 |===
@@ -303,7 +303,7 @@ public withContactId($customerId):IO\Builder\Order\OrderBuilderQuery
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
 
 
-
+Add a contact to the order
 
 .*Parameters*
 |===
@@ -327,7 +327,7 @@ public withOrderProperty($type, $subType, $value, $required = true):IO\Builder\O
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
 
 
-
+Add an order option to the order
 
 .*Parameters*
 |===
@@ -363,7 +363,7 @@ public withComment($isVisibleForContact, $text):IO\Builder\Order\OrderBuilderQue
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
 
 
-
+Add a comment to the order. (e.g. customer wish)
 
 .*Parameters*
 |===

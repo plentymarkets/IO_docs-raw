@@ -16,6 +16,48 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |NAMESPACE
+    |'IO\DBModels\ItemWishList'
+    |
+|link:http://php.net/string[string^]
+    |FIELD_TYPE_INT
+    |'int'
+    |
+|link:http://php.net/string[string^]
+    |FIELD_TYPE_UNSIGNED_INT
+    |'unsignedInteger'
+    |
+|link:http://php.net/string[string^]
+    |FIELD_TYPE_DECIMAL
+    |'decimal'
+    |
+|link:http://php.net/string[string^]
+    |FIELD_TYPE_STRING
+    |'string'
+    |
+|link:http://php.net/string[string^]
+    |FIELD_TYPE_BOOL
+    |'bool'
+    |
+|link:http://php.net/string[string^]
+    |FIELD_TYPE_ARRAY
+    |'array'
+    |
+|link:http://php.net/string[string^]
+    |FIELD_TYPE_TEXT
+    |'text'
+    |
+|link:http://php.net/array[array^]
+    |FIELD_TYPES
+    |['int','decimal','string','bool','array','text']
+    |
+|===
+
 
 .Properties
 |===
@@ -72,7 +114,7 @@ public jsonSerialize():void
 
 
 
-
+Specify data which should be serialized to JSON
 
 [source%nowrap, php]
 ----

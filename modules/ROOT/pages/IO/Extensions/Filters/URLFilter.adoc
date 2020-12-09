@@ -42,7 +42,7 @@ public __construct($itemService):void
 
 
 
-
+URLFilter constructor.
 
 .*Parameters*
 |===
@@ -66,7 +66,7 @@ public getFilters():array
 
 
 
-
+Return the available filter methods
 
 [source%nowrap, php]
 ----
@@ -81,7 +81,7 @@ public buildItemURL($itemData, $withVariationId = true):string
 
 
 
-
+Build the URL for the item by item ID or variation ID
 
 .*Parameters*
 |===

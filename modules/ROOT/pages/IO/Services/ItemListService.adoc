@@ -16,6 +16,44 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |TYPE_CATEGORY
+    |'category'
+    |
+|link:http://php.net/string[string^]
+    |TYPE_LAST_SEEN
+    |'last_seen'
+    |
+|link:http://php.net/string[string^]
+    |TYPE_TAG
+    |'tag_list'
+    |
+|link:http://php.net/string[string^]
+    |TYPE_RANDOM
+    |'random'
+    |
+|link:http://php.net/string[string^]
+    |TYPE_MANUFACTURER
+    |'manufacturer'
+    |
+|link:http://php.net/string[string^]
+    |TYPE_CROSS_SELLER
+    |'cross_selling'
+    |
+|link:http://php.net/string[string^]
+    |TYPE_WISH_LIST
+    |'wish_list'
+    |
+|link:http://php.net/string[string^]
+    |TYPE_SEARCH_SUGGESTIONS
+    |'search_suggestions'
+    |
+|===
+
 
 
 ===== Methods

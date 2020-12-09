@@ -72,7 +72,7 @@ public __construct($basketItemRepository, $checkout, $vatService, $contactReposi
 
 
 
-
+BasketService constructor.
 
 .*Parameters*
 |===
@@ -167,7 +167,7 @@ public getBasket():IO\Services\Basket
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
 
 
-
+Return the basket as an array
 
 [source%nowrap, php]
 ----
@@ -212,7 +212,7 @@ public getBasketItems():array
 
 
 
-
+List the basket items
 
 [source%nowrap, php]
 ----
@@ -227,7 +227,7 @@ public getBasketItemsForOrder():array
 
 
 
-
+List the basket items for order
 
 [source%nowrap, php]
 ----
@@ -351,7 +351,7 @@ public checkBasketItemsByPrice():int
 
 
 
-..)
+Remove basket items not having a valid price for the current basket configuration (referrer, currency,.
 
 [source%nowrap, php]
 ----
@@ -390,7 +390,7 @@ public getBasketItem($basketItemId, $appendVariation = true):array
 
 
 
-
+Get a basket item
 
 .*Parameters*
 |===
@@ -418,7 +418,7 @@ public addVariationData($basketItems, $basketItemData, $sortOrderItems = false):
 
 
 
-
+Load the variation data for the basket item
 
 .*Parameters*
 |===
@@ -450,7 +450,7 @@ public addBasketItem($data):array
 
 
 
-
+Add an item to the basket or update the basket
 
 .*Parameters*
 |===
@@ -474,7 +474,7 @@ public addDataToBasket($data):array
 
 
 
-
+Add the given data to the basket
 
 .*Parameters*
 |===
@@ -498,7 +498,7 @@ public parseBasketItemOrderParams($basketOrderParams):array
 
 
 
-
+Parse basket item order params
 
 .*Parameters*
 |===
@@ -522,7 +522,7 @@ public updateBasketItem($basketItemId, $data):array
 
 
 
-
+Update a basket item
 
 .*Parameters*
 |===
@@ -550,7 +550,7 @@ public deleteBasketItem($basketItemId):void
 
 
 
-
+Delete an item from the basket
 
 .*Parameters*
 |===
@@ -574,7 +574,7 @@ public findExistingOneByData($data):IO\Services\BasketItem
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_basketitem[`BasketItem`]
 
 
-
+Check whether the item is already in the basket
 
 .*Parameters*
 |===
@@ -598,7 +598,7 @@ public getBasketItemData($basketItems = []):array
 
 
 
-
+Get the data of the basket items
 
 .*Parameters*
 |===
@@ -622,7 +622,7 @@ public getOrderItemData($basketItems = []):array
 
 
 
-
+Get the data of the basket items
 
 .*Parameters*
 |===
@@ -646,7 +646,7 @@ public resetBasket():void
 
 
 
-
+Reset basket after execute payment / order created
 
 [source%nowrap, php]
 ----
@@ -661,7 +661,7 @@ public setBillingAddressId($billingAddressId):void
 
 
 
-
+Set the billing address id
 
 .*Parameters*
 |===
@@ -685,7 +685,7 @@ public getBillingAddressId():int
 
 
 
-
+Return the billing address id
 
 [source%nowrap, php]
 ----
@@ -700,7 +700,7 @@ public setDeliveryAddressId($deliveryAddressId):void
 
 
 
-
+Set the delivery address id
 
 .*Parameters*
 |===
@@ -724,7 +724,7 @@ public getDeliveryAddressId():int
 
 
 
-
+Return the delivery address id
 
 [source%nowrap, php]
 ----
@@ -739,7 +739,7 @@ public getMaxVatValue():float
 
 
 
-
+Get the maximum vat value in basket.
 
 [source%nowrap, php]
 ----

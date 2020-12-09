@@ -33,7 +33,7 @@ public showContact():string
 
 
 
-
+Prepare and render the data for the contact page
 
 [source%nowrap, php]
 ----

@@ -45,7 +45,7 @@ public __construct($sessionStorageRepository, $sortingHelper):void
 
 
 
-
+ItemLastSeenService constructor.
 
 .*Parameters*
 |===

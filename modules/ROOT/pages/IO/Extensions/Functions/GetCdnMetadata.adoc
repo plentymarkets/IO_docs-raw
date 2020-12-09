@@ -33,7 +33,7 @@ public getFunctions():array
 
 
 
-
+Return the available filter methods
 
 [source%nowrap, php]
 ----
@@ -48,7 +48,7 @@ public getCdnMetadata($imageUrl, $key = null, $default = null):void
 
 
 
-
+Get the metadata for a file stored on plentymarkets cdn
 
 .*Parameters*
 |===

@@ -16,4 +16,62 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |CREATED_TIMESTAMP
+    |'createdTimestamp'
+    |
+|link:http://php.net/string[string^]
+    |DELIVERY_TIME_IN_DAYS
+    |'deliveryTimeInDays'
+    |
+|link:http://php.net/string[string^]
+    |DISCOUNT
+    |'discount'
+    |
+|link:http://php.net/string[string^]
+    |DISCOUNTABLE
+    |'discountable'
+    |
+|link:http://php.net/string[string^]
+    |ID
+    |'id'
+    |
+|link:http://php.net/string[string^]
+    |ITEM_NUMBER
+    |'itemNumber'
+    |
+|link:http://php.net/string[string^]
+    |ITEM_VARIATION_ID
+    |'itemVariationId'
+    |
+|link:http://php.net/string[string^]
+    |LAST_PRICE_QUERY
+    |'lastPriceQuery'
+    |
+|link:http://php.net/string[string^]
+    |LAST_UPDATE_TIMESTAMP
+    |'lastUpdateTimestamp'
+    |
+|link:http://php.net/string[string^]
+    |MINIMUM_ORDER_VALUE
+    |'minimumOrderValue'
+    |
+|link:http://php.net/string[string^]
+    |PACKAGING_UNIT
+    |'packagingUnit'
+    |
+|link:http://php.net/string[string^]
+    |PURCHASE_PRICE
+    |'purchasePrice'
+    |
+|link:http://php.net/string[string^]
+    |SUPPLIER_ID
+    |'supplierId'
+    |
+|===
+
 

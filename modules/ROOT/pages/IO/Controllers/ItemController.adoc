@@ -45,7 +45,7 @@ public showItem($slug = &quot;&quot;, $itemId, $variationId, $category = null):s
 
 
 
-
+Prepare and render the item data.
 
 .*Parameters*
 |===

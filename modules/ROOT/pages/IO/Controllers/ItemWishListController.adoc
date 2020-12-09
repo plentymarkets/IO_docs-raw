@@ -33,7 +33,7 @@ public showWishList():string
 
 
 
-
+Render the wish list
 
 [source%nowrap, php]
 ----

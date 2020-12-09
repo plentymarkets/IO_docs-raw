@@ -42,7 +42,7 @@ public showConfirmation():string
 
 
 
-
+Prepare and render the data for the order confirmation
 
 [source%nowrap, php]
 ----

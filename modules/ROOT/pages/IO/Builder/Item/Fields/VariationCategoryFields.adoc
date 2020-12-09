@@ -16,4 +16,22 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |CATEGORY_ID
+    |'categoryId'
+    |
+|link:http://php.net/string[string^]
+    |POSITION
+    |'position'
+    |
+|link:http://php.net/string[string^]
+    |NECKERMANN_PRIMARY
+    |'neckermannPrimary'
+    |
+|===
+
 

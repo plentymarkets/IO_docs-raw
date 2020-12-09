@@ -16,6 +16,120 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/int[int^]
+    |GERMANY
+    |1
+    |
+|link:http://php.net/int[int^]
+    |AUSTRIA
+    |2
+    |
+|link:http://php.net/int[int^]
+    |BELGIUM
+    |3
+    |
+|link:http://php.net/int[int^]
+    |SWITZERLAND
+    |4
+    |
+|link:http://php.net/int[int^]
+    |CYPRUS
+    |5
+    |
+|link:http://php.net/int[int^]
+    |CZECH_REPUBLIC
+    |6
+    |
+|link:http://php.net/int[int^]
+    |DENMARK
+    |7
+    |
+|link:http://php.net/int[int^]
+    |SPAIN
+    |8
+    |
+|link:http://php.net/int[int^]
+    |ESTONIA
+    |9
+    |
+|link:http://php.net/int[int^]
+    |FRANCE
+    |10
+    |
+|link:http://php.net/int[int^]
+    |FINLAND
+    |11
+    |
+|link:http://php.net/int[int^]
+    |UNITED_KINGDOM
+    |12
+    |
+|link:http://php.net/int[int^]
+    |GREECE
+    |13
+    |
+|link:http://php.net/int[int^]
+    |HUNGARY
+    |14
+    |
+|link:http://php.net/int[int^]
+    |ITALY
+    |15
+    |
+|link:http://php.net/int[int^]
+    |IRELAND
+    |16
+    |
+|link:http://php.net/int[int^]
+    |LUXEMBOURG
+    |17
+    |
+|link:http://php.net/int[int^]
+    |LATVIA
+    |18
+    |
+|link:http://php.net/int[int^]
+    |MALTA
+    |19
+    |
+|link:http://php.net/int[int^]
+    |NORWAY
+    |20
+    |
+|link:http://php.net/int[int^]
+    |NETHERLANDS
+    |21
+    |
+|link:http://php.net/int[int^]
+    |PORTUGAL
+    |22
+    |
+|link:http://php.net/int[int^]
+    |POLAND
+    |23
+    |
+|link:http://php.net/int[int^]
+    |SWEDEN
+    |24
+    |
+|link:http://php.net/int[int^]
+    |SINGAPORE
+    |25
+    |
+|link:http://php.net/string[string^]
+    |ADDRESS_FORMAT_DE
+    |'DE'
+    |
+|link:http://php.net/string[string^]
+    |ADDRESS_FORMAT_EN
+    |'EN'
+    |
+|===
+
 
 
 ===== Methods

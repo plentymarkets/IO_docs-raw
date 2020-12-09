@@ -16,4 +16,30 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |LOG
+    |'log'
+    |
+|link:http://php.net/string[string^]
+    |INFO
+    |'info'
+    |
+|link:http://php.net/string[string^]
+    |WARN
+    |'warn'
+    |
+|link:http://php.net/string[string^]
+    |ERROR
+    |'error'
+    |
+|link:http://php.net/string[string^]
+    |SUCCESS
+    |'success'
+    |
+|===
+
 

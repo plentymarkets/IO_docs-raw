@@ -42,7 +42,7 @@ public __construct($request, $response, $itemService):void
 
 
 
-
+ItemConditionResource constructor.
 
 .*Parameters*
 |===

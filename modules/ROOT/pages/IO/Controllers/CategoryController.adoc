@@ -45,7 +45,7 @@ public showCategory($lvl1 = null, $lvl2 = null, $lvl3 = null, $lvl4 = null, $lvl
 
 
 
-
+Prepare and render the data for categories
 
 .*Parameters*
 |===

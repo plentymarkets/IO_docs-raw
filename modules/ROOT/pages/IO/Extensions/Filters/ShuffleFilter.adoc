@@ -33,7 +33,7 @@ public __construct():void
 
 
 
-
+ShuffleFilter constructor.
 
 [source%nowrap, php]
 ----

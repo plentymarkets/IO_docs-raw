@@ -33,7 +33,7 @@ public showCancellationRights():string
 
 
 
-
+Prepare and render the data for the cancellation rights page
 
 [source%nowrap, php]
 ----
@@ -63,7 +63,7 @@ public showCancellationForm():string
 
 
 
-
+Prepare and render the data for the cancellation form page
 
 [source%nowrap, php]
 ----
@@ -93,7 +93,7 @@ public showLegalDisclosure():string
 
 
 
-
+Prepare and render the data for the legal disclosure page
 
 [source%nowrap, php]
 ----
@@ -123,7 +123,7 @@ public showPrivacyPolicy():string
 
 
 
-
+Prepare and render the data for the privacy policy page
 
 [source%nowrap, php]
 ----
@@ -153,7 +153,7 @@ public showTermsAndConditions():string
 
 
 
-
+Prepare and render the data for the terms and conditions page
 
 [source%nowrap, php]
 ----
@@ -183,7 +183,7 @@ public showPageNotFound():string
 
 
 
-
+Prepare and render the data for the page not found page
 
 [source%nowrap, php]
 ----

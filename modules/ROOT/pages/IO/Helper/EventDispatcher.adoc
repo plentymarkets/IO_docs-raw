@@ -16,6 +16,20 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |EVENT_PREFIX
+    |'IO.'
+    |
+|link:http://php.net/string[string^]
+    |INTERNAL_PREFIX
+    |'intl.'
+    |
+|===
+
 
 
 ===== Methods

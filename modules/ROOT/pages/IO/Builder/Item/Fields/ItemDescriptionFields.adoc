@@ -16,4 +16,70 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |ITEM_ID
+    |'id'
+    |
+|link:http://php.net/string[string^]
+    |CHARACTER_CACHE
+    |'characterCache'
+    |
+|link:http://php.net/string[string^]
+    |CHARACTER_CACHE_XML
+    |'characterCacheXml'
+    |
+|link:http://php.net/string[string^]
+    |CHARACTER_UPDATE
+    |'characterUpdate'
+    |
+|link:http://php.net/string[string^]
+    |DESCRIPTION
+    |'description'
+    |
+|link:http://php.net/string[string^]
+    |ID
+    |'id'
+    |
+|link:http://php.net/string[string^]
+    |KEYWORDS
+    |'keywords'
+    |
+|link:http://php.net/string[string^]
+    |LANG
+    |'lang'
+    |
+|link:http://php.net/string[string^]
+    |META_DESCRIPTION
+    |'metaDescription'
+    |
+|link:http://php.net/string[string^]
+    |NAME_1
+    |'name1'
+    |
+|link:http://php.net/string[string^]
+    |NAME_2
+    |'name2'
+    |
+|link:http://php.net/string[string^]
+    |NAME_3
+    |'name3'
+    |
+|link:http://php.net/string[string^]
+    |SHORT_DESCRIPTION
+    |'shortDescription'
+    |
+|link:http://php.net/string[string^]
+    |TECHNICAL_DATA
+    |'technicalData'
+    |
+|link:http://php.net/string[string^]
+    |URL_CONTENT
+    |'urlContent'
+    |
+|===
+
 

@@ -16,6 +16,16 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/int[int^]
+    |ORDER_RETRY_INTERVAL
+    |30
+    |
+|===
+
 
 .Properties
 |===

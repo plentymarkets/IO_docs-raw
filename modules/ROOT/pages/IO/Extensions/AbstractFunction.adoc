@@ -42,7 +42,7 @@ public __construct():void
 
 
 
-
+AbstractFunction constructor.
 
 [source%nowrap, php]
 ----
@@ -57,5 +57,5 @@ public getFunctions():array
 
 
 
-
+Return the available functions
 

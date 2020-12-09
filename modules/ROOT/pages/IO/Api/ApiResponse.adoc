@@ -57,7 +57,7 @@ public __construct($dispatcher, $response, $notificationService):void
 
 
 
-
+ApiResponse constructor.
 
 .*Parameters*
 |===

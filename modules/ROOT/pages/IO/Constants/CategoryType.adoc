@@ -16,4 +16,30 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |ALL
+    |'all'
+    |
+|link:http://php.net/string[string^]
+    |ITEM
+    |'item'
+    |
+|link:http://php.net/string[string^]
+    |CONTENT
+    |'content'
+    |
+|link:http://php.net/string[string^]
+    |BLOG
+    |'blog'
+    |
+|link:http://php.net/string[string^]
+    |CONTAINER
+    |'container'
+    |
+|===
+
 

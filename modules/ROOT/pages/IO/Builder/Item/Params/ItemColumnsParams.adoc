@@ -16,4 +16,66 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |TYPE
+    |'type'
+    |
+|link:http://php.net/string[string^]
+    |LANGUAGE
+    |'language'
+    |
+|link:http://php.net/string[string^]
+    |BARCODE_TYPE
+    |'barcodeType'
+    |
+|link:http://php.net/string[string^]
+    |BARCODE_ID
+    |'barcodeId'
+    |
+|link:http://php.net/string[string^]
+    |MARKET_ID
+    |'marketId'
+    |
+|link:http://php.net/string[string^]
+    |QUANTITY
+    |'quantity'
+    |
+|link:http://php.net/string[string^]
+    |PLENTY_ID
+    |'plentyId'
+    |
+|link:http://php.net/string[string^]
+    |WAREHOUSE_ID
+    |'warehouseId'
+    |
+|link:http://php.net/string[string^]
+    |ORDER_BY
+    |'order_by'
+    |
+|link:http://php.net/string[string^]
+    |LIMIT
+    |'limit'
+    |
+|link:http://php.net/string[string^]
+    |OFFSET
+    |'offset'
+    |
+|link:http://php.net/string[string^]
+    |CUSTOMER_CLASS
+    |'customerClassId'
+    |
+|link:http://php.net/string[string^]
+    |REFERRER_ID
+    |'referrerId'
+    |
+|link:http://php.net/string[string^]
+    |AUTOMATIC_CLIENT_VISIBILITY
+    |'withAutomaticClientVisibility'
+    |
+|===
+
 

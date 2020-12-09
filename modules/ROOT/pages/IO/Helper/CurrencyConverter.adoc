@@ -42,7 +42,7 @@ public __construct($currencyExchangeRepo):void
 
 
 
-
+CurrencyConverter constructor.
 
 .*Parameters*
 |===

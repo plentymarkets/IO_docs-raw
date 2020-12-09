@@ -33,7 +33,7 @@ public getFunctions():array
 
 
 
-
+Return the available filter methods
 
 [source%nowrap, php]
 ----
@@ -48,7 +48,7 @@ public getExternalContent($url):array
 
 
 
-
+Return the content retrieved from external url
 
 .*Parameters*
 |===

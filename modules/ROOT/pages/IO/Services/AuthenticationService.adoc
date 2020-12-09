@@ -51,7 +51,7 @@ public __construct($contactAuthRepository, $sessionStorageRepository):void
 
 
 
-
+AuthenticationService constructor.
 
 .*Parameters*
 |===
@@ -79,7 +79,7 @@ public login($email, $password):int
 
 
 
-
+Perform the login with email and password
 
 .*Parameters*
 |===
@@ -107,7 +107,7 @@ public loginWithContactId($contactId, $password):void
 
 
 
-
+Perform the login with customer ID and password
 
 .*Parameters*
 |===
@@ -135,7 +135,7 @@ public logout():void
 
 
 
-
+Log out the customer
 
 [source%nowrap, php]
 ----

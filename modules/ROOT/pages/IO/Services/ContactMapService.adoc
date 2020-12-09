@@ -16,6 +16,16 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |COORD_CACHE_KEY
+    |'ceresMapCoordinates'
+    |
+|===
+
 
 .Properties
 |===

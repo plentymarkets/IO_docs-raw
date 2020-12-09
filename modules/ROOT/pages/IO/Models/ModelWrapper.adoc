@@ -16,6 +16,20 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |CREATED_AT
+    |'created_at'
+    |
+|link:http://php.net/string[string^]
+    |UPDATED_AT
+    |'updated_at'
+    |
+|===
+
 
 
 ===== Methods

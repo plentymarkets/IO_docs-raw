@@ -47,7 +47,7 @@ since 4.3.0
 
 
 
-
+Get the plenty-id
 
 [source%nowrap, php]
 ----
@@ -69,7 +69,7 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
+Get the webstore configuraion
 
 [source%nowrap, php]
 ----
@@ -91,7 +91,7 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
+Get the activate languages of the webstore
 
 [source%nowrap, php]
 ----
@@ -113,7 +113,7 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
+Get the default language of the webstore
 
 [source%nowrap, php]
 ----
@@ -135,7 +135,7 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
+Get the default parcel-service-Id of the webstore
 
 [source%nowrap, php]
 ----
@@ -157,7 +157,7 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
+Get the default parcel-service-preset-Id of the webstore
 
 [source%nowrap, php]
 ----
@@ -179,5 +179,5 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
+Get the default shipping-country-Id of the webstore
 

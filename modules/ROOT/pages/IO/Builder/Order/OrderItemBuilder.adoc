@@ -60,7 +60,7 @@ public __construct($checkoutService, $vatService, $itemNameFilter, $webstoreRepo
 
 
 
-
+OrderItemBuilder constructor.
 
 .*Parameters*
 |===
@@ -108,7 +108,7 @@ public fromBasket($basket, $items):array
 
 
 
-
+Add a basket item to the order
 
 .*Parameters*
 |===
@@ -136,7 +136,7 @@ public basketItemToOrderItem($basketItem):array
 
 
 
-
+Add a basket item to the order
 
 .*Parameters*
 |===
@@ -160,7 +160,7 @@ public getVatField($vat, $vatRate):int
 
 
 
-
+Get the vat field for the given vat rate.
 
 .*Parameters*
 |===

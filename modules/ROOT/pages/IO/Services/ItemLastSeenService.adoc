@@ -16,6 +16,16 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/int[int^]
+    |MAX_COUNT
+    |20
+    |
+|===
+
 
 .Properties
 |===
@@ -45,7 +55,7 @@ public __construct($cachingRepository):void
 
 
 
-
+ItemLastSeenService constructor.
 
 .*Parameters*
 |===

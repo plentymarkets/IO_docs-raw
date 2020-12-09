@@ -16,4 +16,82 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/int[int^]
+    |WAREHOUSE
+    |1
+    |
+|link:http://php.net/int[int^]
+    |SHIPPING_PROFIL
+    |2
+    |
+|link:http://php.net/int[int^]
+    |CATEGORY
+    |3
+    |
+|link:http://php.net/int[int^]
+    |WEIGHT
+    |4
+    |
+|link:http://php.net/int[int^]
+    |WIDTH
+    |5
+    |
+|link:http://php.net/int[int^]
+    |LENGTH
+    |6
+    |
+|link:http://php.net/int[int^]
+    |HEIGHT
+    |7
+    |
+|link:http://php.net/int[int^]
+    |QUANTITY
+    |8
+    |
+|link:http://php.net/int[int^]
+    |MARKET
+    |9
+    |
+|link:http://php.net/int[int^]
+    |VARIANT
+    |10
+    |
+|link:http://php.net/int[int^]
+    |POSITION
+    |11
+    |
+|link:http://php.net/int[int^]
+    |TOKEN
+    |12
+    |
+|link:http://php.net/int[int^]
+    |METHOD_OF_PAYMENT
+    |13
+    |
+|link:http://php.net/int[int^]
+    |IDENTIFIER
+    |14
+    |
+|link:http://php.net/int[int^]
+    |DUNNING
+    |15
+    |
+|link:http://php.net/int[int^]
+    |ORDER
+    |16
+    |
+|link:http://php.net/int[int^]
+    |DOCUMENT
+    |17
+    |
+|link:http://php.net/int[int^]
+    |PROPERTY
+    |18
+    |
+|===
+
 

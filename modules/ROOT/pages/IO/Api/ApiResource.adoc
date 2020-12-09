@@ -48,7 +48,7 @@ public __construct($request, $response):void
 
 
 
-
+ApiResource constructor.
 
 .*Parameters*
 |===

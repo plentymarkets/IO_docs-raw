@@ -45,7 +45,7 @@ public __construct($checkout):void
 
 
 
-
+ShippingService constructor.
 
 .*Parameters*
 |===
@@ -69,7 +69,7 @@ public setShippingProfileId($shippingProfileId):void
 
 
 
-
+Set the ID of the current shipping profile
 
 .*Parameters*
 |===
@@ -93,7 +93,7 @@ public getMaxDeliveryDays():array
 
 
 
-
+Return an array of shipping profile ids as keys and max delivery days as values
 
 [source%nowrap, php]
 ----

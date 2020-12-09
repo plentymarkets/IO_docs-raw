@@ -16,4 +16,46 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |IMAGE_ID
+    |'imageId'
+    |
+|link:http://php.net/string[string^]
+    |TYPE
+    |'type'
+    |
+|link:http://php.net/string[string^]
+    |FILE_TYPE
+    |'fileType'
+    |
+|link:http://php.net/string[string^]
+    |PATH
+    |'path'
+    |
+|link:http://php.net/string[string^]
+    |POSITION
+    |'position'
+    |
+|link:http://php.net/string[string^]
+    |LAST_UPDATE_TIMESTAMP
+    |'lastUpdateTimestamp'
+    |
+|link:http://php.net/string[string^]
+    |CREATE_TIMESTAMP
+    |'createTimestamp'
+    |
+|link:http://php.net/string[string^]
+    |CLEAN_IMAGE_NAME
+    |'cleanImageName'
+    |
+|link:http://php.net/string[string^]
+    |ATTRIBUTE_VALUE_ID
+    |'attributeValueId'
+    |
+|===
+
 

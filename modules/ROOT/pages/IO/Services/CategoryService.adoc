@@ -66,7 +66,7 @@ public __construct($categoryRepository, $webstoreConfigurationRepository, $authG
 
 
 
-
+CategoryService constructor.
 
 .*Parameters*
 |===
@@ -102,7 +102,7 @@ public setCurrentCategoryID($catID):void
 
 
 
-
+Set the current category by ID.
 
 .*Parameters*
 |===
@@ -126,7 +126,7 @@ public setCurrentCategory($cat):void
 
 
 
-
+Set the current category by ID.
 
 .*Parameters*
 |===
@@ -165,7 +165,7 @@ public get($catID, $lang = null):IO\Services\Category
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_category[`Category`]
 
 
-
+Get a category by ID
 
 .*Parameters*
 |===
@@ -243,7 +243,7 @@ public getCurrentCategoryChildren($categoryId = null):void
 
 
 
-
+Gets the children of the given categoryId or the current category if no categoryId is given.
 
 .*Parameters*
 |===
@@ -267,7 +267,7 @@ public findInCategoryTree($categoryTree, $branch = [], $level = 1):void
 
 
 
-
+Is called recursive to iterate threw category tree and return the category with the given id.
 
 .*Parameters*
 |===
@@ -299,7 +299,7 @@ public getURL($category, $lang = null, $):string
 
 
 
-
+Return the URL for a given category ID.
 
 .*Parameters*
 |===
@@ -374,7 +374,7 @@ public isCurrent($category):bool
 
 
 
-
+Check whether a category is referenced by the current route
 
 .*Parameters*
 |===
@@ -398,7 +398,7 @@ public isOpen($category):bool
 
 
 
-
+Check whether any child of a category is referenced by the current route
 
 .*Parameters*
 |===
@@ -422,7 +422,7 @@ public isActive($category = null):bool
 
 
 
-
+Check whether a category or any of its children is referenced by the current route
 
 .*Parameters*
 |===
@@ -478,7 +478,7 @@ public getNavigationTree($type = null, $lang = null, $maxLevel = 2, $customerCla
 
 
 
-
+Return the sitemap tree as an array
 
 .*Parameters*
 |===
@@ -583,7 +583,7 @@ public getNavigationList($type = &quot;all&quot;, $lang = null):array
 
 
 
-
+Return the sitemap list as an array
 
 .*Parameters*
 |===
@@ -626,7 +626,7 @@ public getHierarchy($catID, $bottomUp = false, $filterCategories = false):array
 
 
 
-
+Returns a list of all parent categories including given category
 
 .*Parameters*
 |===
@@ -775,7 +775,7 @@ public loadResultFields($fullTemplateName):array
 
 
 
-
+Load the file content from a result field template.
 
 .*Parameters*
 |===
@@ -799,7 +799,7 @@ public static loadStaticResultFields($fullTemplateName):array
 
 
 
-
+Load the file content from a result field template.
 
 .*Parameters*
 |===

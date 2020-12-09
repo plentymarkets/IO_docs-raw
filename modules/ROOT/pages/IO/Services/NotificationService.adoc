@@ -42,7 +42,7 @@ public __construct($sessionStorageRepository):void
 
 
 
-
+BasketService constructor.
 
 .*Parameters*
 |===
@@ -333,5 +333,5 @@ public clearNotifications():void
 
 
 
-
+Clear existing notifications
 

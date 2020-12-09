@@ -23,6 +23,36 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |TEMPLATE_LIST_ITEM
+    |'IO.ResultFields.ListItem'
+    |
+|link:http://php.net/string[string^]
+    |TEMPLATE_SINGLE_ITEM
+    |'IO.ResultFields.SingleItem'
+    |
+|link:http://php.net/string[string^]
+    |TEMPLATE_BASKET_ITEM
+    |'IO.ResultFields.BasketItem'
+    |
+|link:http://php.net/string[string^]
+    |TEMPLATE_AUTOCOMPLETE_ITEM_LIST
+    |'IO.ResultFields.AutoCompleteListItem'
+    |
+|link:http://php.net/string[string^]
+    |TEMPLATE_CATEGORY_TREE
+    |'IO.ResultFields.CategoryTree'
+    |
+|link:http://php.net/string[string^]
+    |TEMPLATE_VARIATION_ATTRIBUTE_MAP
+    |'IO.ResultFields.VariationAttributeMap'
+    |
+|===
+
 
 .Properties
 |===
@@ -83,7 +113,7 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
-
+Get the path to result fields file from template/ theme
 
 .*Parameters*
 |===
@@ -145,7 +175,7 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
-
+Set the path of a template to read result fields from.
 
 .*Parameters*
 |===
@@ -180,7 +210,7 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
-
+Set multiple templates to read result fields from.
 
 .*Parameters*
 |===
@@ -211,7 +241,7 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
-Required fields are independent of the loaded result fields template and will be loaded for sure.
+Add required fields to variation search requests.
 
 .*Parameters*
 |===
@@ -241,7 +271,7 @@ public loadResultFields($fullTemplateName):array
 
 
 
-
+Load the file content from a result field template.
 
 .*Parameters*
 |===
@@ -265,7 +295,7 @@ public static loadStaticResultFields($fullTemplateName):array
 
 
 
-
+Load the file content from a result field template.
 
 .*Parameters*
 |===

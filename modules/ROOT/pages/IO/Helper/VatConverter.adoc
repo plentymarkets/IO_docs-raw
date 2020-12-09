@@ -42,7 +42,7 @@ public __construct($vatRepo):void
 
 
 
-
+VatConverter constructor.
 
 .*Parameters*
 |===

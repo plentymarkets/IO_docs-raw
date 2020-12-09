@@ -33,7 +33,7 @@ public getBasket():void
 
 
 
-
+Get a faked basket for shopbuilder basket templates
 
 [source%nowrap, php]
 ----

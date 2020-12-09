@@ -16,4 +16,26 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |CODE
+    |'code'
+    |
+|link:http://php.net/string[string^]
+    |CREATED_TIMESTAMP
+    |'createdTimestamp'
+    |
+|link:http://php.net/string[string^]
+    |BARCODE_ID
+    |'barcodeId'
+    |
+|link:http://php.net/string[string^]
+    |BARCODE_TYPE
+    |'barcodeType'
+    |
+|===
+
 

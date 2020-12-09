@@ -16,6 +16,20 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/array[array^]
+    |ORDER_STRUCTURE
+    |['Array','Array','','','',0,'','','','unpaid','Array','Array','Array','1','1','1','Array']
+    |
+|link:http://php.net/array[array^]
+    |FAKER_MAP
+    |['IO\Services\Order\Factories\Faker\OrderFaker','IO\Services\Order\Factories\Faker\TotalsFaker']
+    |
+|===
+
 
 
 ===== Methods

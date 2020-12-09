@@ -16,6 +16,16 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/int[int^]
+    |MAX_RESULT_COUNT
+    |10
+    |
+|===
+
 
 
 ===== Methods

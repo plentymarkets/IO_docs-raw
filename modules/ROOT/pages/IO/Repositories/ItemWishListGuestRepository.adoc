@@ -45,7 +45,7 @@ public __construct($sessionStorageRepository, $app):void
 
 
 
-
+ItemWishListGuestRepository constructor.
 
 .*Parameters*
 |===
@@ -73,7 +73,7 @@ public getItemWishList():array
 
 
 
-
+List all watched variationIds for contact
 
 [source%nowrap, php]
 ----
@@ -118,7 +118,7 @@ public getCountedItemWishList():int
 
 
 
-
+Get count WishList entries
 
 [source%nowrap, php]
 ----

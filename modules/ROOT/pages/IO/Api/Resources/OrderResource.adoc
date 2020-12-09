@@ -33,7 +33,7 @@ public __construct($request, $response):void
 
 
 
-
+OrderResource constructor.
 
 .*Parameters*
 |===
@@ -61,7 +61,7 @@ public index():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+List the orders of the customer
 
 [source%nowrap, php]
 ----
@@ -76,5 +76,5 @@ public store():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Create an order
 

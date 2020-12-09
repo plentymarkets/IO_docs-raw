@@ -45,7 +45,7 @@ public __construct($request, $response):void
 
 
 
-
+ContactMailResource constructor.
 
 .*Parameters*
 |===

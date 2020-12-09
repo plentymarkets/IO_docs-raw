@@ -16,6 +16,20 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/int[int^]
+    |BELOW_MINIMAL_ORDER_VALUE
+    |301
+    |
+|link:http://php.net/int[int^]
+    |NO_VALID_ITEM_IN_BASKET
+    |302
+    |
+|===
+
 
 .Properties
 |===
@@ -51,7 +65,7 @@ public __construct($couponCampaignRepository, $basketRepository, $variationCateg
 
 
 
-
+CouponService constructor.
 
 .*Parameters*
 |===
@@ -166,7 +180,7 @@ since 5.0.9. Validation is handled b the plentymarkets core from now.
 
 
 
-
+Validate the basket for the coupon, and remove the coupon if invalid
 
 .*Parameters*
 |===
@@ -201,7 +215,7 @@ since 5.0.9. Validation is handled b the plentymarkets core from now.
 
 
 
-
+Validate the basket for the coupon, and remove the coupon if invalid
 
 .*Parameters*
 |===
@@ -233,7 +247,7 @@ public isCouponMinimalOrderOnUpdate($basket, $data, $basketItem, $campaign):bool
 
 
 
-
+Checks, if the minimal order value is still reached by the new basket
 
 .*Parameters*
 |===
@@ -269,7 +283,7 @@ public isCouponMinimalOrderOnDelete($basket, $basketItem, $campaign):bool
 
 
 
-
+Checks, if the minimal order value is still reached by the new basket
 
 .*Parameters*
 |===
@@ -301,7 +315,8 @@ public isCouponValidForBasketItems($basket, $basketItem, $campaign):bool
 
 
 
-
+Checks if at least one more item in the basket is valid for the coupon
+Validity requires there to be &gt; 1 valid items
 
 .*Parameters*
 |===
@@ -333,7 +348,7 @@ public getNormalBasketItems($basket, $campaign):array
 
 
 
-
+Get all items in basket, which are NOT associated with the current campaign
 
 .*Parameters*
 |===
@@ -361,7 +376,7 @@ public getCategoryIds($variationId):array
 
 
 
-
+Get the categoryIds of an variationId
 
 .*Parameters*
 |===

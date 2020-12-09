@@ -16,4 +16,18 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |SENDER
+    |'sender'
+    |
+|link:http://php.net/string[string^]
+    |RECEIVER
+    |'receiver'
+    |
+|===
+
 

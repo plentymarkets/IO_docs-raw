@@ -63,7 +63,7 @@ public __construct($accountRepository, $coreContactRepository, $contactRepositor
 
 
 
-
+CustomerService constructor.
 
 .*Parameters*
 |===
@@ -118,7 +118,7 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
+Get the ID of the current contact from the session
 
 [source%nowrap, php]
 ----
@@ -225,7 +225,7 @@ public registerCustomer($contactData, $billingAddressData = [], $deliveryAddress
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_contact[`Contact`]
 
 
-
+Create a contact with addresses if specified
 
 .*Parameters*
 |===
@@ -320,7 +320,7 @@ public createContact($contactData):void
 
 
 
-
+Create a new contact
 
 .*Parameters*
 |===
@@ -351,7 +351,7 @@ since 5.0.0 will be removed in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_contact[`Contact`]
 
 
-
+Find the current contact by ID
 
 [source%nowrap, php]
 ----
@@ -410,7 +410,7 @@ public updateContact($contactData):IO\Services\Contact
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_contact[`Contact`]
 
 
-
+Update a contact
 
 .*Parameters*
 |===
@@ -514,7 +514,7 @@ public getAddresses($typeId = null):void
 
 
 
-
+List the addresses of a contact
 
 .*Parameters*
 |===
@@ -538,7 +538,7 @@ public getAddress($addressId, $typeId):IO\Services\Address
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_address[`Address`]
 
 
-
+Get an address by ID
 
 .*Parameters*
 |===
@@ -566,7 +566,7 @@ public createAddress($addressData, $typeId):IO\Services\Address
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_address[`Address`]
 
 
-
+Create an address with the specified address type
 
 .*Parameters*
 |===
@@ -626,7 +626,7 @@ public updateAddress($addressId, $addressData, $typeId):IO\Services\Address
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_address[`Address`]
 
 
-
+Update an address
 
 .*Parameters*
 |===
@@ -658,7 +658,7 @@ public deleteAddress($addressId, $typeId):void
 
 
 
-
+Delete an address
 
 .*Parameters*
 |===
@@ -686,7 +686,7 @@ public getOrders($page = 1, $items = 10, $filters = []):void
 
 
 
-
+Get a list of orders for the current contact
 
 .*Parameters*
 |===
@@ -769,7 +769,7 @@ public getLatestOrder():IO\Services\LocalizedOrder
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_localizedorder[`LocalizedOrder`]
 
 
-
+Get the last order created by the current contact
 
 [source%nowrap, php]
 ----

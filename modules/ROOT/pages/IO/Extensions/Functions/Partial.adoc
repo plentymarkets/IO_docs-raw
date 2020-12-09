@@ -99,7 +99,7 @@ public getFunctions():array
 
 
 
-
+Return the available methods
 
 [source%nowrap, php]
 ----

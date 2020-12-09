@@ -33,7 +33,7 @@ public showHomepage():string
 
 
 
-
+Prepare and render the data for the homepage
 
 [source%nowrap, php]
 ----

@@ -45,7 +45,7 @@ public __construct($request, $response, $customerService):void
 
 
 
-
+CustomerResource constructor.
 
 .*Parameters*
 |===
@@ -77,7 +77,7 @@ public index():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Get the contact
 
 [source%nowrap, php]
 ----
@@ -92,5 +92,5 @@ public store():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Save the contact
 

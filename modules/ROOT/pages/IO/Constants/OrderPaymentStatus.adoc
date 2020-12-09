@@ -16,4 +16,30 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |UNPAID
+    |'unpaid'
+    |
+|link:http://php.net/string[string^]
+    |PREPAID
+    |'prepaid'
+    |
+|link:http://php.net/string[string^]
+    |PARTLY_PAID
+    |'partlyPaid'
+    |
+|link:http://php.net/string[string^]
+    |FULLY_PAID
+    |'fullyPaid'
+    |
+|link:http://php.net/string[string^]
+    |OVERPAID
+    |'overpaid'
+    |
+|===
+
 

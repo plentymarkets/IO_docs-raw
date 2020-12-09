@@ -42,7 +42,7 @@ public __construct($request, $response, $authService):void
 
 
 
-
+CustomerLogoutResource constructor.
 
 .*Parameters*
 |===

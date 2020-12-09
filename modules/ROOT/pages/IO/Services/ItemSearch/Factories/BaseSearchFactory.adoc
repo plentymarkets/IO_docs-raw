@@ -89,7 +89,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_factories_basesearchfactory[`BaseSearchFactory`]
 
 
-
+Create a new factory instance based on properties of an existing factory.
 
 .*Parameters*
 |===
@@ -124,7 +124,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Add a mutator
 
 .*Parameters*
 |===
@@ -155,7 +155,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_factories_typeinterface[`TypeInterface`]
 
 
-
+Add a filter. Will create a new instance of the filter class if not already created.
 
 .*Parameters*
 |===
@@ -186,7 +186,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Add a filter. Will override existing filter instances.
 
 .*Parameters*
 |===
@@ -217,7 +217,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_factories_basesearchfactory[`BaseSearchFactory`]
 
 
-Can be a string referencing a json file to load or a list of fields.
+Set fields to be contained in search result.
 
 .*Parameters*
 |===
@@ -270,7 +270,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Add an extension.
 
 .*Parameters*
 |===
@@ -305,7 +305,7 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
-
+Get all registered extensions
 
 [source%nowrap, php]
 ----
@@ -327,7 +327,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Add an aggregation
 
 .*Parameters*
 |===
@@ -358,7 +358,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Set pagination parameters.
 
 .*Parameters*
 |===
@@ -393,7 +393,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Add sorting parameters
 
 .*Parameters*
 |===
@@ -428,7 +428,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Add multiple sorting parameters
 
 .*Parameters*
 |===
@@ -490,7 +490,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Group results by field
 
 .*Parameters*
 |===
@@ -521,7 +521,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_factories_documentsearch[`DocumentSearch`]
 
 
-
+Build the elastic search request.
 
 [source%nowrap, php]
 ----
@@ -543,7 +543,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_factories_documentsearch[`DocumentSearch`]
 
 
-
+Build the search instance itself. May be overridden by concrete factories.
 
 .*Parameters*
 |===
@@ -598,7 +598,7 @@ public loadResultFields($fullTemplateName):array
 
 
 
-
+Load the file content from a result field template.
 
 .*Parameters*
 |===
@@ -622,7 +622,7 @@ public static loadStaticResultFields($fullTemplateName):array
 
 
 
-
+Load the file content from a result field template.
 
 .*Parameters*
 |===

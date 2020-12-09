@@ -48,9 +48,7 @@ public getRobotsInformation($returnValueErrorCase = &quot;NOINDEX&quot;, $defaul
 
 
 
-Get meta robot information, with a given value for error case (defined rules in method) $returnValueErrorCase
-and a default value when category data is not set $defaultValueWithoutCategoryData.
-$defaultValueWithoutCategoryData can be changed after rule check
+Get meta robot information
 
 .*Parameters*
 |===

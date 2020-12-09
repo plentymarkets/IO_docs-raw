@@ -54,7 +54,7 @@ public __construct($app, $itemRepository, $columnBuilder, $filterBuilder, $param
 
 
 
-
+GetBasePrice constructor.
 
 .*Parameters*
 |===
@@ -94,7 +94,7 @@ public getFunctions():array
 
 
 
-
+Return the available filter methods
 
 [source%nowrap, php]
 ----
@@ -109,7 +109,7 @@ public getBasePrice($variationId):array
 
 
 
-
+Get the base price for the specified variation
 
 .*Parameters*
 |===
@@ -133,7 +133,7 @@ public getBasePriceList($variationIds):array
 
 
 
-
+Get base prices for a list of variations
 
 .*Parameters*
 |===

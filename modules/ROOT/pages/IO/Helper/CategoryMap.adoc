@@ -42,7 +42,7 @@ public __construct($event):void
 
 
 
-
+CategoryMap constructor.
 
 .*Parameters*
 |===
@@ -66,7 +66,7 @@ public setCategoryMap($categoryMap):void
 
 
 
-
+Set the category map
 
 .*Parameters*
 |===
@@ -90,7 +90,7 @@ public getID($key):int
 
 
 
-
+Get the category ID by key
 
 .*Parameters*
 |===

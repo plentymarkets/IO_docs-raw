@@ -42,7 +42,7 @@ public withParam($paramName, $paramValue):IO\Builder\Item\ItemParamsBuilder
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemparamsbuilder[`ItemParamsBuilder`]
 
 
-
+Set a parameter value
 
 .*Parameters*
 |===
@@ -70,5 +70,5 @@ public build():array
 
 
 
-
+Return the generated parameters to pass to ItemDataLayerRepository
 

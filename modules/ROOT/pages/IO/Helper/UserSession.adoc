@@ -50,7 +50,7 @@ public __construct($accountService):void
 
 
 
-
+UserSession constructor.
 
 .*Parameters*
 |===
@@ -82,7 +82,7 @@ Use AccountService::getAccountContactId instead
 
 
 
-
+Get the current contact ID
 
 [source%nowrap, php]
 ----
@@ -105,5 +105,5 @@ Use AccountService::getIsAccountLoggedIn instead
 
 
 
-
+Check whether contact is logged in
 

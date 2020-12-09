@@ -52,7 +52,7 @@ public __construct($dispatcher):void
 
 
 
-
+FacetExtensionContainer constructor.
 
 .*Parameters*
 |===

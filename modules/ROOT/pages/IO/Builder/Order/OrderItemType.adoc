@@ -16,4 +16,62 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/int[int^]
+    |VARIATION
+    |1
+    |
+|link:http://php.net/int[int^]
+    |ITEM_BUNDLE
+    |2
+    |
+|link:http://php.net/int[int^]
+    |BUNDLE_COMPONENT
+    |3
+    |
+|link:http://php.net/int[int^]
+    |PROMOTIONAL_COUPON
+    |4
+    |
+|link:http://php.net/int[int^]
+    |GIFT_CARD
+    |5
+    |
+|link:http://php.net/int[int^]
+    |SHIPPING_COSTS
+    |6
+    |
+|link:http://php.net/int[int^]
+    |PAYMENT_SURCHARGE
+    |7
+    |
+|link:http://php.net/int[int^]
+    |GIFT_WRAP
+    |8
+    |
+|link:http://php.net/int[int^]
+    |UNASSIGNED_VARIATION
+    |9
+    |
+|link:http://php.net/int[int^]
+    |DEPOSIT
+    |10
+    |
+|link:http://php.net/int[int^]
+    |ORDER
+    |11
+    |
+|link:http://php.net/int[int^]
+    |TYPE_ITEM_SET
+    |13
+    |
+|link:http://php.net/int[int^]
+    |TYPE_SET_COMPONENT
+    |14
+    |
+|===
+
 

@@ -16,4 +16,58 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/int[int^]
+    |MAIN_VALUE
+    |1
+    |
+|link:http://php.net/int[int^]
+    |ORIGINAL_VALUE
+    |2
+    |
+|link:http://php.net/int[int^]
+    |STATUS
+    |3
+    |
+|link:http://php.net/int[int^]
+    |SURCHARGE
+    |4
+    |
+|link:http://php.net/int[int^]
+    |TYPE
+    |5
+    |
+|link:http://php.net/int[int^]
+    |EXTERNAL
+    |6
+    |
+|link:http://php.net/int[int^]
+    |NAME
+    |7
+    |
+|link:http://php.net/int[int^]
+    |CONTENT
+    |8
+    |
+|link:http://php.net/int[int^]
+    |ACCOUNT
+    |9
+    |
+|link:http://php.net/int[int^]
+    |FLAG
+    |10
+    |
+|link:http://php.net/int[int^]
+    |LANGUAGE
+    |11
+    |
+|link:http://php.net/int[int^]
+    |CONSUMER
+    |12
+    |
+|===
+
 

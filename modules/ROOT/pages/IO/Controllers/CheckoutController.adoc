@@ -42,7 +42,7 @@ public showCheckout($category = null):string
 
 
 
-
+Prepare and render the data for the checkout
 
 .*Parameters*
 |===

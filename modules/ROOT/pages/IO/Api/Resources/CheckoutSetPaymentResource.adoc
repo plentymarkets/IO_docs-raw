@@ -42,7 +42,7 @@ public __construct($request, $response, $checkoutService):void
 
 
 
-
+CheckoutPaymentResource constructor.
 
 .*Parameters*
 |===
@@ -74,5 +74,5 @@ public store():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Prepare the payment
 

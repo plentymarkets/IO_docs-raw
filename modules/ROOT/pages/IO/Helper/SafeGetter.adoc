@@ -33,7 +33,7 @@ public static get($object, $path):void
 
 
 
-Will return null if any nested property is empty.
+Get a nested property of an object/array.
 
 .*Parameters*
 |===

@@ -16,6 +16,16 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |WEB_AJAX_BASE
+    |'/WebAjaxBase.php'
+    |
+|===
+
 
 .Properties
 |===

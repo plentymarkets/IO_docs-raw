@@ -42,7 +42,7 @@ public showRegister($contactRepository, $urlService):string
 
 
 
-
+Prepare and render the data for the registration
 
 .*Parameters*
 |===

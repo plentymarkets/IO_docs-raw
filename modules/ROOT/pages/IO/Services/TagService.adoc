@@ -42,7 +42,7 @@ public __construct($tagRepository):void
 
 
 
-
+TagService constructor.
 
 .*Parameters*
 |===
@@ -66,7 +66,7 @@ public getTagById($tagId):IO\Services\Tag
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_tag[`Tag`]
 
 
-
+Get a tag by its id
 
 .*Parameters*
 |===
@@ -90,7 +90,7 @@ public getTagName($tagId, $lang = null):string
 
 
 
-
+Get the name of a tag for a specific language
 
 .*Parameters*
 |===

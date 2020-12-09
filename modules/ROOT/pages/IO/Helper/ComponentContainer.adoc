@@ -45,7 +45,7 @@ public __construct($originComponentTemplate):void
 
 
 
-
+ComponentContainer constructor.
 
 .*Parameters*
 |===

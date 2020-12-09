@@ -48,7 +48,7 @@ public __construct($config):void
 
 
 
-
+NumberFormatFilter constructor.
 
 .*Parameters*
 |===
@@ -72,7 +72,7 @@ public getFilters():array
 
 
 
-
+Return the available filter methods
 
 [source%nowrap, php]
 ----
@@ -87,7 +87,7 @@ public formatDateTime($value):string
 
 
 
-
+Format incorrect JSON ENCODED dateTimeFormat
 
 .*Parameters*
 |===
@@ -111,7 +111,7 @@ public trimNewlines($value):string
 
 
 
-
+Trim newlines from string
 
 .*Parameters*
 |===
@@ -135,7 +135,7 @@ public formatDecimal($value, $decimal_places = -1):string
 
 
 
-
+Format the given value to decimal
 
 .*Parameters*
 |===
@@ -163,7 +163,7 @@ public formatMonetary($value, $currencyISO):string
 
 
 
-
+Format the given value to currency
 
 .*Parameters*
 |===

@@ -16,4 +16,22 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |HOME
+    |'home'
+    |
+|link:http://php.net/string[string^]
+    |PAGE_NOT_FOUND
+    |'page_not_found'
+    |
+|link:http://php.net/string[string^]
+    |ITEM_NOT_FOUND
+    |'item_not_found'
+    |
+|===
+
 

@@ -33,7 +33,7 @@ public __construct($request, $response):void
 
 
 
-
+TemplateResource constructor.
 
 .*Parameters*
 |===
@@ -61,5 +61,5 @@ public index():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Return the given rendered template
 

@@ -33,7 +33,7 @@ public __construct():void
 
 
 
-
+ItemImagesFilter constructor.
 
 [source%nowrap, php]
 ----

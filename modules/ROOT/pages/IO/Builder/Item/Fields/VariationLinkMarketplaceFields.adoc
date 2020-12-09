@@ -16,4 +16,18 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |CREATED
+    |'created'
+    |
+|link:http://php.net/string[string^]
+    |MARKETPLACE_ID
+    |'marketplaceId'
+    |
+|===
+
 

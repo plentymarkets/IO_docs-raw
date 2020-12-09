@@ -23,6 +23,24 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |TYPE_DEFAULT
+    |'default'
+    |
+|link:http://php.net/string[string^]
+    |TYPE_RRP
+    |'rrp'
+    |
+|link:http://php.net/string[string^]
+    |TYPE_SPECIAL_OFFER
+    |'specialOffer'
+    |
+|===
+
 
 .Properties
 |===

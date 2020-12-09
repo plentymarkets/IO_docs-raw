@@ -16,4 +16,158 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |CHINESE
+    |'cn'
+    |
+|link:http://php.net/string[string^]
+    |CN
+    |'cn'
+    |
+|link:http://php.net/string[string^]
+    |ZH
+    |'cn'
+    |
+|link:http://php.net/string[string^]
+    |CZECH
+    |'cz'
+    |
+|link:http://php.net/string[string^]
+    |CS
+    |'cz'
+    |
+|link:http://php.net/string[string^]
+    |CZ
+    |'cz'
+    |
+|link:http://php.net/string[string^]
+    |DANISH
+    |'da'
+    |
+|link:http://php.net/string[string^]
+    |DA
+    |'da'
+    |
+|link:http://php.net/string[string^]
+    |GERMAN
+    |'de'
+    |
+|link:http://php.net/string[string^]
+    |DE
+    |'de'
+    |
+|link:http://php.net/string[string^]
+    |ENGLISH
+    |'en'
+    |
+|link:http://php.net/string[string^]
+    |EN
+    |'en'
+    |
+|link:http://php.net/string[string^]
+    |SPANISH
+    |'es'
+    |
+|link:http://php.net/string[string^]
+    |ES
+    |'es'
+    |
+|link:http://php.net/string[string^]
+    |FRENCH
+    |'fr'
+    |
+|link:http://php.net/string[string^]
+    |FR
+    |'fr'
+    |
+|link:http://php.net/string[string^]
+    |ITALIAN
+    |'it'
+    |
+|link:http://php.net/string[string^]
+    |IT
+    |'it'
+    |
+|link:http://php.net/string[string^]
+    |DUTCH
+    |'nl'
+    |
+|link:http://php.net/string[string^]
+    |NL
+    |'nl'
+    |
+|link:http://php.net/string[string^]
+    |NORWEGIAN
+    |'nn'
+    |
+|link:http://php.net/string[string^]
+    |NN
+    |'nn'
+    |
+|link:http://php.net/string[string^]
+    |NO
+    |'nn'
+    |
+|link:http://php.net/string[string^]
+    |POLISH
+    |'pl'
+    |
+|link:http://php.net/string[string^]
+    |PL
+    |'pl'
+    |
+|link:http://php.net/string[string^]
+    |RUSSIAN
+    |'ru'
+    |
+|link:http://php.net/string[string^]
+    |RU
+    |'ru'
+    |
+|link:http://php.net/string[string^]
+    |SWEDISH
+    |'se'
+    |
+|link:http://php.net/string[string^]
+    |SE
+    |'se'
+    |
+|link:http://php.net/string[string^]
+    |SV
+    |'se'
+    |
+|link:http://php.net/string[string^]
+    |SLOVAK
+    |'sk'
+    |
+|link:http://php.net/string[string^]
+    |SK
+    |'sk'
+    |
+|link:http://php.net/string[string^]
+    |TURKISH
+    |'tr'
+    |
+|link:http://php.net/string[string^]
+    |TR
+    |'tr'
+    |
+|link:http://php.net/string[string^]
+    |VIETNAMESE
+    |'vn'
+    |
+|link:http://php.net/string[string^]
+    |VN
+    |'vn'
+    |
+|link:http://php.net/string[string^]
+    |VI
+    |'vn'
+    |
+|===
+
 

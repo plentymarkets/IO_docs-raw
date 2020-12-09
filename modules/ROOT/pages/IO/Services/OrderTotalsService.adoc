@@ -33,7 +33,7 @@ public getAllTotals($order):array
 
 
 
-
+Get all order totals which are relevant for the OrderDetails-modal
 
 .*Parameters*
 |===

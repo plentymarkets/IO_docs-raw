@@ -16,4 +16,26 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |ITEM_ID
+    |'itemId'
+    |
+|link:http://php.net/string[string^]
+    |CROSS_ITEM_ID
+    |'crossItemId'
+    |
+|link:http://php.net/string[string^]
+    |RELATIONSHIP
+    |'relationship'
+    |
+|link:http://php.net/string[string^]
+    |DYNAMIC
+    |'dynamic'
+    |
+|===
+
 

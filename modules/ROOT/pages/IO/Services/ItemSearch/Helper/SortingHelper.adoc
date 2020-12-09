@@ -47,7 +47,7 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
-
+Get sorting values from plugin configuration
 
 .*Parameters*
 |===
@@ -82,7 +82,7 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
-
+Get sorting values for categories from config
 
 .*Parameters*
 |===
@@ -113,7 +113,7 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
-
+Get sorting values for searches from config
 
 .*Parameters*
 |===

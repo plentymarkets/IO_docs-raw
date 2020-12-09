@@ -45,7 +45,7 @@ public __construct($countryRepository):void
 
 
 
-
+CountryService constructor.
 
 .*Parameters*
 |===
@@ -69,7 +69,7 @@ public getActiveCountriesList($lang = null):array
 
 
 
-
+List all active countries
 
 .*Parameters*
 |===
@@ -93,7 +93,7 @@ public getActiveCountryNameMap($language):array
 
 
 
-
+Get a list of names for the active countries
 
 .*Parameters*
 |===
@@ -117,7 +117,7 @@ public getShippingCountryId():int
 
 
 
-
+Get the ID of the current shipping country
 
 [source%nowrap, php]
 ----
@@ -132,7 +132,7 @@ public setShippingCountryId($shippingCountryId):void
 
 
 
-
+Set the ID of the current shipping country
 
 .*Parameters*
 |===
@@ -156,7 +156,7 @@ public getCountryById($countryId):IO\Services\Country
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_country[`Country`]
 
 
-
+Get a specific country by ID
 
 .*Parameters*
 |===
@@ -180,7 +180,7 @@ public getCountryName($countryId, $lang = null):string
 
 
 
-
+Get the name of specific country
 
 .*Parameters*
 |===

@@ -42,7 +42,7 @@ public __construct($request, $response, $basketService):void
 
 
 
-
+BasketItemResource constructor.
 
 .*Parameters*
 |===
@@ -74,7 +74,7 @@ public index():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+List basket items
 
 [source%nowrap, php]
 ----
@@ -89,7 +89,7 @@ public store():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Add an item to the basket
 
 [source%nowrap, php]
 ----
@@ -104,7 +104,7 @@ public show($selector):IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Get a basket item
 
 .*Parameters*
 |===
@@ -128,7 +128,7 @@ public update($selector):IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Update the basket item
 
 .*Parameters*
 |===
@@ -152,7 +152,7 @@ public destroy($selector):IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Delete an item from the basket
 
 .*Parameters*
 |===

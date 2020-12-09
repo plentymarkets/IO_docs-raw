@@ -33,7 +33,7 @@ public getFilters():array
 
 
 
-
+Return the available filter methods
 
 [source%nowrap, php]
 ----
@@ -63,7 +63,7 @@ public loadResultFields($fullTemplateName):array
 
 
 
-
+Load the file content from a result field template.
 
 .*Parameters*
 |===
@@ -87,7 +87,7 @@ public static loadStaticResultFields($fullTemplateName):array
 
 
 
-
+Load the file content from a result field template.
 
 .*Parameters*
 |===

@@ -23,4 +23,82 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |DELIVERY_ADDRESS_ID
+    |'deliveryAddressId'
+    |
+|link:http://php.net/string[string^]
+    |BILLING_ADDRESS_ID
+    |'billingAddressId'
+    |
+|link:http://php.net/string[string^]
+    |CURRENCY
+    |'currency'
+    |
+|link:http://php.net/string[string^]
+    |NOTIFICATIONS
+    |'notifications'
+    |
+|link:http://php.net/string[string^]
+    |LATEST_ORDER_ID
+    |'latestOrderId'
+    |
+|link:http://php.net/string[string^]
+    |LAST_ACCESSED_ORDER
+    |'lastAccessedOrder'
+    |
+|link:http://php.net/string[string^]
+    |GUEST_EMAIL
+    |'guestEmail'
+    |
+|link:http://php.net/string[string^]
+    |LAST_SEEN_ITEMS
+    |'lastSeenItems'
+    |
+|link:http://php.net/string[string^]
+    |CROSS_SELLING_TYPE
+    |'crossSellingType'
+    |
+|link:http://php.net/string[string^]
+    |CROSS_SELLING_SORTING
+    |'crossSellingSorting'
+    |
+|link:http://php.net/string[string^]
+    |GUEST_WISHLIST
+    |'guestWishList'
+    |
+|link:http://php.net/string[string^]
+    |GUEST_WISHLIST_MIGRATION
+    |'guestWishListMigration'
+    |
+|link:http://php.net/string[string^]
+    |ORDER_CONTACT_WISH
+    |'orderContactWish'
+    |
+|link:http://php.net/string[string^]
+    |ORDER_CUSTOMER_SIGN
+    |'orderCustomerSign'
+    |
+|link:http://php.net/string[string^]
+    |SHIPPING_PRIVACY_HINT_ACCEPTED
+    |'shippingPrivacyHintAccepted'
+    |
+|link:http://php.net/string[string^]
+    |NEWSLETTER_SUBSCRIPTIONS
+    |'newsletterSubscriptions'
+    |
+|link:http://php.net/string[string^]
+    |READONLY_CHECKOUT
+    |'readOnlyCheckout'
+    |
+|link:http://php.net/string[string^]
+    |LAST_PLACE_ORDER_TRY
+    |'lastPlaceOrderTry'
+    |
+|===
+
 

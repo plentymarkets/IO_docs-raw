@@ -16,4 +16,38 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/int[int^]
+    |BILLING
+    |1
+    |
+|link:http://php.net/int[int^]
+    |DELIVERY
+    |2
+    |
+|link:http://php.net/int[int^]
+    |SENDER
+    |3
+    |
+|link:http://php.net/int[int^]
+    |RETURN
+    |4
+    |
+|link:http://php.net/int[int^]
+    |CLIENT
+    |5
+    |
+|link:http://php.net/int[int^]
+    |CONTRACTOR
+    |6
+    |
+|link:http://php.net/int[int^]
+    |WAREHOUSE
+    |7
+    |
+|===
+
 

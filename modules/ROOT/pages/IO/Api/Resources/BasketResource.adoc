@@ -45,7 +45,7 @@ public __construct($request, $response, $basketService, $vatService):void
 
 
 
-
+BasketResource constructor.
 
 .*Parameters*
 |===
@@ -81,5 +81,5 @@ public index():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Get the basket
 

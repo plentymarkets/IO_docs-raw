@@ -42,7 +42,7 @@ public getFunctions():array
 
 
 
-
+Return the available filter methods
 
 [source%nowrap, php]
 ----
@@ -57,7 +57,7 @@ public component($path):void
 
 
 
-
+Push the component to the component stack
 
 .*Parameters*
 |===
@@ -81,7 +81,7 @@ public hasComponentTemplate():bool
 
 
 
-
+Check whether a component template exists
 
 [source%nowrap, php]
 ----
@@ -96,5 +96,5 @@ public getComponentTemplate():string
 
 
 
-
+Get the component from the component stack
 

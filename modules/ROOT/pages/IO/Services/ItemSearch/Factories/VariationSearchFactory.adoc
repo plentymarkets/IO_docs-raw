@@ -102,7 +102,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter active variations
 
 [source%nowrap, php]
 ----
@@ -124,7 +124,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter inactive variations
 
 [source%nowrap, php]
 ----
@@ -146,7 +146,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variation by a single item id
 
 .*Parameters*
 |===
@@ -177,7 +177,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations by multiple item ids
 
 .*Parameters*
 |===
@@ -208,7 +208,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variation by a single variation id.
 
 .*Parameters*
 |===
@@ -239,7 +239,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations by multiple variation ids.
 
 .*Parameters*
 |===
@@ -270,7 +270,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations by multiple availability ids.
 
 .*Parameters*
 |===
@@ -301,7 +301,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations by multiple availability ids.
 
 .*Parameters*
 |===
@@ -332,7 +332,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter manufacturers by id.
 
 .*Parameters*
 |===
@@ -363,7 +363,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations by multiple property ids.
 
 .*Parameters*
 |===
@@ -394,7 +394,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter only main variations
 
 [source%nowrap, php]
 ----
@@ -416,7 +416,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter only child variations
 
 [source%nowrap, php]
 ----
@@ -438,7 +438,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter by visibility in category list.
 
 .*Parameters*
 |===
@@ -469,7 +469,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations by isSalable flag
 
 [source%nowrap, php]
 ----
@@ -491,7 +491,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations by visibility for client
 
 .*Parameters*
 |===
@@ -522,7 +522,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations having texts in a given language.
 
 .*Parameters*
 |===
@@ -557,7 +557,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations contained in a category.
 
 .*Parameters*
 |===
@@ -588,7 +588,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations having at least on price.
 
 .*Parameters*
 |===
@@ -619,7 +619,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations having at least one price accessible by current customer.
 
 [source%nowrap, php]
 ----
@@ -738,7 +738,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Group results depending on a config value.
 
 .*Parameters*
 |===
@@ -769,7 +769,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations having a cross selling relation to a given item.
 
 .*Parameters*
 |===
@@ -804,7 +804,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations by facets.
 
 .*Parameters*
 |===
@@ -843,7 +843,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations by given search string.
 
 .*Parameters*
 |===
@@ -886,7 +886,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Filter variations by searching names
 
 .*Parameters*
 |===
@@ -921,7 +921,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Only request given language.
 
 .*Parameters*
 |===
@@ -952,7 +952,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Include images in result
 
 .*Parameters*
 |===
@@ -983,7 +983,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Includes VariatonAttributeMap for variation select
 
 [source%nowrap, php]
 ----
@@ -1071,7 +1071,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-If not URL is stored in item result, a new URL will be generated and written to item data.
+Append URLs to result.
 
 [source%nowrap, php]
 ----
@@ -1093,7 +1093,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Append prices to result.
 
 .*Parameters*
 |===
@@ -1124,7 +1124,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Set result as current category
 
 [source%nowrap, php]
 ----
@@ -1146,7 +1146,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Append default item image if images are requested by result fields and item does not have any image
 
 [source%nowrap, php]
 ----

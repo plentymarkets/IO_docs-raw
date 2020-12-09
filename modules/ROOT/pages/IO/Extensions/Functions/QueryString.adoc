@@ -48,7 +48,7 @@ public getFunctions():array
 
 
 
-
+Return all available twig functions to be registered globally.
 
 [source%nowrap, php]
 ----
@@ -63,7 +63,7 @@ public getQueryString($params = []):string
 
 
 
-Passed parameters will be replaced or added to the returned query string.
+Get the current query string from the URL.
 
 .*Parameters*
 |===

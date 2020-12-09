@@ -42,7 +42,7 @@ public assert():void
 
 
 
-
+Returned value will be compared with asserted value to decide if it should redirect.
 
 [source%nowrap, php]
 ----
@@ -57,7 +57,7 @@ public assertOrRedirect($expected, $redirectUri):void
 
 
 
-
+Redirect to given URI if expected value equals return value of AbstractGuard::assert()
 
 .*Parameters*
 |===
@@ -85,7 +85,7 @@ public static redirect($uri, $params = []):void
 
 
 
-
+Redirect to a given URI. Appends params as query string.
 
 .*Parameters*
 |===
@@ -113,7 +113,7 @@ public static getUrl($uri = null):string
 
 
 
-Will return current URL if $uri is null
+Transform a given URI to an URL by prepending used protocol and server name.
 
 .*Parameters*
 |===

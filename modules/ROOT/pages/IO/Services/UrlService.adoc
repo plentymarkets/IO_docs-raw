@@ -45,7 +45,7 @@ public __construct($webstoreConfigurationRepository):void
 
 
 
-
+UrlService constructor.
 
 .*Parameters*
 |===
@@ -69,7 +69,7 @@ public getCategoryURL($categoryId, $lang = null, $webstoreId = null):IO\Services
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_urlquery[`UrlQuery`]
 
 
-
+Get canonical url for a category
 
 .*Parameters*
 |===
@@ -101,7 +101,7 @@ public getVariationURL($itemId, $variationId, $lang = null):IO\Services\UrlQuery
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_urlquery[`UrlQuery`]
 
 
-
+Get canonical url for a variation
 
 .*Parameters*
 |===
@@ -133,7 +133,7 @@ public getCanonicalURL($lang = null, $ignoreCanonical = false):string
 
 
 
-
+Get canonical url for current page
 
 .*Parameters*
 |===
@@ -161,7 +161,7 @@ public getCanonicalQueryString():string
 
 
 
-
+Get query string from uri, return an empty string if its an canonical link from category details
 
 [source%nowrap, php]
 ----
@@ -176,7 +176,7 @@ public isCanonical($lang = null):bool
 
 
 
-
+Check if the current URL is canonical
 
 .*Parameters*
 |===
@@ -200,7 +200,7 @@ public getLanguageURLs():array
 
 
 
-
+Get equivalent canonical urls for each active language
 
 [source%nowrap, php]
 ----
@@ -223,7 +223,7 @@ Use IO\Extensions\Constants\ShopUrls::$home instead.
 
 
 
-
+Get language specific homepage url
 
 [source%nowrap, php]
 ----
@@ -238,7 +238,7 @@ public redirectTo($redirectURL):void
 
 
 
-
+Redirects to the given URL
 
 .*Parameters*
 |===
@@ -262,7 +262,7 @@ public isRouteEnabled($route):bool
 
 
 
-
+Check if route is enabled or category is linked to route.
 
 .*Parameters*
 |===

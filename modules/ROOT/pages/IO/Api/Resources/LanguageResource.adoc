@@ -42,7 +42,7 @@ public __construct($request, $response):void
 
 
 
-
+LanguageResource constructor.
 
 .*Parameters*
 |===
@@ -70,7 +70,7 @@ public update($newLanguage):IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Updates the shop language. (put)
 
 .*Parameters*
 |===

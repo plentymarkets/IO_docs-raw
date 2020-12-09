@@ -42,7 +42,7 @@ public __construct():void
 
 
 
-
+AbstractFilter constructor.
 
 [source%nowrap, php]
 ----
@@ -57,5 +57,5 @@ public getFilters():array
 
 
 
-
+Return the available filter methods
 

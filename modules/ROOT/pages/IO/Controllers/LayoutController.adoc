@@ -66,7 +66,7 @@ public __construct($app, $twig, $event, $categoryRepo, $categoryMap, $categorySe
 
 
 
-
+LayoutController constructor.
 
 .*Parameters*
 |===
@@ -110,7 +110,7 @@ public abort($code, $message):string
 
 
 
-
+Abort handling current route and pass request to the plentymarkets system
 
 .*Parameters*
 |===
@@ -166,8 +166,7 @@ public renderTemplate($templateEvent, $controllerData = [], $cacheContent = true
 
 
 
-Add global template data to custom data from specific controller.
-Will pass request to the plentymarkets system if no template is provided by the layout plugin.
+Emit an event to layout plugin to receive twig-template to use for current request.
 
 .*Parameters*
 |===
@@ -227,7 +226,7 @@ public notFound():IO\Controllers\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_response[`Response`]
 
 
-
+Return a NOT_FOUND response
 
 [source%nowrap, php]
 ----

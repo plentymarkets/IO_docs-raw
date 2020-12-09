@@ -112,7 +112,7 @@ public checkStockLimit($data, $item):void
 
 
 
-
+Check if item is limited to net stock and modify quantitySold to reflect the limited stock
 
 .*Parameters*
 |===

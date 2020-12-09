@@ -33,7 +33,7 @@ public __construct($request, $response):void
 
 
 
-
+ItemLastSeenResource constructor.
 
 .*Parameters*
 |===
@@ -61,7 +61,7 @@ public index():IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Return last seen items
 
 [source%nowrap, php]
 ----

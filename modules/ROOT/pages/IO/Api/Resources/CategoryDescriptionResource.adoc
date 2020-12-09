@@ -33,7 +33,7 @@ public __construct($request, $response):void
 
 
 
-
+CategoryDescriptionResource constructor.
 
 .*Parameters*
 |===
@@ -61,7 +61,7 @@ public show($categoryId):IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Get Category Items
 
 .*Parameters*
 |===

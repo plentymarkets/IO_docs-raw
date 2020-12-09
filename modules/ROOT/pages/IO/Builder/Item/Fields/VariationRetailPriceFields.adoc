@@ -16,4 +16,90 @@
 
 
 
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/string[string^]
+    |PRICE_ID
+    |'priceId'
+    |
+|link:http://php.net/string[string^]
+    |PRICE
+    |'price'
+    |
+|link:http://php.net/string[string^]
+    |RETAIL_PRICE
+    |'retailPrice'
+    |
+|link:http://php.net/string[string^]
+    |RETAIL_PRICE_NET
+    |'retailPriceNet'
+    |
+|link:http://php.net/string[string^]
+    |BASE_PRICE
+    |'basePrice'
+    |
+|link:http://php.net/string[string^]
+    |BASE_PRICE_NET
+    |'basePriceNet'
+    |
+|link:http://php.net/string[string^]
+    |UNIT_PRICE
+    |'unitPrice'
+    |
+|link:http://php.net/string[string^]
+    |UNIT_PRICE_NET
+    |'unitPriceNet'
+    |
+|link:http://php.net/string[string^]
+    |ORDER_PARAMS_MARKUP
+    |'orderParamsMarkup'
+    |
+|link:http://php.net/string[string^]
+    |ORDER_PARAMS_MARKUP_NET
+    |'orderParamsMarkupNet'
+    |
+|link:http://php.net/string[string^]
+    |CLASS_REBATE_PERCENT
+    |'classRebatePercent'
+    |
+|link:http://php.net/string[string^]
+    |CLASS_REBATE
+    |'classRebate'
+    |
+|link:http://php.net/string[string^]
+    |CLASS_REBATE_NET
+    |'classRebateNet'
+    |
+|link:http://php.net/string[string^]
+    |CATEGORY_REBATE_PERCENT
+    |'categoryRebatePercent'
+    |
+|link:http://php.net/string[string^]
+    |CATEGORY_REBATE
+    |'categoryRebate'
+    |
+|link:http://php.net/string[string^]
+    |CATEGORY_REBATE_NET
+    |'categoryRebateNet'
+    |
+|link:http://php.net/string[string^]
+    |VAT_ID
+    |'vatId'
+    |
+|link:http://php.net/string[string^]
+    |VAT_VALUE
+    |'vatValue'
+    |
+|link:http://php.net/string[string^]
+    |CURRENCY
+    |'currency'
+    |
+|link:http://php.net/string[string^]
+    |EXCHANGE_RATION
+    |'exchangeRatio'
+    |
+|===
+
 

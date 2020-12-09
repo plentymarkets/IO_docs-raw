@@ -56,7 +56,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_factories_facetsearchfactory[`FacetSearchFactory`]
 
 
-
+Create a factory instance depending on a given set of facet values.
 
 .*Parameters*
 |===
@@ -87,7 +87,7 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_factories_documentsearch[`DocumentSearch`]
 
 
-
+Build facet search classes
 
 .*Parameters*
 |===
@@ -118,5 +118,5 @@ since 5.0.0 will be deleted in 6.0.0
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
 
 
-
+Register extension to filter facets by minimum hit count.
 

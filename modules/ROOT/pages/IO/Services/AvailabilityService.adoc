@@ -42,7 +42,7 @@ public __construct($availabilityRepository):void
 
 
 
-
+AvailabilityService constructor.
 
 .*Parameters*
 |===
@@ -66,7 +66,7 @@ public getAvailabilityById($availabilityId):IO\Services\Availability
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_availability[`Availability`]
 
 
-
+Get the item availability by ID
 
 .*Parameters*
 |===

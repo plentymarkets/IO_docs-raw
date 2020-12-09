@@ -45,7 +45,7 @@ public __construct($request, $response, $basketService, $countryService):void
 
 
 
-
+DeliveryCountryResource constructor.
 
 .*Parameters*
 |===
@@ -81,7 +81,7 @@ public update($shippingCountryId):IO\Api\Resources\Response
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
 
 
-
+Set the shipping country
 
 .*Parameters*
 |===

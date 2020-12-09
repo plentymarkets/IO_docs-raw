@@ -45,7 +45,7 @@ public __construct($dataBase, $templateConfigService):void
 
 
 
-
+UserDataHashService constructor.
 
 .*Parameters*
 |===
@@ -73,7 +73,7 @@ public find($hash, $contactId = null, $plentyId = null):IO\Services\UserDataHash
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_userdatahash[`UserDataHash`]
 
 
-
+Get entry by hash if exists
 
 .*Parameters*
 |===
@@ -105,7 +105,7 @@ public findHash($type, $contactId = null, $plentyId = null):string
 
 
 
-
+Get the hash of a specific type if exists and is not expired.
 
 .*Parameters*
 |===
@@ -137,7 +137,7 @@ public getData($hash, $contactId = null, $plentyId = null):void
 
 
 
-
+Get the decoded data assigned to a hash
 
 .*Parameters*
 |===
@@ -169,7 +169,7 @@ public create($data, $type, $ttl = null, $contactId = null, $plentyId = null):IO
 ====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_userdatahash[`UserDataHash`]
 
 
-
+Create a new entry and assign data to the hash for later usage.
 
 .*Parameters*
 |===
@@ -209,7 +209,7 @@ public delete($hash, $contactId = null, $plentyId = null):bool
 
 
 
-
+Remove a hash entry if exists.
 
 .*Parameters*
 |===
@@ -241,7 +241,7 @@ public deleteAll($type = null, $contactId = null, $plentyId = null):bool
 
 
 
-
+Delete all entries
 
 .*Parameters*
 |===
