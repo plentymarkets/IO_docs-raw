@@ -7,6 +7,13 @@
 
 Factory to build an elastic search multisearch request by collecting multiple search factory instances.
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 ===== Namespace
@@ -42,6 +49,13 @@ public getSearches():array
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -57,6 +71,13 @@ public getExtensions():array
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -68,14 +89,21 @@ Get all registered extensions
 [source%nowrap, php]
 ----
 
-public addSearch($resultName, $searchBuilder):IO\Services\ItemSearch\Factories\MultiSearchFactory
+public addSearch($resultName, $searchBuilder):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
-====== *Return type:*xref:IO/Services/ItemSearch/Factories/MultiSearchFactory.adoc#[`MultiSearchFactory`]
+====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Add a search factory instance to be included in current mutlisearch request.
@@ -100,6 +128,13 @@ public getResults():array
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 

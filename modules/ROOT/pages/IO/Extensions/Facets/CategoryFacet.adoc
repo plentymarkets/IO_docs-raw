@@ -15,7 +15,7 @@
 
 
 ===== Implements
-xref:IO/Services/ItemSearch/Contracts/FacetExtension.adoc#[`FacetExtension`]
+xref:stable7@interface::Webshop.adoc#webshop_contracts_facetextension[`FacetExtension`]
 
 
 .Constants
@@ -50,7 +50,7 @@ public getAggregation():void
 [source%nowrap, php]
 ----
 
-public mergeIntoFacetsList($result):void
+public mergeIntoFacetsList($result):array
 
 ----
 
@@ -65,7 +65,7 @@ public mergeIntoFacetsList($result):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/array[array^]
 a|`$result`
 |
 |===
@@ -89,7 +89,7 @@ public extractFilterParams($filtersList):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/array[array^]
 a|`$filtersList`
 |
 |===

@@ -158,6 +158,21 @@ public getOrder():void
 [source%nowrap, php]
 ----
 
+public getSessionStorageRepository():void
+
+----
+
+
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
 public getSessionStorage():void
 
 ----
@@ -248,6 +263,21 @@ public getNotifications():void
 [source%nowrap, php]
 ----
 
+public getWebstoreConfigurationRepository():void
+
+----
+
+
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
 public getWebstoreConfig():void
 
 ----
@@ -264,6 +294,21 @@ public getWebstoreConfig():void
 ----
 
 public getLocalization():void
+
+----
+
+
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getLocalizationRepository():void
 
 ----
 
@@ -489,6 +534,51 @@ public getPropertyFile():void
 ----
 
 public getFacet():void
+
+----
+
+
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getContactMap():void
+
+----
+
+
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getSearchAutocomplete():void
+
+----
+
+
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getSEO():void
 
 ----
 

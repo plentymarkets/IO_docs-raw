@@ -24,11 +24,11 @@
 | xref:stable7@interface::Category.adoc#category_contracts_categoryrepositorycontract[`CategoryRepositoryContract`]
     |categoryRepository
     |
-|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
-    |webstoreConfig
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+    |webstoreConfigurationRepository
     |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorageService
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+    |contactRepository
     |
 | xref:stable7@interface::Category.adoc#category_models_category[`Category`]
     |currentCategory
@@ -56,7 +56,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($category):void
+public __construct($categoryRepository, $webstoreConfigurationRepository, $authGuard, $contactRepository):void
 
 ----
 
@@ -72,7 +72,19 @@ CategoryService constructor.
 |===
 |Type |Name |Description
 | xref:stable7@interface::Category.adoc#category_contracts_categoryrepositorycontract[`CategoryRepositoryContract`]
-a|`$category`
+a|`$categoryRepository`
+|
+
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+a|`$webstoreConfigurationRepository`
+|
+
+|xref:IO/Guards/AuthGuard.adoc#[`AuthGuard`]
+a|`$authGuard`
+|
+
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
 |
 |===
 

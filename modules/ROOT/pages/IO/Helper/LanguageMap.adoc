@@ -7,6 +7,13 @@
 
 
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 ===== Namespace
@@ -39,6 +46,13 @@ public static getLocale():void
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+sin  ce 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -54,6 +68,13 @@ public static getLanguageCode($countryCode = null):void
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -78,6 +99,13 @@ public static getCountryCode($language = null):void
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 

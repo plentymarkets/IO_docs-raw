@@ -26,6 +26,9 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |xref:IO/Services/CustomerService.adoc#[`CustomerService`]
     |customerService
     |
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+    |contactRepository
+    |
 |===
 
 

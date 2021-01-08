@@ -34,7 +34,7 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 [source%nowrap, php]
 ----
 
-public showLogin($customerService):string
+public showLogin($contactRepository):string
 
 ----
 
@@ -49,8 +49,8 @@ Prepare and render the data for the login
 .*Parameters*
 |===
 |Type |Name |Description
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-a|`$customerService`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
 |
 |===
 

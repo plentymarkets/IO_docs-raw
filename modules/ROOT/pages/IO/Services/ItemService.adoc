@@ -28,8 +28,8 @@
     |itemRepository
     |
 | 
-    |sessionStorage
-    |SessionStorageService
+    |sessionStorageRepository
+    |SessionStorageRepositoryContract
 |link:http://php.net/array[array^]
     |additionalItemSortingMap
     |
@@ -44,7 +44,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($app, $itemRepository, $sessionStorage):void
+public __construct($app, $itemRepository, $sessionStorageRepository):void
 
 ----
 
@@ -67,8 +67,8 @@ a|`$app`
 a|`$itemRepository`
 |
 
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-a|`$sessionStorage`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
 |
 |===
 

@@ -21,11 +21,11 @@
 |===
 |Type |Name |Description
 
-| 
-    |sessionStorage
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+    |sessionStorageRepository
     |
-|xref:IO/Services/TemplateConfigService.adoc#[`TemplateConfigService`]
-    |templateConfigService
+| xref:stable7@interface::Webshop.adoc#webshop_helpers_sortinghelper[`SortingHelper`]
+    |sortingHelper
     |
 |===
 
@@ -35,7 +35,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($sessionStorage, $templateConfigService):void
+public __construct($sessionStorageRepository, $sortingHelper):void
 
 ----
 
@@ -50,12 +50,12 @@ ItemLastSeenService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-a|`$sessionStorage`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
 |
 
-|xref:IO/Services/TemplateConfigService.adoc#[`TemplateConfigService`]
-a|`$templateConfigService`
+| xref:stable7@interface::Webshop.adoc#webshop_helpers_sortinghelper[`SortingHelper`]
+a|`$sortingHelper`
 |
 |===
 

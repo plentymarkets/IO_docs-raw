@@ -21,9 +21,6 @@
 |===
 |Type |Name |Description
 
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorageService
-    |
 | 
     |urlMap
     |
@@ -113,7 +110,7 @@
 [source%nowrap, php]
 ----
 
-public __construct():void
+public __construct($dispatcher):void
 
 ----
 
@@ -123,6 +120,15 @@ public __construct():void
 
 
 
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+| 
+a|`$dispatcher`
+|
+|===
 
 
 [source%nowrap, php]

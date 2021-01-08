@@ -7,6 +7,13 @@
 
 
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 ===== Namespace
@@ -23,15 +30,35 @@
 [source%nowrap, php]
 ----
 
-public buildUrl():void
+public buildUrl($itemId, $lang = null):void
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
 
 
 
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+|===
 
 

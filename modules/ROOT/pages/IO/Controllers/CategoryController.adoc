@@ -23,6 +23,9 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 |===
 |Type |Name |Description
 
+| 
+    |LANGUAGE_FROM_URL
+    |
 |link:http://php.net/string[string^]
     |pluginNamespace
     |

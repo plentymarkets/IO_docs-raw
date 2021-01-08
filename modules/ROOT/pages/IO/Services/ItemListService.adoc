@@ -48,6 +48,10 @@
     |TYPE_WISH_LIST
     |'wish_list'
     |
+|link:http://php.net/string[string^]
+    |TYPE_SEARCH_SUGGESTIONS
+    |'search_suggestions'
+    |
 |===
 
 

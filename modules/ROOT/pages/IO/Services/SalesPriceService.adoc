@@ -27,11 +27,11 @@
 | 
     |salesPriceSearchRepo
     |
-| 
-    |customerService
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+    |contactRepository
     |
-| 
-    |checkoutService
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+    |checkoutRepository
     |
 | 
     |basketService
@@ -62,7 +62,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($app, $salesPriceSearchRepo, $customerService, $checkoutService):void
+public __construct($app, $salesPriceSearchRepo, $contactRepository, $checkoutRepository, $basketService):void
 
 ----
 
@@ -85,12 +85,16 @@ a|`$app`
 a|`$salesPriceSearchRepo`
 |
 
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-a|`$customerService`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
 |
 
-|xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
-a|`$checkoutService`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+a|`$checkoutRepository`
+|
+
+|xref:IO/Services/BasketService.adoc#[`BasketService`]
+a|`$basketService`
 |
 |===
 

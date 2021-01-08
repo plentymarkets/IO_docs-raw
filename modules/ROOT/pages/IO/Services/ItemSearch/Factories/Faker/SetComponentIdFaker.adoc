@@ -1,0 +1,58 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+[[io__setcomponentidfaker]]
+= SetComponentIdFaker
+
+
+
+
+
+===== Namespace
+
+`IO\Services\ItemSearch\Factories\Faker`
+
+===== Extends
+xref:IO/Services/ItemSearch/Factories/Faker/AbstractFaker.adoc#[`AbstractFaker`]
+
+
+
+.Constants
+|===
+|Type |Name |Value |Description
+
+|link:http://php.net/array[array^]
+    |ES_LANGUAGES
+    |['german','english','french','bulgarian','italian','spanish','turkish','dutch','portuguese','norwegian','romanian','danish','swedish','czech','russian']
+    |
+|===
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public fill($data):void
+
+----
+
+
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+| 
+a|`$data`
+|
+|===
+
+

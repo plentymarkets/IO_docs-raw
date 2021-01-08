@@ -8,6 +8,13 @@
 Check if item data already contains a calculated item url.
 Otherwise generate item url and store url for later usage.
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 ===== Namespace

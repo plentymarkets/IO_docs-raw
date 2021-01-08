@@ -21,11 +21,8 @@
 |===
 |Type |Name |Description
 
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorage
-    |
-|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
-    |webstoreConfigurationService
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+    |webstoreConfigurationRepository
     |
 | 
     |cache
@@ -38,7 +35,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($sessionStorage, $webstoreConfigurationService):void
+public __construct($webstoreConfigurationRepository):void
 
 ----
 
@@ -53,12 +50,8 @@ UrlService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-a|`$sessionStorage`
-|
-
-|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
-a|`$webstoreConfigurationService`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+a|`$webstoreConfigurationRepository`
 |
 |===
 
@@ -66,14 +59,14 @@ a|`$webstoreConfigurationService`
 [source%nowrap, php]
 ----
 
-public getCategoryURL($categoryId, $lang = null):IO\Services\UrlBuilder\UrlQuery
+public getCategoryURL($categoryId, $lang = null):Plenty\Modules\Webshop\Helpers\UrlQuery
 
 ----
 
 
 
 
-====== *Return type:*xref:IO/Services/UrlBuilder/UrlQuery.adoc#[`UrlQuery`]
+====== *Return type:* xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery[`UrlQuery`]
 
 
 Get canonical url for a category
@@ -94,14 +87,14 @@ a|`$lang`
 [source%nowrap, php]
 ----
 
-public getVariationURL($itemId, $variationId, $lang = null):IO\Services\UrlBuilder\UrlQuery
+public getVariationURL($itemId, $variationId, $lang = null):Plenty\Modules\Webshop\Helpers\UrlQuery
 
 ----
 
 
 
 
-====== *Return type:*xref:IO/Services/UrlBuilder/UrlQuery.adoc#[`UrlQuery`]
+====== *Return type:* xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery[`UrlQuery`]
 
 
 Get canonical url for a variation
@@ -150,6 +143,21 @@ a|`$ignoreCanonical`
 |
 |===
 
+
+[source%nowrap, php]
+----
+
+public getCanonicalQueryString():string
+
+----
+
+
+
+
+
+
+
+Get query string from uri, return an empty string if its an canonical link from category details
 
 [source%nowrap, php]
 ----

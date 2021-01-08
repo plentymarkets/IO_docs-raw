@@ -24,6 +24,9 @@
 |xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
     |checkoutService
     |
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+    |checkoutRepository
+    |
 | xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
     |vatService
     |
@@ -36,8 +39,8 @@
 | xref:stable7@interface::System.adoc#system_contracts_webstorerepositorycontract[`WebstoreRepositoryContract`]
     |webstoreRepository
     |
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-    |customerService
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+    |contactRepository
     |
 |===
 
@@ -47,7 +50,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($checkoutService, $vatService, $itemNameFilter, $webstoreRepository, $vatRepository, $customerService):void
+public __construct($checkoutService, $vatService, $itemNameFilter, $webstoreRepository, $vatRepository, $contactRepository, $checkoutRepository):void
 
 ----
 
@@ -82,8 +85,12 @@ a|`$webstoreRepository`
 a|`$vatRepository`
 |
 
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-a|`$customerService`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
+
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+a|`$checkoutRepository`
 |
 |===
 

@@ -24,8 +24,8 @@
 | xref:stable7@interface::Plugin.adoc#plugin_contracts_database[`DataBase`]
     |db
     |
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-    |customer
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+    |contactRepository
     |
 |===
 
@@ -35,7 +35,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($dataBase, $customerService):void
+public __construct($dataBase, $contactRepository):void
 
 ----
 
@@ -54,8 +54,8 @@ ItemWishListRepository constructor.
 a|`$dataBase`
 |
 
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-a|`$customerService`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
 |
 |===
 

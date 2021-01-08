@@ -32,7 +32,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($sessionStorage):void
+public __construct($sessionStorageRepositoryContract):void
 
 ----
 
@@ -48,7 +48,7 @@ public __construct($sessionStorage):void
 |===
 |Type |Name |Description
 | 
-a|`$sessionStorage`
+a|`$sessionStorageRepositoryContract`
 |
 |===
 

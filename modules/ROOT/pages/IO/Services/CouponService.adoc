@@ -196,3 +196,27 @@ a|`$basketItem`
 |===
 
 
+[source%nowrap, php]
+----
+
+public effectsOnShippingCosts($campaign):void
+
+----
+
+
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+| 
+a|`$campaign`
+|
+|===
+
+

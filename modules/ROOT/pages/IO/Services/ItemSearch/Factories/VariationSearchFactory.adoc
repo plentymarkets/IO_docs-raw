@@ -7,6 +7,13 @@
 
 Concrete factory to build variation searches
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 ===== Namespace
@@ -17,52 +24,6 @@ Concrete factory to build variation searches
 xref:IO/Services/ItemSearch/Factories/BaseSearchFactory.adoc#[`BaseSearchFactory`]
 
 
-
-.Constants
-|===
-|Type |Name |Value |Description
-
-|link:http://php.net/string[string^]
-    |SORTING_ORDER_ASC
-    |'asc'
-    |
-|link:http://php.net/string[string^]
-    |SORTING_ORDER_DESC
-    |'desc'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_AGGREGATIONS
-    |'aggregations'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_COLLAPSE
-    |'collapse'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_EXTENSIONS
-    |'extensions'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_FILTERS
-    |'filters'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_MUTATORS
-    |'mutators'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_PAGINATION
-    |'pagination'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_RESULT_FIELDS
-    |'resultFields'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_SORTING
-    |'sorting'
-    |
-|===
 
 
 .Properties
@@ -99,6 +60,13 @@ public isActive():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -114,6 +82,13 @@ public isInactive():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -129,6 +104,13 @@ public hasItemId($itemId):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -153,6 +135,13 @@ public hasItemIds($itemIds):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -177,6 +166,13 @@ public hasVariationId($variationId):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -201,6 +197,13 @@ public hasVariationIds($variationIds):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -225,6 +228,13 @@ public hasAtLeastOneAvailability($availabilityIds):IO\Services\ItemSearch\Factor
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -249,6 +259,13 @@ public hasSupplier($supplierId):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -273,6 +290,13 @@ public hasManufacturer($manufacturerId):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -297,6 +321,13 @@ public hasEachProperty($propertyIds):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -321,6 +352,13 @@ public isMain():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -336,6 +374,13 @@ public isChild():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -351,6 +396,13 @@ public isHiddenInCategoryList($isHidden = true):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -375,6 +427,13 @@ public isSalable():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -390,6 +449,13 @@ public isVisibleForClient($clientId = null):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -414,6 +480,13 @@ public hasNameInLanguage($type = \Plenty\Modules\Item\Search\Filter\TextFilter::
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -442,6 +515,13 @@ public isInCategory($categoryId):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -466,6 +546,13 @@ public hasAtLeastOnePrice($priceIds):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -490,6 +577,13 @@ public hasPriceForCustomer():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -501,73 +595,17 @@ Filter variations having at least one price accessible by current customer.
 [source%nowrap, php]
 ----
 
-public hasPriceInRange():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public hasTag($tagId):void
-
-----
-
-
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-| 
-a|`$tagId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public hasAnyTag($tagIds):void
-
-----
-
-
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-| 
-a|`$tagIds`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public groupByTemplateConfig($key = &quot;ids.itemAttributeValue&quot;):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -592,6 +630,13 @@ public isCrossSellingItem($itemId, $relation):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -620,6 +665,13 @@ public hasFacets($facetValues, $clientId = null, $lang = null):IO\Services\ItemS
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -652,6 +704,13 @@ public hasSearchString($query, $lang = null, $searchType = \Plenty\Modules\Cloud
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -688,6 +747,13 @@ public hasNameString($query, $lang = null):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -716,6 +782,13 @@ public withLanguage($lang = null):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -740,6 +813,13 @@ public withImages($clientId = null):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -764,6 +844,13 @@ public withAttributes():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -775,14 +862,21 @@ Includes VariatonAttributeMap for variation select
 [source%nowrap, php]
 ----
 
-public withPropertyGroups():void
+public withPropertyGroups():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
-
+====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 
@@ -790,14 +884,21 @@ public withPropertyGroups():void
 [source%nowrap, php]
 ----
 
-public withOrderPropertySelectionValues():void
+public withOrderPropertySelectionValues():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
-
+====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 
@@ -805,14 +906,21 @@ public withOrderPropertySelectionValues():void
 [source%nowrap, php]
 ----
 
-public withVariationProperties():void
+public withVariationProperties():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
-
+====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 
@@ -824,6 +932,13 @@ public withUrls():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -839,6 +954,13 @@ public withPrices($params):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -863,6 +985,13 @@ public withCurrentCategory():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -878,6 +1007,13 @@ public withDefaultImage():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -889,14 +1025,21 @@ Append default item image if images are requested by result fields and item does
 [source%nowrap, php]
 ----
 
-public withBundleComponents():void
+public withBundleComponents():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
-
+====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 
@@ -904,14 +1047,21 @@ public withBundleComponents():void
 [source%nowrap, php]
 ----
 
-public withLinkToContent():void
+public withLinkToContent():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
-
+====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 
@@ -919,14 +1069,21 @@ public withLinkToContent():void
 [source%nowrap, php]
 ----
 
-public withGroupedAttributeValues():void
+public withGroupedAttributeValues():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
-
+====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 
@@ -934,14 +1091,21 @@ public withGroupedAttributeValues():void
 [source%nowrap, php]
 ----
 
-public withReducedResults($removeProperties = false):void
+public withReducedResults($removeProperties = false):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
-
+====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 
@@ -949,7 +1113,7 @@ public withReducedResults($removeProperties = false):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/bool[bool^]
 a|`$removeProperties`
 |
 |===
@@ -958,14 +1122,21 @@ a|`$removeProperties`
 [source%nowrap, php]
 ----
 
-public withAvailability():void
+public withAvailability():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
-
+====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 
@@ -973,14 +1144,21 @@ public withAvailability():void
 [source%nowrap, php]
 ----
 
-public withTags():void
+public withTags():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
-
+====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 

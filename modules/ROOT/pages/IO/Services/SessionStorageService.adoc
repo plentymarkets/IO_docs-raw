@@ -63,6 +63,13 @@ public getSessionValue($name):void
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -87,6 +94,13 @@ public getLang():string
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -102,6 +116,13 @@ public getCustomer():Plenty\Modules\Frontend\Session\Storage\Models\Customer
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 

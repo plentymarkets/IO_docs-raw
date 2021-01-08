@@ -69,7 +69,7 @@
 [source%nowrap, php]
 ----
 
-public __construct():void
+public __construct($app):void
 
 ----
 
@@ -79,6 +79,15 @@ public __construct():void
 
 
 
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+| 
+a|`$app`
+|
+|===
 
 
 [source%nowrap, php]

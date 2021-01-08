@@ -1,0 +1,109 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+[[io__itemsearchautocompleteservice]]
+= ItemSearchAutocompleteService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+.Properties
+|===
+|Type |Name |Description
+
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_urlbuilderrepositorycontract[`UrlBuilderRepositoryContract`]
+    |urlBuilderRepository
+    |
+|===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct($urlBuilderRepository):void
+
+----
+
+
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+| 
+a|`$urlBuilderRepository`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getDidYouMeanSuggestionSearchString():void
+
+----
+
+
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getResults():void
+
+----
+
+
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public transformResult($itemSearchResult):array
+
+----
+
+
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[array^]
+a|`$itemSearchResult`
+|
+|===
+
+

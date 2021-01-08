@@ -26,12 +26,6 @@ xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 |xref:IO/Services/ItemService.adoc#[`ItemService`]
     |itemService
     |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorageService
-    |
-|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
-    |webstoreConfigurationService
-    |
 |===
 
 

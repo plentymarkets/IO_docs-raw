@@ -1,5 +1,5 @@
 name: plugin-io
 title: Plugin IO documentation
-version: 4.6.0
+version: 5.0.0
 nav:
   - modules/ROOT/navigation.adoc

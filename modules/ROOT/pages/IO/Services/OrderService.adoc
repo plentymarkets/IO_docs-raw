@@ -22,7 +22,7 @@
 
 |link:http://php.net/array[array^]
     |WRAPPED_ORDERITEM_TYPES
-    |[1,2,3,9]
+    |[1,2,3,9,13]
     |
 |link:http://php.net/array[array^]
     |VISIBLE_ORDER_TYPES
@@ -41,8 +41,8 @@
 |xref:IO/Services/BasketService.adoc#[`BasketService`]
     |basketService
     |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorage
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+    |sessionStorageRepository
     |
 | xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
     |frontendPaymentMethodRepository
@@ -59,6 +59,12 @@
 |xref:IO/Services/CustomerService.adoc#[`CustomerService`]
     |customerService
     |
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+    |contactRepository
+    |
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_giftcardrepositorycontract[`GiftCardRepositoryContract`]
+    |giftCardRepository
+    |
 |link:http://php.net/string[string^]
     |pluginNamespace
     |
@@ -70,7 +76,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($orderRepository, $basketService, $sessionStorage, $frontendPaymentMethodRepository, $addressRepository, $urlService, $checkoutService, $customerService):void
+public __construct($orderRepository, $basketService, $sessionStorageRepository, $frontendPaymentMethodRepository, $addressRepository, $urlService, $checkoutService, $customerService, $contactRepository, $giftCardRepository):void
 
 ----
 
@@ -93,8 +99,8 @@ a|`$orderRepository`
 a|`$basketService`
 |
 
-|xref:IO/Services/IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-a|`$sessionStorage`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
 |
 
 | xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
@@ -105,16 +111,24 @@ a|`$frontendPaymentMethodRepository`
 a|`$addressRepository`
 |
 
-|xref:IO/Services/IO/Services/UrlService.adoc#[`UrlService`]
+|xref:IO/Services/UrlService.adoc#[`UrlService`]
 a|`$urlService`
 |
 
-|xref:IO/Services/IO/Services/CheckoutService.adoc#[`CheckoutService`]
+|xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
 a|`$checkoutService`
 |
 
-|xref:IO/Services/IO/Services/CustomerService.adoc#[`CustomerService`]
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
 a|`$customerService`
+|
+
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
+
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_giftcardrepositorycontract[`GiftCardRepositoryContract`]
+a|`$giftCardRepository`
 |
 |===
 

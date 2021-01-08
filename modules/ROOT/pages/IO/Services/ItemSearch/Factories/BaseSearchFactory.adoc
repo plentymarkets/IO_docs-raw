@@ -7,6 +7,13 @@
 
 Base factory to build elastic search requests.
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 ===== Namespace
@@ -15,52 +22,6 @@ Base factory to build elastic search requests.
 
 
 
-
-.Constants
-|===
-|Type |Name |Value |Description
-
-|link:http://php.net/string[string^]
-    |SORTING_ORDER_ASC
-    |'asc'
-    |
-|link:http://php.net/string[string^]
-    |SORTING_ORDER_DESC
-    |'desc'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_AGGREGATIONS
-    |'aggregations'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_COLLAPSE
-    |'collapse'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_EXTENSIONS
-    |'extensions'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_FILTERS
-    |'filters'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_MUTATORS
-    |'mutators'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_PAGINATION
-    |'pagination'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_RESULT_FIELDS
-    |'resultFields'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_SORTING
-    |'sorting'
-    |
-|===
 
 
 .Properties
@@ -111,10 +72,17 @@ Base factory to build elastic search requests.
 [source%nowrap, php]
 ----
 
-public static inherit($searchBuilder, $inheritedProperties = []):IO\Services\ItemSearch\Factories\BaseSearchFactory
+public inherit($searchBuilder, $inheritedProperties = []):IO\Services\ItemSearch\Factories\BaseSearchFactory
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -143,6 +111,13 @@ public withMutator($mutator):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -167,6 +142,13 @@ public createFilter($filterClass):Plenty\Modules\Cloud\ElasticSearch\Lib\Query\T
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -191,6 +173,13 @@ public withFilter($filter):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -215,6 +204,13 @@ public withResultFields($fields):IO\Services\ItemSearch\Factories\BaseSearchFact
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -235,10 +231,17 @@ a|`$fields`
 [source%nowrap, php]
 ----
 
-public getResultFields():void
+public getResultFields():array
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -254,6 +257,13 @@ public withExtension($extensionClass, $extensionParams = []):IO\Services\ItemSea
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -282,6 +292,13 @@ public getExtensions():array
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -297,6 +314,13 @@ public withAggregation($aggregation):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -321,6 +345,13 @@ public setPage($page, $itemsPerPage):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -345,10 +376,17 @@ a|`$itemsPerPage`
 [source%nowrap, php]
 ----
 
-public sortBy($field, $order = self::SORTING_ORDER_DESC):IO\Services\ItemSearch\Factories
+public sortBy($field, $order = \Plenty\Modules\Webshop\ItemSearch\Factories\VariationSearchFactory::SORTING_ORDER_DESC):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -377,6 +415,13 @@ public sortByMultiple($sortingList):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -397,14 +442,21 @@ a|`$sortingList`
 [source%nowrap, php]
 ----
 
-public setOrder($idList):void
+public setOrder($idList):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
-
+====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 
@@ -412,7 +464,7 @@ public setOrder($idList):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/array[array^]
 a|`$idList`
 |
 |===
@@ -425,6 +477,13 @@ public groupBy($field):IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -449,6 +508,13 @@ public build():Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Document\DocumentSe
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -464,6 +530,13 @@ public prepareSearch($source):Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Docu
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 

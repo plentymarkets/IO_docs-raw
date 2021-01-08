@@ -7,6 +7,13 @@
 
 
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 ===== Namespace
@@ -38,10 +45,17 @@
 [source%nowrap, php]
 ----
 
-public static shouldAppendTrailingSlash():void
+public static shouldAppendTrailingSlash():bool
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -53,7 +67,7 @@ public static shouldAppendTrailingSlash():void
 [source%nowrap, php]
 ----
 
-public __construct():void
+public __construct($path = null, $lang = null):void
 
 ----
 
@@ -63,19 +77,39 @@ public __construct():void
 
 
 
+UrlQuery constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$path`
+|
+
+|link:http://php.net/string[string^]
+a|`$lang`
+|
+|===
 
 
 [source%nowrap, php]
 ----
 
-public append($suffix):void
+public append($suffix):IO\Services\UrlBuilder\UrlQuery
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
-
+====== *Return type:*xref:IO/Services/UrlBuilder/UrlQuery.adoc#[`UrlQuery`]
 
 
 
@@ -83,7 +117,7 @@ public append($suffix):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[string^]
 a|`$suffix`
 |
 |===
@@ -92,14 +126,21 @@ a|`$suffix`
 [source%nowrap, php]
 ----
 
-public join($path):void
+public join($path):IO\Services\UrlBuilder\UrlQuery
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
-
+====== *Return type:*xref:IO/Services/UrlBuilder/UrlQuery.adoc#[`UrlQuery`]
 
 
 
@@ -107,7 +148,7 @@ public join($path):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[string^]
 a|`$path`
 |
 |===
@@ -116,10 +157,17 @@ a|`$path`
 [source%nowrap, php]
 ----
 
-public toAbsoluteUrl($includeLanguage = false):void
+public toAbsoluteUrl($includeLanguage = false):string
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -131,7 +179,7 @@ public toAbsoluteUrl($includeLanguage = false):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/bool[bool^]
 a|`$includeLanguage`
 |
 |===
@@ -140,10 +188,17 @@ a|`$includeLanguage`
 [source%nowrap, php]
 ----
 
-public toRelativeUrl($includeLanguage = false):void
+public toRelativeUrl($includeLanguage = false):string
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -155,7 +210,7 @@ public toRelativeUrl($includeLanguage = false):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/bool[bool^]
 a|`$includeLanguage`
 |
 |===
@@ -168,6 +223,13 @@ public getPath($includeLanguage = false):void
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -179,7 +241,7 @@ public getPath($includeLanguage = false):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/bool[bool^]
 a|`$includeLanguage`
 |
 |===
@@ -188,10 +250,17 @@ a|`$includeLanguage`
 [source%nowrap, php]
 ----
 
-public equals($path):void
+public equals($path):bool
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -203,7 +272,7 @@ public equals($path):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[string^]
 a|`$path`
 |
 |===

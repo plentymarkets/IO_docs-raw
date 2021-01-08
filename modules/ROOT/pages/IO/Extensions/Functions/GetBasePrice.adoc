@@ -38,9 +38,6 @@ xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 |xref:IO/Builder/Item/ItemParamsBuilder.adoc#[`ItemParamsBuilder`]
     |paramsBuilder
     |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorage
-    |
 |===
 
 

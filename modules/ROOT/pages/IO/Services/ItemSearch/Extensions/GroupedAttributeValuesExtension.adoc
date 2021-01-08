@@ -7,6 +7,13 @@
 
 
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 ===== Namespace

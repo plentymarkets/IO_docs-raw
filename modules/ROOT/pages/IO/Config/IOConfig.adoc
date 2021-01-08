@@ -1,0 +1,46 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+[[io__ioconfig]]
+= IOConfig
+
+
+
+
+
+===== Namespace
+
+`IO\Config`
+
+
+
+
+
+.Properties
+|===
+|Type |Name |Description
+
+|xref:IO/Config/IONumberFormatConfig.adoc#[`IONumberFormatConfig`]
+    |format
+    |
+|===
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+
+
+
+
+
+
+
+

@@ -7,6 +7,13 @@
 
 
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 ===== Namespace
@@ -32,15 +39,39 @@
 [source%nowrap, php]
 ----
 
-public buildUrl():void
+public buildUrl($categoryId, $lang = null, $webstoreId = null):IO\Services\UrlBuilder\UrlQuery
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+
+
+
+====== *Return type:*xref:IO/Services/UrlBuilder/UrlQuery.adoc#[`UrlQuery`]
 
 
 
 
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$categoryId`
+|
 
+|link:http://php.net/string[string^]
+a|`$lang`
+|
 
+|link:http://php.net/int[int^]
+a|`$webstoreId`
+|
+|===
 
 

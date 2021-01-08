@@ -45,11 +45,17 @@
 |xref:IO/Services/BasketService.adoc#[`BasketService`]
     |basketService
     |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorageService
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+    |sessionStorageRepository
     |
-|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
-    |webstoreConfigurationService
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+    |webstoreConfigurationRepository
+    |
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+    |checkoutRepository
+    |
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+    |contactRepository
     |
 | 
     |cache
@@ -65,7 +71,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($frontendPaymentMethodRepository, $checkout, $basketRepository, $sessionStorage, $customerService, $parcelServicePresetRepo, $currencyExchangeRepo, $basketService, $sessionStorageService, $webstoreConfigurationService):void
+public __construct($frontendPaymentMethodRepository, $checkout, $basketRepository, $sessionStorage, $customerService, $parcelServicePresetRepo, $currencyExchangeRepo, $basketService, $sessionStorageRepository, $webstoreConfigurationService, $dispatcher, $checkoutRepository, $contactRepository):void
 
 ----
 
@@ -112,12 +118,24 @@ a|`$currencyExchangeRepo`
 a|`$basketService`
 |
 
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-a|`$sessionStorageService`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
 |
 
 |xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
 a|`$webstoreConfigurationService`
+|
+
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
+a|`$dispatcher`
+|
+
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+a|`$checkoutRepository`
+|
+
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
 |
 |===
 
@@ -153,6 +171,13 @@ public getCurrency():string
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -168,6 +193,13 @@ public setCurrency($currency):void
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -351,6 +383,13 @@ public getShippingCountryId():int
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 

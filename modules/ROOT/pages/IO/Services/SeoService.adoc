@@ -1,0 +1,65 @@
+:table-caption!:
+:example-caption!:
+:source-highlighter: prettify
+:sectids!:
+[[io__seoservice]]
+= SeoService
+
+
+
+
+
+===== Namespace
+
+`IO\Services`
+
+
+
+
+
+
+===== Methods
+
+[source%nowrap, php]
+----
+
+public __construct():void
+
+----
+
+
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getRobotsInformation($returnValueErrorCase = &quot;NOINDEX&quot;, $defaultValueWithoutCategoryData = &quot;ALL&quot;):string
+
+----
+
+
+
+
+
+
+
+Get meta robot information
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[string^]
+a|`$returnValueErrorCase`
+|
+
+|link:http://php.net/string[string^]
+a|`$defaultValueWithoutCategoryData`
+|
+|===
+
+

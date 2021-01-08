@@ -7,6 +7,13 @@
 
 
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 ===== Namespace
@@ -27,10 +34,17 @@ xref:stable7@interface::Cloud.adoc#cloud_mutator_mutatorinterface[`MutatorInterf
 [source%nowrap, php]
 ----
 
-public mutate($data):void
+public mutate($data):array
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -42,7 +56,7 @@ public mutate($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/array[array^]
 a|`$data`
 |
 |===

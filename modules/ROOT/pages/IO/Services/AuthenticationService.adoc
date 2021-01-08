@@ -24,8 +24,8 @@
 | xref:stable7@interface::Authentication.adoc#authentication_contracts_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
     |contactAuthRepository
     |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorage
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+    |sessionStorageRepository
     |
 |xref:IO/Services/CustomerService.adoc#[`CustomerService`]
     |customerService
@@ -41,7 +41,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($contactAuthRepository, $sessionStorage):void
+public __construct($contactAuthRepository, $sessionStorageRepository):void
 
 ----
 
@@ -60,8 +60,8 @@ AuthenticationService constructor.
 a|`$contactAuthRepository`
 |
 
-|xref:IO/Services/IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-a|`$sessionStorage`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
 |
 |===
 

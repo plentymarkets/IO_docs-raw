@@ -7,6 +7,13 @@
 
 
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 ===== Namespace
@@ -39,14 +46,14 @@
 | xref:stable7@interface::Miscellaneous.adoc#miscellaneous_variation_detectsalespriceservice[`DetectSalesPriceService`]
     |detectSalesPriceService
     |
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-    |customerService
+| xref:stable7@interface::Webshop.adoc#webshop_repositories_contactrepository[`ContactRepository`]
+    |contactRepository
     |
 | xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
     |app
     |
-|xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
-    |checkoutService
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+    |checkoutRepository
     |
 |xref:IO/Services/BasketService.adoc#[`BasketService`]
     |basketService
@@ -60,6 +67,9 @@
 | 
     |referrerId
     |
+| 
+    |cache
+    |
 |===
 
 
@@ -68,7 +78,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($detectSalesPriceService, $customerService, $app, $checkoutService):void
+public __construct($detectSalesPriceService, $contactRepository, $app, $checkoutRepository, $basketService, $vatInitService, $vatService):void
 
 ----
 
@@ -87,16 +97,28 @@ PriceDetectService constructor.
 a|`$detectSalesPriceService`
 |
 
-|xref:IO/Services/IO/Services/CustomerService.adoc#[`CustomerService`]
-a|`$customerService`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
 |
 
 | xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
 a|`$app`
 |
 
-|xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
-a|`$checkoutService`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+a|`$checkoutRepository`
+|
+
+|xref:IO/Services/BasketService.adoc#[`BasketService`]
+a|`$basketService`
+|
+
+| xref:stable7@interface::Accounting.adoc#accounting_contracts_vatinitcontract[`VatInitContract`]
+a|`$vatInitService`
+|
+
+| xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
+a|`$vatService`
 |
 |===
 
@@ -104,7 +126,29 @@ a|`$checkoutService`
 [source%nowrap, php]
 ----
 
-public getPriceIdsForCustomer():void
+public getPriceIdsForCustomer():array
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public fromMemoryCache():void
 
 ----
 
@@ -114,5 +158,29 @@ public getPriceIdsForCustomer():void
 
 
 
+
+
+[source%nowrap, php]
+----
+
+public resetMemoryCache($key = null):void
+
+----
+
+
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+| 
+a|`$key`
+|
+|===
 
 

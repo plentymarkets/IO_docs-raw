@@ -33,14 +33,14 @@
 | xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
     |vatService
     |
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-    |customerService
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+    |contactRepository
     |
 |xref:IO/Services/CouponService.adoc#[`CouponService`]
     |couponService
     |
-|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
-    |webstoreConfigurationService
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+    |webstoreConfigurationRepository
     |
 | 
     |basketItems
@@ -59,7 +59,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($basketItemRepository, $checkout, $vatService, $customerService, $basketRepository, $vatInitService, $couponService, $webstoreConfigurationService):void
+public __construct($basketItemRepository, $checkout, $vatService, $contactRepository, $basketRepository, $vatInitService, $couponService, $webstoreConfigurationRepository):void
 
 ----
 
@@ -86,8 +86,8 @@ a|`$checkout`
 a|`$vatService`
 |
 
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-a|`$customerService`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
 |
 
 | xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
@@ -102,8 +102,8 @@ a|`$vatInitService`
 a|`$couponService`
 |
 
-|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
-a|`$webstoreConfigurationService`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+a|`$webstoreConfigurationRepository`
 |
 |===
 
@@ -240,7 +240,7 @@ public getBasketItemsForTemplate():void
 [source%nowrap, php]
 ----
 
-public checkBasketItemsLang($template = &quot;&quot;):void
+public checkBasketItemsLang($language = &quot;&quot;):void
 
 ----
 
@@ -256,9 +256,24 @@ public checkBasketItemsLang($template = &quot;&quot;):void
 |===
 |Type |Name |Description
 | 
-a|`$template`
+a|`$language`
 |
 |===
+
+
+[source%nowrap, php]
+----
+
+public checkBasketItemsCurrency():void
+
+----
+
+
+
+
+
+
+
 
 
 [source%nowrap, php]

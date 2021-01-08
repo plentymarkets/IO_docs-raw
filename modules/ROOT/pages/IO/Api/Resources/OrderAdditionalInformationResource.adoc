@@ -24,7 +24,7 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |Type |Name |Description
 
 | 
-    |sessionStorage
+    |sessionStorageRepository
     |
 |===
 

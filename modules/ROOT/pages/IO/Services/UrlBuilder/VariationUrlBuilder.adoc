@@ -7,6 +7,13 @@
 
 
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 ===== Namespace
@@ -42,6 +49,13 @@ public static fillItemUrl($itemData):void
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -53,7 +67,7 @@ public static fillItemUrl($itemData):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/array[array^]
 a|`$itemData`
 |
 |===
@@ -66,6 +80,13 @@ public buildUrl($itemId, $variationId, $lang = null):IO\Services\UrlBuilder\UrlQ
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -98,6 +119,13 @@ public getSuffix($itemId, $variationId, $withVariationId = true):string
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 

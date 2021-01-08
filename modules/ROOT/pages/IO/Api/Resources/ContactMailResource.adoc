@@ -26,7 +26,7 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 | 
     |contactMailService
     |
-| 
+|xref:IO/Services/TemplateConfigService.adoc#[`TemplateConfigService`]
     |templateConfigService
     |
 |===

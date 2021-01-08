@@ -7,6 +7,13 @@
 
 
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 ===== Namespace
@@ -46,8 +53,8 @@
 | xref:stable7@interface::Item.adoc#item_contracts_unitnamerepositorycontract[`UnitNameRepositoryContract`]
     |unitNameRepository
     |
-| 
-    |defaultLang
+| xref:stable7@interface::Item.adoc#item_contracts_unitrepositorycontract[`UnitRepositoryContract`]
+    |unitRepository
     |
 |link:http://php.net/array[array^]
     |aMeasureUnits
@@ -63,7 +70,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($unitRepository):void
+public __construct($unitNameRepository, $unitRepository):void
 
 ----
 
@@ -79,6 +86,10 @@ UnitService constructor.
 |===
 |Type |Name |Description
 | xref:stable7@interface::Item.adoc#item_contracts_unitnamerepositorycontract[`UnitNameRepositoryContract`]
+a|`$unitNameRepository`
+|
+
+| xref:stable7@interface::Item.adoc#item_contracts_unitrepositorycontract[`UnitRepositoryContract`]
 a|`$unitRepository`
 |
 |===
@@ -91,6 +102,13 @@ public getUnitById($unitId, $lang = &quot;de&quot;):Plenty\Modules\Item\Unit\Mod
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -115,25 +133,17 @@ a|`$lang`
 [source%nowrap, php]
 ----
 
-public getUnitNameByKey():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
 public static isValidUnit($sUnit):bool
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -158,6 +168,13 @@ public static getHTML4Unit($sUnit = &quot;SMM&quot;):string
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 

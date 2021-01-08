@@ -25,6 +25,9 @@
     |accountRepository
     |
 | xref:stable7@interface::Account.adoc#account_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+    |coreContactRepository
+    |
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
     |contactRepository
     |
 | xref:stable7@interface::Account.adoc#account_contracts_contactaddressrepositorycontract[`ContactAddressRepositoryContract`]
@@ -36,8 +39,8 @@
 | xref:stable7@interface::Account.adoc#account_contracts_contactclassrepositorycontract[`ContactClassRepositoryContract`]
     |contactClassRepository
     |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorage
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+    |sessionStorageRepository
     |
 | 
     |cache
@@ -50,7 +53,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($accountRepository, $contactRepository, $contactAddressRepository, $addressRepository, $contactClassRepository, $sessionStorage):void
+public __construct($accountRepository, $coreContactRepository, $contactRepository, $contactAddressRepository, $addressRepository, $contactClassRepository, $sessionStorageRepository):void
 
 ----
 
@@ -70,6 +73,10 @@ a|`$accountRepository`
 |
 
 | xref:stable7@interface::Account.adoc#account_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$coreContactRepository`
+|
+
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
 a|`$contactRepository`
 |
 
@@ -85,8 +92,8 @@ a|`$addressRepository`
 a|`$contactClassRepository`
 |
 
-|xref:IO/Services/IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-a|`$sessionStorage`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
 |
 |===
 
@@ -98,6 +105,13 @@ public getContactId():int
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -113,6 +127,13 @@ public getContactClassData($contactClassId):array
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -137,6 +158,13 @@ public showNetPrices():bool
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -271,6 +299,13 @@ public getContact():Plenty\Modules\Account\Contact\Models\Contact
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -286,6 +321,13 @@ public getContactClassId():int
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 

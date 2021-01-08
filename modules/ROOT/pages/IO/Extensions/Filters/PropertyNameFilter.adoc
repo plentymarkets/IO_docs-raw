@@ -32,9 +32,6 @@ xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 | xref:stable7@interface::Item.adoc#item_contracts_propertyselectionrepositorycontract[`PropertySelectionRepositoryContract`]
     |propertySelectionRepository
     |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorageService
-    |
 | 
     |cache
     |
@@ -46,7 +43,7 @@ xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 [source%nowrap, php]
 ----
 
-public __construct($authHelper, $sessionStorageService):void
+public __construct($authHelper):void
 
 ----
 
@@ -63,10 +60,6 @@ PropertySelectionValueNameFilter constructor.
 |Type |Name |Description
 | xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
 a|`$authHelper`
-|
-
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-a|`$sessionStorageService`
 |
 |===
 

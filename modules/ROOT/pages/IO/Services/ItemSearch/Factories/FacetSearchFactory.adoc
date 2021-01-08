@@ -7,6 +7,13 @@
 
 Concrete factory to build facet searches.
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 ===== Namespace
@@ -17,52 +24,6 @@ Concrete factory to build facet searches.
 xref:IO/Services/ItemSearch/Factories/VariationSearchFactory.adoc#[`VariationSearchFactory`]
 
 
-
-.Constants
-|===
-|Type |Name |Value |Description
-
-|link:http://php.net/string[string^]
-    |SORTING_ORDER_ASC
-    |'asc'
-    |
-|link:http://php.net/string[string^]
-    |SORTING_ORDER_DESC
-    |'desc'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_AGGREGATIONS
-    |'aggregations'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_COLLAPSE
-    |'collapse'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_EXTENSIONS
-    |'extensions'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_FILTERS
-    |'filters'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_MUTATORS
-    |'mutators'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_PAGINATION
-    |'pagination'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_RESULT_FIELDS
-    |'resultFields'
-    |
-|link:http://php.net/string[string^]
-    |INHERIT_SORTING
-    |'sorting'
-    |
-|===
 
 
 .Properties
@@ -80,10 +41,17 @@ xref:IO/Services/ItemSearch/Factories/VariationSearchFactory.adoc#[`VariationSea
 [source%nowrap, php]
 ----
 
-public static create($facets):IO\Services\ItemSearch\Factories\FacetSearchFactory
+public create($facets):IO\Services\ItemSearch\Factories\FacetSearchFactory
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -108,6 +76,13 @@ public prepareSearch($source):Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Docu
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -132,6 +107,13 @@ public withMinimumCount():IO\Services\ItemSearch\Factories
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 

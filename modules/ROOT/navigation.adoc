@@ -6,9 +6,7 @@
                         
 **** xref:IO/Api/Resources/AvailabilityResource.adoc[AvailabilityResource]
         
-**** xref:IO/Api/Resources/OrderAdditionalInformationResource.adoc[OrderAdditionalInformationResource]
-        
-**** xref:IO/Api/Resources/GuestResource.adoc[GuestResource]
+**** xref:IO/Api/Resources/OrderContactWishResource.adoc[OrderContactWishResource]
         
 **** xref:IO/Api/Resources/ItemConditionResource.adoc[ItemConditionResource]
         
@@ -24,11 +22,11 @@
         
 **** xref:IO/Api/Resources/LiveShoppingResource.adoc[LiveShoppingResource]
         
-**** xref:IO/Api/Resources/OrderContactWishResource.adoc[OrderContactWishResource]
-        
-**** xref:IO/Api/Resources/DeliveryCountryResource.adoc[DeliveryCountryResource]
+**** xref:IO/Api/Resources/OrderAdditionalInformationResource.adoc[OrderAdditionalInformationResource]
         
 **** xref:IO/Api/Resources/OrderPaymentAllowedResource.adoc[OrderPaymentAllowedResource]
+        
+**** xref:IO/Api/Resources/FacetResource.adoc[FacetResource]
         
 **** xref:IO/Api/Resources/OrderPaymentResource.adoc[OrderPaymentResource]
         
@@ -46,13 +44,15 @@
         
 **** xref:IO/Api/Resources/TemplateResource.adoc[TemplateResource]
         
-**** xref:IO/Api/Resources/FacetResource.adoc[FacetResource]
+**** xref:IO/Api/Resources/VariationAttributeMapResource.adoc[VariationAttributeMapResource]
         
-**** xref:IO/Api/Resources/CustomerResource.adoc[CustomerResource]
+**** xref:IO/Api/Resources/GuestResource.adoc[GuestResource]
+        
+**** xref:IO/Api/Resources/DeliveryCountryResource.adoc[DeliveryCountryResource]
         
 **** xref:IO/Api/Resources/BasketItemResource.adoc[BasketItemResource]
         
-**** xref:IO/Api/Resources/ContactBankResource.adoc[ContactBankResource]
+**** xref:IO/Api/Resources/ContactMailResource.adoc[ContactMailResource]
         
 **** xref:IO/Api/Resources/BasketResource.adoc[BasketResource]
         
@@ -70,11 +70,11 @@
         
 **** xref:IO/Api/Resources/CheckoutSetShippingIdResource.adoc[CheckoutSetShippingIdResource]
         
-**** xref:IO/Api/Resources/ContactMailResource.adoc[ContactMailResource]
-        
-**** xref:IO/Api/Resources/CustomerPasswordResource.adoc[CustomerPasswordResource]
+**** xref:IO/Api/Resources/ContactBankResource.adoc[ContactBankResource]
         
 **** xref:IO/Api/Resources/CouponResource.adoc[CouponResource]
+        
+**** xref:IO/Api/Resources/CustomerResource.adoc[CustomerResource]
         
 **** xref:IO/Api/Resources/CustomerAddressResource.adoc[CustomerAddressResource]
         
@@ -91,6 +91,8 @@
 **** xref:IO/Api/Resources/CustomerOrderReturnResource.adoc[CustomerOrderReturnResource]
         
 **** xref:IO/Api/Resources/CustomerPasswordResetResource.adoc[CustomerPasswordResetResource]
+        
+**** xref:IO/Api/Resources/CustomerPasswordResource.adoc[CustomerPasswordResource]
         
 **** xref:IO/Api/Resources/VariationResource.adoc[VariationResource]
         
@@ -194,6 +196,8 @@
         
 **** xref:IO/Services/ItemSearch/Factories/Faker/SkuFaker.adoc[Faker/Traits/SkuFaker]
         
+**** xref:IO/Services/ItemSearch/Factories/Faker/SetComponentIdFaker.adoc[Faker/Traits/SetComponentIdFaker]
+        
 **** xref:IO/Services/ItemSearch/Factories/Faker/SalesPriceFaker.adoc[Faker/Traits/SalesPriceFaker]
         
 **** xref:IO/Services/ItemSearch/Factories/Faker/PropertyFaker.adoc[Faker/Traits/PropertyFaker]
@@ -281,7 +285,7 @@
         
 *** xref:IO/Services/AuthenticationService.adoc[AuthenticationService]
         
-*** xref:IO/Services/PropertyFileService.adoc[PropertyFileService]
+*** xref:IO/Services/SalesPriceService.adoc[SalesPriceService]
         
 *** xref:IO/Services/OrderService.adoc[OrderService]
         
@@ -293,9 +297,11 @@
         
 *** xref:IO/Services/PriceDetectService.adoc[PriceDetectService]
         
+*** xref:IO/Services/PropertyFileService.adoc[PropertyFileService]
+        
 *** xref:IO/Services/SessionStorageService.adoc[SessionStorageService]
         
-*** xref:IO/Services/SalesPriceService.adoc[SalesPriceService]
+*** xref:IO/Services/SeoService.adoc[SeoService]
         
 *** xref:IO/Services/LocalizationService.adoc[LocalizationService]
         
@@ -331,6 +337,8 @@
         
 *** xref:IO/Services/ContactMailService.adoc[ContactMailService]
         
+*** xref:IO/Services/ContactMapService.adoc[ContactMapService]
+        
 *** xref:IO/Services/CountryService.adoc[CountryService]
         
 *** xref:IO/Services/CouponService.adoc[CouponService]
@@ -350,6 +358,8 @@
 *** xref:IO/Services/ItemLastSeenService.adoc[ItemLastSeenService]
         
 *** xref:IO/Services/ItemListService.adoc[ItemListService]
+        
+*** xref:IO/Services/ItemSearchAutocompleteService.adoc[ItemSearchAutocompleteService]
         
 *** xref:IO/Services/ItemService.adoc[ItemService]
         
@@ -725,14 +735,18 @@
         
 *** xref:IO/Constants/ShippingCountry.adoc[ShippingCountry]
         
+                                    ** Config
+                        
+*** xref:IO/Config/IOConfig.adoc[IOConfig]
+        
+*** xref:IO/Config/IONumberFormatConfig.adoc[IONumberFormatConfig]
+        
                                     ** Validators
                                                     *** Customer
                         
 **** xref:IO/Validators/Customer/AddressValidator.adoc[AddressValidator]
         
 **** xref:IO/Validators/Customer/ContactFormValidator.adoc[ContactFormValidator]
-        
-**** xref:IO/Validators/Customer/ContactValidator.adoc[ContactValidator]
         
         
         

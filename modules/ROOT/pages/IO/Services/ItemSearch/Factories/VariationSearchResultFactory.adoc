@@ -26,7 +26,7 @@
     |
 |link:http://php.net/array[array^]
     |MANDATORY_FAKER_MAP
-    |['IO\Services\ItemSearch\Factories\Faker\PriceFaker']
+    |['IO\Services\ItemSearch\Factories\Faker\PriceFaker','IO\Services\ItemSearch\Factories\Faker\SetComponentIdFaker']
     |
 |===
 

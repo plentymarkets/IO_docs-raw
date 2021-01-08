@@ -24,9 +24,6 @@
 | xref:stable7@interface::Order.adoc#order_contracts_countryrepositorycontract[`CountryRepositoryContract`]
     |countryRepository
     |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorageService
-    |
 |link:http://php.net/array[array^]
     |activeCountries
     |
@@ -38,7 +35,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($countryRepository, $sessionStorageService):void
+public __construct($countryRepository):void
 
 ----
 
@@ -55,10 +52,6 @@ CountryService constructor.
 |Type |Name |Description
 | xref:stable7@interface::Order.adoc#order_contracts_countryrepositorycontract[`CountryRepositoryContract`]
 a|`$countryRepository`
-|
-
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-a|`$sessionStorageService`
 |
 |===
 

@@ -21,8 +21,8 @@
 |===
 |Type |Name |Description
 
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorage
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+    |sessionStorageRepository
     |
 | 
     |plentyId
@@ -35,7 +35,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($sessionStorage, $app):void
+public __construct($sessionStorageRepository, $app):void
 
 ----
 
@@ -50,8 +50,8 @@ ItemWishListGuestRepository constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-a|`$sessionStorage`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
 |
 
 | xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]

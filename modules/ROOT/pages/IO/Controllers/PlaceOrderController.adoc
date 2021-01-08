@@ -44,7 +44,7 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 [source%nowrap, php]
 ----
 
-public placeOrder($orderService, $notificationService, $sessionStorageService, $shopUrls):IO\Controllers\Symfony\Component\HttpFoundation\Response
+public placeOrder($orderService, $notificationService, $sessionStorageRepository, $shopUrls):IO\Controllers\Symfony\Component\HttpFoundation\Response
 
 ----
 
@@ -67,8 +67,8 @@ a|`$orderService`
 a|`$notificationService`
 |
 
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-a|`$sessionStorageService`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
 |
 
 |xref:IO/Extensions/Constants/ShopUrls.adoc#[`ShopUrls`]

@@ -21,8 +21,8 @@
 |===
 |Type |Name |Description
 
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorageService
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+    |sessionStorageRepository
     |
 |===
 
@@ -32,7 +32,7 @@
 [source%nowrap, php]
 ----
 
-public __construct($sessionStorageService):void
+public __construct($sessionStorageRepository):void
 
 ----
 
@@ -47,8 +47,8 @@ BasketService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|xref:IO/Services/IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-a|`$sessionStorageService`
+| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
 |
 |===
 

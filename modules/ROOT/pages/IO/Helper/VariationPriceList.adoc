@@ -7,6 +7,13 @@
 
 
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 ===== Namespace
@@ -104,40 +111,68 @@ public __construct():void
 [source%nowrap, php]
 ----
 
-public static create():void
+public static create($variationId, $itemId, $minimumOrderQuantity, $maximumOrderQuantity = null, $lot, $unit = null):IO\Helper\VariationPriceList
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+
+
+
+====== *Return type:*xref:IO/Helper/VariationPriceList.adoc#[`VariationPriceList`]
 
 
 
 
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[int^]
+a|`$variationId`
+|
 
+|link:http://php.net/int[int^]
+a|`$itemId`
+|
 
+|link:http://php.net/int[int^]
+a|`$minimumOrderQuantity`
+|
+
+| null
+a|`$maximumOrderQuantity`
+|
+
+|link:http://php.net/int[int^]
+a|`$lot`
+|
+
+| null
+a|`$unit`
+|
+|===
 
 
 [source%nowrap, php]
 ----
 
-public findPriceForQuantity():void
+public findPriceForQuantity($quantity, $type = self::TYPE_DEFAULT):void
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
 
+since 5.0.0 will be removed in 6.0.0
 
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getGraduatedPrices($showNetPrice = false):void
-
-----
-
+====
 
 
 
@@ -149,7 +184,42 @@ public getGraduatedPrices($showNetPrice = false):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/float[float^]
+a|`$quantity`
+|
+
+|link:http://php.net/string[string^]
+a|`$type`
+|
+|===
+
+
+[source%nowrap, php]
+----
+
+public getGraduatedPrices($showNetPrice = false):array
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
+
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/bool[bool^]
 a|`$showNetPrice`
 |
 |===
@@ -158,25 +228,17 @@ a|`$showNetPrice`
 [source%nowrap, php]
 ----
 
-public getBasePrice():void
+public toArray($quantity = null):array
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
 
+since 5.0.0 will be removed in 6.0.0
 
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public toArray($quantity = null):void
-
-----
-
+====
 
 
 
@@ -188,7 +250,7 @@ public toArray($quantity = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+| null
 a|`$quantity`
 |
 |===
@@ -197,10 +259,17 @@ a|`$quantity`
 [source%nowrap, php]
 ----
 
-public getCalculatedPrices($quantity = null):void
+public getCalculatedPrices($quantity = null):array
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
@@ -212,32 +281,8 @@ public getCalculatedPrices($quantity = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+| null
 a|`$quantity`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public convertCurrency($value):void
-
-----
-
-
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-| 
-a|`$value`
 |
 |===
 
@@ -264,6 +309,13 @@ public getDefaultPrice():void
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+====
 
 
 
