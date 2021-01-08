@@ -1,0 +1,7 @@
+= Plugin IO documentation
+
+This section of the documentation provides a list of the properties and methods used in IO’s PHP classes. The classes are sorted according to the namespaces in which they are used; each namespace lists its classes alphabetically. Only public and protected methods are listed in this section; private methods are not documented.
+
+You can use the version control in the upper right corner to select the IO version you are working with.
+
+Please note that the plugin documentation is not yet comprehensive; we are continuously working on closing the existing documentation gaps.

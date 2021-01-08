@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__unitservice]]
-== UnitService
+= UnitService
 
 
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -50,16 +43,16 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Item.adoc#item_contracts_unitnamerepositorycontract[`UnitNameRepositoryContract`]
     |unitNameRepository
     |
-|
-    |unitRepository
+| 
+    |defaultLang
     |
 |link:http://php.net/array[array^]
     |aMeasureUnits
     |
-|
+| 
     |cache
     |
 |===
@@ -70,11 +63,11 @@ since 5.0.0 will be removed in 6.0.0
 [source%nowrap, php]
 ----
 
-public __construct($unitNameRepository, $unitRepository):void
+public __construct($unitRepository):void
 
 ----
 
-    
+
 
 
 
@@ -85,11 +78,7 @@ UnitService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_unitnamerepositorycontract[`UnitNameRepositoryContract`]
-a|`$unitNameRepository`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_unitrepositorycontract[`UnitRepositoryContract`]
+| xref:stable7@interface::Item.adoc#item_contracts_unitnamerepositorycontract[`UnitNameRepositoryContract`]
 a|`$unitRepository`
 |
 |===
@@ -98,21 +87,14 @@ a|`$unitRepository`
 [source%nowrap, php]
 ----
 
-public getUnitById($unitId, $lang = &quot;de&quot;):IO\Services\UnitName
+public getUnitById($unitId, $lang = &quot;de&quot;):Plenty\Modules\Item\Unit\Models\UnitName
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_unitname[`UnitName`]
+
+====== *Return type:* xref:stable7@interface::Item.adoc#item_models_unitname[`UnitName`]
 
 
 Get the unit by ID
@@ -133,36 +115,16 @@ a|`$lang`
 [source%nowrap, php]
 ----
 
-public getUnitNameByKey($unitKey, $lang = null):void
+public getUnitNameByKey():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
 
 
 
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$unitKey`
-|
-
-|
-a|`$lang`
-|
-|===
 
 
 [source%nowrap, php]
@@ -172,14 +134,7 @@ public static isValidUnit($sUnit):bool
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -203,14 +158,7 @@ public static getHTML4Unit($sUnit = &quot;SMM&quot;):string
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -234,7 +182,7 @@ public fromMemoryCache():void
 
 ----
 
-    
+
 
 
 
@@ -249,7 +197,7 @@ public resetMemoryCache($key = null):void
 
 ----
 
-    
+
 
 
 
@@ -260,7 +208,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$key`
 |
 |===

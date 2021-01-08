@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemwishlist]]
-== ItemWishList
+= ItemWishList
 
 
 
@@ -13,7 +13,11 @@
 
 `IO\DBModels`
 
+===== Extends
+xref:stable7@interface::Plugin.adoc#plugin_contracts_model[`Model`]
 
+===== Implements
+JsonSerializable
 
 
 .Constants
@@ -63,22 +67,22 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |id
     |
-|
+| 
     |variationId
     |
-|
+| 
     |contactId
     |
-|
+| 
     |plentyId
     |
-|
+| 
     |quantity
     |
-|
+| 
     |createdAt
     |
 |===
@@ -93,7 +97,7 @@ public getTableName():string
 
 ----
 
-    
+
 
 
 
@@ -108,7 +112,7 @@ public jsonSerialize():void
 
 ----
 
-    
+
 
 
 
@@ -123,7 +127,7 @@ public fillByAttributes($attributes):void
 
 ----
 
-    
+
 
 
 
@@ -134,32 +138,8 @@ public fillByAttributes($attributes):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$attributes`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getVarRef($varName):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$varName`
 |
 |===
 

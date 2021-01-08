@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__vatconverter]]
-== VatConverter
+= VatConverter
 
 
 
@@ -21,7 +21,7 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
     |vatRepo
     |
 |===
@@ -36,7 +36,7 @@ public __construct($vatRepo):void
 
 ----
 
-    
+
 
 
 
@@ -47,7 +47,7 @@ VatConverter constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_helper_vatrepositorycontract[`VatRepositoryContract`]
+| xref:stable7@interface::Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
 a|`$vatRepo`
 |
 |===
@@ -60,7 +60,7 @@ public getDefaultVat():void
 
 ----
 
-    
+
 
 
 
@@ -75,7 +75,7 @@ public convertToGross($amount):void
 
 ----
 
-    
+
 
 
 

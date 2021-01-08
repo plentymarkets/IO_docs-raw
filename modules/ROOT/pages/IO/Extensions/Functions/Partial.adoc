@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__partial]]
-== Partial
+= Partial
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Extensions\Functions`
 
+===== Extends
+xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 
 
 
@@ -21,10 +23,10 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |partial
     |
-|
+| 
     |map
     |
 |===
@@ -39,7 +41,7 @@ public construct():void
 
 ----
 
-    
+
 
 
 
@@ -54,7 +56,7 @@ public set():void
 
 ----
 
-    
+
 
 
 
@@ -69,7 +71,7 @@ public getTemplate($key):void
 
 ----
 
-    
+
 
 
 
@@ -80,7 +82,7 @@ public getTemplate($key):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$key`
 |
 |===
@@ -93,7 +95,7 @@ public getFunctions():array
 
 ----
 
-    
+
 
 
 
@@ -108,7 +110,7 @@ public getPartial($key):void
 
 ----
 
-    
+
 
 
 
@@ -119,7 +121,7 @@ public getPartial($key):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$key`
 |
 |===

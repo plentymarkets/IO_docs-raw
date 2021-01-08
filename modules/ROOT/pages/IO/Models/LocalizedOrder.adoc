@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__localizedorder]]
-== LocalizedOrder
+= LocalizedOrder
 
 
 
@@ -13,7 +13,16 @@
 
 `IO\Models`
 
+===== Extends
+xref:IO/Models/ModelWrapper.adoc#[`ModelWrapper`]
 
+===== Implements
+Arrayable
+ArrayAccess
+Jsonable
+JsonSerializable
+QueueableEntity
+UrlRoutable
 
 
 .Constants
@@ -22,7 +31,7 @@
 
 |link:http://php.net/array[array^]
     |WRAPPED_ORDERITEM_TYPES
-    |[1,2,3,4,5,6,9,13,14]
+    |[1,2,3,4,5,6,9]
     |
 |link:http://php.net/string[string^]
     |CREATED_AT
@@ -39,58 +48,58 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
     |order
     |
-|
+| 
     |orderData
     |
-|
+| 
     |status
     |
-|
+| 
     |shippingProvider
     |
-|
+| 
     |shippingProfileName
     |
-|
+| 
     |shippingProfileId
     |
-|
+| 
     |trackingURL
     |
-|
+| 
     |paymentMethodName
     |
-|
+| 
     |paymentMethodIcon
     |
-|
+| 
     |paymentStatus
     |
-|
+| 
     |variations
     |
-|
+| 
     |itemURLs
     |
-|
+| 
     |itemImages
     |
-|
+| 
     |isReturnable
     |
-|
+| 
     |highlightNetPrices
     |
-|
+| 
     |totals
     |
-|
+| 
     |allowPaymentMethodSwitchFrom
     |
-|
+| 
     |paymentMethodListForSwitch
     |
 |===
@@ -105,10 +114,10 @@ public static wrap($order, $data):IO\Models\LocalizedOrder
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_localizedorder[`LocalizedOrder`]
+
+====== *Return type:*xref:IO/Models/LocalizedOrder.adoc#[`LocalizedOrder`]
 
 
 
@@ -116,7 +125,7 @@ public static wrap($order, $data):IO\Models\LocalizedOrder
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_models_order[`Order`]
+| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
 a|`$order`
 |
 
@@ -133,7 +142,7 @@ public toArray():array
 
 ----
 
-    
+
 
 
 
@@ -148,39 +157,11 @@ public isReturnable():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public static filterSetComponents($setOrderItemId, $orderItems):array
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$setOrderItemId`
-|
-
-|link:http://php.net/array[array^]
-a|`$orderItems`
-|
-|===
 
 

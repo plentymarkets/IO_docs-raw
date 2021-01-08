@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemparamsbuilder]]
-== ItemParamsBuilder
+= ItemParamsBuilder
 
 
 
@@ -36,10 +36,10 @@ public withParam($paramName, $paramValue):IO\Builder\Item\ItemParamsBuilder
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemparamsbuilder[`ItemParamsBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemParamsBuilder.adoc#[`ItemParamsBuilder`]
 
 
 Set a parameter value
@@ -47,11 +47,11 @@ Set a parameter value
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnsparams[`ItemColumnsParams`]
+|xref:IO/Builder/Item/Params/ItemColumnsParams.adoc#[`ItemColumnsParams`]
 a|`$paramName`
 |The name of the param to set.
 
-|
+| 
 a|`$paramValue`
 |The value of the param to set.
 |===
@@ -64,7 +64,7 @@ public build():array
 
 ----
 
-    
+
 
 
 

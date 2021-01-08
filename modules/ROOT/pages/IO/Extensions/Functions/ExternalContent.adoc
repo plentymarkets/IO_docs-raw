@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__externalcontent]]
-== ExternalContent
+= ExternalContent
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Extensions\Functions`
 
+===== Extends
+xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 
 
 
@@ -27,7 +29,7 @@ public getFunctions():array
 
 ----
 
-    
+
 
 
 
@@ -42,7 +44,7 @@ public getExternalContent($url):array
 
 ----
 
-    
+
 
 
 

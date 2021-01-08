@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__urlquery]]
-== UrlQuery
+= UrlQuery
 
 
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -28,13 +21,13 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-|
+| 
     |domain
     |
-|
+| 
     |path
     |
-|
+| 
     |lang
     |
 |===
@@ -45,18 +38,11 @@ since 5.0.0 will be removed in 6.0.0
 [source%nowrap, php]
 ----
 
-public static shouldAppendTrailingSlash():bool
+public static shouldAppendTrailingSlash():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -67,49 +53,29 @@ since 5.0.0 will be removed in 6.0.0
 [source%nowrap, php]
 ----
 
-public __construct($path = null, $lang = null):void
+public __construct():void
 
 ----
 
-    
 
 
 
 
 
-UrlQuery constructor.
 
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$path`
-|
-
-|link:http://php.net/string[string^]
-a|`$lang`
-|
-|===
 
 
 [source%nowrap, php]
 ----
 
-public append($suffix):IO\Services\UrlBuilder\UrlQuery
+public append($suffix):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_urlquery[`UrlQuery`]
+
+
 
 
 
@@ -117,7 +83,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+| 
 a|`$suffix`
 |
 |===
@@ -126,21 +92,14 @@ a|`$suffix`
 [source%nowrap, php]
 ----
 
-public join($path):IO\Services\UrlBuilder\UrlQuery
+public join($path):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_urlquery[`UrlQuery`]
+
+
 
 
 
@@ -148,7 +107,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+| 
 a|`$path`
 |
 |===
@@ -157,18 +116,11 @@ a|`$path`
 [source%nowrap, php]
 ----
 
-public toAbsoluteUrl($includeLanguage = false):string
+public toAbsoluteUrl($includeLanguage = false):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -179,7 +131,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+| 
 a|`$includeLanguage`
 |
 |===
@@ -188,18 +140,11 @@ a|`$includeLanguage`
 [source%nowrap, php]
 ----
 
-public toRelativeUrl($includeLanguage = false):string
+public toRelativeUrl($includeLanguage = false):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -210,7 +155,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+| 
 a|`$includeLanguage`
 |
 |===
@@ -223,14 +168,7 @@ public getPath($includeLanguage = false):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -241,7 +179,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+| 
 a|`$includeLanguage`
 |
 |===
@@ -250,18 +188,11 @@ a|`$includeLanguage`
 [source%nowrap, php]
 ----
 
-public equals($path):bool
+public equals($path):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -272,7 +203,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+| 
 a|`$path`
 |
 |===

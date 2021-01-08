@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__orderbuilder]]
-== OrderBuilder
+= OrderBuilder
 
 
 
@@ -21,10 +21,10 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
     |app
     |
-|
+|xref:IO/Services/BasketService.adoc#[`BasketService`]
     |basketService
     |
 |===
@@ -39,7 +39,7 @@ public __construct():void
 
 ----
 
-    
+
 
 
 
@@ -54,7 +54,7 @@ public prepare():void
 
 ----
 
-    
+
 
 
 

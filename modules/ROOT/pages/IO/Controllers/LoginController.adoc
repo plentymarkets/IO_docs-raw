@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__logincontroller]]
-== LoginController
+= LoginController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -21,7 +23,7 @@
 |===
 |Type |Name |Description
 
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -32,11 +34,11 @@
 [source%nowrap, php]
 ----
 
-public showLogin($contactRepository):string
+public showLogin($customerService):string
 
 ----
 
-    
+
 
 
 
@@ -47,8 +49,8 @@ Prepare and render the data for the login
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_controllers_contactrepositorycontract[`ContactRepositoryContract`]
-a|`$contactRepository`
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
 |
 |===
 
@@ -60,35 +62,11 @@ public redirect():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Controllers\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
-|
-|===
 
 

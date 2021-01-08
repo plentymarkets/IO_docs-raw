@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__confirmationemailcontroller]]
-== ConfirmationEmailController
+= ConfirmationEmailController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -27,7 +29,7 @@ public showConfirmation():string
 
 ----
 
-    
+
 
 
 

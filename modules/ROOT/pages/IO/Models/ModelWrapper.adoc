@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__modelwrapper]]
-== ModelWrapper
+= ModelWrapper
 
 
 
@@ -13,7 +13,16 @@
 
 `IO\Models`
 
+===== Extends
+Model
 
+===== Implements
+UrlRoutable
+QueueableEntity
+JsonSerializable
+Jsonable
+ArrayAccess
+Arrayable
 
 
 .Constants
@@ -41,7 +50,7 @@ public static wrap($original, $args):void
 
 ----
 
-    
+
 
 
 
@@ -52,7 +61,7 @@ public static wrap($original, $args):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$original`
 |
 
@@ -69,7 +78,7 @@ public static wrapList($elements, $args):array
 
 ----
 
-    
+
 
 
 
@@ -80,7 +89,7 @@ public static wrapList($elements, $args):array
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$elements`
 |
 
@@ -93,14 +102,14 @@ a|`$args`
 [source%nowrap, php]
 ----
 
-public static wrapPaginated($paginated, $args):IO\Models\PaginatedResult
+public static wrapPaginated($paginated, $args):Plenty\Repositories\Models\PaginatedResult
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
 
 
 
@@ -108,7 +117,7 @@ public static wrapPaginated($paginated, $args):IO\Models\PaginatedResult
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
 a|`$paginated`
 |
 

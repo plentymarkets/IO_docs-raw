@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__pricefaker]]
-== PriceFaker
+= PriceFaker
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Services\ItemSearch\Factories\Faker`
 
+===== Extends
+xref:IO/Services/ItemSearch/Factories/Faker/AbstractFaker.adoc#[`AbstractFaker`]
 
 
 
@@ -31,13 +33,13 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |currency
     |
-|
+| 
     |showNetPrice
     |
-|
+|xref:IO/Extensions/Filters/NumberFormatFilter.adoc#[`NumberFormatFilter`]
     |numberFormatFilter
     |
 |===
@@ -52,7 +54,7 @@ public fill($data):void
 
 ----
 
-    
+
 
 
 
@@ -63,63 +65,9 @@ public fill($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$data`
 |
 |===
-
-
-[source%nowrap, php]
-----
-
-public makeGraduatedPrices($defaultPrice):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$defaultPrice`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public makePrice():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public makePriceRaw():void
-
-----
-
-    
-
-
-
-
-
 
 

@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__resourcecontainer]]
-== ResourceContainer
+= ResourceContainer
 
 
 
@@ -21,10 +21,10 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |styleTemplates
     |
-|
+| 
     |scriptTemplates
     |
 |===
@@ -39,7 +39,7 @@ public getStyleTemplates():void
 
 ----
 
-    
+
 
 
 
@@ -54,7 +54,7 @@ public addStyleTemplate():void
 
 ----
 
-    
+
 
 
 
@@ -69,7 +69,7 @@ public getScriptTemplates():void
 
 ----
 
-    
+
 
 
 
@@ -84,7 +84,7 @@ public addScriptTemplate():void
 
 ----
 
-    
+
 
 
 

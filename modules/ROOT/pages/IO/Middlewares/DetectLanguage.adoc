@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__detectlanguage]]
-== DetectLanguage
+= DetectLanguage
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Middlewares`
 
+===== Extends
+xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_middleware[`Middleware`]
 
 
 
@@ -31,7 +33,7 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |DETECTED_LANGUAGE
     |
 |===
@@ -46,7 +48,7 @@ public before($request):void
 
 ----
 
-    
+
 
 
 
@@ -57,7 +59,7 @@ public before($request):void
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_middlewares_request[`Request`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_request[`Request`]
 a|`$request`
 |
 |===
@@ -66,14 +68,14 @@ a|`$request`
 [source%nowrap, php]
 ----
 
-public after($request, $response):IO\Middlewares\Response
+public after($request, $response):Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_middlewares_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 
@@ -81,40 +83,12 @@ public after($request, $response):IO\Middlewares\Response
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_middlewares_request[`Request`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_request[`Request`]
 a|`$request`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_middlewares_response[`Response`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 a|`$response`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public setLanguage($language, $webstoreConfig):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$language`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_middlewares_webstoreconfiguration[`WebstoreConfiguration`]
-a|`$webstoreConfig`
 |
 |===
 

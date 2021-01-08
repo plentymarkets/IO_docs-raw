@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__componentcontainer]]
-== ComponentContainer
+= ComponentContainer
 
 Class ComponentContainer
 
@@ -39,7 +39,7 @@ public __construct($originComponentTemplate):void
 
 ----
 
-    
+
 
 
 
@@ -63,7 +63,7 @@ public getOriginComponentTemplate():string
 
 ----
 
-    
+
 
 
 
@@ -78,7 +78,7 @@ public getNewComponentTemplate():string
 
 ----
 
-    
+
 
 
 
@@ -93,10 +93,10 @@ public setNewComponentTemplate($newComponentTemplate):IO\Helper
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_io_helper[`Helper`]
+
+====== *Return type:*xref:IO/Helper.adoc#[`Helper`]
 
 
 

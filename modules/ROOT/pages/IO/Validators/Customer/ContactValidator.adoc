@@ -2,8 +2,8 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-[[io__addressvalidator]]
-= AddressValidator
+[[io__contactvalidator]]
+= ContactValidator
 
 
 

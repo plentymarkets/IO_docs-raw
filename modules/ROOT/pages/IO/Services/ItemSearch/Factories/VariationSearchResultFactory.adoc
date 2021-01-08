@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__variationsearchresultfactory]]
-== VariationSearchResultFactory
+= VariationSearchResultFactory
 
 
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -33,7 +26,7 @@ since 5.0.0 will be deleted in 6.0.0
     |
 |link:http://php.net/array[array^]
     |MANDATORY_FAKER_MAP
-    |['IO\Services\ItemSearch\Factories\Faker\PriceFaker','IO\Services\ItemSearch\Factories\Faker\SetComponentIdFaker']
+    |['IO\Services\ItemSearch\Factories\Faker\PriceFaker']
     |
 |===
 
@@ -48,89 +41,11 @@ public fillSearchResults():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public fillDocument():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public runFaker():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public loadResultFields($fullTemplateName):array
-
-----
-
-    
-
-
-
-
-
-Load the file content from a result field template.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$fullTemplateName`
-|The path of the template to load contents from.
-|===
-
-
-[source%nowrap, php]
-----
-
-public static loadStaticResultFields($fullTemplateName):array
-
-----
-
-    
-
-
-
-
-
-Load the file content from a result field template.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$fullTemplateName`
-|The path of the template to load contents from.
-|===
 
 

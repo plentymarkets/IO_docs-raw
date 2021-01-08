@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__safegetter]]
-== SafeGetter
+= SafeGetter
 
 
 
@@ -27,7 +27,7 @@ public static get($object, $path):void
 
 ----
 
-    
+
 
 
 
@@ -38,7 +38,7 @@ Get a nested property of an object/array.
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$object`
 |The object / array to get the property from
 
@@ -47,34 +47,6 @@ a|`$path`
 |The path of the property (e.g. "path.to.property").
 To query list entries you can pass paths like "list.{id, 5}.name".
 This will query the first list entry having the id '5'
-|===
-
-
-[source%nowrap, php]
-----
-
-public static getField($array = [], $field = &quot;&quot;):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$array`
-|
-
-|link:http://php.net/string[string^]
-a|`$field`
-|
 |===
 
 

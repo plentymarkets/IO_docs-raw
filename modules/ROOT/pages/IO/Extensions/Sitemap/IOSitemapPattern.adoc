@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__iositemappattern]]
-== IOSitemapPattern
+= IOSitemapPattern
 
 
 
@@ -21,7 +21,7 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |contentRoutes
     |
 |===
@@ -36,7 +36,7 @@ public handle($sitemapPattern):void
 
 ----
 
-    
+
 
 
 
@@ -47,7 +47,7 @@ public handle($sitemapPattern):void
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_sitemap_loadsitemappattern[`LoadSitemapPattern`]
+| xref:stable7@interface::Plugin.adoc#plugin_events_loadsitemappattern[`LoadSitemapPattern`]
 a|`$sitemapPattern`
 |
 |===

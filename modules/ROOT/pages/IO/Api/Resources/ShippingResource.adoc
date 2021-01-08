@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__shippingresource]]
-== ShippingResource
+= ShippingResource
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Api\Resources`
 
+===== Extends
+xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 
 
@@ -21,7 +23,7 @@
 |===
 |Type |Name |Description
 
-|
+|xref:IO/Services/ShippingService.adoc#[`ShippingService`]
     |shippingService
     |
 |===
@@ -36,7 +38,7 @@ public __construct($request, $response, $shippingService):void
 
 ----
 
-    
+
 
 
 
@@ -47,15 +49,15 @@ ShippingResource constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_resources_request[`Request`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_request[`Request`]
 a|`$request`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_apiresponse[`ApiResponse`]
+|xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
 a|`$response`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_shippingservice[`ShippingService`]
+|xref:IO/Services/ShippingService.adoc#[`ShippingService`]
 a|`$shippingService`
 |
 |===
@@ -64,14 +66,14 @@ a|`$shippingService`
 [source%nowrap, php]
 ----
 
-public update($shippingProfileId):IO\Api\Resources\Response
+public update($shippingProfileId):Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Set the shipping profile

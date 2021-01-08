@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__couponservice]]
-== CouponService
+= CouponService
 
 
 
@@ -35,16 +35,16 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Order.adoc#order_contracts_couponcampaignrepositorycontract[`CouponCampaignRepositoryContract`]
     |couponCampaignRepository
     |
-|
+| xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
     |basketRepository
     |
-|
+| xref:stable7@interface::Item.adoc#item_contracts_variationcategoryrepositorycontract[`VariationCategoryRepositoryContract`]
     |variationCategoryRepository
     |
-|
+| xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
     |authHelper
     |
 |===
@@ -59,7 +59,7 @@ public __construct($couponCampaignRepository, $basketRepository, $variationCateg
 
 ----
 
-    
+
 
 
 
@@ -70,19 +70,19 @@ CouponService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_couponcampaignrepositorycontract[`CouponCampaignRepositoryContract`]
+| xref:stable7@interface::Order.adoc#order_contracts_couponcampaignrepositorycontract[`CouponCampaignRepositoryContract`]
 a|`$couponCampaignRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_basketrepositorycontract[`BasketRepositoryContract`]
+| xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
 a|`$basketRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_variationcategoryrepositorycontract[`VariationCategoryRepositoryContract`]
+| xref:stable7@interface::Item.adoc#item_contracts_variationcategoryrepositorycontract[`VariationCategoryRepositoryContract`]
 a|`$variationCategoryRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_authhelper[`AuthHelper`]
+| xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
 a|`$authHelper`
 |
 |===
@@ -95,7 +95,7 @@ public setCoupon($couponCode):void
 
 ----
 
-    
+
 
 
 
@@ -106,7 +106,7 @@ public setCoupon($couponCode):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$couponCode`
 |
 |===
@@ -119,7 +119,7 @@ public removeCoupon($code = null):void
 
 ----
 
-    
+
 
 
 
@@ -130,32 +130,8 @@ public removeCoupon($code = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$code`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public checkCoupon($basket):array
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
-a|`$basket`
 |
 |===
 
@@ -167,14 +143,7 @@ public validateBasketItemDelete($basket, $basketItem):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.9. Validation is handled b the plentymarkets core from now.
-
-====
-    
 
 
 
@@ -185,7 +154,7 @@ Validate the basket for the coupon, and remove the coupon if invalid
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
+| xref:stable7@interface::Basket.adoc#basket_models_basket[`Basket`]
 a|`$basket`
 |
 
@@ -202,14 +171,7 @@ public validateBasketItemUpdate($basket, $data, $basketItem):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.9. Validation is handled b the plentymarkets core from now.
-
-====
-    
 
 
 
@@ -220,7 +182,7 @@ Validate the basket for the coupon, and remove the coupon if invalid
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
+| xref:stable7@interface::Basket.adoc#basket_models_basket[`Basket`]
 a|`$basket`
 |
 
@@ -231,183 +193,6 @@ a|`$data`
 |link:http://php.net/array[array^]
 a|`$basketItem`
 |Current basketItem
-|===
-
-
-[source%nowrap, php]
-----
-
-public isCouponMinimalOrderOnUpdate($basket, $data, $basketItem, $campaign):bool
-
-----
-
-    
-
-
-
-
-
-Checks, if the minimal order value is still reached by the new basket
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
-a|`$basket`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
-a|`$data`
-|Pseudo-BasketItem
-
-|link:http://php.net/array[array^]
-a|`$basketItem`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_couponcampaign[`CouponCampaign`]
-a|`$campaign`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public isCouponMinimalOrderOnDelete($basket, $basketItem, $campaign):bool
-
-----
-
-    
-
-
-
-
-
-Checks, if the minimal order value is still reached by the new basket
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
-a|`$basket`
-|
-
-|link:http://php.net/array[array^]
-a|`$basketItem`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_couponcampaign[`CouponCampaign`]
-a|`$campaign`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public isCouponValidForBasketItems($basket, $basketItem, $campaign):bool
-
-----
-
-    
-
-
-
-
-
-Checks if at least one more item in the basket is valid for the coupon
-Validity requires there to be &gt; 1 valid items
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
-a|`$basket`
-|
-
-|link:http://php.net/array[array^]
-a|`$basketItem`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_couponcampaign[`CouponCampaign`]
-a|`$campaign`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getNormalBasketItems($basket, $campaign):array
-
-----
-
-    
-
-
-
-
-
-Get all items in basket, which are NOT associated with the current campaign
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_basket[`Basket`]
-a|`$basket`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_couponcampaign[`CouponCampaign`]
-a|`$campaign`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getCategoryIds($variationId):array
-
-----
-
-    
-
-
-
-
-
-Get the categoryIds of an variationId
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$variationId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public effectsOnShippingCosts($campaign):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$campaign`
-|
 |===
 
 

@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__templatecontainer]]
-== TemplateContainer
+= TemplateContainer
 
 Class TemplateContainer
 
@@ -24,7 +24,7 @@ Class TemplateContainer
 |link:http://php.net/string[string^]
     |template
     |
-|        xref:Miscellaneous.adoc#miscellaneous_array|_closure[`Closure`]
+| 
     |templateData
     |
 |link:http://php.net/string[string^]
@@ -33,7 +33,7 @@ Class TemplateContainer
 |link:http://php.net/string[string^]
     |contextClass
     |
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -48,7 +48,7 @@ public static get():void
 
 ----
 
-    
+
 
 
 
@@ -63,10 +63,10 @@ public setTemplate($template):IO\Helper\TemplateContainer
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_helper_templatecontainer[`TemplateContainer`]
+
+====== *Return type:*xref:IO/Helper/TemplateContainer.adoc#[`TemplateContainer`]
 
 
 Set the layout to use for current request.
@@ -87,7 +87,7 @@ public getTemplate():void
 
 ----
 
-    
+
 
 
 
@@ -102,7 +102,7 @@ public hasTemplate():void
 
 ----
 
-    
+
 
 
 
@@ -117,7 +117,7 @@ public getTemplateData():void
 
 ----
 
-    
+
 
 
 
@@ -132,10 +132,10 @@ public setTemplateData($customData):IO\Helper\TemplateContainer
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_helper_templatecontainer[`TemplateContainer`]
+
+====== *Return type:*xref:IO/Helper/TemplateContainer.adoc#[`TemplateContainer`]
 
 
 Override template data used by LayoutController when rendering a template for current request.
@@ -143,7 +143,7 @@ Override template data used by LayoutController when rendering a template for cu
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$customData`
 |
 |===
@@ -156,7 +156,7 @@ public getTemplateKey():string
 
 ----
 
-    
+
 
 
 
@@ -171,10 +171,10 @@ public setTemplateKey($templateKey):IO\Helper
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_io_helper[`Helper`]
+
+====== *Return type:*xref:IO/Helper.adoc#[`Helper`]
 
 
 
@@ -195,7 +195,7 @@ public setContext($contextClass):void
 
 ----
 
-    
+
 
 
 
@@ -206,7 +206,7 @@ public setContext($contextClass):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$contextClass`
 |
 |===
@@ -219,7 +219,7 @@ public getContext():void
 
 ----
 
-    
+
 
 
 
@@ -234,10 +234,10 @@ public withData($data, $identifier):IO\Helper\TemplateContainer
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_helper_templatecontainer[`TemplateContainer`]
+
+====== *Return type:*xref:IO/Helper/TemplateContainer.adoc#[`TemplateContainer`]
 
 
 Add additional template data to the existing values.
@@ -245,37 +245,13 @@ Add additional template data to the existing values.
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$data`
 |The data to add to map.
 
 |link:http://php.net/string[string^]
 a|`$identifier`
 |An identifying string to access the given data
-|===
-
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Helper\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_helper_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
-|
 |===
 
 

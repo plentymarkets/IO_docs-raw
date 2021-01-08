@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__apiresource]]
-== ApiResource
+= ApiResource
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Api`
 
+===== Extends
+xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_controller[`Controller`]
 
 
 
@@ -21,13 +23,13 @@
 |===
 |Type |Name |Description
 
-|        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+|xref:IO/Api/IO/Api/ApiResponse.adoc#[`ApiResponse`]
     |response
     |
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_request[`Request`]
     |request
     |
-|
+|xref:IO/Api/ResponseCode.adoc#[`ResponseCode`]
     |defaultCode
     |
 |===
@@ -42,7 +44,7 @@ public __construct($request, $response):void
 
 ----
 
-    
+
 
 
 
@@ -53,11 +55,11 @@ ApiResource constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_api_request[`Request`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_request[`Request`]
 a|`$request`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+|xref:IO/Api/IO/Api/ApiResponse.adoc#[`ApiResponse`]
 a|`$response`
 |
 |===
@@ -66,14 +68,14 @@ a|`$response`
 [source%nowrap, php]
 ----
 
-public index():IO\Api\Response
+public index():Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 
@@ -81,14 +83,14 @@ public index():IO\Api\Response
 [source%nowrap, php]
 ----
 
-public store():IO\Api\Response
+public store():Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 
@@ -96,14 +98,14 @@ public store():IO\Api\Response
 [source%nowrap, php]
 ----
 
-public show($selector):IO\Api\Response
+public show($selector):Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 
@@ -120,14 +122,14 @@ a|`$selector`
 [source%nowrap, php]
 ----
 
-public update($selector):IO\Api\Response
+public update($selector):Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 
@@ -144,14 +146,14 @@ a|`$selector`
 [source%nowrap, php]
 ----
 
-public destroy($selector):IO\Api\Response
+public destroy($selector):Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 

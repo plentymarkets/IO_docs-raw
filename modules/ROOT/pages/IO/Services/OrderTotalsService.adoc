@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__ordertotalsservice]]
-== OrderTotalsService
+= OrderTotalsService
 
 
 
@@ -27,7 +27,7 @@ public getAllTotals($order):array
 
 ----
 
-    
+
 
 
 
@@ -38,32 +38,8 @@ Get all order totals which are relevant for the OrderDetails-modal
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_order[`Order`]
+| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
 a|`$order`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getCustomerAmountId($amounts):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$amounts`
 |
 |===
 
@@ -75,7 +51,7 @@ public highlightNetPrices($order):void
 
 ----
 
-    
+
 
 
 
@@ -86,7 +62,7 @@ public highlightNetPrices($order):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$order`
 |
 |===

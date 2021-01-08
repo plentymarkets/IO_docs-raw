@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__authguard]]
-== AuthGuard
+= AuthGuard
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Guards`
 
+===== Extends
+xref:IO/Guards/AbstractGuard.adoc#[`AbstractGuard`]
 
 
 
@@ -27,7 +29,7 @@ public __construct():void
 
 ----
 
-    
+
 
 
 
@@ -42,7 +44,7 @@ public assert():bool
 
 ----
 
-    
+
 
 
 

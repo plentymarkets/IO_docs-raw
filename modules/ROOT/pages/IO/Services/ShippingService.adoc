@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__shippingservice]]
-== ShippingService
+= ShippingService
 
 
 
@@ -21,10 +21,10 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
     |checkout
     |
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -39,7 +39,7 @@ public __construct($checkout):void
 
 ----
 
-    
+
 
 
 
@@ -50,7 +50,7 @@ ShippingService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_checkout[`Checkout`]
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
 a|`$checkout`
 |
 |===
@@ -63,7 +63,7 @@ public setShippingProfileId($shippingProfileId):void
 
 ----
 
-    
+
 
 
 
@@ -87,35 +87,11 @@ public getMaxDeliveryDays():array
 
 ----
 
-    
+
 
 
 
 
 
 Return an array of shipping profile ids as keys and max delivery days as values
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Services\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
-|
-|===
-
 

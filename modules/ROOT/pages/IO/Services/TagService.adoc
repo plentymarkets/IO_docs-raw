@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__tagservice]]
-== TagService
+= TagService
 
 
 
@@ -21,7 +21,7 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Tag.adoc#tag_contracts_tagrepositorycontract[`TagRepositoryContract`]
     |tagRepository
     |
 |===
@@ -36,7 +36,7 @@ public __construct($tagRepository):void
 
 ----
 
-    
+
 
 
 
@@ -47,7 +47,7 @@ TagService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_tagrepositorycontract[`TagRepositoryContract`]
+| xref:stable7@interface::Tag.adoc#tag_contracts_tagrepositorycontract[`TagRepositoryContract`]
 a|`$tagRepository`
 |
 |===
@@ -56,14 +56,14 @@ a|`$tagRepository`
 [source%nowrap, php]
 ----
 
-public getTagById($tagId):IO\Services\Tag
+public getTagById($tagId):Plenty\Modules\Tag\Models\Tag
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_tag[`Tag`]
+
+====== *Return type:* xref:stable7@interface::Tag.adoc#tag_models_tag[`Tag`]
 
 
 Get a tag by its id
@@ -84,7 +84,7 @@ public getTagName($tagId, $lang = null):string
 
 ----
 
-    
+
 
 
 

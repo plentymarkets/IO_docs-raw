@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__pluginconfig]]
-== PluginConfig
+= PluginConfig
 
 
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -28,10 +21,10 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-|
+| 
     |pluginName
     |
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_configrepository[`ConfigRepository`]
     |configRepository
     |
 |===
@@ -46,7 +39,22 @@ public __construct():void
 
 ----
 
-    
+
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public getMultiSelectValue():void
+
+----
+
+
 
 
 
@@ -57,183 +65,60 @@ public __construct():void
 [source%nowrap, php]
 ----
 
-public getMultiSelectValue($key, $possibleValues = [], $default = null):array
+public getTextValue():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
 
 
 
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
-
-|link:http://php.net/array[array^]
-a|`$possibleValues`
-|
-
-|
-a|`$default`
-|
-|===
 
 
 [source%nowrap, php]
 ----
 
-public getTextValue($key, $default = &quot;&quot;, $transformDefault = &quot;&quot;):void
+public getIntegerValue():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
 
 
 
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
-
-|link:http://php.net/string[string^]
-a|`$default`
-|
-
-|link:http://php.net/string[string^]
-a|`$transformDefault`
-|
-|===
 
 
 [source%nowrap, php]
 ----
 
-public getIntegerValue($key, $default):int
+public getBooleanValue():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
 
 
 
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
-
-|link:http://php.net/int[int^]
-a|`$default`
-|
-|===
 
 
 [source%nowrap, php]
 ----
 
-public getBooleanValue($key, $default = false):bool
+public getConfigValue():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
 
 
 
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
-
-|link:http://php.net/bool[bool^]
-a|`$default`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getConfigValue($key, $default = null):void
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
-
-|
-a|`$default`
-|
-|===
 
 

@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__documentcontroller]]
-== DocumentController
+= DocumentController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -23,14 +25,14 @@
 [source%nowrap, php]
 ----
 
-public preview($documentId, $response):IO\Controllers\Response
+public preview($documentId, $response):Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 
@@ -42,7 +44,7 @@ public preview($documentId, $response):IO\Controllers\Response
 a|`$documentId`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_controllers_response[`Response`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 a|`$response`
 |
 |===

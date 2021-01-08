@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__propertyfaker]]
-== PropertyFaker
+= PropertyFaker
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Services\ItemSearch\Factories\Faker`
 
+===== Extends
+xref:IO/Services/ItemSearch/Factories/Faker/AbstractFaker.adoc#[`AbstractFaker`]
 
 
 
@@ -31,7 +33,7 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |isList
     |
 |===
@@ -46,7 +48,7 @@ public fill($data):void
 
 ----
 
-    
+
 
 
 
@@ -57,71 +59,8 @@ public fill($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$data`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public makeProperty():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public makeGroup($groupId):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$groupId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public makeSelection($propertyId):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$propertyId`
 |
 |===
 

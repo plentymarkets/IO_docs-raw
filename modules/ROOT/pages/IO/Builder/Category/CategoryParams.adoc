@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__categoryparams]]
-== CategoryParams
+= CategoryParams
 
 
 
@@ -21,16 +21,16 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |variationShowType
     |
-|
+| 
     |itemsPerPage
     |
-|
+| 
     |orderBy
     |
-|
+| 
     |orderByKey
     |
 |===

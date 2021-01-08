@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__usersession]]
-== UserSession
+= UserSession
 
 
 
@@ -29,7 +29,7 @@ Use AccountService instead
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Frontend.adoc#frontend_services_accountservice[`AccountService`]
     |accountService
     |
 |===
@@ -44,7 +44,7 @@ public __construct($accountService):void
 
 ----
 
-    
+
 
 
 
@@ -55,7 +55,7 @@ UserSession constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_helper_accountservice[`AccountService`]
+| xref:stable7@interface::Frontend.adoc#frontend_services_accountservice[`AccountService`]
 a|`$accountService`
 |
 |===
@@ -76,7 +76,7 @@ since 4.3.0
 Use AccountService::getAccountContactId instead
 
 ====
-    
+
 
 
 
@@ -99,7 +99,7 @@ since 4.3.0
 Use AccountService::getIsAccountLoggedIn instead
 
 ====
-    
+
 
 
 

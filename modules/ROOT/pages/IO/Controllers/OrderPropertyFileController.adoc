@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__orderpropertyfilecontroller]]
-== OrderPropertyFileController
+= OrderPropertyFileController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -27,7 +29,7 @@ public downloadTempFile($hash):void
 
 ----
 
-    
+
 
 
 
@@ -38,7 +40,7 @@ public downloadTempFile($hash):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$hash`
 |
 |===
@@ -51,39 +53,11 @@ public downloadFile():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public download($key, $orderId):IO\Controllers\Response
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_response[`Response`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
-
-|link:http://php.net/int[int^]
-a|`$orderId`
-|
-|===
 
 

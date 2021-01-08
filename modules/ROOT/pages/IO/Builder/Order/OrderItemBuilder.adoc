@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__orderitembuilder]]
-== OrderItemBuilder
+= OrderItemBuilder
 
 
 
@@ -21,26 +21,23 @@
 |===
 |Type |Name |Description
 
-|
+|xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
     |checkoutService
     |
-|
-    |checkoutRepository
-    |
-|
+| xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
     |vatService
     |
-|
+|xref:IO/Extensions/Filters/ItemNameFilter.adoc#[`ItemNameFilter`]
     |itemNameFilter
     |
-|
+| xref:stable7@interface::Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
     |vatRepository
     |
-|
+| xref:stable7@interface::System.adoc#system_contracts_webstorerepositorycontract[`WebstoreRepositoryContract`]
     |webstoreRepository
     |
-|
-    |contactRepository
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+    |customerService
     |
 |===
 
@@ -50,11 +47,11 @@
 [source%nowrap, php]
 ----
 
-public __construct($checkoutService, $vatService, $itemNameFilter, $webstoreRepository, $vatRepository, $contactRepository, $checkoutRepository):void
+public __construct($checkoutService, $vatService, $itemNameFilter, $webstoreRepository, $vatRepository, $customerService):void
 
 ----
 
-    
+
 
 
 
@@ -65,32 +62,28 @@ OrderItemBuilder constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_order_checkoutservice[`CheckoutService`]
+|xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
 a|`$checkoutService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_order_vatservice[`VatService`]
+| xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
 a|`$vatService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_order_itemnamefilter[`ItemNameFilter`]
+|xref:IO/Extensions/Filters/ItemNameFilter.adoc#[`ItemNameFilter`]
 a|`$itemNameFilter`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_order_webstorerepositorycontract[`WebstoreRepositoryContract`]
+| xref:stable7@interface::System.adoc#system_contracts_webstorerepositorycontract[`WebstoreRepositoryContract`]
 a|`$webstoreRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_order_vatrepositorycontract[`VatRepositoryContract`]
+| xref:stable7@interface::Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
 a|`$vatRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_order_contactrepositorycontract[`ContactRepositoryContract`]
-a|`$contactRepository`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_order_checkoutrepositorycontract[`CheckoutRepositoryContract`]
-a|`$checkoutRepository`
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
 |
 |===
 
@@ -102,7 +95,7 @@ public fromBasket($basket, $items):array
 
 ----
 
-    
+
 
 
 
@@ -113,7 +106,7 @@ Add a basket item to the order
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_order_basket[`Basket`]
+| xref:stable7@interface::Basket.adoc#basket_models_basket[`Basket`]
 a|`$basket`
 |
 
@@ -126,35 +119,11 @@ a|`$items`
 [source%nowrap, php]
 ----
 
-public basketItemToOrderItem($basketItem):array
-
-----
-
-    
-
-
-
-
-
-Add a basket item to the order
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$basketItem`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public getVatField($vat, $vatRate):int
 
 ----
 
-    
+
 
 
 
@@ -165,7 +134,7 @@ Get the vat field for the given vat rate.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_order_vat[`Vat`]
+| xref:stable7@interface::Accounting.adoc#accounting_models_vat[`Vat`]
 a|`$vat`
 |The country VAT instance.
 

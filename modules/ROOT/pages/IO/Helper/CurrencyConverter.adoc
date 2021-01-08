@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__currencyconverter]]
-== CurrencyConverter
+= CurrencyConverter
 
 
 
@@ -21,7 +21,7 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
     |currencyExchcangeRepo
     |
 |===
@@ -36,7 +36,7 @@ public __construct($currencyExchangeRepo):void
 
 ----
 
-    
+
 
 
 
@@ -47,7 +47,7 @@ CurrencyConverter constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_helper_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
 a|`$currencyExchangeRepo`
 |
 |===
@@ -60,7 +60,7 @@ public isCurrentCurrencyDefault():bool
 
 ----
 
-    
+
 
 
 
@@ -75,7 +75,7 @@ public getDefaultCurrency():string
 
 ----
 
-    
+
 
 
 
@@ -90,7 +90,7 @@ public getCurrentCurrency():string
 
 ----
 
-    
+
 
 
 
@@ -105,7 +105,7 @@ public convertToDefaultCurrency($amount):float
 
 ----
 
-    
+
 
 
 

@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__singleitem]]
-== SingleItem
+= SingleItem
 
 Search preset for single items
 Available options:
@@ -11,13 +11,6 @@ Available options:
 - variationId:   Variation id to get. If not defined, plugin configuration will be considered if main or child variation should be displayed.
 - setCategory:   Flag indicating if item should be set as current item to be displayed in breadcrumbs
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -25,6 +18,8 @@ since 5.0.0 will be deleted in 6.0.0
 `IO\Services\ItemSearch\SearchPresets`
 
 
+===== Implements
+xref:IO/Services/ItemSearch/SearchPresets/SearchPreset.adoc#[`SearchPreset`]
 
 
 
@@ -38,7 +33,7 @@ public static getSearchFactory($options):void
 
 ----
 
-    
+
 
 
 
@@ -49,7 +44,7 @@ public static getSearchFactory($options):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$options`
 |
 |===

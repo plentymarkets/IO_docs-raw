@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemwishlistguestrepository]]
-== ItemWishListGuestRepository
+= ItemWishListGuestRepository
 
 
 
@@ -21,10 +21,10 @@
 |===
 |Type |Name |Description
 
-|
-    |sessionStorageRepository
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+    |sessionStorage
     |
-|
+| 
     |plentyId
     |
 |===
@@ -35,11 +35,11 @@
 [source%nowrap, php]
 ----
 
-public __construct($sessionStorageRepository, $app):void
+public __construct($sessionStorage, $app):void
 
 ----
 
-    
+
 
 
 
@@ -50,11 +50,11 @@ ItemWishListGuestRepository constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_repositories_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-a|`$sessionStorageRepository`
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorage`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_repositories_application[`Application`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
 a|`$app`
 |
 |===
@@ -67,7 +67,7 @@ public getItemWishList():array
 
 ----
 
-    
+
 
 
 
@@ -82,7 +82,7 @@ public getItemWishListWithData():void
 
 ----
 
-    
+
 
 
 
@@ -97,7 +97,7 @@ public getItemWishListForAllPlentyIds():void
 
 ----
 
-    
+
 
 
 
@@ -112,7 +112,7 @@ public getCountedItemWishList():int
 
 ----
 
-    
+
 
 
 
@@ -127,7 +127,7 @@ public isItemInWishList($variationId):bool
 
 ----
 
-    
+
 
 
 
@@ -151,7 +151,7 @@ public addItemWishListEntry($variationId, $quantity = 1):void
 
 ----
 
-    
+
 
 
 
@@ -179,7 +179,7 @@ public removeItemWishListEntry($variationId):bool
 
 ----
 
-    
+
 
 
 
@@ -203,7 +203,7 @@ public resetItemWishList():void
 
 ----
 
-    
+
 
 
 

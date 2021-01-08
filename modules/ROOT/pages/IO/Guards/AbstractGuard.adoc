@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__abstractguard]]
-== AbstractGuard
+= AbstractGuard
 
 
 
@@ -21,7 +21,7 @@
 |===
 |Type |Name |Description
 
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -36,7 +36,7 @@ public assert():void
 
 ----
 
-    
+
 
 
 
@@ -51,7 +51,7 @@ public assertOrRedirect($expected, $redirectUri):void
 
 ----
 
-    
+
 
 
 
@@ -62,7 +62,7 @@ Redirect to given URI if expected value equals return value of AbstractGuard::as
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$expected`
 |The value to compare with return value of AbstractGuard::asssert()
 
@@ -79,7 +79,7 @@ public static redirect($uri, $params = []):void
 
 ----
 
-    
+
 
 
 
@@ -107,7 +107,7 @@ public static getUrl($uri = null):string
 
 ----
 
-    
+
 
 
 
@@ -120,30 +120,6 @@ Transform a given URI to an URL by prepending used protocol and server name.
 |Type |Name |Description
 |link:http://php.net/string[string^]
 a|`$uri`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Guards\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_guards_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
 |
 |===
 

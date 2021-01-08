@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__arrayhelper]]
-== ArrayHelper
+= ArrayHelper
 
 
 
@@ -23,35 +23,11 @@
 [source%nowrap, php]
 ----
 
-public static toArray($mixed):array
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$mixed`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public static isAssoc($mixed):void
 
 ----
 
-    
+
 
 
 
@@ -62,7 +38,7 @@ public static isAssoc($mixed):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$mixed`
 |
 |===
@@ -75,7 +51,7 @@ public static compare():void
 
 ----
 
-    
+
 
 
 
@@ -90,7 +66,7 @@ public static get():void
 
 ----
 
-    
+
 
 
 
@@ -105,7 +81,7 @@ public static getKeys():void
 
 ----
 
-    
+
 
 
 

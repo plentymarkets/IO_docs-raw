@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__fakerservice]]
-== FakerService
+= FakerService
 
 
 
@@ -27,7 +27,7 @@ public getBasket():void
 
 ----
 
-    
+
 
 
 
@@ -42,7 +42,7 @@ public getFacets():void
 
 ----
 
-    
+
 
 
 
@@ -57,7 +57,7 @@ public getSelectedFacetIds($facets):void
 
 ----
 
-    
+
 
 
 
@@ -68,7 +68,7 @@ public getSelectedFacetIds($facets):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$facets`
 |
 |===

@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemsearchservice]]
-== ItemSearchService
+= ItemSearchService
 
 Execute elastic search requests.
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -28,7 +21,7 @@ since 5.0.0 will be deleted in 6.0.0
 |===
 |Type |Name |Description
 
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -43,14 +36,7 @@ public getResults($searches):array
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
@@ -74,14 +60,7 @@ public getResult($searchFactory):array
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
@@ -92,64 +71,9 @@ Get result of a single search factory;
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_basesearchfactory[`BaseSearchFactory`]
+|xref:IO/Services/ItemSearch/Factories/BaseSearchFactory.adoc#[`BaseSearchFactory`]
 a|`$searchFactory`
 |The factory to get results for.
-|===
-
-
-[source%nowrap, php]
-----
-
-public normalizeResult($result):void
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_itemsearch_services[`Services`]
-a|`$result`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Services\ItemSearch\Services\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
-|
 |===
 
 

@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__categorymap]]
-== CategoryMap
+= CategoryMap
 
 
 
@@ -36,7 +36,7 @@ public __construct($event):void
 
 ----
 
-    
+
 
 
 
@@ -47,7 +47,7 @@ CategoryMap constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_helper_dispatcher[`Dispatcher`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
 a|`$event`
 |
 |===
@@ -60,7 +60,7 @@ public setCategoryMap($categoryMap):void
 
 ----
 
-    
+
 
 
 
@@ -84,7 +84,7 @@ public getID($key):int
 
 ----
 
-    
+
 
 
 

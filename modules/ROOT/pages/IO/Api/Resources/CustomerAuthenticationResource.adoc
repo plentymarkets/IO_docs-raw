@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__customerauthenticationresource]]
-== CustomerAuthenticationResource
+= CustomerAuthenticationResource
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Api\Resources`
 
+===== Extends
+xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 
 
@@ -21,10 +23,10 @@
 |===
 |Type |Name |Description
 
-|
+|xref:IO/Services/AuthenticationService.adoc#[`AuthenticationService`]
     |authService
     |
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -39,7 +41,7 @@ public __construct($request, $response, $authService):void
 
 ----
 
-    
+
 
 
 
@@ -50,15 +52,15 @@ CustomerAuthenticationResource constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_resources_request[`Request`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_request[`Request`]
 a|`$request`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_apiresponse[`ApiResponse`]
+|xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
 a|`$response`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_authenticationservice[`AuthenticationService`]
+|xref:IO/Services/AuthenticationService.adoc#[`AuthenticationService`]
 a|`$authService`
 |
 |===
@@ -67,39 +69,15 @@ a|`$authService`
 [source%nowrap, php]
 ----
 
-public store():IO\Api\Resources\Response
+public store():Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Perform the login with email and password
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Api\Resources\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
-|
-|===
-
 

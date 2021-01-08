@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__pagenotfoundconfigmigration_0_0_1]]
-== PageNotFoundConfigMigration_0_0_1
+= PageNotFoundConfigMigration_0_0_1
 
 
 
@@ -27,7 +27,7 @@ public run($migrate):void
 
 ----
 
-    
+
 
 
 
@@ -38,7 +38,7 @@ public run($migrate):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$migrate`
 |
 |===

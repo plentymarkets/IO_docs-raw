@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__categoryfaker]]
-== CategoryFaker
+= CategoryFaker
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Services\ItemSearch\Factories\Faker`
 
+===== Extends
+xref:IO/Services/ItemSearch/Factories/Faker/AbstractFaker.adoc#[`AbstractFaker`]
 
 
 
@@ -31,7 +33,7 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |types
     |
 |===
@@ -46,7 +48,7 @@ public fill($data):void
 
 ----
 
-    
+
 
 
 
@@ -57,47 +59,8 @@ public fill($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$data`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public makeDetailsEntry():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public makeCategoryDetails($categoryId):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$categoryId`
 |
 |===
 

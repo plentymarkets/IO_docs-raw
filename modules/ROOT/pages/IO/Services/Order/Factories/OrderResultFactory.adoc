@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__orderresultfactory]]
-== OrderResultFactory
+= OrderResultFactory
 
 
 
@@ -41,7 +41,7 @@ public fillOrderResult():void
 
 ----
 
-    
+
 
 
 

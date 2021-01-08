@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__registercontroller]]
-== RegisterController
+= RegisterController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -21,7 +23,7 @@
 |===
 |Type |Name |Description
 
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -32,11 +34,11 @@
 [source%nowrap, php]
 ----
 
-public showRegister($contactRepository, $urlService):string
+public showRegister($customerService, $urlService):string
 
 ----
 
-    
+
 
 
 
@@ -47,11 +49,11 @@ Prepare and render the data for the registration
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_controllers_contactrepositorycontract[`ContactRepositoryContract`]
-a|`$contactRepository`
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_controllers_urlservice[`UrlService`]
+|xref:IO/Services/UrlService.adoc#[`UrlService`]
 a|`$urlService`
 |
 |===
@@ -64,7 +66,7 @@ public redirectRegister($urlService, $shopUrls):string
 
 ----
 
-    
+
 
 
 
@@ -75,11 +77,11 @@ public redirectRegister($urlService, $shopUrls):string
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_controllers_urlservice[`UrlService`]
+|xref:IO/Services/UrlService.adoc#[`UrlService`]
 a|`$urlService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_controllers_shopurls[`ShopUrls`]
+|xref:IO/Extensions/Constants/ShopUrls.adoc#[`ShopUrls`]
 a|`$shopUrls`
 |
 |===
@@ -92,35 +94,11 @@ public redirect():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Controllers\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
-|
-|===
 
 

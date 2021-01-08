@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__categorytype]]
-== CategoryType
+= CategoryType
 
 
 

@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__contactbankservice]]
-== ContactBankService
+= ContactBankService
 
 
 
@@ -21,7 +21,7 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |contactPaymentRepository
     |
 |===
@@ -36,7 +36,7 @@ public __construct($contactPaymentRepository):void
 
 ----
 
-    
+
 
 
 
@@ -47,7 +47,7 @@ public __construct($contactPaymentRepository):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$contactPaymentRepository`
 |
 |===
@@ -60,7 +60,7 @@ public getBanksOfContact():void
 
 ----
 
-    
+
 
 
 
@@ -75,7 +75,7 @@ public createContactBank($data):void
 
 ----
 
-    
+
 
 
 
@@ -86,7 +86,7 @@ public createContactBank($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$data`
 |
 |===
@@ -99,7 +99,7 @@ public updateContactBank():void
 
 ----
 
-    
+
 
 
 
@@ -114,7 +114,7 @@ public deleteContactBank($contactBankId):void
 
 ----
 
-    
+
 
 
 
@@ -125,7 +125,7 @@ public deleteContactBank($contactBankId):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$contactBankId`
 |
 |===
@@ -138,7 +138,7 @@ public findContactBankById($contactBankId):void
 
 ----
 
-    
+
 
 
 
@@ -149,7 +149,7 @@ public findContactBankById($contactBankId):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$contactBankId`
 |
 |===

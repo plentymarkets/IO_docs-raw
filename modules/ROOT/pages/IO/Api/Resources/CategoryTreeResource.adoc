@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__categorytreeresource]]
-== CategoryTreeResource
+= CategoryTreeResource
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Api\Resources`
 
+===== Extends
+xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 
 
@@ -21,13 +23,13 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |categoryService
     |
-|
+| 
     |customerService
     |
-|
+| 
     |sessionStorageService
     |
 |===
@@ -42,7 +44,7 @@ public __construct($request, $response, $categoryService, $customerService, $ses
 
 ----
 
-    
+
 
 
 
@@ -53,23 +55,23 @@ CategoryTreeResource constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_resources_request[`Request`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_request[`Request`]
 a|`$request`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_apiresponse[`ApiResponse`]
+|xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
 a|`$response`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_categoryservice[`CategoryService`]
+|xref:IO/Services/CategoryService.adoc#[`CategoryService`]
 a|`$categoryService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_customerservice[`CustomerService`]
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
 a|`$customerService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_sessionstorageservice[`SessionStorageService`]
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
 a|`$sessionStorageService`
 |
 |===
@@ -78,14 +80,14 @@ a|`$sessionStorageService`
 [source%nowrap, php]
 ----
 
-public index():IO\Api\Resources\Response
+public index():Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Get Category Items
@@ -97,7 +99,7 @@ public getChildren():void
 
 ----
 
-    
+
 
 
 
@@ -112,22 +114,7 @@ public getTemplateForChildren():void
 
 ----
 
-    
 
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public findInTree():void
-
-----
-
-    
 
 
 

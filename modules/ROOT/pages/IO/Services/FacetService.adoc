@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__facetservice]]
-== FacetService
+= FacetService
 
 
 
@@ -27,7 +27,7 @@ public facetDataExists($facets, $type):bool
 
 ----
 
-    
+
 
 
 

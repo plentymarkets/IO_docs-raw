@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__checkoutservice]]
-== CheckoutService
+= CheckoutService
 
 
 
@@ -21,46 +21,40 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
     |frontendPaymentMethodRepository
     |
-|
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
     |checkout
     |
-|
+| xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
     |basketRepository
     |
-|
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
     |sessionStorage
     |
-|
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
     |customerService
     |
-|
+| xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
     |parcelServicePresetRepo
     |
-|
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
     |currencyExchangeRepo
     |
-|
+|xref:IO/Services/BasketService.adoc#[`BasketService`]
     |basketService
     |
-|
-    |sessionStorageRepository
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+    |sessionStorageService
     |
-|
-    |webstoreConfigurationRepository
+|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
+    |webstoreConfigurationService
     |
-|
-    |checkoutRepository
-    |
-|
-    |contactRepository
-    |
-|
+| 
     |cache
     |
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -71,11 +65,11 @@
 [source%nowrap, php]
 ----
 
-public __construct($frontendPaymentMethodRepository, $checkout, $basketRepository, $sessionStorage, $customerService, $parcelServicePresetRepo, $currencyExchangeRepo, $basketService, $sessionStorageRepository, $webstoreConfigurationRepository, $dispatcher, $checkoutRepository, $contactRepository):void
+public __construct($frontendPaymentMethodRepository, $checkout, $basketRepository, $sessionStorage, $customerService, $parcelServicePresetRepo, $currencyExchangeRepo, $basketService, $sessionStorageService, $webstoreConfigurationService):void
 
 ----
 
-    
+
 
 
 
@@ -86,56 +80,44 @@ CheckoutService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
 a|`$frontendPaymentMethodRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_checkout[`Checkout`]
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
 a|`$checkout`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_basketrepositorycontract[`BasketRepositoryContract`]
+| xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
 a|`$basketRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
 a|`$sessionStorage`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_customerservice[`CustomerService`]
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
 a|`$customerService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
+| xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
 a|`$parcelServicePresetRepo`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
 a|`$currencyExchangeRepo`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_basketservice[`BasketService`]
+|xref:IO/Services/BasketService.adoc#[`BasketService`]
 a|`$basketService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-a|`$sessionStorageRepository`
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorageService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
-a|`$webstoreConfigurationRepository`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_dispatcher[`Dispatcher`]
-a|`$dispatcher`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_checkoutrepositorycontract[`CheckoutRepositoryContract`]
-a|`$checkoutRepository`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_contactrepositorycontract[`ContactRepositoryContract`]
-a|`$contactRepository`
+|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
+a|`$webstoreConfigurationService`
 |
 |===
 
@@ -147,13 +129,13 @@ public getCheckout($retry = true):array
 
 ----
 
-    
 
 
 
 
 
-Get the relevant data for the checkout.
+
+Get the relevant data for the checkout
 
 .*Parameters*
 |===
@@ -171,20 +153,13 @@ public getCurrency():string
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
 
 
-Get the current currency from the session.
+
+Get the current currency from the session
 
 [source%nowrap, php]
 ----
@@ -193,27 +168,20 @@ public setCurrency($currency):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
 
 
-Set the current currency in the session.
+
+Set the current currency from the session
 
 .*Parameters*
 |===
 |Type |Name |Description
 |link:http://php.net/string[string^]
 a|`$currency`
-|The currency to be used.
+|
 |===
 
 
@@ -224,7 +192,7 @@ public getCurrencyList():void
 
 ----
 
-    
+
 
 
 
@@ -239,28 +207,28 @@ public getCurrencyData():void
 
 ----
 
-    
 
 
 
 
 
-Get the name and the symbol for the currently selected currency.
+
+
 
 [source%nowrap, php]
 ----
 
-public getCurrencyPattern():array
+public getCurrencyPattern():void
 
 ----
 
-    
 
 
 
 
 
-Get all required information about how to display monetary values.
+
+
 
 [source%nowrap, php]
 ----
@@ -269,13 +237,13 @@ public getMethodOfPaymentId():int
 
 ----
 
-    
 
 
 
 
 
-Get the ID of the current payment method.
+
+Get the ID of the current payment method
 
 [source%nowrap, php]
 ----
@@ -284,20 +252,20 @@ public setMethodOfPaymentId($methodOfPaymentID):void
 
 ----
 
-    
 
 
 
 
 
-Set the ID of the current payment method.
+
+Set the ID of the current payment method
 
 .*Parameters*
 |===
 |Type |Name |Description
 |link:http://php.net/int[int^]
 a|`$methodOfPaymentID`
-|Id of the method of payment to be used.
+|
 |===
 
 
@@ -308,13 +276,13 @@ public preparePayment():array
 
 ----
 
-    
 
 
 
 
 
-Prepare the payment.
+
+Prepare the payment
 
 [source%nowrap, php]
 ----
@@ -323,13 +291,13 @@ public getMethodOfPaymentList():array
 
 ----
 
-    
 
 
 
 
 
-List all available payment methods.
+
+List all available payment methods
 
 [source%nowrap, php]
 ----
@@ -338,13 +306,13 @@ public getMethodOfPaymentExpressCheckoutList():array
 
 ----
 
-    
 
 
 
 
 
-List all payment methods available for express checkout.
+
+List all payment methods available for express checkout
 
 [source%nowrap, php]
 ----
@@ -353,13 +321,13 @@ public getCheckoutPaymentDataList():array
 
 ----
 
-    
 
 
 
 
 
-Get a list of the payment method data.
+
+Get a list of the payment method data
 
 [source%nowrap, php]
 ----
@@ -368,37 +336,13 @@ public getShippingProfileList():array
 
 ----
 
-    
-
-
-
-
-
-Get the list of available shipping profiles.
-
-[source%nowrap, php]
-----
-
-public filterShippingProfiles($shippingProfilesList):void
-
-----
-
-    
 
 
 
 
 
 
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$shippingProfilesList`
-|
-|===
-
+Get the shipping profile list
 
 [source%nowrap, php]
 ----
@@ -407,14 +351,7 @@ public getShippingCountryId():int
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -429,20 +366,20 @@ public setShippingCountryId($shippingCountryId):void
 
 ----
 
-    
 
 
 
 
 
-Set the id of the current shipping country.
+
+Set the ID of thevcurrent shipping country
 
 .*Parameters*
 |===
 |Type |Name |Description
 |link:http://php.net/int[int^]
 a|`$shippingCountryId`
-|Id of the shipping country to select.
+|
 |===
 
 
@@ -453,13 +390,13 @@ public getShippingProfileId():int
 
 ----
 
-    
 
 
 
 
 
-Get the ID of the current shipping profile.
+
+Get the ID of the current shipping profile
 
 [source%nowrap, php]
 ----
@@ -468,20 +405,20 @@ public setShippingProfileId($shippingProfileId):void
 
 ----
 
-    
 
 
 
 
 
-Set the ID of the current shipping profile.
+
+Set the ID of the current shipping profile
 
 .*Parameters*
 |===
 |Type |Name |Description
 |link:http://php.net/int[int^]
 a|`$shippingProfileId`
-|Id of the shipping profile to select.
+|
 |===
 
 
@@ -492,13 +429,13 @@ public getDeliveryAddressId():int
 
 ----
 
-    
 
 
 
 
 
-Get the ID of the current delivery address.
+
+Get the ID of the current delivery address
 
 [source%nowrap, php]
 ----
@@ -507,20 +444,20 @@ public setDeliveryAddressId($deliveryAddressId):void
 
 ----
 
-    
 
 
 
 
 
-Set the ID of the current delivery address.
+
+Set the ID of the current delivery address
 
 .*Parameters*
 |===
 |Type |Name |Description
 |link:http://php.net/int[int^]
 a|`$deliveryAddressId`
-|Id of the address to be used as delivery address when creating an order.
+|
 |===
 
 
@@ -531,13 +468,13 @@ public getBillingAddressId():int
 
 ----
 
-    
 
 
 
 
 
-Get the ID of the current invoice address.
+
+Get the ID of the current invoice address
 
 [source%nowrap, php]
 ----
@@ -546,20 +483,20 @@ public setBillingAddressId($billingAddressId):void
 
 ----
 
-    
 
 
 
 
 
-Set the ID of the current invoice address.
+
+Set the ID of the current invoice address
 
 .*Parameters*
 |===
 |Type |Name |Description
 |link:http://php.net/int[int^]
 a|`$billingAddressId`
-|Id of the address to be used as billing address when creating an order.
+|
 |===
 
 
@@ -570,28 +507,28 @@ public setDefaultShippingCountryId():void
 
 ----
 
-    
 
 
 
 
 
-Reset the current shipping country to the default defined in the webstore configuration.
+
+
 
 [source%nowrap, php]
 ----
 
-public getMaxDeliveryDays():array
+public getMaxDeliveryDays():void
 
 ----
 
-    
 
 
 
 
 
-Get the maximum days of delivery for each shipping profile.
+
+
 
 [source%nowrap, php]
 ----
@@ -600,52 +537,37 @@ public setReadOnlyCheckout($readonly):void
 
 ----
 
-    
 
 
 
 
 
-Set the checkout to be readonly.
+
+
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+| 
 a|`$readonly`
-|Enable/disable readonly mode for checkout.
+|
 |===
 
 
 [source%nowrap, php]
 ----
 
-public getReadOnlyCheckout():bool
+public getReadOnlyCheckout():void
 
 ----
 
-    
 
 
 
 
 
-Check if checkout should display data from external checkout processes in readonly mode.
-
-[source%nowrap, php]
-----
-
-public getContactWish():string
-
-----
-
-    
 
 
-
-
-
-Returns the given contact wish from session.
 
 [source%nowrap, php]
 ----
@@ -654,7 +576,7 @@ public fromMemoryCache():void
 
 ----
 
-    
+
 
 
 
@@ -669,7 +591,7 @@ public resetMemoryCache($key = null):void
 
 ----
 
-    
+
 
 
 
@@ -680,32 +602,8 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$key`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Services\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
 |
 |===
 

@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__categoryurlbuilder]]
-== CategoryUrlBuilder
+= CategoryUrlBuilder
 
 
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -28,7 +21,7 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -39,78 +32,15 @@ since 5.0.0 will be removed in 6.0.0
 [source%nowrap, php]
 ----
 
-public buildUrl($categoryId, $lang = null, $webstoreId = null):IO\Services\UrlBuilder\UrlQuery
+public buildUrl():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_urlquery[`UrlQuery`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$categoryId`
-|
-
-|link:http://php.net/string[string^]
-a|`$lang`
-|
-
-|link:http://php.net/int[int^]
-a|`$webstoreId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public buildUrlQuery():void
-
-----
-
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Services\UrlBuilder\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
-|
-|===
 
 

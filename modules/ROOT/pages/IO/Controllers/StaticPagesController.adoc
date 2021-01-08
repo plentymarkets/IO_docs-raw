@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__staticpagescontroller]]
-== StaticPagesController
+= StaticPagesController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -27,7 +29,7 @@ public showCancellationRights():string
 
 ----
 
-    
+
 
 
 
@@ -42,7 +44,7 @@ public redirectCancellationRights():void
 
 ----
 
-    
+
 
 
 
@@ -57,7 +59,7 @@ public showCancellationForm():string
 
 ----
 
-    
+
 
 
 
@@ -72,7 +74,7 @@ public redirectCancellationForm():void
 
 ----
 
-    
+
 
 
 
@@ -87,7 +89,7 @@ public showLegalDisclosure():string
 
 ----
 
-    
+
 
 
 
@@ -102,7 +104,7 @@ public redirectLegalDisclosure():void
 
 ----
 
-    
+
 
 
 
@@ -117,7 +119,7 @@ public showPrivacyPolicy():string
 
 ----
 
-    
+
 
 
 
@@ -132,7 +134,7 @@ public redirectPrivacyPolicy():void
 
 ----
 
-    
+
 
 
 
@@ -147,7 +149,7 @@ public showTermsAndConditions():string
 
 ----
 
-    
+
 
 
 
@@ -162,7 +164,7 @@ public redirectTermsAndConditions():void
 
 ----
 
-    
+
 
 
 
@@ -177,7 +179,7 @@ public showPageNotFound():string
 
 ----
 
-    
+
 
 
 
@@ -192,35 +194,11 @@ public redirectPageNotFound():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public redirect($route):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$route`
-|
-|===
 
 

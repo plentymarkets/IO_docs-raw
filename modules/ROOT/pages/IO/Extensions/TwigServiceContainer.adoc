@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__twigservicecontainer]]
-== TwigServiceContainer
+= TwigServiceContainer
 
 
 
@@ -27,7 +27,7 @@ public getAvailability():void
 
 ----
 
-    
+
 
 
 
@@ -42,7 +42,7 @@ public getBasket():void
 
 ----
 
-    
+
 
 
 
@@ -57,7 +57,7 @@ public getCategory():void
 
 ----
 
-    
+
 
 
 
@@ -72,7 +72,7 @@ public getCheckout():void
 
 ----
 
-    
+
 
 
 
@@ -87,7 +87,7 @@ public getCountry():void
 
 ----
 
-    
+
 
 
 
@@ -102,7 +102,7 @@ public getCustomer():void
 
 ----
 
-    
+
 
 
 
@@ -117,7 +117,7 @@ public getItem():void
 
 ----
 
-    
+
 
 
 
@@ -132,7 +132,7 @@ public getItemList():void
 
 ----
 
-    
+
 
 
 
@@ -147,22 +147,7 @@ public getOrder():void
 
 ----
 
-    
 
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getSessionStorageRepository():void
-
-----
-
-    
 
 
 
@@ -177,7 +162,7 @@ public getSessionStorage():void
 
 ----
 
-    
+
 
 
 
@@ -192,7 +177,7 @@ public getUnit():void
 
 ----
 
-    
+
 
 
 
@@ -207,7 +192,7 @@ public getContactBank():void
 
 ----
 
-    
+
 
 
 
@@ -222,7 +207,7 @@ public getTag():void
 
 ----
 
-    
+
 
 
 
@@ -237,7 +222,7 @@ public getTemplate():void
 
 ----
 
-    
+
 
 
 
@@ -252,22 +237,7 @@ public getNotifications():void
 
 ----
 
-    
 
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getWebstoreConfigurationRepository():void
-
-----
-
-    
 
 
 
@@ -282,7 +252,7 @@ public getWebstoreConfig():void
 
 ----
 
-    
+
 
 
 
@@ -297,22 +267,7 @@ public getLocalization():void
 
 ----
 
-    
 
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getLocalizationRepository():void
-
-----
-
-    
 
 
 
@@ -327,7 +282,7 @@ public getCoupon():void
 
 ----
 
-    
+
 
 
 
@@ -342,7 +297,7 @@ public getLegalInformation():void
 
 ----
 
-    
+
 
 
 
@@ -357,7 +312,7 @@ public getSalesPrice():void
 
 ----
 
-    
+
 
 
 
@@ -372,7 +327,7 @@ public getLastSeen():void
 
 ----
 
-    
+
 
 
 
@@ -387,7 +342,7 @@ public getCrossSelling():void
 
 ----
 
-    
+
 
 
 
@@ -402,7 +357,7 @@ public getWishList():void
 
 ----
 
-    
+
 
 
 
@@ -417,7 +372,7 @@ public getContactMail():void
 
 ----
 
-    
+
 
 
 
@@ -432,7 +387,7 @@ public getTotalsService():void
 
 ----
 
-    
+
 
 
 
@@ -447,7 +402,7 @@ public getUrl():void
 
 ----
 
-    
+
 
 
 
@@ -462,7 +417,7 @@ public getLiveShopping():void
 
 ----
 
-    
+
 
 
 
@@ -477,7 +432,7 @@ public getAuthentication():void
 
 ----
 
-    
+
 
 
 
@@ -492,7 +447,7 @@ public getUserDataHash():void
 
 ----
 
-    
+
 
 
 
@@ -507,7 +462,7 @@ public getFaker():void
 
 ----
 
-    
+
 
 
 
@@ -522,7 +477,7 @@ public getPropertyFile():void
 
 ----
 
-    
+
 
 
 
@@ -537,52 +492,7 @@ public getFacet():void
 
 ----
 
-    
 
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getContactMap():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getSearchAutocomplete():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getSEO():void
-
-----
-
-    
 
 
 

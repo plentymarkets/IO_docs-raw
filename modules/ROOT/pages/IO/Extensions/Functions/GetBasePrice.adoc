@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__getbaseprice]]
-== GetBasePrice
+= GetBasePrice
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Extensions\Functions`
 
+===== Extends
+xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 
 
 
@@ -21,20 +23,23 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
     |app
     |
-|
+| xref:stable7@interface::Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
     |itemRepository
     |
-|
+|xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
     |columnBuilder
     |
-|
+|xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
     |filterBuilder
     |
-|
+|xref:IO/Builder/Item/ItemParamsBuilder.adoc#[`ItemParamsBuilder`]
     |paramsBuilder
+    |
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+    |sessionStorage
     |
 |===
 
@@ -48,7 +53,7 @@ public __construct($app, $itemRepository, $columnBuilder, $filterBuilder, $param
 
 ----
 
-    
+
 
 
 
@@ -59,23 +64,23 @@ GetBasePrice constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_functions_application[`Application`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
 a|`$app`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_functions_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
+| xref:stable7@interface::Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
 a|`$itemRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_functions_itemcolumnbuilder[`ItemColumnBuilder`]
+|xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 a|`$columnBuilder`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_functions_itemfilterbuilder[`ItemFilterBuilder`]
+|xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 a|`$filterBuilder`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_functions_itemparamsbuilder[`ItemParamsBuilder`]
+|xref:IO/Builder/Item/ItemParamsBuilder.adoc#[`ItemParamsBuilder`]
 a|`$paramsBuilder`
 |
 |===
@@ -88,7 +93,7 @@ public getFunctions():array
 
 ----
 
-    
+
 
 
 
@@ -103,7 +108,7 @@ public getBasePrice($variationId):array
 
 ----
 
-    
+
 
 
 
@@ -127,7 +132,7 @@ public getBasePriceList($variationIds):array
 
 ----
 
-    
+
 
 
 

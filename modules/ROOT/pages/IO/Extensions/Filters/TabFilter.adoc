@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__tabfilter]]
-== TabFilter
+= TabFilter
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Extensions\Filters`
 
+===== Extends
+xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 
 
 
@@ -27,7 +29,7 @@ public __construct():void
 
 ----
 
-    
+
 
 
 
@@ -42,7 +44,7 @@ public getFilters():array
 
 ----
 
-    
+
 
 
 
@@ -57,7 +59,7 @@ public filterTabs($string):void
 
 ----
 
-    
+
 
 
 
@@ -68,7 +70,7 @@ public filterTabs($string):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$string`
 |
 |===

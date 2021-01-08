@@ -3,26 +3,23 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__tagitems]]
-== TagItems
+= TagItems
 
 Search preset for tagged variations
 Available options (see VariationList for inherited options)
 - tagIds: List of tag ids to get assigned items for
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
 
 
 ===== Namespace
 
 `IO\Services\ItemSearch\SearchPresets`
 
+===== Extends
+xref:IO/Services/ItemSearch/SearchPresets/VariationList.adoc#[`VariationList`]
 
+===== Implements
+xref:IO/Services/ItemSearch/SearchPresets/SearchPreset.adoc#[`SearchPreset`]
 
 
 
@@ -36,7 +33,7 @@ public static getSearchFactory($options):void
 
 ----
 
-    
+
 
 
 
@@ -47,7 +44,7 @@ public static getSearchFactory($options):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$options`
 |
 |===

@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__orderstatusservice]]
-== OrderStatusService
+= OrderStatusService
 
 
 
@@ -21,16 +21,16 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
     |authHelper
     |
-|
+| xref:stable7@interface::Order.adoc#order_contracts_orderstatusrepositorycontract[`OrderStatusRepositoryContract`]
     |orderStatusRepo
     |
-|
+| xref:stable7@interface::Order.adoc#order_contracts_statushistoryrepositorycontract[`StatusHistoryRepositoryContract`]
     |statusHistoryRepo
     |
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -45,7 +45,7 @@ public __construct($authHelper, $orderStatusRepo, $statusHistoryRepo):void
 
 ----
 
-    
+
 
 
 
@@ -56,15 +56,15 @@ OrderStatusService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_authhelper[`AuthHelper`]
+| xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
 a|`$authHelper`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_orderstatusrepositorycontract[`OrderStatusRepositoryContract`]
+| xref:stable7@interface::Order.adoc#order_contracts_orderstatusrepositorycontract[`OrderStatusRepositoryContract`]
 a|`$orderStatusRepo`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_statushistoryrepositorycontract[`StatusHistoryRepositoryContract`]
+| xref:stable7@interface::Order.adoc#order_contracts_statushistoryrepositorycontract[`StatusHistoryRepositoryContract`]
 a|`$statusHistoryRepo`
 |
 |===
@@ -77,7 +77,7 @@ public getOrderStatus($orderId, $orderStatusId):void
 
 ----
 
-    
+
 
 
 
@@ -94,30 +94,6 @@ a|`$orderId`
 
 |link:http://php.net/float[float^]
 a|`$orderStatusId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Services\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
 |
 |===
 

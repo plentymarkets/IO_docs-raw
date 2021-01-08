@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__sortinghelper]]
-== SortingHelper
+= SortingHelper
 
+Generate sorting values from plugin configuration.
 
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -30,18 +23,11 @@ since 5.0.0 will be deleted in 6.0.0
 [source%nowrap, php]
 ----
 
-public getSorting($sortingConfig = null, $isCategory = true):array
+public static getSorting($sortingConfig = null, $isCategory = true):array
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
@@ -65,18 +51,11 @@ a|`$isCategory`
 [source%nowrap, php]
 ----
 
-public getCategorySorting($sortingConfig = null):array
+public static getCategorySorting($sortingConfig = null):array
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
@@ -96,18 +75,11 @@ a|`$sortingConfig`
 [source%nowrap, php]
 ----
 
-public getSearchSorting($sortingConfig = null):array
+public static getSearchSorting($sortingConfig = null):array
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
@@ -127,18 +99,11 @@ a|`$sortingConfig`
 [source%nowrap, php]
 ----
 
-public getUsedItemName():string
+public static getUsedItemName():string
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
@@ -149,18 +114,11 @@ since 5.0.0 will be deleted in 6.0.0
 [source%nowrap, php]
 ----
 
-public splitPathAndOrder($sorting):array
+public static splitPathAndOrder($sorting):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
@@ -171,7 +129,7 @@ since 5.0.0 will be deleted in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+| 
 a|`$sorting`
 |
 |===

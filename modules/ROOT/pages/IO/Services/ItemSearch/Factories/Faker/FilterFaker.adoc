@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__filterfaker]]
-== FilterFaker
+= FilterFaker
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Services\ItemSearch\Factories\Faker`
 
+===== Extends
+xref:IO/Services/ItemSearch/Factories/Faker/AbstractFaker.adoc#[`AbstractFaker`]
 
 
 
@@ -37,7 +39,7 @@ public fill($data):void
 
 ----
 
-    
+
 
 
 
@@ -48,54 +50,9 @@ public fill($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$data`
 |
 |===
-
-
-[source%nowrap, php]
-----
-
-public makeSearchFilter():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public makeNamesFilter():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public makeFacetFilter():void
-
-----
-
-    
-
-
-
-
-
 
 

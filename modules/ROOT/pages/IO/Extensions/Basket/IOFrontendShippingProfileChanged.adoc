@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__iofrontendshippingprofilechanged]]
-== IOFrontendShippingProfileChanged
+= IOFrontendShippingProfileChanged
 
 
 
@@ -27,7 +27,7 @@ public handle($event):void
 
 ----
 
-    
+
 
 
 
@@ -38,7 +38,7 @@ public handle($event):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$event`
 |
 |===

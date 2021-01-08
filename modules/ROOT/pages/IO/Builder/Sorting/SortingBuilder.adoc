@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__sortingbuilder]]
-== SortingBuilder
+= SortingBuilder
 
 
 
@@ -27,7 +27,7 @@ public static buildSorting($sortingString):void
 
 ----
 
-    
+
 
 
 
@@ -38,7 +38,7 @@ public static buildSorting($sortingString):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$sortingString`
 |
 |===
@@ -51,7 +51,7 @@ public static buildDefaultSortingSearch():void
 
 ----
 
-    
+
 
 
 
@@ -66,60 +66,12 @@ public static buildDefaultSortingCategory():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public static filterSortingInterface($usedSortingPriority):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$usedSortingPriority`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public static filterSortingString($sortingString):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$sortingString`
-|
-|===
 
 
 [source%nowrap, php]
@@ -129,7 +81,7 @@ public static buildNameSorting($path):void
 
 ----
 
-    
+
 
 
 
@@ -140,7 +92,7 @@ public static buildNameSorting($path):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$path`
 |
 |===

@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__sessionstorageservice]]
-== SessionStorageService
+= SessionStorageService
 
 
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -28,10 +21,10 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-|
+| 
     |language
     |
-|
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
     |sessionStorage
     |
 |===
@@ -46,7 +39,7 @@ public __construct($sessionStorage):void
 
 ----
 
-    
+
 
 
 
@@ -57,43 +50,8 @@ SessionStorageService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
 a|`$sessionStorage`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public setSessionValue($name, $value):void
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
-
-
-
-
-
-Set the value in the session
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$name`
-|
-
-|
-a|`$value`
 |
 |===
 
@@ -105,14 +63,7 @@ public getSessionValue($name):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -136,14 +87,7 @@ public getLang():string
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -154,21 +98,14 @@ Get the language from session
 [source%nowrap, php]
 ----
 
-public getCustomer():IO\Services\Customer
+public getCustomer():Plenty\Modules\Frontend\Session\Storage\Models\Customer
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_customer[`Customer`]
+
+====== *Return type:* xref:stable7@interface::Frontend.adoc#frontend_models_customer[`Customer`]
 
 
 

@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__iosendmail]]
-== IOSendMail
+= IOSendMail
 
 
 
@@ -21,13 +21,13 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Plugin.adoc#plugin_services_pluginsendmailservice[`PluginSendMailService`]
     |sendMailService
     |
-|
+| 
     |placeholderList
     |
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -42,7 +42,7 @@ public __construct($sendMailService):void
 
 ----
 
-    
+
 
 
 
@@ -53,7 +53,7 @@ public __construct($sendMailService):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$sendMailService`
 |
 |===
@@ -66,7 +66,7 @@ public handle($pluginSendMail):void
 
 ----
 
-    
+
 
 
 
@@ -77,47 +77,8 @@ public handle($pluginSendMail):void
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_mail_pluginsendmail[`PluginSendMail`]
+| xref:stable7@interface::Plugin.adoc#plugin_events_pluginsendmail[`PluginSendMail`]
 a|`$pluginSendMail`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public setPlaceholderValue():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Extensions\Mail\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_mail_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
 |
 |===
 

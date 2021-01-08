@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__availabilityservice]]
-== AvailabilityService
+= AvailabilityService
 
 
 
@@ -21,7 +21,7 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Item.adoc#item_contracts_availabilityrepositorycontract[`AvailabilityRepositoryContract`]
     |availabilityRepository
     |
 |===
@@ -36,7 +36,7 @@ public __construct($availabilityRepository):void
 
 ----
 
-    
+
 
 
 
@@ -47,7 +47,7 @@ AvailabilityService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_availabilityrepositorycontract[`AvailabilityRepositoryContract`]
+| xref:stable7@interface::Item.adoc#item_contracts_availabilityrepositorycontract[`AvailabilityRepositoryContract`]
 a|`$availabilityRepository`
 |
 |===
@@ -56,14 +56,14 @@ a|`$availabilityRepository`
 [source%nowrap, php]
 ----
 
-public getAvailabilityById($availabilityId):IO\Services\Availability
+public getAvailabilityById($availabilityId):Plenty\Modules\Item\Availability\Models\Availability
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_availability[`Availability`]
+
+====== *Return type:* xref:stable7@interface::Item.adoc#item_models_availability[`Availability`]
 
 
 Get the item availability by ID
@@ -84,7 +84,7 @@ public getAvailabilities():array
 
 ----
 
-    
+
 
 
 

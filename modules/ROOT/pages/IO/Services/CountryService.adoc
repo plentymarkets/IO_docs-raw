@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__countryservice]]
-== CountryService
+= CountryService
 
 
 
@@ -21,10 +21,13 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Order.adoc#order_contracts_countryrepositorycontract[`CountryRepositoryContract`]
     |countryRepository
     |
-|
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+    |sessionStorageService
+    |
+|link:http://php.net/array[array^]
     |activeCountries
     |
 |===
@@ -35,11 +38,11 @@
 [source%nowrap, php]
 ----
 
-public __construct($countryRepository):void
+public __construct($countryRepository, $sessionStorageService):void
 
 ----
 
-    
+
 
 
 
@@ -50,8 +53,12 @@ CountryService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_countryrepositorycontract[`CountryRepositoryContract`]
+| xref:stable7@interface::Order.adoc#order_contracts_countryrepositorycontract[`CountryRepositoryContract`]
 a|`$countryRepository`
+|
+
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorageService`
 |
 |===
 
@@ -63,7 +70,7 @@ public getActiveCountriesList($lang = null):array
 
 ----
 
-    
+
 
 
 
@@ -87,7 +94,7 @@ public getActiveCountryNameMap($language):array
 
 ----
 
-    
+
 
 
 
@@ -111,7 +118,7 @@ public getShippingCountryId():int
 
 ----
 
-    
+
 
 
 
@@ -126,7 +133,7 @@ public setShippingCountryId($shippingCountryId):void
 
 ----
 
-    
+
 
 
 
@@ -146,14 +153,14 @@ a|`$shippingCountryId`
 [source%nowrap, php]
 ----
 
-public getCountryById($countryId):IO\Services\Country
+public getCountryById($countryId):Plenty\Modules\Order\Shipping\Countries\Models\Country
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_country[`Country`]
+
+====== *Return type:* xref:stable7@interface::Order.adoc#order_models_country[`Country`]
 
 
 Get a specific country by ID
@@ -174,7 +181,7 @@ public getCountryName($countryId, $lang = null):string
 
 ----
 
-    
+
 
 
 

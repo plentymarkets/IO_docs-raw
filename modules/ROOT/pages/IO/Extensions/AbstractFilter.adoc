@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__abstractfilter]]
-== AbstractFilter
+= AbstractFilter
 
 
 
@@ -36,7 +36,7 @@ public __construct():void
 
 ----
 
-    
+
 
 
 
@@ -51,7 +51,7 @@ public getFilters():array
 
 ----
 
-    
+
 
 
 

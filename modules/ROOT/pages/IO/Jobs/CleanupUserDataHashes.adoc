@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__cleanupuserdatahashes]]
-== CleanupUserDataHashes
+= CleanupUserDataHashes
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Jobs`
 
+===== Extends
+xref:stable7@interface::Cron.adoc#cron_contracts_cronhandler[`CronHandler`]
 
 
 
@@ -27,7 +29,7 @@ public handle():void
 
 ----
 
-    
+
 
 
 

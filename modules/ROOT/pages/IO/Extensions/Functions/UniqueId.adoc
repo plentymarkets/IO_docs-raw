@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__uniqueid]]
-== UniqueId
+= UniqueId
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Extensions\Functions`
 
+===== Extends
+xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 
 
 
@@ -27,7 +29,7 @@ public construct():void
 
 ----
 
-    
+
 
 
 
@@ -42,7 +44,7 @@ public getFunctions():array
 
 ----
 
-    
+
 
 
 
@@ -57,7 +59,7 @@ public generateUniqueId($prefix = &quot;&quot;):void
 
 ----
 
-    
+
 
 
 
@@ -68,7 +70,7 @@ public generateUniqueId($prefix = &quot;&quot;):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$prefix`
 |
 |===

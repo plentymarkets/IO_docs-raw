@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__reducedataextension]]
-== ReduceDataExtension
+= ReduceDataExtension
 
 Reduce result objects by filtering unnecessary entries
 
@@ -14,6 +14,8 @@ Reduce result objects by filtering unnecessary entries
 `IO\Services\ItemSearch\Extensions`
 
 
+===== Implements
+xref:IO/Services/ItemSearch/Extensions/ItemSearchExtension.adoc#[`ItemSearchExtension`]
 
 
 
@@ -21,7 +23,7 @@ Reduce result objects by filtering unnecessary entries
 |===
 |Type |Name |Description
 
-|
+| 
     |removeProperties
     |
 |===
@@ -36,7 +38,7 @@ public __construct($removeProperties = false):void
 
 ----
 
-    
+
 
 
 
@@ -47,7 +49,7 @@ public __construct($removeProperties = false):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$removeProperties`
 |
 |===
@@ -60,7 +62,7 @@ public getSearch($parentSearchBuilder):void
 
 ----
 
-    
+
 
 
 
@@ -71,7 +73,7 @@ public getSearch($parentSearchBuilder):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$parentSearchBuilder`
 |
 |===
@@ -84,35 +86,11 @@ public transformResult():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public reduceData($data):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$data`
-|
-|===
 
 

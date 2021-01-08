@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__templateservice]]
-== TemplateService
+= TemplateService
 
 
 
@@ -21,16 +21,16 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |currentTemplate
     |
-|
+| 
     |currentTemplateData
     |
-|
+| 
     |shouldBeCached
     |
-|
+| 
     |forceNoIndex
     |
 |===
@@ -45,7 +45,7 @@ public forceNoIndex($forceNoIndex):void
 
 ----
 
-    
+
 
 
 
@@ -56,7 +56,7 @@ public forceNoIndex($forceNoIndex):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$forceNoIndex`
 |
 |===
@@ -69,7 +69,7 @@ public isNoIndexForced():void
 
 ----
 
-    
+
 
 
 
@@ -84,7 +84,7 @@ public shouldBeCached():void
 
 ----
 
-    
+
 
 
 
@@ -99,7 +99,7 @@ public disableCacheForTemplate():void
 
 ----
 
-    
+
 
 
 
@@ -114,7 +114,7 @@ public getCurrentTemplate():void
 
 ----
 
-    
+
 
 
 
@@ -129,7 +129,7 @@ public setCurrentTemplate($template):void
 
 ----
 
-    
+
 
 
 
@@ -140,39 +140,8 @@ public setCurrentTemplate($template):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$template`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public isCurrentTemplate($templateToCheck):bool
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-Use ShopUrls::is() instead
-
-====
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$templateToCheck`
 |
 |===
 
@@ -191,7 +160,7 @@ public isHome():void
 Use ShopUrls::is(RouteConfig::HOME) instead
 
 ====
-    
+
 
 
 
@@ -213,7 +182,7 @@ public isItem():void
 Use ShopUrls::is(RouteConfig::ITEM) instead
 
 ====
-    
+
 
 
 
@@ -235,7 +204,7 @@ public isMyAccount():void
 Use ShopUrls::is(RouteConfig::MY_ACCOUNT) instead
 
 ====
-    
+
 
 
 
@@ -257,7 +226,7 @@ public isCheckout():void
 Use ShopUrls::is(RouteConfig::CHECKOUT) instead
 
 ====
-    
+
 
 
 
@@ -279,7 +248,7 @@ public isSearch():void
 Use ShopUrls::is(RouteConfig::SEARCH) instead
 
 ====
-    
+
 
 
 
@@ -301,7 +270,7 @@ public isCategory():void
 Use ShopUrls::is(RouteConfig::CATEGORY) instead
 
 ====
-    
+
 
 
 
@@ -316,22 +285,7 @@ public renderTemplate():void
 
 ----
 
-    
 
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public isCheapestSorting():void
-
-----
-
-    
 
 
 

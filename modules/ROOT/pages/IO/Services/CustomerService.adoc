@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__customerservice]]
-== CustomerService
+= CustomerService
 
 
 
@@ -21,28 +21,25 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Account.adoc#account_contracts_contactaccountrepositorycontract[`ContactAccountRepositoryContract`]
     |accountRepository
     |
-|
-    |coreContactRepository
-    |
-|
+| xref:stable7@interface::Account.adoc#account_contracts_contactrepositorycontract[`ContactRepositoryContract`]
     |contactRepository
     |
-|
+| xref:stable7@interface::Account.adoc#account_contracts_contactaddressrepositorycontract[`ContactAddressRepositoryContract`]
     |contactAddressRepository
     |
-|
+| xref:stable7@interface::Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
     |addressRepository
     |
-|
+| xref:stable7@interface::Account.adoc#account_contracts_contactclassrepositorycontract[`ContactClassRepositoryContract`]
     |contactClassRepository
     |
-|
-    |sessionStorageRepository
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+    |sessionStorage
     |
-|
+| 
     |cache
     |
 |===
@@ -53,11 +50,11 @@
 [source%nowrap, php]
 ----
 
-public __construct($accountRepository, $coreContactRepository, $contactRepository, $contactAddressRepository, $addressRepository, $contactClassRepository, $sessionStorageRepository):void
+public __construct($accountRepository, $contactRepository, $contactAddressRepository, $addressRepository, $contactClassRepository, $sessionStorage):void
 
 ----
 
-    
+
 
 
 
@@ -68,32 +65,28 @@ CustomerService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_contactaccountrepositorycontract[`ContactAccountRepositoryContract`]
+| xref:stable7@interface::Account.adoc#account_contracts_contactaccountrepositorycontract[`ContactAccountRepositoryContract`]
 a|`$accountRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_corecontactrepositorycontract[`CoreContactRepositoryContract`]
-a|`$coreContactRepository`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_contactrepositorycontract[`ContactRepositoryContract`]
+| xref:stable7@interface::Account.adoc#account_contracts_contactrepositorycontract[`ContactRepositoryContract`]
 a|`$contactRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_contactaddressrepositorycontract[`ContactAddressRepositoryContract`]
+| xref:stable7@interface::Account.adoc#account_contracts_contactaddressrepositorycontract[`ContactAddressRepositoryContract`]
 a|`$contactAddressRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_addressrepositorycontract[`AddressRepositoryContract`]
+| xref:stable7@interface::Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
 a|`$addressRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_contactclassrepositorycontract[`ContactClassRepositoryContract`]
+| xref:stable7@interface::Account.adoc#account_contracts_contactclassrepositorycontract[`ContactClassRepositoryContract`]
 a|`$contactClassRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-a|`$sessionStorageRepository`
+|xref:IO/Services/IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorage`
 |
 |===
 
@@ -105,14 +98,7 @@ public getContactId():int
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -127,14 +113,7 @@ public getContactClassData($contactClassId):array
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -158,14 +137,7 @@ public showNetPrices():bool
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -180,7 +152,7 @@ public showNetPricesByContactId($contactId):bool
 
 ----
 
-    
+
 
 
 
@@ -204,7 +176,7 @@ public getContactClassMinimumOrderQuantity():int
 
 ----
 
-    
+
 
 
 
@@ -215,14 +187,14 @@ public getContactClassMinimumOrderQuantity():int
 [source%nowrap, php]
 ----
 
-public registerCustomer($contactData, $billingAddressData = [], $deliveryAddressData = []):IO\Services\Contact
+public registerCustomer($contactData, $billingAddressData = [], $deliveryAddressData = []):Plenty\Modules\Account\Contact\Models\Contact
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_contact[`Contact`]
+
+====== *Return type:* xref:stable7@interface::Account.adoc#account_models_contact[`Contact`]
 
 
 Create a contact with addresses if specified
@@ -247,29 +219,14 @@ a|`$deliveryAddressData`
 [source%nowrap, php]
 ----
 
-public determineNewCustomerAddress():void
+public createAccount($accountData):Plenty\Modules\Account\Models\Account
 
 ----
 
-    
 
 
 
-
-
-
-
-[source%nowrap, php]
-----
-
-public createAccount($accountData):IO\Services\Account
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_account[`Account`]
+====== *Return type:* xref:stable7@interface::Account.adoc#account_models_account[`Account`]
 
 
 
@@ -286,35 +243,11 @@ a|`$accountData`
 [source%nowrap, php]
 ----
 
-public mapAddressDataToAccount($addressData):array
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$addressData`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public createContact($contactData):void
 
 ----
 
-    
+
 
 
 
@@ -334,21 +267,14 @@ a|`$contactData`
 [source%nowrap, php]
 ----
 
-public getContact():IO\Services\Contact
+public getContact():Plenty\Modules\Account\Contact\Models\Contact
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_contact[`Contact`]
+
+====== *Return type:* xref:stable7@interface::Account.adoc#account_models_contact[`Contact`]
 
 
 Find the current contact by ID
@@ -360,14 +286,7 @@ public getContactClassId():int
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -378,36 +297,14 @@ since 5.0.0 will be removed in 6.0.0
 [source%nowrap, php]
 ----
 
-public getDefaultContactClassId():int
+public updateContact($contactData):Plenty\Modules\Account\Contact\Models\Contact
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
-
-
-
-
-[source%nowrap, php]
-----
-
-public updateContact($contactData):IO\Services\Contact
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_contact[`Contact`]
+====== *Return type:* xref:stable7@interface::Account.adoc#account_models_contact[`Contact`]
 
 
 Update a contact
@@ -424,59 +321,11 @@ a|`$contactData`
 [source%nowrap, php]
 ----
 
-public updateContactWithAddressData($address):IO\Services\Contact
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_contact[`Contact`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_address[`Address`]
-a|`$address`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getContactOptionsFromAddress($addressOptions):array
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$addressOptions`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public updatePassword($newPassword, $contactId, $hash = &quot;&quot;):void
 
 ----
 
-    
+
 
 
 
@@ -508,7 +357,7 @@ public getAddresses($typeId = null):void
 
 ----
 
-    
+
 
 
 
@@ -528,14 +377,14 @@ a|`$typeId`
 [source%nowrap, php]
 ----
 
-public getAddress($addressId, $typeId):IO\Services\Address
+public getAddress($addressId, $typeId):Plenty\Modules\Account\Address\Models\Address
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_address[`Address`]
+
+====== *Return type:* xref:stable7@interface::Account.adoc#account_models_address[`Address`]
 
 
 Get an address by ID
@@ -556,14 +405,14 @@ a|`$typeId`
 [source%nowrap, php]
 ----
 
-public createAddress($addressData, $typeId):IO\Services\Address
+public createAddress($addressData, $typeId):Plenty\Modules\Account\Address\Models\Address
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_address[`Address`]
+
+====== *Return type:* xref:stable7@interface::Account.adoc#account_models_address[`Address`]
 
 
 Create an address with the specified address type
@@ -584,46 +433,14 @@ a|`$typeId`
 [source%nowrap, php]
 ----
 
-public buildAddressEmailOptions($options = [], $isGuest = false, $addressData = []):array
+public updateAddress($addressId, $addressData, $typeId):Plenty\Modules\Account\Address\Models\Address
 
 ----
 
-    
 
 
 
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$options`
-|
-
-|link:http://php.net/bool[bool^]
-a|`$isGuest`
-|
-
-|link:http://php.net/array[array^]
-a|`$addressData`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public updateAddress($addressId, $addressData, $typeId):IO\Services\Address
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_address[`Address`]
+====== *Return type:* xref:stable7@interface::Account.adoc#account_models_address[`Address`]
 
 
 Update an address
@@ -652,7 +469,7 @@ public deleteAddress($addressId, $typeId):void
 
 ----
 
-    
+
 
 
 
@@ -680,7 +497,7 @@ public getOrders($page = 1, $items = 10, $filters = []):void
 
 ----
 
-    
+
 
 
 
@@ -712,7 +529,7 @@ public hasReturns():bool
 
 ----
 
-    
+
 
 
 
@@ -727,10 +544,10 @@ public getReturns($page = 1, $items = 10, $filters = [], $wrapped = true):IO\Ser
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
+
+====== *Return type:*xref:IO/Services/Plenty/Repositories/Models/PaginatedResult.adoc#[`PaginatedResult`]
 
 
 
@@ -759,14 +576,14 @@ a|`$wrapped`
 [source%nowrap, php]
 ----
 
-public getLatestOrder():IO\Services\LocalizedOrder
+public getLatestOrder():IO\Models\LocalizedOrder
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_localizedorder[`LocalizedOrder`]
+
+====== *Return type:*xref:IO/Models/LocalizedOrder.adoc#[`LocalizedOrder`]
 
 
 Get the last order created by the current contact
@@ -778,7 +595,7 @@ public resetGuestAddresses():void
 
 ----
 
-    
+
 
 
 
@@ -793,7 +610,7 @@ public getEmail():string
 
 ----
 
-    
+
 
 
 
@@ -808,7 +625,7 @@ public getContactNumber($contactId):string
 
 ----
 
-    
+
 
 
 
@@ -832,7 +649,7 @@ public deleteGuestAddresses():void
 
 ----
 
-    
+
 
 
 
@@ -847,7 +664,7 @@ public fromMemoryCache():void
 
 ----
 
-    
+
 
 
 
@@ -862,7 +679,7 @@ public resetMemoryCache($key = null):void
 
 ----
 
-    
+
 
 
 
@@ -873,40 +690,8 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$key`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public sendMail($template, $emailData, $params):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$template`
-|
-
-|link:http://php.net/string[string^]
-a|`$emailData`
-|Must be a fully qualified class name
-
-|link:http://php.net/array[array^]
-a|`$params`
 |
 |===
 

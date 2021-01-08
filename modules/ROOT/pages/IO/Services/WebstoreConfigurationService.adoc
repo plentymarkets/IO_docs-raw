@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__webstoreconfigurationservice]]
-== WebstoreConfigurationService
+= WebstoreConfigurationService
 
 
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -23,6 +16,15 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
+
+.Properties
+|===
+|Type |Name |Description
+
+| xref:stable7@interface::System.adoc#system_models_webstoreconfiguration[`WebstoreConfiguration`]
+    |webstoreConfig
+    |
+|===
 
 
 ===== Methods
@@ -39,9 +41,10 @@ public getPlentyId():void
 ====
 
 since 4.3.0
+Use IO\Helper\Utils::getPlentyId() instead
 
 ====
-    
+
 
 
 
@@ -56,14 +59,7 @@ public getWebstoreConfig():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -78,14 +74,7 @@ public getActiveLanguageList():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -100,14 +89,7 @@ public getDefaultLanguage():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -122,14 +104,7 @@ public getDefaultParcelServiceId():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -144,14 +119,7 @@ public getDefaultParcelServicePresetId():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -166,14 +134,7 @@ public getDefaultShippingCountryId():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 

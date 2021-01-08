@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__salespriceservice]]
-== SalesPriceService
+= SalesPriceService
 
 
 
@@ -21,37 +21,37 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |app
     |
-|
+| 
     |salesPriceSearchRepo
     |
-|
-    |contactRepository
+| 
+    |customerService
     |
-|
-    |checkoutRepository
+| 
+    |checkoutService
     |
-|
+| 
     |basketService
     |
-|
+| 
     |classId
     |
-|
+| 
     |singleAccess
     |
-|
+| 
     |currency
     |
-|
+| 
     |plentyId
     |
-|
+| 
     |shippingCountryId
     |
-|
+| 
     |referrerId
     |
 |===
@@ -62,11 +62,11 @@
 [source%nowrap, php]
 ----
 
-public __construct($app, $salesPriceSearchRepo, $contactRepository, $checkoutRepository, $basketService):void
+public __construct($app, $salesPriceSearchRepo, $customerService, $checkoutService):void
 
 ----
 
-    
+
 
 
 
@@ -77,24 +77,20 @@ SalesPriceService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_application[`Application`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
 a|`$app`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_salespricesearchrepositorycontract[`SalesPriceSearchRepositoryContract`]
+| xref:stable7@interface::Item.adoc#item_contracts_salespricesearchrepositorycontract[`SalesPriceSearchRepositoryContract`]
 a|`$salesPriceSearchRepo`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_contactrepositorycontract[`ContactRepositoryContract`]
-a|`$contactRepository`
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_checkoutrepositorycontract[`CheckoutRepositoryContract`]
-a|`$checkoutRepository`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_basketservice[`BasketService`]
-a|`$basketService`
+|xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
+a|`$checkoutService`
 |
 |===
 
@@ -106,10 +102,10 @@ public setClassId($classId):IO\Services
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
+
+====== *Return type:*xref:IO/Services.adoc#[`Services`]
 
 
 
@@ -117,7 +113,7 @@ public setClassId($classId):IO\Services
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| null
 a|`$classId`
 |
 |===
@@ -130,10 +126,10 @@ public setCurrency($currency):IO\Services
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
+
+====== *Return type:*xref:IO/Services.adoc#[`Services`]
 
 
 
@@ -141,7 +137,7 @@ public setCurrency($currency):IO\Services
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| null
 a|`$currency`
 |
 |===
@@ -154,10 +150,10 @@ public setShippingCountryId($shippingCountryId):IO\Services
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_io_services[`Services`]
+
+====== *Return type:*xref:IO/Services.adoc#[`Services`]
 
 
 
@@ -165,7 +161,7 @@ public setShippingCountryId($shippingCountryId):IO\Services
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| null
 a|`$shippingCountryId`
 |
 |===
@@ -174,29 +170,14 @@ a|`$shippingCountryId`
 [source%nowrap, php]
 ----
 
-public init():void
+public getSalesPriceForVariation($variationId, $type = &quot;default&quot;, $quantity = 1):Plenty\Modules\Item\SalesPrice\Models\SalesPriceSearchResponse
 
 ----
 
-    
 
 
 
-
-
-
-
-[source%nowrap, php]
-----
-
-public getSalesPriceForVariation($variationId, $type = &quot;default&quot;, $quantity = 1):IO\Services\SalesPriceSearchResponse
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_salespricesearchresponse[`SalesPriceSearchResponse`]
+====== *Return type:* xref:stable7@interface::Item.adoc#item_models_salespricesearchresponse[`SalesPriceSearchResponse`]
 
 
 
@@ -225,7 +206,7 @@ public getAllSalesPricesForVariation($variationId, $type = &quot;default&quot;, 
 
 ----
 
-    
+
 
 
 
@@ -257,7 +238,7 @@ public applyCurrencyConversion($salesPrice):void
 
 ----
 
-    
+
 
 
 
@@ -268,24 +249,9 @@ public applyCurrencyConversion($salesPrice):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$salesPrice`
 |
 |===
-
-
-[source%nowrap, php]
-----
-
-public getSearchRequest():void
-
-----
-
-    
-
-
-
-
-
 
 

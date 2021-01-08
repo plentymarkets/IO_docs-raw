@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__getcdnmetadata]]
-== GetCdnMetadata
+= GetCdnMetadata
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Extensions\Functions`
 
+===== Extends
+xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 
 
 
@@ -27,7 +29,7 @@ public getFunctions():array
 
 ----
 
-    
+
 
 
 
@@ -42,7 +44,7 @@ public getCdnMetadata($imageUrl, $key = null, $default = null):void
 
 ----
 
-    
+
 
 
 
@@ -61,7 +63,7 @@ a|`$imageUrl`
 a|`$key`
 |Metadata key to get value for
 
-|
+| 
 a|`$default`
 |Default value to return if no value is stored in metadata
 |===

@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__multisearchfactory]]
-== MultiSearchFactory
+= MultiSearchFactory
 
 Factory to build an elastic search multisearch request by collecting multiple search factory instances.
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -34,7 +27,7 @@ since 5.0.0 will be deleted in 6.0.0
 |link:http://php.net/array[array^]
     |extensions
     |
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -49,14 +42,7 @@ public getSearches():array
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
@@ -71,14 +57,7 @@ public getExtensions():array
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
@@ -89,21 +68,14 @@ Get all registered extensions
 [source%nowrap, php]
 ----
 
-public addSearch($resultName, $searchBuilder):IO\Services\ItemSearch\Factories
+public addSearch($resultName, $searchBuilder):IO\Services\ItemSearch\Factories\MultiSearchFactory
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_itemsearch_factories[`Factories`]
+
+====== *Return type:*xref:IO/Services/ItemSearch/Factories/MultiSearchFactory.adoc#[`MultiSearchFactory`]
 
 
 Add a search factory instance to be included in current mutlisearch request.
@@ -115,7 +87,7 @@ Add a search factory instance to be included in current mutlisearch request.
 a|`$resultName`
 |An unique name for the search. Results of this search will be accessible by this key.
 
-|        xref:Miscellaneous.adoc#miscellaneous_factories_basesearchfactory[`BaseSearchFactory`]
+|xref:IO/Services/ItemSearch/Factories/BaseSearchFactory.adoc#[`BaseSearchFactory`]
 a|`$searchBuilder`
 |A search factory
 |===
@@ -128,42 +100,11 @@ public getResults():array
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
 
 
 Execute the multisearch and collect results.
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Services\ItemSearch\Factories\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_factories_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
-|
-|===
-
 

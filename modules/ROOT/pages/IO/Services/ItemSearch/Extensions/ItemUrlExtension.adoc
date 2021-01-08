@@ -3,18 +3,11 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemurlextension]]
-== ItemUrlExtension
+= ItemUrlExtension
 
 Check if item data already contains a calculated item url.
 Otherwise generate item url and store url for later usage.
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -22,6 +15,8 @@ since 5.0.0 will be removed in 6.0.0
 `IO\Services\ItemSearch\Extensions`
 
 
+===== Implements
+xref:IO/Services/ItemSearch/Extensions/ItemSearchExtension.adoc#[`ItemSearchExtension`]
 
 
 
@@ -35,7 +30,7 @@ public getSearch($parentSearchBuilder):void
 
 ----
 
-    
+
 
 
 
@@ -46,7 +41,7 @@ public getSearch($parentSearchBuilder):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$parentSearchBuilder`
 |
 |===
@@ -59,7 +54,7 @@ public transformResult():void
 
 ----
 
-    
+
 
 
 

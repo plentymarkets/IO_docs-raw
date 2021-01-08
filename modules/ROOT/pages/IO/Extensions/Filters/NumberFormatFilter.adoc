@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__numberformatfilter]]
-== NumberFormatFilter
+= NumberFormatFilter
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Extensions\Filters`
 
+===== Extends
+xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 
 
 
@@ -21,13 +23,10 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_configrepository[`ConfigRepository`]
     |config
     |
-|
-    |numberFormatter
-    |
-|
+| 
     |cache
     |
 |===
@@ -42,7 +41,7 @@ public __construct($config):void
 
 ----
 
-    
+
 
 
 
@@ -53,7 +52,7 @@ NumberFormatFilter constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_filters_configrepository[`ConfigRepository`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_configrepository[`ConfigRepository`]
 a|`$config`
 |
 |===
@@ -66,7 +65,7 @@ public getFilters():array
 
 ----
 
-    
+
 
 
 
@@ -77,35 +76,11 @@ Return the available filter methods
 [source%nowrap, php]
 ----
 
-public formatDateTime($value):string
-
-----
-
-    
-
-
-
-
-
-Format incorrect JSON ENCODED dateTimeFormat
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$value`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public trimNewlines($value):string
 
 ----
 
-    
+
 
 
 
@@ -129,7 +104,7 @@ public formatDecimal($value, $decimal_places = -1):string
 
 ----
 
-    
+
 
 
 
@@ -153,39 +128,11 @@ a|`$decimal_places`
 [source%nowrap, php]
 ----
 
-public formatMonetary($value, $currencyISO):string
-
-----
-
-    
-
-
-
-
-
-Format the given value to currency
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/float[float^]
-a|`$value`
-|
-
-|link:http://php.net/string[string^]
-a|`$currencyISO`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public fromMemoryCache():void
 
 ----
 
-    
+
 
 
 
@@ -200,7 +147,7 @@ public resetMemoryCache($key = null):void
 
 ----
 
-    
+
 
 
 
@@ -211,7 +158,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$key`
 |
 |===

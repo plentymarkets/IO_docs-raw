@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__userdatahashservice]]
-== UserDataHashService
+= UserDataHashService
 
 
 
@@ -21,10 +21,10 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Plugin.adoc#plugin_contracts_database[`DataBase`]
     |db
     |
-|
+| 
     |defaultTTL
     |
 |===
@@ -39,7 +39,7 @@ public __construct($dataBase, $templateConfigService):void
 
 ----
 
-    
+
 
 
 
@@ -50,11 +50,11 @@ UserDataHashService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_database[`DataBase`]
+| xref:stable7@interface::Plugin.adoc#plugin_contracts_database[`DataBase`]
 a|`$dataBase`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_templateconfigservice[`TemplateConfigService`]
+|xref:IO/Services/TemplateConfigService.adoc#[`TemplateConfigService`]
 a|`$templateConfigService`
 |
 |===
@@ -63,14 +63,14 @@ a|`$templateConfigService`
 [source%nowrap, php]
 ----
 
-public find($hash, $contactId = null, $plentyId = null):IO\Services\UserDataHash
+public find($hash, $contactId = null, $plentyId = null):IO\DBModels\UserDataHash
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_userdatahash[`UserDataHash`]
+
+====== *Return type:*xref:IO/DBModels/UserDataHash.adoc#[`UserDataHash`]
 
 
 Get entry by hash if exists
@@ -99,7 +99,7 @@ public findHash($type, $contactId = null, $plentyId = null):string
 
 ----
 
-    
+
 
 
 
@@ -131,7 +131,7 @@ public getData($hash, $contactId = null, $plentyId = null):void
 
 ----
 
-    
+
 
 
 
@@ -159,14 +159,14 @@ a|`$plentyId`
 [source%nowrap, php]
 ----
 
-public create($data, $type, $ttl = null, $contactId = null, $plentyId = null):IO\Services\UserDataHash
+public create($data, $type, $ttl = null, $contactId = null, $plentyId = null):IO\DBModels\UserDataHash
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_userdatahash[`UserDataHash`]
+
+====== *Return type:*xref:IO/DBModels/UserDataHash.adoc#[`UserDataHash`]
 
 
 Create a new entry and assign data to the hash for later usage.
@@ -174,7 +174,7 @@ Create a new entry and assign data to the hash for later usage.
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$data`
 |The data to assign to the generated hash entry
 
@@ -203,7 +203,7 @@ public delete($hash, $contactId = null, $plentyId = null):bool
 
 ----
 
-    
+
 
 
 
@@ -235,7 +235,7 @@ public deleteAll($type = null, $contactId = null, $plentyId = null):bool
 
 ----
 
-    
+
 
 
 
@@ -258,20 +258,5 @@ a|`$contactId`
 a|`$plentyId`
 |Use a specific plentyId. Otherwise use id of current client.
 |===
-
-
-[source%nowrap, php]
-----
-
-public getContactId():void
-
-----
-
-    
-
-
-
-
-
 
 

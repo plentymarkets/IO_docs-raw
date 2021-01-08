@@ -2,11 +2,19 @@
 :example-caption!:
 :source-highlighter: prettify
 :sectids!:
-[[io__customermailresource]]
-= CustomerMailResource
+[[io__facetresource]]
+= FacetResource
 
 
 
+[WARNING]
+.Deprecated! 
+====
+
+since 4.4.0<br />
+this class will be removed with IO 5.0.0
+
+====
 
 
 ===== Namespace
@@ -18,15 +26,6 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 
 
-
-.Properties
-|===
-|Type |Name |Description
-
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
-|===
 
 
 ===== Methods
@@ -44,7 +43,7 @@ public __construct($request, $response):void
 
 
 
-CustomerMailResource constructor.
+FacetResource constructor.
 
 .*Parameters*
 |===
@@ -62,39 +61,22 @@ a|`$response`
 [source%nowrap, php]
 ----
 
-public store():void
+public index():Plenty\Plugin\Http\Response
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 4.4.0
+
+====
 
 
 
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
-
-
-
-[source%nowrap, php]
-----
-
-public update($contactId):void
-
-----
-
-
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-| 
-a|`$contactId`
-|
-|===
-
+Get Facets
 

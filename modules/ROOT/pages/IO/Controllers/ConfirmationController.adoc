@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__confirmationcontroller]]
-== ConfirmationController
+= ConfirmationController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -21,7 +23,7 @@
 |===
 |Type |Name |Description
 
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -36,7 +38,7 @@ public showConfirmation():string
 
 ----
 
-    
+
 
 
 
@@ -47,63 +49,15 @@ Prepare and render the data for the order confirmation
 [source%nowrap, php]
 ----
 
-public checkValidity($order):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$order`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public redirect():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Controllers\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
-|
-|===
 
 

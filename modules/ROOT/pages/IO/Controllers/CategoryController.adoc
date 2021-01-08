@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__categorycontroller]]
-== CategoryController
+= CategoryController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -21,10 +23,7 @@
 |===
 |Type |Name |Description
 
-|
-    |LANGUAGE_FROM_URL
-    |
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -39,7 +38,7 @@ public showCategory($lvl1 = null, $lvl2 = null, $lvl3 = null, $lvl4 = null, $lvl
 
 ----
 
-    
+
 
 
 
@@ -83,7 +82,7 @@ public showCategoryById():void
 
 ----
 
-    
+
 
 
 
@@ -98,7 +97,7 @@ public redirectToCategory():void
 
 ----
 
-    
+
 
 
 
@@ -113,50 +112,11 @@ public redirectRoute():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public renderCategory():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Controllers\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
-|
-|===
 
 

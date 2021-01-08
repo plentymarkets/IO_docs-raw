@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemwishlistservice]]
-== ItemWishListService
+= ItemWishListService
 
 
 
@@ -21,7 +21,7 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |itemWishListRepo
     |
 |===
@@ -32,11 +32,11 @@
 [source%nowrap, php]
 ----
 
-public __construct($sessionStorageRepositoryContract):void
+public __construct($sessionStorage):void
 
 ----
 
-    
+
 
 
 
@@ -47,8 +47,8 @@ public __construct($sessionStorageRepositoryContract):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
-a|`$sessionStorageRepositoryContract`
+| 
+a|`$sessionStorage`
 |
 |===
 
@@ -60,7 +60,7 @@ public addItemWishListEntry($variationId, $quantity):void
 
 ----
 
-    
+
 
 
 
@@ -88,7 +88,7 @@ public isItemInWishList($variationId):bool
 
 ----
 
-    
+
 
 
 
@@ -112,7 +112,7 @@ public getItemWishList():array
 
 ----
 
-    
+
 
 
 
@@ -127,7 +127,7 @@ public getCountedItemWishList():int
 
 ----
 
-    
+
 
 
 
@@ -142,7 +142,7 @@ public removeItemWishListEntry($variationId):bool
 
 ----
 
-    
+
 
 
 
@@ -166,7 +166,7 @@ public migrateGuestItemWishList():void
 
 ----
 
-    
+
 
 
 

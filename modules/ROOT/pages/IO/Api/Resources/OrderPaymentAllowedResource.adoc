@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__orderpaymentallowedresource]]
-== OrderPaymentAllowedResource
+= OrderPaymentAllowedResource
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Api\Resources`
 
+===== Extends
+xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 
 
@@ -21,7 +23,7 @@
 |===
 |Type |Name |Description
 
-|
+|xref:IO/Services/OrderService.adoc#[`OrderService`]
     |orderService
     |
 |===
@@ -36,7 +38,7 @@ public __construct($request, $response):void
 
 ----
 
-    
+
 
 
 
@@ -47,11 +49,11 @@ OrderPaymentResource constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_resources_request[`Request`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_request[`Request`]
 a|`$request`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_apiresponse[`ApiResponse`]
+|xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
 a|`$response`
 |
 |===
@@ -64,7 +66,7 @@ public index():void
 
 ----
 
-    
+
 
 
 

@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__twigioextension]]
-== TwigIOExtension
+= TwigIOExtension
 
 
 
@@ -13,7 +13,12 @@
 
 `IO\Extensions`
 
+===== Extends
+xref:stable7@interface::Miscellaneous.adoc#miscellaneous_extensions_twig_extension[`Twig_Extension`]
 
+===== Implements
+GlobalsInterface
+ExtensionInterface
 
 
 
@@ -21,10 +26,10 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_factories_twigfactory[`TwigFactory`]
     |twig
     |
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_request[`Request`]
     |request
     |
 |===
@@ -39,7 +44,7 @@ public __construct():void
 
 ----
 
-    
+
 
 
 
@@ -54,7 +59,7 @@ public getName():string
 
 ----
 
-    
+
 
 
 
@@ -69,7 +74,7 @@ public getFilters():array
 
 ----
 
-    
+
 
 
 
@@ -84,7 +89,7 @@ public getFunctions():array
 
 ----
 
-    
+
 
 
 
@@ -99,7 +104,7 @@ public getGlobals():array
 
 ----
 
-    
+
 
 
 

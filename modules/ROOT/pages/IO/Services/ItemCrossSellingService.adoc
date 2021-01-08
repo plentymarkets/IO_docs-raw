@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemcrosssellingservice]]
-== ItemCrossSellingService
+= ItemCrossSellingService
 
 
 
@@ -21,11 +21,11 @@
 |===
 |Type |Name |Description
 
-|
-    |sessionStorageRepository
+| 
+    |sessionStorage
     |
-|
-    |sortingHelper
+|xref:IO/Services/TemplateConfigService.adoc#[`TemplateConfigService`]
+    |templateConfigService
     |
 |===
 
@@ -35,11 +35,11 @@
 [source%nowrap, php]
 ----
 
-public __construct($sessionStorageRepository, $sortingHelper):void
+public __construct($sessionStorage, $templateConfigService):void
 
 ----
 
-    
+
 
 
 
@@ -50,12 +50,12 @@ ItemLastSeenService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-a|`$sessionStorageRepository`
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorage`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_sortinghelper[`SortingHelper`]
-a|`$sortingHelper`
+|xref:IO/Services/TemplateConfigService.adoc#[`TemplateConfigService`]
+a|`$templateConfigService`
 |
 |===
 
@@ -67,7 +67,7 @@ public setType($type):void
 
 ----
 
-    
+
 
 
 
@@ -91,7 +91,7 @@ public getType():void
 
 ----
 
-    
+
 
 
 
@@ -106,7 +106,7 @@ public setSorting($sorting):void
 
 ----
 
-    
+
 
 
 
@@ -117,7 +117,7 @@ public setSorting($sorting):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$sorting`
 |
 |===
@@ -130,7 +130,7 @@ public getSorting():void
 
 ----
 
-    
+
 
 
 

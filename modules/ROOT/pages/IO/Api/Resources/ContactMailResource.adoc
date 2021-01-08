@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__contactmailresource]]
-== ContactMailResource
+= ContactMailResource
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Api\Resources`
 
+===== Extends
+xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 
 
@@ -21,10 +23,10 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |contactMailService
     |
-|
+| 
     |templateConfigService
     |
 |===
@@ -39,7 +41,7 @@ public __construct($request, $response):void
 
 ----
 
-    
+
 
 
 
@@ -50,11 +52,11 @@ ContactMailResource constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_resources_request[`Request`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_request[`Request`]
 a|`$request`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_apiresponse[`ApiResponse`]
+|xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
 a|`$response`
 |
 |===
@@ -67,7 +69,7 @@ public store():void
 
 ----
 
-    
+
 
 
 
@@ -82,7 +84,7 @@ public verifyRecaptcha():void
 
 ----
 
-    
+
 
 
 

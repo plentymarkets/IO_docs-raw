@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__basketitemresource]]
-== BasketItemResource
+= BasketItemResource
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Api\Resources`
 
+===== Extends
+xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 
 
@@ -21,7 +23,7 @@
 |===
 |Type |Name |Description
 
-|
+|xref:IO/Services/BasketService.adoc#[`BasketService`]
     |basketService
     |
 |===
@@ -36,7 +38,7 @@ public __construct($request, $response, $basketService):void
 
 ----
 
-    
+
 
 
 
@@ -47,15 +49,15 @@ BasketItemResource constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_resources_request[`Request`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_request[`Request`]
 a|`$request`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_apiresponse[`ApiResponse`]
+|xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
 a|`$response`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_basketservice[`BasketService`]
+|xref:IO/Services/BasketService.adoc#[`BasketService`]
 a|`$basketService`
 |
 |===
@@ -64,14 +66,14 @@ a|`$basketService`
 [source%nowrap, php]
 ----
 
-public index():IO\Api\Resources\Response
+public index():Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 List basket items
@@ -79,14 +81,14 @@ List basket items
 [source%nowrap, php]
 ----
 
-public store():IO\Api\Resources\Response
+public store():Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Add an item to the basket
@@ -94,14 +96,14 @@ Add an item to the basket
 [source%nowrap, php]
 ----
 
-public show($selector):IO\Api\Resources\Response
+public show($selector):Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Get a basket item
@@ -118,14 +120,14 @@ a|`$selector`
 [source%nowrap, php]
 ----
 
-public update($selector):IO\Api\Resources\Response
+public update($selector):Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Update the basket item
@@ -142,14 +144,14 @@ a|`$selector`
 [source%nowrap, php]
 ----
 
-public destroy($selector):IO\Api\Resources\Response
+public destroy($selector):Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Delete an item from the basket

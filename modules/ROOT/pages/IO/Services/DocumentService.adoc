@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__documentservice]]
-== DocumentService
+= DocumentService
 
 
 
@@ -21,7 +21,7 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Document.adoc#document_contracts_documentrepositorycontract[`DocumentRepositoryContract`]
     |documentRepo
     |
 |===
@@ -36,7 +36,7 @@ public __construct($documentRepo):void
 
 ----
 
-    
+
 
 
 
@@ -47,32 +47,8 @@ DocumentService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_documentrepositorycontract[`DocumentRepositoryContract`]
+| xref:stable7@interface::Document.adoc#document_contracts_documentrepositorycontract[`DocumentRepositoryContract`]
 a|`$documentRepo`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getDocumentsByOrderId($orderId):IO\Services\Plenty\Repositories\Models\PaginatedResult
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$orderId`
 |
 |===
 

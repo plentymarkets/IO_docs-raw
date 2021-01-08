@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemcontroller]]
-== ItemController
+= ItemController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -21,10 +23,10 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |plentyId
     |
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -39,7 +41,7 @@ public showItem($slug = &quot;&quot;, $itemId, $variationId, $category = null):s
 
 ----
 
-    
+
 
 
 
@@ -62,7 +64,7 @@ a|`$itemId`
 a|`$variationId`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_controllers_category[`Category`]
+| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
 a|`$category`
 |
 |===
@@ -75,7 +77,7 @@ public showItemWithoutName($itemId, $variationId):string
 
 ----
 
-    
+
 
 
 
@@ -103,7 +105,7 @@ public showItemFromAdmin($itemId):string
 
 ----
 
-    
+
 
 
 
@@ -127,7 +129,7 @@ public showItemOld():void
 
 ----
 
-    
+
 
 
 
@@ -142,7 +144,7 @@ public showItemForCategory($category):void
 
 ----
 
-    
+
 
 
 
@@ -153,32 +155,8 @@ public showItemForCategory($category):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$category`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Controllers\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
 |
 |===
 

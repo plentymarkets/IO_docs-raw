@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__orderreturncontroller]]
-== OrderReturnController
+= OrderReturnController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -21,7 +23,7 @@
 |===
 |Type |Name |Description
 
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -36,7 +38,7 @@ public showOrderReturn($orderId, $orderAccessKey = null, $category = null):void
 
 ----
 
-    
+
 
 
 
@@ -55,7 +57,7 @@ a|`$orderId`
 a|`$orderAccessKey`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_controllers_category[`Category`]
+| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
 a|`$category`
 |
 |===
@@ -68,35 +70,11 @@ public redirect():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Controllers\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
-|
-|===
 
 

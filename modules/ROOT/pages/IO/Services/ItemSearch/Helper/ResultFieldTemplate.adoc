@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__resultfieldtemplate]]
-== ResultFieldTemplate
+= ResultFieldTemplate
 
+Emit events to request templates to be used for result fields.
 
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -58,10 +51,10 @@ since 5.0.0 will be deleted in 6.0.0
 |===
 |Type |Name |Description
 
-|
+| 
     |templates
     |
-|
+| 
     |requiredFields
     |
 |===
@@ -72,42 +65,11 @@ since 5.0.0 will be deleted in 6.0.0
 [source%nowrap, php]
 ----
 
-public static init($template):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$template`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public static get($template):string
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
@@ -127,18 +89,11 @@ a|`$template`
 [source%nowrap, php]
 ----
 
-public static load($template):array
+public static load($template):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
@@ -149,7 +104,7 @@ since 5.0.0 will be deleted in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+| 
 a|`$template`
 |
 |===
@@ -162,14 +117,7 @@ public setTemplate($event, $template):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
@@ -193,49 +141,11 @@ a|`$template`
 [source%nowrap, php]
 ----
 
-public setTemplates($templateMap):void
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
-
-
-
-
-
-Set multiple templates to read result fields from.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_itemsearch_helper[`Helper`]
-a|`$templateMap`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public requireFields($event, $field = null):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be deleted in 6.0.0
-
-====
-    
 
 
 
@@ -246,63 +156,15 @@ Add required fields to variation search requests.
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$event`
 |A single template event to set required fields for
 or a map between template events and list of required fields
 
-|
+| 
 a|`$field`
 |If first parameter describes a single template event
 this parameter may contain a single result field or a list of field to require.
-|===
-
-
-[source%nowrap, php]
-----
-
-public loadResultFields($fullTemplateName):array
-
-----
-
-    
-
-
-
-
-
-Load the file content from a result field template.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$fullTemplateName`
-|The path of the template to load contents from.
-|===
-
-
-[source%nowrap, php]
-----
-
-public static loadStaticResultFields($fullTemplateName):array
-
-----
-
-    
-
-
-
-
-
-Load the file content from a result field template.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$fullTemplateName`
-|The path of the template to load contents from.
 |===
 
 

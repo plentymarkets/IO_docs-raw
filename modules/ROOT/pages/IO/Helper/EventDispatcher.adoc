@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__eventdispatcher]]
-== EventDispatcher
+= EventDispatcher
 
 
 
@@ -41,7 +41,7 @@ public static fire():void
 
 ----
 
-    
+
 
 
 

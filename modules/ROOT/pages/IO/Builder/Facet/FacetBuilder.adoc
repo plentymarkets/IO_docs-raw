@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__facetbuilder]]
-== FacetBuilder
+= FacetBuilder
 
 
 
@@ -27,7 +27,7 @@ public static buildFacetValues($facetValueString):void
 
 ----
 
-    
+
 
 
 
@@ -38,7 +38,7 @@ public static buildFacetValues($facetValueString):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$facetValueString`
 |
 |===

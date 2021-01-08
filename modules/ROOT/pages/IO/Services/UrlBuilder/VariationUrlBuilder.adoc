@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__variationurlbuilder]]
-== VariationUrlBuilder
+= VariationUrlBuilder
 
 
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -28,13 +21,13 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-|
+| 
     |urlPathMap
     |
-|
+| 
     |requestedItems
     |
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -49,14 +42,7 @@ public static fillItemUrl($itemData):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -67,7 +53,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+| 
 a|`$itemData`
 |
 |===
@@ -80,17 +66,10 @@ public buildUrl($itemId, $variationId, $lang = null):IO\Services\UrlBuilder\UrlQ
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_urlquery[`UrlQuery`]
+
+====== *Return type:*xref:IO/Services/UrlBuilder/UrlQuery.adoc#[`UrlQuery`]
 
 
 
@@ -119,14 +98,7 @@ public getSuffix($itemId, $variationId, $withVariationId = true):string
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -147,137 +119,6 @@ a|`$variationId`
 
 |link:http://php.net/bool[bool^]
 a|`$withVariationId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public searchItem($itemId, $variationId, $lang):array
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$itemId`
-|
-
-|link:http://php.net/int[int^]
-a|`$variationId`
-|
-
-|link:http://php.net/string[string^]
-a|`$lang`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public buildUrlQuery():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public generateUrlByConfig($itemData, $lang):IO\Services\UrlBuilder\UrlQuery
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_urlquery[`UrlQuery`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$itemData`
-|
-
-|link:http://php.net/string[string^]
-a|`$lang`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getBranchUrl($categoryId, $lang, $maxLevel = 6):IO\Services\UrlBuilder\UrlQuery
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_urlquery[`UrlQuery`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$categoryId`
-|
-
-|link:http://php.net/string[string^]
-a|`$lang`
-|
-
-|link:http://php.net/int[int^]
-a|`$maxLevel`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Services\UrlBuilder\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_urlbuilder_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
 |
 |===
 

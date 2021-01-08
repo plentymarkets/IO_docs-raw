@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__recaptcha]]
-== ReCaptcha
+= ReCaptcha
 
 
 
@@ -27,7 +27,7 @@ public static verify($token):void
 
 ----
 
-    
+
 
 
 
@@ -38,7 +38,7 @@ public static verify($token):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$token`
 |
 |===

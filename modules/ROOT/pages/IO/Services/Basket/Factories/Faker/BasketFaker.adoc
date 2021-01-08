@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__basketfaker]]
-== BasketFaker
+= BasketFaker
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Services\Basket\Factories\Faker`
 
+===== Extends
+xref:IO/Services/ItemSearch/Factories/Faker/AbstractFaker.adoc#[`AbstractFaker`]
 
 
 
@@ -31,7 +33,7 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |rawBasketItems
     |
 |===
@@ -42,35 +44,11 @@
 [source%nowrap, php]
 ----
 
-public fill($default):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_factories_faker[`Faker`]
-a|`$default`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public setRawBasketItems($rawBasketItems):void
 
 ----
 
-    
+
 
 
 
@@ -81,32 +59,8 @@ public setRawBasketItems($rawBasketItems):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$rawBasketItems`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getTotals($data):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$data`
 |
 |===
 

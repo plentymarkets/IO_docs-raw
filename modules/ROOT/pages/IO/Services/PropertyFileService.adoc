@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__propertyfileservice]]
-== PropertyFileService
+= PropertyFileService
 
 
 
@@ -27,7 +27,7 @@ public getPropertyFileUrl():void
 
 ----
 
-    
+
 
 
 

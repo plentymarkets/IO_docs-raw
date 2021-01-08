@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__customernewsletterservice]]
-== CustomerNewsletterService
+= CustomerNewsletterService
 
 
 
@@ -21,7 +21,7 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Account.adoc#account_contracts_newsletterrepositorycontract[`NewsletterRepositoryContract`]
     |newsletterRepo
     |
 |===
@@ -36,7 +36,7 @@ public __construct($newsletterRepo):void
 
 ----
 
-    
+
 
 
 
@@ -47,7 +47,7 @@ public __construct($newsletterRepo):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$newsletterRepo`
 |
 |===
@@ -60,7 +60,7 @@ public saveNewsletterData():void
 
 ----
 
-    
+
 
 
 
@@ -75,7 +75,7 @@ public saveMultipleNewsletterData():void
 
 ----
 
-    
+
 
 
 
@@ -90,7 +90,7 @@ public updateOptInStatus():void
 
 ----
 
-    
+
 
 
 
@@ -105,7 +105,7 @@ public deleteNewsletterDataByEmail($email, $emailFolder):bool
 
 ----
 
-    
+
 
 
 

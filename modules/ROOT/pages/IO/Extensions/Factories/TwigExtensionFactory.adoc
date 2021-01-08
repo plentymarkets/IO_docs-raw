@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__twigextensionfactory]]
-== TwigExtensionFactory
+= TwigExtensionFactory
 
 
 
@@ -39,7 +39,7 @@ public registerFunction($functionClass, $functionsList):void
 
 ----
 
-    
+
 
 
 
@@ -67,7 +67,7 @@ public registerFilter($filterClass, $filtersList):void
 
 ----
 
-    
+
 
 
 
@@ -95,7 +95,7 @@ public getFunctionsMap():array
 
 ----
 
-    
+
 
 
 
@@ -110,7 +110,7 @@ public getFiltersMap():array
 
 ----
 
-    
+
 
 
 

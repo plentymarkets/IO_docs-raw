@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__facetfaker]]
-== FacetFaker
+= FacetFaker
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Services\ItemSearch\Factories\Faker`
 
+===== Extends
+xref:IO/Services/ItemSearch/Factories/Faker/AbstractFaker.adoc#[`AbstractFaker`]
 
 
 
@@ -31,10 +33,10 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |count
     |
-|
+| 
     |facetTypes
     |
 |===
@@ -49,7 +51,7 @@ public fill($data):void
 
 ----
 
-    
+
 
 
 
@@ -60,39 +62,9 @@ public fill($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$data`
 |
 |===
-
-
-[source%nowrap, php]
-----
-
-public makeFacet():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public makeValues():void
-
-----
-
-    
-
-
-
-
-
 
 

@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__variationpricelist]]
-== VariationPriceList
+= VariationPriceList
 
 
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -46,7 +39,7 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-|
+| 
     |basePrices
     |
 |link:http://php.net/int[int^]
@@ -61,31 +54,31 @@ since 5.0.0 will be removed in 6.0.0
 |link:http://php.net/float[float^]
     |maximumOrderQuantity
     |
-|
+| 
     |lot
     |
-|
+| 
     |unit
     |
-|
+| 
     |prices
     |
-|
+|xref:IO/Extensions/Filters/NumberFormatFilter.adoc#[`NumberFormatFilter`]
     |numberFormatFilter
     |
-|
+|xref:IO/Services/UnitService.adoc#[`UnitService`]
     |unitService
     |
-|
+| xref:stable7@interface::Liveshopping.adoc#liveshopping_contracts_liveshoppingrepositorycontract[`LiveShoppingRepositoryContract`]
     |liveShoppingRepo
     |
-|
+| 
     |showNetPrice
     |
-|
+| xref:stable7@interface::Item.adoc#item_models_salespricesearchresponse[`SalesPriceSearchResponse`]
     |defaultPrice
     |
-|
+| 
     |cache
     |
 |===
@@ -100,7 +93,22 @@ public __construct():void
 
 ----
 
-    
+
+
+
+
+
+
+
+
+[source%nowrap, php]
+----
+
+public static create():void
+
+----
+
+
 
 
 
@@ -111,69 +119,26 @@ public __construct():void
 [source%nowrap, php]
 ----
 
-public static create($variationId, $itemId, $minimumOrderQuantity, $maximumOrderQuantity = null, $lot, $unit = null):IO\Helper\VariationPriceList
+public findPriceForQuantity():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_helper_variationpricelist[`VariationPriceList`]
 
 
 
 
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$variationId`
-|
 
-|link:http://php.net/int[int^]
-a|`$itemId`
-|
 
-|link:http://php.net/int[int^]
-a|`$minimumOrderQuantity`
-|
-
-|
-a|`$maximumOrderQuantity`
-|
-
-|link:http://php.net/int[int^]
-a|`$lot`
-|
-
-|
-a|`$unit`
-|
-|===
 
 
 [source%nowrap, php]
 ----
 
-public findPriceForQuantity($quantity, $type = self::TYPE_DEFAULT):void
+public getGraduatedPrices($showNetPrice = false):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -184,42 +149,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/float[float^]
-a|`$quantity`
-|
-
-|link:http://php.net/string[string^]
-a|`$type`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getGraduatedPrices($showNetPrice = false):array
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/bool[bool^]
+| 
 a|`$showNetPrice`
 |
 |===
@@ -228,57 +158,26 @@ a|`$showNetPrice`
 [source%nowrap, php]
 ----
 
-public getBasePrice($unitPrice, $currency, $lang = null):string
+public getBasePrice():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
 
 
 
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/float[float^]
-a|`$unitPrice`
-|
-
-|link:http://php.net/string[string^]
-a|`$currency`
-|
-
-|
-a|`$lang`
-|
-|===
 
 
 [source%nowrap, php]
 ----
 
-public toArray($quantity = null):array
+public toArray($quantity = null):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -289,7 +188,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$quantity`
 |
 |===
@@ -298,18 +197,11 @@ a|`$quantity`
 [source%nowrap, php]
 ----
 
-public getCalculatedPrices($quantity = null):array
+public getCalculatedPrices($quantity = null):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -320,7 +212,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$quantity`
 |
 |===
@@ -333,14 +225,7 @@ public convertCurrency($value):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -351,7 +236,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/float[float^]
+| 
 a|`$value`
 |
 |===
@@ -364,7 +249,7 @@ public convertGrossNet():void
 
 ----
 
-    
+
 
 
 
@@ -379,74 +264,7 @@ public getDefaultPrice():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public init():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public fetchPrices():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getSearchRequest():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public preparePrice():void
-
-----
-
-    
 
 
 
@@ -461,7 +279,7 @@ public fromMemoryCache():void
 
 ----
 
-    
+
 
 
 
@@ -476,7 +294,7 @@ public resetMemoryCache($key = null):void
 
 ----
 
-    
+
 
 
 
@@ -487,7 +305,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$key`
 |
 |===

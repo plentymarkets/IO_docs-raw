@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__contactformvalidator]]
-== ContactFormValidator
+= ContactFormValidator
 
 
 
@@ -13,7 +13,11 @@
 
 `IO\Validators\Customer`
 
+===== Extends
+xref:stable7@interface::Miscellaneous.adoc#miscellaneous_validation_validator[`Validator`]
 
+===== Implements
+xref:stable7@interface::Miscellaneous.adoc#miscellaneous_contracts_attributehelpercontract[`AttributeHelperContract`]
 
 
 
@@ -27,7 +31,7 @@ public defineAttributes():void
 
 ----
 
-    
+
 
 
 

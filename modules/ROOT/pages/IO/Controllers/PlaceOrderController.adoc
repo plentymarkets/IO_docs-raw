@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__placeordercontroller]]
-== PlaceOrderController
+= PlaceOrderController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -31,7 +33,7 @@
 |===
 |Type |Name |Description
 
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -42,14 +44,14 @@
 [source%nowrap, php]
 ----
 
-public placeOrder($orderService, $notificationService, $sessionStorageRepository, $shopUrls):IO\Controllers\Symfony\Component\HttpFoundation\Response
+public placeOrder($orderService, $notificationService, $sessionStorageService, $shopUrls):IO\Controllers\Symfony\Component\HttpFoundation\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_httpfoundation_response[`Response`]
+
+====== *Return type:*xref:IO/Controllers/Symfony/Component/HttpFoundation/Response.adoc#[`Response`]
 
 
 
@@ -57,19 +59,19 @@ public placeOrder($orderService, $notificationService, $sessionStorageRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_controllers_orderservice[`OrderService`]
+|xref:IO/Services/OrderService.adoc#[`OrderService`]
 a|`$orderService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_controllers_notificationservice[`NotificationService`]
+|xref:IO/Services/NotificationService.adoc#[`NotificationService`]
 a|`$notificationService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_controllers_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-a|`$sessionStorageRepository`
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorageService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_controllers_shopurls[`ShopUrls`]
+|xref:IO/Extensions/Constants/ShopUrls.adoc#[`ShopUrls`]
 a|`$shopUrls`
 |
 |===
@@ -82,59 +84,11 @@ public executePayment():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public handlePlaceOrderException($exception):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$exception`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Controllers\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_controllers_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
-|
-|===
 
 

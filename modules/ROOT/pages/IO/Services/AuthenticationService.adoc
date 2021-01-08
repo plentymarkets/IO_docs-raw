@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__authenticationservice]]
-== AuthenticationService
+= AuthenticationService
 
 
 
@@ -21,16 +21,16 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Authentication.adoc#authentication_contracts_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
     |contactAuthRepository
     |
-|
-    |sessionStorageRepository
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+    |sessionStorage
     |
-|
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
     |customerService
     |
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -41,11 +41,11 @@
 [source%nowrap, php]
 ----
 
-public __construct($contactAuthRepository, $sessionStorageRepository):void
+public __construct($contactAuthRepository, $sessionStorage):void
 
 ----
 
-    
+
 
 
 
@@ -56,12 +56,12 @@ AuthenticationService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
+| xref:stable7@interface::Authentication.adoc#authentication_contracts_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
 a|`$contactAuthRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-a|`$sessionStorageRepository`
+|xref:IO/Services/IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorage`
 |
 |===
 
@@ -73,7 +73,7 @@ public login($email, $password):int
 
 ----
 
-    
+
 
 
 
@@ -101,7 +101,7 @@ public loginWithContactId($contactId, $password):void
 
 ----
 
-    
+
 
 
 
@@ -129,7 +129,7 @@ public logout():void
 
 ----
 
-    
+
 
 
 
@@ -144,7 +144,7 @@ public checkPassword($password):bool
 
 ----
 
-    
+
 
 
 
@@ -168,35 +168,11 @@ public isLoggedIn():bool
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Services\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
-|
-|===
 
 

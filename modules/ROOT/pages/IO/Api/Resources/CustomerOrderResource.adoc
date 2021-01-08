@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__customerorderresource]]
-== CustomerOrderResource
+= CustomerOrderResource
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Api\Resources`
 
+===== Extends
+xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 
 
@@ -21,7 +23,7 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |orderService
     |
 |===
@@ -36,7 +38,7 @@ public __construct():void
 
 ----
 
-    
+
 
 
 
@@ -51,7 +53,7 @@ public index():void
 
 ----
 
-    
+
 
 
 

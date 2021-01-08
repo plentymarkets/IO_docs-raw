@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemlistservice]]
-== ItemListService
+= ItemListService
 
 
 
@@ -48,10 +48,6 @@
     |TYPE_WISH_LIST
     |'wish_list'
     |
-|link:http://php.net/string[string^]
-    |TYPE_SEARCH_SUGGESTIONS
-    |'search_suggestions'
-    |
 |===
 
 
@@ -65,35 +61,11 @@ public getItemList():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public isValidId($id):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$id`
-|
-|===
 
 

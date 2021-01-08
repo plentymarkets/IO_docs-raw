@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__orderbuilderquery]]
-== OrderBuilderQuery
+= OrderBuilderQuery
 
 
 
@@ -24,10 +24,10 @@
 |link:http://php.net/array[array^]
     |order
     |
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
     |app
     |
-|
+|xref:IO/Services/BasketService.adoc#[`BasketService`]
     |basketService
     |
 |===
@@ -42,7 +42,7 @@ public __construct($app, $basketService, $type, $plentyId):void
 
 ----
 
-    
+
 
 
 
@@ -53,11 +53,11 @@ OrderBuilderQuery constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_order_application[`Application`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
 a|`$app`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_order_basketservice[`BasketService`]
+|xref:IO/Services/BasketService.adoc#[`BasketService`]
 a|`$basketService`
 |
 
@@ -78,7 +78,7 @@ public done():array
 
 ----
 
-    
+
 
 
 
@@ -93,10 +93,10 @@ public fromBasket($basket = null):IO\Builder\Order\OrderBuilderQuery
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Build order from basket data
@@ -104,7 +104,7 @@ Build order from basket data
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| null
 a|`$basket`
 |
 |===
@@ -117,7 +117,7 @@ public withLang($lang):void
 
 ----
 
-    
+
 
 
 
@@ -141,10 +141,10 @@ public withStatus($status):IO\Builder\Order\OrderBuilderQuery
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add the status to the order
@@ -165,10 +165,10 @@ public withOwner($ownerId):IO\Builder\Order\OrderBuilderQuery
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add the owner to the order
@@ -189,10 +189,10 @@ public withOrderItem($orderItem):IO\Builder\Order\OrderBuilderQuery
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add an order item to the order
@@ -213,10 +213,10 @@ public withOrderItems($orderItems):IO\Builder\Order\OrderBuilderQuery
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add order items to the order
@@ -237,10 +237,10 @@ public withAddressId($addressId, $type):IO\Builder\Order\OrderBuilderQuery
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add an address to the order
@@ -265,10 +265,10 @@ public withRelation($type, $referenceId, $relationType):IO\Builder\Order\OrderBu
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add the relation to the order
@@ -297,10 +297,10 @@ public withContactId($customerId):IO\Builder\Order\OrderBuilderQuery
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add a contact to the order
@@ -317,50 +317,14 @@ a|`$customerId`
 [source%nowrap, php]
 ----
 
-public withOrderProperty($type, $subType, $value, $required = true):IO\Builder\Order\OrderBuilderQuery
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
-
-
-Add an order option to the order
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$type`
-|
-
-|link:http://php.net/int[int^]
-a|`$subType`
-|
-
-|link:http://php.net/string[string^]
-a|`$value`
-|
-
-|link:http://php.net/bool[bool^]
-a|`$required`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public withComment($isVisibleForContact, $text):IO\Builder\Order\OrderBuilderQuery
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_order_orderbuilderquery[`OrderBuilderQuery`]
+
+====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add a comment to the order. (e.g. customer wish)

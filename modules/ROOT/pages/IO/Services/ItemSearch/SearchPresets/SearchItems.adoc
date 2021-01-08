@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__searchitems]]
-== SearchItems
+= SearchItems
 
 Search preset for search items.
 Available options:
@@ -16,13 +16,6 @@ Available options:
 - priceMax       Maximum price of the variations
 - autocomplete:  Flag indicating if autocompletion should be used
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -30,6 +23,8 @@ since 5.0.0 will be deleted in 6.0.0
 `IO\Services\ItemSearch\SearchPresets`
 
 
+===== Implements
+xref:IO/Services/ItemSearch/SearchPresets/SearchPreset.adoc#[`SearchPreset`]
 
 
 
@@ -43,7 +38,7 @@ public static getSearchFactory($options):void
 
 ----
 
-    
+
 
 
 
@@ -54,7 +49,7 @@ public static getSearchFactory($options):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$options`
 |
 |===

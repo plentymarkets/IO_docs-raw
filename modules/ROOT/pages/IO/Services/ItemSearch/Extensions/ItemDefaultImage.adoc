@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemdefaultimage]]
-== ItemDefaultImage
+= ItemDefaultImage
 
 
 
@@ -14,6 +14,8 @@
 `IO\Services\ItemSearch\Extensions`
 
 
+===== Implements
+xref:IO/Services/ItemSearch/Extensions/ItemSearchExtension.adoc#[`ItemSearchExtension`]
 
 
 
@@ -21,19 +23,19 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |allImagesRequested
     |
-|
+| 
     |itemImagesRequested
     |
-|
+| 
     |variationImagesRequested
     |
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_item_itemimagesettings[`ItemImageSettings`]
     |itemImageSettings
     |
-|
+| 
     |cache
     |
 |===
@@ -48,7 +50,7 @@ public getSearch($parentSearchBuilder):void
 
 ----
 
-    
+
 
 
 
@@ -59,7 +61,7 @@ public getSearch($parentSearchBuilder):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$parentSearchBuilder`
 |
 |===
@@ -72,52 +74,7 @@ public transformResult():void
 
 ----
 
-    
 
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public appendDefaultImage():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public isImageRequested():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public loadItemImageSettings():void
-
-----
-
-    
 
 
 
@@ -132,7 +89,7 @@ public fromMemoryCache():void
 
 ----
 
-    
+
 
 
 
@@ -147,7 +104,7 @@ public resetMemoryCache($key = null):void
 
 ----
 
-    
+
 
 
 
@@ -158,7 +115,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$key`
 |
 |===

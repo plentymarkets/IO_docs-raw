@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__customeraddressresource]]
-== CustomerAddressResource
+= CustomerAddressResource
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Api\Resources`
 
+===== Extends
+xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 
 
@@ -31,7 +33,7 @@
 |===
 |Type |Name |Description
 
-|
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
     |customerService
     |
 |===
@@ -46,7 +48,7 @@ public __construct($request, $response, $customerService):void
 
 ----
 
-    
+
 
 
 
@@ -57,15 +59,15 @@ CustomerAddressResource constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_resources_request[`Request`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_request[`Request`]
 a|`$request`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_apiresponse[`ApiResponse`]
+|xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
 a|`$response`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_customerservice[`CustomerService`]
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
 a|`$customerService`
 |
 |===
@@ -74,29 +76,14 @@ a|`$customerService`
 [source%nowrap, php]
 ----
 
-public getAddressType():int
+public index():Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
 
-
-
-Get the address type from the request
-
-[source%nowrap, php]
-----
-
-public index():IO\Api\Resources\Response
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Get an address by type
@@ -104,14 +91,14 @@ Get an address by type
 [source%nowrap, php]
 ----
 
-public store():IO\Api\Resources\Response
+public store():Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Create an address with the given type
@@ -119,14 +106,14 @@ Create an address with the given type
 [source%nowrap, php]
 ----
 
-public update($addressId):IO\Api\Resources\Response
+public update($addressId):Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Update the address with the given ID
@@ -143,14 +130,14 @@ a|`$addressId`
 [source%nowrap, php]
 ----
 
-public destroy($addressId):IO\Api\Resources\Response
+public destroy($addressId):Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Delete the address with the given ID

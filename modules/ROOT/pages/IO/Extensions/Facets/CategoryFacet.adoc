@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__categoryfacet]]
-== CategoryFacet
+= CategoryFacet
 
 
 
@@ -14,6 +14,8 @@
 `IO\Extensions\Facets`
 
 
+===== Implements
+xref:IO/Services/ItemSearch/Contracts/FacetExtension.adoc#[`FacetExtension`]
 
 
 .Constants
@@ -37,7 +39,7 @@ public getAggregation():void
 
 ----
 
-    
+
 
 
 
@@ -48,11 +50,11 @@ public getAggregation():void
 [source%nowrap, php]
 ----
 
-public mergeIntoFacetsList($result):array
+public mergeIntoFacetsList($result):void
 
 ----
 
-    
+
 
 
 
@@ -63,7 +65,7 @@ public mergeIntoFacetsList($result):array
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+| 
 a|`$result`
 |
 |===
@@ -76,7 +78,7 @@ public extractFilterParams($filtersList):void
 
 ----
 
-    
+
 
 
 
@@ -87,7 +89,7 @@ public extractFilterParams($filtersList):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+| 
 a|`$filtersList`
 |
 |===

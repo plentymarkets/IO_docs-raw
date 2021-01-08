@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__checkoutreadonlychanged]]
-== CheckoutReadonlyChanged
+= CheckoutReadonlyChanged
 
 
 
@@ -21,7 +21,7 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |isReadonly
     |
 |===
@@ -36,7 +36,7 @@ public __construct($isReadonly):void
 
 ----
 
-    
+
 
 
 
@@ -47,7 +47,7 @@ public __construct($isReadonly):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$isReadonly`
 |
 |===
@@ -60,7 +60,7 @@ public isReadOnlyCheckout():void
 
 ----
 
-    
+
 
 
 

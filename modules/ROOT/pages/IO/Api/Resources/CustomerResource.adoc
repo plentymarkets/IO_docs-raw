@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__customerresource]]
-== CustomerResource
+= CustomerResource
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Api\Resources`
 
+===== Extends
+xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 
 
@@ -21,11 +23,8 @@
 |===
 |Type |Name |Description
 
-|
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
     |customerService
-    |
-|
-    |contactRepository
     |
 |===
 
@@ -39,7 +38,7 @@ public __construct($request, $response, $customerService):void
 
 ----
 
-    
+
 
 
 
@@ -50,15 +49,15 @@ CustomerResource constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_resources_request[`Request`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_request[`Request`]
 a|`$request`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_apiresponse[`ApiResponse`]
+|xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
 a|`$response`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_resources_customerservice[`CustomerService`]
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
 a|`$customerService`
 |
 |===
@@ -67,14 +66,14 @@ a|`$customerService`
 [source%nowrap, php]
 ----
 
-public index():IO\Api\Resources\Response
+public index():Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Get the contact
@@ -82,14 +81,14 @@ Get the contact
 [source%nowrap, php]
 ----
 
-public store():IO\Api\Resources\Response
+public store():Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Save the contact

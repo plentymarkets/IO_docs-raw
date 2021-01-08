@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemnamefilter]]
-== ItemNameFilter
+= ItemNameFilter
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Extensions\Filters`
 
+===== Extends
+xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 
 
 
@@ -21,10 +23,10 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |defaultConfigItemName
     |
-|
+| 
     |defaultConfigItemDisplayName
     |
 |===
@@ -39,7 +41,7 @@ public __construct():void
 
 ----
 
-    
+
 
 
 
@@ -54,7 +56,7 @@ public getFilters():array
 
 ----
 
-    
+
 
 
 
@@ -69,7 +71,7 @@ public itemName($itemData, $configName = null, $displayName = null):string
 
 ----
 
-    
+
 
 
 
@@ -80,7 +82,7 @@ Build the item name from the configuration
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_extensions_filters[`Filters`]
+|xref:IO/Extensions/Filters.adoc#[`Filters`]
 a|`$itemData`
 |
 

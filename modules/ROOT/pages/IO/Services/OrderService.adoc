@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__orderservice]]
-== OrderService
+= OrderService
 
 
 
@@ -22,7 +22,7 @@
 
 |link:http://php.net/array[array^]
     |WRAPPED_ORDERITEM_TYPES
-    |[1,2,3,9,13]
+    |[1,2,3,9]
     |
 |link:http://php.net/array[array^]
     |VISIBLE_ORDER_TYPES
@@ -35,37 +35,31 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
     |orderRepository
     |
-|
+|xref:IO/Services/BasketService.adoc#[`BasketService`]
     |basketService
     |
-|
-    |sessionStorageRepository
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+    |sessionStorage
     |
-|
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
     |frontendPaymentMethodRepository
     |
-|
+| xref:stable7@interface::Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
     |addressRepository
     |
-|
+|xref:IO/Services/UrlService.adoc#[`UrlService`]
     |urlService
     |
-|
+|xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
     |checkoutService
     |
-|
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
     |customerService
     |
-|
-    |contactRepository
-    |
-|
-    |giftCardRepository
-    |
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -76,11 +70,11 @@
 [source%nowrap, php]
 ----
 
-public __construct($orderRepository, $basketService, $sessionStorageRepository, $frontendPaymentMethodRepository, $addressRepository, $urlService, $checkoutService, $customerService, $contactRepository, $giftCardRepository):void
+public __construct($orderRepository, $basketService, $sessionStorage, $frontendPaymentMethodRepository, $addressRepository, $urlService, $checkoutService, $customerService):void
 
 ----
 
-    
+
 
 
 
@@ -91,44 +85,36 @@ OrderService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_orderrepositorycontract[`OrderRepositoryContract`]
+| xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
 a|`$orderRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_basketservice[`BasketService`]
+|xref:IO/Services/BasketService.adoc#[`BasketService`]
 a|`$basketService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-a|`$sessionStorageRepository`
+|xref:IO/Services/IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorage`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
+| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
 a|`$frontendPaymentMethodRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_addressrepositorycontract[`AddressRepositoryContract`]
+| xref:stable7@interface::Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
 a|`$addressRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_urlservice[`UrlService`]
+|xref:IO/Services/IO/Services/UrlService.adoc#[`UrlService`]
 a|`$urlService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_checkoutservice[`CheckoutService`]
+|xref:IO/Services/IO/Services/CheckoutService.adoc#[`CheckoutService`]
 a|`$checkoutService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_customerservice[`CustomerService`]
+|xref:IO/Services/IO/Services/CustomerService.adoc#[`CustomerService`]
 a|`$customerService`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_contactrepositorycontract[`ContactRepositoryContract`]
-a|`$contactRepository`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_giftcardrepositorycontract[`GiftCardRepositoryContract`]
-a|`$giftCardRepository`
 |
 |===
 
@@ -136,45 +122,17 @@ a|`$giftCardRepository`
 [source%nowrap, php]
 ----
 
-public placeOrder():IO\Services\LocalizedOrder
+public placeOrder():IO\Models\LocalizedOrder
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_localizedorder[`LocalizedOrder`]
+
+====== *Return type:*xref:IO/Models/LocalizedOrder.adoc#[`LocalizedOrder`]
 
 
 Place an order
-
-[source%nowrap, php]
-----
-
-public subscribeToNewsletter($email, $billingAddressId):void
-
-----
-
-    
-
-
-
-
-
-Subscribe the customer to the newsletter, if stored in the session
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$email`
-|
-
-|link:http://php.net/int[int^]
-a|`$billingAddressId`
-|
-|===
-
 
 [source%nowrap, php]
 ----
@@ -183,7 +141,7 @@ public executePayment($orderId, $paymentId):array
 
 ----
 
-    
+
 
 
 
@@ -211,7 +169,7 @@ public findOrderById($orderId, $wrap = true):void
 
 ----
 
-    
+
 
 
 
@@ -239,7 +197,7 @@ public findOrderByAccessKey():void
 
 ----
 
-    
+
 
 
 
@@ -250,14 +208,14 @@ public findOrderByAccessKey():void
 [source%nowrap, php]
 ----
 
-public getOrdersForContact($contactId, $page = 1, $items = 50, $filters = [], $wrapped = true):IO\Services\PaginatedResult
+public getOrdersForContact($contactId, $page = 1, $items = 50, $filters = [], $wrapped = true):Plenty\Repositories\Models\PaginatedResult
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_paginatedresult[`PaginatedResult`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
 
 
 Get a list of orders for a contact
@@ -294,7 +252,7 @@ public getOrdersCompact():void
 
 ----
 
-    
+
 
 
 
@@ -305,14 +263,14 @@ public getOrdersCompact():void
 [source%nowrap, php]
 ----
 
-public getLatestOrderForContact($contactId):IO\Services\LocalizedOrder
+public getLatestOrderForContact($contactId):IO\Models\LocalizedOrder
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_localizedorder[`LocalizedOrder`]
+
+====== *Return type:*xref:IO/Models/LocalizedOrder.adoc#[`LocalizedOrder`]
 
 
 Get the last order created by the current contact
@@ -333,7 +291,7 @@ public getOrderPropertyByOrderId():void
 
 ----
 
-    
+
 
 
 
@@ -348,7 +306,7 @@ public isReturnActive():void
 
 ----
 
-    
+
 
 
 
@@ -363,40 +321,12 @@ public createOrderReturn():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public getReturnOrder($orderId, $orderAccessKey = &quot;&quot;):IO\Services\LocalizedOrder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_localizedorder[`LocalizedOrder`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$orderId`
-|
-
-|link:http://php.net/string[string^]
-a|`$orderAccessKey`
-|
-|===
 
 
 [source%nowrap, php]
@@ -406,7 +336,7 @@ public getReturnableItems($order):array
 
 ----
 
-    
+
 
 
 
@@ -417,7 +347,7 @@ public getReturnableItems($order):array
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_order[`Order`]
+| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
 a|`$order`
 |
 |===
@@ -430,10 +360,10 @@ public getPaymentMethodListForSwitch($currentPaymentMethodId, $orderId = null):I
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_support_collection[`Collection`]
+
+====== *Return type:*xref:IO/Services/Illuminate/Support/Collection.adoc#[`Collection`]
 
 
 List all payment methods available for switch in MyAccount
@@ -445,64 +375,8 @@ List all payment methods available for switch in MyAccount
 a|`$currentPaymentMethodId`
 |
 
-|
+| null
 a|`$orderId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public allowPaymentMethodSwitchFrom($paymentMethodId, $orderId = null):bool
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$paymentMethodId`
-|
-
-|link:http://php.net/int[int^]
-a|`$orderId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public switchPaymentMethodForOrder($orderId, $paymentMethodId):IO\Services\LocalizedOrder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_localizedorder[`LocalizedOrder`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$orderId`
-|
-
-|link:http://php.net/int[int^]
-a|`$paymentMethodId`
 |
 |===
 
@@ -514,7 +388,7 @@ public complete($order):void
 
 ----
 
-    
+
 
 
 
@@ -525,146 +399,8 @@ Do steps after creating the order
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_order[`Order`]
+| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
 a|`$order`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public handleThrowable():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public createAndAssignDummyPayment($order):void
-
-----
-
-    
-
-
-
-
-
-Creates a payment with amount 0 and assigns it to the given order so that the status of the given order with amount 0 is calculated correctly.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_order[`Order`]
-a|`$order`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getPaymentProperty($typeId, $value):IO\Services\Plenty\Modules\Payment\Models\PaymentProperty
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_models_paymentproperty[`PaymentProperty`]
-
-
-Returns a PaymentProperty with the given params
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$typeId`
-|
-
-|link:http://php.net/string[string^]
-a|`$value`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getReturnOrderStatus():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public sendMail($template, $emailData, $params):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$template`
-|
-
-|link:http://php.net/string[string^]
-a|`$emailData`
-|Must be a fully qualified class name
-
-|link:http://php.net/array[array^]
-a|`$params`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Services\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
 |
 |===
 

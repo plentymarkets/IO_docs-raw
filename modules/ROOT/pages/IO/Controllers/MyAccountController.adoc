@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__myaccountcontroller]]
-== MyAccountController
+= MyAccountController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -27,7 +29,7 @@ public showMyAccount($category = null):string
 
 ----
 
-    
+
 
 
 
@@ -38,7 +40,7 @@ Prepare and render the data for the my account page
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_controllers_category[`Category`]
+| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
 a|`$category`
 |
 |===
@@ -51,7 +53,7 @@ public redirect():void
 
 ----
 
-    
+
 
 
 

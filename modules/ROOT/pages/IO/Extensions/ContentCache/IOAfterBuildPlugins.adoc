@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__ioafterbuildplugins]]
-== IOAfterBuildPlugins
+= IOAfterBuildPlugins
 
 
 
@@ -21,7 +21,7 @@
 |===
 |Type |Name |Description
 
-|
+|link:http://php.net/string[string^]
     |pluginNamespace
     |
 |===
@@ -36,7 +36,7 @@ public handle($afterBuildPlugins):void
 
 ----
 
-    
+
 
 
 
@@ -47,32 +47,8 @@ public handle($afterBuildPlugins):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$afterBuildPlugins`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public getLogger($identifier):IO\Extensions\ContentCache\LoggerContract
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_contentcache_loggercontract[`LoggerContract`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$identifier`
 |
 |===
 

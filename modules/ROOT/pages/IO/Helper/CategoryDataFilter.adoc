@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__categorydatafilter]]
-== CategoryDataFilter
+= CategoryDataFilter
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Helper`
 
+===== Extends
+xref:IO/Helper/DataFilter.adoc#[`DataFilter`]
 
 
 
@@ -27,7 +29,7 @@ public applyResultFields():void
 
 ----
 
-    
+
 
 
 

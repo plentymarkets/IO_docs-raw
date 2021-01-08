@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__customerchangemailcontroller]]
-== CustomerChangeMailController
+= CustomerChangeMailController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -23,39 +25,11 @@
 [source%nowrap, php]
 ----
 
-public show($contactId, $hash):string
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$contactId`
-|
-
-|link:http://php.net/string[string^]
-a|`$hash`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public redirect():void
 
 ----
 
-    
+
 
 
 

@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__iorouteserviceprovider]]
-== IORouteServiceProvider
+= IORouteServiceProvider
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Providers`
 
+===== Extends
+xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_routeserviceprovider[`RouteServiceProvider`]
 
 
 
@@ -27,7 +29,7 @@ public register():void
 
 ----
 
-    
+
 
 
 
@@ -42,7 +44,7 @@ public map($router, $api):void
 
 ----
 
-    
+
 
 
 
@@ -53,68 +55,13 @@ Define the map routes to templates or REST resources
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_providers_router[`Router`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_routing_router[`Router`]
 a|`$router`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_providers_apirouter[`ApiRouter`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_routing_apirouter[`ApiRouter`]
 a|`$api`
 |
 |===
-
-
-[source%nowrap, php]
-----
-
-public registerRedirectedRoute($router, $route, $shopUrl, $legacyController, $redirectController):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_providers_router[`Router`]
-a|`$router`
-|
-
-|link:http://php.net/string[string^]
-a|`$route`
-|
-
-|link:http://php.net/string[string^]
-a|`$shopUrl`
-|
-
-|link:http://php.net/string[string^]
-a|`$legacyController`
-|
-
-|link:http://php.net/string[string^]
-a|`$redirectController`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public registerSingleCategoryRoute():void
-
-----
-
-    
-
-
-
-
-
 
 

@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemcolumnbuilder]]
-== ItemColumnBuilder
+= ItemColumnBuilder
 
 
 
@@ -21,10 +21,10 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/array[array^]
+| 
     |columnFields
     |
-|link:http://php.net/array[array^]
+| 
     |columnParams
     |
 |===
@@ -39,10 +39,10 @@ public defaults():IO\Builder\Item\ItemColumnBuilder
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Get the item data that is used in most scenarios
@@ -54,7 +54,7 @@ public build():array
 
 ----
 
-    
+
 
 
 
@@ -65,102 +65,14 @@ Return generated columns to pass to ItemDataLayerRepository
 [source%nowrap, php]
 ----
 
-public withColumn($columnKey, $columnValues, $columnParams = null):IO\Builder\Item\ItemColumnBuilder
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
-
-
-Add the column to get from ItemDataLayerRepository
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$columnKey`
-|
-
-|link:http://php.net/array[array^]
-a|`$columnValues`
-|
-
-|
-a|`$columnParams`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public addColumnFields($columnKey, $columnValues):void
-
-----
-
-    
-
-
-
-
-
-Add column fields to get from ItemDataLayerRepository
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$columnKey`
-|
-
-|link:http://php.net/array[array^]
-a|`$columnValues`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public addColumnParams($columnKey, $columnParams):void
-
-----
-
-    
-
-
-
-
-
-Add column parameters to get from ItemDataLayerRepository
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$columnKey`
-|
-
-|link:http://php.net/array[array^]
-a|`$columnParams`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public withItemBase($itemBaseFields):IO\Builder\Item\ItemColumnBuilder
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in ItemBase to get from ItemDataLayerRepository
@@ -181,10 +93,10 @@ public withItemCharacterList($itemCharacterFields, $):IO\Builder\Item\ItemColumn
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in ItemCharacterList to get from ItemDataLayerRepository
@@ -196,7 +108,7 @@ Add fields in ItemCharacterList to get from ItemDataLayerRepository
 a|`$itemCharacterFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for ItemCharacterList
 |===
@@ -209,10 +121,10 @@ public withItemCrossSellingList($itemCrossSellingListFields):IO\Builder\Item\Ite
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in ItemCrossSellingList to get from ItemDataLayerRepository
@@ -233,10 +145,10 @@ public withItemDescription($itemDescriptionFields, $):IO\Builder\Item\ItemColumn
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in ItemDescription to get from ItemDataLayerRepository
@@ -248,7 +160,7 @@ Add fields in ItemDescription to get from ItemDataLayerRepository
 a|`$itemDescriptionFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for ItemDescription
 |===
@@ -261,10 +173,10 @@ public withVariationAttributeValueList($variationAttributeValueListFields):IO\Bu
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationAttributeValue to get from ItemDataLayerRepository
@@ -285,10 +197,10 @@ public withVariationBarcode($variationBarcodeFields, $):IO\Builder\Item\ItemColu
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationBarcode to get from ItemDataLayerRepository
@@ -300,7 +212,7 @@ Add fields in VariationBarcode to get from ItemDataLayerRepository
 a|`$variationBarcodeFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for VariationBarcode
 |===
@@ -313,10 +225,10 @@ public withVariationBarcodeList($variationBarcodeFields):IO\Builder\Item\ItemCol
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationBarcodeList to get from ItemDataLayerRepository
@@ -337,10 +249,10 @@ public withVariationBase($variationBaseFields):IO\Builder\Item\ItemColumnBuilder
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationBase to get from ItemDataLayerRepository
@@ -361,10 +273,10 @@ public withVariationBundleComponentList($variationBundleComponentListFields):IO\
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationBundleComponentList to get from ItemDataLayerRepository
@@ -385,10 +297,10 @@ public withVariationCategoryList($variationCategoryFields):IO\Builder\Item\ItemC
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationCategory to get from ItemDataLayerRepository
@@ -409,10 +321,10 @@ public withVariationImageList($variationImageListFields):IO\Builder\Item\ItemCol
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationImageList to get from ItemDataLayerRepository
@@ -433,10 +345,10 @@ public withVariationLinkMarketplace($variationLinkMarketplaceFields):IO\Builder\
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationLinkMarketplace to get from ItemDataLayerRepository
@@ -457,10 +369,10 @@ public withVariationLinkWebstore($variationLinkWebstoreFields):IO\Builder\Item\I
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationLinkWebstore to get from ItemDataLayerRepository
@@ -481,10 +393,10 @@ public withVariationMarketStatus($variationMarketStatusFields, $):IO\Builder\Ite
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationMarketStatus to get from ItemDataLayerRepository
@@ -496,7 +408,7 @@ Add fields in VariationMarketStatus to get from ItemDataLayerRepository
 a|`$variationMarketStatusFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for VariationMarketStatus
 |===
@@ -509,10 +421,10 @@ public withVariationRecommendedRetailPrice($variationRecommendedPriceFields, $):
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationRecommendedRetailPrice to get from ItemDataLayerRepository
@@ -524,7 +436,7 @@ Add fields in VariationRecommendedRetailPrice to get from ItemDataLayerRepositor
 a|`$variationRecommendedPriceFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for VariationRecommendedRetailPrice
 |===
@@ -537,10 +449,10 @@ public withVariationRecommendedRetailPriceList($variationRecommendedPriceListFie
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationRecommendedRetailPriceList to get from ItemDataLayerRepository
@@ -552,7 +464,7 @@ Add fields in VariationRecommendedRetailPriceList to get from ItemDataLayerRepos
 a|`$variationRecommendedPriceListFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for VariationRecommendedRetailPriceList
 |===
@@ -565,10 +477,10 @@ public withVariationRetailPrice($variationRetailPriceFields, $):IO\Builder\Item\
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationRetailPrice to get from ItemDataLayerRepository
@@ -580,7 +492,7 @@ Add fields in VariationRetailPrice to get from ItemDataLayerRepository
 a|`$variationRetailPriceFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for VariationRetailPrice
 |===
@@ -593,10 +505,10 @@ public withVariationRetailPriceList($variationRetailPriceListFields, $):IO\Build
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationRetailPriceList to get from ItemDataLayerRepository
@@ -608,7 +520,7 @@ Add fields in VariationRetailPriceList to get from ItemDataLayerRepository
 a|`$variationRetailPriceListFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for VariationRetailPriceList
 |===
@@ -621,10 +533,10 @@ public withVariationSpecialOfferRetailPrice($variationSpecialOfferRetailPriceFie
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationSpecialOfferRetailPrice to get from ItemDataLayerRepository
@@ -636,7 +548,7 @@ Add fields in VariationSpecialOfferRetailPrice to get from ItemDataLayerReposito
 a|`$variationSpecialOfferRetailPriceFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for VariationSpecialOfferRetailPrice
 |===
@@ -649,10 +561,10 @@ public withVariationSpecialOfferRetailPriceList($variationSpecialOfferRetailPric
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationSpecialOfferRetailPriceList to get from ItemDataLayerRepository
@@ -664,7 +576,7 @@ Add fields in VariationSpecialOfferRetailPriceList to get from ItemDataLayerRepo
 a|`$variationSpecialOfferRetailPriceListFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for VariationSpecialOfferRetailPriceList
 |===
@@ -677,10 +589,10 @@ public withVariationStandardCategory($variationStandardCategoryFields, $):IO\Bui
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationStandardCategory to get from ItemDataLayerRepository
@@ -692,7 +604,7 @@ Add fields in VariationStandardCategory to get from ItemDataLayerRepository
 a|`$variationStandardCategoryFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for VariationStandardCategory
 |===
@@ -705,10 +617,10 @@ public withVariationStock($variationStockFields, $):IO\Builder\Item\ItemColumnBu
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationStock to get from ItemDataLayerRepository
@@ -720,7 +632,7 @@ Add fields in VariationStock to get from ItemDataLayerRepository
 a|`$variationStockFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for VariationStock
 |===
@@ -733,10 +645,10 @@ public withVariationStockBuffer($variationStockBufferFields, $):IO\Builder\Item\
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationStockBuffer to get from ItemDataLayerRepository
@@ -748,7 +660,7 @@ Add fields in VariationStockBuffer to get from ItemDataLayerRepository
 a|`$variationStockBufferFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for VariationStockBuffer
 |===
@@ -761,10 +673,10 @@ public withVariationStockList($variationStockFields):IO\Builder\Item\ItemColumnB
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationStockList to get from ItemDataLayerRepository
@@ -785,10 +697,10 @@ public withVariationSupplierList($variationSupplierFields):IO\Builder\Item\ItemC
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationSupplierList to get from ItemDataLayerRepository
@@ -809,10 +721,10 @@ public withVariationWarehouse($variationWarehouseFields, $):IO\Builder\Item\Item
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationWarehouse to get from ItemDataLayerRepository
@@ -824,7 +736,7 @@ Add fields in VariationWarehouse to get from ItemDataLayerRepository
 a|`$variationWarehouseFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for VariationWarehouse
 |===
@@ -837,10 +749,10 @@ public withVariationWarehouseList($variationWarehouseFields, $):IO\Builder\Item\
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_item_itemcolumnbuilder[`ItemColumnBuilder`]
+
+====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationWarehouseList to get from ItemDataLayerRepository
@@ -852,7 +764,7 @@ Add fields in VariationWarehouseList to get from ItemDataLayerRepository
 a|`$variationWarehouseFields`
 |List of fields
 
-|        xref:Miscellaneous.adoc#miscellaneous_item_?array[`?array`]
+|xref:IO/Builder/Item/?array.adoc#[`?array`]
 a|`$`
 |additional params to use for VariationWarehouseList
 |===

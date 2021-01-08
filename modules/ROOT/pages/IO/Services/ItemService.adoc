@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemservice]]
-== ItemService
+= ItemService
 
 
 
@@ -21,19 +21,19 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
     |app
     |
-|
+| xref:stable7@interface::Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
     |itemRepository
     |
-|
-    |sessionStorageRepository
-    |SessionStorageRepositoryContract
+| 
+    |sessionStorage
+    |SessionStorageService
 |link:http://php.net/array[array^]
     |additionalItemSortingMap
     |
-|
+| 
     |cache
     |
 |===
@@ -44,11 +44,11 @@
 [source%nowrap, php]
 ----
 
-public __construct($app, $itemRepository, $sessionStorageRepository):void
+public __construct($app, $itemRepository, $sessionStorage):void
 
 ----
 
-    
+
 
 
 
@@ -59,16 +59,16 @@ ItemService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_application[`Application`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
 a|`$app`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
+| xref:stable7@interface::Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
 a|`$itemRepository`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-a|`$sessionStorageRepository`
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorage`
 |
 |===
 
@@ -80,7 +80,7 @@ public getItem($itemId):array
 
 ----
 
-    
+
 
 
 
@@ -104,7 +104,7 @@ public getItems($itemIds):array
 
 ----
 
-    
+
 
 
 
@@ -128,7 +128,7 @@ public getItemImage($itemId):string
 
 ----
 
-    
+
 
 
 
@@ -152,7 +152,7 @@ public getVariation($variationId):array
 
 ----
 
-    
+
 
 
 
@@ -176,7 +176,7 @@ public getVariations($variationIds):array
 
 ----
 
-    
+
 
 
 
@@ -196,35 +196,11 @@ a|`$variationIds`
 [source%nowrap, php]
 ----
 
-public getVariationIds($itemId):array
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$itemId`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
 public getVariationList($itemId, $withPrimary = false):array
 
 ----
 
-    
+
 
 
 
@@ -259,7 +235,7 @@ public getVariationImage($variationId, $imageAccessor = &quot;urlPreview&quot;):
 This method will not be supported in the future. Please refrain from using it as soon as possible.
 
 ====
-    
+
 
 
 
@@ -287,7 +263,7 @@ public getItemForCategory($catID, $params = [], $page = 1):array
 
 ----
 
-    
+
 
 
 
@@ -319,7 +295,7 @@ public getVariationAttributeMap($itemId):array
 
 ----
 
-    
+
 
 
 
@@ -343,7 +319,7 @@ public getVariationIsSalable($variationId):bool
 
 ----
 
-    
+
 
 
 
@@ -367,7 +343,7 @@ public getAttributeNameMap($itemId):array
 
 ----
 
-    
+
 
 
 
@@ -387,7 +363,7 @@ a|`$itemId`
 [source%nowrap, php]
 ----
 
-public getItemURL($itemId):IO\Services\Record
+public getItemURL($itemId):Plenty\Modules\Item\DataLayer\Models\Record
 
 ----
 
@@ -398,10 +374,10 @@ public getItemURL($itemId):IO\Services\Record
 Use UrlService instead
 
 ====
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_record[`Record`]
+
+====== *Return type:* xref:stable7@interface::Item.adoc#item_models_record[`Record`]
 
 
 Get the item URL
@@ -422,7 +398,7 @@ public getAttributeName($attributeId):string
 
 ----
 
-    
+
 
 
 
@@ -446,7 +422,7 @@ public getAttributeValueName($attributeValueId):string
 
 ----
 
-    
+
 
 
 
@@ -470,7 +446,7 @@ public getItemCrossSellingList($itemId, $crossSellingType = &quot;similar&quot;)
 
 ----
 
-    
+
 
 
 
@@ -498,7 +474,7 @@ public getItemConditionText($conditionId):string
 
 ----
 
-    
+
 
 
 
@@ -518,14 +494,14 @@ a|`$conditionId`
 [source%nowrap, php]
 ----
 
-public getLatestItems($limit = 5, $categoryId):IO\Services\RecordList
+public getLatestItems($limit = 5, $categoryId):Plenty\Modules\Item\DataLayer\Models\RecordList
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_services_recordlist[`RecordList`]
+
+====== *Return type:* xref:stable7@interface::Item.adoc#item_models_recordlist[`RecordList`]
 
 
 
@@ -550,7 +526,7 @@ public searchItems($searchString, $params = [], $page = 1):array
 
 ----
 
-    
+
 
 
 
@@ -582,7 +558,7 @@ public getAdditionalItemSorting():void
 
 ----
 
-    
+
 
 
 
@@ -597,7 +573,7 @@ public addAdditionalItemSorting($key, $translationKey):void
 
 ----
 
-    
+
 
 
 
@@ -625,7 +601,7 @@ public fromMemoryCache():void
 
 ----
 
-    
+
 
 
 
@@ -640,7 +616,7 @@ public resetMemoryCache($key = null):void
 
 ----
 
-    
+
 
 
 
@@ -651,7 +627,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$key`
 |
 |===

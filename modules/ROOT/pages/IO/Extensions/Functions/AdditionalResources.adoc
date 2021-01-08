@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__additionalresources]]
-== AdditionalResources
+= AdditionalResources
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Extensions\Functions`
 
+===== Extends
+xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 
 
 
@@ -21,7 +23,7 @@
 |===
 |Type |Name |Description
 
-|
+|xref:IO/Helper/ResourceContainer.adoc#[`ResourceContainer`]
     |resourceContainer
     |
 |===
@@ -36,7 +38,7 @@ public getFunctions():void
 
 ----
 
-    
+
 
 
 
@@ -51,7 +53,7 @@ public getAdditionalScripts():void
 
 ----
 
-    
+
 
 
 
@@ -66,7 +68,7 @@ public getAdditionalStyles():void
 
 ----
 
-    
+
 
 
 

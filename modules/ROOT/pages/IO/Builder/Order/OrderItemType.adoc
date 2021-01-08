@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__orderitemtype]]
-== OrderItemType
+= OrderItemType
 
 
 
@@ -63,14 +63,6 @@
 |link:http://php.net/int[int^]
     |ORDER
     |11
-    |
-|link:http://php.net/int[int^]
-    |TYPE_ITEM_SET
-    |13
-    |
-|link:http://php.net/int[int^]
-    |TYPE_SET_COMPONENT
-    |14
     |
 |===
 

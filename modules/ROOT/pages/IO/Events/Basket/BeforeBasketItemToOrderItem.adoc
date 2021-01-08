@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__beforebasketitemtoorderitem]]
-== BeforeBasketItemToOrderItem
+= BeforeBasketItemToOrderItem
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Events\Basket`
 
+===== Extends
+xref:stable7@interface::Basket.adoc#basket_basketitem_basketitemevent[`BasketItemEvent`]
 
 
 

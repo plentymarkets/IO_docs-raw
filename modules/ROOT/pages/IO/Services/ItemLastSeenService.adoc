@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemlastseenservice]]
-== ItemLastSeenService
+= ItemLastSeenService
 
 
 
@@ -31,10 +31,10 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |cachingRepository
     |
-|
+| 
     |basketRepository
     |
 |===
@@ -49,7 +49,7 @@ public __construct($cachingRepository):void
 
 ----
 
-    
+
 
 
 
@@ -60,7 +60,7 @@ ItemLastSeenService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_cachingrepository[`CachingRepository`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_cachingrepository[`CachingRepository`]
 a|`$cachingRepository`
 |
 |===
@@ -73,7 +73,7 @@ public setLastSeenItem($variationId):void
 
 ----
 
-    
+
 
 
 

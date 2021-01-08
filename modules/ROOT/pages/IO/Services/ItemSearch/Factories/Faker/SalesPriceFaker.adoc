@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__salespricefaker]]
-== SalesPriceFaker
+= SalesPriceFaker
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Services\ItemSearch\Factories\Faker`
 
+===== Extends
+xref:IO/Services/ItemSearch/Factories/Faker/AbstractFaker.adoc#[`AbstractFaker`]
 
 
 
@@ -31,7 +33,7 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |isList
     |
 |===
@@ -46,7 +48,7 @@ public fill($data):void
 
 ----
 
-    
+
 
 
 
@@ -57,7 +59,7 @@ public fill($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$data`
 |
 |===

@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__shippingcountry]]
-== ShippingCountry
+= ShippingCountry
 
 
 
@@ -141,7 +141,7 @@ public static getAddressFormat($countryId):void
 
 ----
 
-    
+
 
 
 
@@ -152,7 +152,7 @@ public static getAddressFormat($countryId):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$countryId`
 |
 |===

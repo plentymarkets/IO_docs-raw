@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__propertynamefilter]]
-== PropertyNameFilter
+= PropertyNameFilter
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Extensions\Filters`
 
+===== Extends
+xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 
 
 
@@ -21,16 +23,19 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
     |authHelper
     |
-|
+| xref:stable7@interface::Item.adoc#item_contracts_propertyrepositorycontract[`PropertyRepositoryContract`]
     |propertyRepository
     |
-|
+| xref:stable7@interface::Item.adoc#item_contracts_propertyselectionrepositorycontract[`PropertySelectionRepositoryContract`]
     |propertySelectionRepository
     |
-|
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+    |sessionStorageService
+    |
+| 
     |cache
     |
 |===
@@ -41,11 +46,11 @@
 [source%nowrap, php]
 ----
 
-public __construct($authHelper):void
+public __construct($authHelper, $sessionStorageService):void
 
 ----
 
-    
+
 
 
 
@@ -56,8 +61,12 @@ PropertySelectionValueNameFilter constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_filters_authhelper[`AuthHelper`]
+| xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
 a|`$authHelper`
+|
+
+|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorageService`
 |
 |===
 
@@ -69,7 +78,7 @@ public getFilters():array
 
 ----
 
-    
+
 
 
 
@@ -84,7 +93,7 @@ public getPropertyName():void
 
 ----
 
-    
+
 
 
 
@@ -99,7 +108,7 @@ public getPropertySelectionValueName():void
 
 ----
 
-    
+
 
 
 
@@ -114,7 +123,7 @@ public fromMemoryCache():void
 
 ----
 
-    
+
 
 
 
@@ -129,7 +138,7 @@ public resetMemoryCache($key = null):void
 
 ----
 
-    
+
 
 
 
@@ -140,7 +149,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$key`
 |
 |===

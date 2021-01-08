@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__apiresponse]]
-== ApiResponse
+= ApiResponse
 
 
 
@@ -24,19 +24,19 @@
 |link:http://php.net/array[array^]
     |eventData
     |
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
     |dispatcher
     |
-|link:http://php.net/mixed[mixed^]
+| 
     |data
     |
 |link:http://php.net/array[array^]
     |headers
     |
-|        xref:Miscellaneous.adoc#miscellaneous_null|_response[`Response`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
     |response
     |
-|
+|xref:IO/Services/NotificationService.adoc#[`NotificationService`]
     |notificationService
     |
 |===
@@ -51,7 +51,7 @@ public __construct($dispatcher, $response, $notificationService):void
 
 ----
 
-    
+
 
 
 
@@ -62,15 +62,15 @@ ApiResponse constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_api_dispatcher[`Dispatcher`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
 a|`$dispatcher`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 a|`$response`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_api_notificationservice[`NotificationService`]
+|xref:IO/Services/NotificationService.adoc#[`NotificationService`]
 a|`$notificationService`
 |
 |===
@@ -90,10 +90,10 @@ public error($code, $message = null):IO\Api\ApiResponse
 This method will not be supported in the future. Please refrain from using it as soon as possible.
 
 ====
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+
+====== *Return type:*xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
 
 
 
@@ -105,7 +105,7 @@ This method will not be supported in the future. Please refrain from using it as
 a|`$code`
 |
 
-|
+| null
 a|`$message`
 |
 |===
@@ -125,10 +125,10 @@ public success($code, $message = null):IO\Api\ApiResponse
 This method will not be supported in the future. Please refrain from using it as soon as possible.
 
 ====
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+
+====== *Return type:*xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
 
 
 
@@ -140,7 +140,7 @@ This method will not be supported in the future. Please refrain from using it as
 a|`$code`
 |
 
-|
+| null
 a|`$message`
 |
 |===
@@ -160,10 +160,10 @@ public info($code, $message = null):IO\Api\ApiResponse
 This method will not be supported in the future. Please refrain from using it as soon as possible.
 
 ====
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+
+====== *Return type:*xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
 
 
 
@@ -175,7 +175,7 @@ This method will not be supported in the future. Please refrain from using it as
 a|`$code`
 |
 
-|
+| null
 a|`$message`
 |
 |===
@@ -188,10 +188,10 @@ public header($key, $value):IO\Api\ApiResponse
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_apiresponse[`ApiResponse`]
+
+====== *Return type:*xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
 
 
 
@@ -207,52 +207,5 @@ a|`$key`
 a|`$value`
 |
 |===
-
-
-[source%nowrap, php]
-----
-
-public create($data, $code = \IO\Api\ResponseCode::OK, $headers = []):IO\Api\Response
-
-----
-
-    
-
-
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_api_response[`Response`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/array[array^]
-a|`$data`
-|
-
-|link:http://php.net/int[int^]
-a|`$code`
-|
-
-|link:http://php.net/array[array^]
-a|`$headers`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public appendNotifications():void
-
-----
-
-    
-
-
-
-
-
 
 

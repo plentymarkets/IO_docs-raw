@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemsearchcontroller]]
-== ItemSearchController
+= ItemSearchController
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Controllers`
 
+===== Extends
+xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 
 
@@ -27,7 +29,7 @@ public showSearch($category = null):void
 
 ----
 
-    
+
 
 
 
@@ -38,7 +40,7 @@ public showSearch($category = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$category`
 |
 |===
@@ -47,11 +49,11 @@ a|`$category`
 [source%nowrap, php]
 ----
 
-public redirectToSearch($tagName = null):void
+public redirectToSearch():void
 
 ----
 
-    
+
 
 
 
@@ -59,13 +61,4 @@ public redirectToSearch($tagName = null):void
 
 Redirect to new search url from category when search route
 is enabled and called.
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$tagName`
-|tagName from route /tag/tagName convert to search string
-|===
-
 

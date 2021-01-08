@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__templateconfigservice]]
-== TemplateConfigService
+= TemplateConfigService
 
 
 
@@ -21,10 +21,10 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |configRepository
     |
-|
+| 
     |templatePluginName
     |
 |===
@@ -39,7 +39,7 @@ public __construct($configRepository):void
 
 ----
 
-    
+
 
 
 
@@ -50,7 +50,7 @@ public __construct($configRepository):void
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$configRepository`
 |
 |===
@@ -59,84 +59,45 @@ a|`$configRepository`
 [source%nowrap, php]
 ----
 
-public get($key, $default = null):void
+public get():void
 
 ----
 
-    
 
 
 
 
 
 
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
-
-|
-a|`$default`
-|
-|===
 
 
 [source%nowrap, php]
 ----
 
-public getBoolean($key, $default = false):void
+public getBoolean():void
 
 ----
 
-    
 
 
 
 
 
 
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
-
-|link:http://php.net/bool[bool^]
-a|`$default`
-|
-|===
 
 
 [source%nowrap, php]
 ----
 
-public getInteger($key, $default):void
+public getInteger():void
 
 ----
 
-    
 
 
 
 
 
 
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/string[string^]
-a|`$key`
-|
-
-|link:http://php.net/int[int^]
-a|`$default`
-|
-|===
 
 

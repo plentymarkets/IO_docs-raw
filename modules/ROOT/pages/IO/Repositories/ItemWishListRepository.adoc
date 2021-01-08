@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__itemwishlistrepository]]
-== ItemWishListRepository
+= ItemWishListRepository
 
 
 
@@ -21,11 +21,11 @@
 |===
 |Type |Name |Description
 
-|
+| xref:stable7@interface::Plugin.adoc#plugin_contracts_database[`DataBase`]
     |db
     |
-|
-    |contactRepository
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+    |customer
     |
 |===
 
@@ -35,11 +35,11 @@
 [source%nowrap, php]
 ----
 
-public __construct($dataBase, $contactRepository):void
+public __construct($dataBase, $customerService):void
 
 ----
 
-    
+
 
 
 
@@ -50,12 +50,12 @@ ItemWishListRepository constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_repositories_database[`DataBase`]
+| xref:stable7@interface::Plugin.adoc#plugin_contracts_database[`DataBase`]
 a|`$dataBase`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_repositories_contactrepositorycontract[`ContactRepositoryContract`]
-a|`$contactRepository`
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
 |
 |===
 
@@ -67,7 +67,7 @@ public getItemWishList():array
 
 ----
 
-    
+
 
 
 
@@ -82,7 +82,7 @@ public getCountedItemWishList():int
 
 ----
 
-    
+
 
 
 
@@ -97,7 +97,7 @@ public isItemInWishList($variationId):bool
 
 ----
 
-    
+
 
 
 
@@ -121,7 +121,7 @@ public addItemWishListEntry($variationId, $quantity = 1):void
 
 ----
 
-    
+
 
 
 
@@ -149,7 +149,7 @@ public removeItemWishListEntry($variationId):bool
 
 ----
 
-    
+
 
 
 

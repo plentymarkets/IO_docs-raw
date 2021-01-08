@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__customernewsletterresource]]
-== CustomerNewsletterResource
+= CustomerNewsletterResource
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Api\Resources`
 
+===== Extends
+xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 
 
@@ -21,7 +23,7 @@
 |===
 |Type |Name |Description
 
-|
+|xref:IO/Services/CustomerNewsletterService.adoc#[`CustomerNewsletterService`]
     |newsletterService
     |
 |===
@@ -36,7 +38,7 @@ public __construct():void
 
 ----
 
-    
+
 
 
 
@@ -47,14 +49,14 @@ public __construct():void
 [source%nowrap, php]
 ----
 
-public store():IO\Api\Resources\Response
+public store():Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Add an email to a newsletter
@@ -62,14 +64,14 @@ Add an email to a newsletter
 [source%nowrap, php]
 ----
 
-public destroy($selector):IO\Api\Resources\Response
+public destroy($selector):Plenty\Plugin\Http\Response
 
 ----
 
-    
 
 
-====== *Return type:*        xref:Miscellaneous.adoc#miscellaneous_resources_response[`Response`]
+
+====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Remove an email from the newsletter

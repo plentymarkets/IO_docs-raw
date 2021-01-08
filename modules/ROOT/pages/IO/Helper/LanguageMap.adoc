@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__languagemap]]
-== LanguageMap
+= LanguageMap
 
 
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -28,10 +21,10 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-|
+| 
     |locales
     |
-|
+| 
     |languages
     |
 |===
@@ -46,14 +39,7 @@ public static getLocale():void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-sin  ce 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -68,14 +54,7 @@ public static getLanguageCode($countryCode = null):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -86,7 +65,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$countryCode`
 |
 |===
@@ -99,14 +78,7 @@ public static getCountryCode($language = null):void
 
 ----
 
-[WARNING]
-.Deprecated! 
-====
 
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
 
 
 
@@ -117,7 +89,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|
+| 
 a|`$language`
 |
 |===

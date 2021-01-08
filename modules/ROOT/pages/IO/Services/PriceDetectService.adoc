@@ -3,17 +3,10 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__pricedetectservice]]
-== PriceDetectService
+= PriceDetectService
 
 
 
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
 
 
 ===== Namespace
@@ -28,47 +21,44 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-|
+| 
     |classId
     |
-|
+| 
     |singleAccess
     |
-|
+| 
     |currency
     |
-|
+| 
     |plentyId
     |
-|
+| 
     |shippingCountryId
     |
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_variation_detectsalespriceservice[`DetectSalesPriceService`]
     |detectSalesPriceService
     |
-|
-    |contactRepository
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+    |customerService
     |
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
     |app
     |
-|
-    |checkoutRepository
+|xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
+    |checkoutService
     |
-|
+|xref:IO/Services/BasketService.adoc#[`BasketService`]
     |basketService
     |
-|
+| xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
     |vatService
     |
-|
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_accounting_vatinitservice[`VatInitService`]
     |vatInitService
     |
-|
+| 
     |referrerId
-    |
-|
-    |cache
     |
 |===
 
@@ -78,11 +68,11 @@ since 5.0.0 will be removed in 6.0.0
 [source%nowrap, php]
 ----
 
-public __construct($detectSalesPriceService, $contactRepository, $app, $checkoutRepository, $basketService, $vatInitService, $vatService):void
+public __construct($detectSalesPriceService, $customerService, $app, $checkoutService):void
 
 ----
 
-    
+
 
 
 
@@ -93,32 +83,20 @@ PriceDetectService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_services_detectsalespriceservice[`DetectSalesPriceService`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_variation_detectsalespriceservice[`DetectSalesPriceService`]
 a|`$detectSalesPriceService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_contactrepositorycontract[`ContactRepositoryContract`]
-a|`$contactRepository`
+|xref:IO/Services/IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_application[`Application`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
 a|`$app`
 |
 
-|        xref:Miscellaneous.adoc#miscellaneous_services_checkoutrepositorycontract[`CheckoutRepositoryContract`]
-a|`$checkoutRepository`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_basketservice[`BasketService`]
-a|`$basketService`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_vatinitcontract[`VatInitContract`]
-a|`$vatInitService`
-|
-
-|        xref:Miscellaneous.adoc#miscellaneous_services_vatservice[`VatService`]
-a|`$vatService`
+|xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
+a|`$checkoutService`
 |
 |===
 
@@ -126,76 +104,15 @@ a|`$vatService`
 [source%nowrap, php]
 ----
 
-public init():void
+public getPriceIdsForCustomer():void
 
 ----
 
-    
 
 
 
 
 
 
-
-[source%nowrap, php]
-----
-
-public getPriceIdsForCustomer():array
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public fromMemoryCache():void
-
-----
-
-    
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public resetMemoryCache($key = null):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$key`
-|
-|===
 
 

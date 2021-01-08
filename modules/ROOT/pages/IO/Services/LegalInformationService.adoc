@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__legalinformationservice]]
-== LegalInformationService
+= LegalInformationService
 
 
 
@@ -21,13 +21,13 @@
 |===
 |Type |Name |Description
 
-|
+| 
     |legalInformationRepo
     |
-|
+| 
     |lang
     |
-|
+| 
     |plentyId
     |
 |===
@@ -42,7 +42,7 @@ public __construct():void
 
 ----
 
-    
+
 
 
 
@@ -57,7 +57,7 @@ public getTermsAndConditions():void
 
 ----
 
-    
+
 
 
 
@@ -72,7 +72,7 @@ public getCancellationRights():void
 
 ----
 
-    
+
 
 
 
@@ -87,7 +87,7 @@ public getPrivacyPolicy():void
 
 ----
 
-    
+
 
 
 
@@ -102,7 +102,7 @@ public getLegalDisclosure():void
 
 ----
 
-    
+
 
 
 
@@ -117,7 +117,7 @@ public getWithdrawalForm():void
 
 ----
 
-    
+
 
 
 

@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :sectids!:
 [[io__ioserviceprovider]]
-== IOServiceProvider
+= IOServiceProvider
 
 
 
@@ -13,6 +13,8 @@
 
 `IO\Providers`
 
+===== Extends
+xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_serviceprovider[`ServiceProvider`]
 
 
 
@@ -27,7 +29,7 @@ public register():void
 
 ----
 
-    
+
 
 
 
@@ -42,7 +44,7 @@ public boot($twig):void
 
 ----
 
-    
+
 
 
 
@@ -53,72 +55,9 @@ boot twig extensions and services
 .*Parameters*
 |===
 |Type |Name |Description
-|        xref:Miscellaneous.adoc#miscellaneous_providers_twig[`Twig`]
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_templates_twig[`Twig`]
 a|`$twig`
 |
 |===
-
-
-[source%nowrap, php]
-----
-
-public registerSingletons($classes):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$classes`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public registerMiddlewares($middlewares):void
-
-----
-
-    
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|
-a|`$middlewares`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public registerConfigValues():void
-
-----
-
-    
-
-
-
-
-
 
 
