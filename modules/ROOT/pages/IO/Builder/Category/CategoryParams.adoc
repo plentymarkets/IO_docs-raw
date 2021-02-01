@@ -21,17 +21,14 @@
 |===
 |Type |Name |Description
 
-| 
-    |variationShowType
-    |
-| 
-    |itemsPerPage
-    |
-| 
-    |orderBy
-    |
-| 
-    |orderByKey
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$variationShowType`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$itemsPerPage`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$orderBy`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$orderByKey`
+|
 |===
 

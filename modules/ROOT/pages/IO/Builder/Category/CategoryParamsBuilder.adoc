@@ -22,32 +22,18 @@
 |Type |Name |Description
 
 |xref:IO/Builder/Category/CategoryParams.adoc#[`CategoryParams`]
-    |params
-    |
+a|`$params`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public build():void
+public __construct()
 
 ----
 
@@ -57,16 +43,27 @@ public build():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#build]
 ----
 
-public fromArray($data):void
+public build()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#fromarray]
+----
+
+public fromArray($data)
+
+----
 
 
 
@@ -77,31 +74,17 @@ public fromArray($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$data`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#onlyprimaryvariations]
 ----
 
-public onlyPrimaryVariations():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public onlyChildVariations():void
+public onlyPrimaryVariations()
 
 ----
 
@@ -111,31 +94,41 @@ public onlyChildVariations():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#onlychildvariations]
 ----
 
-public orderBy():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public itemsPerPage($itemsPerPage):void
+public onlyChildVariations()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#orderby]
+----
+
+public orderBy()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#itemsperpage]
+----
+
+public itemsPerPage($itemsPerPage)
+
+----
 
 
 
@@ -146,7 +139,7 @@ public itemsPerPage($itemsPerPage):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$itemsPerPage`
 |
 |===

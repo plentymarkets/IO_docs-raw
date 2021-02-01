@@ -5,7 +5,8 @@
 [[io__userdatahashservice]]
 = UserDataHashService
 
-
+This service class contains functions related to hashing and data storage. +
+All public functions are available from the Twig template renderer.
 
 
 
@@ -21,25 +22,23 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Plugin.adoc#plugin_contracts_database[`DataBase`]
-    |db
-    |
-| 
-    |defaultTTL
-    |
+|xref:stable7@interface::Plugin.adoc#plugin_contracts_database[`DataBase`]
+a|`$db`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$defaultTTL`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($dataBase, $templateConfigService):void
+public __construct($dataBase, $templateConfigService)
 
 ----
-
-
 
 
 
@@ -50,7 +49,7 @@ UserDataHashService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Plugin.adoc#plugin_contracts_database[`DataBase`]
+|xref:stable7@interface::Plugin.adoc#plugin_contracts_database[`DataBase`]
 a|`$dataBase`
 |
 
@@ -60,17 +59,16 @@ a|`$templateConfigService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#find]
 ----
 
-public find($hash, $contactId = null, $plentyId = null):IO\DBModels\UserDataHash
+public find($hash, $contactId = null, $plentyId = null):xref:IO/DBModels/UserDataHash.adoc#[UserDataHash]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/DBModels/UserDataHash.adoc#[`UserDataHash`]
 
 
 Get entry by hash if exists
@@ -78,28 +76,27 @@ Get entry by hash if exists
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$hash`
 |The hash to search an entry for
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$contactId`
-|Optionally restrict results to a contact id. Otherwise use logged in contact
+|Optional: Restrict results to a contact id. Otherwise use logged in contact
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$plentyId`
-|Use a specific plentyId. Otherwise use id of current client.
+|Optional: Use a specific plentyId. Otherwise use id of current client.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#findhash]
 ----
 
-public findHash($type, $contactId = null, $plentyId = null):string
+public findHash($type, $contactId = null, $plentyId = null):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -110,28 +107,27 @@ Get the hash of a specific type if exists and is not expired.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$type`
 |The type to get the hash for
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$contactId`
-|Optionally restrict results to a contact id. Otherwise use logged in contact
+|Optional: Restrict results to a contact id. Otherwise use logged in contact
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$plentyId`
-|Use a specific plentyId. Otherwise use id of current client.
+|Optional: Use a specific plentyId. Otherwise use id of current client.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getdata]
 ----
 
-public getData($hash, $contactId = null, $plentyId = null):void
+public getData($hash, $contactId = null, $plentyId = null):link:http://php.net/mixed[mixed^]
 
 ----
-
-
 
 
 
@@ -142,31 +138,30 @@ Get the decoded data assigned to a hash
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$hash`
 |The hash to search an entry for
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$contactId`
-|Optionally restrict results to a contact id. Otherwise use logged in contact
+|Optional: Restrict results to a contact id. Otherwise use logged in contact
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$plentyId`
-|Use a specific plentyId. Otherwise use id of current client.
+|Optional: Use a specific plentyId. Otherwise use id of current client.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#create]
 ----
 
-public create($data, $type, $ttl = null, $contactId = null, $plentyId = null):IO\DBModels\UserDataHash
+public create($data, $type, $ttl = null, $contactId = null, $plentyId = null):xref:IO/DBModels/UserDataHash.adoc#[UserDataHash]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/DBModels/UserDataHash.adoc#[`UserDataHash`]
 
 
 Create a new entry and assign data to the hash for later usage.
@@ -174,36 +169,35 @@ Create a new entry and assign data to the hash for later usage.
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$data`
 |The data to assign to the generated hash entry
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$type`
 |The type of the entry
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$ttl`
-|Lifetime of the hash entry in hours. Will get the value from config if not defined.
+|Optional: Lifetime of the hash entry in hours. Will get the value from config if not defined.
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$contactId`
-|Optionally restrict results to a contact id. Otherwise use logged in contact
+|Optional: Restrict results to a contact id. Otherwise use logged in contact
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$plentyId`
-|Use a specific plentyId. Otherwise use id of current client.
+|Optional: Use a specific plentyId. Otherwise use id of current client.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#delete]
 ----
 
-public delete($hash, $contactId = null, $plentyId = null):bool
+public delete($hash, $contactId = null, $plentyId = null):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -214,28 +208,27 @@ Remove a hash entry if exists.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$hash`
 |The hash to search an entry for
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$contactId`
-|Optionally restrict results to a contact id. Otherwise use logged in contact
+|Optional: Restrict results to a contact id. Otherwise use logged in contact
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$plentyId`
-|Use a specific plentyId. Otherwise use id of current client.
+|Optional: Use a specific plentyId. Otherwise use id of current client.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#deleteall]
 ----
 
-public deleteAll($type = null, $contactId = null, $plentyId = null):bool
+public deleteAll($type = null, $contactId = null, $plentyId = null):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -246,17 +239,17 @@ Delete all entries
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$type`
-|Optional delete only entries for a specific type
+|Optional: Delete only entries for a specific type
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$contactId`
-|Optionally restrict results to a contact id. Otherwise use logged in contact
+|Optional: Restrict results to a contact id. Otherwise use logged in contact
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$plentyId`
-|Use a specific plentyId. Otherwise use id of current client.
+|Optional: Use a specific plentyId. Otherwise use id of current client.
 |===
 
 

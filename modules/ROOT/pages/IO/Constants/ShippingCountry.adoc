@@ -21,127 +21,126 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/int[int^]
-    |GERMANY
-    |1
-    |
+a|`GERMANY`
+|1
+|
 |link:http://php.net/int[int^]
-    |AUSTRIA
-    |2
-    |
+a|`AUSTRIA`
+|2
+|
 |link:http://php.net/int[int^]
-    |BELGIUM
-    |3
-    |
+a|`BELGIUM`
+|3
+|
 |link:http://php.net/int[int^]
-    |SWITZERLAND
-    |4
-    |
+a|`SWITZERLAND`
+|4
+|
 |link:http://php.net/int[int^]
-    |CYPRUS
-    |5
-    |
+a|`CYPRUS`
+|5
+|
 |link:http://php.net/int[int^]
-    |CZECH_REPUBLIC
-    |6
-    |
+a|`CZECH_REPUBLIC`
+|6
+|
 |link:http://php.net/int[int^]
-    |DENMARK
-    |7
-    |
+a|`DENMARK`
+|7
+|
 |link:http://php.net/int[int^]
-    |SPAIN
-    |8
-    |
+a|`SPAIN`
+|8
+|
 |link:http://php.net/int[int^]
-    |ESTONIA
-    |9
-    |
+a|`ESTONIA`
+|9
+|
 |link:http://php.net/int[int^]
-    |FRANCE
-    |10
-    |
+a|`FRANCE`
+|10
+|
 |link:http://php.net/int[int^]
-    |FINLAND
-    |11
-    |
+a|`FINLAND`
+|11
+|
 |link:http://php.net/int[int^]
-    |UNITED_KINGDOM
-    |12
-    |
+a|`UNITED_KINGDOM`
+|12
+|
 |link:http://php.net/int[int^]
-    |GREECE
-    |13
-    |
+a|`GREECE`
+|13
+|
 |link:http://php.net/int[int^]
-    |HUNGARY
-    |14
-    |
+a|`HUNGARY`
+|14
+|
 |link:http://php.net/int[int^]
-    |ITALY
-    |15
-    |
+a|`ITALY`
+|15
+|
 |link:http://php.net/int[int^]
-    |IRELAND
-    |16
-    |
+a|`IRELAND`
+|16
+|
 |link:http://php.net/int[int^]
-    |LUXEMBOURG
-    |17
-    |
+a|`LUXEMBOURG`
+|17
+|
 |link:http://php.net/int[int^]
-    |LATVIA
-    |18
-    |
+a|`LATVIA`
+|18
+|
 |link:http://php.net/int[int^]
-    |MALTA
-    |19
-    |
+a|`MALTA`
+|19
+|
 |link:http://php.net/int[int^]
-    |NORWAY
-    |20
-    |
+a|`NORWAY`
+|20
+|
 |link:http://php.net/int[int^]
-    |NETHERLANDS
-    |21
-    |
+a|`NETHERLANDS`
+|21
+|
 |link:http://php.net/int[int^]
-    |PORTUGAL
-    |22
-    |
+a|`PORTUGAL`
+|22
+|
 |link:http://php.net/int[int^]
-    |POLAND
-    |23
-    |
+a|`POLAND`
+|23
+|
 |link:http://php.net/int[int^]
-    |SWEDEN
-    |24
-    |
+a|`SWEDEN`
+|24
+|
 |link:http://php.net/int[int^]
-    |SINGAPORE
-    |25
-    |
+a|`SINGAPORE`
+|25
+|
 |link:http://php.net/string[string^]
-    |ADDRESS_FORMAT_DE
-    |'DE'
-    |
+a|`ADDRESS_FORMAT_DE`
+|'DE'
+|
 |link:http://php.net/string[string^]
-    |ADDRESS_FORMAT_EN
-    |'EN'
-    |
+a|`ADDRESS_FORMAT_EN`
+|'EN'
+|
 |===
 
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getaddressformat]
 ----
 
-public static getAddressFormat($countryId):void
+public static getAddressFormat($countryId)
 
 ----
-
-
 
 
 
@@ -152,7 +151,7 @@ public static getAddressFormat($countryId):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$countryId`
 |
 |===

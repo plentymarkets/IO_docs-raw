@@ -5,7 +5,8 @@
 [[io__itemcrosssellingservice]]
 = ItemCrossSellingService
 
-
+This service class contains functions that are related to cross selling of items. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,25 +22,23 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-    |sessionStorageRepository
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_helpers_sortinghelper[`SortingHelper`]
-    |sortingHelper
-    |
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+||xref:stable7@interface::Webshop.adoc#webshop_helpers_sortinghelper[`SortingHelper`]
+a|`$sortingHelper`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($sessionStorageRepository, $sortingHelper):void
+public __construct($sessionStorageRepository, $sortingHelper)
 
 ----
-
-
 
 
 
@@ -50,20 +49,21 @@ ItemLastSeenService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
 a|`$sessionStorageRepository`
 |
 
-| xref:stable7@interface::Webshop.adoc#webshop_helpers_sortinghelper[`SortingHelper`]
+|xref:stable7@interface::Webshop.adoc#webshop_helpers_sortinghelper[`SortingHelper`]
 a|`$sortingHelper`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#settype]
 ----
 
-public setType($type):void
+public setType($type)
 
 ----
 
@@ -71,38 +71,22 @@ public setType($type):void
 
 
 
-
-
-
+Set the type of cross selling
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$type`
-|
+|Type of cross selling
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettype]
 ----
 
-public getType():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public setSorting($sorting):void
+public getType():link:http://php.net/mixed[mixed^]
 
 ----
 
@@ -110,23 +94,36 @@ public setSorting($sorting):void
 
 
 
+Get the type of cross selling
+
+[source%nowrap, php, subs=+macros]
+[#setsorting]
+----
+
+public setSorting($sorting)
+
+----
 
 
 
+
+
+Set the sorting for cross selling
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[`string`^]
 a|`$sorting`
-|
+|Sorting type for cross selling
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsorting]
 ----
 
-public getSorting():void
+public getSorting():link:http://php.net/string[string^]
 
 ----
 
@@ -134,7 +131,5 @@ public getSorting():void
 
 
 
-
-
-
+Get the sorting for cross selling
 

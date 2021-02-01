@@ -20,14 +20,13 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#buildfacetvalues]
 ----
 
-public static buildFacetValues($facetValueString):void
+public static buildFacetValues($facetValueString)
 
 ----
-
-
 
 
 
@@ -38,7 +37,7 @@ public static buildFacetValues($facetValueString):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$facetValueString`
 |
 |===

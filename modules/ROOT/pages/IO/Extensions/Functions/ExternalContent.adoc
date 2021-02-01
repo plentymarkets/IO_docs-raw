@@ -22,14 +22,13 @@ xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfunctions]
 ----
 
-public getFunctions():array
+public getFunctions():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -37,14 +36,13 @@ public getFunctions():array
 
 Return the available filter methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getexternalcontent]
 ----
 
-public getExternalContent($url):array
+public getExternalContent($url):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -55,7 +53,7 @@ Return the content retrieved from external url
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$url`
 |
 |===

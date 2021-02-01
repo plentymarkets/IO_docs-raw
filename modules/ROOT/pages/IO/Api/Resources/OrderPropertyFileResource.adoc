@@ -23,37 +23,35 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |===
 |Type |Name |Description
 
-| 
-    |orderPropertyFileService
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$orderPropertyFileService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public store():void
+public __construct()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#store]
+----
+
+public store()
+
+----
 
 
 

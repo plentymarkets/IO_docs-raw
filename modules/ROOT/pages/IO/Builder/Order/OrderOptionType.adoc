@@ -21,77 +21,77 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/int[int^]
-    |WAREHOUSE
-    |1
-    |
+a|`WAREHOUSE`
+|1
+|
 |link:http://php.net/int[int^]
-    |SHIPPING_PROFIL
-    |2
-    |
+a|`SHIPPING_PROFIL`
+|2
+|
 |link:http://php.net/int[int^]
-    |CATEGORY
-    |3
-    |
+a|`CATEGORY`
+|3
+|
 |link:http://php.net/int[int^]
-    |WEIGHT
-    |4
-    |
+a|`WEIGHT`
+|4
+|
 |link:http://php.net/int[int^]
-    |WIDTH
-    |5
-    |
+a|`WIDTH`
+|5
+|
 |link:http://php.net/int[int^]
-    |LENGTH
-    |6
-    |
+a|`LENGTH`
+|6
+|
 |link:http://php.net/int[int^]
-    |HEIGHT
-    |7
-    |
+a|`HEIGHT`
+|7
+|
 |link:http://php.net/int[int^]
-    |QUANTITY
-    |8
-    |
+a|`QUANTITY`
+|8
+|
 |link:http://php.net/int[int^]
-    |MARKET
-    |9
-    |
+a|`MARKET`
+|9
+|
 |link:http://php.net/int[int^]
-    |VARIANT
-    |10
-    |
+a|`VARIANT`
+|10
+|
 |link:http://php.net/int[int^]
-    |POSITION
-    |11
-    |
+a|`POSITION`
+|11
+|
 |link:http://php.net/int[int^]
-    |TOKEN
-    |12
-    |
+a|`TOKEN`
+|12
+|
 |link:http://php.net/int[int^]
-    |METHOD_OF_PAYMENT
-    |13
-    |
+a|`METHOD_OF_PAYMENT`
+|13
+|
 |link:http://php.net/int[int^]
-    |IDENTIFIER
-    |14
-    |
+a|`IDENTIFIER`
+|14
+|
 |link:http://php.net/int[int^]
-    |DUNNING
-    |15
-    |
+a|`DUNNING`
+|15
+|
 |link:http://php.net/int[int^]
-    |ORDER
-    |16
-    |
+a|`ORDER`
+|16
+|
 |link:http://php.net/int[int^]
-    |DOCUMENT
-    |17
-    |
+a|`DOCUMENT`
+|17
+|
 |link:http://php.net/int[int^]
-    |PROPERTY
-    |18
-    |
+a|`PROPERTY`
+|18
+|
 |===
 
 

@@ -5,7 +5,8 @@
 [[io__ordertotalsservice]]
 = OrderTotalsService
 
-
+This service class contains functions related to the order totals calculation. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -20,14 +21,13 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getalltotals]
 ----
 
-public getAllTotals($order):array
+public getAllTotals($order):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -38,16 +38,17 @@ Get all order totals which are relevant for the OrderDetails-modal
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
+|xref:stable7@interface::Order.adoc#order_models_order[`Order`]
 a|`$order`
-|
+|The order to get order totals for
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#highlightnetprices]
 ----
 
-public highlightNetPrices($order):void
+public highlightNetPrices($order):link:http://php.net/bool[bool^]
 
 ----
 
@@ -55,14 +56,12 @@ public highlightNetPrices($order):void
 
 
 
-
-
-
+Check if the order has only net amounts or only net amounts should be shown
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|xref:stable7@interface::Order.adoc#order_models_order[`Order`]
 a|`$order`
 |
 |===

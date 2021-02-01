@@ -24,24 +24,22 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |Type |Name |Description
 
 |xref:IO/Services/BasketService.adoc#[`BasketService`]
-    |basketService
-    |
-|xref:IO/Services/CountryService.adoc#[`CountryService`]
-    |countryService
-    |
+a|`$basketService`
+||xref:IO/Services/CountryService.adoc#[`CountryService`]
+a|`$countryService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response, $basketService, $countryService):void
+public __construct($request, $response, $basketService, $countryService)
 
 ----
-
-
 
 
 
@@ -70,17 +68,16 @@ a|`$countryService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#update]
 ----
 
-public update($shippingCountryId):Plenty\Plugin\Http\Response
+public update($shippingCountryId): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Set the shipping country
@@ -88,7 +85,7 @@ Set the shipping country
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$shippingCountryId`
 |
 |===

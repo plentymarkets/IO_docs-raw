@@ -5,7 +5,8 @@
 [[io__templateconfigservice]]
 = TemplateConfigService
 
-
+This service class contains functions related to template configuration functionality. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,21 +22,21 @@
 |===
 |Type |Name |Description
 
-| 
-    |configRepository
-    |
-| 
-    |templatePluginName
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$configRepository`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$templatePluginName`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($configRepository):void
+public __construct($configRepository)
 
 ----
 
@@ -43,16 +44,95 @@ public __construct($configRepository):void
 
 
 
-
-
-
+TemplateConfigService constructor.
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_configrepository[`ConfigRepository`]
 a|`$configRepository`
 |
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#get]
+----
+
+public get($key, $default = null):link:http://php.net/mixed[mixed^]
+
+----
+
+
+
+
+
+Get a config value by it&#039;s key
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$key`
+|Key of the config value
+
+|link:http://php.net/mixed[`mixed`^]
+a|`$default`
+|Optional: A default to be returned, if no value for given key is set (Default: null)
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getboolean]
+----
+
+public getBoolean($key, $default = false):link:http://php.net/bool[bool^]
+
+----
+
+
+
+
+
+Get a config value by it&#039;s key as a boolean
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$key`
+|Key of the config value
+
+|link:http://php.net/bool[`bool`^]
+a|`$default`
+|Optional: A default to be returned, if no value for given key is set (Default: false)
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getinteger]
+----
+
+public getInteger($key, $default):link:http://php.net/int[int^]
+
+----
+
+
+
+
+
+Get a config value by it&#039;s key as an integer
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$key`
+|Key of the config value
+
+|link:http://php.net/int[`int`^]
+a|`$default`
+|Optional: A default to be returned, if no value for given key is set (Default: 0)
 |===
 
 

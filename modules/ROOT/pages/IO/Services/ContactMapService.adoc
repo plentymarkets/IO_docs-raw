@@ -5,7 +5,8 @@
 [[io__contactmapservice]]
 = ContactMapService
 
-
+This service class exposes a method used for getting map coordinates from the Google Maps API. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,9 +22,9 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |COORD_CACHE_KEY
-    |'ceresMapCoordinates'
-    |
+a|`COORD_CACHE_KEY`
+|'ceresMapCoordinates'
+|
 |===
 
 
@@ -32,20 +33,20 @@
 |Type |Name |Description
 
 | xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_cachingrepository[`CachingRepository`]
-    |cachingRepository
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+a|`$cachingRepository`
+|Repository for caching in Redis|link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($cachingRepository):void
+public __construct($cachingRepository)
 
 ----
 
@@ -53,23 +54,22 @@ public __construct($cachingRepository):void
 
 
 
-
-
-
+ContactMapService constructor.
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_cachingrepository[`CachingRepository`]
 a|`$cachingRepository`
-|
+|Repository for caching in Redis
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getmapcoordinates]
 ----
 
-public getMapCoordinates():void
+public getMapCoordinates($apiKey, $street, $zip = null):xref:IO/Services.adoc#[Services]
 
 ----
 
@@ -77,7 +77,22 @@ public getMapCoordinates():void
 
 
 
+Get coordinates for a street at a specific zipcode from Google Maps API.
 
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$apiKey`
+|Google Maps API Key
 
+|link:http://php.net/string[`string`^]
+a|`$street`
+|Name of the street, optionally with house number
+
+|link:http://php.net/string[`string`^]
+a|`$zip`
+|Optional: Zip code for address (Default: null)
+|===
 
 

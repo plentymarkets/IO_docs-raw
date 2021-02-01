@@ -5,7 +5,8 @@
 [[io__templateservice]]
 = TemplateService
 
-
+This service class contains functions related to templating functionality. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,27 +22,25 @@
 |===
 |Type |Name |Description
 
-| 
-    |currentTemplate
-    |
-| 
-    |currentTemplateData
-    |
-| 
-    |shouldBeCached
-    |
-| 
-    |forceNoIndex
-    |
+|link:http://php.net/string[`string`^]
+a|`$currentTemplate`
+|Stores the id of the current template|link:http://php.net/array[`array`^]
+a|`$currentTemplateData`
+|Stores data for the current template|link:http://php.net/bool[`bool`^]
+a|`$shouldBeCached`
+|If true, template will be cached in the content cache (Default: true)|link:http://php.net/bool[`bool`^]
+a|`$forceNoIndex`
+|If true, force the NOINDEX robots attribute for this template
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#forcenoindex]
 ----
 
-public forceNoIndex($forceNoIndex):void
+public forceNoIndex($forceNoIndex)
 
 ----
 
@@ -49,38 +48,22 @@ public forceNoIndex($forceNoIndex):void
 
 
 
-
-
-
+Setter for the $forceNoIndex property.
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/bool[`bool`^]
 a|`$forceNoIndex`
-|
+|If true, force the NOINDEX robots attribute for this template.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isnoindexforced]
 ----
 
-public isNoIndexForced():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public shouldBeCached():void
+public isNoIndexForced():link:http://php.net/bool[bool^]
 
 ----
 
@@ -88,29 +71,13 @@ public shouldBeCached():void
 
 
 
+Getter for the $forceNoIndex property. If true, force the NOINDEX robots attribute for this template.
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#shouldbecached]
 ----
 
-public disableCacheForTemplate():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getCurrentTemplate():void
+public shouldBeCached():link:http://php.net/bool[bool^]
 
 ----
 
@@ -118,14 +85,13 @@ public getCurrentTemplate():void
 
 
 
+Getter for the $shouldBeCached property. If true, template will be cached in the content cache
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#disablecachefortemplate]
 ----
 
-public setCurrentTemplate($template):void
+public disableCacheForTemplate()
 
 ----
 
@@ -133,23 +99,80 @@ public setCurrentTemplate($template):void
 
 
 
+Disable the content caching for this template
+
+[source%nowrap, php, subs=+macros]
+[#getcurrenttemplate]
+----
+
+public getCurrentTemplate():link:http://php.net/string[string^]
+
+----
 
 
 
+
+
+Getter for the $currentTemplate property. Returns the id of the current template.
+
+[source%nowrap, php, subs=+macros]
+[#setcurrenttemplate]
+----
+
+public setCurrentTemplate($template)
+
+----
+
+
+
+
+
+Setter for the $currentTemplate property.
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[`string`^]
 a|`$template`
-|
+|Identifier of a template
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#iscurrenttemplate]
 ----
 
-public isHome():void
+public isCurrentTemplate($templateToCheck):link:http://php.net/bool[bool^]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+Use ShopUrls::is() instead
+
+====
+
+
+
+
+Check if the current template is same as the parameter
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$templateToCheck`
+|A template id to compare against
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#ishome]
+----
+
+public isHome()
 
 ----
 
@@ -164,14 +187,13 @@ Use ShopUrls::is(RouteConfig::HOME) instead
 
 
 
+Check if the current template is the home template
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isitem]
 ----
 
-public isItem():void
+public isItem()
 
 ----
 
@@ -186,14 +208,13 @@ Use ShopUrls::is(RouteConfig::ITEM) instead
 
 
 
+Check if the current template is the item template
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#ismyaccount]
 ----
 
-public isMyAccount():void
+public isMyAccount()
 
 ----
 
@@ -208,14 +229,13 @@ Use ShopUrls::is(RouteConfig::MY_ACCOUNT) instead
 
 
 
+Check if the current template is the my account template
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#ischeckout]
 ----
 
-public isCheckout():void
+public isCheckout()
 
 ----
 
@@ -230,14 +250,13 @@ Use ShopUrls::is(RouteConfig::CHECKOUT) instead
 
 
 
+Check if the current template is the checkout template
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#issearch]
 ----
 
-public isSearch():void
+public isSearch()
 
 ----
 
@@ -252,14 +271,13 @@ Use ShopUrls::is(RouteConfig::SEARCH) instead
 
 
 
+Check if the current template is the search template
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#iscategory]
 ----
 
-public isCategory():void
+public isCategory()
 
 ----
 
@@ -274,29 +292,13 @@ Use ShopUrls::is(RouteConfig::CATEGORY) instead
 
 
 
+Check if the current template is the category template
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#rendertemplate]
 ----
 
-public renderTemplate():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public isCheapestSorting():void
+public renderTemplate($template, $params):link:http://php.net/string[string^]
 
 ----
 
@@ -304,7 +306,32 @@ public isCheapestSorting():void
 
 
 
+Render a twig template into a string
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$template`
+|A twig template to render
+
+|link:http://php.net/array[`array`^]
+a|`$params`
+|Environmental data for the twig template
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#ischeapestsorting]
+----
+
+public isCheapestSorting():link:http://php.net/bool[bool^]
+
+----
 
 
 
+
+
+Check if the price sorting returns the cheapest price
 

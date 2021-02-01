@@ -5,7 +5,8 @@
 [[io__contactmailservice]]
 = ContactMailService
 
-
+This service class contains a method for sending Emails. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,18 +22,19 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#sendmail]
 ----
 
-public sendMail():void
+public sendMail($mailTemplate, $mailData = []):link:http://php.net/bool[bool^]
 
 ----
 
@@ -40,7 +42,18 @@ public sendMail():void
 
 
 
+Send an email using a template and a data object
 
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$mailTemplate`
+|The template for the email
 
+|link:http://php.net/array[`array`^]
+a|`$mailData`
+|Optional: Data for Email
+|===
 
 

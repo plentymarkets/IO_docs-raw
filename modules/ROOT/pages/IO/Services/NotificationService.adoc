@@ -5,7 +5,8 @@
 [[io__notificationservice]]
 = NotificationService
 
-
+This service class contains functions related to the notification functionality. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,22 +22,21 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-    |sessionStorageRepository
-    |
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($sessionStorageRepository):void
+public __construct($sessionStorageRepository)
 
 ----
-
-
 
 
 
@@ -47,16 +47,17 @@ BasketService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
 a|`$sessionStorageRepository`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getnotifications]
 ----
 
-public getNotifications($clear = true):array
+public getNotifications($clear = true):link:http://php.net/array[array^]
 
 ----
 
@@ -64,23 +65,22 @@ public getNotifications($clear = true):array
 
 
 
-
-
-
+Get a list of all notifications stored in the session
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$clear`
-|
+|Optional: If true, notifications are cleared from the session afterwards (Default: true)
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#log]
 ----
 
-public log($message, $code, $placeholder = []):void
+public log($message, $code, $placeholder = [])
 
 ----
 
@@ -88,31 +88,30 @@ public log($message, $code, $placeholder = []):void
 
 
 
-
-
-
+Shorthand for addNotification() with LogLevel::LOG
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$message`
-|
+|The notifications message
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$code`
-|
+|Optional: Message code (Default: 0)
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$placeholder`
-|
+|Optional: A placeholder
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#info]
 ----
 
-public info($message, $code, $placeholder = []):void
+public info($message, $code, $placeholder = [])
 
 ----
 
@@ -120,31 +119,30 @@ public info($message, $code, $placeholder = []):void
 
 
 
-
-
-
+Shorthand for addNotification() with LogLevel::INFO
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$message`
-|
+|The notifications message
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$code`
-|
+|Optional: Message code (Default: 0)
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$placeholder`
-|
+|Optional: A placeholder
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#warn]
 ----
 
-public warn($message, $code, $placeholder = []):void
+public warn($message, $code, $placeholder = [])
 
 ----
 
@@ -152,31 +150,30 @@ public warn($message, $code, $placeholder = []):void
 
 
 
-
-
-
+Shorthand for addNotification() with LogLevel::WARN
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$message`
-|
+|The notifications message
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$code`
-|
+|Optional: Message code (Default: 0)
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$placeholder`
-|
+|Optional: A placeholder
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#error]
 ----
 
-public error($message, $code, $placeholder = []):void
+public error($message, $code, $placeholder = [])
 
 ----
 
@@ -184,31 +181,30 @@ public error($message, $code, $placeholder = []):void
 
 
 
-
-
-
+Shorthand for addNotification() with LogLevel::ERROR
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$message`
-|
+|The notifications message
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$code`
-|
+|Optional: Message code (Default: 0)
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$placeholder`
-|
+|Optional: A placeholder
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#success]
 ----
 
-public success($message, $code, $placeholder = []):void
+public success($message, $code, $placeholder = [])
 
 ----
 
@@ -216,24 +212,81 @@ public success($message, $code, $placeholder = []):void
 
 
 
-
-
-
+Shorthand for addNotification() with LogLevel::SUCCESS
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$message`
-|
+|The notifications message
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$code`
-|
+|Optional: Message code (Default: 0)
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$placeholder`
-|
+|Optional: A placeholder
 |===
 
+
+[source%nowrap, php, subs=+macros]
+[#addnotificationcode]
+----
+
+public addNotificationCode($type, $code, $placeholder = [])
+
+----
+
+
+
+
+
+Shorthand for addNotification() with empty message and variable type
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$type`
+|The type of notification
+
+|link:http://php.net/int[`int`^]
+a|`$code`
+|Optional: Message code (Default: 0)
+
+|link:http://php.net/array[`array`^]
+a|`$placeholder`
+|Optional: A placeholder
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#hasnotifications]
+----
+
+public hasNotifications():link:http://php.net/bool[bool^]
+
+----
+
+
+
+
+
+Check if the session currently has any notifications
+
+[source%nowrap, php, subs=+macros]
+[#clearnotifications]
+----
+
+public clearNotifications()
+
+----
+
+
+
+
+
+Clear existing notifications
 

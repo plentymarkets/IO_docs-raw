@@ -5,7 +5,8 @@
 [[io__checkoutservice]]
 = CheckoutService
 
-
+This service class contains methods for manipulating the checkout. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,61 +22,47 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
-    |frontendPaymentMethodRepository
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
-    |checkout
-    |
-| xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
-    |basketRepository
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
-    |sessionStorage
-    |
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-    |customerService
-    |
-| xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
-    |parcelServicePresetRepo
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
-    |currencyExchangeRepo
-    |
-|xref:IO/Services/BasketService.adoc#[`BasketService`]
-    |basketService
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-    |sessionStorageRepository
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
-    |webstoreConfigurationRepository
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
-    |checkoutRepository
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
-    |contactRepository
-    |
-| 
-    |cache
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
+a|`$frontendPaymentMethodRepository`
+|This repository exposes functionality related to payment methods|xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
+a|`$checkout`
+||xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
+a|`$basketRepository`
+||xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
+a|`$sessionStorage`
+||xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
+||xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
+a|`$parcelServicePresetRepo`
+||xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
+a|`$currencyExchangeRepo`
+||xref:IO/Services/BasketService.adoc#[`BasketService`]
+a|`$basketService`
+||xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+||xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+a|`$webstoreConfigurationRepository`
+||xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+a|`$checkoutRepository`
+||xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($frontendPaymentMethodRepository, $checkout, $basketRepository, $sessionStorage, $customerService, $parcelServicePresetRepo, $currencyExchangeRepo, $basketService, $sessionStorageRepository, $webstoreConfigurationService, $dispatcher, $checkoutRepository, $contactRepository):void
+public __construct($frontendPaymentMethodRepository, $checkout, $basketRepository, $sessionStorage, $customerService, $parcelServicePresetRepo, $currencyExchangeRepo, $basketService, $sessionStorageRepository, $webstoreConfigurationRepository, $dispatcher, $checkoutRepository, $contactRepository)
 
 ----
-
-
 
 
 
@@ -86,19 +73,19 @@ CheckoutService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
 a|`$frontendPaymentMethodRepository`
 |
 
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
 a|`$checkout`
 |
 
-| xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
+|xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
 a|`$basketRepository`
 |
 
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
 a|`$sessionStorage`
 |
 
@@ -106,11 +93,11 @@ a|`$sessionStorage`
 a|`$customerService`
 |
 
-| xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
+|xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
 a|`$parcelServicePresetRepo`
 |
 
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
 a|`$currencyExchangeRepo`
 |
 
@@ -118,32 +105,33 @@ a|`$currencyExchangeRepo`
 a|`$basketService`
 |
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
 a|`$sessionStorageRepository`
 |
 
-|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
-a|`$webstoreConfigurationService`
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+a|`$webstoreConfigurationRepository`
 |
 
 | xref:stable7@interface::Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
 a|`$dispatcher`
 |
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
 a|`$checkoutRepository`
 |
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
 a|`$contactRepository`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcheckout]
 ----
 
-public getCheckout($retry = true):array
+public getCheckout($retry = true):link:http://php.net/array[array^]
 
 ----
 
@@ -151,45 +139,22 @@ public getCheckout($retry = true):array
 
 
 
-
-
-Get the relevant data for the checkout
+Get the relevant data for the checkout.
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$retry`
 |Try loading checkout again on failure (e.g. problems during calculating totals)
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcurrency]
 ----
 
-public getCurrency():string
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be removed in 6.0.0
-
-====
-
-
-
-
-
-
-Get the current currency from the session
-
-[source%nowrap, php]
-----
-
-public setCurrency($currency):void
+public getCurrency():link:http://php.net/string[string^]
 
 ----
 
@@ -199,43 +164,50 @@ public setCurrency($currency):void
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract_getcurrency[`CheckoutRepositoryContract::getCurrency()`]
 ====
 
 
 
 
+Get the current currency from the session.
+
+[source%nowrap, php, subs=+macros]
+[#setcurrency]
+----
+
+public setCurrency($currency)
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract_setcurrency[`CheckoutRepositoryContract::setCurrency()`]
+====
 
 
-Set the current currency from the session
+
+
+Set the current currency in the session.
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$currency`
-|
+|The currency to be used.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcurrencylist]
 ----
 
-public getCurrencyList():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getCurrencyData():void
+public getCurrencyList():link:http://php.net/array[array^]
 
 ----
 
@@ -243,29 +215,13 @@ public getCurrencyData():void
 
 
 
+Get array with all active currencies.
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcurrencydata]
 ----
 
-public getCurrencyPattern():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getMethodOfPaymentId():int
+public getCurrencyData():link:http://php.net/array[array^]
 
 ----
 
@@ -273,14 +229,13 @@ public getMethodOfPaymentId():int
 
 
 
+Get the name and the symbol for the currently selected currency.
 
-
-Get the ID of the current payment method
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcurrencypattern]
 ----
 
-public setMethodOfPaymentId($methodOfPaymentID):void
+public getCurrencyPattern():link:http://php.net/array[array^]
 
 ----
 
@@ -288,38 +243,50 @@ public setMethodOfPaymentId($methodOfPaymentID):void
 
 
 
+Get all required information about how to display monetary values.
+
+[source%nowrap, php, subs=+macros]
+[#getmethodofpaymentid]
+----
+
+public getMethodOfPaymentId():link:http://php.net/int[int^]
+
+----
 
 
-Set the ID of the current payment method
+
+
+
+Get the id of the current payment method.
+
+[source%nowrap, php, subs=+macros]
+[#setmethodofpaymentid]
+----
+
+public setMethodOfPaymentId($methodOfPaymentID)
+
+----
+
+
+
+
+
+Set the id of the current payment method.
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$methodOfPaymentID`
-|
+|Id of the method of payment to be used.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#preparepayment]
 ----
 
-public preparePayment():array
-
-----
-
-
-
-
-
-
-
-Prepare the payment
-
-[source%nowrap, php]
-----
-
-public getMethodOfPaymentList():array
+public preparePayment():link:http://php.net/array[array^]
 
 ----
 
@@ -327,29 +294,13 @@ public getMethodOfPaymentList():array
 
 
 
+Prepare the payment.
 
-
-List all available payment methods
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getmethodofpaymentlist]
 ----
 
-public getMethodOfPaymentExpressCheckoutList():array
-
-----
-
-
-
-
-
-
-
-List all payment methods available for express checkout
-
-[source%nowrap, php]
-----
-
-public getCheckoutPaymentDataList():array
+public getMethodOfPaymentList():link:http://php.net/array[array^]
 
 ----
 
@@ -357,14 +308,13 @@ public getCheckoutPaymentDataList():array
 
 
 
+List all available payment methods.
 
-
-Get a list of the payment method data
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getmethodofpaymentexpresscheckoutlist]
 ----
 
-public getShippingProfileList():array
+public getMethodOfPaymentExpressCheckoutList():link:http://php.net/array[array^]
 
 ----
 
@@ -372,14 +322,41 @@ public getShippingProfileList():array
 
 
 
+List all payment methods available for express checkout.
 
-
-Get the shipping profile list
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcheckoutpaymentdatalist]
 ----
 
-public getShippingCountryId():int
+public getCheckoutPaymentDataList():link:http://php.net/array[array^]
+
+----
+
+
+
+
+
+Get a list of the payment method data.
+
+[source%nowrap, php, subs=+macros]
+[#getshippingprofilelist]
+----
+
+public getShippingProfileList():link:http://php.net/array[array^]
+
+----
+
+
+
+
+
+Get the list of available shipping profiles.
+
+[source%nowrap, php, subs=+macros]
+[#getshippingcountryid]
+----
+
+public getShippingCountryId():link:http://php.net/int[int^]
 
 ----
 
@@ -389,19 +366,19 @@ public getShippingCountryId():int
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract_getshippingcountryid[`CheckoutRepositoryContract::getShippingCountryId()`]
 ====
-
-
 
 
 
 
 Get the ID of the current shipping country
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setshippingcountryid]
 ----
 
-public setShippingCountryId($shippingCountryId):void
+public setShippingCountryId($shippingCountryId)
 
 ----
 
@@ -409,38 +386,22 @@ public setShippingCountryId($shippingCountryId):void
 
 
 
-
-
-Set the ID of thevcurrent shipping country
+Set the id of the current shipping country.
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$shippingCountryId`
-|
+|Id of the shipping country to select.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getshippingprofileid]
 ----
 
-public getShippingProfileId():int
-
-----
-
-
-
-
-
-
-
-Get the ID of the current shipping profile
-
-[source%nowrap, php]
-----
-
-public setShippingProfileId($shippingProfileId):void
+public getShippingProfileId():link:http://php.net/int[int^]
 
 ----
 
@@ -448,38 +409,36 @@ public setShippingProfileId($shippingProfileId):void
 
 
 
+Get the ID of the current shipping profile.
+
+[source%nowrap, php, subs=+macros]
+[#setshippingprofileid]
+----
+
+public setShippingProfileId($shippingProfileId)
+
+----
 
 
-Set the ID of the current shipping profile
+
+
+
+Set the ID of the current shipping profile.
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$shippingProfileId`
-|
+|Id of the shipping profile to select.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getdeliveryaddressid]
 ----
 
-public getDeliveryAddressId():int
-
-----
-
-
-
-
-
-
-
-Get the ID of the current delivery address
-
-[source%nowrap, php]
-----
-
-public setDeliveryAddressId($deliveryAddressId):void
+public getDeliveryAddressId():link:http://php.net/int[int^]
 
 ----
 
@@ -487,38 +446,36 @@ public setDeliveryAddressId($deliveryAddressId):void
 
 
 
+Get the ID of the current delivery address.
+
+[source%nowrap, php, subs=+macros]
+[#setdeliveryaddressid]
+----
+
+public setDeliveryAddressId($deliveryAddressId)
+
+----
 
 
-Set the ID of the current delivery address
+
+
+
+Set the ID of the current delivery address.
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$deliveryAddressId`
-|
+|Id of the address to be used as delivery address when creating an order.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbillingaddressid]
 ----
 
-public getBillingAddressId():int
-
-----
-
-
-
-
-
-
-
-Get the ID of the current invoice address
-
-[source%nowrap, php]
-----
-
-public setBillingAddressId($billingAddressId):void
+public getBillingAddressId():link:http://php.net/int[int^]
 
 ----
 
@@ -526,38 +483,36 @@ public setBillingAddressId($billingAddressId):void
 
 
 
+Get the ID of the current invoice address.
+
+[source%nowrap, php, subs=+macros]
+[#setbillingaddressid]
+----
+
+public setBillingAddressId($billingAddressId)
+
+----
 
 
-Set the ID of the current invoice address
+
+
+
+Set the ID of the current invoice address.
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$billingAddressId`
-|
+|Id of the address to be used as billing address when creating an order.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setdefaultshippingcountryid]
 ----
 
-public setDefaultShippingCountryId():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getMaxDeliveryDays():void
+public setDefaultShippingCountryId()
 
 ----
 
@@ -565,14 +520,13 @@ public getMaxDeliveryDays():void
 
 
 
+Reset the current shipping country to the default defined in the webstore configuration.
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getmaxdeliverydays]
 ----
 
-public setReadOnlyCheckout($readonly):void
+public getMaxDeliveryDays():link:http://php.net/array[array^]
 
 ----
 
@@ -580,38 +534,36 @@ public setReadOnlyCheckout($readonly):void
 
 
 
+Get the maximum days of delivery for each shipping profile.
+
+[source%nowrap, php, subs=+macros]
+[#setreadonlycheckout]
+----
+
+public setReadOnlyCheckout($readonly)
+
+----
 
 
 
+
+
+Set the checkout to be readonly.
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/bool[`bool`^]
 a|`$readonly`
-|
+|Enable/disable readonly mode for checkout.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getreadonlycheckout]
 ----
 
-public getReadOnlyCheckout():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public fromMemoryCache():void
+public getReadOnlyCheckout():link:http://php.net/bool[bool^]
 
 ----
 
@@ -619,18 +571,43 @@ public fromMemoryCache():void
 
 
 
+Check if checkout should display data from external checkout processes in readonly mode.
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcontactwish]
 ----
 
-public resetMemoryCache($key = null):void
+public getContactWish():link:http://php.net/string[string^]
 
 ----
 
 
+
+
+
+Returns the given contact wish from session.
+
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
+----
+
+public fromMemoryCache()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -641,7 +618,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

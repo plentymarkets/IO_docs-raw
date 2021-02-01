@@ -21,73 +21,73 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |WAREHOUSE_ID
-    |'warehouseId'
-    |
+a|`WAREHOUSE_ID`
+|'warehouseId'
+|
 |link:http://php.net/string[string^]
-    |STOCK_PHYSICAL
-    |'stockPhysical'
-    |
+a|`STOCK_PHYSICAL`
+|'stockPhysical'
+|
 |link:http://php.net/string[string^]
-    |RESERVED_STOCK
-    |'reservedStock'
-    |
+a|`RESERVED_STOCK`
+|'reservedStock'
+|
 |link:http://php.net/string[string^]
-    |RESERVED_EBAY
-    |'reservedEbay'
-    |
+a|`RESERVED_EBAY`
+|'reservedEbay'
+|
 |link:http://php.net/string[string^]
-    |REORDER_DELTA
-    |'reorderDelta'
-    |
+a|`REORDER_DELTA`
+|'reorderDelta'
+|
 |link:http://php.net/string[string^]
-    |STOCK_NET
-    |'stockNet'
-    |
+a|`STOCK_NET`
+|'stockNet'
+|
 |link:http://php.net/string[string^]
-    |UPDATE_AMAZON
-    |'updateAmazon'
-    |
+a|`UPDATE_AMAZON`
+|'updateAmazon'
+|
 |link:http://php.net/string[string^]
-    |UPDATE_PIXMANIA
-    |'updatePixmania'
-    |
+a|`UPDATE_PIXMANIA`
+|'updatePixmania'
+|
 |link:http://php.net/string[string^]
-    |WAREHOUSE_TYPE
-    |'warehouseType'
-    |
+a|`WAREHOUSE_TYPE`
+|'warehouseType'
+|
 |link:http://php.net/string[string^]
-    |REORDERED
-    |'reordered'
-    |
+a|`REORDERED`
+|'reordered'
+|
 |link:http://php.net/string[string^]
-    |RESERVED_BUNDLE
-    |'reservedBundle'
-    |
+a|`RESERVED_BUNDLE`
+|'reservedBundle'
+|
 |link:http://php.net/string[string^]
-    |AVERAGE_PURCHASE_PRICE
-    |'averagePurchasePrice'
-    |
+a|`AVERAGE_PURCHASE_PRICE`
+|'averagePurchasePrice'
+|
 |link:http://php.net/string[string^]
-    |WAREHOUSE_PRIORITY
-    |'warehousePriority'
-    |
+a|`WAREHOUSE_PRIORITY`
+|'warehousePriority'
+|
 |link:http://php.net/string[string^]
-    |LAST_UPDATE_TIMESTAMP
-    |'lastUpdateTimestamp'
-    |
+a|`LAST_UPDATE_TIMESTAMP`
+|'lastUpdateTimestamp'
+|
 |link:http://php.net/string[string^]
-    |LAST_CALCULATE_TIMESTAMP
-    |'lastCalculateTimestamp'
-    |
+a|`LAST_CALCULATE_TIMESTAMP`
+|'lastCalculateTimestamp'
+|
 |link:http://php.net/string[string^]
-    |RESERVED_OUT_OF_STOCK
-    |'reservedOutOfStock'
-    |
+a|`RESERVED_OUT_OF_STOCK`
+|'reservedOutOfStock'
+|
 |link:http://php.net/string[string^]
-    |RESERVED_BASKET
-    |'reservedBasket'
-    |
+a|`RESERVED_BASKET`
+|'reservedBasket'
+|
 |===
 
 

@@ -5,7 +5,8 @@
 [[io__itemsearchautocompleteservice]]
 = ItemSearchAutocompleteService
 
-
+This service class contains functions for the autocompletion of the item search. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,18 +22,23 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_urlbuilderrepositorycontract[`UrlBuilderRepositoryContract`]
-    |urlBuilderRepository
-    |
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_urlbuilderrepositorycontract[`UrlBuilderRepositoryContract`]
+a|`$urlBuilderRepository`
+||xref:stable7@interface::Webshop.adoc#webshop_contracts_localizationrepositorycontract[`LocalizationRepositoryContract`]
+a|`$localizationRepository`
+||xref:stable7@interface::System.adoc#system_models_webstoreconfiguration[`WebstoreConfiguration`]
+a|`$webstoreConfiguration`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($urlBuilderRepository):void
+public __construct($urlBuilderRepository, $localizationRepository, $webstoreConfigurationRepository)
 
 ----
 
@@ -40,38 +46,30 @@ public __construct($urlBuilderRepository):void
 
 
 
-
-
-
+ItemSearchAutocompleteService constructor.
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_urlbuilderrepositorycontract[`UrlBuilderRepositoryContract`]
 a|`$urlBuilderRepository`
 |
+
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_localizationrepositorycontract[`LocalizationRepositoryContract`]
+a|`$localizationRepository`
+|
+
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+a|`$webstoreConfigurationRepository`
+|
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getdidyoumeansuggestionsearchstring]
 ----
 
-public getDidYouMeanSuggestionSearchString():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getResults():void
+public getDidYouMeanSuggestionSearchString($searchString, $suggestions):link:http://php.net/string[string^]
 
 ----
 
@@ -79,31 +77,68 @@ public getResults():void
 
 
 
-
-
-
-
-[source%nowrap, php]
-----
-
-public transformResult($itemSearchResult):array
-
-----
-
-
-
-
-
-
-
-
+Gets a &quot;Did you mean X?&quot; string based on suggestions
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/string[`string`^]
+a|`$searchString`
+|Original search string
+
+|link:http://php.net/array[`array`^]
+a|`$suggestions`
+|Search suggestions based on search string
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getresults]
+----
+
+public getResults($searchString, $searchTypes):link:http://php.net/array[array^]
+
+----
+
+
+
+
+
+Get an item search result for the search string based on the chosen search types
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$searchString`
+|The search string
+
+|link:http://php.net/array[`array`^]
+a|`$searchTypes`
+|What types of search to execute
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#transformresult]
+----
+
+public transformResult($itemSearchResult):link:http://php.net/array[array^]
+
+----
+
+
+
+
+
+Transform the item search result into a flatter format
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[`array`^]
 a|`$itemSearchResult`
-|
+|Raw item search result
 |===
 
 

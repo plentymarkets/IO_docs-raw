@@ -23,31 +23,27 @@ xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
-    |authHelper
-    |
-| xref:stable7@interface::Item.adoc#item_contracts_propertyrepositorycontract[`PropertyRepositoryContract`]
-    |propertyRepository
-    |
-| xref:stable7@interface::Item.adoc#item_contracts_propertyselectionrepositorycontract[`PropertySelectionRepositoryContract`]
-    |propertySelectionRepository
-    |
-| 
-    |cache
-    |
+|xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
+a|`$authHelper`
+||xref:stable7@interface::Item.adoc#item_contracts_propertyrepositorycontract[`PropertyRepositoryContract`]
+a|`$propertyRepository`
+||xref:stable7@interface::Item.adoc#item_contracts_propertyselectionrepositorycontract[`PropertySelectionRepositoryContract`]
+a|`$propertySelectionRepository`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($authHelper):void
+public __construct($authHelper)
 
 ----
-
-
 
 
 
@@ -58,20 +54,19 @@ PropertySelectionValueNameFilter constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
+|xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
 a|`$authHelper`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfilters]
 ----
 
-public getFilters():array
+public getFilters():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -79,25 +74,11 @@ public getFilters():array
 
 Return the available filter methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getpropertyname]
 ----
 
-public getPropertyName():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getPropertySelectionValueName():void
+public getPropertyName()
 
 ----
 
@@ -107,31 +88,41 @@ public getPropertySelectionValueName():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getpropertyselectionvaluename]
 ----
 
-public fromMemoryCache():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public resetMemoryCache($key = null):void
+public getPropertySelectionValueName()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
+----
+
+public fromMemoryCache()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -142,7 +133,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

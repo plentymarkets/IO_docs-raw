@@ -23,23 +23,22 @@ xref:IO/Services/ItemSearch/Factories/Faker/AbstractFaker.adoc#[`AbstractFaker`]
 |Type |Name |Value |Description
 
 |link:http://php.net/array[array^]
-    |ES_LANGUAGES
-    |['german','english','french','bulgarian','italian','spanish','turkish','dutch','portuguese','norwegian','romanian','danish','swedish','czech','russian']
-    |
+a|`ES_LANGUAGES`
+|['german','english','french','bulgarian','italian','spanish','turkish','dutch','portuguese','norwegian','romanian','danish','swedish','czech','russian']
+|
 |===
 
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#fill]
 ----
 
-public fill($data):void
+public fill($data)
 
 ----
-
-
 
 
 
@@ -50,7 +49,7 @@ public fill($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$data`
 |
 |===

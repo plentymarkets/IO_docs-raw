@@ -21,22 +21,21 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/array[array^]
-    |categoryMap
-    |
+|link:http://php.net/array[`array`^]
+a|`$categoryMap`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($event):void
+public __construct($event)
 
 ----
-
-
 
 
 
@@ -53,14 +52,13 @@ a|`$event`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setcategorymap]
 ----
 
-public setCategoryMap($categoryMap):void
+public setCategoryMap($categoryMap)
 
 ----
-
-
 
 
 
@@ -71,20 +69,19 @@ Set the category map
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$categoryMap`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getid]
 ----
 
-public getID($key):int
+public getID($key):link:http://php.net/int[int^]
 
 ----
-
-
 
 
 
@@ -95,7 +92,7 @@ Get the category ID by key
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$key`
 |
 |===

@@ -5,7 +5,8 @@
 [[io__couponservice]]
 = CouponService
 
-
+This service class contains functions related to coupons in the basket. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,13 +22,13 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/int[int^]
-    |BELOW_MINIMAL_ORDER_VALUE
-    |301
-    |
+a|`BELOW_MINIMAL_ORDER_VALUE`
+|301
+|
 |link:http://php.net/int[int^]
-    |NO_VALID_ITEM_IN_BASKET
-    |302
-    |
+a|`NO_VALID_ITEM_IN_BASKET`
+|302
+|
 |===
 
 
@@ -35,31 +36,27 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Order.adoc#order_contracts_couponcampaignrepositorycontract[`CouponCampaignRepositoryContract`]
-    |couponCampaignRepository
-    |
-| xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
-    |basketRepository
-    |
-| xref:stable7@interface::Item.adoc#item_contracts_variationcategoryrepositorycontract[`VariationCategoryRepositoryContract`]
-    |variationCategoryRepository
-    |
-| xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
-    |authHelper
-    |
+|xref:stable7@interface::Order.adoc#order_contracts_couponcampaignrepositorycontract[`CouponCampaignRepositoryContract`]
+a|`$couponCampaignRepository`
+||xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
+a|`$basketRepository`
+||xref:stable7@interface::Item.adoc#item_contracts_variationcategoryrepositorycontract[`VariationCategoryRepositoryContract`]
+a|`$variationCategoryRepository`
+||xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
+a|`$authHelper`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($couponCampaignRepository, $basketRepository, $variationCategoryRepository, $authHelper):void
+public __construct($couponCampaignRepository, $basketRepository, $variationCategoryRepository, $authHelper)
 
 ----
-
-
 
 
 
@@ -70,28 +67,29 @@ CouponService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Order.adoc#order_contracts_couponcampaignrepositorycontract[`CouponCampaignRepositoryContract`]
+|xref:stable7@interface::Order.adoc#order_contracts_couponcampaignrepositorycontract[`CouponCampaignRepositoryContract`]
 a|`$couponCampaignRepository`
 |
 
-| xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
+|xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
 a|`$basketRepository`
 |
 
-| xref:stable7@interface::Item.adoc#item_contracts_variationcategoryrepositorycontract[`VariationCategoryRepositoryContract`]
+|xref:stable7@interface::Item.adoc#item_contracts_variationcategoryrepositorycontract[`VariationCategoryRepositoryContract`]
 a|`$variationCategoryRepository`
 |
 
-| xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
+|xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
 a|`$authHelper`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setcoupon]
 ----
 
-public setCoupon($couponCode):void
+public setCoupon($couponCode):xref:stable7@interface::Basket.adoc#basket_models_basket[Basket]
 
 ----
 
@@ -99,23 +97,22 @@ public setCoupon($couponCode):void
 
 
 
-
-
-
+Setter for couponCode
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[`string`^]
 a|`$couponCode`
-|
+|Code representing a coupon
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#removecoupon]
 ----
 
-public removeCoupon($code = null):void
+public removeCoupon($code = null):xref:stable7@interface::Basket.adoc#basket_models_basket[Basket]
 
 ----
 
@@ -123,28 +120,55 @@ public removeCoupon($code = null):void
 
 
 
-
-
-
+Remove the coupon code from the basket and optionally throw a notification with a code.
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/int[`int`^]
 a|`$code`
-|
+|Optional: Error code for notification
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#checkcoupon]
 ----
 
-public validateBasketItemDelete($basket, $basketItem):void
+public checkCoupon($basket):link:http://php.net/array[array^]
 
 ----
 
 
 
+
+
+Get a basket with applied coupon discounts
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[`array`^]
+a|`$basket`
+|The basket
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#validatebasketitemdelete]
+----
+
+public validateBasketItemDelete($basket, $basketItem)
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.9. Validation is handled b the plentymarkets core from now.
+
+====
 
 
 
@@ -154,25 +178,31 @@ Validate the basket for the coupon, and remove the coupon if invalid
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Basket.adoc#basket_models_basket[`Basket`]
+|xref:stable7@interface::Basket.adoc#basket_models_basket[`Basket`]
 a|`$basket`
-|
+|The basket
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$basketItem`
 |Current basketItem
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#validatebasketitemupdate]
 ----
 
-public validateBasketItemUpdate($basket, $data, $basketItem):void
+public validateBasketItemUpdate($basket, $data, $basketItem)
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
 
+since 5.0.9. Validation is handled b the plentymarkets core from now.
 
+====
 
 
 
@@ -182,24 +212,25 @@ Validate the basket for the coupon, and remove the coupon if invalid
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Basket.adoc#basket_models_basket[`Basket`]
+|xref:stable7@interface::Basket.adoc#basket_models_basket[`Basket`]
 a|`$basket`
-|
+|The Basket
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$data`
 |New basketItem
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$basketItem`
 |Current basketItem
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#effectsonshippingcosts]
 ----
 
-public effectsOnShippingCosts($campaign):void
+public effectsOnShippingCosts($campaign):link:http://php.net/bool[bool^]
 
 ----
 
@@ -207,16 +238,14 @@ public effectsOnShippingCosts($campaign):void
 
 
 
-
-
-
+Checks, if the coupon&#039;s discount changes shipping costs.
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|xref:stable7@interface::Order.adoc#order_models_couponcampaign[`CouponCampaign`]
 a|`$campaign`
-|
+|Contains information about the campaign
 |===
 
 

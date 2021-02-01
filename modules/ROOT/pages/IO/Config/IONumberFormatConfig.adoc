@@ -23,46 +23,41 @@ xref:stable7@interface::Webshop.adoc#webshop_helpers_pluginconfig[`PluginConfig`
 |===
 |Type |Name |Description
 
-| 
-    |numberDecimals
-    |
-| 
-    |separatorDecimal
-    |
-| 
-    |separatorThousands
-    |
-| 
-    |useLocaleCurrencyFormat
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$numberDecimals`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$separatorDecimal`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$separatorThousands`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$useLocaleCurrencyFormat`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#load]
 ----
 
-public load():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getPluginName():void
+public load()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getpluginname]
+----
+
+public getPluginName()
+
+----
 
 
 

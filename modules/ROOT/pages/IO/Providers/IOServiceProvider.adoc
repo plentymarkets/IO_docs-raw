@@ -22,14 +22,13 @@ xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_serviceprovider[
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#register]
 ----
 
-public register():void
+public register()
 
 ----
-
-
 
 
 
@@ -37,14 +36,13 @@ public register():void
 
 Register the core functions
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#boot]
 ----
 
-public boot($twig):void
+public boot($twig)
 
 ----
-
-
 
 
 

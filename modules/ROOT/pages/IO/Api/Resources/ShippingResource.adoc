@@ -24,21 +24,20 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |Type |Name |Description
 
 |xref:IO/Services/ShippingService.adoc#[`ShippingService`]
-    |shippingService
-    |
+a|`$shippingService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response, $shippingService):void
+public __construct($request, $response, $shippingService)
 
 ----
-
-
 
 
 
@@ -63,17 +62,16 @@ a|`$shippingService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#update]
 ----
 
-public update($shippingProfileId):Plenty\Plugin\Http\Response
+public update($shippingProfileId): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Set the shipping profile
@@ -81,7 +79,7 @@ Set the shipping profile
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$shippingProfileId`
 |
 |===

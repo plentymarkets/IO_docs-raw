@@ -22,14 +22,13 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showmyaccount]
 ----
 
-public showMyAccount($category = null):string
+public showMyAccount($category = null):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -40,20 +39,19 @@ Prepare and render the data for the my account page
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+|xref:stable7@interface::Category.adoc#category_models_category[`Category`]
 a|`$category`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#redirect]
 ----
 
-public redirect():void
+public redirect()
 
 ----
-
-
 
 
 

@@ -24,21 +24,20 @@ xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 |Type |Name |Description
 
 |xref:IO/Services/ItemService.adoc#[`ItemService`]
-    |itemService
-    |
+a|`$itemService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($itemService):void
+public __construct($itemService)
 
 ----
-
-
 
 
 
@@ -55,14 +54,13 @@ a|`$itemService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfilters]
 ----
 
-public getFilters():array
+public getFilters():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -70,10 +68,38 @@ public getFilters():array
 
 Return the available filter methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#builditemurl]
 ----
 
-public buildVariationURL($variationId):string
+public buildItemURL($itemData, $withVariationId = true):link:http://php.net/string[string^]
+
+----
+
+
+
+
+
+Build the URL for the item by item ID or variation ID
+
+.*Parameters*
+|===
+|Type |Name |Description
+|xref:IO/Extensions/Filters.adoc#[`Filters`]
+a|`$itemData`
+|
+
+|link:http://php.net/bool[`bool`^]
+a|`$withVariationId`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#buildvariationurl]
+----
+
+public buildVariationURL($variationId):link:http://php.net/string[string^]
 
 ----
 
@@ -90,12 +116,10 @@ This method will not be supported in the future. Please refrain from using it as
 
 
 
-
-
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 |===

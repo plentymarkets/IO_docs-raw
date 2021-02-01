@@ -23,22 +23,21 @@ xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_middleware[`Midd
 |===
 |Type |Name |Description
 
-| 
-    |FORCE_404
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$FORCE_404`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#before]
 ----
 
-public before($request):void
+public before($request)
 
 ----
-
-
 
 
 
@@ -55,17 +54,16 @@ a|`$request`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#after]
 ----
 
-public after($request, $response):Plenty\Plugin\Http\Response
+public after($request, $response): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 

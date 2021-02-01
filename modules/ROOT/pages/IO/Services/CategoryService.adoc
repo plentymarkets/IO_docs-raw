@@ -5,7 +5,8 @@
 [[io__categoryservice]]
 = CategoryService
 
-
+This service class contains methods related to Category models. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,46 +22,37 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Category.adoc#category_contracts_categoryrepositorycontract[`CategoryRepositoryContract`]
-    |categoryRepository
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
-    |webstoreConfigurationRepository
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
-    |contactRepository
-    |
-| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
-    |currentCategory
-    |
-|link:http://php.net/array[array^]
-    |currentCategoryTree
-    |
-| 
-    |authGuard
-    |
-| 
-    |currentItem
-    |
-|link:http://php.net/int[int^]
-    |webstoreId
-    |
-| 
-    |cache
-    |
+|xref:stable7@interface::Category.adoc#category_contracts_categoryrepositorycontract[`CategoryRepositoryContract`]
+a|`$categoryRepository`
+|This repository is used to manipulate Category models.|xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+a|`$webstoreConfigurationRepository`
+|This repository is used to read the webstore configuration.|xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|This repository is used to manipulate Contact models.|xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+a|`$currentCategory`
+|The current Category model.|link:http://php.net/array[`array`^]
+a|`$currentCategoryTree`
+|The full branch of the category with parents, e.g. Plants -> Edible -> Tomatoes.|xref:IO/Guards/AuthGuard.adoc#[`AuthGuard`]
+a|`$authGuard`
+|Guard class to check for login status.|link:http://php.net/array[`array`^]
+a|`$currentItem`
+|An item.|link:http://php.net/int[`int`^]
+a|`$webstoreId`
+|The current webstore id.|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($categoryRepository, $webstoreConfigurationRepository, $authGuard, $contactRepository):void
+public __construct($categoryRepository, $webstoreConfigurationRepository, $authGuard, $contactRepository)
 
 ----
-
-
 
 
 
@@ -71,28 +63,29 @@ CategoryService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Category.adoc#category_contracts_categoryrepositorycontract[`CategoryRepositoryContract`]
+|xref:stable7@interface::Category.adoc#category_contracts_categoryrepositorycontract[`CategoryRepositoryContract`]
 a|`$categoryRepository`
-|
+|This repository is used to manipulate Category models.
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
 a|`$webstoreConfigurationRepository`
-|
+|This repository is used to read the webstore configuration.
 
 |xref:IO/Guards/AuthGuard.adoc#[`AuthGuard`]
 a|`$authGuard`
-|
+|Guard class to check for login status.
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
 a|`$contactRepository`
-|
+|This repository is used to manipulate Contact models.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setcurrentcategoryid]
 ----
 
-public setCurrentCategoryID($catID):void
+public setCurrentCategoryID($catID)
 
 ----
 
@@ -100,23 +93,22 @@ public setCurrentCategoryID($catID):void
 
 
 
-
-
-Set the current category by ID.
+Set the current category by id.
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$catID`
 |The id of the current category
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setcurrentcategory]
 ----
 
-public setCurrentCategory($cat):void
+public setCurrentCategory($cat)
 
 ----
 
@@ -124,81 +116,63 @@ public setCurrentCategory($cat):void
 
 
 
-
-
-Set the current category by ID.
+Set the current category by id.
 
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+|xref:stable7@interface::Category.adoc#category_models_category[`Category`]
 a|`$cat`
 |The current category
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcurrentcategory]
 ----
 
-public getCurrentCategory():Plenty\Modules\Category\Models\Category
-
-----
-
-
-
-
-====== *Return type:* xref:stable7@interface::Category.adoc#category_models_category[`Category`]
-
-
-
-
-[source%nowrap, php]
-----
-
-public get($catID, $lang = null):Plenty\Modules\Category\Models\Category
+public getCurrentCategory():xref:stable7@interface::Category.adoc#category_models_category[Category]
 
 ----
 
 
 
 
-====== *Return type:* xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+
+Gets the current category or null if not set
+
+[source%nowrap, php, subs=+macros]
+[#get]
+----
+
+public get($catID, $lang = null):xref:stable7@interface::Category.adoc#category_models_category[Category]
+
+----
 
 
-Get a category by ID
+
+
+
+Get a category by id
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$catID`
-|The category ID
+|The category id
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
-|The language to get the category
+|The language to get the category (ISO-639-1)
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getforplentyid]
 ----
 
-public getForPlentyId():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getCurrentCategoryChildren():void
+public getForPlentyId($catID, $lang = null, $plentyId = null):xref:stable7@interface::Category.adoc#category_models_category[Category]
 
 ----
 
@@ -206,65 +180,205 @@ public getCurrentCategoryChildren():void
 
 
 
-
-
-
-
-[source%nowrap, php]
-----
-
-public getURL($category, $lang = null, $):string
-
-----
-
-
-
-
-
-
-
-Return the URL for a given category ID.
+Gets a category by id and plentyId
 
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
-a|`$category`
-|the category to get the URL for
+|link:http://php.net/int[`int`^]
+a|`$catID`
+|The category id
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
-|the language to get the URL for
+|The language to get the category (ISO-639-1)
 
-|link:http://php.net/int[int^]
-a|`$`
-||null $webstoreId
+|link:http://php.net/int[`int`^]
+a|`$plentyId`
+|The plentyId to which the category has to be linked
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getchildren]
 ----
 
-public getURLById():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public isCurrent($category):bool
+public getChildren($categoryId, $lang = null):link:http://php.net/array[array^]
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
 
+This method will not be supported in the future. Please refrain from using it as soon as possible.
+
+====
+
+
+
+
+Get child categories of a given category referenced by id
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$categoryId`
+|The category id, which children should be fetched
+
+|link:http://php.net/string[`string`^]
+a|`$lang`
+|The language in ISO-639-1 format
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getcurrentcategorychildren]
+----
+
+public getCurrentCategoryChildren($categoryId = null):link:http://php.net/mixed[mixed^]
+
+----
+
+
+
+
+
+Gets the children of the given categoryId or the current category if no categoryId is given.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$categoryId`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#findincategorytree]
+----
+
+public findInCategoryTree($categoryTree, $branch = [], $level = 1):link:http://php.net/mixed[mixed^]
+
+----
+
+
+
+
+
+Recursively iterate through category tree and return the category with the given id.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|xref:IO/Services.adoc#[`Services`]
+a|`$categoryTree`
+|A tree containing all categories
+
+|link:http://php.net/array[`array`^]
+a|`$branch`
+|The current branch of the categoryTree
+
+|link:http://php.net/int[`int`^]
+a|`$level`
+|The current depth of the recursion
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#geturl]
+----
+
+public getURL($category, $lang = null, $webstoreId = null):link:http://php.net/string[string^]
+
+----
+
+
+
+
+
+Return the URL for a given category.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+a|`$category`
+|The category to get the URL for
+
+|link:http://php.net/string[`string`^]
+a|`$lang`
+|The language to get the URL for (ISO-639-1)
+
+|link:http://php.net/int[`int`^]
+a|`$webstoreId`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#geturlbyid]
+----
+
+public getURLById($categoryId, $lang = null):link:http://php.net/string[string^]
+
+----
+
+
+
+
+
+Return the url for a given category id.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$categoryId`
+|Id of category to fetch
+
+|link:http://php.net/string[`string`^]
+a|`$lang`
+|Language in format ISO-639-1
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getdetails]
+----
+
+public getDetails($category, $lang):xref:stable7@interface::Category.adoc#category_models_categorydetails[CategoryDetails]
+
+----
+
+
+
+
+
+Get CategoryDetails of the given category for a given language
+
+.*Parameters*
+|===
+|Type |Name |Description
+|xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+a|`$category`
+|The category model
+
+|link:http://php.net/string[`string`^]
+a|`$lang`
+|The language in format ISO-639-1
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#iscurrent]
+----
+
+public isCurrent($category):link:http://php.net/bool[bool^]
+
+----
 
 
 
@@ -275,20 +389,19 @@ Check whether a category is referenced by the current route
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|xref:stable7@interface::Category.adoc#category_models_category[`Category`] \| link:http://php.net/array[`array`^]
 a|`$category`
 |The category to check
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isopen]
 ----
 
-public isOpen($category):bool
+public isOpen($category):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -299,20 +412,19 @@ Check whether any child of a category is referenced by the current route
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|xref:stable7@interface::Category.adoc#category_models_category[`Category`] \| link:http://php.net/array[`array`^]
 a|`$category`
 |The category to check
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isactive]
 ----
 
-public isActive($category = null):bool
+public isActive($category = null):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -323,52 +435,50 @@ Check whether a category or any of its children is referenced by the current rou
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$category`
 |The category to check
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitems]
 ----
 
-public getItems($category = null, $params = [], $page = 1):Plenty\Repositories\Models\PaginatedResult
+public getItems($category = null, $params = [], $page = 1):link:http://php.net/array[array^]
 
 ----
 
 
 
 
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
 
-
-
+Get items for the given or current category
 
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+|xref:stable7@interface::Category.adoc#category_models_category[`Category`]
 a|`$category`
-|
+|The category of which you want items of (null means currentCategory)
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$params`
-|
+|The parameters for the repository
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$page`
-|
+|The desired page, always >0
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getnavigationtree]
 ----
 
-public getNavigationTree($type = null, $lang = null, $maxLevel = 2, $customerClassId):array
+public getNavigationTree($type = null, $lang = null, $maxLevel = 2, $customerClassId):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -379,47 +489,58 @@ Return the sitemap tree as an array
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$type`
 |Only return categories of given types
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |The language to get sitemap tree for
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$maxLevel`
 |The deepest category level to load
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$customerClassId`
 |The customer class id to get tree
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getpartialtree]
 ----
 
-public getPartialTree():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getNavigationList($type = &quot;all&quot;, $lang = null):array
+public getPartialTree($categoryId, $type = \IO\Constants\CategoryType::ALL):link:http://php.net/array[array^]
 
 ----
 
 
+
+
+
+Builds a partial tree of starting from the given category id
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$categoryId`
+|The category id
+
+|link:http://php.net/string[`string`^]
+a|`$type`
+|The type of category, see /IO/Constants/CategoryType
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getnavigationlist]
+----
+
+public getNavigationList($type = [], $lang = null):link:http://php.net/array[array^]
+
+----
 
 
 
@@ -430,20 +551,21 @@ Return the sitemap list as an array
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[`string`^] \| link:http://php.net/array[`array`^]
 a|`$type`
-|Only return categories of given type
+|Only return categories of given type, see /IO/Constants/CategoryType
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
-|The language to get sitemap list for
+|The language to get sitemap list for (ISO-639-1)
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gethierarchy]
 ----
 
-public getHierarchy($catID, $bottomUp = false, $filterCategories = false):array
+public getHierarchy($catID, $bottomUp = false, $filterCategories = false):link:http://php.net/array[array^]
 
 ----
 
@@ -451,46 +573,30 @@ public getHierarchy($catID, $bottomUp = false, $filterCategories = false):array
 
 
 
-
-
-Returns a list of all parent categories including given category
+Returns a list of all parent categories including given category.
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$catID`
-|The category Id to get the parents for or 0 to use current category
+|The category id to get the parents for or 0 to use current category
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$bottomUp`
 |Set true to order result from bottom (deepest category) to top (= level 1)
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$filterCategories`
 |Filter categories
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isvisibleforwebstore]
 ----
 
-public isVisibleForWebstore():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public setCurrentItem($item):void
+public isVisibleForWebstore($category, $webstoreId = null, $lang = null):link:http://php.net/bool[bool^]
 
 ----
 
@@ -498,42 +604,106 @@ public setCurrentItem($item):void
 
 
 
-
-
-
+Check if a category is visible for a webstore.
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+a|`$category`
+|Category model to check
+
+|link:http://php.net/int[`int`^]
+a|`$webstoreId`
+|WebstoreId for filtering result (not plentyId)
+
+|link:http://php.net/string[`string`^]
+a|`$lang`
+|Language for filtering result (ISO-639-1)
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#setcurrentitem]
+----
+
+public setCurrentItem($item)
+
+----
+
+
+
+
+
+Setter for current item array.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[`array`^]
 a|`$item`
-|
+|An item.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcurrentitem]
 ----
 
-public getCurrentItem():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public isHidden($id):void
+public getCurrentItem():link:http://php.net/array[array^]
 
 ----
 
 
+
+
+
+Getter for current item array.
+
+[source%nowrap, php, subs=+macros]
+[#ishidden]
+----
+
+public isHidden($categoryId):link:http://php.net/bool[bool^]
+
+----
+
+
+
+
+
+Check wether a category is hidden or not
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$categoryId`
+|The id of the category to check
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
+----
+
+public fromMemoryCache()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -544,46 +714,7 @@ public isHidden($id):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
-a|`$id`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public fromMemoryCache():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public resetMemoryCache($key = null):void
-
-----
-
-
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

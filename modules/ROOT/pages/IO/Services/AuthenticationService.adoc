@@ -5,7 +5,8 @@
 [[io__authenticationservice]]
 = AuthenticationService
 
-
+This service class contains various methods for authenticating customers and related tasks. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,31 +22,27 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Authentication.adoc#authentication_contracts_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
-    |contactAuthRepository
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-    |sessionStorageRepository
-    |
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-    |customerService
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|xref:stable7@interface::Authentication.adoc#authentication_contracts_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
+a|`$contactAuthRepository`
+|The repository used for authenticating contacts|xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+|The repository used for storing data in the session|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
+|This service is used for various tasks relating to customers|link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($contactAuthRepository, $sessionStorageRepository):void
+public __construct($contactAuthRepository, $sessionStorageRepository, $customerService)
 
 ----
-
-
 
 
 
@@ -56,24 +53,27 @@ AuthenticationService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Authentication.adoc#authentication_contracts_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
+|xref:stable7@interface::Authentication.adoc#authentication_contracts_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
 a|`$contactAuthRepository`
-|
+|The repository used for authenticating contacts
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
 a|`$sessionStorageRepository`
-|
+|The repository used for storing data in the session
+
+|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
+|This service is used for various tasks relating to customers
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#login]
 ----
 
-public login($email, $password):int
+public login($email, $password):link:http://php.net/int[int^]
 
 ----
-
-
 
 
 
@@ -84,24 +84,23 @@ Perform the login with email and password
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$email`
-|
+|Contains the customers email address
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$password`
-|
+|Contains the password used for this login attempt
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#loginwithcontactid]
 ----
 
-public loginWithContactId($contactId, $password):void
+public loginWithContactId($contactId, $password)
 
 ----
-
-
 
 
 
@@ -112,24 +111,23 @@ Perform the login with customer ID and password
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$contactId`
-|
+|Contains a id linked to a specific customer
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$password`
-|
+|Contains the password used for this login attempt
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#logout]
 ----
 
-public logout():void
+public logout()
 
 ----
-
-
 
 
 
@@ -137,10 +135,11 @@ public logout():void
 
 Log out the customer
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#checkpassword]
 ----
 
-public checkPassword($password):bool
+public checkPassword($password):link:http://php.net/bool[bool^]
 
 ----
 
@@ -148,23 +147,22 @@ public checkPassword($password):bool
 
 
 
-
-
-
+Check if a password is valid. The customer is logged in as a side effect, if password is valid
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$password`
-|
+|Contains the password
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isloggedin]
 ----
 
-public isLoggedIn():bool
+public isLoggedIn():link:http://php.net/bool[bool^]
 
 ----
 
@@ -172,7 +170,5 @@ public isLoggedIn():bool
 
 
 
-
-
-
+Check if the current user is logged in.
 

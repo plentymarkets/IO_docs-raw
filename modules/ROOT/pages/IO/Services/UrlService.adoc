@@ -5,7 +5,8 @@
 [[io__urlservice]]
 = UrlService
 
-
+This service class contains functions related to url generation etc. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,25 +22,23 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
-    |webstoreConfigurationRepository
-    |
-| 
-    |cache
-    |
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+a|`$webstoreConfigurationRepository`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($webstoreConfigurationRepository):void
+public __construct($webstoreConfigurationRepository)
 
 ----
-
-
 
 
 
@@ -50,76 +49,79 @@ UrlService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_webstoreconfigurationrepositorycontract[`WebstoreConfigurationRepositoryContract`]
 a|`$webstoreConfigurationRepository`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcategoryurl]
 ----
 
-public getCategoryURL($categoryId, $lang = null):Plenty\Modules\Webshop\Helpers\UrlQuery
+public getCategoryURL($categoryId, $lang = null, $webstoreId = null):xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery[UrlQuery]
 
 ----
 
 
 
 
-====== *Return type:* xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery[`UrlQuery`]
 
-
-Get canonical url for a category
+Get canonical URL for a category
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$categoryId`
-|
+|A category id to get the URL for
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
-|
+|Optional: A language for the URL (ISO-639-1) (Default: The current language)
+
+|link:http://php.net/int[`int`^]
+a|`$webstoreId`
+|Optional: A webstore id (Default: The current webstore id)
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getvariationurl]
 ----
 
-public getVariationURL($itemId, $variationId, $lang = null):Plenty\Modules\Webshop\Helpers\UrlQuery
+public getVariationURL($itemId, $variationId, $lang = null):xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery[UrlQuery]
 
 ----
 
 
 
 
-====== *Return type:* xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery[`UrlQuery`]
 
-
-Get canonical url for a variation
+Get canonical URL for a variation
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
-|
+|An item id to get URL for
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
-|
+|An variation id to get URL for
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
-|
+|Optional: A language to get URL for (ISO-639-1) (Default: The current language)
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcanonicalurl]
 ----
 
-public getCanonicalURL($lang = null, $ignoreCanonical = false):string
+public getCanonicalURL($lang = null, $ignoreCanonical = false):link:http://php.net/string[string^]
 
 ----
 
@@ -127,46 +129,42 @@ public getCanonicalURL($lang = null, $ignoreCanonical = false):string
 
 
 
-
-
-Get canonical url for current page
+Get canonical URL for current page
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
-|
+|Optional: Language for the URL
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$ignoreCanonical`
-|
+|Optional: If true, get canonical from category details (Default: false)
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcanonicalquerystring]
 ----
 
-public getCanonicalQueryString():string
-
-----
-
-
-
-
-
-
-
-Get query string from uri, return an empty string if its an canonical link from category details
-
-[source%nowrap, php]
-----
-
-public isCanonical($lang = null):bool
+public getCanonicalQueryString():link:http://php.net/string[string^]
 
 ----
 
 
+
+
+
+Get query string from URI, return an empty string if its an canonical link from category details
+
+[source%nowrap, php, subs=+macros]
+[#iscanonical]
+----
+
+public isCanonical($lang = null):link:http://php.net/bool[bool^]
+
+----
 
 
 
@@ -177,16 +175,17 @@ Check if the current URL is canonical
 .*Parameters*
 |===
 |Type |Name |Description
-| null
+|link:http://php.net/string[`string`^]
 a|`$lang`
-|
+|Optional: A language for the check (Default: The current language)
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlanguageurls]
 ----
 
-public getLanguageURLs():array
+public getLanguageURLs():link:http://php.net/array[array^]
 
 ----
 
@@ -194,14 +193,13 @@ public getLanguageURLs():array
 
 
 
+Get equivalent canonical URLs for each active language
 
-
-Get equivalent canonical urls for each active language
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gethomepageurl]
 ----
 
-public getHomepageURL():string
+public getHomepageURL():link:http://php.net/string[string^]
 
 ----
 
@@ -217,33 +215,75 @@ Use IO\Extensions\Constants\ShopUrls::$home instead.
 
 
 
+Get language specific homepage URL
 
-
-Get language specific homepage url
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#redirectto]
 ----
 
-public fromMemoryCache():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public resetMemoryCache($key = null):void
+public redirectTo($redirectURL):link:http://php.net/mixed[mixed^]
 
 ----
 
 
+
+
+
+Redirects to the given URL
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$redirectURL`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#isrouteenabled]
+----
+
+public isRouteEnabled($route):link:http://php.net/bool[bool^]
+
+----
+
+
+
+
+
+Check if route is enabled or category is linked to route.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$route`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
+----
+
+public fromMemoryCache()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -254,7 +294,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

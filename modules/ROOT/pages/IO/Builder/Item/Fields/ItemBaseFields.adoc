@@ -21,285 +21,285 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |ABO
-    |'abo'
-    |
-|link:http://php.net/string[string^]
-    |ADD_CMS_PAGE
-    |'addCmsPage'
-    |
-|link:http://php.net/string[string^]
-    |AMAZON_FBA
-    |'amazonFba'
-    |
-|link:http://php.net/string[string^]
-    |AMAZON_PRODUCT_TYPE
-    |'amazonProductType'
-    |
-|link:http://php.net/string[string^]
-    |API_CONDITION
-    |'apiCondition'
-    |
-|link:http://php.net/string[string^]
-    |STORE_SPECIAL
-    |'storeSpecial'
-    |
-|link:http://php.net/string[string^]
-    |BESTOFFER_AUTO_DECLINE_PRICE
-    |'bestofferAutoDeclinePrice'
-    |
-|link:http://php.net/string[string^]
-    |CONDITION
-    |'condition'
-    |
-|link:http://php.net/string[string^]
-    |CROSS_SELLING_CHARACTER
-    |'crossSellingCharacter'
-    |
-|link:http://php.net/string[string^]
-    |CUSTOMS_TARIFF_NUMBER
-    |'customsTariffNumber'
-    |
-|link:http://php.net/string[string^]
-    |DEFAULT_SHIPPING_COST
-    |'defaultShippingCost'
-    |
-|link:http://php.net/string[string^]
-    |DIRECT_CROSS_ARTICLE
-    |'directCrossArticle'
-    |
-|link:http://php.net/string[string^]
-    |EBAY_CATEGORY
-    |'ebayCategory'
-    |
-|link:http://php.net/string[string^]
-    |EBAY_CATEGORY_2
-    |'ebayCategory2'
-    |
-|link:http://php.net/string[string^]
-    |EBAY_PRESET
-    |'ebayPreset'
-    |
-|link:http://php.net/string[string^]
-    |EBAY_STORE_CATEGORY
-    |'ebayStoreCategory'
-    |
-|link:http://php.net/string[string^]
-    |EBAY_STORE_CATEGORY_2
-    |'ebayStoreCategory2'
-    |
-|link:http://php.net/string[string^]
-    |EPID
-    |'epid'
-    |
-|link:http://php.net/string[string^]
-    |FEDAS
-    |'fedas'
-    |
-|link:http://php.net/string[string^]
-    |MARKING_ONE
-    |'markingOne'
-    |
-|link:http://php.net/string[string^]
-    |MARKING_TWO
-    |'markingTwo'
-    |
-|link:http://php.net/string[string^]
-    |FLASH_FILE
-    |'flashFile'
-    |
-|link:http://php.net/string[string^]
-    |FLASH_HEIGHT
-    |'flashHeight'
-    |
-|link:http://php.net/string[string^]
-    |FLASH_WIDTH
-    |'flashWidth'
-    |
-|link:http://php.net/string[string^]
-    |FREE_1
-    |'free1'
-    |
-|link:http://php.net/string[string^]
-    |FREE_2
-    |'free2'
-    |
-|link:http://php.net/string[string^]
-    |FREE_3
-    |'free3'
-    |
-|link:http://php.net/string[string^]
-    |FREE_4
-    |'free4'
-    |
-|link:http://php.net/string[string^]
-    |FREE_5
-    |'free5'
-    |
-|link:http://php.net/string[string^]
-    |FREE_6
-    |'free6'
-    |
-|link:http://php.net/string[string^]
-    |FREE_7
-    |'free7'
-    |
-|link:http://php.net/string[string^]
-    |FREE_8
-    |'free8'
-    |
-|link:http://php.net/string[string^]
-    |FREE_9
-    |'free9'
-    |
-|link:http://php.net/string[string^]
-    |FREE_10
-    |'free10'
-    |
-|link:http://php.net/string[string^]
-    |FREE_11
-    |'free11'
-    |
-|link:http://php.net/string[string^]
-    |FREE_12
-    |'free12'
-    |
-|link:http://php.net/string[string^]
-    |FREE_13
-    |'free13'
-    |
-|link:http://php.net/string[string^]
-    |FREE_14
-    |'free14'
-    |
-|link:http://php.net/string[string^]
-    |FREE_15
-    |'free15'
-    |
-|link:http://php.net/string[string^]
-    |FREE_16
-    |'free16'
-    |
-|link:http://php.net/string[string^]
-    |FREE_17
-    |'free17'
-    |
-|link:http://php.net/string[string^]
-    |FREE_18
-    |'free18'
-    |
-|link:http://php.net/string[string^]
-    |FREE_19
-    |'free19'
-    |
-|link:http://php.net/string[string^]
-    |FREE_20
-    |'free20'
-    |
-|link:http://php.net/string[string^]
-    |AGE_RESTRICTION
-    |'ageRestriction'
-    |
-|link:http://php.net/string[string^]
-    |HAS_ATTRIBUTE
-    |'hasAttribute'
-    |
-|link:http://php.net/string[string^]
-    |ID
-    |'id'
-    |
-|link:http://php.net/string[string^]
-    |INACTIVE
-    |'inactive'
-    |
-|link:http://php.net/string[string^]
-    |CREATE_DATE
-    |'createDate'
-    |
-|link:http://php.net/string[string^]
-    |IS_PACKET
-    |'isPacket'
-    |
-|link:http://php.net/string[string^]
-    |MARKET_STOCK_BUFFER
-    |'marketStockBuffer'
-    |
-|link:http://php.net/string[string^]
-    |NO_COUPON
-    |'noCoupon'
-    |
-|link:http://php.net/string[string^]
-    |PRODUCING_COUNTRY_ID
-    |'producingCountryId'
-    |
-|link:http://php.net/string[string^]
-    |POSITION
-    |'position'
-    |
-|link:http://php.net/string[string^]
-    |PRICE_ONLY_FOR_ORDERBY
-    |'priceOnly4orderby'
-    |
-|link:http://php.net/string[string^]
-    |PRODUCER
-    |'producer'
-    |
-|link:http://php.net/string[string^]
-    |PRODUCER_ID
-    |'producerId'
-    |
-|link:http://php.net/string[string^]
-    |RATING
-    |'rating'
-    |
-|link:http://php.net/string[string^]
-    |RATING_COUNT
-    |'ratingCount'
-    |
-|link:http://php.net/string[string^]
-    |REVENUE_ACCOUNT
-    |'revenueAccount'
-    |
-|link:http://php.net/string[string^]
-    |SCO_ACTIVE
-    |'scoActive'
-    |
-|link:http://php.net/string[string^]
-    |SCO_MIN_PRICE
-    |'scoMinPrice'
-    |
-|link:http://php.net/string[string^]
-    |SCO_MIN_STOCK_NET
-    |'scoMinStockNet'
-    |
-|link:http://php.net/string[string^]
-    |SERIAL_NUMBER
-    |'serialNumber'
-    |
-|link:http://php.net/string[string^]
-    |SHIPPING_WITH_AMAZON_FBA
-    |'shippingWithAmazonFba'
-    |
-|link:http://php.net/string[string^]
-    |SITEMAP_PUBLISHED
-    |'sitemapPublished'
-    |
-|link:http://php.net/string[string^]
-    |STORING_POSITION
-    |'storingPosition'
-    |
-|link:http://php.net/string[string^]
-    |LAST_UPDATE_TIMESTAMP
-    |'lastUpdateTimestamp'
-    |
-|link:http://php.net/string[string^]
-    |TYPE
-    |'type'
-    |
-|link:http://php.net/string[string^]
-    |VOTES
-    |'votes'
-    |
+a|`ABO`
+|'abo'
+|
+|link:http://php.net/string[string^]
+a|`ADD_CMS_PAGE`
+|'addCmsPage'
+|
+|link:http://php.net/string[string^]
+a|`AMAZON_FBA`
+|'amazonFba'
+|
+|link:http://php.net/string[string^]
+a|`AMAZON_PRODUCT_TYPE`
+|'amazonProductType'
+|
+|link:http://php.net/string[string^]
+a|`API_CONDITION`
+|'apiCondition'
+|
+|link:http://php.net/string[string^]
+a|`STORE_SPECIAL`
+|'storeSpecial'
+|
+|link:http://php.net/string[string^]
+a|`BESTOFFER_AUTO_DECLINE_PRICE`
+|'bestofferAutoDeclinePrice'
+|
+|link:http://php.net/string[string^]
+a|`CONDITION`
+|'condition'
+|
+|link:http://php.net/string[string^]
+a|`CROSS_SELLING_CHARACTER`
+|'crossSellingCharacter'
+|
+|link:http://php.net/string[string^]
+a|`CUSTOMS_TARIFF_NUMBER`
+|'customsTariffNumber'
+|
+|link:http://php.net/string[string^]
+a|`DEFAULT_SHIPPING_COST`
+|'defaultShippingCost'
+|
+|link:http://php.net/string[string^]
+a|`DIRECT_CROSS_ARTICLE`
+|'directCrossArticle'
+|
+|link:http://php.net/string[string^]
+a|`EBAY_CATEGORY`
+|'ebayCategory'
+|
+|link:http://php.net/string[string^]
+a|`EBAY_CATEGORY_2`
+|'ebayCategory2'
+|
+|link:http://php.net/string[string^]
+a|`EBAY_PRESET`
+|'ebayPreset'
+|
+|link:http://php.net/string[string^]
+a|`EBAY_STORE_CATEGORY`
+|'ebayStoreCategory'
+|
+|link:http://php.net/string[string^]
+a|`EBAY_STORE_CATEGORY_2`
+|'ebayStoreCategory2'
+|
+|link:http://php.net/string[string^]
+a|`EPID`
+|'epid'
+|
+|link:http://php.net/string[string^]
+a|`FEDAS`
+|'fedas'
+|
+|link:http://php.net/string[string^]
+a|`MARKING_ONE`
+|'markingOne'
+|
+|link:http://php.net/string[string^]
+a|`MARKING_TWO`
+|'markingTwo'
+|
+|link:http://php.net/string[string^]
+a|`FLASH_FILE`
+|'flashFile'
+|
+|link:http://php.net/string[string^]
+a|`FLASH_HEIGHT`
+|'flashHeight'
+|
+|link:http://php.net/string[string^]
+a|`FLASH_WIDTH`
+|'flashWidth'
+|
+|link:http://php.net/string[string^]
+a|`FREE_1`
+|'free1'
+|
+|link:http://php.net/string[string^]
+a|`FREE_2`
+|'free2'
+|
+|link:http://php.net/string[string^]
+a|`FREE_3`
+|'free3'
+|
+|link:http://php.net/string[string^]
+a|`FREE_4`
+|'free4'
+|
+|link:http://php.net/string[string^]
+a|`FREE_5`
+|'free5'
+|
+|link:http://php.net/string[string^]
+a|`FREE_6`
+|'free6'
+|
+|link:http://php.net/string[string^]
+a|`FREE_7`
+|'free7'
+|
+|link:http://php.net/string[string^]
+a|`FREE_8`
+|'free8'
+|
+|link:http://php.net/string[string^]
+a|`FREE_9`
+|'free9'
+|
+|link:http://php.net/string[string^]
+a|`FREE_10`
+|'free10'
+|
+|link:http://php.net/string[string^]
+a|`FREE_11`
+|'free11'
+|
+|link:http://php.net/string[string^]
+a|`FREE_12`
+|'free12'
+|
+|link:http://php.net/string[string^]
+a|`FREE_13`
+|'free13'
+|
+|link:http://php.net/string[string^]
+a|`FREE_14`
+|'free14'
+|
+|link:http://php.net/string[string^]
+a|`FREE_15`
+|'free15'
+|
+|link:http://php.net/string[string^]
+a|`FREE_16`
+|'free16'
+|
+|link:http://php.net/string[string^]
+a|`FREE_17`
+|'free17'
+|
+|link:http://php.net/string[string^]
+a|`FREE_18`
+|'free18'
+|
+|link:http://php.net/string[string^]
+a|`FREE_19`
+|'free19'
+|
+|link:http://php.net/string[string^]
+a|`FREE_20`
+|'free20'
+|
+|link:http://php.net/string[string^]
+a|`AGE_RESTRICTION`
+|'ageRestriction'
+|
+|link:http://php.net/string[string^]
+a|`HAS_ATTRIBUTE`
+|'hasAttribute'
+|
+|link:http://php.net/string[string^]
+a|`ID`
+|'id'
+|
+|link:http://php.net/string[string^]
+a|`INACTIVE`
+|'inactive'
+|
+|link:http://php.net/string[string^]
+a|`CREATE_DATE`
+|'createDate'
+|
+|link:http://php.net/string[string^]
+a|`IS_PACKET`
+|'isPacket'
+|
+|link:http://php.net/string[string^]
+a|`MARKET_STOCK_BUFFER`
+|'marketStockBuffer'
+|
+|link:http://php.net/string[string^]
+a|`NO_COUPON`
+|'noCoupon'
+|
+|link:http://php.net/string[string^]
+a|`PRODUCING_COUNTRY_ID`
+|'producingCountryId'
+|
+|link:http://php.net/string[string^]
+a|`POSITION`
+|'position'
+|
+|link:http://php.net/string[string^]
+a|`PRICE_ONLY_FOR_ORDERBY`
+|'priceOnly4orderby'
+|
+|link:http://php.net/string[string^]
+a|`PRODUCER`
+|'producer'
+|
+|link:http://php.net/string[string^]
+a|`PRODUCER_ID`
+|'producerId'
+|
+|link:http://php.net/string[string^]
+a|`RATING`
+|'rating'
+|
+|link:http://php.net/string[string^]
+a|`RATING_COUNT`
+|'ratingCount'
+|
+|link:http://php.net/string[string^]
+a|`REVENUE_ACCOUNT`
+|'revenueAccount'
+|
+|link:http://php.net/string[string^]
+a|`SCO_ACTIVE`
+|'scoActive'
+|
+|link:http://php.net/string[string^]
+a|`SCO_MIN_PRICE`
+|'scoMinPrice'
+|
+|link:http://php.net/string[string^]
+a|`SCO_MIN_STOCK_NET`
+|'scoMinStockNet'
+|
+|link:http://php.net/string[string^]
+a|`SERIAL_NUMBER`
+|'serialNumber'
+|
+|link:http://php.net/string[string^]
+a|`SHIPPING_WITH_AMAZON_FBA`
+|'shippingWithAmazonFba'
+|
+|link:http://php.net/string[string^]
+a|`SITEMAP_PUBLISHED`
+|'sitemapPublished'
+|
+|link:http://php.net/string[string^]
+a|`STORING_POSITION`
+|'storingPosition'
+|
+|link:http://php.net/string[string^]
+a|`LAST_UPDATE_TIMESTAMP`
+|'lastUpdateTimestamp'
+|
+|link:http://php.net/string[string^]
+a|`TYPE`
+|'type'
+|
+|link:http://php.net/string[string^]
+a|`VOTES`
+|'votes'
+|
 |===
 
 

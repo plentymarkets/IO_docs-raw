@@ -21,213 +21,213 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |ACTIVE
-    |'active'
-    |
+a|`ACTIVE`
+|'active'
+|
 |link:http://php.net/string[string^]
-    |ATTRIBUTE_VALUE_SET_ID
-    |'attributeValueSetId'
-    |
+a|`ATTRIBUTE_VALUE_SET_ID`
+|'attributeValueSetId'
+|
 |link:http://php.net/string[string^]
-    |AUTO_STOCK_INVISIBLE
-    |'autoStockInvisible'
-    |
+a|`AUTO_STOCK_INVISIBLE`
+|'autoStockInvisible'
+|
 |link:http://php.net/string[string^]
-    |BUNDLE_TYPE
-    |'bundleType'
-    |
+a|`BUNDLE_TYPE`
+|'bundleType'
+|
 |link:http://php.net/string[string^]
-    |AUTO_STOCK_NO_STOCK_ICON
-    |'autoStockNoStockIcon'
-    |
+a|`AUTO_STOCK_NO_STOCK_ICON`
+|'autoStockNoStockIcon'
+|
 |link:http://php.net/string[string^]
-    |AUTO_STOCK_POSITIVE_STOCK_ICON
-    |'autoStockPositiveStockIcon'
-    |
+a|`AUTO_STOCK_POSITIVE_STOCK_ICON`
+|'autoStockPositiveStockIcon'
+|
 |link:http://php.net/string[string^]
-    |AUTO_STOCK_VISIBLE
-    |'autoStockVisible'
-    |
+a|`AUTO_STOCK_VISIBLE`
+|'autoStockVisible'
+|
 |link:http://php.net/string[string^]
-    |AVAILABILITY
-    |'availability'
-    |
+a|`AVAILABILITY`
+|'availability'
+|
 |link:http://php.net/string[string^]
-    |AVERAGE_ORDER_QUANTITY
-    |'averageOrderQuantity'
-    |
+a|`AVERAGE_ORDER_QUANTITY`
+|'averageOrderQuantity'
+|
 |link:http://php.net/string[string^]
-    |CONTENT
-    |'content'
-    |
+a|`CONTENT`
+|'content'
+|
 |link:http://php.net/string[string^]
-    |UNIT_COMBINATION_ID
-    |'unitCombinationId'
-    |
+a|`UNIT_COMBINATION_ID`
+|'unitCombinationId'
+|
 |link:http://php.net/string[string^]
-    |CREATED_TIMESTAMP
-    |'createdTimestamp'
-    |
+a|`CREATED_TIMESTAMP`
+|'createdTimestamp'
+|
 |link:http://php.net/string[string^]
-    |CUSTOM_NUMBER
-    |'customNumber'
-    |
+a|`CUSTOM_NUMBER`
+|'customNumber'
+|
 |link:http://php.net/string[string^]
-    |ESTIMATED_AVAILABILITY
-    |'estimatedAvailability'
-    |
+a|`ESTIMATED_AVAILABILITY`
+|'estimatedAvailability'
+|
 |link:http://php.net/string[string^]
-    |EXTERNAL_ID
-    |'externalId'
-    |
+a|`EXTERNAL_ID`
+|'externalId'
+|
 |link:http://php.net/string[string^]
-    |EXTRA_SHIPPING_CHARGE_1
-    |'extraShippingCharge1'
-    |
+a|`EXTRA_SHIPPING_CHARGE_1`
+|'extraShippingCharge1'
+|
 |link:http://php.net/string[string^]
-    |EXTRA_SHIPPING_CHARGE_2
-    |'extraShippingCharge2'
-    |
+a|`EXTRA_SHIPPING_CHARGE_2`
+|'extraShippingCharge2'
+|
 |link:http://php.net/string[string^]
-    |HEIGHT_MM
-    |'heightMm'
-    |
+a|`HEIGHT_MM`
+|'heightMm'
+|
 |link:http://php.net/string[string^]
-    |ID
-    |'id'
-    |
+a|`ID`
+|'id'
+|
 |link:http://php.net/string[string^]
-    |ITEM_ID
-    |'itemId'
-    |
+a|`ITEM_ID`
+|'itemId'
+|
 |link:http://php.net/string[string^]
-    |LAST_UPDATE_TIMESTAMP
-    |'lastUpdateTimestamp'
-    |
+a|`LAST_UPDATE_TIMESTAMP`
+|'lastUpdateTimestamp'
+|
 |link:http://php.net/string[string^]
-    |LIMIT_ORDER_BY_STOCK_SELECT
-    |'limitOrderByStockSelect'
-    |
+a|`LIMIT_ORDER_BY_STOCK_SELECT`
+|'limitOrderByStockSelect'
+|
 |link:http://php.net/string[string^]
-    |MAIN_WAREHOUSE
-    |'mainWarehouse'
-    |
+a|`MAIN_WAREHOUSE`
+|'mainWarehouse'
+|
 |link:http://php.net/string[string^]
-    |MODEL
-    |'model'
-    |
+a|`MODEL`
+|'model'
+|
 |link:http://php.net/string[string^]
-    |OPERATING_COSTS_PERCENT
-    |'operatingCostsPercent'
-    |
+a|`OPERATING_COSTS_PERCENT`
+|'operatingCostsPercent'
+|
 |link:http://php.net/string[string^]
-    |PACKING_UNITS
-    |'packingUnits'
-    |
+a|`PACKING_UNITS`
+|'packingUnits'
+|
 |link:http://php.net/string[string^]
-    |PACKING_UNIT_TYPE
-    |'packingUnitType'
-    |
+a|`PACKING_UNIT_TYPE`
+|'packingUnitType'
+|
 |link:http://php.net/string[string^]
-    |PARENT_VARIATION_ID
-    |'parentVariationId'
-    |
+a|`PARENT_VARIATION_ID`
+|'parentVariationId'
+|
 |link:http://php.net/string[string^]
-    |PARENT_ITEM_VARIATION_QUANTITY
-    |'parentItemVariationQuantity'
-    |
+a|`PARENT_ITEM_VARIATION_QUANTITY`
+|'parentItemVariationQuantity'
+|
 |link:http://php.net/string[string^]
-    |PICKING
-    |'picking'
-    |
+a|`PICKING`
+|'picking'
+|
 |link:http://php.net/string[string^]
-    |CUSTOMS_PERCENT
-    |'customsPercent'
-    |
+a|`CUSTOMS_PERCENT`
+|'customsPercent'
+|
 |link:http://php.net/string[string^]
-    |POSITION
-    |'position'
-    |
+a|`POSITION`
+|'position'
+|
 |link:http://php.net/string[string^]
-    |PRICE_CALCULATION_ID
-    |'priceCalculationId'
-    |
+a|`PRICE_CALCULATION_ID`
+|'priceCalculationId'
+|
 |link:http://php.net/string[string^]
-    |PRIMARY_VARIATION
-    |'primaryVariation'
-    |
+a|`PRIMARY_VARIATION`
+|'primaryVariation'
+|
 |link:http://php.net/string[string^]
-    |PRIMARY_VARIATION_ID
-    |'primaryVariationId'
-    |
+a|`PRIMARY_VARIATION_ID`
+|'primaryVariationId'
+|
 |link:http://php.net/string[string^]
-    |PURCHASE_PRICE
-    |'purchasePrice'
-    |
+a|`PURCHASE_PRICE`
+|'purchasePrice'
+|
 |link:http://php.net/string[string^]
-    |STORAGE_COSTS
-    |'storageCosts'
-    |
+a|`STORAGE_COSTS`
+|'storageCosts'
+|
 |link:http://php.net/string[string^]
-    |TRANSPORTATION_COSTS
-    |'transportationCosts'
-    |
+a|`TRANSPORTATION_COSTS`
+|'transportationCosts'
+|
 |link:http://php.net/string[string^]
-    |UNIT_ID
-    |'unitId'
-    |
+a|`UNIT_ID`
+|'unitId'
+|
 |link:http://php.net/string[string^]
-    |UNIT_LOAD_DEVICE
-    |'unitLoadDevice'
-    |
+a|`UNIT_LOAD_DEVICE`
+|'unitLoadDevice'
+|
 |link:http://php.net/string[string^]
-    |UNITS_CONTAINED
-    |'unitsContained'
-    |
+a|`UNITS_CONTAINED`
+|'unitsContained'
+|
 |link:http://php.net/string[string^]
-    |VAT_ID
-    |'vatId'
-    |
+a|`VAT_ID`
+|'vatId'
+|
 |link:http://php.net/string[string^]
-    |VARIATION_NAME
-    |'variationName'
-    |
+a|`VARIATION_NAME`
+|'variationName'
+|
 |link:http://php.net/string[string^]
-    |WEIGHT_G
-    |'weightG'
-    |
+a|`WEIGHT_G`
+|'weightG'
+|
 |link:http://php.net/string[string^]
-    |WEIGHT_NET_G
-    |'weightNetG'
-    |
+a|`WEIGHT_NET_G`
+|'weightNetG'
+|
 |link:http://php.net/string[string^]
-    |MAXIMUM_ORDER_QUANTITY
-    |'maximumOrderQuantity'
-    |
+a|`MAXIMUM_ORDER_QUANTITY`
+|'maximumOrderQuantity'
+|
 |link:http://php.net/string[string^]
-    |MINIMUM_ORDER_QUANTITY
-    |'minimumOrderQuantity'
-    |
+a|`MINIMUM_ORDER_QUANTITY`
+|'minimumOrderQuantity'
+|
 |link:http://php.net/string[string^]
-    |INTERVAL_ORDER_QUANTITY
-    |'intervalOrderQuantity'
-    |
+a|`INTERVAL_ORDER_QUANTITY`
+|'intervalOrderQuantity'
+|
 |link:http://php.net/string[string^]
-    |AVAILABLE_UNTIL
-    |'availableUnit'
-    |
+a|`AVAILABLE_UNTIL`
+|'availableUnit'
+|
 |link:http://php.net/string[string^]
-    |RELEASE_DATE
-    |'releaseDate'
-    |
+a|`RELEASE_DATE`
+|'releaseDate'
+|
 |link:http://php.net/string[string^]
-    |WIDTH_MM
-    |'widthMm'
-    |
+a|`WIDTH_MM`
+|'widthMm'
+|
 |link:http://php.net/string[string^]
-    |LENGTH_MM
-    |'lengthMm'
-    |
+a|`LENGTH_MM`
+|'lengthMm'
+|
 |===
 
 

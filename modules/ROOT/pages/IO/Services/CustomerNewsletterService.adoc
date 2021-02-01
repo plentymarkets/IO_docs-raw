@@ -5,7 +5,8 @@
 [[io__customernewsletterservice]]
 = CustomerNewsletterService
 
-
+This service class contains functions used for handling newsletter related tasks. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,22 +22,114 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Account.adoc#account_contracts_newsletterrepositorycontract[`NewsletterRepositoryContract`]
-    |newsletterRepo
-    |
+|xref:stable7@interface::Account.adoc#account_contracts_newsletterrepositorycontract[`NewsletterRepositoryContract`]
+a|`$newsletterRepo`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($newsletterRepo):void
+public __construct($newsletterRepo)
 
 ----
 
 
+
+
+
+CustomerNewsletterService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|xref:stable7@interface::Account.adoc#account_contracts_newsletterrepositorycontract[`NewsletterRepositoryContract`]
+a|`$newsletterRepo`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#savenewsletterdata]
+----
+
+public saveNewsletterData($email, $emailFolder, $firstName = &quot;&quot;, $lastName = &quot;&quot;)
+
+----
+
+
+
+
+
+Subscribes a single user to a newsletter
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$email`
+|The email address of the customer
+
+|link:http://php.net/int[`int`^]
+a|`$emailFolder`
+|Id for the type of newsletter
+
+|link:http://php.net/string[`string`^]
+a|`$firstName`
+|Optional: First name of the customer
+
+|link:http://php.net/string[`string`^]
+a|`$lastName`
+|Optional: Last name of the customer
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#savemultiplenewsletterdata]
+----
+
+public saveMultipleNewsletterData($email, $emailFolders, $firstName = &quot;&quot;, $lastName = &quot;&quot;)
+
+----
+
+
+
+
+
+Subscribes a single user to multiple newsletters
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$email`
+|The email address of the customer
+
+|link:http://php.net/array[`array`^]
+a|`$emailFolders`
+|Ids for the types of newsletters
+
+|link:http://php.net/string[`string`^]
+a|`$firstName`
+|Optional: First name of the customer
+
+|link:http://php.net/string[`string`^]
+a|`$lastName`
+|Optional: Last name of the customer
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#updateoptinstatus]
+----
+
+public updateOptInStatus($authString, $newsletterEmailId):link:http://php.net/bool[bool^]
+
+----
 
 
 
@@ -47,65 +140,23 @@ public __construct($newsletterRepo):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
-a|`$newsletterRepo`
-|
+|link:http://php.net/string[`string`^]
+a|`$authString`
+|Authorization string used for security purposes
+
+|link:http://php.net/int[`int`^]
+a|`$newsletterEmailId`
+|Unique id of the newsletter registration
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#deletenewsletterdatabyemail]
 ----
 
-public saveNewsletterData():void
+public deleteNewsletterDataByEmail($email, $emailFolder):link:http://php.net/bool[bool^]
 
 ----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public saveMultipleNewsletterData():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public updateOptInStatus():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public deleteNewsletterDataByEmail($email, $emailFolder):bool
-
-----
-
-
 
 
 
@@ -117,13 +168,13 @@ Not passing the optional parameter $emailFolder deletes the recipient from all e
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$email`
-|
+|Email of the user
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$emailFolder`
-|
+|Id of the type of newsletter
 |===
 
 

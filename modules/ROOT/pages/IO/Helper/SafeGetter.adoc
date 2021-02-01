@@ -20,14 +20,13 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#get]
 ----
 
-public static get($object, $path):void
+public static get($object, $path):link:http://php.net/mixed[mixed^]
 
 ----
-
-
 
 
 
@@ -38,11 +37,11 @@ Get a nested property of an object/array.
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$object`
 |The object / array to get the property from
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$path`
 |The path of the property (e.g. "path.to.property").
 To query list entries you can pass paths like "list.{id, 5}.name".

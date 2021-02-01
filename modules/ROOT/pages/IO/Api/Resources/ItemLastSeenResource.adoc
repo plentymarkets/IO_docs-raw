@@ -22,14 +22,13 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response):void
+public __construct($request, $response)
 
 ----
-
-
 
 
 
@@ -50,29 +49,27 @@ a|`$response`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#index]
 ----
 
-public index():Plenty\Plugin\Http\Response
+public index(): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Return last seen items
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#update]
 ----
 
-public update($variationId):void
+public update($variationId)
 
 ----
-
-
 
 
 
@@ -83,7 +80,7 @@ public update($variationId):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$variationId`
 |
 |===

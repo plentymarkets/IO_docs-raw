@@ -13,6 +13,7 @@
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_resultfieldtemplate[`ResultFieldTemplate`]
 ====
 
 
@@ -28,29 +29,29 @@ since 5.0.0 will be deleted in 6.0.0
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |TEMPLATE_LIST_ITEM
-    |'IO.ResultFields.ListItem'
-    |
+a|`TEMPLATE_LIST_ITEM`
+|'IO.ResultFields.ListItem'
+|
 |link:http://php.net/string[string^]
-    |TEMPLATE_SINGLE_ITEM
-    |'IO.ResultFields.SingleItem'
-    |
+a|`TEMPLATE_SINGLE_ITEM`
+|'IO.ResultFields.SingleItem'
+|
 |link:http://php.net/string[string^]
-    |TEMPLATE_BASKET_ITEM
-    |'IO.ResultFields.BasketItem'
-    |
+a|`TEMPLATE_BASKET_ITEM`
+|'IO.ResultFields.BasketItem'
+|
 |link:http://php.net/string[string^]
-    |TEMPLATE_AUTOCOMPLETE_ITEM_LIST
-    |'IO.ResultFields.AutoCompleteListItem'
-    |
+a|`TEMPLATE_AUTOCOMPLETE_ITEM_LIST`
+|'IO.ResultFields.AutoCompleteListItem'
+|
 |link:http://php.net/string[string^]
-    |TEMPLATE_CATEGORY_TREE
-    |'IO.ResultFields.CategoryTree'
-    |
+a|`TEMPLATE_CATEGORY_TREE`
+|'IO.ResultFields.CategoryTree'
+|
 |link:http://php.net/string[string^]
-    |TEMPLATE_VARIATION_ATTRIBUTE_MAP
-    |'IO.ResultFields.VariationAttributeMap'
-    |
+a|`TEMPLATE_VARIATION_ATTRIBUTE_MAP`
+|'IO.ResultFields.VariationAttributeMap'
+|
 |===
 
 
@@ -58,21 +59,21 @@ since 5.0.0 will be deleted in 6.0.0
 |===
 |Type |Name |Description
 
-| 
-    |templates
-    |
-| 
-    |requiredFields
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$templates`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$requiredFields`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#get]
 ----
 
-public static get($template):string
+public static get($template):link:http://php.net/string[string^]
 
 ----
 
@@ -83,8 +84,6 @@ public static get($template):string
 since 5.0.0 will be deleted in 6.0.0
 
 ====
-
-
 
 
 
@@ -94,16 +93,17 @@ Get the path to result fields file from template/ theme
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$template`
 |Event to be emitted to templates/ themes
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#load]
 ----
 
-public setTemplate($event, $template):void
+public static load($template):link:http://php.net/array[array^]
 
 ----
 
@@ -116,6 +116,34 @@ since 5.0.0 will be deleted in 6.0.0
 ====
 
 
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$template`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#settemplate]
+----
+
+public setTemplate($event, $template)
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
 
 
 
@@ -125,20 +153,21 @@ Set the path of a template to read result fields from.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$event`
 |The event to set the template for.
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$template`
 |Path to the template to read result fields from.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#settemplates]
 ----
 
-public requireFields($event, $field = null):void
+public setTemplates($templateMap)
 
 ----
 
@@ -153,6 +182,34 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
+Set multiple templates to read result fields from.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|xref:IO/Services/ItemSearch/Helper.adoc#[`Helper`]
+a|`$templateMap`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#requirefields]
+----
+
+public requireFields($event, $field = [])
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+====
+
+
 
 
 Add required fields to variation search requests.
@@ -160,12 +217,12 @@ Add required fields to variation search requests.
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[`string`^] \| link:http://php.net/array[`array`^]
 a|`$event`
 |A single template event to set required fields for
 or a map between template events and list of required fields
 
-| 
+|link:http://php.net/string[`string`^] \| link:http://php.net/array[`array`^]
 a|`$field`
 |If first parameter describes a single template event
 this parameter may contain a single result field or a list of field to require.

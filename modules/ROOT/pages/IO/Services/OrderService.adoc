@@ -5,7 +5,8 @@
 [[io__orderservice]]
 = OrderService
 
-
+This service class contains function related to orders. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,13 +22,13 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/array[array^]
-    |WRAPPED_ORDERITEM_TYPES
-    |[1,2,3,9,13]
-    |
+a|`WRAPPED_ORDERITEM_TYPES`
+|[1,2,3,9,13]
+|
 |link:http://php.net/array[array^]
-    |VISIBLE_ORDER_TYPES
-    |[1,5]
-    |
+a|`VISIBLE_ORDER_TYPES`
+|[1,5]
+|
 |===
 
 
@@ -35,52 +36,41 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
-    |orderRepository
-    |
-|xref:IO/Services/BasketService.adoc#[`BasketService`]
-    |basketService
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-    |sessionStorageRepository
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
-    |frontendPaymentMethodRepository
-    |
-| xref:stable7@interface::Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
-    |addressRepository
-    |
-|xref:IO/Services/UrlService.adoc#[`UrlService`]
-    |urlService
-    |
-|xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
-    |checkoutService
-    |
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-    |customerService
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
-    |contactRepository
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_giftcardrepositorycontract[`GiftCardRepositoryContract`]
-    |giftCardRepository
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
+a|`$orderRepository`
+||xref:IO/Services/BasketService.adoc#[`BasketService`]
+a|`$basketService`
+||xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+||xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
+a|`$frontendPaymentMethodRepository`
+||xref:stable7@interface::Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
+a|`$addressRepository`
+||xref:IO/Services/UrlService.adoc#[`UrlService`]
+a|`$urlService`
+||xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
+a|`$checkoutService`
+||xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
+||xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+||xref:stable7@interface::Webshop.adoc#webshop_contracts_giftcardrepositorycontract[`GiftCardRepositoryContract`]
+a|`$giftCardRepository`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($orderRepository, $basketService, $sessionStorageRepository, $frontendPaymentMethodRepository, $addressRepository, $urlService, $checkoutService, $customerService, $contactRepository, $giftCardRepository):void
+public __construct($orderRepository, $basketService, $sessionStorageRepository, $frontendPaymentMethodRepository, $addressRepository, $urlService, $checkoutService, $customerService, $contactRepository, $giftCardRepository)
 
 ----
-
-
 
 
 
@@ -91,7 +81,7 @@ OrderService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
+|xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
 a|`$orderRepository`
 |
 
@@ -99,15 +89,15 @@ a|`$orderRepository`
 a|`$basketService`
 |
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
 a|`$sessionStorageRepository`
 |
 
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
 a|`$frontendPaymentMethodRepository`
 |
 
-| xref:stable7@interface::Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
+|xref:stable7@interface::Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
 a|`$addressRepository`
 |
 
@@ -123,39 +113,64 @@ a|`$checkoutService`
 a|`$customerService`
 |
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
 a|`$contactRepository`
 |
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_giftcardrepositorycontract[`GiftCardRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_giftcardrepositorycontract[`GiftCardRepositoryContract`]
 a|`$giftCardRepository`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#placeorder]
 ----
 
-public placeOrder():IO\Models\LocalizedOrder
+public placeOrder():xref:IO/Models/LocalizedOrder.adoc#[LocalizedOrder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Models/LocalizedOrder.adoc#[`LocalizedOrder`]
 
 
 Place an order
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#subscribetonewsletter]
 ----
 
-public executePayment($orderId, $paymentId):array
+public subscribeToNewsletter($email, $billingAddressId)
 
 ----
 
 
+
+
+
+Subscribe the customer to the newsletter, if stored in the session
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$email`
+|
+
+|link:http://php.net/int[`int`^]
+a|`$billingAddressId`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#executepayment]
+----
+
+public executePayment($orderId, $paymentId):link:http://php.net/array[array^]
+
+----
 
 
 
@@ -166,20 +181,21 @@ Execute the payment for a given order.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$orderId`
 |The order id to execute payment for
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$paymentId`
 |The MoP-ID to execute
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#findorderbyid]
 ----
 
-public findOrderById($orderId, $wrap = true):void
+public findOrderById($orderId, $wrap = true):xref:IO/Models/LocalizedOrder.adoc#[LocalizedOrder] \| xref:stable7@interface::Order.adoc#order_models_order[Order]
 
 ----
 
@@ -187,49 +203,58 @@ public findOrderById($orderId, $wrap = true):void
 
 
 
-
-
-Find an order by ID
+Find an order by id
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$orderId`
-|
+|An order id to find order by
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$wrap`
-|
+|Optional: Wrap order into an /IO/Models/LocalizedOrder (Default: true)
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#findorderbyaccesskey]
 ----
 
-public findOrderByAccessKey():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getOrdersForContact($contactId, $page = 1, $items = 50, $filters = [], $wrapped = true):Plenty\Repositories\Models\PaginatedResult
+public findOrderByAccessKey($orderId, $orderAccessKey):xref:IO/Models/LocalizedOrder.adoc#[LocalizedOrder]
 
 ----
 
 
 
 
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
+
+Find an order by id and authorize it via accesskey
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$orderId`
+|An order id find order by
+
+|link:http://php.net/string[`string`^]
+a|`$orderAccessKey`
+|An order access key to authorize search for order
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getordersforcontact]
+----
+
+public getOrdersForContact($contactId, $page = 1, $items = 50, $filters = [], $wrapped = true): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[PaginatedResult]
+
+----
+
+
+
 
 
 Get a list of orders for a contact
@@ -237,54 +262,65 @@ Get a list of orders for a contact
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$contactId`
-|
+|An contacts id
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$page`
-|
+|Optional: Page number for pagination (Default: 1)
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$items`
-|
+|Optional: How many items per page (Default: 50)
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$filters`
-|
+|Optional: Additional filters for search
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$wrapped`
-|
+|Optional: Wrap orders /IO/Models/LocalizedOrder instances (Default: true)
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getorderscompact]
 ----
 
-public getOrdersCompact():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getLatestOrderForContact($contactId):IO\Models\LocalizedOrder
+public getOrdersCompact($page = 1, $items = 50): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[PaginatedResult]
 
 ----
 
 
 
 
-====== *Return type:*xref:IO/Models/LocalizedOrder.adoc#[`LocalizedOrder`]
+
+Get a list of orders for a contact in a compact and reduced format
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$page`
+|Optional: Page for pagination (Default: 1)
+
+|link:http://php.net/int[`int`^]
+a|`$items`
+|Optional: Number of items per page (Default: 50)
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getlatestorderforcontact]
+----
+
+public getLatestOrderForContact($contactId):xref:IO/Models/LocalizedOrder.adoc#[LocalizedOrder]
+
+----
+
+
+
 
 
 Get the last order created by the current contact
@@ -292,31 +328,17 @@ Get the last order created by the current contact
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$contactId`
-|
+|A contacts id to find orders for
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getorderpropertybyorderid]
 ----
 
-public getOrderPropertyByOrderId():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public isReturnActive():void
+public getOrderPropertyByOrderId($orderId, $typeId):         xref:5.0.0@plugin-illuminate::Illuminate/Database/Eloquent/Collection.adoc#[Collection] \| link:http://php.net/array[array^]
 
 ----
 
@@ -324,60 +346,130 @@ public isReturnActive():void
 
 
 
-
-
-
-
-[source%nowrap, php]
-----
-
-public createOrderReturn():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getReturnableItems($order):array
-
-----
-
-
-
-
-
-
-
-
+Find order properties of a specific type for a specific order
 
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
-a|`$order`
-|
+|link:http://php.net/int[`int`^]
+a|`$orderId`
+|An order id to find order properties for
+
+|link:http://php.net/int[`int`^]
+a|`$typeId`
+|The type of order properties to find
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isreturnactive]
 ----
 
-public getPaymentMethodListForSwitch($currentPaymentMethodId, $orderId = null):IO\Services\Illuminate\Support\Collection
+public isReturnActive():link:http://php.net/bool[bool^]
 
 ----
 
 
 
 
-====== *Return type:*xref:IO/Services/Illuminate/Support/Collection.adoc#[`Collection`]
+
+Check if the shop has activated return orders
+
+[source%nowrap, php, subs=+macros]
+[#createorderreturn]
+----
+
+public createOrderReturn($orderId, $orderAccessKey = &quot;&quot;, $items = [], $returnNote = &quot;&quot;):link:http://php.net/mixed[mixed^]
+
+----
+
+
+
+
+
+Create a return order for a specific order
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$orderId`
+|The order id to create a return order for
+
+|link:http://php.net/string[`string`^]
+a|`$orderAccessKey`
+|Optional: An order access key is needed for guests
+
+|link:http://php.net/array[`array`^]
+a|`$items`
+|Optional: Array of items to return
+
+|link:http://php.net/string[`string`^]
+a|`$returnNote`
+|Optional: A optional reason for returning items
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getreturnorder]
+----
+
+public getReturnOrder($orderId, $orderAccessKey = &quot;&quot;):xref:IO/Models/LocalizedOrder.adoc#[LocalizedOrder]
+
+----
+
+
+
+
+
+Find a return order by order id
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$orderId`
+|An order id to find return order for
+
+|link:http://php.net/string[`string`^]
+a|`$orderAccessKey`
+|Optional: An order access key is needed to authorize guests
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getreturnableitems]
+----
+
+public getReturnableItems($order):link:http://php.net/array[array^]
+
+----
+
+
+
+
+
+Get all items of an order that can be returned
+
+.*Parameters*
+|===
+|Type |Name |Description
+|xref:stable7@interface::Order.adoc#order_models_order[`Order`]
+a|`$order`
+|An order
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getpaymentmethodlistforswitch]
+----
+
+public getPaymentMethodListForSwitch($currentPaymentMethodId, $orderId = null):xref:IO/Services/Illuminate/Support/Collection.adoc#[Collection]
+
+----
+
+
+
 
 
 List all payment methods available for switch in MyAccount
@@ -385,24 +477,77 @@ List all payment methods available for switch in MyAccount
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$currentPaymentMethodId`
-|
+|Optional: The id of the current payment method
 
-| null
+|link:http://php.net/int[`int`^]
 a|`$orderId`
-|
+|Optional: An order id to find valid payment methods to switch to
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#allowpaymentmethodswitchfrom]
 ----
 
-public complete($order):void
+public allowPaymentMethodSwitchFrom($paymentMethodId, $orderId = null):link:http://php.net/bool[bool^]
 
 ----
 
 
+
+
+
+Check if it is possible to switch to another payment method from a specific one
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$paymentMethodId`
+|A payment method id to check switching from
+
+|link:http://php.net/int[`int`^]
+a|`$orderId`
+|Optional: An order id used for additional checks
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#switchpaymentmethodfororder]
+----
+
+public switchPaymentMethodForOrder($orderId, $paymentMethodId):xref:IO/Models/LocalizedOrder.adoc#[LocalizedOrder]
+
+----
+
+
+
+
+
+Switch the payment method of an order to a new payment method
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$orderId`
+|An order id to switch payment method for
+
+|link:http://php.net/int[`int`^]
+a|`$paymentMethodId`
+|A payment method id to switch to
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#complete]
+----
+
+public complete($order)
+
+----
 
 
 
@@ -413,7 +558,7 @@ Do steps after creating the order
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
+|xref:stable7@interface::Order.adoc#order_models_order[`Order`]
 a|`$order`
 |
 |===

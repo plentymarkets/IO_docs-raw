@@ -22,14 +22,13 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response):void
+public __construct($request, $response)
 
 ----
-
-
 
 
 
@@ -50,32 +49,30 @@ a|`$response`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#index]
 ----
 
-public index():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public show($variationId):Plenty\Plugin\Http\Response
+public index()
 
 ----
 
 
 
 
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#show]
+----
+
+public show($variationId): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
+
+----
+
+
+
 
 
 Get variation by id
@@ -83,7 +80,7 @@ Get variation by id
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$variationId`
 |
 |===

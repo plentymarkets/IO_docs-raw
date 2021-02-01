@@ -23,25 +23,23 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |===
 |Type |Name |Description
 
-| 
-    |contactMailService
-    |
-|xref:IO/Services/TemplateConfigService.adoc#[`TemplateConfigService`]
-    |templateConfigService
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$contactMailService`
+||xref:IO/Services/TemplateConfigService.adoc#[`TemplateConfigService`]
+a|`$templateConfigService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response):void
+public __construct($request, $response)
 
 ----
-
-
 
 
 
@@ -62,29 +60,27 @@ a|`$response`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#store]
 ----
 
-public store():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public verifyRecaptcha():void
+public store()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#verifyrecaptcha]
+----
+
+public verifyRecaptcha()
+
+----
 
 
 

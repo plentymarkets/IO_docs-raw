@@ -13,6 +13,7 @@
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery[`UrlQuery`]
 ====
 
 
@@ -28,24 +29,23 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-| 
-    |domain
-    |
-| 
-    |path
-    |
-| 
-    |lang
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$domain`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$path`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$lang`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#shouldappendtrailingslash]
 ----
 
-public static shouldAppendTrailingSlash():bool
+public static shouldAppendTrailingSlash():link:http://php.net/bool[bool^]
 
 ----
 
@@ -55,6 +55,7 @@ public static shouldAppendTrailingSlash():bool
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery_shouldappendtrailingslash[`UrlQuery::shouldAppendTrailingSlash()`]
 ====
 
 
@@ -62,16 +63,13 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($path = null, $lang = null):void
+public __construct($path = null, $lang = null)
 
 ----
-
-
 
 
 
@@ -82,20 +80,21 @@ UrlQuery constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$path`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#append]
 ----
 
-public append($suffix):IO\Services\UrlBuilder\UrlQuery
+public append($suffix):xref:IO/Services/UrlBuilder/UrlQuery.adoc#[UrlQuery]
 
 ----
 
@@ -105,11 +104,10 @@ public append($suffix):IO\Services\UrlBuilder\UrlQuery
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery_append[`UrlQuery::append()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/UrlBuilder/UrlQuery.adoc#[`UrlQuery`]
 
 
 
@@ -117,16 +115,17 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$suffix`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#join]
 ----
 
-public join($path):IO\Services\UrlBuilder\UrlQuery
+public join($path):xref:IO/Services/UrlBuilder/UrlQuery.adoc#[UrlQuery]
 
 ----
 
@@ -136,11 +135,10 @@ public join($path):IO\Services\UrlBuilder\UrlQuery
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery_join[`UrlQuery::join()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/UrlBuilder/UrlQuery.adoc#[`UrlQuery`]
 
 
 
@@ -148,16 +146,17 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$path`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#toabsoluteurl]
 ----
 
-public toAbsoluteUrl($includeLanguage = false):string
+public toAbsoluteUrl($includeLanguage = false):link:http://php.net/string[string^]
 
 ----
 
@@ -167,9 +166,8 @@ public toAbsoluteUrl($includeLanguage = false):string
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery_toabsoluteurl[`UrlQuery::toAbsoluteUrl()`]
 ====
-
-
 
 
 
@@ -179,16 +177,17 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$includeLanguage`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#torelativeurl]
 ----
 
-public toRelativeUrl($includeLanguage = false):string
+public toRelativeUrl($includeLanguage = false):link:http://php.net/string[string^]
 
 ----
 
@@ -198,9 +197,8 @@ public toRelativeUrl($includeLanguage = false):string
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery_torelativeurl[`UrlQuery::toRelativeUrl()`]
 ====
-
-
 
 
 
@@ -210,16 +208,17 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$includeLanguage`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getpath]
 ----
 
-public getPath($includeLanguage = false):void
+public getPath($includeLanguage = false):link:http://php.net/mixed[mixed^]
 
 ----
 
@@ -229,9 +228,8 @@ public getPath($includeLanguage = false):void
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery_getpath[`UrlQuery::getPath()`]
 ====
-
-
 
 
 
@@ -241,16 +239,17 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$includeLanguage`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#equals]
 ----
 
-public equals($path):bool
+public equals($path):link:http://php.net/bool[bool^]
 
 ----
 
@@ -260,9 +259,8 @@ public equals($path):bool
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_urlquery_equals[`UrlQuery::equals()`]
 ====
-
-
 
 
 
@@ -272,7 +270,7 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$path`
 |
 |===

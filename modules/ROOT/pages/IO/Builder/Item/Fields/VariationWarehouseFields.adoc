@@ -21,49 +21,49 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |VARIATION_ID
-    |'variationId'
-    |
+a|`VARIATION_ID`
+|'variationId'
+|
 |link:http://php.net/string[string^]
-    |WAREHOUSE_ID
-    |'warehouseId'
-    |
+a|`WAREHOUSE_ID`
+|'warehouseId'
+|
 |link:http://php.net/string[string^]
-    |WAREHOUSE_ZONE_ID
-    |'warehouseZoneId'
-    |
+a|`WAREHOUSE_ZONE_ID`
+|'warehouseZoneId'
+|
 |link:http://php.net/string[string^]
-    |STORAGE_LOCATION_TYPE
-    |'storageLocationType'
-    |
+a|`STORAGE_LOCATION_TYPE`
+|'storageLocationType'
+|
 |link:http://php.net/string[string^]
-    |REORDER_LEVEL
-    |'reorderLevel'
-    |
+a|`REORDER_LEVEL`
+|'reorderLevel'
+|
 |link:http://php.net/string[string^]
-    |MAXIMUM_STOCK
-    |'maximumStock'
-    |
+a|`MAXIMUM_STOCK`
+|'maximumStock'
+|
 |link:http://php.net/string[string^]
-    |STOCK_BUFFER
-    |'stockBuffer'
-    |
+a|`STOCK_BUFFER`
+|'stockBuffer'
+|
 |link:http://php.net/string[string^]
-    |STOCK_TURNOVER_IN_DAYS
-    |'stockTurnoverInDays'
-    |
+a|`STOCK_TURNOVER_IN_DAYS`
+|'stockTurnoverInDays'
+|
 |link:http://php.net/string[string^]
-    |STORAGE_LOCATION_ID
-    |'storageLocationId'
-    |
+a|`STORAGE_LOCATION_ID`
+|'storageLocationId'
+|
 |link:http://php.net/string[string^]
-    |LAST_UPDATE_TIMESTAMP
-    |'lastUpdateTimestamp'
-    |
+a|`LAST_UPDATE_TIMESTAMP`
+|'lastUpdateTimestamp'
+|
 |link:http://php.net/string[string^]
-    |CREATED_TIMESTAMP
-    |'createdTimestamp'
-    |
+a|`CREATED_TIMESTAMP`
+|'createdTimestamp'
+|
 |===
 
 

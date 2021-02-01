@@ -5,7 +5,8 @@
 [[io__availabilityservice]]
 = AvailabilityService
 
-
+This service class contains various methods for getting item availabilities. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,22 +22,21 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Item.adoc#item_contracts_availabilityrepositorycontract[`AvailabilityRepositoryContract`]
-    |availabilityRepository
-    |
+|xref:stable7@interface::Item.adoc#item_contracts_availabilityrepositorycontract[`AvailabilityRepositoryContract`]
+a|`$availabilityRepository`
+|This repository is used for fetching and updating availabilities.
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($availabilityRepository):void
+public __construct($availabilityRepository)
 
 ----
-
-
 
 
 
@@ -47,40 +47,40 @@ AvailabilityService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Item.adoc#item_contracts_availabilityrepositorycontract[`AvailabilityRepositoryContract`]
+|xref:stable7@interface::Item.adoc#item_contracts_availabilityrepositorycontract[`AvailabilityRepositoryContract`]
 a|`$availabilityRepository`
-|
+|This repository is used for fetching and updating availabilities.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getavailabilitybyid]
 ----
 
-public getAvailabilityById($availabilityId):Plenty\Modules\Item\Availability\Models\Availability
+public getAvailabilityById($availabilityId):xref:stable7@interface::Item.adoc#item_models_availability[Availability]
 
 ----
 
 
 
 
-====== *Return type:* xref:stable7@interface::Item.adoc#item_models_availability[`Availability`]
 
-
-Get the item availability by ID
+Get the item availability by id
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$availabilityId`
-|
+|The id of the availability, between 1 and 10
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getavailabilities]
 ----
 
-public getAvailabilities():array
+public getAvailabilities():link:http://php.net/array[array^]
 
 ----
 
@@ -88,7 +88,5 @@ public getAvailabilities():array
 
 
 
-
-
-
+Get all item availabilities
 

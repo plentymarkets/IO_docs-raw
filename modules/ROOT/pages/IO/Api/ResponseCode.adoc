@@ -21,249 +21,249 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/int[int^]
-    |CONTINUE
-    |100
-    |
+a|`CONTINUE`
+|100
+|
 |link:http://php.net/int[int^]
-    |SWITCHING_PROTOCOLS
-    |101
-    |
+a|`SWITCHING_PROTOCOLS`
+|101
+|
 |link:http://php.net/int[int^]
-    |PROCESSING
-    |102
-    |
+a|`PROCESSING`
+|102
+|
 |link:http://php.net/int[int^]
-    |OK
-    |200
-    |
+a|`OK`
+|200
+|
 |link:http://php.net/int[int^]
-    |CREATED
-    |201
-    |
+a|`CREATED`
+|201
+|
 |link:http://php.net/int[int^]
-    |ACCEPTED
-    |202
-    |
+a|`ACCEPTED`
+|202
+|
 |link:http://php.net/int[int^]
-    |NON_AUTHORITATIVE_INFORMATION
-    |203
-    |
+a|`NON_AUTHORITATIVE_INFORMATION`
+|203
+|
 |link:http://php.net/int[int^]
-    |NO_CONTENT
-    |204
-    |
+a|`NO_CONTENT`
+|204
+|
 |link:http://php.net/int[int^]
-    |RESET_CONTENT
-    |205
-    |
+a|`RESET_CONTENT`
+|205
+|
 |link:http://php.net/int[int^]
-    |PARTIAL_CONTENT
-    |206
-    |
+a|`PARTIAL_CONTENT`
+|206
+|
 |link:http://php.net/int[int^]
-    |MULTI_STATUS
-    |207
-    |
+a|`MULTI_STATUS`
+|207
+|
 |link:http://php.net/int[int^]
-    |ALREADY_REPORTED
-    |208
-    |
+a|`ALREADY_REPORTED`
+|208
+|
 |link:http://php.net/int[int^]
-    |IM_USED
-    |226
-    |
+a|`IM_USED`
+|226
+|
 |link:http://php.net/int[int^]
-    |MULTIPLE_CHOICES
-    |300
-    |
+a|`MULTIPLE_CHOICES`
+|300
+|
 |link:http://php.net/int[int^]
-    |MOVED_PERMANENTLY
-    |301
-    |
+a|`MOVED_PERMANENTLY`
+|301
+|
 |link:http://php.net/int[int^]
-    |FOUND
-    |302
-    |
+a|`FOUND`
+|302
+|
 |link:http://php.net/int[int^]
-    |SEE_OTHER
-    |303
-    |
+a|`SEE_OTHER`
+|303
+|
 |link:http://php.net/int[int^]
-    |NOT_MODIFIED
-    |304
-    |
+a|`NOT_MODIFIED`
+|304
+|
 |link:http://php.net/int[int^]
-    |USE_PROXY
-    |305
-    |
+a|`USE_PROXY`
+|305
+|
 |link:http://php.net/int[int^]
-    |RESERVED
-    |306
-    |
+a|`RESERVED`
+|306
+|
 |link:http://php.net/int[int^]
-    |TEMPORARY_REDIRECT
-    |307
-    |
+a|`TEMPORARY_REDIRECT`
+|307
+|
 |link:http://php.net/int[int^]
-    |PERMANENTLY_REDIRECT
-    |308
-    |
+a|`PERMANENTLY_REDIRECT`
+|308
+|
 |link:http://php.net/int[int^]
-    |BAD_REQUEST
-    |400
-    |
+a|`BAD_REQUEST`
+|400
+|
 |link:http://php.net/int[int^]
-    |UNAUTHORIZED
-    |401
-    |
+a|`UNAUTHORIZED`
+|401
+|
 |link:http://php.net/int[int^]
-    |PAYMENT_REQUIRED
-    |402
-    |
+a|`PAYMENT_REQUIRED`
+|402
+|
 |link:http://php.net/int[int^]
-    |FORBIDDEN
-    |403
-    |
+a|`FORBIDDEN`
+|403
+|
 |link:http://php.net/int[int^]
-    |NOT_FOUND
-    |404
-    |
+a|`NOT_FOUND`
+|404
+|
 |link:http://php.net/int[int^]
-    |METHOD_NOT_ALLOWED
-    |405
-    |
+a|`METHOD_NOT_ALLOWED`
+|405
+|
 |link:http://php.net/int[int^]
-    |NOT_ACCEPTABLE
-    |406
-    |
+a|`NOT_ACCEPTABLE`
+|406
+|
 |link:http://php.net/int[int^]
-    |PROXY_AUTHENTICATION_REQUIRED
-    |407
-    |
+a|`PROXY_AUTHENTICATION_REQUIRED`
+|407
+|
 |link:http://php.net/int[int^]
-    |REQUEST_TIMEOUT
-    |408
-    |
+a|`REQUEST_TIMEOUT`
+|408
+|
 |link:http://php.net/int[int^]
-    |CONFLICT
-    |409
-    |
+a|`CONFLICT`
+|409
+|
 |link:http://php.net/int[int^]
-    |GONE
-    |410
-    |
+a|`GONE`
+|410
+|
 |link:http://php.net/int[int^]
-    |LENGTH_REQUIRED
-    |411
-    |
+a|`LENGTH_REQUIRED`
+|411
+|
 |link:http://php.net/int[int^]
-    |PRECONDITION_FAILED
-    |412
-    |
+a|`PRECONDITION_FAILED`
+|412
+|
 |link:http://php.net/int[int^]
-    |REQUEST_ENTITY_TOO_LARGE
-    |413
-    |
+a|`REQUEST_ENTITY_TOO_LARGE`
+|413
+|
 |link:http://php.net/int[int^]
-    |REQUEST_URI_TOO_LONG
-    |414
-    |
+a|`REQUEST_URI_TOO_LONG`
+|414
+|
 |link:http://php.net/int[int^]
-    |UNSUPPORTED_MEDIA_TYPE
-    |415
-    |
+a|`UNSUPPORTED_MEDIA_TYPE`
+|415
+|
 |link:http://php.net/int[int^]
-    |REQUESTED_RANGE_NOT_SATISFIABLE
-    |416
-    |
+a|`REQUESTED_RANGE_NOT_SATISFIABLE`
+|416
+|
 |link:http://php.net/int[int^]
-    |EXPECTATION_FAILED
-    |417
-    |
+a|`EXPECTATION_FAILED`
+|417
+|
 |link:http://php.net/int[int^]
-    |I_AM_A_TEAPOT
-    |418
-    |
+a|`I_AM_A_TEAPOT`
+|418
+|
 |link:http://php.net/int[int^]
-    |UNPROCESSABLE_ENTITY
-    |422
-    |
+a|`UNPROCESSABLE_ENTITY`
+|422
+|
 |link:http://php.net/int[int^]
-    |LOCKED
-    |423
-    |
+a|`LOCKED`
+|423
+|
 |link:http://php.net/int[int^]
-    |FAILED_DEPENDENCY
-    |424
-    |
+a|`FAILED_DEPENDENCY`
+|424
+|
 |link:http://php.net/int[int^]
-    |RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL
-    |425
-    |
+a|`RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL`
+|425
+|
 |link:http://php.net/int[int^]
-    |UPGRADE_REQUIRED
-    |426
-    |
+a|`UPGRADE_REQUIRED`
+|426
+|
 |link:http://php.net/int[int^]
-    |PRECONDITION_REQUIRED
-    |428
-    |
+a|`PRECONDITION_REQUIRED`
+|428
+|
 |link:http://php.net/int[int^]
-    |TOO_MANY_REQUESTS
-    |429
-    |
+a|`TOO_MANY_REQUESTS`
+|429
+|
 |link:http://php.net/int[int^]
-    |REQUEST_HEADER_FIELDS_TOO_LARGE
-    |431
-    |
+a|`REQUEST_HEADER_FIELDS_TOO_LARGE`
+|431
+|
 |link:http://php.net/int[int^]
-    |UNAVAILABLE_FOR_LEGAL_REASONS
-    |451
-    |
+a|`UNAVAILABLE_FOR_LEGAL_REASONS`
+|451
+|
 |link:http://php.net/int[int^]
-    |INTERNAL_SERVER_ERROR
-    |500
-    |
+a|`INTERNAL_SERVER_ERROR`
+|500
+|
 |link:http://php.net/int[int^]
-    |NOT_IMPLEMENTED
-    |501
-    |
+a|`NOT_IMPLEMENTED`
+|501
+|
 |link:http://php.net/int[int^]
-    |BAD_GATEWAY
-    |502
-    |
+a|`BAD_GATEWAY`
+|502
+|
 |link:http://php.net/int[int^]
-    |SERVICE_UNAVAILABLE
-    |503
-    |
+a|`SERVICE_UNAVAILABLE`
+|503
+|
 |link:http://php.net/int[int^]
-    |GATEWAY_TIMEOUT
-    |504
-    |
+a|`GATEWAY_TIMEOUT`
+|504
+|
 |link:http://php.net/int[int^]
-    |VERSION_NOT_SUPPORTED
-    |505
-    |
+a|`VERSION_NOT_SUPPORTED`
+|505
+|
 |link:http://php.net/int[int^]
-    |VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL
-    |506
-    |
+a|`VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL`
+|506
+|
 |link:http://php.net/int[int^]
-    |INSUFFICIENT_STORAGE
-    |507
-    |
+a|`INSUFFICIENT_STORAGE`
+|507
+|
 |link:http://php.net/int[int^]
-    |LOOP_DETECTED
-    |508
-    |
+a|`LOOP_DETECTED`
+|508
+|
 |link:http://php.net/int[int^]
-    |NOT_EXTENDED
-    |510
-    |
+a|`NOT_EXTENDED`
+|510
+|
 |link:http://php.net/int[int^]
-    |NETWORK_AUTHENTICATION_REQUIRED
-    |511
-    |
+a|`NETWORK_AUTHENTICATION_REQUIRED`
+|511
+|
 |===
 
 

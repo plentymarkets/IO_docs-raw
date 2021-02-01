@@ -13,6 +13,7 @@
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_mutators_orderpropertyselectionvaluemutator[`OrderPropertySelectionValueMutator`]
 ====
 
 
@@ -31,10 +32,11 @@ xref:stable7@interface::Cloud.adoc#cloud_mutator_mutatorinterface[`MutatorInterf
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#mutate]
 ----
 
-public mutate($data):array
+public mutate($data):link:http://php.net/array[array^]
 
 ----
 
@@ -44,9 +46,8 @@ public mutate($data):array
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_mutators_orderpropertyselectionvaluemutator_mutate[`OrderPropertySelectionValueMutator::mutate()`]
 ====
-
-
 
 
 
@@ -56,7 +57,7 @@ since 5.0.0 will be deleted in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$data`
 |
 |===

@@ -24,14 +24,13 @@ xref:stable7@interface::Miscellaneous.adoc#miscellaneous_contracts_attributehelp
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#defineattributes]
 ----
 
-public defineAttributes():void
+public defineAttributes()
 
 ----
-
-
 
 
 

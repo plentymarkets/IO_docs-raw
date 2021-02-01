@@ -21,25 +21,24 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/array[array^]
-    |params
-    |
+|link:http://php.net/array[`array`^]
+a|`$params`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withparam]
 ----
 
-public withParam($paramName, $paramValue):IO\Builder\Item\ItemParamsBuilder
+public withParam($paramName, $paramValue):xref:IO/Builder/Item/ItemParamsBuilder.adoc#[ItemParamsBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemParamsBuilder.adoc#[`ItemParamsBuilder`]
 
 
 Set a parameter value
@@ -51,20 +50,19 @@ Set a parameter value
 a|`$paramName`
 |The name of the param to set.
 
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$paramValue`
 |The value of the param to set.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#build]
 ----
 
-public build():array
+public build():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 

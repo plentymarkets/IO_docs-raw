@@ -24,21 +24,20 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |Type |Name |Description
 
 |xref:IO/Services/AvailabilityService.adoc#[`AvailabilityService`]
-    |availabilityService
-    |
+a|`$availabilityService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response, $availabilityService):void
+public __construct($request, $response, $availabilityService)
 
 ----
-
-
 
 
 
@@ -63,17 +62,16 @@ a|`$availabilityService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#show]
 ----
 
-public show($availabilityId):Plenty\Plugin\Http\Response
+public show($availabilityId): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Get the Availability by Id
@@ -81,7 +79,7 @@ Get the Availability by Id
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$availabilityId`
 |
 |===

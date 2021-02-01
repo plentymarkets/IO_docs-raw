@@ -5,7 +5,8 @@
 [[io__localizationservice]]
 = LocalizationService
 
-
+This service class contains functions related to localization functionality. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -20,25 +21,11 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlocalizationdata]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getLocalizationData():void
+public getLocalizationData():link:http://php.net/array[array^]
 
 ----
 
@@ -46,29 +33,13 @@ public getLocalizationData():void
 
 
 
+Get localization data for the frontend. This data contains active shipping countries, active languages, the current shipping country and the shop language.
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setlanguage]
 ----
 
-public setLanguage():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getTranslations():void
+public setLanguage($newLanguage, $fireEvent = true)
 
 ----
 
@@ -76,31 +47,72 @@ public getTranslations():void
 
 
 
-
-
-
-
-[source%nowrap, php]
-----
-
-public hasCountryStates($countryId):void
-
-----
-
-
-
-
-
-
-
-
+Set a new language
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[`string`^]
+a|`$newLanguage`
+|The new language (ISO-639-1)
+
+|link:http://php.net/bool[`bool`^]
+a|`$fireEvent`
+|Optional: Fire a LanguageChanged event (Default: false)
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#gettranslations]
+----
+
+public getTranslations($plugin, $group, $lang = null):link:http://php.net/mixed[mixed^]
+
+----
+
+
+
+
+
+Get translations for a plugin. This function is primarily used in the frontend to enable clientside translation.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$plugin`
+|The plugin, whose translation is to be fetched. E.g "Ceres" in "Ceres::Widgets.exampleTranslation"
+
+|link:http://php.net/string[`string`^]
+a|`$group`
+|The translation group, which is to be fetched. E.g "Widgets" in "Ceres::Widgets.exampleTranslation"
+
+|link:http://php.net/string[`string`^]
+a|`$lang`
+|Optional: The language for the translations. By default uses the current active language.
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#hascountrystates]
+----
+
+public hasCountryStates($countryId):link:http://php.net/bool[bool^]
+
+----
+
+
+
+
+
+Check if a specific country has states
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
 a|`$countryId`
-|
+|An countries id
 |===
 
 

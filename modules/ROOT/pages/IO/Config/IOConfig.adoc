@@ -22,21 +22,20 @@
 |Type |Name |Description
 
 |xref:IO/Config/IONumberFormatConfig.adoc#[`IONumberFormatConfig`]
-    |format
-    |
+a|`$format`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
+public __construct()
 
 ----
-
-
 
 
 

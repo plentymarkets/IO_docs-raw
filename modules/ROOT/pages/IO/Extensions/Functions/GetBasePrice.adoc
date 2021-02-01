@@ -24,33 +24,28 @@ xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 |Type |Name |Description
 
 | xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
-    |app
-    |
-| xref:stable7@interface::Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
-    |itemRepository
-    |
-|xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
-    |columnBuilder
-    |
-|xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
-    |filterBuilder
-    |
-|xref:IO/Builder/Item/ItemParamsBuilder.adoc#[`ItemParamsBuilder`]
-    |paramsBuilder
-    |
+a|`$app`
+||xref:stable7@interface::Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
+a|`$itemRepository`
+||xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
+a|`$columnBuilder`
+||xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
+a|`$filterBuilder`
+||xref:IO/Builder/Item/ItemParamsBuilder.adoc#[`ItemParamsBuilder`]
+a|`$paramsBuilder`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($app, $itemRepository, $columnBuilder, $filterBuilder, $paramsBuilder):void
+public __construct($app, $itemRepository, $columnBuilder, $filterBuilder, $paramsBuilder)
 
 ----
-
-
 
 
 
@@ -65,7 +60,7 @@ GetBasePrice constructor.
 a|`$app`
 |
 
-| xref:stable7@interface::Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
+|xref:stable7@interface::Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
 a|`$itemRepository`
 |
 
@@ -83,14 +78,13 @@ a|`$paramsBuilder`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfunctions]
 ----
 
-public getFunctions():array
+public getFunctions():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -98,14 +92,13 @@ public getFunctions():array
 
 Return the available filter methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbaseprice]
 ----
 
-public getBasePrice($variationId):array
+public getBasePrice($variationId):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -116,20 +109,19 @@ Get the base price for the specified variation
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbasepricelist]
 ----
 
-public getBasePriceList($variationIds):array
+public getBasePriceList($variationIds):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -140,7 +132,7 @@ Get base prices for a list of variations
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationIds`
 |
 |===

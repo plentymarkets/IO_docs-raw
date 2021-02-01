@@ -22,25 +22,11 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public index():void
+public __construct()
 
 ----
 
@@ -50,31 +36,41 @@ public index():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#index]
 ----
 
-public store():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public destroy($selector):void
+public index()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#store]
+----
+
+public store()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#destroy]
+----
+
+public destroy($selector)
+
+----
 
 
 
@@ -85,7 +81,7 @@ public destroy($selector):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$selector`
 |
 |===

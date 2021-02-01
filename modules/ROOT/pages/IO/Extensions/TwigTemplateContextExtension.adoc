@@ -17,22 +17,21 @@
 xref:stable7@interface::Miscellaneous.adoc#miscellaneous_extensions_twig_extension[`Twig_Extension`]
 
 ===== Implements
-GlobalsInterface
-ExtensionInterface
+xref:5.0.0@plugin-twig::Twig/Extension/GlobalsInterface.adoc#[`GlobalsInterface`]
+xref:5.0.0@plugin-twig::Twig/Extension/ExtensionInterface.adoc#[`ExtensionInterface`]
 
 
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getname]
 ----
 
-public getName():string
+public getName():link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -40,14 +39,13 @@ public getName():string
 
 Return the name of the extension. The name must be unique.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfilters]
 ----
 
-public getFilters():array
+public getFilters():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -55,14 +53,13 @@ public getFilters():array
 
 Return a list of filters to add.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfunctions]
 ----
 
-public getFunctions():array
+public getFunctions():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -70,14 +67,13 @@ public getFunctions():array
 
 Return a list of functions to add.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getglobals]
 ----
 
-public getGlobals():array
+public getGlobals():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 

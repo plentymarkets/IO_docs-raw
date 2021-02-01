@@ -22,14 +22,13 @@ xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
+public __construct()
 
 ----
-
-
 
 
 
@@ -37,29 +36,27 @@ public __construct():void
 
 AddressOptionTypeFilter constructor.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfilters]
 ----
 
-public getFilters():array
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public addressOptionType():void
+public getFilters():link:http://php.net/array[array^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#addressoptiontype]
+----
+
+public addressOptionType()
+
+----
 
 
 

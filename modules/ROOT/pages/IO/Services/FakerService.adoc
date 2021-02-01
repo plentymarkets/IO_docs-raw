@@ -5,7 +5,8 @@
 [[io__fakerservice]]
 = FakerService
 
-
+This service class contains functions related to faking test data for the shop builder. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -20,14 +21,13 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbasket]
 ----
 
-public getBasket():void
+public getBasket():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -35,25 +35,11 @@ public getBasket():void
 
 Get a faked basket for shopbuilder basket templates
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfacets]
 ----
 
-public getFacets():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getSelectedFacetIds($facets):void
+public getFacets():link:http://php.net/array[array^]
 
 ----
 
@@ -61,16 +47,28 @@ public getSelectedFacetIds($facets):void
 
 
 
+Get a faked facet result for shopbuilder category templates
+
+[source%nowrap, php, subs=+macros]
+[#getselectedfacetids]
+----
+
+public getSelectedFacetIds($facets):link:http://php.net/array[array^]
+
+----
 
 
 
+
+
+Get a faked selected facets array for shopbuilder category templates
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/array[`array`^]
 a|`$facets`
-|
+|Available facets
 |===
 
 

@@ -21,28 +21,25 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Plugin.adoc#plugin_services_pluginsendmailservice[`PluginSendMailService`]
-    |sendMailService
-    |
-| 
-    |placeholderList
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|xref:stable7@interface::Plugin.adoc#plugin_services_pluginsendmailservice[`PluginSendMailService`]
+a|`$sendMailService`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$placeholderList`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($sendMailService):void
+public __construct($sendMailService)
 
 ----
-
-
 
 
 
@@ -53,20 +50,19 @@ public __construct($sendMailService):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$sendMailService`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#handle]
 ----
 
-public handle($pluginSendMail):void
+public handle($pluginSendMail)
 
 ----
-
-
 
 
 
@@ -77,7 +73,7 @@ public handle($pluginSendMail):void
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Plugin.adoc#plugin_events_pluginsendmail[`PluginSendMail`]
+|xref:stable7@interface::Plugin.adoc#plugin_events_pluginsendmail[`PluginSendMail`]
 a|`$pluginSendMail`
 |
 |===

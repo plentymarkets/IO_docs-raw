@@ -13,6 +13,7 @@
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_variationpricelist[`VariationPriceList`]
 ====
 
 
@@ -28,17 +29,17 @@ since 5.0.0 will be removed in 6.0.0
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |TYPE_DEFAULT
-    |'default'
-    |
+a|`TYPE_DEFAULT`
+|'default'
+|
 |link:http://php.net/string[string^]
-    |TYPE_RRP
-    |'rrp'
-    |
+a|`TYPE_RRP`
+|'rrp'
+|
 |link:http://php.net/string[string^]
-    |TYPE_SPECIAL_OFFER
-    |'specialOffer'
-    |
+a|`TYPE_SPECIAL_OFFER`
+|'specialOffer'
+|
 |===
 
 
@@ -46,57 +47,45 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-| 
-    |basePrices
-    |
-|link:http://php.net/int[int^]
-    |itemId
-    |
-|link:http://php.net/int[int^]
-    |variationId
-    |
-|link:http://php.net/float[float^]
-    |minimumOrderQuantity
-    |
-|link:http://php.net/float[float^]
-    |maximumOrderQuantity
-    |
-| 
-    |lot
-    |
-| 
-    |unit
-    |
-| 
-    |prices
-    |
-|xref:IO/Extensions/Filters/NumberFormatFilter.adoc#[`NumberFormatFilter`]
-    |numberFormatFilter
-    |
-|xref:IO/Services/UnitService.adoc#[`UnitService`]
-    |unitService
-    |
-| xref:stable7@interface::Liveshopping.adoc#liveshopping_contracts_liveshoppingrepositorycontract[`LiveShoppingRepositoryContract`]
-    |liveShoppingRepo
-    |
-| 
-    |showNetPrice
-    |
-| xref:stable7@interface::Item.adoc#item_models_salespricesearchresponse[`SalesPriceSearchResponse`]
-    |defaultPrice
-    |
-| 
-    |cache
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$basePrices`
+||link:http://php.net/int[`int`^]
+a|`$itemId`
+||link:http://php.net/int[`int`^]
+a|`$variationId`
+||link:http://php.net/float[`float`^]
+a|`$minimumOrderQuantity`
+||link:http://php.net/float[`float`^]
+a|`$maximumOrderQuantity`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$lot`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$unit`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$prices`
+||xref:IO/Extensions/Filters/NumberFormatFilter.adoc#[`NumberFormatFilter`]
+a|`$numberFormatFilter`
+||xref:IO/Services/UnitService.adoc#[`UnitService`]
+a|`$unitService`
+||xref:stable7@interface::Liveshopping.adoc#liveshopping_contracts_liveshoppingrepositorycontract[`LiveShoppingRepositoryContract`]
+a|`$liveShoppingRepo`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$showNetPrice`
+||xref:stable7@interface::Item.adoc#item_models_salespricesearchresponse[`SalesPriceSearchResponse`]
+a|`$defaultPrice`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
+public __construct()
 
 ----
 
@@ -106,12 +95,11 @@ public __construct():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#create]
 ----
 
-public static create($variationId, $itemId, $minimumOrderQuantity, $maximumOrderQuantity = null, $lot, $unit = null):IO\Helper\VariationPriceList
+public static create($variationId, $itemId, $minimumOrderQuantity, $maximumOrderQuantity = null, $lot, $unit = null):xref:IO/Helper/VariationPriceList.adoc#[VariationPriceList]
 
 ----
 
@@ -121,11 +109,10 @@ public static create($variationId, $itemId, $minimumOrderQuantity, $maximumOrder
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_variationpricelist_create[`VariationPriceList::create()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Helper/VariationPriceList.adoc#[`VariationPriceList`]
 
 
 
@@ -133,36 +120,37 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$minimumOrderQuantity`
 |
 
-| null
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
 a|`$maximumOrderQuantity`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$lot`
 |
 
-| null
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
 a|`$unit`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#findpriceforquantity]
 ----
 
-public findPriceForQuantity($quantity, $type = self::TYPE_DEFAULT):void
+public findPriceForQuantity($quantity, $type = self::TYPE_DEFAULT):link:http://php.net/mixed[mixed^]
 
 ----
 
@@ -172,9 +160,8 @@ public findPriceForQuantity($quantity, $type = self::TYPE_DEFAULT):void
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_variationpricelist_findpriceforquantity[`VariationPriceList::findPriceForQuantity()`]
 ====
-
-
 
 
 
@@ -184,20 +171,21 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/float[float^]
+|link:http://php.net/float[`float`^]
 a|`$quantity`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$type`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getgraduatedprices]
 ----
 
-public getGraduatedPrices($showNetPrice = false):array
+public getGraduatedPrices($showNetPrice = false):link:http://php.net/array[array^]
 
 ----
 
@@ -207,9 +195,8 @@ public getGraduatedPrices($showNetPrice = false):array
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_variationpricelist_getgraduatedprices[`VariationPriceList::getGraduatedPrices()`]
 ====
-
-
 
 
 
@@ -219,16 +206,17 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$showNetPrice`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbaseprice]
 ----
 
-public toArray($quantity = null):array
+public getBasePrice($unitPrice, $currency, $lang = null):link:http://php.net/string[string^]
 
 ----
 
@@ -238,9 +226,8 @@ public toArray($quantity = null):array
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_variationpricelist_getbaseprice[`VariationPriceList::getBasePrice()`]
 ====
-
-
 
 
 
@@ -250,16 +237,56 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-| null
+|link:http://php.net/float[`float`^]
+a|`$unitPrice`
+|
+
+|link:http://php.net/string[`string`^]
+a|`$currency`
+|
+
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
+a|`$lang`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#toarray]
+----
+
+public toArray($quantity = null):link:http://php.net/array[array^]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_variationpricelist_toarray[`VariationPriceList::toArray()`]
+====
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
 a|`$quantity`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcalculatedprices]
 ----
 
-public getCalculatedPrices($quantity = null):array
+public getCalculatedPrices($quantity = null):link:http://php.net/array[array^]
 
 ----
 
@@ -269,9 +296,8 @@ public getCalculatedPrices($quantity = null):array
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_variationpricelist_getcalculatedprices[`VariationPriceList::getCalculatedPrices()`]
 ====
-
-
 
 
 
@@ -281,31 +307,17 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-| null
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
 a|`$quantity`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#convertcurrency]
 ----
 
-public convertGrossNet():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getDefaultPrice():void
+public convertCurrency($value):link:http://php.net/float[float^] \| link:http://php.net/int[int^]
 
 ----
 
@@ -315,6 +327,7 @@ public getDefaultPrice():void
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_variationpricelist_convertcurrency[`VariationPriceList::convertCurrency()`]
 ====
 
 
@@ -322,31 +335,72 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/float[`float`^]
+a|`$value`
+|
+|===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#convertgrossnet]
 ----
 
-public fromMemoryCache():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public resetMemoryCache($key = null):void
+public convertGrossNet()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getdefaultprice]
+----
+
+public getDefaultPrice():link:http://php.net/mixed[mixed^]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_variationpricelist_getdefaultprice[`VariationPriceList::getDefaultPrice()`]
+====
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
+----
+
+public fromMemoryCache()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -357,7 +411,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

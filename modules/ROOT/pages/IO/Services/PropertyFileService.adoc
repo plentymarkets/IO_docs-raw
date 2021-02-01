@@ -5,7 +5,8 @@
 [[io__propertyfileservice]]
 = PropertyFileService
 
-
+This service class contains functions related to file properties.a +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -20,10 +21,11 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getpropertyfileurl]
 ----
 
-public getPropertyFileUrl():void
+public getPropertyFileUrl():link:http://php.net/string[string^]
 
 ----
 
@@ -31,7 +33,5 @@ public getPropertyFileUrl():void
 
 
 
-
-
-
+Get the URL where file properties are stored
 

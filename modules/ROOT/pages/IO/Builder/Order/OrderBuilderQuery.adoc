@@ -21,28 +21,25 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/array[array^]
-    |order
-    |
-| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
-    |app
-    |
-|xref:IO/Services/BasketService.adoc#[`BasketService`]
-    |basketService
-    |
+|link:http://php.net/array[`array`^]
+a|`$order`
+|| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
+a|`$app`
+||xref:IO/Services/BasketService.adoc#[`BasketService`]
+a|`$basketService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($app, $basketService, $type, $plentyId):void
+public __construct($app, $basketService, $type, $plentyId)
 
 ----
-
-
 
 
 
@@ -61,24 +58,23 @@ a|`$app`
 a|`$basketService`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$type`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$plentyId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#done]
 ----
 
-public done():array
+public done():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -86,17 +82,16 @@ public done():array
 
 Return the order array
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#frombasket]
 ----
 
-public fromBasket($basket = null):IO\Builder\Order\OrderBuilderQuery
+public fromBasket($basket = null):xref:IO/Builder/Order/OrderBuilderQuery.adoc#[OrderBuilderQuery]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Build order from basket data
@@ -104,20 +99,19 @@ Build order from basket data
 .*Parameters*
 |===
 |Type |Name |Description
-| null
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
 a|`$basket`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withlang]
 ----
 
-public withLang($lang):void
+public withLang($lang)
 
 ----
-
-
 
 
 
@@ -128,23 +122,22 @@ Add the lang to the order
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withstatus]
 ----
 
-public withStatus($status):IO\Builder\Order\OrderBuilderQuery
+public withStatus($status):xref:IO/Builder/Order/OrderBuilderQuery.adoc#[OrderBuilderQuery]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add the status to the order
@@ -152,23 +145,22 @@ Add the status to the order
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/float[float^]
+|link:http://php.net/float[`float`^]
 a|`$status`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withowner]
 ----
 
-public withOwner($ownerId):IO\Builder\Order\OrderBuilderQuery
+public withOwner($ownerId):xref:IO/Builder/Order/OrderBuilderQuery.adoc#[OrderBuilderQuery]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add the owner to the order
@@ -176,23 +168,22 @@ Add the owner to the order
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$ownerId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withorderitem]
 ----
 
-public withOrderItem($orderItem):IO\Builder\Order\OrderBuilderQuery
+public withOrderItem($orderItem):xref:IO/Builder/Order/OrderBuilderQuery.adoc#[OrderBuilderQuery]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add an order item to the order
@@ -200,23 +191,22 @@ Add an order item to the order
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$orderItem`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withorderitems]
 ----
 
-public withOrderItems($orderItems):IO\Builder\Order\OrderBuilderQuery
+public withOrderItems($orderItems):xref:IO/Builder/Order/OrderBuilderQuery.adoc#[OrderBuilderQuery]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add order items to the order
@@ -224,23 +214,22 @@ Add order items to the order
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$orderItems`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withaddressid]
 ----
 
-public withAddressId($addressId, $type):IO\Builder\Order\OrderBuilderQuery
+public withAddressId($addressId, $type):xref:IO/Builder/Order/OrderBuilderQuery.adoc#[OrderBuilderQuery]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add an address to the order
@@ -248,27 +237,26 @@ Add an address to the order
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$addressId`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$type`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withrelation]
 ----
 
-public withRelation($type, $referenceId, $relationType):IO\Builder\Order\OrderBuilderQuery
+public withRelation($type, $referenceId, $relationType):xref:IO/Builder/Order/OrderBuilderQuery.adoc#[OrderBuilderQuery]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add the relation to the order
@@ -276,31 +264,30 @@ Add the relation to the order
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$type`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$referenceId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$relationType`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withcontactid]
 ----
 
-public withContactId($customerId):IO\Builder\Order\OrderBuilderQuery
+public withContactId($customerId):xref:IO/Builder/Order/OrderBuilderQuery.adoc#[OrderBuilderQuery]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
 
 
 Add a contact to the order
@@ -308,23 +295,57 @@ Add a contact to the order
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$customerId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withorderproperty]
 ----
 
-public withComment($isVisibleForContact, $text):IO\Builder\Order\OrderBuilderQuery
+public withOrderProperty($type, $subType, $value, $required = true):xref:IO/Builder/Order/OrderBuilderQuery.adoc#[OrderBuilderQuery]
 
 ----
 
 
 
 
-====== *Return type:*xref:IO/Builder/Order/OrderBuilderQuery.adoc#[`OrderBuilderQuery`]
+
+Add an order option to the order
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$type`
+|
+
+|link:http://php.net/int[`int`^]
+a|`$subType`
+|
+
+|link:http://php.net/string[`string`^]
+a|`$value`
+|
+
+|link:http://php.net/bool[`bool`^]
+a|`$required`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#withcomment]
+----
+
+public withComment($isVisibleForContact, $text):xref:IO/Builder/Order/OrderBuilderQuery.adoc#[OrderBuilderQuery]
+
+----
+
+
+
 
 
 Add a comment to the order. (e.g. customer wish)
@@ -332,11 +353,11 @@ Add a comment to the order. (e.g. customer wish)
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$isVisibleForContact`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$text`
 |
 |===

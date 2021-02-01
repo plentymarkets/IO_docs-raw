@@ -21,21 +21,21 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |COMPONENT_VARIATION_ID
-    |'componentVariationId'
-    |
+a|`COMPONENT_VARIATION_ID`
+|'componentVariationId'
+|
 |link:http://php.net/string[string^]
-    |COMPONENT_QUANTITY
-    |'componentQuantity'
-    |
+a|`COMPONENT_QUANTITY`
+|'componentQuantity'
+|
 |link:http://php.net/string[string^]
-    |CREATED_TIMESTAMP
-    |'createdTimestamp'
-    |
+a|`CREATED_TIMESTAMP`
+|'createdTimestamp'
+|
 |link:http://php.net/string[string^]
-    |LAST_UPDATE_TIMESTAMP
-    |'lastUpdateTimestamp'
-    |
+a|`LAST_UPDATE_TIMESTAMP`
+|'lastUpdateTimestamp'
+|
 |===
 
 

@@ -21,22 +21,21 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
-    |currencyExchcangeRepo
-    |
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
+a|`$currencyExchcangeRepo`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($currencyExchangeRepo):void
+public __construct($currencyExchangeRepo)
 
 ----
-
-
 
 
 
@@ -47,31 +46,17 @@ CurrencyConverter constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
 a|`$currencyExchangeRepo`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#iscurrentcurrencydefault]
 ----
 
-public isCurrentCurrencyDefault():bool
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getDefaultCurrency():string
+public isCurrentCurrencyDefault():link:http://php.net/bool[bool^]
 
 ----
 
@@ -81,31 +66,41 @@ public getDefaultCurrency():string
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getdefaultcurrency]
 ----
 
-public getCurrentCurrency():string
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public convertToDefaultCurrency($amount):float
+public getDefaultCurrency():link:http://php.net/string[string^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getcurrentcurrency]
+----
+
+public getCurrentCurrency():link:http://php.net/string[string^]
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#converttodefaultcurrency]
+----
+
+public convertToDefaultCurrency($amount):link:http://php.net/float[float^]
+
+----
 
 
 
@@ -116,7 +111,7 @@ public convertToDefaultCurrency($amount):float
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/float[float^]
+|link:http://php.net/float[`float`^]
 a|`$amount`
 |
 |===

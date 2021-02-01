@@ -5,7 +5,8 @@
 [[io__itemwishlistservice]]
 = ItemWishListService
 
-
+This service class contains functions related to the customers wish list. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,18 +22,19 @@
 |===
 |Type |Name |Description
 
-| 
-    |itemWishListRepo
-    |
+|link:http://php.net/mixed[`mixed`^]
+a|`$itemWishListRepo`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($sessionStorageRepositoryContract):void
+public __construct($sessionStorageRepositoryContract)
 
 ----
 
@@ -40,23 +42,22 @@ public __construct($sessionStorageRepositoryContract):void
 
 
 
-
-
-
+ItemWishListService constructor.
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
 a|`$sessionStorageRepositoryContract`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#additemwishlistentry]
 ----
 
-public addItemWishListEntry($variationId, $quantity):void
+public addItemWishListEntry($variationId, $quantity):link:http://php.net/mixed[mixed^]
 
 ----
 
@@ -64,27 +65,26 @@ public addItemWishListEntry($variationId, $quantity):void
 
 
 
-
-
-
+Add a variation to the wish list
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
-|
+|An variation id
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$quantity`
-|
+|The desired quantity of the variation
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isiteminwishlist]
 ----
 
-public isItemInWishList($variationId):bool
+public isItemInWishList($variationId):link:http://php.net/bool[bool^]
 
 ----
 
@@ -92,38 +92,22 @@ public isItemInWishList($variationId):bool
 
 
 
-
-
-
+Check if a variation is in the wish list
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
-|
+|An variation id
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitemwishlist]
 ----
 
-public getItemWishList():array
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getCountedItemWishList():int
+public getItemWishList():link:http://php.net/array[array^]
 
 ----
 
@@ -131,14 +115,13 @@ public getCountedItemWishList():int
 
 
 
+Get a list of all variation ids in the wish list
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcounteditemwishlist]
 ----
 
-public removeItemWishListEntry($variationId):bool
+public getCountedItemWishList():link:http://php.net/int[int^]
 
 ----
 
@@ -146,23 +129,36 @@ public removeItemWishListEntry($variationId):bool
 
 
 
+Get number of entries in wish list
+
+[source%nowrap, php, subs=+macros]
+[#removeitemwishlistentry]
+----
+
+public removeItemWishListEntry($variationId):link:http://php.net/bool[bool^]
+
+----
 
 
 
+
+
+Remove a variation from the wish list
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
-|
+|An variation id
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#migrateguestitemwishlist]
 ----
 
-public migrateGuestItemWishList():void
+public migrateGuestItemWishList()
 
 ----
 
@@ -170,7 +166,5 @@ public migrateGuestItemWishList():void
 
 
 
-
-
-
+Migrates a guest wish list into a contacts wish list.
 

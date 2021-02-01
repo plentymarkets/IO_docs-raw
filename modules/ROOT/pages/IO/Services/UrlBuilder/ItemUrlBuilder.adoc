@@ -13,6 +13,7 @@
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_urlbuilderrepositorycontract[`UrlBuilderRepositoryContract`]
 ====
 
 
@@ -27,10 +28,11 @@ since 5.0.0 will be removed in 6.0.0
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#buildurl]
 ----
 
-public buildUrl($itemId, $lang = null):void
+public buildUrl($itemId, $lang = null):link:http://php.net/mixed[mixed^]
 
 ----
 
@@ -40,9 +42,8 @@ public buildUrl($itemId, $lang = null):void
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_urlbuilderrepositorycontract_builditemurl[`UrlBuilderRepositoryContract::buildItemUrl()`]
 ====
-
-
 
 
 
@@ -52,11 +53,11 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |
 |===

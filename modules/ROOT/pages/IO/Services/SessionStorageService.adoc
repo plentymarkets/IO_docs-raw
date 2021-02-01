@@ -5,8 +5,17 @@
 [[io__sessionstorageservice]]
 = SessionStorageService
 
+This service class contains functions related to storing and reading data in the session. +
+All public functions are available in the Twig template renderer.
 
+[WARNING]
+.Deprecated! 
+====
 
+since 5.0.0 will be removed in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+====
 
 
 ===== Namespace
@@ -21,25 +30,23 @@
 |===
 |Type |Name |Description
 
-| 
-    |language
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
-    |sessionStorage
-    |
+|link:http://php.net/string[`string`^]
+a|`$language`
+||xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
+a|`$sessionStorage`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($sessionStorage):void
+public __construct($sessionStorage)
 
 ----
-
-
 
 
 
@@ -50,16 +57,17 @@ SessionStorageService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
 a|`$sessionStorage`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setsessionvalue]
 ----
 
-public getSessionValue($name):void
+public setSessionValue($name, $value)
 
 ----
 
@@ -69,9 +77,43 @@ public getSessionValue($name):void
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract_setsessionvalue[`SessionStorageRepositoryContract::setSessionValue()`]
 ====
 
 
+
+
+Set the value in the session
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$name`
+|Name/Key of the value
+
+|link:http://php.net/mixed[`mixed`^]
+a|`$value`
+|The value to be stored
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getsessionvalue]
+----
+
+public getSessionValue($name):link:http://php.net/mixed[mixed^]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be removed in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract_getsessionvalue[`SessionStorageRepositoryContract::getSessionValue()`]
+====
 
 
 
@@ -81,16 +123,17 @@ Get a value from the session
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$name`
-|
+|Name/Key of the value
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlang]
 ----
 
-public getLang():string
+public getLang():link:http://php.net/string[string^]
 
 ----
 
@@ -100,19 +143,19 @@ public getLang():string
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_localizationrepositorycontract_getlanguage[`LocalizationRepositoryContract::getLanguage()`]
 ====
-
-
 
 
 
 
 Get the language from session
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcustomer]
 ----
 
-public getCustomer():Plenty\Modules\Frontend\Session\Storage\Models\Customer
+public getCustomer():xref:stable7@interface::Frontend.adoc#frontend_models_customer[Customer]
 
 ----
 
@@ -122,12 +165,11 @@ public getCustomer():Plenty\Modules\Frontend\Session\Storage\Models\Customer
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract_getcustomer[`SessionStorageRepositoryContract::getCustomer()`]
 ====
 
 
 
-====== *Return type:* xref:stable7@interface::Frontend.adoc#frontend_models_customer[`Customer`]
 
-
-
+Gets the model for the current customer from the session
 

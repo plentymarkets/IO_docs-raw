@@ -1,5 +1,3 @@
-
-.Plentymarkets plugin documentation
                             * IO
                                                     ** Api
                                                     *** Resources
@@ -26,7 +24,7 @@
         
 **** xref:IO/Api/Resources/OrderPaymentAllowedResource.adoc[OrderPaymentAllowedResource]
         
-**** xref:IO/Api/Resources/FacetResource.adoc[FacetResource]
+**** xref:IO/Api/Resources/DeliveryCountryResource.adoc[DeliveryCountryResource]
         
 **** xref:IO/Api/Resources/OrderPaymentResource.adoc[OrderPaymentResource]
         
@@ -48,11 +46,11 @@
         
 **** xref:IO/Api/Resources/GuestResource.adoc[GuestResource]
         
-**** xref:IO/Api/Resources/DeliveryCountryResource.adoc[DeliveryCountryResource]
+**** xref:IO/Api/Resources/CustomerResource.adoc[CustomerResource]
         
 **** xref:IO/Api/Resources/BasketItemResource.adoc[BasketItemResource]
         
-**** xref:IO/Api/Resources/ContactMailResource.adoc[ContactMailResource]
+**** xref:IO/Api/Resources/ContactBankResource.adoc[ContactBankResource]
         
 **** xref:IO/Api/Resources/BasketResource.adoc[BasketResource]
         
@@ -70,11 +68,11 @@
         
 **** xref:IO/Api/Resources/CheckoutSetShippingIdResource.adoc[CheckoutSetShippingIdResource]
         
-**** xref:IO/Api/Resources/ContactBankResource.adoc[ContactBankResource]
+**** xref:IO/Api/Resources/ContactMailResource.adoc[ContactMailResource]
+        
+**** xref:IO/Api/Resources/CustomerPasswordResource.adoc[CustomerPasswordResource]
         
 **** xref:IO/Api/Resources/CouponResource.adoc[CouponResource]
-        
-**** xref:IO/Api/Resources/CustomerResource.adoc[CustomerResource]
         
 **** xref:IO/Api/Resources/CustomerAddressResource.adoc[CustomerAddressResource]
         
@@ -91,8 +89,6 @@
 **** xref:IO/Api/Resources/CustomerOrderReturnResource.adoc[CustomerOrderReturnResource]
         
 **** xref:IO/Api/Resources/CustomerPasswordResetResource.adoc[CustomerPasswordResetResource]
-        
-**** xref:IO/Api/Resources/CustomerPasswordResource.adoc[CustomerPasswordResource]
         
 **** xref:IO/Api/Resources/VariationResource.adoc[VariationResource]
         

@@ -5,7 +5,7 @@
 [[io__querystring]]
 = QueryString
 
-
+Registers a global twig function to get the query string of the current request and update or add multiple parameters.
 
 
 
@@ -22,25 +22,11 @@ xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#construct]
 ----
 
-public construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getFunctions():array
+public construct()
 
 ----
 
@@ -50,12 +36,11 @@ public getFunctions():array
 
 
 
-Return the available methods
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfunctions]
 ----
 
-public getQueryString($params = []):string
+public getFunctions():link:http://php.net/array[array^]
 
 ----
 
@@ -63,16 +48,28 @@ public getQueryString($params = []):string
 
 
 
+Return all available twig functions to be registered globally.
+
+[source%nowrap, php, subs=+macros]
+[#getquerystring]
+----
+
+public getQueryString($params = []):link:http://php.net/string[string^]
+
+----
 
 
 
+
+
+Get the current query string from the URL.
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$params`
-|
+|An associative array of parameter keys and values to replace or add to the query string.
 |===
 
 

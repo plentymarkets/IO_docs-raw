@@ -13,6 +13,7 @@
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_urlbuilderrepositorycontract[`UrlBuilderRepositoryContract`]
 ====
 
 
@@ -28,18 +29,19 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#buildurl]
 ----
 
-public buildUrl($categoryId, $lang = null, $webstoreId = null):IO\Services\UrlBuilder\UrlQuery
+public buildUrl($categoryId, $lang = null, $webstoreId = null):xref:IO/Services/UrlBuilder/UrlQuery.adoc#[UrlQuery]
 
 ----
 
@@ -49,11 +51,10 @@ public buildUrl($categoryId, $lang = null, $webstoreId = null):IO\Services\UrlBu
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_urlbuilderrepositorycontract_buildcategoryurl[`UrlBuilderRepositoryContract::buildCategoryUrl()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/UrlBuilder/UrlQuery.adoc#[`UrlQuery`]
 
 
 
@@ -61,15 +62,15 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$categoryId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$webstoreId`
 |
 |===

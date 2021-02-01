@@ -5,7 +5,8 @@
 [[io__legalinformationservice]]
 = LegalInformationService
 
-
+This service class contains functions related to the legal information widgets. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,39 +22,23 @@
 |===
 |Type |Name |Description
 
-| 
-    |legalInformationRepo
-    |
-| 
-    |lang
-    |
-| 
-    |plentyId
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$legalInformationRepo`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$lang`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$plentyId`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getTermsAndConditions():void
+public __construct($legalInformationRepo, $app)
 
 ----
 
@@ -61,29 +46,26 @@ public getTermsAndConditions():void
 
 
 
+LegalInformationService constructor.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_legalinformationrepositorycontract[`LegalInformationRepositoryContract`]
+a|`$legalInformationRepo`
+|
+
+| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
+a|`$app`
+|
+|===
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettermsandconditions]
 ----
 
-public getCancellationRights():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getPrivacyPolicy():void
+public getTermsAndConditions():xref:stable7@interface::Frontend.adoc#frontend_models_legalinformation[LegalInformation]
 
 ----
 
@@ -91,29 +73,13 @@ public getPrivacyPolicy():void
 
 
 
+Get the LegalInformation model for the Terms and Conditions
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcancellationrights]
 ----
 
-public getLegalDisclosure():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getWithdrawalForm():void
+public getCancellationRights():xref:stable7@interface::Frontend.adoc#frontend_models_legalinformation[LegalInformation]
 
 ----
 
@@ -121,7 +87,47 @@ public getWithdrawalForm():void
 
 
 
+Get the LegalInformation model for the Cancellation Rights
+
+[source%nowrap, php, subs=+macros]
+[#getprivacypolicy]
+----
+
+public getPrivacyPolicy():xref:stable7@interface::Frontend.adoc#frontend_models_legalinformation[LegalInformation]
+
+----
 
 
 
+
+
+Get the LegalInformation model for the Privacy Policy
+
+[source%nowrap, php, subs=+macros]
+[#getlegaldisclosure]
+----
+
+public getLegalDisclosure():xref:stable7@interface::Frontend.adoc#frontend_models_legalinformation[LegalInformation]
+
+----
+
+
+
+
+
+Get the LegalInformation model for the Legal Disclosure
+
+[source%nowrap, php, subs=+macros]
+[#getwithdrawalform]
+----
+
+public getWithdrawalForm():xref:stable7@interface::Frontend.adoc#frontend_models_legalinformation[LegalInformation]
+
+----
+
+
+
+
+
+Get the LegalInformation model for the Withdrawal Form
 

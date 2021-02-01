@@ -21,22 +21,21 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/array[array^]
-    |filter
-    |
+|link:http://php.net/array[`array`^]
+a|`$filter`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#build]
 ----
 
-public build():array
+public build():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -44,17 +43,16 @@ public build():array
 
 Return the generated filters to pass to ItemDataLayerRepository::search
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasproperty]
 ----
 
-public hasProperty($propertyId):IO\Builder\Item\ItemFilterBuilder
+public hasProperty($propertyId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items by propertyId
@@ -62,23 +60,22 @@ Filter items by propertyId
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$propertyId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasamazontypeproductgenre]
 ----
 
-public hasAmazonTypeProductGenre($productGenre):IO\Builder\Item\ItemFilterBuilder
+public hasAmazonTypeProductGenre($productGenre):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items by amazon product genre
@@ -86,23 +83,22 @@ Filter items by amazon product genre
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$productGenre`
 |The amazon genre
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasattribute]
 ----
 
-public hasAttribute($attributeIDs):IO\Builder\Item\ItemFilterBuilder
+public hasAttribute($attributeIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Deny items not having defined attributes
@@ -110,23 +106,22 @@ Deny items not having defined attributes
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$attributeIDs`
 |allowed attribute IDs
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#nothasattribute]
 ----
 
-public notHasAttribute($attributeIDs):IO\Builder\Item\ItemFilterBuilder
+public notHasAttribute($attributeIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Deny items having one of the defined attributes
@@ -134,23 +129,22 @@ Deny items having one of the defined attributes
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$attributeIDs`
 |The attribute IDs to Deny
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasagerestriction]
 ----
 
-public hasAgeRestriction($):IO\Builder\Item\ItemFilterBuilder
+public hasAgeRestriction($):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items by age restriction
@@ -158,23 +152,22 @@ Filter items by age restriction
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$`
 |List of allowed age restrictions
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasamazonproducttype]
 ----
 
-public hasAmazonProductType($productTypes = []):IO\Builder\Item\ItemFilterBuilder
+public hasAmazonProductType($productTypes = []):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items by amazon product type. Do not pass any type to filter
@@ -183,68 +176,64 @@ items having any amazon product type.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$productTypes`
 |The amazon product types to filter
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#nothasamazonproducttype]
 ----
 
-public notHasAmazonProductType():IO\Builder\Item\ItemFilterBuilder
+public notHasAmazonProductType():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Deny items having any amazon product type
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasbarcode]
 ----
 
-public hasBarcode():IO\Builder\Item\ItemFilterBuilder
+public hasBarcode():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items having a barcode
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#nothasbarcode]
 ----
 
-public notHasBarcode():IO\Builder\Item\ItemFilterBuilder
+public notHasBarcode():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items having no barcode
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hascrossitemid]
 ----
 
-public hasCrossItemId($itemIDs, $dynamic, $relationship):IO\Builder\Item\ItemFilterBuilder
+public hasCrossItemId($itemIDs, $dynamic, $relationship):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items by cross selling items
@@ -252,32 +241,31 @@ Filter items by cross selling items
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$itemIDs`
 |The linked item IDs
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$dynamic`
 |Filter dynamic entries -> true|false
 or all entries -> null
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$relationship`
 |The relationship between the linked items
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasid]
 ----
 
-public hasId($itemIDs):IO\Builder\Item\ItemFilterBuilder
+public hasId($itemIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter item by IDs
@@ -285,53 +273,50 @@ Filter item by IDs
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$itemIDs`
 |The item IDs to filter
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasimage]
 ----
 
-public hasImage():IO\Builder\Item\ItemFilterBuilder
+public hasImage():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items having an image
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#nothasimage]
 ----
 
-public notHasImage():IO\Builder\Item\ItemFilterBuilder
+public notHasImage():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items not having any image
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasmarkinone]
 ----
 
-public hasMarkinOne($markingOneIDs):IO\Builder\Item\ItemFilterBuilder
+public hasMarkinOne($markingOneIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items by flag 1
@@ -339,23 +324,22 @@ Filter items by flag 1
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$markingOneIDs`
 |IDs of the markings to filter
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasmargintwo]
 ----
 
-public hasMarginTwo($markingTwoIDs):IO\Builder\Item\ItemFilterBuilder
+public hasMarginTwo($markingTwoIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items by flag 2
@@ -363,23 +347,22 @@ Filter items by flag 2
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$markingTwoIDs`
 |IDs of the markings to filter
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasproducer]
 ----
 
-public hasProducer($producerIDs = []):IO\Builder\Item\ItemFilterBuilder
+public hasProducer($producerIDs = []):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items by manufacturers. Do not pass the manufacturer ID to filter items
@@ -388,143 +371,134 @@ not having a manufacturer.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$producerIDs`
 |The producers to filter
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#nothasproducer]
 ----
 
-public notHasProducer():IO\Builder\Item\ItemFilterBuilder
+public notHasProducer():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items not having a manufacturer
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isbundle]
 ----
 
-public isBundle():IO\Builder\Item\ItemFilterBuilder
+public isBundle():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter bundle items having components
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#notisbundle]
 ----
 
-public notIsBundle():IO\Builder\Item\ItemFilterBuilder
+public notIsBundle():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Deny bundle items
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isbundleitem]
 ----
 
-public isBundleItem():IO\Builder\Item\ItemFilterBuilder
+public isBundleItem():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter bundle components
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#iscolli]
 ----
 
-public isColli():IO\Builder\Item\ItemFilterBuilder
+public isColli():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items with type &#039;ColliItem&#039;
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isproductionitem]
 ----
 
-public isProductionItem():IO\Builder\Item\ItemFilterBuilder
+public isProductionItem():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items with type &#039;ProductionItem&#039;
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isspecialorderitem]
 ----
 
-public isSpecialOrderItem():IO\Builder\Item\ItemFilterBuilder
+public isSpecialOrderItem():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items with type &#039;DeliveryItem&#039;
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isstockeditem]
 ----
 
-public isStockedItem():IO\Builder\Item\ItemFilterBuilder
+public isStockedItem():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items with type &#039;StockedItem&#039;
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#istype]
 ----
 
-public isType($typeIDs):IO\Builder\Item\ItemFilterBuilder
+public isType($typeIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items by type
@@ -532,23 +506,22 @@ Filter items by type
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$typeIDs`
 |the type IDs
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isstorespecial]
 ----
 
-public isStoreSpecial($shopActions):IO\Builder\Item\ItemFilterBuilder
+public isStoreSpecial($shopActions):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items by store special
@@ -556,35 +529,33 @@ Filter items by store special
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$shopActions`
 |IDs of allowed shop actions
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#maybeshippedwithamazonfba]
 ----
 
-public mayBeShippedWithAmazonFBA():IO\Builder\Item\ItemFilterBuilder
+public mayBeShippedWithAmazonFBA():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items which can be shipped via Amazon FBA
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#notmaybeshippedwithamazonfba]
 ----
 
-public notMayBeShippedWithAmazonFBA():void
+public notMayBeShippedWithAmazonFBA()
 
 ----
-
-
 
 
 
@@ -592,17 +563,16 @@ public notMayBeShippedWithAmazonFBA():void
 
 Filter items which cannot be shipped via Amazon FBA
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#wasupdatedbetween]
 ----
 
-public wasUpdatedBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+public wasUpdatedBetween($from, $to):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items by last changes on item data
@@ -610,27 +580,26 @@ Filter items by last changes on item data
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$from`
 |The start datetime of the period in unix format
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$to`
 |The end datetime of the period in unix format
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#descriptioncontains]
 ----
 
-public descriptionContains($search, $browse):IO\Builder\Item\ItemFilterBuilder
+public descriptionContains($search, $browse):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter itmes containing search string in description
@@ -638,27 +607,26 @@ Filter itmes containing search string in description
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$search`
 |string to search in item description
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$browse`
 |use extended search index
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasdescription]
 ----
 
-public hasDescription($lang):IO\Builder\Item\ItemFilterBuilder
+public hasDescription($lang):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items having a description in a specific language
@@ -672,17 +640,16 @@ a|`$lang`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#nothasdescription]
 ----
 
-public notHasDescription($lang):IO\Builder\Item\ItemFilterBuilder
+public notHasDescription($lang):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items not having a description in a specific language
@@ -696,17 +663,16 @@ a|`$lang`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#haslisting]
 ----
 
-public hasListing($auctionType):IO\Builder\Item\ItemFilterBuilder
+public hasListing($auctionType):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items linked to a specific listing
@@ -714,23 +680,22 @@ Filter items linked to a specific listing
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$auctionType`
 |Type of listing
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#nothaslisting]
 ----
 
-public notHasListing($auctionType):IO\Builder\Item\ItemFilterBuilder
+public notHasListing($auctionType):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items not linked to a listing
@@ -738,53 +703,50 @@ Filter items not linked to a listing
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$auctionType`
 |Tyoe of listing
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhasattributes]
 ----
 
-public variationHasAttributes():IO\Builder\Item\ItemFilterBuilder
+public variationHasAttributes():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations with attributes
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationnothasattributes]
 ----
 
-public variationNotHasAttributes():IO\Builder\Item\ItemFilterBuilder
+public variationNotHasAttributes():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations not having an attribute
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhasattributevalue]
 ----
 
-public variationHasAttributeValue($attributes):IO\Builder\Item\ItemFilterBuilder
+public variationHasAttributeValue($attributes):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations linked to specific attribute values
@@ -792,23 +754,22 @@ Filter variations linked to specific attribute values
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$attributes`
 |A Map of attributes: attributeID => attributeValue
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhasattributevaluesets]
 ----
 
-public variationhasAttributeValueSets($attributeValueSetIDs):IO\Builder\Item\ItemFilterBuilder
+public variationhasAttributeValueSets($attributeValueSetIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by attribute value sets
@@ -816,23 +777,22 @@ Filter variations by attribute value sets
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$attributeValueSetIDs`
 |IDs of attribute value sets
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhasavailability]
 ----
 
-public variationHasAvailability($availabilityIDs):IO\Builder\Item\ItemFilterBuilder
+public variationHasAvailability($availabilityIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by availability
@@ -840,20 +800,19 @@ Filter variations by availability
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$availabilityIDs`
 |The availability IDs
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhasbarcode]
 ----
 
-public variationHasBarcode($barcode):void
+public variationHasBarcode($barcode)
 
 ----
-
-
 
 
 
@@ -864,38 +823,36 @@ public variationHasBarcode($barcode):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$barcode`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhascustomnumber]
 ----
 
-public variationHasCustomNumber():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public variationHasExternalId($externalId):IO\Builder\Item\ItemFilterBuilder
+public variationHasCustomNumber()
 
 ----
 
 
 
 
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#variationhasexternalid]
+----
+
+public variationHasExternalId($externalId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
+
+----
+
+
+
 
 
 Filter variations by external variation ID.
@@ -903,23 +860,22 @@ Filter variations by external variation ID.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$externalId`
 |The external ID to filter.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhasid]
 ----
 
-public variationHasId($variationIDs):IO\Builder\Item\ItemFilterBuilder
+public variationHasId($variationIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by variation ID
@@ -927,23 +883,22 @@ Filter variations by variation ID
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationIDs`
 |The variation IDs
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhasmainwarehouse]
 ----
 
-public variationHasMainWarehouse($warehouseIDs):IO\Builder\Item\ItemFilterBuilder
+public variationHasMainWarehouse($warehouseIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by default warehouse ID
@@ -951,23 +906,22 @@ Filter variations by default warehouse ID
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$warehouseIDs`
 |The warehouse IDs
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhassku]
 ----
 
-public variationHasSKU($itemId, $priceId, $attributeValueSetId):IO\Builder\Item\ItemFilterBuilder
+public variationHasSKU($itemId, $priceId, $attributeValueSetId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by SKU
@@ -975,31 +929,30 @@ Filter variations by SKU
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$itemId`
 |The Item ID of the SKU
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$priceId`
 |The price ID of the SKU
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$attributeValueSetId`
 |The attribute value set id of the SKU
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhasstocklimitation]
 ----
 
-public variationHasStockLimitation($stockLimitation):IO\Builder\Item\ItemFilterBuilder
+public variationHasStockLimitation($stockLimitation):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by stock limitations
@@ -1007,7 +960,7 @@ Filter variations by stock limitations
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$stockLimitation`
 |Allowed stock limitations:
 0 -> No stock limitation
@@ -1016,17 +969,16 @@ a|`$stockLimitation`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasunitcombinationid]
 ----
 
-public hasUnitCombinationId($unitCombinationId):IO\Builder\Item\ItemFilterBuilder
+public hasUnitCombinationId($unitCombinationId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by unit combination
@@ -1034,98 +986,92 @@ Filter variations by unit combination
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$unitCombinationId`
 |The unit combination id
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationisactive]
 ----
 
-public variationIsActive():IO\Builder\Item\ItemFilterBuilder
+public variationIsActive():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter active variations
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationnotisactive]
 ----
 
-public variationNotIsActive():IO\Builder\Item\ItemFilterBuilder
+public variationNotIsActive():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter inactive variations
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationisprimary]
 ----
 
-public variationIsPrimary():IO\Builder\Item\ItemFilterBuilder
+public variationIsPrimary():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Exclude child variations
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationischild]
 ----
 
-public variationIsChild():IO\Builder\Item\ItemFilterBuilder
+public variationIsChild():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Exclude the primary variation
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#onlybasicvariations]
 ----
 
-public onlyBasicVariations():IO\Builder\Item\ItemFilterBuilder
+public onlyBasicVariations():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 If an item has variations with attributes, exclude variations without attributes.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationwasavailableuntilbetween]
 ----
 
-public variationWasAvailableUntilBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+public variationWasAvailableUntilBetween($from, $to):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variation by date &#039;available until&#039;
@@ -1133,27 +1079,26 @@ Filter variation by date &#039;available until&#039;
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$from`
 |The start datetime of the period in unix format
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$to`
 |The end datetime of the period in unix format
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationwascreatedbetween]
 ----
 
-public variationWasCreatedBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+public variationWasCreatedBetween($from, $to):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variation by creation date
@@ -1161,27 +1106,26 @@ Filter variation by creation date
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$from`
 |The start datetime of the period in unix format
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$to`
 |The end datetime of the period in unix format
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationwasupdatedbetween]
 ----
 
-public variationWasUpdatedBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+public variationWasUpdatedBetween($from, $to):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variation by date of last changes on variation information, e.g. availability
@@ -1189,27 +1133,26 @@ Filter variation by date of last changes on variation information, e.g. availabi
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$from`
 |The start datetime of the period in unix format
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$to`
 |The end datetime of the period in unix format
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationwasrelatedupdatedbetween]
 ----
 
-public variationWasRelatedUpdatedBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+public variationWasRelatedUpdatedBetween($from, $to):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variation by date of last changes on related data, e.g. category, bundle etc.
@@ -1217,27 +1160,26 @@ Filter variation by date of last changes on related data, e.g. category, bundle 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$from`
 |The start datetime of the period in unix format
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$to`
 |The end datetime of the period in unix format
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationwasreleasedbetween]
 ----
 
-public variationWasReleasedBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+public variationWasReleasedBetween($from, $to):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by release date
@@ -1245,27 +1187,26 @@ Filter variations by release date
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$from`
 |The start datetime of the period in unix format
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$to`
 |The end datetime of the period in unix format
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhasweight]
 ----
 
-public variationHasWeight($weightG):IO\Builder\Item\ItemFilterBuilder
+public variationHasWeight($weightG):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by gross weight
@@ -1273,23 +1214,22 @@ Filter variations by gross weight
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$weightG`
 |Weight in gramm
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhasweighnet]
 ----
 
-public variationHasWeighNet($weightG):IO\Builder\Item\ItemFilterBuilder
+public variationHasWeighNet($weightG):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by net weight
@@ -1297,23 +1237,22 @@ Filter variations by net weight
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$weightG`
 |Weight in gramm
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhascategory]
 ----
 
-public variationHasCategory($categoryID):IO\Builder\Item\ItemFilterBuilder
+public variationHasCategory($categoryID):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations linked to a specific category. Do not pass any category
@@ -1322,38 +1261,36 @@ to filter variations linked to any categories.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$categoryID`
 |The category ID
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationnothascategory]
 ----
 
-public variationNotHasCategory():IO\Builder\Item\ItemFilterBuilder
+public variationNotHasCategory():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations not linked to a category
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhascategorybranch]
 ----
 
-public variationHasCategoryBranch($lvl1, $, $, $, $, $):IO\Builder\Item\ItemFilterBuilder
+public variationHasCategoryBranch($lvl1, $, $, $, $, $):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations linked to a specific category level
@@ -1361,43 +1298,42 @@ Filter variations linked to a specific category level
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$lvl1`
 |Category ID at first layer
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$`
 |?lvl2 Category ID at second layer
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$`
 |?lvl3 Category ID at third layer
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$`
 |?lvl4 Category ID at 4th layer
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$`
 |?lvl5 Category ID at 5th layer
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$`
 |?lvl6 Category ID at 6th layer
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationmarkethasadditionalinformation]
 ----
 
-public variationMarketHasAdditionalInformation($additionalInformation, $marketplaceId):IO\Builder\Item\ItemFilterBuilder
+public variationMarketHasAdditionalInformation($additionalInformation, $marketplaceId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by additional content for specific markets
@@ -1405,27 +1341,26 @@ Filter variations by additional content for specific markets
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$additionalInformation`
 |
 
-|link:http://php.net/float[float^]
+|link:http://php.net/float[`float`^]
 a|`$marketplaceId`
 |Referred marketplace id
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationmarketwasfirstexportedbetween]
 ----
 
-public variationMarketWasFirstExportedBetween($from, $to, $marketplaceId):IO\Builder\Item\ItemFilterBuilder
+public variationMarketWasFirstExportedBetween($from, $to, $marketplaceId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by date of first export to specific markets
@@ -1433,31 +1368,30 @@ Filter variations by date of first export to specific markets
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$from`
 |The start datetime of the period in unix format
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$to`
 |The end datetime of the period in unix format
 
-|link:http://php.net/float[float^]
+|link:http://php.net/float[`float`^]
 a|`$marketplaceId`
 |Referred marketplace id
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationmarketwaslastexportedbetween]
 ----
 
-public variationMarketWasLastExportedBetween($from, $to, $marketplaceId):IO\Builder\Item\ItemFilterBuilder
+public variationMarketWasLastExportedBetween($from, $to, $marketplaceId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by date of last export to specific markets
@@ -1465,31 +1399,30 @@ Filter variations by date of last export to specific markets
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$from`
 |The start datetime of the period in unix format
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$to`
 |The end datetime of the period in unix format
 
-|link:http://php.net/float[float^]
+|link:http://php.net/float[`float`^]
 a|`$marketplaceId`
 |Referred marketplace idv
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhasshippingprofile]
 ----
 
-public variationHasShippingProfile($shippingProfileIDs):IO\Builder\Item\ItemFilterBuilder
+public variationHasShippingProfile($shippingProfileIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by specific shipping profiles
@@ -1497,23 +1430,22 @@ Filter variations by specific shipping profiles
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$shippingProfileIDs`
 |List of shipping profile IDs to filter.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationnothasshippingprofile]
 ----
 
-public variationNotHasShippingProfile($shippingProfileIDs):IO\Builder\Item\ItemFilterBuilder
+public variationNotHasShippingProfile($shippingProfileIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations without specific shipping profiles
@@ -1521,23 +1453,22 @@ Filter variations without specific shipping profiles
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$shippingProfileIDs`
 |List of shipping profile IDs to deny.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationstockhaswarehouse]
 ----
 
-public variationStockHasWarehouse($warehouseIDs):IO\Builder\Item\ItemFilterBuilder
+public variationStockHasWarehouse($warehouseIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by warehouse
@@ -1545,38 +1476,36 @@ Filter variations by warehouse
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$warehouseIDs`
 |"primary", "virtual" or the warehouse id
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationstockissalable]
 ----
 
-public variationStockIsSalable():IO\Builder\Item\ItemFilterBuilder
+public variationStockIsSalable():xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations which are for sale because of stock
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationstockhasnet]
 ----
 
-public variationStockHasNet($warehouseId, $stockConditionOperand, $stockConditionOperator):IO\Builder\Item\ItemFilterBuilder
+public variationStockHasNet($warehouseId, $stockConditionOperand, $stockConditionOperator):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by net stock
@@ -1584,31 +1513,30 @@ Filter variations by net stock
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$warehouseId`
 |"primary, "virtual" or the warehouse id
 
-|link:http://php.net/float[float^]
+|link:http://php.net/float[`float`^]
 a|`$stockConditionOperand`
 |stock value to filters
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$stockConditionOperator`
 |the operator to compare stock value
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationstockhasnetnegative]
 ----
 
-public variationStockHasNetNegative($warehouseId):IO\Builder\Item\ItemFilterBuilder
+public variationStockHasNetNegative($warehouseId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations with negative net stock
@@ -1616,23 +1544,22 @@ Filter variations with negative net stock
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$warehouseId`
 |"primary", "virtual" or warehouse id
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationstockhasnetpositive]
 ----
 
-public variationStockHasNetPositive($warehouseId):IO\Builder\Item\ItemFilterBuilder
+public variationStockHasNetPositive($warehouseId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations with positive net stock
@@ -1640,23 +1567,22 @@ Filter variations with positive net stock
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$warehouseId`
 |"primary", "virtual" or warehouse id
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationstockhasnetequalzero]
 ----
 
-public variationStockHasNetEqualZero($warehouseId):IO\Builder\Item\ItemFilterBuilder
+public variationStockHasNetEqualZero($warehouseId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations with net stock value of 0
@@ -1664,23 +1590,22 @@ Filter variations with net stock value of 0
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$warehouseId`
 |"primary", "virtual" or warehouse id
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationstockhasphysical]
 ----
 
-public variationStockHasPhysical($warehouseId, $stockConditionOperand, $stockConditionOperator):IO\Builder\Item\ItemFilterBuilder
+public variationStockHasPhysical($warehouseId, $stockConditionOperand, $stockConditionOperator):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations with phyiscal stock
@@ -1688,31 +1613,30 @@ Filter variations with phyiscal stock
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$warehouseId`
 |"primary", "virtual" or warehouse id
 
-|link:http://php.net/float[float^]
+|link:http://php.net/float[`float`^]
 a|`$stockConditionOperand`
 |stock value to filters
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$stockConditionOperator`
 |the operator to compare stock value
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationstockhasphysicalnegative]
 ----
 
-public variationStockHasPhysicalNegative($warehouseId):IO\Builder\Item\ItemFilterBuilder
+public variationStockHasPhysicalNegative($warehouseId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations with negative physical stock
@@ -1720,23 +1644,22 @@ Filter variations with negative physical stock
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$warehouseId`
 |"primary", "virtual" or warehouse id
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationstockhasphysicalpositive]
 ----
 
-public variationStockHasPhysicalPositive($warehouseId):IO\Builder\Item\ItemFilterBuilder
+public variationStockHasPhysicalPositive($warehouseId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations with positive physical stock
@@ -1744,23 +1667,22 @@ Filter variations with positive physical stock
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$warehouseId`
 |"primary", "virtual" or warehouse id
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationstockhasphysicalequalzero]
 ----
 
-public variationStockHasPhysicalEqualZero($warehouseId):IO\Builder\Item\ItemFilterBuilder
+public variationStockHasPhysicalEqualZero($warehouseId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations with physical stock value of 0
@@ -1768,23 +1690,22 @@ Filter variations with physical stock value of 0
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$warehouseId`
 |"primary", "virtual" or warehouse id
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationstockhasreorderlevel]
 ----
 
-public variationStockHasReorderLevel($warehouseId, $stockConditionOperand, $stockConditionOperator):IO\Builder\Item\ItemFilterBuilder
+public variationStockHasReorderLevel($warehouseId, $stockConditionOperand, $stockConditionOperator):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by reorder level
@@ -1792,31 +1713,30 @@ Filter variations by reorder level
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$warehouseId`
 |"primary", "virtual" or warehouse id
 
-|link:http://php.net/float[float^]
+|link:http://php.net/float[`float`^]
 a|`$stockConditionOperand`
 |stock value to filters
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$stockConditionOperator`
 |the operator to compare stock value
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationstockisreorderlevelreached]
 ----
 
-public variationStockIsReorderLevelReached($warehouseId):IO\Builder\Item\ItemFilterBuilder
+public variationStockIsReorderLevelReached($warehouseId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations fallen below reorder level
@@ -1824,23 +1744,22 @@ Filter variations fallen below reorder level
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$warehouseId`
 |"primary", "virtual" or warehouse id
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationstockwasupdatedbetween]
 ----
 
-public variationStockWasUpdatedBetween($from, $to):IO\Builder\Item\ItemFilterBuilder
+public variationStockWasUpdatedBetween($from, $to):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by date of last changes to stock
@@ -1848,27 +1767,26 @@ Filter variations by date of last changes to stock
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$from`
 |The start datetime of the period in unix format
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$to`
 |The end datetime of the period in unix format
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhassupplier]
 ----
 
-public variationHasSupplier($supplierIDs):IO\Builder\Item\ItemFilterBuilder
+public variationHasSupplier($supplierIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by specific supplier
@@ -1876,23 +1794,22 @@ Filter variations by specific supplier
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$supplierIDs`
 |Supplier IDs to filter.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationnothassupplier]
 ----
 
-public variationNotHasSupplier($supplierIDs):IO\Builder\Item\ItemFilterBuilder
+public variationNotHasSupplier($supplierIDs):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations not having a specific supplier
@@ -1900,23 +1817,22 @@ Filter variations not having a specific supplier
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$supplierIDs`
 |Supplier IDs to deny.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhassuppliernumber]
 ----
 
-public variationHasSupplierNumber($supplierNumber):IO\Builder\Item\ItemFilterBuilder
+public variationHasSupplierNumber($supplierNumber):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter variations by supplier number
@@ -1924,23 +1840,22 @@ Filter variations by supplier number
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$supplierNumber`
 |the supplier number
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationisvisibleformarketplace]
 ----
 
-public variationIsVisibleForMarketplace($mandatoryAllMarketplace, $mandatoryOneMarketplace):IO\Builder\Item\ItemFilterBuilder
+public variationIsVisibleForMarketplace($mandatoryAllMarketplace, $mandatoryOneMarketplace):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items which are visible for specific markets
@@ -1948,27 +1863,26 @@ Filter items which are visible for specific markets
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$mandatoryAllMarketplace`
 |All listed marketplaces have to be linked with filtered item.
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$mandatoryOneMarketplace`
 |At least one marketplace have to be linked with filtered item.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationnotisvisibleformarketplace]
 ----
 
-public variationNotIsVisibleForMarketplace($mandatoryAllMarketplace, $mandatoryOneMarketplace):IO\Builder\Item\ItemFilterBuilder
+public variationNotIsVisibleForMarketplace($mandatoryAllMarketplace, $mandatoryOneMarketplace):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items which are not visible for specific markets
@@ -1976,27 +1890,26 @@ Filter items which are not visible for specific markets
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$mandatoryAllMarketplace`
 |All listed marketplaces have to be linked with filtered item.
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$mandatoryOneMarketplace`
 |At least one marketplace have to be linked with filtered item.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationisvisibleforplentyid]
 ----
 
-public variationIsVisibleForPlentyId($mandatoryAllPlentyId, $mandatoryOnePlentyId):IO\Builder\Item\ItemFilterBuilder
+public variationIsVisibleForPlentyId($mandatoryAllPlentyId, $mandatoryOnePlentyId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items which are visible for specific client (store)
@@ -2004,27 +1917,26 @@ Filter items which are visible for specific client (store)
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$mandatoryAllPlentyId`
 |All listed shops have to be linked with filtered item.
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$mandatoryOnePlentyId`
 |At least one shop has to be linked with filtered item.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationnotisvisibleforplentyid]
 ----
 
-public variationNotIsVisibleForPlentyId($mandatoryAllPlentyId, $mandatoryOnePlentyId):IO\Builder\Item\ItemFilterBuilder
+public variationNotIsVisibleForPlentyId($mandatoryAllPlentyId, $mandatoryOnePlentyId):xref:IO/Builder/Item/ItemFilterBuilder.adoc#[ItemFilterBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemFilterBuilder.adoc#[`ItemFilterBuilder`]
 
 
 Filter items which are not visible for specific client (store)
@@ -2032,24 +1944,23 @@ Filter items which are not visible for specific client (store)
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$mandatoryAllPlentyId`
 |All listed shops have to be linked with filtered item.
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$mandatoryOnePlentyId`
 |At least one shop has to be linked with filtered item.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#variationhasretailprice]
 ----
 
-public variationHasRetailPrice():void
+public variationHasRetailPrice()
 
 ----
-
-
 
 
 

@@ -20,25 +20,11 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getplentyid]
 ----
 
-public static getPlentyId():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static getWebstoreId():void
+public static getPlentyId()
 
 ----
 
@@ -48,27 +34,11 @@ public static getWebstoreId():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getwebstoreid]
 ----
 
-public static getLang():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static getDefaultLang():void
+public static getWebstoreId()
 
 ----
 
@@ -78,27 +48,11 @@ public static getDefaultLang():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlang]
 ----
 
-public static getLanguageList():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static isAdminPreview():void
+public static getLang()
 
 ----
 
@@ -108,27 +62,11 @@ public static isAdminPreview():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getdefaultlang]
 ----
 
-public static isShopBuilder():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static isContactLoggedIn():void
+public static getDefaultLang()
 
 ----
 
@@ -138,27 +76,11 @@ public static isContactLoggedIn():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlanguagelist]
 ----
 
-public static getTemplateConfig():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static translate():void
+public static getLanguageList()
 
 ----
 
@@ -168,16 +90,111 @@ public static translate():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isadminpreview]
 ----
 
-public static makeRelativeUrl():void
+public static isAdminPreview()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#isshopbuilder]
+----
+
+public static isShopBuilder()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#iscontactloggedin]
+----
+
+public static isContactLoggedIn()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#gettemplateconfig]
+----
+
+public static getTemplateConfig()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#translate]
+----
+
+public static translate()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#makerelativeurl]
+----
+
+public static makeRelativeUrl()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#putcachekey]
+----
+
+public static putCacheKey()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getcachekey]
+----
+
+public static getCacheKey()
+
+----
 
 
 

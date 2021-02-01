@@ -23,36 +23,21 @@ xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 |===
 |Type |Name |Description
 
-| 
-    |partial
-    |
-| 
-    |map
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$partial`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$map`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#construct]
 ----
 
-public construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public set():void
+public construct()
 
 ----
 
@@ -62,16 +47,27 @@ public set():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#set]
 ----
 
-public getTemplate($key):void
+public set()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#gettemplate]
+----
+
+public getTemplate($key)
+
+----
 
 
 
@@ -82,20 +78,19 @@ public getTemplate($key):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfunctions]
 ----
 
-public getFunctions():array
+public getFunctions():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -103,14 +98,13 @@ public getFunctions():array
 
 Return the available methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getpartial]
 ----
 
-public getPartial($key):void
+public getPartial($key)
 
 ----
-
-
 
 
 
@@ -121,7 +115,7 @@ public getPartial($key):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

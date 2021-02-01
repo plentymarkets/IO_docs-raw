@@ -5,7 +5,8 @@
 [[io__itemlistservice]]
 = ItemListService
 
-
+This service class contains function related to item listings. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,47 +22,48 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |TYPE_CATEGORY
-    |'category'
-    |
+a|`TYPE_CATEGORY`
+|'category'
+|
 |link:http://php.net/string[string^]
-    |TYPE_LAST_SEEN
-    |'last_seen'
-    |
+a|`TYPE_LAST_SEEN`
+|'last_seen'
+|
 |link:http://php.net/string[string^]
-    |TYPE_TAG
-    |'tag_list'
-    |
+a|`TYPE_TAG`
+|'tag_list'
+|
 |link:http://php.net/string[string^]
-    |TYPE_RANDOM
-    |'random'
-    |
+a|`TYPE_RANDOM`
+|'random'
+|
 |link:http://php.net/string[string^]
-    |TYPE_MANUFACTURER
-    |'manufacturer'
-    |
+a|`TYPE_MANUFACTURER`
+|'manufacturer'
+|
 |link:http://php.net/string[string^]
-    |TYPE_CROSS_SELLER
-    |'cross_selling'
-    |
+a|`TYPE_CROSS_SELLER`
+|'cross_selling'
+|
 |link:http://php.net/string[string^]
-    |TYPE_WISH_LIST
-    |'wish_list'
-    |
+a|`TYPE_WISH_LIST`
+|'wish_list'
+|
 |link:http://php.net/string[string^]
-    |TYPE_SEARCH_SUGGESTIONS
-    |'search_suggestions'
-    |
+a|`TYPE_SEARCH_SUGGESTIONS`
+|'search_suggestions'
+|
 |===
 
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitemlist]
 ----
 
-public getItemList():void
+public getItemList($type, $id = null, $sorting = null, $maxItems, $crossSellingRelationType = null, $withCategories = false):link:http://php.net/array[array^]
 
 ----
 
@@ -69,7 +71,34 @@ public getItemList():void
 
 
 
+Gets a list of items based on parameters
 
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$type`
+|Type of item list
 
+|link:http://php.net/int[`int`^]
+a|`$id`
+|Optional: Contains an identifier depending on the type
+
+|link:http://php.net/string[`string`^]
+a|`$sorting`
+|Optional: Type of sorting
+
+|link:http://php.net/int[`int`^]
+a|`$maxItems`
+|Optional: Maximum number of items (Default: 0)
+
+|link:http://php.net/string[`string`^]
+a|`$crossSellingRelationType`
+|Optional: Type of cross selling relation
+
+|link:http://php.net/bool[`bool`^]
+a|`$withCategories`
+|Optional: If true, load category data (Default: false)
+|===
 
 

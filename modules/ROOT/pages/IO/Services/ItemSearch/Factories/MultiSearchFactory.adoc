@@ -13,6 +13,7 @@ Factory to build an elastic search multisearch request by collecting multiple se
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_multisearchfactory[`MultiSearchFactory`]
 ====
 
 
@@ -28,24 +29,23 @@ since 5.0.0 will be deleted in 6.0.0
 |===
 |Type |Name |Description
 
-|link:http://php.net/array[array^]
-    |searches
-    |
-|link:http://php.net/array[array^]
-    |extensions
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|link:http://php.net/array[`array`^]
+a|`$searches`
+||link:http://php.net/array[`array`^]
+a|`$extensions`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsearches]
 ----
 
-public getSearches():array
+public getSearches():link:http://php.net/array[array^]
 
 ----
 
@@ -55,19 +55,19 @@ public getSearches():array
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_multisearchfactory_getsearches[`MultiSearchFactory::getSearches()`]
 ====
-
-
 
 
 
 
 Get all registered searches
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getextensions]
 ----
 
-public getExtensions():array
+public getExtensions():link:http://php.net/array[array^]
 
 ----
 
@@ -77,19 +77,19 @@ public getExtensions():array
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_multisearchfactory_getextensions[`MultiSearchFactory::getExtensions()`]
 ====
-
-
 
 
 
 
 Get all registered extensions
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#addsearch]
 ----
 
-public addSearch($resultName, $searchBuilder):IO\Services\ItemSearch\Factories
+public addSearch($resultName, $searchBuilder):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -99,11 +99,10 @@ public addSearch($resultName, $searchBuilder):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_multisearchfactory_addsearch[`MultiSearchFactory::addSearch()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Add a search factory instance to be included in current mutlisearch request.
@@ -111,7 +110,7 @@ Add a search factory instance to be included in current mutlisearch request.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$resultName`
 |An unique name for the search. Results of this search will be accessible by this key.
 
@@ -121,10 +120,11 @@ a|`$searchBuilder`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getresults]
 ----
 
-public getResults():array
+public getResults():link:http://php.net/array[array^]
 
 ----
 
@@ -134,9 +134,8 @@ public getResults():array
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_multisearchfactory_getresults[`MultiSearchFactory::getResults()`]
 ====
-
-
 
 
 

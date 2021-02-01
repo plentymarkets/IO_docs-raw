@@ -22,14 +22,13 @@ xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
+public __construct()
 
 ----
-
-
 
 
 
@@ -37,25 +36,11 @@ public __construct():void
 
 ItemImagesFilter constructor.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfilters]
 ----
 
-public getFilters():array
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getFirstItemImage():void
+public getFilters():link:http://php.net/array[array^]
 
 ----
 
@@ -65,16 +50,54 @@ public getFirstItemImage():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitemimages]
 ----
 
-public getFirstItemImageUrl():void
+public getItemImages($images, $imageAccessor = &quot;url&quot;):link:http://php.net/array[array^]
 
 ----
 
 
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|xref:IO/Extensions/Filters.adoc#[`Filters`]
+a|`$images`
+|
+
+|link:http://php.net/string[`string`^]
+a|`$imageAccessor`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getfirstitemimage]
+----
+
+public getFirstItemImage()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getfirstitemimageurl]
+----
+
+public getFirstItemImageUrl()
+
+----
 
 
 

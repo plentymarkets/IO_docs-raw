@@ -5,7 +5,8 @@
 [[io__liveshoppingservice]]
 = LiveShoppingService
 
-
+This service class contains functions related to the live shopping functionality. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -17,13 +18,25 @@
 
 
 
+.Properties
+|===
+|Type |Name |Description
+
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$ownStock`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$ownLimitation`
+|
+|===
+
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getliveshoppingdata]
 ----
 
-public getLiveShoppingVariations():void
+public getLiveShoppingData($liveShoppingId, $sorting = null):link:http://php.net/array[array^]
 
 ----
 
@@ -31,7 +44,68 @@ public getLiveShoppingVariations():void
 
 
 
+Get required data for live shopping in the frontend
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$liveShoppingId`
+|A live shopping id
+
+|link:http://php.net/string[`string`^]
+a|`$sorting`
+|Optional: Type of sorting for live shopping variations
+|===
 
 
+[source%nowrap, php, subs=+macros]
+[#getliveshoppingvariations]
+----
+
+public getLiveShoppingVariations($itemId, $sorting):link:http://php.net/array[array^] \| xref:IO/Services/object.adoc#[object]
+
+----
+
+
+
+
+
+Get list of variations for live shopping
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$itemId`
+|An item id
+
+|link:http://php.net/string[`string`^]
+a|`$sorting`
+|Sorting for live shopping variations
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#filterliveshoppingvariations]
+----
+
+public filterLiveShoppingVariations($itemList):link:http://php.net/array[array^]
+
+----
+
+
+
+
+
+Filter list of variations for a specialOffer price
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[`array`^]
+a|`$itemList`
+|
+|===
 
 

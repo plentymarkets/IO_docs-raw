@@ -21,22 +21,21 @@
 |===
 |Type |Name |Description
 
-| 
-    |contentRoutes
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$contentRoutes`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#handle]
 ----
 
-public handle($sitemapPattern):void
+public handle($sitemapPattern)
 
 ----
-
-
 
 
 
@@ -47,7 +46,7 @@ public handle($sitemapPattern):void
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Plugin.adoc#plugin_events_loadsitemappattern[`LoadSitemapPattern`]
+|xref:stable7@interface::Plugin.adoc#plugin_events_loadsitemappattern[`LoadSitemapPattern`]
 a|`$sitemapPattern`
 |
 |===

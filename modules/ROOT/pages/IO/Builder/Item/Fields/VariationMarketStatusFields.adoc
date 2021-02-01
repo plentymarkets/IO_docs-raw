@@ -21,21 +21,21 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |ID
-    |'id'
-    |
+a|`ID`
+|'id'
+|
 |link:http://php.net/string[string^]
-    |ADDITIONAL_INFORMATION
-    |'additionalInformation'
-    |
+a|`ADDITIONAL_INFORMATION`
+|'additionalInformation'
+|
 |link:http://php.net/string[string^]
-    |FIRST_EXPORT_TIMESTAMP
-    |'firstExportTimestamp'
-    |
+a|`FIRST_EXPORT_TIMESTAMP`
+|'firstExportTimestamp'
+|
 |link:http://php.net/string[string^]
-    |LAST_EXPORT_TIMESTAMP
-    |'lastExportTimestamp'
-    |
+a|`LAST_EXPORT_TIMESTAMP`
+|'lastExportTimestamp'
+|
 |===
 
 

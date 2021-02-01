@@ -5,9 +5,9 @@
 [[io__crosssellingitems]]
 = CrossSellingItems
 
-Search preset for cross selling items
-Available options:
-- itemId:    Id of the item to get cross selling items for
+Search preset for cross selling items +
+Available options: +
+- itemId:    Id of the item to get cross selling items for +
 - relation:  The relation to consider when getting cross selling items
 
 [WARNING]
@@ -16,6 +16,7 @@ Available options:
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_searchpresets_crosssellingitems[`CrossSellingItems`]
 ====
 
 
@@ -32,14 +33,13 @@ xref:IO/Services/ItemSearch/SearchPresets/SearchPreset.adoc#[`SearchPreset`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsearchfactory]
 ----
 
-public static getSearchFactory($options):void
+public static getSearchFactory($options)
 
 ----
-
-
 
 
 
@@ -50,7 +50,7 @@ public static getSearchFactory($options):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$options`
 |
 |===

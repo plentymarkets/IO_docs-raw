@@ -5,7 +5,8 @@
 [[io__contactbankservice]]
 = ContactBankService
 
-
+This service class contains methods for manipulating a customers ContactBank model. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,18 +22,19 @@
 |===
 |Type |Name |Description
 
-| 
-    |contactPaymentRepository
-    |
+|xref:stable7@interface::Account.adoc#account_contracts_contactpaymentrepositorycontract[`ContactPaymentRepositoryContract`]
+a|`$contactPaymentRepository`
+|Repository for contacts payment methods
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($contactPaymentRepository):void
+public __construct($contactPaymentRepository)
 
 ----
 
@@ -40,38 +42,22 @@ public __construct($contactPaymentRepository):void
 
 
 
-
-
-
+ContactBankService constructor.
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|xref:stable7@interface::Account.adoc#account_contracts_contactpaymentrepositorycontract[`ContactPaymentRepositoryContract`]
 a|`$contactPaymentRepository`
-|
+|Repository for contacts payment methods
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbanksofcontact]
 ----
 
-public getBanksOfContact():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public createContactBank($data):void
+public getBanksOfContact($contactId, $columns = [], $perPage = 50):         xref:5.0.0@plugin-illuminate::Illuminate/Database/Eloquent/Collection.adoc#[Collection]
 
 ----
 
@@ -79,38 +65,53 @@ public createContactBank($data):void
 
 
 
-
-
-
+Get a list of bank accounts of the contact
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/int[`int`^]
+a|`$contactId`
+|Id of the contact
+
+|link:http://php.net/array[`array`^]
+a|`$columns`
+|Optional: What columns of the model to return (Default: ['*'])
+
+|link:http://php.net/int[`int`^]
+a|`$perPage`
+|Optional: Number of bank accounts per page (Default: 50)
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#createcontactbank]
+----
+
+public createContactBank($data):xref:stable7@interface::Account.adoc#account_models_contactbank[ContactBank]
+
+----
+
+
+
+
+
+Create a new bank account for a contact and return it
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/array[`array`^]
 a|`$data`
-|
+|Data for the ContactBank model
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#updatecontactbank]
 ----
 
-public updateContactBank():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public deleteContactBank($contactBankId):void
+public updateContactBank($data, $contactBankId):xref:stable7@interface::Account.adoc#account_models_contactbank[ContactBank]
 
 ----
 
@@ -118,23 +119,26 @@ public deleteContactBank($contactBankId):void
 
 
 
-
-
-
+Update a ContactBank by id
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/array[`array`^]
+a|`$data`
+|The updated data
+
+|link:http://php.net/int[`int`^]
 a|`$contactBankId`
-|
+|Id of the ContactBank model to update
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#deletecontactbank]
 ----
 
-public findContactBankById($contactBankId):void
+public deleteContactBank($contactBankId):link:http://php.net/bool[bool^]
 
 ----
 
@@ -142,16 +146,37 @@ public findContactBankById($contactBankId):void
 
 
 
-
-
-
+Delete a ContactBank
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/int[`int`^]
 a|`$contactBankId`
-|
+|Id of the ContactBank model to be deleted
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#findcontactbankbyid]
+----
+
+public findContactBankById($contactBankId):xref:stable7@interface::Account.adoc#account_models_contactbank[ContactBank]
+
+----
+
+
+
+
+
+Find a ContactBank model by Id
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$contactBankId`
+|Id of ContactBank to find
 |===
 
 

@@ -22,14 +22,13 @@ xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
+public __construct()
 
 ----
-
-
 
 
 
@@ -37,14 +36,13 @@ public __construct():void
 
 ItemNameFilter constructor.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfilters]
 ----
 
-public getFilters():array
+public getFilters():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -52,14 +50,13 @@ public getFilters():array
 
 Return the available filter methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#specialoffer]
 ----
 
-public specialOffer($defaultPrice, $prices, $priceType, $exact = null):string
+public specialOffer($defaultPrice, $prices, $priceType, $exact = null):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -70,7 +67,7 @@ Build the item name from the configuration
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$defaultPrice`
 |
 
@@ -78,11 +75,11 @@ a|`$defaultPrice`
 a|`$prices`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$priceType`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$exact`
 |
 |===

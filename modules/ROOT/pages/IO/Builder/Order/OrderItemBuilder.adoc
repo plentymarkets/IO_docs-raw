@@ -22,39 +22,32 @@
 |Type |Name |Description
 
 |xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
-    |checkoutService
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
-    |checkoutRepository
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
-    |vatService
-    |
-|xref:IO/Extensions/Filters/ItemNameFilter.adoc#[`ItemNameFilter`]
-    |itemNameFilter
-    |
-| xref:stable7@interface::Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
-    |vatRepository
-    |
-| xref:stable7@interface::System.adoc#system_contracts_webstorerepositorycontract[`WebstoreRepositoryContract`]
-    |webstoreRepository
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
-    |contactRepository
-    |
+a|`$checkoutService`
+||xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+a|`$checkoutRepository`
+||xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
+a|`$vatService`
+||xref:IO/Extensions/Filters/ItemNameFilter.adoc#[`ItemNameFilter`]
+a|`$itemNameFilter`
+||xref:stable7@interface::Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
+a|`$vatRepository`
+||xref:stable7@interface::System.adoc#system_contracts_webstorerepositorycontract[`WebstoreRepositoryContract`]
+a|`$webstoreRepository`
+||xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+a|`$contactRepository`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($checkoutService, $vatService, $itemNameFilter, $webstoreRepository, $vatRepository, $contactRepository, $checkoutRepository):void
+public __construct($checkoutService, $vatService, $itemNameFilter, $webstoreRepository, $vatRepository, $contactRepository, $checkoutRepository)
 
 ----
-
-
 
 
 
@@ -69,7 +62,7 @@ OrderItemBuilder constructor.
 a|`$checkoutService`
 |
 
-| xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
+|xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
 a|`$vatService`
 |
 
@@ -77,32 +70,31 @@ a|`$vatService`
 a|`$itemNameFilter`
 |
 
-| xref:stable7@interface::System.adoc#system_contracts_webstorerepositorycontract[`WebstoreRepositoryContract`]
+|xref:stable7@interface::System.adoc#system_contracts_webstorerepositorycontract[`WebstoreRepositoryContract`]
 a|`$webstoreRepository`
 |
 
-| xref:stable7@interface::Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
+|xref:stable7@interface::Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
 a|`$vatRepository`
 |
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
 a|`$contactRepository`
 |
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
 a|`$checkoutRepository`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#frombasket]
 ----
 
-public fromBasket($basket, $items):array
+public fromBasket($basket, $items):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -113,24 +105,23 @@ Add a basket item to the order
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Basket.adoc#basket_models_basket[`Basket`]
+|xref:stable7@interface::Basket.adoc#basket_models_basket[`Basket`]
 a|`$basket`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$items`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getvatfield]
 ----
 
-public getVatField($vat, $vatRate):int
+public getVatField($vat, $vatRate):link:http://php.net/int[int^]
 
 ----
-
-
 
 
 
@@ -141,11 +132,11 @@ Get the vat field for the given vat rate.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Accounting.adoc#accounting_models_vat[`Vat`]
+|xref:stable7@interface::Accounting.adoc#accounting_models_vat[`Vat`]
 a|`$vat`
 |The country VAT instance.
 
-|link:http://php.net/float[float^]
+|link:http://php.net/float[`float`^]
 a|`$vatRate`
 |The vat rate.
 |===

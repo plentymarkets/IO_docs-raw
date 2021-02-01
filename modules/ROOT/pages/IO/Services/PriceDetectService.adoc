@@ -5,7 +5,8 @@
 [[io__pricedetectservice]]
 = PriceDetectService
 
-
+This service class contains functions related to getting the correct sales prices for customers. +
+All public functions are available in the Twig template renderer.
 
 [WARNING]
 .Deprecated! 
@@ -13,6 +14,7 @@
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_pricedetectrepositorycontract[`PriceDetectRepositoryContract`]
 ====
 
 
@@ -28,61 +30,47 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-| 
-    |classId
-    |
-| 
-    |singleAccess
-    |
-| 
-    |currency
-    |
-| 
-    |plentyId
-    |
-| 
-    |shippingCountryId
-    |
-| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_variation_detectsalespriceservice[`DetectSalesPriceService`]
-    |detectSalesPriceService
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_repositories_contactrepository[`ContactRepository`]
-    |contactRepository
-    |
-| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
-    |app
-    |
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
-    |checkoutRepository
-    |
-|xref:IO/Services/BasketService.adoc#[`BasketService`]
-    |basketService
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
-    |vatService
-    |
-| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_accounting_vatinitservice[`VatInitService`]
-    |vatInitService
-    |
-| 
-    |referrerId
-    |
-| 
-    |cache
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$classId`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$singleAccess`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$currency`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$plentyId`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$shippingCountryId`
+|| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_variation_detectsalespriceservice[`DetectSalesPriceService`]
+a|`$detectSalesPriceService`
+||xref:stable7@interface::Webshop.adoc#webshop_repositories_contactrepository[`ContactRepository`]
+a|`$contactRepository`
+|| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
+a|`$app`
+||xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+a|`$checkoutRepository`
+||xref:IO/Services/BasketService.adoc#[`BasketService`]
+a|`$basketService`
+||xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
+a|`$vatService`
+|| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_accounting_vatinitservice[`VatInitService`]
+a|`$vatInitService`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$referrerId`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($detectSalesPriceService, $contactRepository, $app, $checkoutRepository, $basketService, $vatInitService, $vatService):void
+public __construct($detectSalesPriceService, $contactRepository, $app, $checkoutRepository, $basketService, $vatInitService, $vatService)
 
 ----
-
-
 
 
 
@@ -97,7 +85,7 @@ PriceDetectService constructor.
 a|`$detectSalesPriceService`
 |
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_contactrepositorycontract[`ContactRepositoryContract`]
 a|`$contactRepository`
 |
 
@@ -105,7 +93,7 @@ a|`$contactRepository`
 a|`$app`
 |
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_checkoutrepositorycontract[`CheckoutRepositoryContract`]
 a|`$checkoutRepository`
 |
 
@@ -113,20 +101,21 @@ a|`$checkoutRepository`
 a|`$basketService`
 |
 
-| xref:stable7@interface::Accounting.adoc#accounting_contracts_vatinitcontract[`VatInitContract`]
+|xref:stable7@interface::Accounting.adoc#accounting_contracts_vatinitcontract[`VatInitContract`]
 a|`$vatInitService`
 |
 
-| xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
+|xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
 a|`$vatService`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getpriceidsforcustomer]
 ----
 
-public getPriceIdsForCustomer():array
+public getPriceIdsForCustomer():link:http://php.net/array[array^]
 
 ----
 
@@ -136,38 +125,35 @@ public getPriceIdsForCustomer():array
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_pricedetectrepositorycontract_getpriceidsforcustomer[`PriceDetectRepositoryContract::getPriceIdsForCustomer()`]
 ====
 
 
 
 
+Get valid price ids for current contact
 
-
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
 ----
 
-public fromMemoryCache():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public resetMemoryCache($key = null):void
+public fromMemoryCache()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -178,7 +164,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

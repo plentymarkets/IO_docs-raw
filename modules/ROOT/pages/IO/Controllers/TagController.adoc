@@ -22,14 +22,13 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showitembytag]
 ----
 
-public showItemByTag($tagName = &quot;&quot;, $tagId = null):void
+public showItemByTag($tagName = &quot;&quot;, $tagId = null)
 
 ----
-
-
 
 
 
@@ -40,11 +39,11 @@ public showItemByTag($tagName = &quot;&quot;, $tagId = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$tagName`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$tagId`
 |
 |===

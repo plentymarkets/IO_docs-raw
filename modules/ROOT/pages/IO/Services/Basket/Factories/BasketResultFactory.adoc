@@ -22,39 +22,36 @@
 |Type |Name |Description
 
 |xref:IO/Services/Basket/Factories/Faker/BasketFaker.adoc#[`BasketFaker`]
-    |basketFaker
-    |
-|xref:IO/Services/Basket/Factories/Faker/BasketItemFaker.adoc#[`BasketItemFaker`]
-    |basketItemFaker
-    |
+a|`$basketFaker`
+||xref:IO/Services/Basket/Factories/Faker/BasketItemFaker.adoc#[`BasketItemFaker`]
+a|`$basketItemFaker`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public fillBasketResult():array
+public __construct()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#fillbasketresult]
+----
+
+public fillBasketResult():link:http://php.net/array[array^]
+
+----
 
 
 

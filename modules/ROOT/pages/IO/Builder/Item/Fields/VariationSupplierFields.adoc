@@ -21,57 +21,57 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |CREATED_TIMESTAMP
-    |'createdTimestamp'
-    |
+a|`CREATED_TIMESTAMP`
+|'createdTimestamp'
+|
 |link:http://php.net/string[string^]
-    |DELIVERY_TIME_IN_DAYS
-    |'deliveryTimeInDays'
-    |
+a|`DELIVERY_TIME_IN_DAYS`
+|'deliveryTimeInDays'
+|
 |link:http://php.net/string[string^]
-    |DISCOUNT
-    |'discount'
-    |
+a|`DISCOUNT`
+|'discount'
+|
 |link:http://php.net/string[string^]
-    |DISCOUNTABLE
-    |'discountable'
-    |
+a|`DISCOUNTABLE`
+|'discountable'
+|
 |link:http://php.net/string[string^]
-    |ID
-    |'id'
-    |
+a|`ID`
+|'id'
+|
 |link:http://php.net/string[string^]
-    |ITEM_NUMBER
-    |'itemNumber'
-    |
+a|`ITEM_NUMBER`
+|'itemNumber'
+|
 |link:http://php.net/string[string^]
-    |ITEM_VARIATION_ID
-    |'itemVariationId'
-    |
+a|`ITEM_VARIATION_ID`
+|'itemVariationId'
+|
 |link:http://php.net/string[string^]
-    |LAST_PRICE_QUERY
-    |'lastPriceQuery'
-    |
+a|`LAST_PRICE_QUERY`
+|'lastPriceQuery'
+|
 |link:http://php.net/string[string^]
-    |LAST_UPDATE_TIMESTAMP
-    |'lastUpdateTimestamp'
-    |
+a|`LAST_UPDATE_TIMESTAMP`
+|'lastUpdateTimestamp'
+|
 |link:http://php.net/string[string^]
-    |MINIMUM_ORDER_VALUE
-    |'minimumOrderValue'
-    |
+a|`MINIMUM_ORDER_VALUE`
+|'minimumOrderValue'
+|
 |link:http://php.net/string[string^]
-    |PACKAGING_UNIT
-    |'packagingUnit'
-    |
+a|`PACKAGING_UNIT`
+|'packagingUnit'
+|
 |link:http://php.net/string[string^]
-    |PURCHASE_PRICE
-    |'purchasePrice'
-    |
+a|`PURCHASE_PRICE`
+|'purchasePrice'
+|
 |link:http://php.net/string[string^]
-    |SUPPLIER_ID
-    |'supplierId'
-    |
+a|`SUPPLIER_ID`
+|'supplierId'
+|
 |===
 
 

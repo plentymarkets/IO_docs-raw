@@ -21,41 +21,41 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |IMAGE_ID
-    |'imageId'
-    |
+a|`IMAGE_ID`
+|'imageId'
+|
 |link:http://php.net/string[string^]
-    |TYPE
-    |'type'
-    |
+a|`TYPE`
+|'type'
+|
 |link:http://php.net/string[string^]
-    |FILE_TYPE
-    |'fileType'
-    |
+a|`FILE_TYPE`
+|'fileType'
+|
 |link:http://php.net/string[string^]
-    |PATH
-    |'path'
-    |
+a|`PATH`
+|'path'
+|
 |link:http://php.net/string[string^]
-    |POSITION
-    |'position'
-    |
+a|`POSITION`
+|'position'
+|
 |link:http://php.net/string[string^]
-    |LAST_UPDATE_TIMESTAMP
-    |'lastUpdateTimestamp'
-    |
+a|`LAST_UPDATE_TIMESTAMP`
+|'lastUpdateTimestamp'
+|
 |link:http://php.net/string[string^]
-    |CREATE_TIMESTAMP
-    |'createTimestamp'
-    |
+a|`CREATE_TIMESTAMP`
+|'createTimestamp'
+|
 |link:http://php.net/string[string^]
-    |CLEAN_IMAGE_NAME
-    |'cleanImageName'
-    |
+a|`CLEAN_IMAGE_NAME`
+|'cleanImageName'
+|
 |link:http://php.net/string[string^]
-    |ATTRIBUTE_VALUE_ID
-    |'attributeValueId'
-    |
+a|`ATTRIBUTE_VALUE_ID`
+|'attributeValueId'
+|
 |===
 
 

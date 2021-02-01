@@ -13,6 +13,7 @@
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_sortinghelper[`SortingHelper`]
 ====
 
 
@@ -27,10 +28,11 @@ since 5.0.0 will be deleted in 6.0.0
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsorting]
 ----
 
-public getSorting($sortingConfig = null, $isCategory = true):array
+public getSorting($sortingConfig = null, $isCategory = true):link:http://php.net/array[array^]
 
 ----
 
@@ -40,9 +42,8 @@ public getSorting($sortingConfig = null, $isCategory = true):array
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_sortinghelper_getsorting[`SortingHelper::getSorting()`]
 ====
-
-
 
 
 
@@ -52,20 +53,21 @@ Get sorting values from plugin configuration
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$sortingConfig`
 |The configuration value from plugin
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$isCategory`
 |Get default sorting configuration for category or for search
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcategorysorting]
 ----
 
-public getCategorySorting($sortingConfig = null):array
+public getCategorySorting($sortingConfig = null):link:http://php.net/array[array^]
 
 ----
 
@@ -75,9 +77,8 @@ public getCategorySorting($sortingConfig = null):array
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_sortinghelper_getcategorysorting[`SortingHelper::getCategorySorting()`]
 ====
-
-
 
 
 
@@ -87,16 +88,17 @@ Get sorting values for categories from config
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$sortingConfig`
 |The configuration value
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsearchsorting]
 ----
 
-public getSearchSorting($sortingConfig = null):array
+public getSearchSorting($sortingConfig = null):link:http://php.net/array[array^]
 
 ----
 
@@ -106,9 +108,8 @@ public getSearchSorting($sortingConfig = null):array
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_sortinghelper_getsearchsorting[`SortingHelper::getSearchSorting()`]
 ====
-
-
 
 
 
@@ -118,16 +119,17 @@ Get sorting values for searches from config
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$sortingConfig`
 |The configuration value
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getuseditemname]
 ----
 
-public getUsedItemName():string
+public getUsedItemName():link:http://php.net/string[string^]
 
 ----
 
@@ -137,6 +139,7 @@ public getUsedItemName():string
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_sortinghelper_getuseditemname[`SortingHelper::getUsedItemName()`]
 ====
 
 
@@ -144,5 +147,34 @@ since 5.0.0 will be deleted in 6.0.0
 
 
 
+[source%nowrap, php, subs=+macros]
+[#splitpathandorder]
+----
+
+public splitPathAndOrder($sorting):link:http://php.net/array[array^]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_helpers_sortinghelper_splitpathandorder[`SortingHelper::splitPathAndOrder()`]
+====
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$sorting`
+|
+|===
 
 

@@ -5,7 +5,8 @@
 [[io__facetservice]]
 = FacetService
 
-
+This service class contains functions related to facets. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -20,10 +21,11 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#facetdataexists]
 ----
 
-public facetDataExists($facets, $type):bool
+public facetDataExists($facets, $type):link:http://php.net/bool[bool^]
 
 ----
 
@@ -31,20 +33,18 @@ public facetDataExists($facets, $type):bool
 
 
 
-
-
-
+Check if facet data exists
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$facets`
-|
+|All available facets
 
-|link:http://php.net/string[string^]
+|link:http://php.net/array[`array`^]
 a|`$type`
-|
+|Allowed facet type
 |===
 
 

@@ -23,28 +23,25 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |===
 |Type |Name |Description
 
-| 
-    |categoryService
-    |
-| 
-    |customerService
-    |
-| 
-    |sessionStorageService
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$categoryService`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$customerService`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$sessionStorageService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response, $categoryService, $customerService, $sessionStorageService):void
+public __construct($request, $response, $categoryService, $customerService, $sessionStorageService)
 
 ----
-
-
 
 
 
@@ -77,44 +74,41 @@ a|`$sessionStorageService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#index]
 ----
 
-public index():Plenty\Plugin\Http\Response
+public index(): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Get Category Items
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getchildren]
 ----
 
-public getChildren():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getTemplateForChildren():void
+public getChildren()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#gettemplateforchildren]
+----
+
+public getTemplateForChildren()
+
+----
 
 
 

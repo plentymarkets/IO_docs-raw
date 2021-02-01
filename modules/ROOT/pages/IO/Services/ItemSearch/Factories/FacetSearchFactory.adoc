@@ -13,6 +13,7 @@ Concrete factory to build facet searches.
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_facetsearchfactory[`FacetSearchFactory`]
 ====
 
 
@@ -30,18 +31,19 @@ xref:IO/Services/ItemSearch/Factories/VariationSearchFactory.adoc#[`VariationSea
 |===
 |Type |Name |Description
 
-| 
-    |facetValues
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$facetValues`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#create]
 ----
 
-public create($facets):IO\Services\ItemSearch\Factories\FacetSearchFactory
+public create($facets):xref:IO/Services/ItemSearch/Factories/FacetSearchFactory.adoc#[FacetSearchFactory]
 
 ----
 
@@ -51,11 +53,10 @@ public create($facets):IO\Services\ItemSearch\Factories\FacetSearchFactory
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_facetsearchfactory_create[`FacetSearchFactory::create()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories/FacetSearchFactory.adoc#[`FacetSearchFactory`]
 
 
 Create a factory instance depending on a given set of facet values.
@@ -63,16 +64,17 @@ Create a factory instance depending on a given set of facet values.
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[`string`^] \| link:http://php.net/array[`array`^]
 a|`$facets`
 |List of active facet values. If string is given, it will be exploded by ',' to a list of values.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#preparesearch]
 ----
 
-public prepareSearch($source):Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Document\DocumentSearch
+public prepareSearch($source):xref:stable7@interface::Cloud.adoc#cloud_document_documentsearch[DocumentSearch]
 
 ----
 
@@ -82,11 +84,10 @@ public prepareSearch($source):Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Docu
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_facetsearchfactory_preparesearch[`FacetSearchFactory::prepareSearch()`]
 ====
 
 
-
-====== *Return type:* xref:stable7@interface::Cloud.adoc#cloud_document_documentsearch[`DocumentSearch`]
 
 
 Build facet search classes
@@ -94,16 +95,17 @@ Build facet search classes
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Cloud.adoc#cloud_source_includesource[`IncludeSource`]
+|xref:stable7@interface::Cloud.adoc#cloud_source_includesource[`IncludeSource`]
 a|`$source`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withminimumcount]
 ----
 
-public withMinimumCount():IO\Services\ItemSearch\Factories
+public withMinimumCount():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -113,11 +115,10 @@ public withMinimumCount():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_facetsearchfactory_withminimumcount[`FacetSearchFactory::withMinimumCount()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Register extension to filter facets by minimum hit count.

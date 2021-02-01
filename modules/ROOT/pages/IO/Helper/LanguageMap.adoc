@@ -13,6 +13,7 @@
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_localizationrepositorycontract[`LocalizationRepositoryContract`]
 ====
 
 
@@ -28,21 +29,21 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-| 
-    |locales
-    |
-| 
-    |languages
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$locales`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$languages`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlocale]
 ----
 
-public static getLocale():void
+public static getLocale()
 
 ----
 
@@ -52,6 +53,7 @@ public static getLocale():void
 
 sin  ce 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_localizationrepositorycontract_getlocale[`LocalizationRepositoryContract::getLocale()`]
 ====
 
 
@@ -59,12 +61,11 @@ sin  ce 5.0.0 will be removed in 6.0.0
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlanguagecode]
 ----
 
-public static getLanguageCode($countryCode = null):void
+public static getLanguageCode($countryCode = null)
 
 ----
 
@@ -74,9 +75,8 @@ public static getLanguageCode($countryCode = null):void
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_localizationrepositorycontract_getlanguagecode[`LocalizationRepositoryContract::getLanguageCode()`]
 ====
-
-
 
 
 
@@ -86,16 +86,17 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$countryCode`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcountrycode]
 ----
 
-public static getCountryCode($language = null):void
+public static getCountryCode($language = null)
 
 ----
 
@@ -112,12 +113,10 @@ since 5.0.0 will be removed in 6.0.0
 
 
 
-
-
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$language`
 |
 |===

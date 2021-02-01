@@ -22,14 +22,13 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showsearch]
 ----
 
-public showSearch($category = null):void
+public showSearch($category = null)
 
 ----
-
-
 
 
 
@@ -40,20 +39,19 @@ public showSearch($category = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$category`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#redirecttosearch]
 ----
 
-public redirectToSearch():void
+public redirectToSearch($tagName = null)
 
 ----
-
-
 
 
 
@@ -61,4 +59,13 @@ public redirectToSearch():void
 
 Redirect to new search url from category when search route
 is enabled and called.
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
+a|`$tagName`
+|tagName from route /tag/tagName convert to search string
+|===
+
 

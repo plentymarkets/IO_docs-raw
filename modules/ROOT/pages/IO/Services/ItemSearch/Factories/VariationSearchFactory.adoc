@@ -13,6 +13,7 @@ Concrete factory to build variation searches
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory[`VariationSearchFactory`]
 ====
 
 
@@ -30,18 +31,19 @@ xref:IO/Services/ItemSearch/Factories/BaseSearchFactory.adoc#[`BaseSearchFactory
 |===
 |Type |Name |Description
 
-| 
-    |isAdminPreview
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$isAdminPreview`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
+public __construct()
 
 ----
 
@@ -51,12 +53,11 @@ public __construct():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setadminpreview]
 ----
 
-public isActive():IO\Services\ItemSearch\Factories
+public setAdminPreview($isAdminPreview):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -66,19 +67,50 @@ public isActive():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_setadminpreview[`VariationSearchFactory::setAdminPreview()`]
 ====
 
 
 
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/bool[`bool`^]
+a|`$isAdminPreview`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#isactive]
+----
+
+public isActive():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_isactive[`VariationSearchFactory::isActive()`]
+====
+
+
 
 
 Filter active variations
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isinactive]
 ----
 
-public isInactive():IO\Services\ItemSearch\Factories
+public isInactive():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -88,19 +120,19 @@ public isInactive():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_isinactive[`VariationSearchFactory::isInactive()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter inactive variations
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasitemid]
 ----
 
-public hasItemId($itemId):IO\Services\ItemSearch\Factories
+public hasItemId($itemId):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -110,11 +142,10 @@ public hasItemId($itemId):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hasitemid[`VariationSearchFactory::hasItemId()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variation by a single item id
@@ -122,16 +153,17 @@ Filter variation by a single item id
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |Item id to filter by.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasitemids]
 ----
 
-public hasItemIds($itemIds):IO\Services\ItemSearch\Factories
+public hasItemIds($itemIds):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -141,11 +173,10 @@ public hasItemIds($itemIds):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hasitemids[`VariationSearchFactory::hasItemIds()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations by multiple item ids
@@ -153,16 +184,17 @@ Filter variations by multiple item ids
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$itemIds`
 |List of item ids to filter by.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasvariationid]
 ----
 
-public hasVariationId($variationId):IO\Services\ItemSearch\Factories
+public hasVariationId($variationId):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -172,11 +204,10 @@ public hasVariationId($variationId):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hasvariationid[`VariationSearchFactory::hasVariationId()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variation by a single variation id.
@@ -184,16 +215,17 @@ Filter variation by a single variation id.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |The variation id to filter by.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasvariationids]
 ----
 
-public hasVariationIds($variationIds):IO\Services\ItemSearch\Factories
+public hasVariationIds($variationIds):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -203,11 +235,10 @@ public hasVariationIds($variationIds):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hasvariationids[`VariationSearchFactory::hasVariationIds()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations by multiple variation ids.
@@ -215,16 +246,17 @@ Filter variations by multiple variation ids.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationIds`
 |List of variation ids to filter by.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasatleastoneavailability]
 ----
 
-public hasAtLeastOneAvailability($availabilityIds):IO\Services\ItemSearch\Factories
+public hasAtLeastOneAvailability($availabilityIds):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -234,11 +266,10 @@ public hasAtLeastOneAvailability($availabilityIds):IO\Services\ItemSearch\Factor
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hasatleastoneavailability[`VariationSearchFactory::hasAtLeastOneAvailability()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations by multiple availability ids.
@@ -246,16 +277,17 @@ Filter variations by multiple availability ids.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$availabilityIds`
 |List of availability ids to filter by.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hassupplier]
 ----
 
-public hasSupplier($supplierId):IO\Services\ItemSearch\Factories
+public hasSupplier($supplierId):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -265,11 +297,10 @@ public hasSupplier($supplierId):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hassupplier[`VariationSearchFactory::hasSupplier()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations by multiple availability ids.
@@ -277,16 +308,17 @@ Filter variations by multiple availability ids.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$supplierId`
 |The supplier id to filter by.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasmanufacturer]
 ----
 
-public hasManufacturer($manufacturerId):IO\Services\ItemSearch\Factories
+public hasManufacturer($manufacturerId):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -296,11 +328,10 @@ public hasManufacturer($manufacturerId):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hasmanufacturer[`VariationSearchFactory::hasManufacturer()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter manufacturers by id.
@@ -308,16 +339,17 @@ Filter manufacturers by id.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$manufacturerId`
 |To filter by manufacturer
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#haseachproperty]
 ----
 
-public hasEachProperty($propertyIds):IO\Services\ItemSearch\Factories
+public hasEachProperty($propertyIds):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -327,11 +359,10 @@ public hasEachProperty($propertyIds):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_haseachproperty[`VariationSearchFactory::hasEachProperty()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations by multiple property ids.
@@ -339,16 +370,17 @@ Filter variations by multiple property ids.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$propertyIds`
 |The property ids to filter by.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#ismain]
 ----
 
-public isMain():IO\Services\ItemSearch\Factories
+public isMain():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -358,19 +390,19 @@ public isMain():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_ismain[`VariationSearchFactory::isMain()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter only main variations
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#ischild]
 ----
 
-public isChild():IO\Services\ItemSearch\Factories
+public isChild():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -380,19 +412,19 @@ public isChild():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_ischild[`VariationSearchFactory::isChild()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter only child variations
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#ishiddenincategorylist]
 ----
 
-public isHiddenInCategoryList($isHidden = true):IO\Services\ItemSearch\Factories
+public isHiddenInCategoryList($isHidden = true):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -402,11 +434,10 @@ public isHiddenInCategoryList($isHidden = true):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_ishiddenincategorylist[`VariationSearchFactory::isHiddenInCategoryList()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter by visibility in category list.
@@ -414,16 +445,17 @@ Filter by visibility in category list.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$isHidden`
 |Visibility in category list to filter by.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#issalable]
 ----
 
-public isSalable():IO\Services\ItemSearch\Factories
+public isSalable():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -433,19 +465,19 @@ public isSalable():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_issalable[`VariationSearchFactory::isSalable()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations by isSalable flag
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isvisibleforclient]
 ----
 
-public isVisibleForClient($clientId = null):IO\Services\ItemSearch\Factories
+public isVisibleForClient($clientId = null):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -455,11 +487,10 @@ public isVisibleForClient($clientId = null):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_isvisibleforclient[`VariationSearchFactory::isVisibleForClient()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations by visibility for client
@@ -467,16 +498,17 @@ Filter variations by visibility for client
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$clientId`
 |The client id to filter by. If null, default client id on application will be used.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasnameinlanguage]
 ----
 
-public hasNameInLanguage($type = \Plenty\Modules\Item\Search\Filter\TextFilter::FILTER_ANY_NAME, $lang = null):IO\Services\ItemSearch\Factories
+public hasNameInLanguage($type = \Plenty\Modules\Item\Search\Filter\TextFilter::FILTER_ANY_NAME, $lang = null):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -486,11 +518,10 @@ public hasNameInLanguage($type = \Plenty\Modules\Item\Search\Filter\TextFilter::
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hasnameinlanguage[`VariationSearchFactory::hasNameInLanguage()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations having texts in a given language.
@@ -498,20 +529,21 @@ Filter variations having texts in a given language.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$type`
 |The text field to filter by ('hasAny', 'hasName1', 'hasName2', 'hasName3')
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |The language to filter by. If null, language defined in session will be used.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isincategory]
 ----
 
-public isInCategory($categoryId):IO\Services\ItemSearch\Factories
+public isInCategory($categoryId):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -521,11 +553,10 @@ public isInCategory($categoryId):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_isincategory[`VariationSearchFactory::isInCategory()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations contained in a category.
@@ -533,16 +564,17 @@ Filter variations contained in a category.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$categoryId`
 |A category id to filter variations by.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasatleastoneprice]
 ----
 
-public hasAtLeastOnePrice($priceIds):IO\Services\ItemSearch\Factories
+public hasAtLeastOnePrice($priceIds):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -552,11 +584,10 @@ public hasAtLeastOnePrice($priceIds):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hasatleastoneprice[`VariationSearchFactory::hasAtLeastOnePrice()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations having at least on price.
@@ -564,16 +595,17 @@ Filter variations having at least on price.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$priceIds`
 |List of price ids to filter variations by
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#haspriceforcustomer]
 ----
 
-public hasPriceForCustomer():IO\Services\ItemSearch\Factories
+public hasPriceForCustomer():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -583,19 +615,19 @@ public hasPriceForCustomer():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_haspriceforcustomer[`VariationSearchFactory::hasPriceForCustomer()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations having at least one price accessible by current customer.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#haspriceinrange]
 ----
 
-public groupByTemplateConfig($key = &quot;ids.itemAttributeValue&quot;):IO\Services\ItemSearch\Factories
+public hasPriceInRange($priceMin, $priceMax):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -605,11 +637,107 @@ public groupByTemplateConfig($key = &quot;ids.itemAttributeValue&quot;):IO\Servi
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_haspriceinrange[`VariationSearchFactory::hasPriceInRange()`]
 ====
 
 
 
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/float[`float`^]
+a|`$priceMin`
+|
+
+|link:http://php.net/float[`float`^]
+a|`$priceMax`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#hastag]
+----
+
+public hasTag($tagId):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hastag[`VariationSearchFactory::hasTag()`]
+====
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$tagId`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#hasanytag]
+----
+
+public hasAnyTag($tagIds):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hasanytag[`VariationSearchFactory::hasAnyTag()`]
+====
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$tagIds`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#groupbytemplateconfig]
+----
+
+public groupByTemplateConfig($key = &quot;ids.itemAttributeValue&quot;):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_groupbytemplateconfig[`VariationSearchFactory::groupByTemplateConfig()`]
+====
+
+
 
 
 Group results depending on a config value.
@@ -617,16 +745,17 @@ Group results depending on a config value.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$key`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#iscrosssellingitem]
 ----
 
-public isCrossSellingItem($itemId, $relation):IO\Services\ItemSearch\Factories
+public isCrossSellingItem($itemId, $relation):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -636,11 +765,10 @@ public isCrossSellingItem($itemId, $relation):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_iscrosssellingitem[`VariationSearchFactory::isCrossSellingItem()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations having a cross selling relation to a given item.
@@ -648,20 +776,21 @@ Filter variations having a cross selling relation to a given item.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |Item id to filter cross selling items for
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$relation`
 |The relation of cross selling items.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasfacets]
 ----
 
-public hasFacets($facetValues, $clientId = null, $lang = null):IO\Services\ItemSearch\Factories
+public hasFacets($facetValues, $clientId = null, $lang = null):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -671,11 +800,10 @@ public hasFacets($facetValues, $clientId = null, $lang = null):IO\Services\ItemS
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hasfacets[`VariationSearchFactory::hasFacets()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations by facets.
@@ -683,24 +811,25 @@ Filter variations by facets.
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[`string`^] \| link:http://php.net/array[`array`^]
 a|`$facetValues`
 |List of facet values. If string is given, it will be exploded by ';'
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$clientId`
 |Client id to filter facets by. If null, default client id from application will be used.
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |Language to filter facets by. If null, active language from session will be used.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hassearchstring]
 ----
 
-public hasSearchString($query, $lang = null, $searchType = \Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch::SEARCH_TYPE_EXACT, $operator = \Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch::OR_OPERATOR):IO\Services\ItemSearch\Factories
+public hasSearchString($query, $lang = null, $searchType = \Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch::SEARCH_TYPE_EXACT, $operator = \Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch::OR_OPERATOR):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -710,11 +839,10 @@ public hasSearchString($query, $lang = null, $searchType = \Plenty\Modules\Cloud
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hassearchstring[`VariationSearchFactory::hasSearchString()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations by given search string.
@@ -722,28 +850,29 @@ Filter variations by given search string.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$query`
 |The search string to filter variations by
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |The language to apply search on. If null, default language from session will be used
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$searchType`
 |Type of the search ('exact', 'fuzzy', 'autocomplete')
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$operator`
 |Operator ot be used for search
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasnamestring]
 ----
 
-public hasNameString($query, $lang = null):IO\Services\ItemSearch\Factories
+public hasNameString($query, $lang = null):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -753,11 +882,10 @@ public hasNameString($query, $lang = null):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_hasnamestring[`VariationSearchFactory::hasNameString()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Filter variations by searching names
@@ -765,20 +893,21 @@ Filter variations by searching names
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$query`
 |The search string
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |Language to apply search on. If null, default language from session will be used.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withlanguage]
 ----
 
-public withLanguage($lang = null):IO\Services\ItemSearch\Factories
+public withLanguage($lang = null):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -788,11 +917,10 @@ public withLanguage($lang = null):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withlanguage[`VariationSearchFactory::withLanguage()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Only request given language.
@@ -800,16 +928,17 @@ Only request given language.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |Language to get texts for. If null, default language from session will be used.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withimages]
 ----
 
-public withImages($clientId = null):IO\Services\ItemSearch\Factories
+public withImages($clientId = null):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -819,11 +948,10 @@ public withImages($clientId = null):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withimages[`VariationSearchFactory::withImages()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Include images in result
@@ -831,16 +959,17 @@ Include images in result
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$clientId`
 |The client id to get images for. If null, default client id from application will be used.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withattributes]
 ----
 
-public withAttributes():IO\Services\ItemSearch\Factories
+public withAttributes():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -850,41 +979,19 @@ public withAttributes():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withattributes[`VariationSearchFactory::withAttributes()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Includes VariatonAttributeMap for variation select
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withpropertygroups]
 ----
 
-public withPropertyGroups():IO\Services\ItemSearch\Factories
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
-
-
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
-
-
-
-
-[source%nowrap, php]
-----
-
-public withOrderPropertySelectionValues():IO\Services\ItemSearch\Factories
+public withPropertyGroups():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -894,41 +1001,19 @@ public withOrderPropertySelectionValues():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withpropertygroups[`VariationSearchFactory::withPropertyGroups()`]
 ====
 
 
 
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withorderpropertyselectionvalues]
 ----
 
-public withVariationProperties():IO\Services\ItemSearch\Factories
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
-
-
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
-
-
-
-
-[source%nowrap, php]
-----
-
-public withUrls():IO\Services\ItemSearch\Factories
+public withOrderPropertySelectionValues():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -938,19 +1023,63 @@ public withUrls():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withorderpropertyselectionvalues[`VariationSearchFactory::withOrderPropertySelectionValues()`]
 ====
 
 
 
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#withvariationproperties]
+----
+
+public withVariationProperties():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withvariationproperties[`VariationSearchFactory::withVariationProperties()`]
+====
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#withurls]
+----
+
+public withUrls():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withurls[`VariationSearchFactory::withUrls()`]
+====
+
+
 
 
 Append URLs to result.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withprices]
 ----
 
-public withPrices($params):IO\Services\ItemSearch\Factories
+public withPrices($params):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -960,11 +1089,10 @@ public withPrices($params):IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withprices[`VariationSearchFactory::withPrices()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Append prices to result.
@@ -972,16 +1100,17 @@ Append prices to result.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$params`
 |Params to be passed to price search.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withcurrentcategory]
 ----
 
-public withCurrentCategory():IO\Services\ItemSearch\Factories
+public withCurrentCategory():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -991,19 +1120,19 @@ public withCurrentCategory():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withcurrentcategory[`VariationSearchFactory::withCurrentCategory()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Set result as current category
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withdefaultimage]
 ----
 
-public withDefaultImage():IO\Services\ItemSearch\Factories
+public withDefaultImage():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -1013,41 +1142,19 @@ public withDefaultImage():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withdefaultimage[`VariationSearchFactory::withDefaultImage()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Append default item image if images are requested by result fields and item does not have any image
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withbundlecomponents]
 ----
 
-public withBundleComponents():IO\Services\ItemSearch\Factories
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
-
-
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
-
-
-
-
-[source%nowrap, php]
-----
-
-public withLinkToContent():IO\Services\ItemSearch\Factories
+public withBundleComponents():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -1057,41 +1164,19 @@ public withLinkToContent():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withbundlecomponents[`VariationSearchFactory::withBundleComponents()`]
 ====
 
 
 
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withlinktocontent]
 ----
 
-public withGroupedAttributeValues():IO\Services\ItemSearch\Factories
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
-
-
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
-
-
-
-
-[source%nowrap, php]
-----
-
-public withReducedResults($removeProperties = false):IO\Services\ItemSearch\Factories
+public withLinkToContent():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -1101,11 +1186,54 @@ public withReducedResults($removeProperties = false):IO\Services\ItemSearch\Fact
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withlinktocontent[`VariationSearchFactory::withLinkToContent()`]
 ====
 
 
 
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#withgroupedattributevalues]
+----
+
+public withGroupedAttributeValues():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withgroupedattributevalues[`VariationSearchFactory::withGroupedAttributeValues()`]
+====
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#withreducedresults]
+----
+
+public withReducedResults($removeProperties = false):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withreducedresults[`VariationSearchFactory::withReducedResults()`]
+====
+
+
 
 
 
@@ -1113,38 +1241,17 @@ since 5.0.0 will be deleted in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$removeProperties`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withavailability]
 ----
 
-public withAvailability():IO\Services\ItemSearch\Factories
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-since 5.0.0 will be deleted in 6.0.0
-
-====
-
-
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
-
-
-
-
-[source%nowrap, php]
-----
-
-public withTags():IO\Services\ItemSearch\Factories
+public withAvailability():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
@@ -1154,11 +1261,32 @@ public withTags():IO\Services\ItemSearch\Factories
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withavailability[`VariationSearchFactory::withAvailability()`]
 ====
 
 
 
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#withtags]
+----
+
+public withTags():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
+
+----
+
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_factories_variationsearchfactory_withtags[`VariationSearchFactory::withTags()`]
+====
+
+
 
 
 

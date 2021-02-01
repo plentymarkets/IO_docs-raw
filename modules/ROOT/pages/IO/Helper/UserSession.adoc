@@ -29,22 +29,21 @@ Use AccountService instead
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Frontend.adoc#frontend_services_accountservice[`AccountService`]
-    |accountService
-    |
+|xref:stable7@interface::Frontend.adoc#frontend_services_accountservice[`AccountService`]
+a|`$accountService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($accountService):void
+public __construct($accountService)
 
 ----
-
-
 
 
 
@@ -55,16 +54,17 @@ UserSession constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Frontend.adoc#frontend_services_accountservice[`AccountService`]
+|xref:stable7@interface::Frontend.adoc#frontend_services_accountservice[`AccountService`]
 a|`$accountService`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcurrentcontactid]
 ----
 
-public getCurrentContactId():int
+public getCurrentContactId():link:http://php.net/int[int^]
 
 ----
 
@@ -80,14 +80,13 @@ Use AccountService::getAccountContactId instead
 
 
 
-
-
 Get the current contact ID
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#iscontactloggedin]
 ----
 
-public isContactLoggedIn():bool
+public isContactLoggedIn():link:http://php.net/bool[bool^]
 
 ----
 
@@ -99,8 +98,6 @@ since 4.3.0
 Use AccountService::getIsAccountLoggedIn instead
 
 ====
-
-
 
 
 

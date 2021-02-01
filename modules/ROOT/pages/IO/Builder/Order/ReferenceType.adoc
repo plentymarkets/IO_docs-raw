@@ -21,17 +21,17 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |CONTACT
-    |'contact'
-    |
+a|`CONTACT`
+|'contact'
+|
 |link:http://php.net/string[string^]
-    |ACCOUNT
-    |'account'
-    |
+a|`ACCOUNT`
+|'account'
+|
 |link:http://php.net/string[string^]
-    |WAREHOUSE
-    |'warehouse'
-    |
+a|`WAREHOUSE`
+|'warehouse'
+|
 |===
 
 

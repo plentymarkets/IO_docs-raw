@@ -21,25 +21,23 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
-    |sessionStorageRepository
-    |
-| 
-    |plentyId
-    |
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+a|`$sessionStorageRepository`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$plentyId`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($sessionStorageRepository, $app):void
+public __construct($sessionStorageRepository, $app)
 
 ----
-
-
 
 
 
@@ -50,7 +48,7 @@ ItemWishListGuestRepository constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
+|xref:stable7@interface::Webshop.adoc#webshop_contracts_sessionstoragerepositorycontract[`SessionStorageRepositoryContract`]
 a|`$sessionStorageRepository`
 |
 
@@ -60,14 +58,13 @@ a|`$app`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitemwishlist]
 ----
 
-public getItemWishList():array
+public getItemWishList():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -75,25 +72,11 @@ public getItemWishList():array
 
 List all watched variationIds for contact
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitemwishlistwithdata]
 ----
 
-public getItemWishListWithData():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getItemWishListForAllPlentyIds():void
+public getItemWishListWithData()
 
 ----
 
@@ -103,16 +86,27 @@ public getItemWishListForAllPlentyIds():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitemwishlistforallplentyids]
 ----
 
-public getCountedItemWishList():int
+public getItemWishListForAllPlentyIds()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getcounteditemwishlist]
+----
+
+public getCountedItemWishList():link:http://php.net/int[int^]
+
+----
 
 
 
@@ -120,14 +114,13 @@ public getCountedItemWishList():int
 
 Get count WishList entries
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isiteminwishlist]
 ----
 
-public isItemInWishList($variationId):bool
+public isItemInWishList($variationId):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -138,20 +131,19 @@ public isItemInWishList($variationId):bool
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#additemwishlistentry]
 ----
 
-public addItemWishListEntry($variationId, $quantity = 1):void
+public addItemWishListEntry($variationId, $quantity = 1):link:http://php.net/mixed[mixed^]
 
 ----
-
-
 
 
 
@@ -162,24 +154,23 @@ public addItemWishListEntry($variationId, $quantity = 1):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$quantity`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#removeitemwishlistentry]
 ----
 
-public removeItemWishListEntry($variationId):bool
+public removeItemWishListEntry($variationId):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -190,20 +181,19 @@ public removeItemWishListEntry($variationId):bool
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#resetitemwishlist]
 ----
 
-public resetItemWishList():void
+public resetItemWishList()
 
 ----
-
-
 
 
 

@@ -22,14 +22,13 @@ xref:IO/Helper/DataFilter.adoc#[`DataFilter`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#applyresultfields]
 ----
 
-public applyResultFields():void
+public applyResultFields()
 
 ----
-
-
 
 
 

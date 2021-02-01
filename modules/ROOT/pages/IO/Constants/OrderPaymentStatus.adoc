@@ -21,25 +21,25 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |UNPAID
-    |'unpaid'
-    |
+a|`UNPAID`
+|'unpaid'
+|
 |link:http://php.net/string[string^]
-    |PREPAID
-    |'prepaid'
-    |
+a|`PREPAID`
+|'prepaid'
+|
 |link:http://php.net/string[string^]
-    |PARTLY_PAID
-    |'partlyPaid'
-    |
+a|`PARTLY_PAID`
+|'partlyPaid'
+|
 |link:http://php.net/string[string^]
-    |FULLY_PAID
-    |'fullyPaid'
-    |
+a|`FULLY_PAID`
+|'fullyPaid'
+|
 |link:http://php.net/string[string^]
-    |OVERPAID
-    |'overpaid'
-    |
+a|`OVERPAID`
+|'overpaid'
+|
 |===
 
 

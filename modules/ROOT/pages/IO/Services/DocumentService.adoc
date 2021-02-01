@@ -5,7 +5,8 @@
 [[io__documentservice]]
 = DocumentService
 
-
+This service class contains functions related to order documents. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,22 +22,21 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Document.adoc#document_contracts_documentrepositorycontract[`DocumentRepositoryContract`]
-    |documentRepo
-    |
+|xref:stable7@interface::Document.adoc#document_contracts_documentrepositorycontract[`DocumentRepositoryContract`]
+a|`$documentRepo`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($documentRepo):void
+public __construct($documentRepo)
 
 ----
-
-
 
 
 
@@ -47,9 +47,32 @@ DocumentService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Document.adoc#document_contracts_documentrepositorycontract[`DocumentRepositoryContract`]
+|xref:stable7@interface::Document.adoc#document_contracts_documentrepositorycontract[`DocumentRepositoryContract`]
 a|`$documentRepo`
 |
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getdocumentsbyorderid]
+----
+
+public getDocumentsByOrderId($orderId): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[PaginatedResult]
+
+----
+
+
+
+
+
+Get order documents for a specific order
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$orderId`
+|Unique id of order
 |===
 
 

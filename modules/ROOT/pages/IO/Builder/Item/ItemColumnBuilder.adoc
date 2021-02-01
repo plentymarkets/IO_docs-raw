@@ -21,40 +21,37 @@
 |===
 |Type |Name |Description
 
-| 
-    |columnFields
-    |
-| 
-    |columnParams
-    |
+|link:http://php.net/array[`array`^]
+a|`$columnFields`
+||link:http://php.net/array[`array`^]
+a|`$columnParams`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#defaults]
 ----
 
-public defaults():IO\Builder\Item\ItemColumnBuilder
+public defaults():xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Get the item data that is used in most scenarios
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#build]
 ----
 
-public build():array
+public build():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -62,17 +59,16 @@ public build():array
 
 Return generated columns to pass to ItemDataLayerRepository
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withitembase]
 ----
 
-public withItemBase($itemBaseFields):IO\Builder\Item\ItemColumnBuilder
+public withItemBase($itemBaseFields):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in ItemBase to get from ItemDataLayerRepository
@@ -80,23 +76,22 @@ Add fields in ItemBase to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$itemBaseFields`
 |List of fields
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withitemcharacterlist]
 ----
 
-public withItemCharacterList($itemCharacterFields, $):IO\Builder\Item\ItemColumnBuilder
+public withItemCharacterList($itemCharacterFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in ItemCharacterList to get from ItemDataLayerRepository
@@ -104,7 +99,7 @@ Add fields in ItemCharacterList to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$itemCharacterFields`
 |List of fields
 
@@ -114,17 +109,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withitemcrosssellinglist]
 ----
 
-public withItemCrossSellingList($itemCrossSellingListFields):IO\Builder\Item\ItemColumnBuilder
+public withItemCrossSellingList($itemCrossSellingListFields):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in ItemCrossSellingList to get from ItemDataLayerRepository
@@ -132,23 +126,22 @@ Add fields in ItemCrossSellingList to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$itemCrossSellingListFields`
 |List of fields
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withitemdescription]
 ----
 
-public withItemDescription($itemDescriptionFields, $):IO\Builder\Item\ItemColumnBuilder
+public withItemDescription($itemDescriptionFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in ItemDescription to get from ItemDataLayerRepository
@@ -156,7 +149,7 @@ Add fields in ItemDescription to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$itemDescriptionFields`
 |List of fields
 
@@ -166,17 +159,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationattributevaluelist]
 ----
 
-public withVariationAttributeValueList($variationAttributeValueListFields):IO\Builder\Item\ItemColumnBuilder
+public withVariationAttributeValueList($variationAttributeValueListFields):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationAttributeValue to get from ItemDataLayerRepository
@@ -184,23 +176,22 @@ Add fields in VariationAttributeValue to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationAttributeValueListFields`
 |List of fields
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationbarcode]
 ----
 
-public withVariationBarcode($variationBarcodeFields, $):IO\Builder\Item\ItemColumnBuilder
+public withVariationBarcode($variationBarcodeFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationBarcode to get from ItemDataLayerRepository
@@ -208,7 +199,7 @@ Add fields in VariationBarcode to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationBarcodeFields`
 |List of fields
 
@@ -218,17 +209,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationbarcodelist]
 ----
 
-public withVariationBarcodeList($variationBarcodeFields):IO\Builder\Item\ItemColumnBuilder
+public withVariationBarcodeList($variationBarcodeFields):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationBarcodeList to get from ItemDataLayerRepository
@@ -236,23 +226,22 @@ Add fields in VariationBarcodeList to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationBarcodeFields`
 |List of fields
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationbase]
 ----
 
-public withVariationBase($variationBaseFields):IO\Builder\Item\ItemColumnBuilder
+public withVariationBase($variationBaseFields):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationBase to get from ItemDataLayerRepository
@@ -260,23 +249,22 @@ Add fields in VariationBase to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationBaseFields`
 |List of fields
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationbundlecomponentlist]
 ----
 
-public withVariationBundleComponentList($variationBundleComponentListFields):IO\Builder\Item\ItemColumnBuilder
+public withVariationBundleComponentList($variationBundleComponentListFields):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationBundleComponentList to get from ItemDataLayerRepository
@@ -284,23 +272,22 @@ Add fields in VariationBundleComponentList to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationBundleComponentListFields`
 |List of fields
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationcategorylist]
 ----
 
-public withVariationCategoryList($variationCategoryFields):IO\Builder\Item\ItemColumnBuilder
+public withVariationCategoryList($variationCategoryFields):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationCategory to get from ItemDataLayerRepository
@@ -308,23 +295,22 @@ Add fields in VariationCategory to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationCategoryFields`
 |List of fields
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationimagelist]
 ----
 
-public withVariationImageList($variationImageListFields):IO\Builder\Item\ItemColumnBuilder
+public withVariationImageList($variationImageListFields):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationImageList to get from ItemDataLayerRepository
@@ -332,23 +318,22 @@ Add fields in VariationImageList to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationImageListFields`
 |List of fields
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationlinkmarketplace]
 ----
 
-public withVariationLinkMarketplace($variationLinkMarketplaceFields):IO\Builder\Item\ItemColumnBuilder
+public withVariationLinkMarketplace($variationLinkMarketplaceFields):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationLinkMarketplace to get from ItemDataLayerRepository
@@ -356,23 +341,22 @@ Add fields in VariationLinkMarketplace to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationLinkMarketplaceFields`
 |List of fields
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationlinkwebstore]
 ----
 
-public withVariationLinkWebstore($variationLinkWebstoreFields):IO\Builder\Item\ItemColumnBuilder
+public withVariationLinkWebstore($variationLinkWebstoreFields):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationLinkWebstore to get from ItemDataLayerRepository
@@ -380,23 +364,22 @@ Add fields in VariationLinkWebstore to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationLinkWebstoreFields`
 |List of fields
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationmarketstatus]
 ----
 
-public withVariationMarketStatus($variationMarketStatusFields, $):IO\Builder\Item\ItemColumnBuilder
+public withVariationMarketStatus($variationMarketStatusFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationMarketStatus to get from ItemDataLayerRepository
@@ -404,7 +387,7 @@ Add fields in VariationMarketStatus to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationMarketStatusFields`
 |List of fields
 
@@ -414,17 +397,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationrecommendedretailprice]
 ----
 
-public withVariationRecommendedRetailPrice($variationRecommendedPriceFields, $):IO\Builder\Item\ItemColumnBuilder
+public withVariationRecommendedRetailPrice($variationRecommendedPriceFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationRecommendedRetailPrice to get from ItemDataLayerRepository
@@ -432,7 +414,7 @@ Add fields in VariationRecommendedRetailPrice to get from ItemDataLayerRepositor
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationRecommendedPriceFields`
 |List of fields
 
@@ -442,17 +424,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationrecommendedretailpricelist]
 ----
 
-public withVariationRecommendedRetailPriceList($variationRecommendedPriceListFields, $):IO\Builder\Item\ItemColumnBuilder
+public withVariationRecommendedRetailPriceList($variationRecommendedPriceListFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationRecommendedRetailPriceList to get from ItemDataLayerRepository
@@ -460,7 +441,7 @@ Add fields in VariationRecommendedRetailPriceList to get from ItemDataLayerRepos
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationRecommendedPriceListFields`
 |List of fields
 
@@ -470,17 +451,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationretailprice]
 ----
 
-public withVariationRetailPrice($variationRetailPriceFields, $):IO\Builder\Item\ItemColumnBuilder
+public withVariationRetailPrice($variationRetailPriceFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationRetailPrice to get from ItemDataLayerRepository
@@ -488,7 +468,7 @@ Add fields in VariationRetailPrice to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationRetailPriceFields`
 |List of fields
 
@@ -498,17 +478,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationretailpricelist]
 ----
 
-public withVariationRetailPriceList($variationRetailPriceListFields, $):IO\Builder\Item\ItemColumnBuilder
+public withVariationRetailPriceList($variationRetailPriceListFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationRetailPriceList to get from ItemDataLayerRepository
@@ -516,7 +495,7 @@ Add fields in VariationRetailPriceList to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationRetailPriceListFields`
 |List of fields
 
@@ -526,17 +505,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationspecialofferretailprice]
 ----
 
-public withVariationSpecialOfferRetailPrice($variationSpecialOfferRetailPriceFields, $):IO\Builder\Item\ItemColumnBuilder
+public withVariationSpecialOfferRetailPrice($variationSpecialOfferRetailPriceFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationSpecialOfferRetailPrice to get from ItemDataLayerRepository
@@ -544,7 +522,7 @@ Add fields in VariationSpecialOfferRetailPrice to get from ItemDataLayerReposito
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationSpecialOfferRetailPriceFields`
 |List of fields
 
@@ -554,17 +532,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationspecialofferretailpricelist]
 ----
 
-public withVariationSpecialOfferRetailPriceList($variationSpecialOfferRetailPriceListFields, $):IO\Builder\Item\ItemColumnBuilder
+public withVariationSpecialOfferRetailPriceList($variationSpecialOfferRetailPriceListFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationSpecialOfferRetailPriceList to get from ItemDataLayerRepository
@@ -572,7 +549,7 @@ Add fields in VariationSpecialOfferRetailPriceList to get from ItemDataLayerRepo
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationSpecialOfferRetailPriceListFields`
 |List of fields
 
@@ -582,17 +559,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationstandardcategory]
 ----
 
-public withVariationStandardCategory($variationStandardCategoryFields, $):IO\Builder\Item\ItemColumnBuilder
+public withVariationStandardCategory($variationStandardCategoryFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationStandardCategory to get from ItemDataLayerRepository
@@ -600,7 +576,7 @@ Add fields in VariationStandardCategory to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationStandardCategoryFields`
 |List of fields
 
@@ -610,17 +586,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationstock]
 ----
 
-public withVariationStock($variationStockFields, $):IO\Builder\Item\ItemColumnBuilder
+public withVariationStock($variationStockFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationStock to get from ItemDataLayerRepository
@@ -628,7 +603,7 @@ Add fields in VariationStock to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationStockFields`
 |List of fields
 
@@ -638,17 +613,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationstockbuffer]
 ----
 
-public withVariationStockBuffer($variationStockBufferFields, $):IO\Builder\Item\ItemColumnBuilder
+public withVariationStockBuffer($variationStockBufferFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationStockBuffer to get from ItemDataLayerRepository
@@ -656,7 +630,7 @@ Add fields in VariationStockBuffer to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationStockBufferFields`
 |List of fields
 
@@ -666,17 +640,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationstocklist]
 ----
 
-public withVariationStockList($variationStockFields):IO\Builder\Item\ItemColumnBuilder
+public withVariationStockList($variationStockFields):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationStockList to get from ItemDataLayerRepository
@@ -684,23 +657,22 @@ Add fields in VariationStockList to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationStockFields`
 |List of fields
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationsupplierlist]
 ----
 
-public withVariationSupplierList($variationSupplierFields):IO\Builder\Item\ItemColumnBuilder
+public withVariationSupplierList($variationSupplierFields):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationSupplierList to get from ItemDataLayerRepository
@@ -708,23 +680,22 @@ Add fields in VariationSupplierList to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationSupplierFields`
 |List of fields
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationwarehouse]
 ----
 
-public withVariationWarehouse($variationWarehouseFields, $):IO\Builder\Item\ItemColumnBuilder
+public withVariationWarehouse($variationWarehouseFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationWarehouse to get from ItemDataLayerRepository
@@ -732,7 +703,7 @@ Add fields in VariationWarehouse to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationWarehouseFields`
 |List of fields
 
@@ -742,17 +713,16 @@ a|`$`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withvariationwarehouselist]
 ----
 
-public withVariationWarehouseList($variationWarehouseFields, $):IO\Builder\Item\ItemColumnBuilder
+public withVariationWarehouseList($variationWarehouseFields, $):xref:IO/Builder/Item/ItemColumnBuilder.adoc#[ItemColumnBuilder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Builder/Item/ItemColumnBuilder.adoc#[`ItemColumnBuilder`]
 
 
 Add fields in VariationWarehouseList to get from ItemDataLayerRepository
@@ -760,7 +730,7 @@ Add fields in VariationWarehouseList to get from ItemDataLayerRepository
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationWarehouseFields`
 |List of fields
 

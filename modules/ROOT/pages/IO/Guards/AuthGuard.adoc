@@ -22,29 +22,27 @@ xref:IO/Guards/AbstractGuard.adoc#[`AbstractGuard`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public assert():bool
+public __construct()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#assert]
+----
+
+public assert():link:http://php.net/bool[bool^]
+
+----
 
 
 

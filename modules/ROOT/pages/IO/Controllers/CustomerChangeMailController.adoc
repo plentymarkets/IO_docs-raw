@@ -22,14 +22,40 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#show]
 ----
 
-public redirect():void
+public show($contactId, $hash):link:http://php.net/string[string^]
 
 ----
 
 
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/int[`int`^]
+a|`$contactId`
+|
+
+|link:http://php.net/string[`string`^]
+a|`$hash`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#redirect]
+----
+
+public redirect()
+
+----
 
 
 

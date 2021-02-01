@@ -5,11 +5,11 @@
 [[io__facets]]
 = Facets
 
-Search preset for facets.
-Available options:
-- facets:        Values of active facets.
-- categoryId:    Category Id to filter variations by.
-- query:         Search string to get variations by.
+Search preset for facets. +
+Available options: +
+- facets:        Values of active facets. +
+- categoryId:    Category Id to filter variations by. +
+- query:         Search string to get variations by. +
 - autocomplete:  Flag indicating if autocomplete search should be used (boolean). Will only be used if &#039;query&#039; is defined.
 
 [WARNING]
@@ -18,6 +18,7 @@ Available options:
 
 since 5.0.0 will be deleted in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_searchpresets_facets[`Facets`]
 ====
 
 
@@ -34,25 +35,32 @@ xref:IO/Services/ItemSearch/SearchPresets/SearchPreset.adoc#[`SearchPreset`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsearchfactory]
 ----
 
-public static getSearchFactory($options):void
+public static getSearchFactory($options):link:http://php.net/mixed[mixed^]
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+since 5.0.0 will be deleted in 6.0.0
+
+see:xref:stable7@interface::Webshop.adoc#webshop_searchpresets_searchpreset_getsearchfactory[`SearchPreset::getSearchFactory()`]
+====
 
 
 
 
-
-
-
+Get the search factory from the preset.
 
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/array[`array`^]
 a|`$options`
 |
 |===

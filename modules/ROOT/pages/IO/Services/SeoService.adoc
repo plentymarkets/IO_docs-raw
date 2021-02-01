@@ -5,7 +5,8 @@
 [[io__seoservice]]
 = SeoService
 
-
+This service class contains functions related to search engine optimization. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -20,29 +21,13 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getrobotsinformation]
 ----
 
-public __construct():void
+public getRobotsInformation($returnValueErrorCase = &quot;NOINDEX&quot;, $defaultValueWithoutCategoryData = &quot;ALL&quot;):link:http://php.net/string[string^]
 
 ----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getRobotsInformation($returnValueErrorCase = &quot;NOINDEX&quot;, $defaultValueWithoutCategoryData = &quot;ALL&quot;):string
-
-----
-
-
 
 
 
@@ -53,13 +38,13 @@ Get meta robot information
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$returnValueErrorCase`
-|
+|Optional: Value for error case (Default: 'NOINDEX')
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$defaultValueWithoutCategoryData`
-|
+|Optional: Default value when category data is not set (Default: 'ALL')
 |===
 
 

@@ -21,22 +21,21 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
-    |vatRepo
-    |
+|xref:stable7@interface::Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
+a|`$vatRepo`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($vatRepo):void
+public __construct($vatRepo)
 
 ----
-
-
 
 
 
@@ -47,35 +46,33 @@ VatConverter constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
+|xref:stable7@interface::Accounting.adoc#accounting_contracts_vatrepositorycontract[`VatRepositoryContract`]
 a|`$vatRepo`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getdefaultvat]
 ----
 
-public getDefaultVat():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public convertToGross($amount):void
+public getDefaultVat():link:http://php.net/mixed[mixed^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#converttogross]
+----
+
+public convertToGross($amount):link:http://php.net/float[float^] \| link:http://php.net/int[int^]
+
+----
 
 
 
@@ -86,7 +83,7 @@ public convertToGross($amount):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/float[float^]
+|link:http://php.net/float[`float`^]
 a|`$amount`
 |
 |===

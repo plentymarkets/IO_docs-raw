@@ -22,29 +22,27 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showoptout]
 ----
 
-public showOptOut():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public redirect():void
+public showOptOut()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#redirect]
+----
+
+public redirect()
+
+----
 
 
 

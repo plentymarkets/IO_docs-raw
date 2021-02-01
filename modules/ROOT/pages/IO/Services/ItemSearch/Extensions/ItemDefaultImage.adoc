@@ -23,34 +23,29 @@ xref:IO/Services/ItemSearch/Extensions/ItemSearchExtension.adoc#[`ItemSearchExte
 |===
 |Type |Name |Description
 
-| 
-    |allImagesRequested
-    |
-| 
-    |itemImagesRequested
-    |
-| 
-    |variationImagesRequested
-    |
-| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_item_itemimagesettings[`ItemImageSettings`]
-    |itemImageSettings
-    |
-| 
-    |cache
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$allImagesRequested`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$itemImagesRequested`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$variationImagesRequested`
+|| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_item_itemimagesettings[`ItemImageSettings`]
+a|`$itemImageSettings`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsearch]
 ----
 
-public getSearch($parentSearchBuilder):void
+public getSearch($parentSearchBuilder)
 
 ----
-
-
 
 
 
@@ -61,31 +56,17 @@ public getSearch($parentSearchBuilder):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$parentSearchBuilder`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#transformresult]
 ----
 
-public transformResult():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public fromMemoryCache():void
+public transformResult()
 
 ----
 
@@ -95,16 +76,27 @@ public fromMemoryCache():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
 ----
 
-public resetMemoryCache($key = null):void
+public fromMemoryCache()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -115,7 +107,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

@@ -20,14 +20,13 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#toarray]
 ----
 
-public static isAssoc($mixed):void
+public static toArray($mixed):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -38,31 +37,17 @@ public static isAssoc($mixed):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$mixed`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isassoc]
 ----
 
-public static compare():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static get():void
+public static isAssoc($mixed)
 
 ----
 
@@ -72,16 +57,50 @@ public static get():void
 
 
 
+.*Parameters*
+|===
+|Type |Name |Description
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$mixed`
+|
+|===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#compare]
 ----
 
-public static getKeys():void
+public static compare()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#get]
+----
+
+public static get()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getkeys]
+----
+
+public static getKeys()
+
+----
 
 
 

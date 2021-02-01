@@ -13,6 +13,7 @@
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_urlbuilderrepositorycontract[`UrlBuilderRepositoryContract`]
 ====
 
 
@@ -28,24 +29,23 @@ since 5.0.0 will be removed in 6.0.0
 |===
 |Type |Name |Description
 
-| 
-    |urlPathMap
-    |
-| 
-    |requestedItems
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$urlPathMap`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$requestedItems`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#fillitemurl]
 ----
 
-public static fillItemUrl($itemData):void
+public static fillItemUrl($itemData)
 
 ----
 
@@ -55,9 +55,8 @@ public static fillItemUrl($itemData):void
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_urlbuilderrepositorycontract_fillitemurl[`UrlBuilderRepositoryContract::fillItemUrl()`]
 ====
-
-
 
 
 
@@ -67,16 +66,17 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$itemData`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#buildurl]
 ----
 
-public buildUrl($itemId, $variationId, $lang = null):IO\Services\UrlBuilder\UrlQuery
+public buildUrl($itemId, $variationId, $lang = null):xref:IO/Services/UrlBuilder/UrlQuery.adoc#[UrlQuery]
 
 ----
 
@@ -86,11 +86,10 @@ public buildUrl($itemId, $variationId, $lang = null):IO\Services\UrlBuilder\UrlQ
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_urlbuilderrepositorycontract_buildvariationurl[`UrlBuilderRepositoryContract::buildVariationUrl()`]
 ====
 
 
-
-====== *Return type:*xref:IO/Services/UrlBuilder/UrlQuery.adoc#[`UrlQuery`]
 
 
 
@@ -98,24 +97,25 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsuffix]
 ----
 
-public getSuffix($itemId, $variationId, $withVariationId = true):string
+public getSuffix($itemId, $variationId, $withVariationId = true):link:http://php.net/string[string^]
 
 ----
 
@@ -125,9 +125,8 @@ public getSuffix($itemId, $variationId, $withVariationId = true):string
 
 since 5.0.0 will be removed in 6.0.0
 
+see:xref:stable7@interface::Webshop.adoc#webshop_contracts_urlbuilderrepositorycontract_getsuffix[`UrlBuilderRepositoryContract::getSuffix()`]
 ====
-
-
 
 
 
@@ -137,15 +136,15 @@ since 5.0.0 will be removed in 6.0.0
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$withVariationId`
 |
 |===

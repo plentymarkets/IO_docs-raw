@@ -20,14 +20,13 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#run]
 ----
 
-public run($migrate):void
+public run($migrate)
 
 ----
-
-
 
 
 
@@ -38,7 +37,7 @@ public run($migrate):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$migrate`
 |
 |===

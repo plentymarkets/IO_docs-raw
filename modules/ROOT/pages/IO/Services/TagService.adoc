@@ -5,7 +5,8 @@
 [[io__tagservice]]
 = TagService
 
-
+This service class contains functions related to tag functionality. +
+All public functions are available in the Twig template renderer.
 
 
 
@@ -21,22 +22,21 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Tag.adoc#tag_contracts_tagrepositorycontract[`TagRepositoryContract`]
-    |tagRepository
-    |
+|xref:stable7@interface::Tag.adoc#tag_contracts_tagrepositorycontract[`TagRepositoryContract`]
+a|`$tagRepository`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($tagRepository):void
+public __construct($tagRepository)
 
 ----
-
-
 
 
 
@@ -47,23 +47,22 @@ TagService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Tag.adoc#tag_contracts_tagrepositorycontract[`TagRepositoryContract`]
+|xref:stable7@interface::Tag.adoc#tag_contracts_tagrepositorycontract[`TagRepositoryContract`]
 a|`$tagRepository`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettagbyid]
 ----
 
-public getTagById($tagId):Plenty\Modules\Tag\Models\Tag
+public getTagById($tagId):xref:stable7@interface::Tag.adoc#tag_models_tag[Tag]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Tag.adoc#tag_models_tag[`Tag`]
 
 
 Get a tag by its id
@@ -71,20 +70,19 @@ Get a tag by its id
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$tagId`
 |The id of the tag
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettagname]
 ----
 
-public getTagName($tagId, $lang = null):string
+public getTagName($tagId, $lang = null):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -95,13 +93,13 @@ Get the name of a tag for a specific language
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$tagId`
 |The id of the tag
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
-|The language to get the name in.
+|The language to get the name in (ISO-639-1)
 |===
 
 
