@@ -1,737 +1,738 @@
-                            * IO
-                                                    ** Api
-                                                    *** Resources
+                            * Api
+                                                    ** Resources
                         
-**** xref:IO/Api/Resources/AvailabilityResource.adoc[AvailabilityResource]
+*** xref:IO/Api/Resources/AvailabilityResource.adoc[AvailabilityResource]
         
-**** xref:IO/Api/Resources/OrderAdditionalInformationResource.adoc[OrderAdditionalInformationResource]
+*** xref:IO/Api/Resources/OrderAdditionalInformationResource.adoc[OrderAdditionalInformationResource]
         
-**** xref:IO/Api/Resources/GuestResource.adoc[GuestResource]
+*** xref:IO/Api/Resources/GuestResource.adoc[GuestResource]
         
-**** xref:IO/Api/Resources/ItemConditionResource.adoc[ItemConditionResource]
+*** xref:IO/Api/Resources/ItemConditionResource.adoc[ItemConditionResource]
         
-**** xref:IO/Api/Resources/ItemLastSeenResource.adoc[ItemLastSeenResource]
+*** xref:IO/Api/Resources/ItemLastSeenResource.adoc[ItemLastSeenResource]
         
-**** xref:IO/Api/Resources/ItemSearchAutocompleteResource.adoc[ItemSearchAutocompleteResource]
+*** xref:IO/Api/Resources/ItemSearchAutocompleteResource.adoc[ItemSearchAutocompleteResource]
         
-**** xref:IO/Api/Resources/ItemSearchResource.adoc[ItemSearchResource]
+*** xref:IO/Api/Resources/ItemSearchResource.adoc[ItemSearchResource]
         
-**** xref:IO/Api/Resources/ItemWishListResource.adoc[ItemWishListResource]
+*** xref:IO/Api/Resources/ItemWishListResource.adoc[ItemWishListResource]
         
-**** xref:IO/Api/Resources/LanguageResource.adoc[LanguageResource]
+*** xref:IO/Api/Resources/LanguageResource.adoc[LanguageResource]
         
-**** xref:IO/Api/Resources/LiveShoppingResource.adoc[LiveShoppingResource]
+*** xref:IO/Api/Resources/LiveShoppingResource.adoc[LiveShoppingResource]
         
-**** xref:IO/Api/Resources/OrderContactWishResource.adoc[OrderContactWishResource]
+*** xref:IO/Api/Resources/OrderContactWishResource.adoc[OrderContactWishResource]
         
-**** xref:IO/Api/Resources/DeliveryCountryResource.adoc[DeliveryCountryResource]
+*** xref:IO/Api/Resources/DeliveryCountryResource.adoc[DeliveryCountryResource]
         
-**** xref:IO/Api/Resources/OrderPaymentAllowedResource.adoc[OrderPaymentAllowedResource]
+*** xref:IO/Api/Resources/OrderPaymentAllowedResource.adoc[OrderPaymentAllowedResource]
         
-**** xref:IO/Api/Resources/OrderPaymentResource.adoc[OrderPaymentResource]
+*** xref:IO/Api/Resources/OrderPaymentResource.adoc[OrderPaymentResource]
         
-**** xref:IO/Api/Resources/OrderPropertyFileResource.adoc[OrderPropertyFileResource]
+*** xref:IO/Api/Resources/OrderPropertyFileResource.adoc[OrderPropertyFileResource]
         
-**** xref:IO/Api/Resources/OrderResource.adoc[OrderResource]
+*** xref:IO/Api/Resources/OrderResource.adoc[OrderResource]
         
-**** xref:IO/Api/Resources/OrderReturnResource.adoc[OrderReturnResource]
+*** xref:IO/Api/Resources/OrderReturnResource.adoc[OrderReturnResource]
         
-**** xref:IO/Api/Resources/OrderTemplateResource.adoc[OrderTemplateResource]
+*** xref:IO/Api/Resources/OrderTemplateResource.adoc[OrderTemplateResource]
         
-**** xref:IO/Api/Resources/ShippingCountryResource.adoc[ShippingCountryResource]
+*** xref:IO/Api/Resources/ShippingCountryResource.adoc[ShippingCountryResource]
         
-**** xref:IO/Api/Resources/ShippingResource.adoc[ShippingResource]
+*** xref:IO/Api/Resources/ShippingResource.adoc[ShippingResource]
         
-**** xref:IO/Api/Resources/TemplateResource.adoc[TemplateResource]
+*** xref:IO/Api/Resources/TemplateResource.adoc[TemplateResource]
         
-**** xref:IO/Api/Resources/FacetResource.adoc[FacetResource]
+*** xref:IO/Api/Resources/FacetResource.adoc[FacetResource]
         
-**** xref:IO/Api/Resources/CustomerResource.adoc[CustomerResource]
+*** xref:IO/Api/Resources/CustomerResource.adoc[CustomerResource]
         
-**** xref:IO/Api/Resources/BasketItemResource.adoc[BasketItemResource]
+*** xref:IO/Api/Resources/BasketItemResource.adoc[BasketItemResource]
         
-**** xref:IO/Api/Resources/ContactBankResource.adoc[ContactBankResource]
+*** xref:IO/Api/Resources/ContactBankResource.adoc[ContactBankResource]
         
-**** xref:IO/Api/Resources/BasketResource.adoc[BasketResource]
+*** xref:IO/Api/Resources/BasketResource.adoc[BasketResource]
         
-**** xref:IO/Api/Resources/CategoryDescriptionResource.adoc[CategoryDescriptionResource]
+*** xref:IO/Api/Resources/CategoryDescriptionResource.adoc[CategoryDescriptionResource]
         
-**** xref:IO/Api/Resources/CategoryItemResource.adoc[CategoryItemResource]
+*** xref:IO/Api/Resources/CategoryItemResource.adoc[CategoryItemResource]
         
-**** xref:IO/Api/Resources/CategoryTreeResource.adoc[CategoryTreeResource]
+*** xref:IO/Api/Resources/CategoryTreeResource.adoc[CategoryTreeResource]
         
-**** xref:IO/Api/Resources/CheckoutPaymentResource.adoc[CheckoutPaymentResource]
+*** xref:IO/Api/Resources/CheckoutPaymentResource.adoc[CheckoutPaymentResource]
         
-**** xref:IO/Api/Resources/CheckoutResource.adoc[CheckoutResource]
+*** xref:IO/Api/Resources/CheckoutResource.adoc[CheckoutResource]
         
-**** xref:IO/Api/Resources/CheckoutSetPaymentResource.adoc[CheckoutSetPaymentResource]
+*** xref:IO/Api/Resources/CheckoutSetPaymentResource.adoc[CheckoutSetPaymentResource]
         
-**** xref:IO/Api/Resources/CheckoutSetShippingIdResource.adoc[CheckoutSetShippingIdResource]
+*** xref:IO/Api/Resources/CheckoutSetShippingIdResource.adoc[CheckoutSetShippingIdResource]
         
-**** xref:IO/Api/Resources/ContactMailResource.adoc[ContactMailResource]
+*** xref:IO/Api/Resources/ContactMailResource.adoc[ContactMailResource]
         
-**** xref:IO/Api/Resources/CustomerPasswordResource.adoc[CustomerPasswordResource]
+*** xref:IO/Api/Resources/CustomerPasswordResource.adoc[CustomerPasswordResource]
         
-**** xref:IO/Api/Resources/CouponResource.adoc[CouponResource]
+*** xref:IO/Api/Resources/CouponResource.adoc[CouponResource]
         
-**** xref:IO/Api/Resources/CustomerAddressResource.adoc[CustomerAddressResource]
+*** xref:IO/Api/Resources/CustomerAddressResource.adoc[CustomerAddressResource]
         
-**** xref:IO/Api/Resources/CustomerAuthenticationResource.adoc[CustomerAuthenticationResource]
+*** xref:IO/Api/Resources/CustomerAuthenticationResource.adoc[CustomerAuthenticationResource]
         
-**** xref:IO/Api/Resources/CustomerLogoutResource.adoc[CustomerLogoutResource]
+*** xref:IO/Api/Resources/CustomerLogoutResource.adoc[CustomerLogoutResource]
         
-**** xref:IO/Api/Resources/CustomerMailResource.adoc[CustomerMailResource]
+*** xref:IO/Api/Resources/CustomerMailResource.adoc[CustomerMailResource]
         
-**** xref:IO/Api/Resources/CustomerNewsletterResource.adoc[CustomerNewsletterResource]
+*** xref:IO/Api/Resources/CustomerNewsletterResource.adoc[CustomerNewsletterResource]
         
-**** xref:IO/Api/Resources/CustomerOrderResource.adoc[CustomerOrderResource]
+*** xref:IO/Api/Resources/CustomerOrderResource.adoc[CustomerOrderResource]
         
-**** xref:IO/Api/Resources/CustomerOrderReturnResource.adoc[CustomerOrderReturnResource]
+*** xref:IO/Api/Resources/CustomerOrderReturnResource.adoc[CustomerOrderReturnResource]
         
-**** xref:IO/Api/Resources/CustomerPasswordResetResource.adoc[CustomerPasswordResetResource]
+*** xref:IO/Api/Resources/CustomerPasswordResetResource.adoc[CustomerPasswordResetResource]
         
-**** xref:IO/Api/Resources/VariationResource.adoc[VariationResource]
+*** xref:IO/Api/Resources/VariationResource.adoc[VariationResource]
         
         
-*** xref:IO/Api/ApiResource.adoc[ApiResource]
+** xref:IO/Api/ApiResource.adoc[ApiResource]
         
-*** xref:IO/Api/ApiResponse.adoc[ApiResponse]
+** xref:IO/Api/ApiResponse.adoc[ApiResponse]
         
-*** xref:IO/Api/ResponseCode.adoc[ResponseCode]
+** xref:IO/Api/ResponseCode.adoc[ResponseCode]
         
-                                    ** Jobs
+                                    * Jobs
                         
-*** xref:IO/Jobs/CleanupUserDataHashes.adoc[CleanupUserDataHashes]
+** xref:IO/Jobs/CleanupUserDataHashes.adoc[CleanupUserDataHashes]
         
-                                    ** Services
-                                                    *** Basket
-                                                    **** Factories
-                                                                                            
-***** xref:IO/Services/Basket/Factories/Faker/BasketFaker.adoc[Faker/BasketFaker]
-        
-***** xref:IO/Services/Basket/Factories/Faker/BasketItemFaker.adoc[Faker/BasketItemFaker]
-        
-        
-**** xref:IO/Services/Basket/Factories/BasketResultFactory.adoc[Faker/BasketResultFactory]
-        
-        
-                                    *** Order
-                                                    **** Factories
-                                                                                            
-***** xref:IO/Services/Order/Factories/Faker/LocalizedOrderFaker.adoc[Faker/LocalizedOrderFaker]
-        
-***** xref:IO/Services/Order/Factories/Faker/OrderFaker.adoc[Faker/OrderFaker]
-        
-***** xref:IO/Services/Order/Factories/Faker/TotalsFaker.adoc[Faker/TotalsFaker]
-        
-        
-**** xref:IO/Services/Order/Factories/OrderResultFactory.adoc[Faker/OrderResultFactory]
-        
-        
-                                    *** UrlBuilder
+                                    * Services
+                                                    ** Basket
+                                                    *** Factories
+                                                    **** Faker
                         
-**** xref:IO/Services/UrlBuilder/CategoryUrlBuilder.adoc[CategoryUrlBuilder]
+***** xref:IO/Services/Basket/Factories/Faker/BasketFaker.adoc[BasketFaker]
         
-**** xref:IO/Services/UrlBuilder/ItemUrlBuilder.adoc[ItemUrlBuilder]
+***** xref:IO/Services/Basket/Factories/Faker/BasketItemFaker.adoc[BasketItemFaker]
         
-**** xref:IO/Services/UrlBuilder/UrlQuery.adoc[UrlQuery]
         
-**** xref:IO/Services/UrlBuilder/VariationUrlBuilder.adoc[VariationUrlBuilder]
+**** xref:IO/Services/Basket/Factories/BasketResultFactory.adoc[BasketResultFactory]
         
-                                    *** ItemSearch
-                                                    **** Extensions
+        
+                                    ** Order
+                                                    *** Factories
+                                                    **** Faker
                         
-***** xref:IO/Services/ItemSearch/Extensions/AvailabilityExtension.adoc[AvailabilityExtension]
+***** xref:IO/Services/Order/Factories/Faker/LocalizedOrderFaker.adoc[LocalizedOrderFaker]
         
-***** xref:IO/Services/ItemSearch/Extensions/BundleComponentExtension.adoc[BundleComponentExtension]
+***** xref:IO/Services/Order/Factories/Faker/OrderFaker.adoc[OrderFaker]
         
-***** xref:IO/Services/ItemSearch/Extensions/ContentCacheVariationLinkExtension.adoc[ContentCacheVariationLinkExtension]
-        
-***** xref:IO/Services/ItemSearch/Extensions/CurrentCategoryExtension.adoc[CurrentCategoryExtension]
-        
-***** xref:IO/Services/ItemSearch/Extensions/FacetFilterExtension.adoc[FacetFilterExtension]
-        
-***** xref:IO/Services/ItemSearch/Extensions/GroupedAttributeValuesExtension.adoc[GroupedAttributeValuesExtension]
-        
-***** xref:IO/Services/ItemSearch/Extensions/ItemDefaultImage.adoc[ItemDefaultImage]
-        
-***** xref:IO/Services/ItemSearch/Extensions/ItemUrlExtension.adoc[ItemUrlExtension]
-        
-***** xref:IO/Services/ItemSearch/Extensions/PriceSearchExtension.adoc[PriceSearchExtension]
-        
-***** xref:IO/Services/ItemSearch/Extensions/ReduceDataExtension.adoc[ReduceDataExtension]
-        
-***** xref:IO/Services/ItemSearch/Extensions/SortExtension.adoc[SortExtension]
-        
-***** xref:IO/Services/ItemSearch/Extensions/TagExtension.adoc[TagExtension]
-        
-***** xref:IO/Services/ItemSearch/Extensions/VariationAttributeMapExtension.adoc[VariationAttributeMapExtension]
-        
-***** xref:IO/Services/ItemSearch/Extensions/VariationPropertyExtension.adoc[VariationPropertyExtension]
-        
-                                    **** Factories
-                                                                                                                                                                
-***** xref:IO/Services/ItemSearch/Factories/Faker/Traits/FakeConstants.adoc[Faker/Traits/FakeConstants]
+***** xref:IO/Services/Order/Factories/Faker/TotalsFaker.adoc[TotalsFaker]
         
         
-**** xref:IO/Services/ItemSearch/Factories/Faker/AbstractFaker.adoc[Faker/Traits/AbstractFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/PriceFaker.adoc[Faker/Traits/PriceFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/VariationFaker.adoc[Faker/Traits/VariationFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/UnitFaker.adoc[Faker/Traits/UnitFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/TextFaker.adoc[Faker/Traits/TextFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/TagFaker.adoc[Faker/Traits/TagFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/StockFaker.adoc[Faker/Traits/StockFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/SortingFaker.adoc[Faker/Traits/SortingFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/SkuFaker.adoc[Faker/Traits/SkuFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/SalesPriceFaker.adoc[Faker/Traits/SalesPriceFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/PropertyFaker.adoc[Faker/Traits/PropertyFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/OrderPropertyFaker.adoc[Faker/Traits/OrderPropertyFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/AttributeFaker.adoc[Faker/Traits/AttributeFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/ItemFaker.adoc[Faker/Traits/ItemFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/ImageFaker.adoc[Faker/Traits/ImageFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/IdsFaker.adoc[Faker/Traits/IdsFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/FilterFaker.adoc[Faker/Traits/FilterFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/FacetFaker.adoc[Faker/Traits/FacetFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/DefaultCategoryFaker.adoc[Faker/Traits/DefaultCategoryFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/CrossSellingFaker.adoc[Faker/Traits/CrossSellingFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/CategoryTreeFaker.adoc[Faker/Traits/CategoryTreeFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/CategoryFaker.adoc[Faker/Traits/CategoryFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/BundleComponentsFaker.adoc[Faker/Traits/BundleComponentsFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/BarcodeFaker.adoc[Faker/Traits/BarcodeFaker]
-        
-**** xref:IO/Services/ItemSearch/Factories/Faker/VariationPropertyFaker.adoc[Faker/Traits/VariationPropertyFaker]
+**** xref:IO/Services/Order/Factories/OrderResultFactory.adoc[OrderResultFactory]
         
         
-**** xref:IO/Services/ItemSearch/Factories/BaseSearchFactory.adoc[Faker/BaseSearchFactory]
-        
-**** xref:IO/Services/ItemSearch/Factories/FacetSearchFactory.adoc[Faker/FacetSearchFactory]
-        
-**** xref:IO/Services/ItemSearch/Factories/MultiSearchFactory.adoc[Faker/MultiSearchFactory]
-        
-**** xref:IO/Services/ItemSearch/Factories/VariationSearchFactory.adoc[Faker/VariationSearchFactory]
-        
-**** xref:IO/Services/ItemSearch/Factories/VariationSearchResultFactory.adoc[Faker/VariationSearchResultFactory]
-        
-                                    **** Helper
+                                    ** UrlBuilder
                         
-***** xref:IO/Services/ItemSearch/Helper/FacetExtensionContainer.adoc[FacetExtensionContainer]
+*** xref:IO/Services/UrlBuilder/CategoryUrlBuilder.adoc[CategoryUrlBuilder]
         
-***** xref:IO/Services/ItemSearch/Helper/ResultFieldTemplate.adoc[ResultFieldTemplate]
+*** xref:IO/Services/UrlBuilder/ItemUrlBuilder.adoc[ItemUrlBuilder]
         
-***** xref:IO/Services/ItemSearch/Helper/SortingHelper.adoc[SortingHelper]
+*** xref:IO/Services/UrlBuilder/UrlQuery.adoc[UrlQuery]
         
-                                    **** Mutators
+*** xref:IO/Services/UrlBuilder/VariationUrlBuilder.adoc[VariationUrlBuilder]
+        
+                                    ** ItemSearch
+                                                    *** Extensions
                         
-***** xref:IO/Services/ItemSearch/Mutators/OrderPropertySelectionValueMutator.adoc[OrderPropertySelectionValueMutator]
+**** xref:IO/Services/ItemSearch/Extensions/AvailabilityExtension.adoc[AvailabilityExtension]
         
-                                    **** SearchPresets
-                        
-***** xref:IO/Services/ItemSearch/SearchPresets/BasketItems.adoc[BasketItems]
+**** xref:IO/Services/ItemSearch/Extensions/BundleComponentExtension.adoc[BundleComponentExtension]
         
-***** xref:IO/Services/ItemSearch/SearchPresets/CategoryItems.adoc[CategoryItems]
+**** xref:IO/Services/ItemSearch/Extensions/ContentCacheVariationLinkExtension.adoc[ContentCacheVariationLinkExtension]
         
-***** xref:IO/Services/ItemSearch/SearchPresets/CrossSellingItems.adoc[CrossSellingItems]
+**** xref:IO/Services/ItemSearch/Extensions/CurrentCategoryExtension.adoc[CurrentCategoryExtension]
         
-***** xref:IO/Services/ItemSearch/SearchPresets/Facets.adoc[Facets]
+**** xref:IO/Services/ItemSearch/Extensions/FacetFilterExtension.adoc[FacetFilterExtension]
         
-***** xref:IO/Services/ItemSearch/SearchPresets/LiveShoppingItems.adoc[LiveShoppingItems]
+**** xref:IO/Services/ItemSearch/Extensions/GroupedAttributeValuesExtension.adoc[GroupedAttributeValuesExtension]
         
-***** xref:IO/Services/ItemSearch/SearchPresets/ManufacturerItems.adoc[ManufacturerItems]
+**** xref:IO/Services/ItemSearch/Extensions/ItemDefaultImage.adoc[ItemDefaultImage]
         
-***** xref:IO/Services/ItemSearch/SearchPresets/SearchItems.adoc[SearchItems]
+**** xref:IO/Services/ItemSearch/Extensions/ItemUrlExtension.adoc[ItemUrlExtension]
         
-***** xref:IO/Services/ItemSearch/SearchPresets/SingleItem.adoc[SingleItem]
+**** xref:IO/Services/ItemSearch/Extensions/PriceSearchExtension.adoc[PriceSearchExtension]
         
-***** xref:IO/Services/ItemSearch/SearchPresets/TagItems.adoc[TagItems]
+**** xref:IO/Services/ItemSearch/Extensions/ReduceDataExtension.adoc[ReduceDataExtension]
         
-***** xref:IO/Services/ItemSearch/SearchPresets/VariationAttributeMap.adoc[VariationAttributeMap]
+**** xref:IO/Services/ItemSearch/Extensions/SortExtension.adoc[SortExtension]
         
-***** xref:IO/Services/ItemSearch/SearchPresets/VariationList.adoc[VariationList]
+**** xref:IO/Services/ItemSearch/Extensions/TagExtension.adoc[TagExtension]
         
-                                    **** Services
-                        
-***** xref:IO/Services/ItemSearch/Services/ItemSearchService.adoc[ItemSearchService]
+**** xref:IO/Services/ItemSearch/Extensions/VariationAttributeMapExtension.adoc[VariationAttributeMapExtension]
         
-        
-        
-*** xref:IO/Services/AuthenticationService.adoc[AuthenticationService]
-        
-*** xref:IO/Services/PropertyFileService.adoc[PropertyFileService]
-        
-*** xref:IO/Services/OrderService.adoc[OrderService]
-        
-*** xref:IO/Services/OrderStatusService.adoc[OrderStatusService]
-        
-*** xref:IO/Services/OrderTotalsService.adoc[OrderTotalsService]
-        
-*** xref:IO/Services/OrderTrackingService.adoc[OrderTrackingService]
-        
-*** xref:IO/Services/PriceDetectService.adoc[PriceDetectService]
-        
-*** xref:IO/Services/SessionStorageService.adoc[SessionStorageService]
-        
-*** xref:IO/Services/SalesPriceService.adoc[SalesPriceService]
-        
-*** xref:IO/Services/LocalizationService.adoc[LocalizationService]
-        
-*** xref:IO/Services/ShippingService.adoc[ShippingService]
-        
-*** xref:IO/Services/TagService.adoc[TagService]
-        
-*** xref:IO/Services/TemplateConfigService.adoc[TemplateConfigService]
-        
-*** xref:IO/Services/TemplateService.adoc[TemplateService]
-        
-*** xref:IO/Services/UnitService.adoc[UnitService]
-        
-*** xref:IO/Services/UrlService.adoc[UrlService]
-        
-*** xref:IO/Services/UserDataHashService.adoc[UserDataHashService]
-        
-*** xref:IO/Services/NotificationService.adoc[NotificationService]
-        
-*** xref:IO/Services/LegalInformationService.adoc[LegalInformationService]
-        
-*** xref:IO/Services/LiveShoppingService.adoc[LiveShoppingService]
-        
-*** xref:IO/Services/CustomerNewsletterService.adoc[CustomerNewsletterService]
-        
-*** xref:IO/Services/BasketService.adoc[BasketService]
-        
-*** xref:IO/Services/CategoryService.adoc[CategoryService]
-        
-*** xref:IO/Services/CheckoutService.adoc[CheckoutService]
-        
-*** xref:IO/Services/ContactBankService.adoc[ContactBankService]
-        
-*** xref:IO/Services/ContactMailService.adoc[ContactMailService]
-        
-*** xref:IO/Services/CountryService.adoc[CountryService]
-        
-*** xref:IO/Services/CouponService.adoc[CouponService]
-        
-*** xref:IO/Services/CustomerService.adoc[CustomerService]
-        
-*** xref:IO/Services/AvailabilityService.adoc[AvailabilityService]
-        
-*** xref:IO/Services/DocumentService.adoc[DocumentService]
-        
-*** xref:IO/Services/FacetService.adoc[FacetService]
-        
-*** xref:IO/Services/FakerService.adoc[FakerService]
-        
-*** xref:IO/Services/ItemCrossSellingService.adoc[ItemCrossSellingService]
-        
-*** xref:IO/Services/ItemLastSeenService.adoc[ItemLastSeenService]
-        
-*** xref:IO/Services/ItemListService.adoc[ItemListService]
-        
-*** xref:IO/Services/ItemService.adoc[ItemService]
-        
-*** xref:IO/Services/ItemWishListService.adoc[ItemWishListService]
-        
-*** xref:IO/Services/WebstoreConfigurationService.adoc[WebstoreConfigurationService]
-        
-                                    ** Repositories
-                        
-*** xref:IO/Repositories/ItemWishListGuestRepository.adoc[ItemWishListGuestRepository]
-        
-*** xref:IO/Repositories/ItemWishListRepository.adoc[ItemWishListRepository]
-        
-                                    ** Providers
-                        
-*** xref:IO/Providers/IORouteServiceProvider.adoc[IORouteServiceProvider]
-        
-*** xref:IO/Providers/IOServiceProvider.adoc[IOServiceProvider]
-        
-                                    ** Models
-                        
-*** xref:IO/Models/LocalizedOrder.adoc[LocalizedOrder]
-        
-*** xref:IO/Models/ModelWrapper.adoc[ModelWrapper]
-        
-                                    ** Migrations
-                        
-*** xref:IO/Migrations/ItemWishListMigration_0_0_1.adoc[ItemWishListMigration_0_0_1]
-        
-*** xref:IO/Migrations/PageNotFoundConfigMigration_0_0_1.adoc[PageNotFoundConfigMigration_0_0_1]
-        
-*** xref:IO/Migrations/UserDataHashTableMigration_0_0_1.adoc[UserDataHashTableMigration_0_0_1]
-        
-*** xref:IO/Migrations/UserDataHashTableMigration_0_0_2.adoc[UserDataHashTableMigration_0_0_2]
-        
-                                    ** Middlewares
-                        
-*** xref:IO/Middlewares/AuthenticateWithToken.adoc[AuthenticateWithToken]
-        
-*** xref:IO/Middlewares/CheckNotFound.adoc[CheckNotFound]
-        
-*** xref:IO/Middlewares/ClearNotifications.adoc[ClearNotifications]
-        
-*** xref:IO/Middlewares/DetectCurrency.adoc[DetectCurrency]
-        
-*** xref:IO/Middlewares/DetectLanguage.adoc[DetectLanguage]
-        
-*** xref:IO/Middlewares/DetectLegacySearch.adoc[DetectLegacySearch]
-        
-*** xref:IO/Middlewares/DetectReadonlyCheckout.adoc[DetectReadonlyCheckout]
-        
-*** xref:IO/Middlewares/DetectReferrer.adoc[DetectReferrer]
-        
-*** xref:IO/Middlewares/DetectShippingCountry.adoc[DetectShippingCountry]
-        
-*** xref:IO/Middlewares/HandleNewsletter.adoc[HandleNewsletter]
-        
-*** xref:IO/Middlewares/HandleOrderPreviewUrl.adoc[HandleOrderPreviewUrl]
-        
-                                    ** Helper
-                        
-*** xref:IO/Helper/ArrayHelper.adoc[ArrayHelper]
-        
-*** xref:IO/Helper/ReCaptcha.adoc[ReCaptcha]
-        
-*** xref:IO/Helper/VariationPriceList.adoc[VariationPriceList]
-        
-*** xref:IO/Helper/Utils.adoc[Utils]
-        
-*** xref:IO/Helper/UserSession.adoc[UserSession]
-        
-*** xref:IO/Helper/TemplateContainer.adoc[TemplateContainer]
-        
-*** xref:IO/Helper/StringUtils.adoc[StringUtils]
-        
-*** xref:IO/Helper/SafeGetter.adoc[SafeGetter]
-        
-*** xref:IO/Helper/RouteConfig.adoc[RouteConfig]
-        
-*** xref:IO/Helper/ResourceContainer.adoc[ResourceContainer]
-        
-*** xref:IO/Helper/PluginConfig.adoc[PluginConfig]
-        
-*** xref:IO/Helper/CategoryDataFilter.adoc[CategoryDataFilter]
-        
-*** xref:IO/Helper/LanguageMap.adoc[LanguageMap]
-        
-*** xref:IO/Helper/EventDispatcher.adoc[EventDispatcher]
-        
-*** xref:IO/Helper/DefaultSearchResult.adoc[DefaultSearchResult]
-        
-*** xref:IO/Helper/DataFilter.adoc[DataFilter]
-        
-*** xref:IO/Helper/CurrencyConverter.adoc[CurrencyConverter]
-        
-*** xref:IO/Helper/ComponentContainer.adoc[ComponentContainer]
-        
-*** xref:IO/Helper/CategoryMap.adoc[CategoryMap]
-        
-*** xref:IO/Helper/CategoryKey.adoc[CategoryKey]
-        
-*** xref:IO/Helper/VatConverter.adoc[VatConverter]
-        
-                                    ** Builder
-                                                    *** Category
-                        
-**** xref:IO/Builder/Category/CategoryParams.adoc[CategoryParams]
-        
-**** xref:IO/Builder/Category/CategoryParamsBuilder.adoc[CategoryParamsBuilder]
-        
-                                    *** Facet
-                        
-**** xref:IO/Builder/Facet/FacetBuilder.adoc[FacetBuilder]
-        
-                                    *** Item
-                                                    **** Fields
-                        
-***** xref:IO/Builder/Item/Fields/ItemBaseFields.adoc[ItemBaseFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationLinkMarketplaceFields.adoc[VariationLinkMarketplaceFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationSupplierFields.adoc[VariationSupplierFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationStockFields.adoc[VariationStockFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationStockBufferFields.adoc[VariationStockBufferFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationStandardCategoryFields.adoc[VariationStandardCategoryFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationRetailPriceFields.adoc[VariationRetailPriceFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationMarketStatusFields.adoc[VariationMarketStatusFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationLinkWebstoreFields.adoc[VariationLinkWebstoreFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationImageFields.adoc[VariationImageFields]
-        
-***** xref:IO/Builder/Item/Fields/ItemCharacterFields.adoc[ItemCharacterFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationCategoryFields.adoc[VariationCategoryFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationBundleComponentFields.adoc[VariationBundleComponentFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationBaseFields.adoc[VariationBaseFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationBarcodeFields.adoc[VariationBarcodeFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationAttributeValueFields.adoc[VariationAttributeValueFields]
-        
-***** xref:IO/Builder/Item/Fields/ItemDescriptionFields.adoc[ItemDescriptionFields]
-        
-***** xref:IO/Builder/Item/Fields/ItemCrossSellingFields.adoc[ItemCrossSellingFields]
-        
-***** xref:IO/Builder/Item/Fields/VariationWarehouseFields.adoc[VariationWarehouseFields]
-        
-                                    **** Params
-                        
-***** xref:IO/Builder/Item/Params/ItemColumnsParams.adoc[ItemColumnsParams]
-        
-        
-**** xref:IO/Builder/Item/ItemColumnBuilder.adoc[ItemColumnBuilder]
-        
-**** xref:IO/Builder/Item/ItemFilterBuilder.adoc[ItemFilterBuilder]
-        
-**** xref:IO/Builder/Item/ItemParamsBuilder.adoc[ItemParamsBuilder]
-        
-                                    *** Order
-                        
-**** xref:IO/Builder/Order/AddressType.adoc[AddressType]
-        
-**** xref:IO/Builder/Order/OrderBuilder.adoc[OrderBuilder]
-        
-**** xref:IO/Builder/Order/OrderBuilderQuery.adoc[OrderBuilderQuery]
-        
-**** xref:IO/Builder/Order/OrderItemBuilder.adoc[OrderItemBuilder]
-        
-**** xref:IO/Builder/Order/OrderItemType.adoc[OrderItemType]
-        
-**** xref:IO/Builder/Order/OrderOptionSubType.adoc[OrderOptionSubType]
-        
-**** xref:IO/Builder/Order/OrderOptionType.adoc[OrderOptionType]
-        
-**** xref:IO/Builder/Order/OrderType.adoc[OrderType]
-        
-**** xref:IO/Builder/Order/ReferenceType.adoc[ReferenceType]
-        
-**** xref:IO/Builder/Order/RelationType.adoc[RelationType]
-        
-                                    *** Sorting
-                        
-**** xref:IO/Builder/Sorting/SortingBuilder.adoc[SortingBuilder]
-        
-        
-                                    ** Guards
-                        
-*** xref:IO/Guards/AbstractGuard.adoc[AbstractGuard]
-        
-*** xref:IO/Guards/AuthGuard.adoc[AuthGuard]
-        
-                                    ** Extensions
-                                                    *** Basket
-                        
-**** xref:IO/Extensions/Basket/IOFrontendShippingProfileChanged.adoc[IOFrontendShippingProfileChanged]
-        
-**** xref:IO/Extensions/Basket/IOFrontendUpdateDeliveryAddress.adoc[IOFrontendUpdateDeliveryAddress]
-        
-                                    *** Constants
-                        
-**** xref:IO/Extensions/Constants/ShopUrls.adoc[ShopUrls]
-        
-                                    *** ContentCache
-                        
-**** xref:IO/Extensions/ContentCache/IOAfterBuildPlugins.adoc[IOAfterBuildPlugins]
-        
-                                    *** Facets
-                        
-**** xref:IO/Extensions/Facets/CategoryFacet.adoc[CategoryFacet]
+**** xref:IO/Services/ItemSearch/Extensions/VariationPropertyExtension.adoc[VariationPropertyExtension]
         
                                     *** Factories
+                                                    **** Faker
+                                                                                            
+***** xref:IO/Services/ItemSearch/Factories/Faker/Traits/FakeConstants.adoc[Traits/FakeConstants]
+        
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/AbstractFaker.adoc[Traits/AbstractFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/PriceFaker.adoc[Traits/PriceFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/VariationFaker.adoc[Traits/VariationFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/UnitFaker.adoc[Traits/UnitFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/TextFaker.adoc[Traits/TextFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/TagFaker.adoc[Traits/TagFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/StockFaker.adoc[Traits/StockFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/SortingFaker.adoc[Traits/SortingFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/SkuFaker.adoc[Traits/SkuFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/SalesPriceFaker.adoc[Traits/SalesPriceFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/PropertyFaker.adoc[Traits/PropertyFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/OrderPropertyFaker.adoc[Traits/OrderPropertyFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/AttributeFaker.adoc[Traits/AttributeFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/ItemFaker.adoc[Traits/ItemFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/ImageFaker.adoc[Traits/ImageFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/IdsFaker.adoc[Traits/IdsFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/FilterFaker.adoc[Traits/FilterFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/FacetFaker.adoc[Traits/FacetFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/DefaultCategoryFaker.adoc[Traits/DefaultCategoryFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/CrossSellingFaker.adoc[Traits/CrossSellingFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/CategoryTreeFaker.adoc[Traits/CategoryTreeFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/CategoryFaker.adoc[Traits/CategoryFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/BundleComponentsFaker.adoc[Traits/BundleComponentsFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/BarcodeFaker.adoc[Traits/BarcodeFaker]
+        
+**** xref:IO/Services/ItemSearch/Factories/Faker/VariationPropertyFaker.adoc[Traits/VariationPropertyFaker]
+        
+        
+**** xref:IO/Services/ItemSearch/Factories/BaseSearchFactory.adoc[BaseSearchFactory]
+        
+**** xref:IO/Services/ItemSearch/Factories/FacetSearchFactory.adoc[FacetSearchFactory]
+        
+**** xref:IO/Services/ItemSearch/Factories/MultiSearchFactory.adoc[MultiSearchFactory]
+        
+**** xref:IO/Services/ItemSearch/Factories/VariationSearchFactory.adoc[VariationSearchFactory]
+        
+**** xref:IO/Services/ItemSearch/Factories/VariationSearchResultFactory.adoc[VariationSearchResultFactory]
+        
+                                    *** Helper
                         
-**** xref:IO/Extensions/Factories/TwigExtensionFactory.adoc[TwigExtensionFactory]
+**** xref:IO/Services/ItemSearch/Helper/FacetExtensionContainer.adoc[FacetExtensionContainer]
         
-                                    *** Filters
+**** xref:IO/Services/ItemSearch/Helper/ResultFieldTemplate.adoc[ResultFieldTemplate]
+        
+**** xref:IO/Services/ItemSearch/Helper/SortingHelper.adoc[SortingHelper]
+        
+                                    *** Mutators
                         
-**** xref:IO/Extensions/Filters/AddressOptionTypeFilter.adoc[AddressOptionTypeFilter]
+**** xref:IO/Services/ItemSearch/Mutators/OrderPropertySelectionValueMutator.adoc[OrderPropertySelectionValueMutator]
         
-**** xref:IO/Extensions/Filters/ItemImagesFilter.adoc[ItemImagesFilter]
-        
-**** xref:IO/Extensions/Filters/ItemNameFilter.adoc[ItemNameFilter]
-        
-**** xref:IO/Extensions/Filters/NumberFormatFilter.adoc[NumberFormatFilter]
-        
-**** xref:IO/Extensions/Filters/OrderByKeyFilter.adoc[OrderByKeyFilter]
-        
-**** xref:IO/Extensions/Filters/PatternFilter.adoc[PatternFilter]
-        
-**** xref:IO/Extensions/Filters/PropertyNameFilter.adoc[PropertyNameFilter]
-        
-**** xref:IO/Extensions/Filters/ResultFieldsFilter.adoc[ResultFieldsFilter]
-        
-**** xref:IO/Extensions/Filters/ShuffleFilter.adoc[ShuffleFilter]
-        
-**** xref:IO/Extensions/Filters/SpecialOfferFilter.adoc[SpecialOfferFilter]
-        
-**** xref:IO/Extensions/Filters/TabFilter.adoc[TabFilter]
-        
-**** xref:IO/Extensions/Filters/URLFilter.adoc[URLFilter]
-        
-                                    *** Functions
+                                    *** SearchPresets
                         
-**** xref:IO/Extensions/Functions/AdditionalResources.adoc[AdditionalResources]
+**** xref:IO/Services/ItemSearch/SearchPresets/BasketItems.adoc[BasketItems]
         
-**** xref:IO/Extensions/Functions/Component.adoc[Component]
+**** xref:IO/Services/ItemSearch/SearchPresets/CategoryItems.adoc[CategoryItems]
         
-**** xref:IO/Extensions/Functions/ExternalContent.adoc[ExternalContent]
+**** xref:IO/Services/ItemSearch/SearchPresets/CrossSellingItems.adoc[CrossSellingItems]
         
-**** xref:IO/Extensions/Functions/GetBasePrice.adoc[GetBasePrice]
+**** xref:IO/Services/ItemSearch/SearchPresets/Facets.adoc[Facets]
         
-**** xref:IO/Extensions/Functions/GetCdnMetadata.adoc[GetCdnMetadata]
+**** xref:IO/Services/ItemSearch/SearchPresets/LiveShoppingItems.adoc[LiveShoppingItems]
         
-**** xref:IO/Extensions/Functions/Partial.adoc[Partial]
+**** xref:IO/Services/ItemSearch/SearchPresets/ManufacturerItems.adoc[ManufacturerItems]
         
-**** xref:IO/Extensions/Functions/QueryString.adoc[QueryString]
+**** xref:IO/Services/ItemSearch/SearchPresets/SearchItems.adoc[SearchItems]
         
-**** xref:IO/Extensions/Functions/UniqueId.adoc[UniqueId]
+**** xref:IO/Services/ItemSearch/SearchPresets/SingleItem.adoc[SingleItem]
         
-                                    *** Mail
+**** xref:IO/Services/ItemSearch/SearchPresets/TagItems.adoc[TagItems]
+        
+**** xref:IO/Services/ItemSearch/SearchPresets/VariationAttributeMap.adoc[VariationAttributeMap]
+        
+**** xref:IO/Services/ItemSearch/SearchPresets/VariationList.adoc[VariationList]
+        
+                                    *** Services
                         
-**** xref:IO/Extensions/Mail/IOSendMail.adoc[IOSendMail]
+**** xref:IO/Services/ItemSearch/Services/ItemSearchService.adoc[ItemSearchService]
         
-                                    *** Sitemap
+        
+        
+** xref:IO/Services/AuthenticationService.adoc[AuthenticationService]
+        
+** xref:IO/Services/PropertyFileService.adoc[PropertyFileService]
+        
+** xref:IO/Services/OrderService.adoc[OrderService]
+        
+** xref:IO/Services/OrderStatusService.adoc[OrderStatusService]
+        
+** xref:IO/Services/OrderTotalsService.adoc[OrderTotalsService]
+        
+** xref:IO/Services/OrderTrackingService.adoc[OrderTrackingService]
+        
+** xref:IO/Services/PriceDetectService.adoc[PriceDetectService]
+        
+** xref:IO/Services/SessionStorageService.adoc[SessionStorageService]
+        
+** xref:IO/Services/SalesPriceService.adoc[SalesPriceService]
+        
+** xref:IO/Services/LocalizationService.adoc[LocalizationService]
+        
+** xref:IO/Services/ShippingService.adoc[ShippingService]
+        
+** xref:IO/Services/TagService.adoc[TagService]
+        
+** xref:IO/Services/TemplateConfigService.adoc[TemplateConfigService]
+        
+** xref:IO/Services/TemplateService.adoc[TemplateService]
+        
+** xref:IO/Services/UnitService.adoc[UnitService]
+        
+** xref:IO/Services/UrlService.adoc[UrlService]
+        
+** xref:IO/Services/UserDataHashService.adoc[UserDataHashService]
+        
+** xref:IO/Services/NotificationService.adoc[NotificationService]
+        
+** xref:IO/Services/LegalInformationService.adoc[LegalInformationService]
+        
+** xref:IO/Services/LiveShoppingService.adoc[LiveShoppingService]
+        
+** xref:IO/Services/CustomerNewsletterService.adoc[CustomerNewsletterService]
+        
+** xref:IO/Services/BasketService.adoc[BasketService]
+        
+** xref:IO/Services/CategoryService.adoc[CategoryService]
+        
+** xref:IO/Services/CheckoutService.adoc[CheckoutService]
+        
+** xref:IO/Services/ContactBankService.adoc[ContactBankService]
+        
+** xref:IO/Services/ContactMailService.adoc[ContactMailService]
+        
+** xref:IO/Services/CountryService.adoc[CountryService]
+        
+** xref:IO/Services/CouponService.adoc[CouponService]
+        
+** xref:IO/Services/CustomerService.adoc[CustomerService]
+        
+** xref:IO/Services/AvailabilityService.adoc[AvailabilityService]
+        
+** xref:IO/Services/DocumentService.adoc[DocumentService]
+        
+** xref:IO/Services/FacetService.adoc[FacetService]
+        
+** xref:IO/Services/FakerService.adoc[FakerService]
+        
+** xref:IO/Services/ItemCrossSellingService.adoc[ItemCrossSellingService]
+        
+** xref:IO/Services/ItemLastSeenService.adoc[ItemLastSeenService]
+        
+** xref:IO/Services/ItemListService.adoc[ItemListService]
+        
+** xref:IO/Services/ItemService.adoc[ItemService]
+        
+** xref:IO/Services/ItemWishListService.adoc[ItemWishListService]
+        
+** xref:IO/Services/WebstoreConfigurationService.adoc[WebstoreConfigurationService]
+        
+                                    * Repositories
                         
-**** xref:IO/Extensions/Sitemap/IOSitemapPattern.adoc[IOSitemapPattern]
+** xref:IO/Repositories/ItemWishListGuestRepository.adoc[ItemWishListGuestRepository]
         
+** xref:IO/Repositories/ItemWishListRepository.adoc[ItemWishListRepository]
         
-*** xref:IO/Extensions/AbstractFilter.adoc[AbstractFilter]
-        
-*** xref:IO/Extensions/AbstractFunction.adoc[AbstractFunction]
-        
-*** xref:IO/Extensions/TwigIOExtension.adoc[TwigIOExtension]
-        
-*** xref:IO/Extensions/TwigServiceContainer.adoc[TwigServiceContainer]
-        
-*** xref:IO/Extensions/TwigServiceProvider.adoc[TwigServiceProvider]
-        
-*** xref:IO/Extensions/TwigTemplateContextExtension.adoc[TwigTemplateContextExtension]
-        
-                                    ** Events
-                                                    *** Basket
+                                    * Providers
                         
-**** xref:IO/Events/Basket/BeforeBasketItemToOrderItem.adoc[BeforeBasketItemToOrderItem]
+** xref:IO/Providers/IORouteServiceProvider.adoc[IORouteServiceProvider]
         
-                                    *** Checkout
+** xref:IO/Providers/IOServiceProvider.adoc[IOServiceProvider]
+        
+                                    * Models
                         
-**** xref:IO/Events/Checkout/CheckoutReadonlyChanged.adoc[CheckoutReadonlyChanged]
+** xref:IO/Models/LocalizedOrder.adoc[LocalizedOrder]
         
+** xref:IO/Models/ModelWrapper.adoc[ModelWrapper]
         
-                                    ** DBModels
+                                    * Migrations
                         
-*** xref:IO/DBModels/ItemWishList.adoc[ItemWishList]
+** xref:IO/Migrations/ItemWishListMigration_0_0_1.adoc[ItemWishListMigration_0_0_1]
         
-*** xref:IO/DBModels/UserDataHash.adoc[UserDataHash]
+** xref:IO/Migrations/PageNotFoundConfigMigration_0_0_1.adoc[PageNotFoundConfigMigration_0_0_1]
         
-                                    ** Controllers
+** xref:IO/Migrations/UserDataHashTableMigration_0_0_1.adoc[UserDataHashTableMigration_0_0_1]
+        
+** xref:IO/Migrations/UserDataHashTableMigration_0_0_2.adoc[UserDataHashTableMigration_0_0_2]
+        
+                                    * Middlewares
                         
-*** xref:IO/Controllers/BasketController.adoc[BasketController]
+** xref:IO/Middlewares/AuthenticateWithToken.adoc[AuthenticateWithToken]
         
-*** xref:IO/Controllers/LoginController.adoc[LoginController]
+** xref:IO/Middlewares/CheckNotFound.adoc[CheckNotFound]
         
-*** xref:IO/Controllers/StaticPagesController.adoc[StaticPagesController]
+** xref:IO/Middlewares/ClearNotifications.adoc[ClearNotifications]
         
-*** xref:IO/Controllers/RegisterController.adoc[RegisterController]
+** xref:IO/Middlewares/DetectCurrency.adoc[DetectCurrency]
         
-*** xref:IO/Controllers/PlaceOrderController.adoc[PlaceOrderController]
+** xref:IO/Middlewares/DetectLanguage.adoc[DetectLanguage]
         
-*** xref:IO/Controllers/OrderReturnController.adoc[OrderReturnController]
+** xref:IO/Middlewares/DetectLegacySearch.adoc[DetectLegacySearch]
         
-*** xref:IO/Controllers/OrderReturnConfirmationController.adoc[OrderReturnConfirmationController]
+** xref:IO/Middlewares/DetectReadonlyCheckout.adoc[DetectReadonlyCheckout]
         
-*** xref:IO/Controllers/OrderPropertyFileController.adoc[OrderPropertyFileController]
+** xref:IO/Middlewares/DetectReferrer.adoc[DetectReferrer]
         
-*** xref:IO/Controllers/NewsletterOptOutController.adoc[NewsletterOptOutController]
+** xref:IO/Middlewares/DetectShippingCountry.adoc[DetectShippingCountry]
         
-*** xref:IO/Controllers/NewsletterOptOutConfirmationController.adoc[NewsletterOptOutConfirmationController]
+** xref:IO/Middlewares/HandleNewsletter.adoc[HandleNewsletter]
         
-*** xref:IO/Controllers/NewsletterOptInController.adoc[NewsletterOptInController]
+** xref:IO/Middlewares/HandleOrderPreviewUrl.adoc[HandleOrderPreviewUrl]
         
-*** xref:IO/Controllers/MyAccountController.adoc[MyAccountController]
+                                    * Helper
+                        
+** xref:IO/Helper/ArrayHelper.adoc[ArrayHelper]
         
-*** xref:IO/Controllers/LayoutController.adoc[LayoutController]
+** xref:IO/Helper/ReCaptcha.adoc[ReCaptcha]
         
-*** xref:IO/Controllers/CategoryController.adoc[CategoryController]
+** xref:IO/Helper/VariationPriceList.adoc[VariationPriceList]
         
-*** xref:IO/Controllers/ItemWishListController.adoc[ItemWishListController]
+** xref:IO/Helper/Utils.adoc[Utils]
         
-*** xref:IO/Controllers/ItemSearchController.adoc[ItemSearchController]
+** xref:IO/Helper/UserSession.adoc[UserSession]
         
-*** xref:IO/Controllers/ItemController.adoc[ItemController]
+** xref:IO/Helper/TemplateContainer.adoc[TemplateContainer]
         
-*** xref:IO/Controllers/HomepageController.adoc[HomepageController]
+** xref:IO/Helper/StringUtils.adoc[StringUtils]
         
-*** xref:IO/Controllers/DocumentController.adoc[DocumentController]
+** xref:IO/Helper/SafeGetter.adoc[SafeGetter]
         
-*** xref:IO/Controllers/CustomerPasswordResetController.adoc[CustomerPasswordResetController]
+** xref:IO/Helper/RouteConfig.adoc[RouteConfig]
         
-*** xref:IO/Controllers/CustomerChangeMailController.adoc[CustomerChangeMailController]
+** xref:IO/Helper/ResourceContainer.adoc[ResourceContainer]
         
-*** xref:IO/Controllers/ContactController.adoc[ContactController]
+** xref:IO/Helper/PluginConfig.adoc[PluginConfig]
         
-*** xref:IO/Controllers/ConfirmationEmailController.adoc[ConfirmationEmailController]
+** xref:IO/Helper/CategoryDataFilter.adoc[CategoryDataFilter]
         
-*** xref:IO/Controllers/ConfirmationController.adoc[ConfirmationController]
+** xref:IO/Helper/LanguageMap.adoc[LanguageMap]
         
-*** xref:IO/Controllers/CheckoutController.adoc[CheckoutController]
+** xref:IO/Helper/EventDispatcher.adoc[EventDispatcher]
         
-*** xref:IO/Controllers/TagController.adoc[TagController]
+** xref:IO/Helper/DefaultSearchResult.adoc[DefaultSearchResult]
+        
+** xref:IO/Helper/DataFilter.adoc[DataFilter]
+        
+** xref:IO/Helper/CurrencyConverter.adoc[CurrencyConverter]
+        
+** xref:IO/Helper/ComponentContainer.adoc[ComponentContainer]
+        
+** xref:IO/Helper/CategoryMap.adoc[CategoryMap]
+        
+** xref:IO/Helper/CategoryKey.adoc[CategoryKey]
+        
+** xref:IO/Helper/VatConverter.adoc[VatConverter]
+        
+                                    * Builder
+                                                    ** Category
+                        
+*** xref:IO/Builder/Category/CategoryParams.adoc[CategoryParams]
+        
+*** xref:IO/Builder/Category/CategoryParamsBuilder.adoc[CategoryParamsBuilder]
+        
+                                    ** Facet
+                        
+*** xref:IO/Builder/Facet/FacetBuilder.adoc[FacetBuilder]
+        
+                                    ** Item
+                                                    *** Fields
+                        
+**** xref:IO/Builder/Item/Fields/ItemBaseFields.adoc[ItemBaseFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationLinkMarketplaceFields.adoc[VariationLinkMarketplaceFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationSupplierFields.adoc[VariationSupplierFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationStockFields.adoc[VariationStockFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationStockBufferFields.adoc[VariationStockBufferFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationStandardCategoryFields.adoc[VariationStandardCategoryFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationRetailPriceFields.adoc[VariationRetailPriceFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationMarketStatusFields.adoc[VariationMarketStatusFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationLinkWebstoreFields.adoc[VariationLinkWebstoreFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationImageFields.adoc[VariationImageFields]
+        
+**** xref:IO/Builder/Item/Fields/ItemCharacterFields.adoc[ItemCharacterFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationCategoryFields.adoc[VariationCategoryFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationBundleComponentFields.adoc[VariationBundleComponentFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationBaseFields.adoc[VariationBaseFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationBarcodeFields.adoc[VariationBarcodeFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationAttributeValueFields.adoc[VariationAttributeValueFields]
+        
+**** xref:IO/Builder/Item/Fields/ItemDescriptionFields.adoc[ItemDescriptionFields]
+        
+**** xref:IO/Builder/Item/Fields/ItemCrossSellingFields.adoc[ItemCrossSellingFields]
+        
+**** xref:IO/Builder/Item/Fields/VariationWarehouseFields.adoc[VariationWarehouseFields]
+        
+                                    *** Params
+                        
+**** xref:IO/Builder/Item/Params/ItemColumnsParams.adoc[ItemColumnsParams]
+        
+        
+*** xref:IO/Builder/Item/ItemColumnBuilder.adoc[ItemColumnBuilder]
+        
+*** xref:IO/Builder/Item/ItemFilterBuilder.adoc[ItemFilterBuilder]
+        
+*** xref:IO/Builder/Item/ItemParamsBuilder.adoc[ItemParamsBuilder]
+        
+                                    ** Order
+                        
+*** xref:IO/Builder/Order/AddressType.adoc[AddressType]
+        
+*** xref:IO/Builder/Order/OrderBuilder.adoc[OrderBuilder]
+        
+*** xref:IO/Builder/Order/OrderBuilderQuery.adoc[OrderBuilderQuery]
+        
+*** xref:IO/Builder/Order/OrderItemBuilder.adoc[OrderItemBuilder]
+        
+*** xref:IO/Builder/Order/OrderItemType.adoc[OrderItemType]
+        
+*** xref:IO/Builder/Order/OrderOptionSubType.adoc[OrderOptionSubType]
+        
+*** xref:IO/Builder/Order/OrderOptionType.adoc[OrderOptionType]
+        
+*** xref:IO/Builder/Order/OrderType.adoc[OrderType]
+        
+*** xref:IO/Builder/Order/ReferenceType.adoc[ReferenceType]
+        
+*** xref:IO/Builder/Order/RelationType.adoc[RelationType]
+        
+                                    ** Sorting
+                        
+*** xref:IO/Builder/Sorting/SortingBuilder.adoc[SortingBuilder]
+        
+        
+                                    * Guards
+                        
+** xref:IO/Guards/AbstractGuard.adoc[AbstractGuard]
+        
+** xref:IO/Guards/AuthGuard.adoc[AuthGuard]
+        
+                                    * Extensions
+                                                    ** Basket
+                        
+*** xref:IO/Extensions/Basket/IOFrontendShippingProfileChanged.adoc[IOFrontendShippingProfileChanged]
+        
+*** xref:IO/Extensions/Basket/IOFrontendUpdateDeliveryAddress.adoc[IOFrontendUpdateDeliveryAddress]
         
                                     ** Constants
                         
-*** xref:IO/Constants/CategoryType.adoc[CategoryType]
+*** xref:IO/Extensions/Constants/ShopUrls.adoc[ShopUrls]
         
-*** xref:IO/Constants/CrossSellingType.adoc[CrossSellingType]
-        
-*** xref:IO/Constants/ItemConditionTexts.adoc[ItemConditionTexts]
-        
-*** xref:IO/Constants/Language.adoc[Language]
-        
-*** xref:IO/Constants/LogLevel.adoc[LogLevel]
-        
-*** xref:IO/Constants/OrderPaymentStatus.adoc[OrderPaymentStatus]
-        
-*** xref:IO/Constants/SessionStorageKeys.adoc[SessionStorageKeys]
-        
-*** xref:IO/Constants/ShippingCountry.adoc[ShippingCountry]
-        
-                                    ** Validators
-                                                    *** Customer
+                                    ** ContentCache
                         
-**** xref:IO/Validators/Customer/AddressValidator.adoc[AddressValidator]
+*** xref:IO/Extensions/ContentCache/IOAfterBuildPlugins.adoc[IOAfterBuildPlugins]
         
-**** xref:IO/Validators/Customer/ContactFormValidator.adoc[ContactFormValidator]
+                                    ** Facets
+                        
+*** xref:IO/Extensions/Facets/CategoryFacet.adoc[CategoryFacet]
         
-**** xref:IO/Validators/Customer/ContactValidator.adoc[ContactValidator]
+                                    ** Factories
+                        
+*** xref:IO/Extensions/Factories/TwigExtensionFactory.adoc[TwigExtensionFactory]
         
+                                    ** Filters
+                        
+*** xref:IO/Extensions/Filters/AddressOptionTypeFilter.adoc[AddressOptionTypeFilter]
+        
+*** xref:IO/Extensions/Filters/ItemImagesFilter.adoc[ItemImagesFilter]
+        
+*** xref:IO/Extensions/Filters/ItemNameFilter.adoc[ItemNameFilter]
+        
+*** xref:IO/Extensions/Filters/NumberFormatFilter.adoc[NumberFormatFilter]
+        
+*** xref:IO/Extensions/Filters/OrderByKeyFilter.adoc[OrderByKeyFilter]
+        
+*** xref:IO/Extensions/Filters/PatternFilter.adoc[PatternFilter]
+        
+*** xref:IO/Extensions/Filters/PropertyNameFilter.adoc[PropertyNameFilter]
+        
+*** xref:IO/Extensions/Filters/ResultFieldsFilter.adoc[ResultFieldsFilter]
+        
+*** xref:IO/Extensions/Filters/ShuffleFilter.adoc[ShuffleFilter]
+        
+*** xref:IO/Extensions/Filters/SpecialOfferFilter.adoc[SpecialOfferFilter]
+        
+*** xref:IO/Extensions/Filters/TabFilter.adoc[TabFilter]
+        
+*** xref:IO/Extensions/Filters/URLFilter.adoc[URLFilter]
+        
+                                    ** Functions
+                        
+*** xref:IO/Extensions/Functions/AdditionalResources.adoc[AdditionalResources]
+        
+*** xref:IO/Extensions/Functions/Component.adoc[Component]
+        
+*** xref:IO/Extensions/Functions/ExternalContent.adoc[ExternalContent]
+        
+*** xref:IO/Extensions/Functions/GetBasePrice.adoc[GetBasePrice]
+        
+*** xref:IO/Extensions/Functions/GetCdnMetadata.adoc[GetCdnMetadata]
+        
+*** xref:IO/Extensions/Functions/Partial.adoc[Partial]
+        
+*** xref:IO/Extensions/Functions/QueryString.adoc[QueryString]
+        
+*** xref:IO/Extensions/Functions/UniqueId.adoc[UniqueId]
+        
+                                    ** Mail
+                        
+*** xref:IO/Extensions/Mail/IOSendMail.adoc[IOSendMail]
+        
+                                    ** Sitemap
+                        
+*** xref:IO/Extensions/Sitemap/IOSitemapPattern.adoc[IOSitemapPattern]
+        
+        
+** xref:IO/Extensions/AbstractFilter.adoc[AbstractFilter]
+        
+** xref:IO/Extensions/AbstractFunction.adoc[AbstractFunction]
+        
+** xref:IO/Extensions/TwigIOExtension.adoc[TwigIOExtension]
+        
+** xref:IO/Extensions/TwigServiceContainer.adoc[TwigServiceContainer]
+        
+** xref:IO/Extensions/TwigServiceProvider.adoc[TwigServiceProvider]
+        
+** xref:IO/Extensions/TwigTemplateContextExtension.adoc[TwigTemplateContextExtension]
+        
+                                    * Events
+                                                    ** Basket
+                        
+*** xref:IO/Events/Basket/BeforeBasketItemToOrderItem.adoc[BeforeBasketItemToOrderItem]
+        
+                                    ** Checkout
+                        
+*** xref:IO/Events/Checkout/CheckoutReadonlyChanged.adoc[CheckoutReadonlyChanged]
+        
+        
+                                    * DBModels
+                        
+** xref:IO/DBModels/ItemWishList.adoc[ItemWishList]
+        
+** xref:IO/DBModels/UserDataHash.adoc[UserDataHash]
+        
+                                    * Controllers
+                        
+** xref:IO/Controllers/BasketController.adoc[BasketController]
+        
+** xref:IO/Controllers/LoginController.adoc[LoginController]
+        
+** xref:IO/Controllers/StaticPagesController.adoc[StaticPagesController]
+        
+** xref:IO/Controllers/RegisterController.adoc[RegisterController]
+        
+** xref:IO/Controllers/PlaceOrderController.adoc[PlaceOrderController]
+        
+** xref:IO/Controllers/OrderReturnController.adoc[OrderReturnController]
+        
+** xref:IO/Controllers/OrderReturnConfirmationController.adoc[OrderReturnConfirmationController]
+        
+** xref:IO/Controllers/OrderPropertyFileController.adoc[OrderPropertyFileController]
+        
+** xref:IO/Controllers/NewsletterOptOutController.adoc[NewsletterOptOutController]
+        
+** xref:IO/Controllers/NewsletterOptOutConfirmationController.adoc[NewsletterOptOutConfirmationController]
+        
+** xref:IO/Controllers/NewsletterOptInController.adoc[NewsletterOptInController]
+        
+** xref:IO/Controllers/MyAccountController.adoc[MyAccountController]
+        
+** xref:IO/Controllers/LayoutController.adoc[LayoutController]
+        
+** xref:IO/Controllers/CategoryController.adoc[CategoryController]
+        
+** xref:IO/Controllers/ItemWishListController.adoc[ItemWishListController]
+        
+** xref:IO/Controllers/ItemSearchController.adoc[ItemSearchController]
+        
+** xref:IO/Controllers/ItemController.adoc[ItemController]
+        
+** xref:IO/Controllers/HomepageController.adoc[HomepageController]
+        
+** xref:IO/Controllers/DocumentController.adoc[DocumentController]
+        
+** xref:IO/Controllers/CustomerPasswordResetController.adoc[CustomerPasswordResetController]
+        
+** xref:IO/Controllers/CustomerChangeMailController.adoc[CustomerChangeMailController]
+        
+** xref:IO/Controllers/ContactController.adoc[ContactController]
+        
+** xref:IO/Controllers/ConfirmationEmailController.adoc[ConfirmationEmailController]
+        
+** xref:IO/Controllers/ConfirmationController.adoc[ConfirmationController]
+        
+** xref:IO/Controllers/CheckoutController.adoc[CheckoutController]
+        
+** xref:IO/Controllers/TagController.adoc[TagController]
+        
+                                    * Constants
+                        
+** xref:IO/Constants/CategoryType.adoc[CategoryType]
+        
+** xref:IO/Constants/CrossSellingType.adoc[CrossSellingType]
+        
+** xref:IO/Constants/ItemConditionTexts.adoc[ItemConditionTexts]
+        
+** xref:IO/Constants/Language.adoc[Language]
+        
+** xref:IO/Constants/LogLevel.adoc[LogLevel]
+        
+** xref:IO/Constants/OrderPaymentStatus.adoc[OrderPaymentStatus]
+        
+** xref:IO/Constants/SessionStorageKeys.adoc[SessionStorageKeys]
+        
+** xref:IO/Constants/ShippingCountry.adoc[ShippingCountry]
+        
+                                    * Validators
+                                                    ** Customer
+                        
+*** xref:IO/Validators/Customer/AddressValidator.adoc[AddressValidator]
+        
+*** xref:IO/Validators/Customer/ContactFormValidator.adoc[ContactFormValidator]
+        
+*** xref:IO/Validators/Customer/ContactValidator.adoc[ContactValidator]
         
         
         
