@@ -21,22 +21,21 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#sendmail]
 ----
 
-public sendMail():void
+public sendMail()
 
 ----
-
-
 
 
 

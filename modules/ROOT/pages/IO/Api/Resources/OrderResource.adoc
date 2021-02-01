@@ -22,14 +22,13 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response):void
+public __construct($request, $response)
 
 ----
-
-
 
 
 
@@ -50,32 +49,30 @@ a|`$response`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#index]
 ----
 
-public index():Plenty\Plugin\Http\Response
+public index(): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 List the orders of the customer
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#store]
 ----
 
-public store():Plenty\Plugin\Http\Response
+public store(): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Create an order

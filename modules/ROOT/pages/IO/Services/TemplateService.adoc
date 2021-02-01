@@ -21,115 +21,27 @@
 |===
 |Type |Name |Description
 
-| 
-    |currentTemplate
-    |
-| 
-    |currentTemplateData
-    |
-| 
-    |shouldBeCached
-    |
-| 
-    |forceNoIndex
-    |
-|===
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public forceNoIndex($forceNoIndex):void
-
-----
-
-
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$currentTemplate`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$currentTemplateData`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$shouldBeCached`
+||         xref:5.0.0@plugin-::.adoc#[``]
 a|`$forceNoIndex`
 |
 |===
 
 
-[source%nowrap, php]
+===== Methods
+
+[source%nowrap, php, subs=+macros]
+[#forcenoindex]
 ----
 
-public isNoIndexForced():void
+public forceNoIndex($forceNoIndex)
 
 ----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public shouldBeCached():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public disableCacheForTemplate():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getCurrentTemplate():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public setCurrentTemplate($template):void
-
-----
-
-
 
 
 
@@ -140,16 +52,96 @@ public setCurrentTemplate($template):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$forceNoIndex`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#isnoindexforced]
+----
+
+public isNoIndexForced()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#shouldbecached]
+----
+
+public shouldBeCached()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#disablecachefortemplate]
+----
+
+public disableCacheForTemplate()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getcurrenttemplate]
+----
+
+public getCurrentTemplate()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#setcurrenttemplate]
+----
+
+public setCurrentTemplate($template)
+
+----
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$template`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#ishome]
 ----
 
-public isHome():void
+public isHome()
 
 ----
 
@@ -166,12 +158,11 @@ Use ShopUrls::is(RouteConfig::HOME) instead
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isitem]
 ----
 
-public isItem():void
+public isItem()
 
 ----
 
@@ -188,12 +179,11 @@ Use ShopUrls::is(RouteConfig::ITEM) instead
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#ismyaccount]
 ----
 
-public isMyAccount():void
+public isMyAccount()
 
 ----
 
@@ -210,12 +200,11 @@ Use ShopUrls::is(RouteConfig::MY_ACCOUNT) instead
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#ischeckout]
 ----
 
-public isCheckout():void
+public isCheckout()
 
 ----
 
@@ -232,12 +221,11 @@ Use ShopUrls::is(RouteConfig::CHECKOUT) instead
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#issearch]
 ----
 
-public isSearch():void
+public isSearch()
 
 ----
 
@@ -254,12 +242,11 @@ Use ShopUrls::is(RouteConfig::SEARCH) instead
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#iscategory]
 ----
 
-public isCategory():void
+public isCategory()
 
 ----
 
@@ -276,16 +263,13 @@ Use ShopUrls::is(RouteConfig::CATEGORY) instead
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#rendertemplate]
 ----
 
-public renderTemplate():void
+public renderTemplate()
 
 ----
-
-
 
 
 

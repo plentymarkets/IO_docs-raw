@@ -21,25 +21,23 @@
 |===
 |Type |Name |Description
 
-| 
-    |language
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
-    |sessionStorage
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$language`
+||xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
+a|`$sessionStorage`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($sessionStorage):void
+public __construct($sessionStorage)
 
 ----
-
-
 
 
 
@@ -50,20 +48,19 @@ SessionStorageService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
 a|`$sessionStorage`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsessionvalue]
 ----
 
-public getSessionValue($name):void
+public getSessionValue($name):link:http://php.net/mixed[mixed^]
 
 ----
-
-
 
 
 
@@ -74,20 +71,19 @@ Get a value from the session
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$name`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlang]
 ----
 
-public getLang():string
+public getLang():link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -95,17 +91,16 @@ public getLang():string
 
 Get the language from session
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcustomer]
 ----
 
-public getCustomer():Plenty\Modules\Frontend\Session\Storage\Models\Customer
+public getCustomer():xref:stable7@interface::Frontend.adoc#frontend_models_customer[Customer]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Frontend.adoc#frontend_models_customer[`Customer`]
 
 
 

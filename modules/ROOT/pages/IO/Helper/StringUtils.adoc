@@ -20,14 +20,13 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#string4url]
 ----
 
-public static string4URL($n):void
+public static string4URL($n)
 
 ----
-
-
 
 
 
@@ -38,7 +37,7 @@ public static string4URL($n):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$n`
 |
 |===

@@ -24,21 +24,20 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |Type |Name |Description
 
 |xref:IO/Services/OrderService.adoc#[`OrderService`]
-    |orderService
-    |
+a|`$orderService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response):void
+public __construct($request, $response)
 
 ----
-
-
 
 
 
@@ -59,25 +58,11 @@ a|`$response`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#index]
 ----
 
-public index():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public store():void
+public index()
 
 ----
 
@@ -87,16 +72,27 @@ public store():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#store]
 ----
 
-public paymentMethodListForSwitch():void
+public store()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#paymentmethodlistforswitch]
+----
+
+public paymentMethodListForSwitch()
+
+----
 
 
 

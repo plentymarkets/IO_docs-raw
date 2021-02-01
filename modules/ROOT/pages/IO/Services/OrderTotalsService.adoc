@@ -20,14 +20,13 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getalltotals]
 ----
 
-public getAllTotals($order):array
+public getAllTotals($order):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -38,20 +37,19 @@ Get all order totals which are relevant for the OrderDetails-modal
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
+|xref:stable7@interface::Order.adoc#order_models_order[`Order`]
 a|`$order`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#highlightnetprices]
 ----
 
-public highlightNetPrices($order):void
+public highlightNetPrices($order)
 
 ----
-
-
 
 
 
@@ -62,7 +60,7 @@ public highlightNetPrices($order):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$order`
 |
 |===

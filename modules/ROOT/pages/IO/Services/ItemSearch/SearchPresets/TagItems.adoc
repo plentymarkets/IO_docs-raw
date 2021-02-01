@@ -5,8 +5,8 @@
 [[io__tagitems]]
 = TagItems
 
-Search preset for tagged variations
-Available options (see VariationList for inherited options)
+Search preset for tagged variations +
+Available options (see VariationList for inherited options) +
 - tagIds: List of tag ids to get assigned items for
 
 
@@ -26,14 +26,13 @@ xref:IO/Services/ItemSearch/SearchPresets/SearchPreset.adoc#[`SearchPreset`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsearchfactory]
 ----
 
-public static getSearchFactory($options):void
+public static getSearchFactory($options)
 
 ----
-
-
 
 
 
@@ -44,7 +43,7 @@ public static getSearchFactory($options):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$options`
 |
 |===

@@ -21,17 +21,17 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |TYPE_DEFAULT
-    |'default'
-    |
+a|`TYPE_DEFAULT`
+|'default'
+|
 |link:http://php.net/string[string^]
-    |TYPE_RRP
-    |'rrp'
-    |
+a|`TYPE_RRP`
+|'rrp'
+|
 |link:http://php.net/string[string^]
-    |TYPE_SPECIAL_OFFER
-    |'specialOffer'
-    |
+a|`TYPE_SPECIAL_OFFER`
+|'specialOffer'
+|
 |===
 
 
@@ -39,72 +39,45 @@
 |===
 |Type |Name |Description
 
-| 
-    |basePrices
-    |
-|link:http://php.net/int[int^]
-    |itemId
-    |
-|link:http://php.net/int[int^]
-    |variationId
-    |
-|link:http://php.net/float[float^]
-    |minimumOrderQuantity
-    |
-|link:http://php.net/float[float^]
-    |maximumOrderQuantity
-    |
-| 
-    |lot
-    |
-| 
-    |unit
-    |
-| 
-    |prices
-    |
-|xref:IO/Extensions/Filters/NumberFormatFilter.adoc#[`NumberFormatFilter`]
-    |numberFormatFilter
-    |
-|xref:IO/Services/UnitService.adoc#[`UnitService`]
-    |unitService
-    |
-| xref:stable7@interface::Liveshopping.adoc#liveshopping_contracts_liveshoppingrepositorycontract[`LiveShoppingRepositoryContract`]
-    |liveShoppingRepo
-    |
-| 
-    |showNetPrice
-    |
-| xref:stable7@interface::Item.adoc#item_models_salespricesearchresponse[`SalesPriceSearchResponse`]
-    |defaultPrice
-    |
-| 
-    |cache
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$basePrices`
+||link:http://php.net/int[`int`^]
+a|`$itemId`
+||link:http://php.net/int[`int`^]
+a|`$variationId`
+||link:http://php.net/float[`float`^]
+a|`$minimumOrderQuantity`
+||link:http://php.net/float[`float`^]
+a|`$maximumOrderQuantity`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$lot`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$unit`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$prices`
+||xref:IO/Extensions/Filters/NumberFormatFilter.adoc#[`NumberFormatFilter`]
+a|`$numberFormatFilter`
+||xref:IO/Services/UnitService.adoc#[`UnitService`]
+a|`$unitService`
+||xref:stable7@interface::Liveshopping.adoc#liveshopping_contracts_liveshoppingrepositorycontract[`LiveShoppingRepositoryContract`]
+a|`$liveShoppingRepo`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$showNetPrice`
+||xref:stable7@interface::Item.adoc#item_models_salespricesearchresponse[`SalesPriceSearchResponse`]
+a|`$defaultPrice`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static create():void
+public __construct()
 
 ----
 
@@ -114,31 +87,41 @@ public static create():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#create]
 ----
 
-public findPriceForQuantity():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getGraduatedPrices($showNetPrice = false):void
+public static create()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#findpriceforquantity]
+----
+
+public findPriceForQuantity()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getgraduatedprices]
+----
+
+public getGraduatedPrices($showNetPrice = false)
+
+----
 
 
 
@@ -149,35 +132,33 @@ public getGraduatedPrices($showNetPrice = false):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$showNetPrice`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbaseprice]
 ----
 
-public getBasePrice():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public toArray($quantity = null):void
+public getBasePrice()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#toarray]
+----
+
+public toArray($quantity = null)
+
+----
 
 
 
@@ -188,20 +169,19 @@ public toArray($quantity = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$quantity`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcalculatedprices]
 ----
 
-public getCalculatedPrices($quantity = null):void
+public getCalculatedPrices($quantity = null)
 
 ----
-
-
 
 
 
@@ -212,20 +192,19 @@ public getCalculatedPrices($quantity = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$quantity`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#convertcurrency]
 ----
 
-public convertCurrency($value):void
+public convertCurrency($value)
 
 ----
-
-
 
 
 
@@ -236,31 +215,17 @@ public convertCurrency($value):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$value`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#convertgrossnet]
 ----
 
-public convertGrossNet():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getDefaultPrice():void
+public convertGrossNet()
 
 ----
 
@@ -270,31 +235,41 @@ public getDefaultPrice():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getdefaultprice]
 ----
 
-public fromMemoryCache():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public resetMemoryCache($key = null):void
+public getDefaultPrice()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
+----
+
+public fromMemoryCache()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -305,7 +280,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

@@ -21,49 +21,39 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Basket.adoc#basket_contracts_basketitemrepositorycontract[`BasketItemRepositoryContract`]
-    |basketItemRepository
-    |
-| xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
-    |basketRepository
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
-    |checkout
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
-    |vatService
-    |
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-    |customerService
-    |
-|xref:IO/Services/CouponService.adoc#[`CouponService`]
-    |couponService
-    |
-|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
-    |webstoreConfigurationService
-    |
-| 
-    |basketItems
-    |
-| 
-    |template
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|xref:stable7@interface::Basket.adoc#basket_contracts_basketitemrepositorycontract[`BasketItemRepositoryContract`]
+a|`$basketItemRepository`
+||xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
+a|`$basketRepository`
+||xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
+a|`$checkout`
+||xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
+a|`$vatService`
+||xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
+||xref:IO/Services/CouponService.adoc#[`CouponService`]
+a|`$couponService`
+||xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
+a|`$webstoreConfigurationService`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$basketItems`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$template`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($basketItemRepository, $checkout, $vatService, $customerService, $basketRepository, $vatInitService, $couponService, $webstoreConfigurationService):void
+public __construct($basketItemRepository, $checkout, $vatService, $customerService, $basketRepository, $vatInitService, $couponService, $webstoreConfigurationService)
 
 ----
-
-
 
 
 
@@ -74,15 +64,15 @@ BasketService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Basket.adoc#basket_contracts_basketitemrepositorycontract[`BasketItemRepositoryContract`]
+|xref:stable7@interface::Basket.adoc#basket_contracts_basketitemrepositorycontract[`BasketItemRepositoryContract`]
 a|`$basketItemRepository`
 |
 
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
 a|`$checkout`
 |
 
-| xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
+|xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
 a|`$vatService`
 |
 
@@ -90,11 +80,11 @@ a|`$vatService`
 a|`$customerService`
 |
 
-| xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
+|xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
 a|`$basketRepository`
 |
 
-| xref:stable7@interface::Accounting.adoc#accounting_contracts_vatinitcontract[`VatInitContract`]
+|xref:stable7@interface::Accounting.adoc#accounting_contracts_vatinitcontract[`VatInitContract`]
 a|`$vatInitService`
 |
 
@@ -108,14 +98,13 @@ a|`$webstoreConfigurationService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#settemplate]
 ----
 
-public setTemplate($template):void
+public setTemplate($template)
 
 ----
-
-
 
 
 
@@ -126,61 +115,45 @@ public setTemplate($template):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$template`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbasketfortemplate]
 ----
 
-public getBasketForTemplate():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getBasket():Plenty\Modules\Basket\Models\Basket
+public getBasketForTemplate()
 
 ----
 
 
 
 
-====== *Return type:* xref:stable7@interface::Basket.adoc#basket_models_basket[`Basket`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getbasket]
+----
+
+public getBasket():xref:stable7@interface::Basket.adoc#basket_models_basket[Basket]
+
+----
+
+
+
 
 
 Return the basket as an array
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettotalvats]
 ----
 
-public getTotalVats():array
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getBasketQuantity():void
+public getTotalVats():link:http://php.net/array[array^]
 
 ----
 
@@ -190,16 +163,27 @@ public getBasketQuantity():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbasketquantity]
 ----
 
-public getBasketItems():array
+public getBasketQuantity()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getbasketitems]
+----
+
+public getBasketItems():link:http://php.net/array[array^]
+
+----
 
 
 
@@ -207,14 +191,13 @@ public getBasketItems():array
 
 List the basket items
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbasketitemsfororder]
 ----
 
-public getBasketItemsForOrder():array
+public getBasketItemsForOrder():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -222,29 +205,27 @@ public getBasketItemsForOrder():array
 
 List the basket items for order
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbasketitemsfortemplate]
 ----
 
-public getBasketItemsForTemplate():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public checkBasketItemsLang($template = &quot;&quot;):void
+public getBasketItemsForTemplate()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#checkbasketitemslang]
+----
+
+public checkBasketItemsLang($template = &quot;&quot;)
+
+----
 
 
 
@@ -255,20 +236,19 @@ public checkBasketItemsLang($template = &quot;&quot;):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$template`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbasketitem]
 ----
 
-public getBasketItem($basketItemId, $appendVariation = true):array
+public getBasketItem($basketItemId, $appendVariation = true):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -279,24 +259,23 @@ Get a basket item
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/int[`int`^] \| xref:stable7@interface::Basket.adoc#basket_models_basketitem[`BasketItem`]
 a|`$basketItemId`
 |
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$appendVariation`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#addbasketitem]
 ----
 
-public addBasketItem($data):array
+public addBasketItem($data):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -307,20 +286,19 @@ Add an item to the basket or update the basket
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$data`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#updatebasketitem]
 ----
 
-public updateBasketItem($basketItemId, $data):array
+public updateBasketItem($basketItemId, $data):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -331,24 +309,23 @@ Update a basket item
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$basketItemId`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$data`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#deletebasketitem]
 ----
 
-public deleteBasketItem($basketItemId):void
+public deleteBasketItem($basketItemId)
 
 ----
-
-
 
 
 
@@ -359,23 +336,22 @@ Delete an item from the basket
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$basketItemId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#findexistingonebydata]
 ----
 
-public findExistingOneByData($data):Plenty\Modules\Basket\Models\BasketItem
+public findExistingOneByData($data):xref:stable7@interface::Basket.adoc#basket_models_basketitem[BasketItem]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Basket.adoc#basket_models_basketitem[`BasketItem`]
 
 
 Check whether the item is already in the basket
@@ -383,35 +359,33 @@ Check whether the item is already in the basket
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$data`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#resetbasket]
 ----
 
-public resetBasket():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public setBillingAddressId($billingAddressId):void
+public resetBasket()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#setbillingaddressid]
+----
+
+public setBillingAddressId($billingAddressId)
+
+----
 
 
 
@@ -422,20 +396,19 @@ Set the billing address id
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$billingAddressId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbillingaddressid]
 ----
 
-public getBillingAddressId():int
+public getBillingAddressId():link:http://php.net/int[int^]
 
 ----
-
-
 
 
 
@@ -443,14 +416,13 @@ public getBillingAddressId():int
 
 Return the billing address id
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setdeliveryaddressid]
 ----
 
-public setDeliveryAddressId($deliveryAddressId):void
+public setDeliveryAddressId($deliveryAddressId)
 
 ----
-
-
 
 
 
@@ -461,20 +433,19 @@ Set the delivery address id
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$deliveryAddressId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getdeliveryaddressid]
 ----
 
-public getDeliveryAddressId():int
+public getDeliveryAddressId():link:http://php.net/int[int^]
 
 ----
-
-
 
 
 
@@ -482,14 +453,13 @@ public getDeliveryAddressId():int
 
 Return the delivery address id
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getmaxvatvalue]
 ----
 
-public getMaxVatValue():float
+public getMaxVatValue():link:http://php.net/float[float^]
 
 ----
-
-
 
 
 

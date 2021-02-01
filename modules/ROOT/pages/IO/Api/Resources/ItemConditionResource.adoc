@@ -24,21 +24,20 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |Type |Name |Description
 
 |xref:IO/Services/ItemService.adoc#[`ItemService`]
-    |itemService
-    |
+a|`$itemService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response, $itemService):void
+public __construct($request, $response, $itemService)
 
 ----
-
-
 
 
 
@@ -63,17 +62,16 @@ a|`$itemService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#show]
 ----
 
-public show($conditionId):Plenty\Plugin\Http\Response
+public show($conditionId): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 
@@ -81,7 +79,7 @@ public show($conditionId):Plenty\Plugin\Http\Response
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$conditionId`
 |
 |===

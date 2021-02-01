@@ -21,25 +21,23 @@
 |===
 |Type |Name |Description
 
-| 
-    |configRepository
-    |
-| 
-    |templatePluginName
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$configRepository`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$templatePluginName`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($configRepository):void
+public __construct($configRepository)
 
 ----
-
-
 
 
 
@@ -50,31 +48,17 @@ public __construct($configRepository):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$configRepository`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#get]
 ----
 
-public get():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getBoolean():void
+public get()
 
 ----
 
@@ -84,16 +68,27 @@ public getBoolean():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getboolean]
 ----
 
-public getInteger():void
+public getBoolean()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getinteger]
+----
+
+public getInteger()
+
+----
 
 
 

@@ -23,46 +23,21 @@ xref:IO/Services/ItemSearch/Extensions/ItemSearchExtension.adoc#[`ItemSearchExte
 |===
 |Type |Name |Description
 
-| 
-    |removeProperties
-    |
-|===
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($removeProperties = false):void
-
-----
-
-
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$removeProperties`
 |
 |===
 
 
-[source%nowrap, php]
+===== Methods
+
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public getSearch($parentSearchBuilder):void
+public __construct($removeProperties = false)
 
 ----
-
-
 
 
 
@@ -73,20 +48,42 @@ public getSearch($parentSearchBuilder):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$removeProperties`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getsearch]
+----
+
+public getSearch($parentSearchBuilder)
+
+----
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$parentSearchBuilder`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#transformresult]
 ----
 
-public transformResult():void
+public transformResult()
 
 ----
-
-
 
 
 

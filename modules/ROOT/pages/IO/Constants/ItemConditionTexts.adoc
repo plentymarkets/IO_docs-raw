@@ -21,8 +21,8 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/array[array^]
-    |itemConditionTexts
-    |
+|link:http://php.net/array[`array`^]
+a|`$itemConditionTexts`
+|
 |===
 

@@ -20,14 +20,13 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getpropertyfileurl]
 ----
 
-public getPropertyFileUrl():void
+public getPropertyFileUrl()
 
 ----
-
-
 
 
 

@@ -21,13 +21,13 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |ATTRIBUTE_ID
-    |'attributeId'
-    |
+a|`ATTRIBUTE_ID`
+|'attributeId'
+|
 |link:http://php.net/string[string^]
-    |ATTRIBUTE_VALUE_ID
-    |'attributeValueId'
-    |
+a|`ATTRIBUTE_VALUE_ID`
+|'attributeValueId'
+|
 |===
 
 

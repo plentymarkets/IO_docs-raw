@@ -22,17 +22,16 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#preview]
 ----
 
-public preview($documentId, $response):Plenty\Plugin\Http\Response
+public preview($documentId, $response): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 
@@ -40,7 +39,7 @@ public preview($documentId, $response):Plenty\Plugin\Http\Response
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$documentId`
 |
 

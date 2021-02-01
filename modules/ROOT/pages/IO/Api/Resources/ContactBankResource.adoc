@@ -23,37 +23,35 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |===
 |Type |Name |Description
 
-| 
-    |contactBankService
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$contactBankService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public show($contactBankId):void
+public __construct()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#show]
+----
+
+public show($contactBankId)
+
+----
 
 
 
@@ -64,35 +62,33 @@ public show($contactBankId):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$contactBankId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#store]
 ----
 
-public store():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public destroy($contactBankId):void
+public store()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#destroy]
+----
+
+public destroy($contactBankId)
+
+----
 
 
 
@@ -103,20 +99,19 @@ public destroy($contactBankId):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$contactBankId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#update]
 ----
 
-public update($contactBankId):void
+public update($contactBankId)
 
 ----
-
-
 
 
 
@@ -127,7 +122,7 @@ public update($contactBankId):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$contactBankId`
 |
 |===

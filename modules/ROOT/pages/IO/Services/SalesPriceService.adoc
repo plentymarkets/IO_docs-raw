@@ -21,52 +21,41 @@
 |===
 |Type |Name |Description
 
-| 
-    |app
-    |
-| 
-    |salesPriceSearchRepo
-    |
-| 
-    |customerService
-    |
-| 
-    |checkoutService
-    |
-| 
-    |basketService
-    |
-| 
-    |classId
-    |
-| 
-    |singleAccess
-    |
-| 
-    |currency
-    |
-| 
-    |plentyId
-    |
-| 
-    |shippingCountryId
-    |
-| 
-    |referrerId
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$app`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$salesPriceSearchRepo`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$customerService`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$checkoutService`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$basketService`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$classId`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$singleAccess`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$currency`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$plentyId`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$shippingCountryId`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$referrerId`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($app, $salesPriceSearchRepo, $customerService, $checkoutService):void
+public __construct($app, $salesPriceSearchRepo, $customerService, $checkoutService)
 
 ----
-
-
 
 
 
@@ -81,7 +70,7 @@ SalesPriceService constructor.
 a|`$app`
 |
 
-| xref:stable7@interface::Item.adoc#item_contracts_salespricesearchrepositorycontract[`SalesPriceSearchRepositoryContract`]
+|xref:stable7@interface::Item.adoc#item_contracts_salespricesearchrepositorycontract[`SalesPriceSearchRepositoryContract`]
 a|`$salesPriceSearchRepo`
 |
 
@@ -95,17 +84,16 @@ a|`$checkoutService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setclassid]
 ----
 
-public setClassId($classId):IO\Services
+public setClassId($classId):xref:IO/Services.adoc#[Services]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services.adoc#[`Services`]
 
 
 
@@ -113,23 +101,22 @@ public setClassId($classId):IO\Services
 .*Parameters*
 |===
 |Type |Name |Description
-| null
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
 a|`$classId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setcurrency]
 ----
 
-public setCurrency($currency):IO\Services
+public setCurrency($currency):xref:IO/Services.adoc#[Services]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services.adoc#[`Services`]
 
 
 
@@ -137,23 +124,22 @@ public setCurrency($currency):IO\Services
 .*Parameters*
 |===
 |Type |Name |Description
-| null
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
 a|`$currency`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setshippingcountryid]
 ----
 
-public setShippingCountryId($shippingCountryId):IO\Services
+public setShippingCountryId($shippingCountryId):xref:IO/Services.adoc#[Services]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services.adoc#[`Services`]
 
 
 
@@ -161,23 +147,22 @@ public setShippingCountryId($shippingCountryId):IO\Services
 .*Parameters*
 |===
 |Type |Name |Description
-| null
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
 a|`$shippingCountryId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsalespriceforvariation]
 ----
 
-public getSalesPriceForVariation($variationId, $type = &quot;default&quot;, $quantity = 1):Plenty\Modules\Item\SalesPrice\Models\SalesPriceSearchResponse
+public getSalesPriceForVariation($variationId, $type = &quot;default&quot;, $quantity = 1):xref:stable7@interface::Item.adoc#item_models_salespricesearchresponse[SalesPriceSearchResponse]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Item.adoc#item_models_salespricesearchresponse[`SalesPriceSearchResponse`]
 
 
 
@@ -185,28 +170,27 @@ public getSalesPriceForVariation($variationId, $type = &quot;default&quot;, $qua
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$type`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$quantity`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getallsalespricesforvariation]
 ----
 
-public getAllSalesPricesForVariation($variationId, $type = &quot;default&quot;, $quantity):array
+public getAllSalesPricesForVariation($variationId, $type = &quot;default&quot;, $quantity):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -217,28 +201,27 @@ public getAllSalesPricesForVariation($variationId, $type = &quot;default&quot;, 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$type`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$quantity`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#applycurrencyconversion]
 ----
 
-public applyCurrencyConversion($salesPrice):void
+public applyCurrencyConversion($salesPrice)
 
 ----
-
-
 
 
 
@@ -249,7 +232,7 @@ public applyCurrencyConversion($salesPrice):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$salesPrice`
 |
 |===

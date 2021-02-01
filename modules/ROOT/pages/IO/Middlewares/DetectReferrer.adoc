@@ -22,14 +22,13 @@ xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_middleware[`Midd
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#before]
 ----
 
-public before($request):void
+public before($request)
 
 ----
-
-
 
 
 
@@ -46,17 +45,16 @@ a|`$request`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#after]
 ----
 
-public after($request, $response):Plenty\Plugin\Http\Response
+public after($request, $response): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 

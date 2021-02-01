@@ -23,22 +23,21 @@ xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 |===
 |Type |Name |Description
 
-|link:http://php.net/array[array^]
-    |components
-    |
+|link:http://php.net/array[`array`^]
+a|`$components`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfunctions]
 ----
 
-public getFunctions():array
+public getFunctions():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -46,14 +45,13 @@ public getFunctions():array
 
 Return the available filter methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#component]
 ----
 
-public component($path):void
+public component($path)
 
 ----
-
-
 
 
 
@@ -64,20 +62,19 @@ Push the component to the component stack
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$path`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hascomponenttemplate]
 ----
 
-public hasComponentTemplate():bool
+public hasComponentTemplate():link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -85,14 +82,13 @@ public hasComponentTemplate():bool
 
 Check whether a component template exists
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcomponenttemplate]
 ----
 
-public getComponentTemplate():string
+public getComponentTemplate():link:http://php.net/string[string^]
 
 ----
-
-
 
 
 

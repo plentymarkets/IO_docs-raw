@@ -21,52 +21,46 @@ Class TemplateContainer
 |===
 |Type |Name |Description
 
-|link:http://php.net/string[string^]
-    |template
-    |
-| 
-    |templateData
-    |
-|link:http://php.net/string[string^]
-    |templateKey
-    |
-|link:http://php.net/string[string^]
-    |contextClass
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|link:http://php.net/string[`string`^]
+a|`$template`
+||link:http://php.net/array[`array`^] \| xref:IO/Helper/Closure.adoc#[`Closure`]
+a|`$templateData`
+||link:http://php.net/string[`string`^]
+a|`$templateKey`
+||link:http://php.net/string[`string`^]
+a|`$contextClass`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#get]
 ----
 
-public static get():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public setTemplate($template):IO\Helper\TemplateContainer
+public static get()
 
 ----
 
 
 
 
-====== *Return type:*xref:IO/Helper/TemplateContainer.adoc#[`TemplateContainer`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#settemplate]
+----
+
+public setTemplate($template):xref:IO/Helper/TemplateContainer.adoc#[TemplateContainer]
+
+----
+
+
+
 
 
 Set the layout to use for current request.
@@ -74,20 +68,19 @@ Set the layout to use for current request.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$template`
 |The template to use for current request.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettemplate]
 ----
 
-public getTemplate():void
+public getTemplate()
 
 ----
-
-
 
 
 
@@ -95,14 +88,13 @@ public getTemplate():void
 
 Get the provided layout to use for current request.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hastemplate]
 ----
 
-public hasTemplate():void
+public hasTemplate()
 
 ----
-
-
 
 
 
@@ -110,14 +102,13 @@ public hasTemplate():void
 
 Check whether a separate layout plugin has set a template to use for the current request.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettemplatedata]
 ----
 
-public getTemplateData():void
+public getTemplateData()
 
 ----
-
-
 
 
 
@@ -125,17 +116,16 @@ public getTemplateData():void
 
 Get the template data to pass to current template.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#settemplatedata]
 ----
 
-public setTemplateData($customData):IO\Helper\TemplateContainer
+public setTemplateData($customData):xref:IO/Helper/TemplateContainer.adoc#[TemplateContainer]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Helper/TemplateContainer.adoc#[`TemplateContainer`]
 
 
 Override template data used by LayoutController when rendering a template for current request.
@@ -143,38 +133,36 @@ Override template data used by LayoutController when rendering a template for cu
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$customData`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettemplatekey]
 ----
 
-public getTemplateKey():string
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public setTemplateKey($templateKey):IO\Helper
+public getTemplateKey():link:http://php.net/string[string^]
 
 ----
 
 
 
 
-====== *Return type:*xref:IO/Helper.adoc#[`Helper`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#settemplatekey]
+----
+
+public setTemplateKey($templateKey):xref:IO/Helper.adoc#[Helper]
+
+----
+
+
+
 
 
 
@@ -182,20 +170,19 @@ public setTemplateKey($templateKey):IO\Helper
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$templateKey`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setcontext]
 ----
 
-public setContext($contextClass):void
+public setContext($contextClass)
 
 ----
-
-
 
 
 
@@ -206,38 +193,36 @@ public setContext($contextClass):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$contextClass`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcontext]
 ----
 
-public getContext():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public withData($data, $identifier):IO\Helper\TemplateContainer
+public getContext()
 
 ----
 
 
 
 
-====== *Return type:*xref:IO/Helper/TemplateContainer.adoc#[`TemplateContainer`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#withdata]
+----
+
+public withData($data, $identifier):xref:IO/Helper/TemplateContainer.adoc#[TemplateContainer]
+
+----
+
+
+
 
 
 Add additional template data to the existing values.
@@ -245,11 +230,11 @@ Add additional template data to the existing values.
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$data`
 |The data to add to map.
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$identifier`
 |An identifying string to access the given data
 |===

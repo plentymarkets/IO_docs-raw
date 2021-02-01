@@ -24,32 +24,18 @@ xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 |Type |Name |Description
 
 |xref:IO/Helper/ResourceContainer.adoc#[`ResourceContainer`]
-    |resourceContainer
-    |
+a|`$resourceContainer`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfunctions]
 ----
 
-public getFunctions():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getAdditionalScripts():void
+public getFunctions()
 
 ----
 
@@ -59,16 +45,27 @@ public getAdditionalScripts():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getadditionalscripts]
 ----
 
-public getAdditionalStyles():void
+public getAdditionalScripts()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getadditionalstyles]
+----
+
+public getAdditionalStyles()
+
+----
 
 
 

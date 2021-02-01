@@ -21,28 +21,25 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
-    |orderRepo
-    |
-| xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
-    |parcelServicePresetRepo
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
+a|`$orderRepo`
+||xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
+a|`$parcelServicePresetRepo`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($orderRepo, $parcelServicePresetRepo):void
+public __construct($orderRepo, $parcelServicePresetRepo)
 
 ----
-
-
 
 
 
@@ -53,24 +50,23 @@ OrderTrackingService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
+|xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
 a|`$orderRepo`
 |
 
-| xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
+|xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
 a|`$parcelServicePresetRepo`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettrackingurl]
 ----
 
-public getTrackingURL($order, $lang):string
+public getTrackingURL($order, $lang):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -81,11 +77,11 @@ public getTrackingURL($order, $lang):string
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
+|xref:stable7@interface::Order.adoc#order_models_order[`Order`]
 a|`$order`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |
 |===

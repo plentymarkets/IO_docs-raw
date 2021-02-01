@@ -21,29 +21,29 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |ITEM_CHARACTER_ID
-    |'itemCharacterId'
-    |
+a|`ITEM_CHARACTER_ID`
+|'itemCharacterId'
+|
 |link:http://php.net/string[string^]
-    |CHARACTER_ID
-    |'characterId'
-    |
+a|`CHARACTER_ID`
+|'characterId'
+|
 |link:http://php.net/string[string^]
-    |CHARACTER_VALUE
-    |'characterValue'
-    |
+a|`CHARACTER_VALUE`
+|'characterValue'
+|
 |link:http://php.net/string[string^]
-    |CHARACTER_VALUE_TYPE
-    |'characterValueType'
-    |
+a|`CHARACTER_VALUE_TYPE`
+|'characterValueType'
+|
 |link:http://php.net/string[string^]
-    |IS_ORDER_CHARACTER
-    |'isOrderCharacter'
-    |
+a|`IS_ORDER_CHARACTER`
+|'isOrderCharacter'
+|
 |link:http://php.net/string[string^]
-    |CHARACTER_ORDER_MARKUP
-    |'characterOrderMarkup'
-    |
+a|`CHARACTER_ORDER_MARKUP`
+|'characterOrderMarkup'
+|
 |===
 
 

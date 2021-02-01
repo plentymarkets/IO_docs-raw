@@ -23,25 +23,23 @@ xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 |===
 |Type |Name |Description
 
-| 
-    |defaultConfigItemName
-    |
-| 
-    |defaultConfigItemDisplayName
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$defaultConfigItemName`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$defaultConfigItemDisplayName`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
+public __construct()
 
 ----
-
-
 
 
 
@@ -49,14 +47,13 @@ public __construct():void
 
 ItemNameFilter constructor.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfilters]
 ----
 
-public getFilters():array
+public getFilters():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -64,14 +61,13 @@ public getFilters():array
 
 Return the available filter methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#itemname]
 ----
 
-public itemName($itemData, $configName = null, $displayName = null):string
+public itemName($itemData, $configName = null, $displayName = null):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -86,11 +82,11 @@ Build the item name from the configuration
 a|`$itemData`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$configName`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$displayName`
 |
 |===

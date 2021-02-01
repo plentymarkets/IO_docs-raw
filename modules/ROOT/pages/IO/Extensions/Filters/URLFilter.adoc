@@ -24,27 +24,24 @@ xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 |Type |Name |Description
 
 |xref:IO/Services/ItemService.adoc#[`ItemService`]
-    |itemService
-    |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorageService
-    |
-|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
-    |webstoreConfigurationService
-    |
+a|`$itemService`
+||xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorageService`
+||xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
+a|`$webstoreConfigurationService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($itemService):void
+public __construct($itemService)
 
 ----
-
-
 
 
 
@@ -61,14 +58,13 @@ a|`$itemService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfilters]
 ----
 
-public getFilters():array
+public getFilters():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -76,10 +72,11 @@ public getFilters():array
 
 Return the available filter methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#buildvariationurl]
 ----
 
-public buildVariationURL($variationId):string
+public buildVariationURL($variationId):link:http://php.net/string[string^]
 
 ----
 
@@ -96,12 +93,10 @@ This method will not be supported in the future. Please refrain from using it as
 
 
 
-
-
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 |===

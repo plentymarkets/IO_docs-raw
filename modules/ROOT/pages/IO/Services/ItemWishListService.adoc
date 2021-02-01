@@ -21,22 +21,21 @@
 |===
 |Type |Name |Description
 
-| 
-    |itemWishListRepo
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$itemWishListRepo`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($sessionStorage):void
+public __construct($sessionStorage)
 
 ----
-
-
 
 
 
@@ -47,20 +46,19 @@ public __construct($sessionStorage):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$sessionStorage`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#additemwishlistentry]
 ----
 
-public addItemWishListEntry($variationId, $quantity):void
+public addItemWishListEntry($variationId, $quantity):link:http://php.net/mixed[mixed^]
 
 ----
-
-
 
 
 
@@ -71,24 +69,23 @@ public addItemWishListEntry($variationId, $quantity):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$quantity`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isiteminwishlist]
 ----
 
-public isItemInWishList($variationId):bool
+public isItemInWishList($variationId):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -99,31 +96,17 @@ public isItemInWishList($variationId):bool
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitemwishlist]
 ----
 
-public getItemWishList():array
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getCountedItemWishList():int
+public getItemWishList():link:http://php.net/array[array^]
 
 ----
 
@@ -133,16 +116,27 @@ public getCountedItemWishList():int
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcounteditemwishlist]
 ----
 
-public removeItemWishListEntry($variationId):bool
+public getCountedItemWishList():link:http://php.net/int[int^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#removeitemwishlistentry]
+----
+
+public removeItemWishListEntry($variationId):link:http://php.net/bool[bool^]
+
+----
 
 
 
@@ -153,20 +147,19 @@ public removeItemWishListEntry($variationId):bool
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#migrateguestitemwishlist]
 ----
 
-public migrateGuestItemWishList():void
+public migrateGuestItemWishList()
 
 ----
-
-
 
 
 

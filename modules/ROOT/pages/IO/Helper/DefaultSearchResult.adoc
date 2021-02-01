@@ -21,27 +21,26 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/array[array^]
-    |DEFAULT_RESULT
-    |['Array','Array','Array','Array','Array','Array','Array','Array','Array']
-    |
+a|`DEFAULT_RESULT`
+|['Array','Array','Array','Array','Array','Array','Array','Array','Array']
+|
 |link:http://php.net/array[array^]
-    |ADMIN_PREVIEW_DEFAULT_RESULT
-    |['Array','Array']
-    |
+a|`ADMIN_PREVIEW_DEFAULT_RESULT`
+|['Array','Array']
+|
 |===
 
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#merge]
 ----
 
-public static merge($data):void
+public static merge($data)
 
 ----
-
-
 
 
 
@@ -52,7 +51,7 @@ public static merge($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$data`
 |
 |===

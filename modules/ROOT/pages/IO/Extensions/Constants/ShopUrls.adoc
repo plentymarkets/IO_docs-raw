@@ -22,113 +22,72 @@
 |Type |Name |Description
 
 |xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorageService
-    |
-| 
-    |urlMap
-    |
-| 
-    |appendTrailingSlash
-    |
-| 
-    |trailingSlashSuffix
-    |
-| 
-    |includeLanguage
-    |
-| 
-    |basket
-    |
-| 
-    |cancellationForm
-    |
-| 
-    |cancellationRights
-    |
-| 
-    |checkout
-    |
-| 
-    |confirmation
-    |
-| 
-    |contact
-    |
-| 
-    |gtc
-    |
-| 
-    |home
-    |
-| 
-    |legalDisclosure
-    |
-| 
-    |login
-    |
-| 
-    |myAccount
-    |
-| 
-    |passwordReset
-    |
-| 
-    |privacyPolicy
-    |
-| 
-    |registration
-    |
-| 
-    |search
-    |
-| 
-    |termsConditions
-    |
-| 
-    |wishList
-    |
-| 
-    |returns
-    |
-| 
-    |returnConfirmation
-    |
-| 
-    |changeMail
-    |
-| 
-    |newsletterOptOut
-    |
-| 
-    |orderDocument
-    |
-| 
-    |cache
-    |
+a|`$sessionStorageService`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$urlMap`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$appendTrailingSlash`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$trailingSlashSuffix`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$includeLanguage`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$basket`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cancellationForm`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cancellationRights`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$checkout`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$confirmation`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$contact`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$gtc`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$home`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$legalDisclosure`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$login`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$myAccount`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$passwordReset`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$privacyPolicy`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$registration`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$search`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$termsConditions`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$wishList`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$returns`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$returnConfirmation`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$changeMail`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$newsletterOptOut`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$orderDocument`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public returns():void
+public __construct()
 
 ----
 
@@ -138,16 +97,27 @@ public returns():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#returns]
 ----
 
-public orderPropertyFile($path):void
+public returns()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#orderpropertyfile]
+----
+
+public orderPropertyFile($path)
+
+----
 
 
 
@@ -158,35 +128,33 @@ public orderPropertyFile($path):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$path`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#orderdocumentpreview]
 ----
 
-public orderDocumentPreview():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public tracking($orderId):void
+public orderDocumentPreview()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#tracking]
+----
+
+public tracking($orderId)
+
+----
 
 
 
@@ -197,31 +165,17 @@ public tracking($orderId):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$orderId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#equals]
 ----
 
-public equals():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getTemplateType():void
+public equals()
 
 ----
 
@@ -231,16 +185,27 @@ public getTemplateType():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettemplatetype]
 ----
 
-public is($routeKey):void
+public getTemplateType()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#is]
+----
+
+public is($routeKey)
+
+----
 
 
 
@@ -251,35 +216,33 @@ public is($routeKey):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$routeKey`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
 ----
 
-public fromMemoryCache():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public resetMemoryCache($key = null):void
+public fromMemoryCache()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -290,7 +253,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

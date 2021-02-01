@@ -22,14 +22,13 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showoptinconfirmation]
 ----
 
-public showOptInConfirmation():void
+public showOptInConfirmation()
 
 ----
-
-
 
 
 

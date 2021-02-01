@@ -24,14 +24,13 @@ xref:stable7@interface::Cloud.adoc#cloud_mutator_mutatorinterface[`MutatorInterf
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#mutate]
 ----
 
-public mutate($data):void
+public mutate($data)
 
 ----
-
-
 
 
 
@@ -42,7 +41,7 @@ public mutate($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$data`
 |
 |===

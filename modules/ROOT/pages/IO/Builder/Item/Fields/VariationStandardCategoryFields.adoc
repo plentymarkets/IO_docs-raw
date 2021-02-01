@@ -21,17 +21,17 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |CATEGORY_ID
-    |'categoryId'
-    |
+a|`CATEGORY_ID`
+|'categoryId'
+|
 |link:http://php.net/string[string^]
-    |PLENTY_ID
-    |'plentyId'
-    |
+a|`PLENTY_ID`
+|'plentyId'
+|
 |link:http://php.net/string[string^]
-    |MANUALLY
-    |'manually'
-    |
+a|`MANUALLY`
+|'manually'
+|
 |===
 
 

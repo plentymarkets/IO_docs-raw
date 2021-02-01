@@ -21,33 +21,33 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/int[int^]
-    |BILLING
-    |1
-    |
+a|`BILLING`
+|1
+|
 |link:http://php.net/int[int^]
-    |DELIVERY
-    |2
-    |
+a|`DELIVERY`
+|2
+|
 |link:http://php.net/int[int^]
-    |SENDER
-    |3
-    |
+a|`SENDER`
+|3
+|
 |link:http://php.net/int[int^]
-    |RETURN
-    |4
-    |
+a|`RETURN`
+|4
+|
 |link:http://php.net/int[int^]
-    |CLIENT
-    |5
-    |
+a|`CLIENT`
+|5
+|
 |link:http://php.net/int[int^]
-    |CONTRACTOR
-    |6
-    |
+a|`CONTRACTOR`
+|6
+|
 |link:http://php.net/int[int^]
-    |WAREHOUSE
-    |7
-    |
+a|`WAREHOUSE`
+|7
+|
 |===
 
 

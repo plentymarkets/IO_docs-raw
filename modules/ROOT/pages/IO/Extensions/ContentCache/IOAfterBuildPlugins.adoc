@@ -21,22 +21,21 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#handle]
 ----
 
-public handle($afterBuildPlugins):void
+public handle($afterBuildPlugins)
 
 ----
-
-
 
 
 
@@ -47,7 +46,7 @@ public handle($afterBuildPlugins):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$afterBuildPlugins`
 |
 |===

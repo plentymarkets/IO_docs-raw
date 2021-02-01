@@ -5,15 +5,15 @@
 [[io__searchitems]]
 = SearchItems
 
-Search preset for search items.
-Available options:
-- query:         The search string
-- facets:        Facet values of active facets
-- sorting:       Configuration value from plugin config
-- page:          The current page
-- itemsPerPage:  Number of items per page
-- priceMin:      Minimum price of the variations
-- priceMax       Maximum price of the variations
+Search preset for search items. +
+Available options: +
+- query:         The search string +
+- facets:        Facet values of active facets +
+- sorting:       Configuration value from plugin config +
+- page:          The current page +
+- itemsPerPage:  Number of items per page +
+- priceMin:      Minimum price of the variations +
+- priceMax       Maximum price of the variations +
 - autocomplete:  Flag indicating if autocompletion should be used
 
 
@@ -31,14 +31,13 @@ xref:IO/Services/ItemSearch/SearchPresets/SearchPreset.adoc#[`SearchPreset`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsearchfactory]
 ----
 
-public static getSearchFactory($options):void
+public static getSearchFactory($options)
 
 ----
-
-
 
 
 
@@ -49,7 +48,7 @@ public static getSearchFactory($options):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$options`
 |
 |===

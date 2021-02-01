@@ -23,25 +23,23 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
-    |orderRepository
-    |
-|xref:IO/Services/TemplateService.adoc#[`TemplateService`]
-    |templateService
-    |
+|xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
+a|`$orderRepository`
+||xref:IO/Services/TemplateService.adoc#[`TemplateService`]
+a|`$templateService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response, $orderRepository, $templateService):void
+public __construct($request, $response, $orderRepository, $templateService)
 
 ----
-
-
 
 
 
@@ -60,7 +58,7 @@ a|`$request`
 a|`$response`
 |
 
-| xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
+|xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
 a|`$orderRepository`
 |
 
@@ -70,17 +68,16 @@ a|`$templateService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#index]
 ----
 
-public index():Plenty\Plugin\Http\Response
+public index(): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Return the given rendered order template

@@ -23,45 +23,45 @@ xref:IO/Services/ItemSearch/Factories/VariationSearchFactory.adoc#[`VariationSea
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |SORTING_ORDER_ASC
-    |'asc'
-    |
+a|`SORTING_ORDER_ASC`
+|'asc'
+|
 |link:http://php.net/string[string^]
-    |SORTING_ORDER_DESC
-    |'desc'
-    |
+a|`SORTING_ORDER_DESC`
+|'desc'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_AGGREGATIONS
-    |'aggregations'
-    |
+a|`INHERIT_AGGREGATIONS`
+|'aggregations'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_COLLAPSE
-    |'collapse'
-    |
+a|`INHERIT_COLLAPSE`
+|'collapse'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_EXTENSIONS
-    |'extensions'
-    |
+a|`INHERIT_EXTENSIONS`
+|'extensions'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_FILTERS
-    |'filters'
-    |
+a|`INHERIT_FILTERS`
+|'filters'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_MUTATORS
-    |'mutators'
-    |
+a|`INHERIT_MUTATORS`
+|'mutators'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_PAGINATION
-    |'pagination'
-    |
+a|`INHERIT_PAGINATION`
+|'pagination'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_RESULT_FIELDS
-    |'resultFields'
-    |
+a|`INHERIT_RESULT_FIELDS`
+|'resultFields'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_SORTING
-    |'sorting'
-    |
+a|`INHERIT_SORTING`
+|'sorting'
+|
 |===
 
 
@@ -69,25 +69,24 @@ xref:IO/Services/ItemSearch/Factories/VariationSearchFactory.adoc#[`VariationSea
 |===
 |Type |Name |Description
 
-| 
-    |facetValues
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$facetValues`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#create]
 ----
 
-public static create($facets):IO\Services\ItemSearch\Factories\FacetSearchFactory
+public static create($facets):xref:IO/Services/ItemSearch/Factories/FacetSearchFactory.adoc#[FacetSearchFactory]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories/FacetSearchFactory.adoc#[`FacetSearchFactory`]
 
 
 Create a factory instance depending on a given set of facet values.
@@ -95,23 +94,22 @@ Create a factory instance depending on a given set of facet values.
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[`string`^] \| link:http://php.net/array[`array`^]
 a|`$facets`
 |List of active facet values. If string is given, it will be exploded by ',' to a list of values.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#preparesearch]
 ----
 
-public prepareSearch($source):Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Document\DocumentSearch
+public prepareSearch($source):xref:stable7@interface::Cloud.adoc#cloud_document_documentsearch[DocumentSearch]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Cloud.adoc#cloud_document_documentsearch[`DocumentSearch`]
 
 
 Build facet search classes
@@ -119,23 +117,22 @@ Build facet search classes
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Cloud.adoc#cloud_source_includesource[`IncludeSource`]
+|xref:stable7@interface::Cloud.adoc#cloud_source_includesource[`IncludeSource`]
 a|`$source`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withminimumcount]
 ----
 
-public withMinimumCount():IO\Services\ItemSearch\Factories
+public withMinimumCount():xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Register extension to filter facets by minimum hit count.

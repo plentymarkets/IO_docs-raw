@@ -21,25 +21,23 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/array[array^]
-    |functionsMap
-    |
-|link:http://php.net/array[array^]
-    |filtersMap
-    |
+|link:http://php.net/array[`array`^]
+a|`$functionsMap`
+||link:http://php.net/array[`array`^]
+a|`$filtersMap`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#registerfunction]
 ----
 
-public registerFunction($functionClass, $functionsList):void
+public registerFunction($functionClass, $functionsList)
 
 ----
-
-
 
 
 
@@ -50,24 +48,23 @@ public registerFunction($functionClass, $functionsList):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$functionClass`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$functionsList`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#registerfilter]
 ----
 
-public registerFilter($filterClass, $filtersList):void
+public registerFilter($filterClass, $filtersList)
 
 ----
-
-
 
 
 
@@ -78,39 +75,37 @@ public registerFilter($filterClass, $filtersList):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$filterClass`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$filtersList`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfunctionsmap]
 ----
 
-public getFunctionsMap():array
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getFiltersMap():array
+public getFunctionsMap():link:http://php.net/array[array^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getfiltersmap]
+----
+
+public getFiltersMap():link:http://php.net/array[array^]
+
+----
 
 
 

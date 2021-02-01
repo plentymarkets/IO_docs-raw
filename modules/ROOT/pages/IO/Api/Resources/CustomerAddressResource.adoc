@@ -23,9 +23,9 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |Type |Name |Value |Description
 
 |link:http://php.net/int[int^]
-    |ADDRESS_NOT_SET
-    |-99
-    |
+a|`ADDRESS_NOT_SET`
+|-99
+|
 |===
 
 
@@ -34,21 +34,20 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |Type |Name |Description
 
 |xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-    |customerService
-    |
+a|`$customerService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response, $customerService):void
+public __construct($request, $response, $customerService)
 
 ----
-
-
 
 
 
@@ -73,47 +72,44 @@ a|`$customerService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#index]
 ----
 
-public index():Plenty\Plugin\Http\Response
+public index(): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Get an address by type
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#store]
 ----
 
-public store():Plenty\Plugin\Http\Response
+public store(): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Create an address with the given type
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#update]
 ----
 
-public update($addressId):Plenty\Plugin\Http\Response
+public update($addressId): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Update the address with the given ID
@@ -121,23 +117,22 @@ Update the address with the given ID
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$addressId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#destroy]
 ----
 
-public destroy($addressId):Plenty\Plugin\Http\Response
+public destroy($addressId): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Delete the address with the given ID
@@ -145,7 +140,7 @@ Delete the address with the given ID
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$addressId`
 |
 |===

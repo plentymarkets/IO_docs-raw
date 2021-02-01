@@ -21,25 +21,25 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |LOG
-    |'log'
-    |
+a|`LOG`
+|'log'
+|
 |link:http://php.net/string[string^]
-    |INFO
-    |'info'
-    |
+a|`INFO`
+|'info'
+|
 |link:http://php.net/string[string^]
-    |WARN
-    |'warn'
-    |
+a|`WARN`
+|'warn'
+|
 |link:http://php.net/string[string^]
-    |ERROR
-    |'error'
-    |
+a|`ERROR`
+|'error'
+|
 |link:http://php.net/string[string^]
-    |SUCCESS
-    |'success'
-    |
+a|`SUCCESS`
+|'success'
+|
 |===
 
 

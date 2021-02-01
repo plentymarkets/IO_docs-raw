@@ -5,11 +5,11 @@
 [[io__facets]]
 = Facets
 
-Search preset for facets.
-Available options:
-- facets:        Values of active facets.
-- categoryId:    Category Id to filter variations by.
-- query:         Search string to get variations by.
+Search preset for facets. +
+Available options: +
+- facets:        Values of active facets. +
+- categoryId:    Category Id to filter variations by. +
+- query:         Search string to get variations by. +
 - autocomplete:  Flag indicating if autocomplete search should be used (boolean). Will only be used if &#039;query&#039; is defined.
 
 
@@ -27,14 +27,13 @@ xref:IO/Services/ItemSearch/SearchPresets/SearchPreset.adoc#[`SearchPreset`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsearchfactory]
 ----
 
-public static getSearchFactory($options):void
+public static getSearchFactory($options)
 
 ----
-
-
 
 
 
@@ -45,7 +44,7 @@ public static getSearchFactory($options):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$options`
 |
 |===

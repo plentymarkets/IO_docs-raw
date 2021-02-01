@@ -20,14 +20,13 @@ Generate sorting values from plugin configuration.
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsorting]
 ----
 
-public static getSorting($sortingConfig = null, $isCategory = true):array
+public static getSorting($sortingConfig = null, $isCategory = true):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -38,24 +37,23 @@ Get sorting values from plugin configuration
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$sortingConfig`
 |The configuration value from plugin
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$isCategory`
 |Get default sorting configuration for category or for search
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcategorysorting]
 ----
 
-public static getCategorySorting($sortingConfig = null):array
+public static getCategorySorting($sortingConfig = null):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -66,20 +64,19 @@ Get sorting values for categories from config
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$sortingConfig`
 |The configuration value
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsearchsorting]
 ----
 
-public static getSearchSorting($sortingConfig = null):array
+public static getSearchSorting($sortingConfig = null):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -90,35 +87,33 @@ Get sorting values for searches from config
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$sortingConfig`
 |The configuration value
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getuseditemname]
 ----
 
-public static getUsedItemName():string
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static splitPathAndOrder($sorting):void
+public static getUsedItemName():link:http://php.net/string[string^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#splitpathandorder]
+----
+
+public static splitPathAndOrder($sorting)
+
+----
 
 
 
@@ -129,7 +124,7 @@ public static splitPathAndOrder($sorting):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$sorting`
 |
 |===

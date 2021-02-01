@@ -23,22 +23,21 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 |===
 |Type |Name |Description
 
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showconfirmation]
 ----
 
-public showConfirmation():string
+public showConfirmation():link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -46,14 +45,13 @@ public showConfirmation():string
 
 Prepare and render the data for the order confirmation
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#redirect]
 ----
 
-public redirect():void
+public redirect()
 
 ----
-
-
 
 
 

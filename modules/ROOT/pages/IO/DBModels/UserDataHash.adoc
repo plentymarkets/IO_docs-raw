@@ -17,7 +17,7 @@
 xref:stable7@interface::Plugin.adoc#plugin_contracts_model[`Model`]
 
 ===== Implements
-JsonSerializable
+xref:5.0.0@plugin-jsonserializable::JsonSerializable.adoc#[`JsonSerializable`]
 
 
 .Constants
@@ -25,45 +25,45 @@ JsonSerializable
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |TYPE_CHANGE_MAIL
-    |'change-mail'
-    |
+a|`TYPE_CHANGE_MAIL`
+|'change-mail'
+|
 |link:http://php.net/string[string^]
-    |TYPE_RESET_PASSWORD
-    |'reset-password'
-    |
+a|`TYPE_RESET_PASSWORD`
+|'reset-password'
+|
 |link:http://php.net/string[string^]
-    |FIELD_TYPE_INT
-    |'int'
-    |
+a|`FIELD_TYPE_INT`
+|'int'
+|
 |link:http://php.net/string[string^]
-    |FIELD_TYPE_UNSIGNED_INT
-    |'unsignedInteger'
-    |
+a|`FIELD_TYPE_UNSIGNED_INT`
+|'unsignedInteger'
+|
 |link:http://php.net/string[string^]
-    |FIELD_TYPE_DECIMAL
-    |'decimal'
-    |
+a|`FIELD_TYPE_DECIMAL`
+|'decimal'
+|
 |link:http://php.net/string[string^]
-    |FIELD_TYPE_STRING
-    |'string'
-    |
+a|`FIELD_TYPE_STRING`
+|'string'
+|
 |link:http://php.net/string[string^]
-    |FIELD_TYPE_BOOL
-    |'bool'
-    |
+a|`FIELD_TYPE_BOOL`
+|'bool'
+|
 |link:http://php.net/string[string^]
-    |FIELD_TYPE_ARRAY
-    |'array'
-    |
+a|`FIELD_TYPE_ARRAY`
+|'array'
+|
 |link:http://php.net/string[string^]
-    |FIELD_TYPE_TEXT
-    |'text'
-    |
+a|`FIELD_TYPE_TEXT`
+|'text'
+|
 |link:http://php.net/array[array^]
-    |FIELD_TYPES
-    |['int','decimal','string','bool','array','text']
-    |
+a|`FIELD_TYPES`
+|['int','decimal','string','bool','array','text']
+|
 |===
 
 
@@ -71,58 +71,49 @@ JsonSerializable
 |===
 |Type |Name |Description
 
-| 
-    |id
-    |
-| 
-    |type
-    |
-| 
-    |plentyId
-    |
-| 
-    |contactId
-    |
-| 
-    |hash
-    |
-| 
-    |data
-    |
-| 
-    |createdAt
-    |
-| 
-    |expiresAt
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$id`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$type`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$plentyId`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$contactId`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$hash`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$data`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$createdAt`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$expiresAt`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettablename]
 ----
 
-public getTableName():string
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public jsonSerialize():void
+public getTableName():link:http://php.net/string[string^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#jsonserialize]
+----
+
+public jsonSerialize():link:http://php.net/mixed[mixed^]
+
+----
 
 
 
@@ -130,14 +121,13 @@ public jsonSerialize():void
 
 Specify data which should be serialized to JSON
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#fillbyattributes]
 ----
 
-public fillByAttributes($attributes):void
+public fillByAttributes($attributes)
 
 ----
-
-
 
 
 
@@ -148,7 +138,7 @@ public fillByAttributes($attributes):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$attributes`
 |
 |===

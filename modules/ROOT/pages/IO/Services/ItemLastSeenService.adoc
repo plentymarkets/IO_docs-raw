@@ -21,9 +21,9 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/int[int^]
-    |MAX_COUNT
-    |20
-    |
+a|`MAX_COUNT`
+|20
+|
 |===
 
 
@@ -31,25 +31,23 @@
 |===
 |Type |Name |Description
 
-| 
-    |cachingRepository
-    |
-| 
-    |basketRepository
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cachingRepository`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$basketRepository`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($cachingRepository):void
+public __construct($cachingRepository)
 
 ----
-
-
 
 
 
@@ -66,14 +64,13 @@ a|`$cachingRepository`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setlastseenitem]
 ----
 
-public setLastSeenItem($variationId):void
+public setLastSeenItem($variationId)
 
 ----
-
-
 
 
 
@@ -84,7 +81,7 @@ public setLastSeenItem($variationId):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 |===

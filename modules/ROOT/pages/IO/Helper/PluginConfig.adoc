@@ -21,36 +21,21 @@
 |===
 |Type |Name |Description
 
-| 
-    |pluginName
-    |
-| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_configrepository[`ConfigRepository`]
-    |configRepository
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$pluginName`
+|| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_configrepository[`ConfigRepository`]
+a|`$configRepository`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getMultiSelectValue():void
+public __construct()
 
 ----
 
@@ -60,27 +45,11 @@ public getMultiSelectValue():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getmultiselectvalue]
 ----
 
-public getTextValue():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getIntegerValue():void
+public getMultiSelectValue()
 
 ----
 
@@ -90,31 +59,55 @@ public getIntegerValue():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettextvalue]
 ----
 
-public getBooleanValue():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getConfigValue():void
+public getTextValue()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getintegervalue]
+----
+
+public getIntegerValue()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getbooleanvalue]
+----
+
+public getBooleanValue()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getconfigvalue]
+----
+
+public getConfigValue()
+
+----
 
 
 

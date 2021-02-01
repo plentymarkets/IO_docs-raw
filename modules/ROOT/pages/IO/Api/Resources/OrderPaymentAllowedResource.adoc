@@ -24,21 +24,20 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |Type |Name |Description
 
 |xref:IO/Services/OrderService.adoc#[`OrderService`]
-    |orderService
-    |
+a|`$orderService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response):void
+public __construct($request, $response)
 
 ----
-
-
 
 
 
@@ -59,14 +58,13 @@ a|`$response`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#index]
 ----
 
-public index():void
+public index()
 
 ----
-
-
 
 
 

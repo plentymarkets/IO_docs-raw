@@ -21,27 +21,26 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/array[array^]
-    |FAKER_MAP
-    |['IO\Services\ItemSearch\Factories\Faker\AttributeFaker','IO\Services\ItemSearch\Factories\Faker\BarcodeFaker','IO\Services\ItemSearch\Factories\Faker\BundleComponentsFaker','IO\Services\ItemSearch\Factories\Faker\CategoryFaker','IO\Services\ItemSearch\Factories\Faker\CrossSellingFaker','IO\Services\ItemSearch\Factories\Faker\DefaultCategoryFaker','IO\Services\ItemSearch\Factories\Faker\FacetFaker','IO\Services\ItemSearch\Factories\Faker\FilterFaker','IO\Services\ItemSearch\Factories\Faker\IdsFaker','IO\Services\ItemSearch\Factories\Faker\ImageFaker','IO\Services\ItemSearch\Factories\Faker\ItemFaker','Array','IO\Services\ItemSearch\Factories\Faker\SalesPriceFaker','IO\Services\ItemSearch\Factories\Faker\SkuFaker','IO\Services\ItemSearch\Factories\Faker\SortingFaker','IO\Services\ItemSearch\Factories\Faker\StockFaker','IO\Services\ItemSearch\Factories\Faker\TagFaker','IO\Services\ItemSearch\Factories\Faker\TextFaker','IO\Services\ItemSearch\Factories\Faker\UnitFaker','IO\Services\ItemSearch\Factories\Faker\VariationFaker','IO\Services\ItemSearch\Factories\Faker\VariationPropertyFaker']
-    |
+a|`FAKER_MAP`
+|['IO\Services\ItemSearch\Factories\Faker\AttributeFaker','IO\Services\ItemSearch\Factories\Faker\BarcodeFaker','IO\Services\ItemSearch\Factories\Faker\BundleComponentsFaker','IO\Services\ItemSearch\Factories\Faker\CategoryFaker','IO\Services\ItemSearch\Factories\Faker\CrossSellingFaker','IO\Services\ItemSearch\Factories\Faker\DefaultCategoryFaker','IO\Services\ItemSearch\Factories\Faker\FacetFaker','IO\Services\ItemSearch\Factories\Faker\FilterFaker','IO\Services\ItemSearch\Factories\Faker\IdsFaker','IO\Services\ItemSearch\Factories\Faker\ImageFaker','IO\Services\ItemSearch\Factories\Faker\ItemFaker','Array','IO\Services\ItemSearch\Factories\Faker\SalesPriceFaker','IO\Services\ItemSearch\Factories\Faker\SkuFaker','IO\Services\ItemSearch\Factories\Faker\SortingFaker','IO\Services\ItemSearch\Factories\Faker\StockFaker','IO\Services\ItemSearch\Factories\Faker\TagFaker','IO\Services\ItemSearch\Factories\Faker\TextFaker','IO\Services\ItemSearch\Factories\Faker\UnitFaker','IO\Services\ItemSearch\Factories\Faker\VariationFaker','IO\Services\ItemSearch\Factories\Faker\VariationPropertyFaker']
+|
 |link:http://php.net/array[array^]
-    |MANDATORY_FAKER_MAP
-    |['IO\Services\ItemSearch\Factories\Faker\PriceFaker']
-    |
+a|`MANDATORY_FAKER_MAP`
+|['IO\Services\ItemSearch\Factories\Faker\PriceFaker']
+|
 |===
 
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#fillsearchresults]
 ----
 
-public fillSearchResults():void
+public fillSearchResults()
 
 ----
-
-
 
 
 

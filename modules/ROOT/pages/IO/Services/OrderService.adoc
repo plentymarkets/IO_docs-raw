@@ -21,13 +21,13 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/array[array^]
-    |WRAPPED_ORDERITEM_TYPES
-    |[1,2,3,9]
-    |
+a|`WRAPPED_ORDERITEM_TYPES`
+|[1,2,3,9]
+|
 |link:http://php.net/array[array^]
-    |VISIBLE_ORDER_TYPES
-    |[1,5]
-    |
+a|`VISIBLE_ORDER_TYPES`
+|[1,5]
+|
 |===
 
 
@@ -35,46 +35,37 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
-    |orderRepository
-    |
-|xref:IO/Services/BasketService.adoc#[`BasketService`]
-    |basketService
-    |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorage
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
-    |frontendPaymentMethodRepository
-    |
-| xref:stable7@interface::Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
-    |addressRepository
-    |
-|xref:IO/Services/UrlService.adoc#[`UrlService`]
-    |urlService
-    |
-|xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
-    |checkoutService
-    |
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-    |customerService
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
+a|`$orderRepository`
+||xref:IO/Services/BasketService.adoc#[`BasketService`]
+a|`$basketService`
+||xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorage`
+||xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
+a|`$frontendPaymentMethodRepository`
+||xref:stable7@interface::Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
+a|`$addressRepository`
+||xref:IO/Services/UrlService.adoc#[`UrlService`]
+a|`$urlService`
+||xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
+a|`$checkoutService`
+||xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($orderRepository, $basketService, $sessionStorage, $frontendPaymentMethodRepository, $addressRepository, $urlService, $checkoutService, $customerService):void
+public __construct($orderRepository, $basketService, $sessionStorage, $frontendPaymentMethodRepository, $addressRepository, $urlService, $checkoutService, $customerService)
 
 ----
-
-
 
 
 
@@ -85,7 +76,7 @@ OrderService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
+|xref:stable7@interface::Order.adoc#order_contracts_orderrepositorycontract[`OrderRepositoryContract`]
 a|`$orderRepository`
 |
 
@@ -97,11 +88,11 @@ a|`$basketService`
 a|`$sessionStorage`
 |
 
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
 a|`$frontendPaymentMethodRepository`
 |
 
-| xref:stable7@interface::Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
+|xref:stable7@interface::Account.adoc#account_contracts_addressrepositorycontract[`AddressRepositoryContract`]
 a|`$addressRepository`
 |
 
@@ -119,29 +110,27 @@ a|`$customerService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#placeorder]
 ----
 
-public placeOrder():IO\Models\LocalizedOrder
+public placeOrder():xref:IO/Models/LocalizedOrder.adoc#[LocalizedOrder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Models/LocalizedOrder.adoc#[`LocalizedOrder`]
 
 
 Place an order
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#executepayment]
 ----
 
-public executePayment($orderId, $paymentId):array
+public executePayment($orderId, $paymentId):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -152,24 +141,23 @@ Execute the payment for a given order.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$orderId`
 |The order id to execute payment for
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$paymentId`
 |The MoP-ID to execute
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#findorderbyid]
 ----
 
-public findOrderById($orderId, $wrap = true):void
+public findOrderById($orderId, $wrap = true):link:http://php.net/mixed[mixed^]
 
 ----
-
-
 
 
 
@@ -180,42 +168,40 @@ Find an order by ID
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$orderId`
 |
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$wrap`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#findorderbyaccesskey]
 ----
 
-public findOrderByAccessKey():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getOrdersForContact($contactId, $page = 1, $items = 50, $filters = [], $wrapped = true):Plenty\Repositories\Models\PaginatedResult
+public findOrderByAccessKey()
 
 ----
 
 
 
 
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getordersforcontact]
+----
+
+public getOrdersForContact($contactId, $page = 1, $items = 50, $filters = [], $wrapped = true): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[PaginatedResult]
+
+----
+
+
+
 
 
 Get a list of orders for a contact
@@ -223,54 +209,52 @@ Get a list of orders for a contact
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$contactId`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$page`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$items`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$filters`
 |
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$wrapped`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getorderscompact]
 ----
 
-public getOrdersCompact():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getLatestOrderForContact($contactId):IO\Models\LocalizedOrder
+public getOrdersCompact()
 
 ----
 
 
 
 
-====== *Return type:*xref:IO/Models/LocalizedOrder.adoc#[`LocalizedOrder`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getlatestorderforcontact]
+----
+
+public getLatestOrderForContact($contactId):xref:IO/Models/LocalizedOrder.adoc#[LocalizedOrder]
+
+----
+
+
+
 
 
 Get the last order created by the current contact
@@ -278,31 +262,17 @@ Get the last order created by the current contact
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$contactId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getorderpropertybyorderid]
 ----
 
-public getOrderPropertyByOrderId():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public isReturnActive():void
+public getOrderPropertyByOrderId()
 
 ----
 
@@ -312,31 +282,41 @@ public isReturnActive():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isreturnactive]
 ----
 
-public createOrderReturn():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getReturnableItems($order):array
+public isReturnActive()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#createorderreturn]
+----
+
+public createOrderReturn()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getreturnableitems]
+----
+
+public getReturnableItems($order):link:http://php.net/array[array^]
+
+----
 
 
 
@@ -347,23 +327,22 @@ public getReturnableItems($order):array
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
+|xref:stable7@interface::Order.adoc#order_models_order[`Order`]
 a|`$order`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getpaymentmethodlistforswitch]
 ----
 
-public getPaymentMethodListForSwitch($currentPaymentMethodId, $orderId = null):IO\Services\Illuminate\Support\Collection
+public getPaymentMethodListForSwitch($currentPaymentMethodId, $orderId = null):xref:IO/Services/Illuminate/Support/Collection.adoc#[Collection]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/Illuminate/Support/Collection.adoc#[`Collection`]
 
 
 List all payment methods available for switch in MyAccount
@@ -371,24 +350,23 @@ List all payment methods available for switch in MyAccount
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$currentPaymentMethodId`
 |
 
-| null
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
 a|`$orderId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#complete]
 ----
 
-public complete($order):void
+public complete($order)
 
 ----
-
-
 
 
 
@@ -399,7 +377,7 @@ Do steps after creating the order
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
+|xref:stable7@interface::Order.adoc#order_models_order[`Order`]
 a|`$order`
 |
 |===

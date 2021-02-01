@@ -21,55 +21,43 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
-    |frontendPaymentMethodRepository
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
-    |checkout
-    |
-| xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
-    |basketRepository
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
-    |sessionStorage
-    |
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-    |customerService
-    |
-| xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
-    |parcelServicePresetRepo
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
-    |currencyExchangeRepo
-    |
-|xref:IO/Services/BasketService.adoc#[`BasketService`]
-    |basketService
-    |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorageService
-    |
-|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
-    |webstoreConfigurationService
-    |
-| 
-    |cache
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
+a|`$frontendPaymentMethodRepository`
+||xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
+a|`$checkout`
+||xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
+a|`$basketRepository`
+||xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
+a|`$sessionStorage`
+||xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
+||xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
+a|`$parcelServicePresetRepo`
+||xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
+a|`$currencyExchangeRepo`
+||xref:IO/Services/BasketService.adoc#[`BasketService`]
+a|`$basketService`
+||xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorageService`
+||xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
+a|`$webstoreConfigurationService`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($frontendPaymentMethodRepository, $checkout, $basketRepository, $sessionStorage, $customerService, $parcelServicePresetRepo, $currencyExchangeRepo, $basketService, $sessionStorageService, $webstoreConfigurationService):void
+public __construct($frontendPaymentMethodRepository, $checkout, $basketRepository, $sessionStorage, $customerService, $parcelServicePresetRepo, $currencyExchangeRepo, $basketService, $sessionStorageService, $webstoreConfigurationService)
 
 ----
-
-
 
 
 
@@ -80,19 +68,19 @@ CheckoutService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendpaymentmethodrepositorycontract[`FrontendPaymentMethodRepositoryContract`]
 a|`$frontendPaymentMethodRepository`
 |
 
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
 a|`$checkout`
 |
 
-| xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
+|xref:stable7@interface::Basket.adoc#basket_contracts_basketrepositorycontract[`BasketRepositoryContract`]
 a|`$basketRepository`
 |
 
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_frontendsessionstoragefactorycontract[`FrontendSessionStorageFactoryContract`]
 a|`$sessionStorage`
 |
 
@@ -100,11 +88,11 @@ a|`$sessionStorage`
 a|`$customerService`
 |
 
-| xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
+|xref:stable7@interface::Order.adoc#order_contracts_parcelservicepresetrepositorycontract[`ParcelServicePresetRepositoryContract`]
 a|`$parcelServicePresetRepo`
 |
 
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_currencyexchangerepositorycontract[`CurrencyExchangeRepositoryContract`]
 a|`$currencyExchangeRepo`
 |
 
@@ -122,14 +110,13 @@ a|`$webstoreConfigurationService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcheckout]
 ----
 
-public getCheckout($retry = true):array
+public getCheckout($retry = true):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -140,20 +127,19 @@ Get the relevant data for the checkout
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$retry`
 |Try loading checkout again on failure (e.g. problems during calculating totals)
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcurrency]
 ----
 
-public getCurrency():string
+public getCurrency():link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -161,14 +147,13 @@ public getCurrency():string
 
 Get the current currency from the session
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setcurrency]
 ----
 
-public setCurrency($currency):void
+public setCurrency($currency)
 
 ----
-
-
 
 
 
@@ -179,31 +164,17 @@ Set the current currency from the session
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$currency`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcurrencylist]
 ----
 
-public getCurrencyList():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getCurrencyData():void
+public getCurrencyList()
 
 ----
 
@@ -213,31 +184,41 @@ public getCurrencyData():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcurrencydata]
 ----
 
-public getCurrencyPattern():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getMethodOfPaymentId():int
+public getCurrencyData()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getcurrencypattern]
+----
+
+public getCurrencyPattern()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getmethodofpaymentid]
+----
+
+public getMethodOfPaymentId():link:http://php.net/int[int^]
+
+----
 
 
 
@@ -245,14 +226,13 @@ public getMethodOfPaymentId():int
 
 Get the ID of the current payment method
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setmethodofpaymentid]
 ----
 
-public setMethodOfPaymentId($methodOfPaymentID):void
+public setMethodOfPaymentId($methodOfPaymentID)
 
 ----
-
-
 
 
 
@@ -263,20 +243,19 @@ Set the ID of the current payment method
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$methodOfPaymentID`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#preparepayment]
 ----
 
-public preparePayment():array
+public preparePayment():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -284,14 +263,13 @@ public preparePayment():array
 
 Prepare the payment
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getmethodofpaymentlist]
 ----
 
-public getMethodOfPaymentList():array
+public getMethodOfPaymentList():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -299,14 +277,13 @@ public getMethodOfPaymentList():array
 
 List all available payment methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getmethodofpaymentexpresscheckoutlist]
 ----
 
-public getMethodOfPaymentExpressCheckoutList():array
+public getMethodOfPaymentExpressCheckoutList():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -314,14 +291,13 @@ public getMethodOfPaymentExpressCheckoutList():array
 
 List all payment methods available for express checkout
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcheckoutpaymentdatalist]
 ----
 
-public getCheckoutPaymentDataList():array
+public getCheckoutPaymentDataList():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -329,14 +305,13 @@ public getCheckoutPaymentDataList():array
 
 Get a list of the payment method data
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getshippingprofilelist]
 ----
 
-public getShippingProfileList():array
+public getShippingProfileList():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -344,14 +319,13 @@ public getShippingProfileList():array
 
 Get the shipping profile list
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getshippingcountryid]
 ----
 
-public getShippingCountryId():int
+public getShippingCountryId():link:http://php.net/int[int^]
 
 ----
-
-
 
 
 
@@ -359,14 +333,13 @@ public getShippingCountryId():int
 
 Get the ID of the current shipping country
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setshippingcountryid]
 ----
 
-public setShippingCountryId($shippingCountryId):void
+public setShippingCountryId($shippingCountryId)
 
 ----
-
-
 
 
 
@@ -377,20 +350,19 @@ Set the ID of thevcurrent shipping country
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$shippingCountryId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getshippingprofileid]
 ----
 
-public getShippingProfileId():int
+public getShippingProfileId():link:http://php.net/int[int^]
 
 ----
-
-
 
 
 
@@ -398,14 +370,13 @@ public getShippingProfileId():int
 
 Get the ID of the current shipping profile
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setshippingprofileid]
 ----
 
-public setShippingProfileId($shippingProfileId):void
+public setShippingProfileId($shippingProfileId)
 
 ----
-
-
 
 
 
@@ -416,20 +387,19 @@ Set the ID of the current shipping profile
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$shippingProfileId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getdeliveryaddressid]
 ----
 
-public getDeliveryAddressId():int
+public getDeliveryAddressId():link:http://php.net/int[int^]
 
 ----
-
-
 
 
 
@@ -437,14 +407,13 @@ public getDeliveryAddressId():int
 
 Get the ID of the current delivery address
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setdeliveryaddressid]
 ----
 
-public setDeliveryAddressId($deliveryAddressId):void
+public setDeliveryAddressId($deliveryAddressId)
 
 ----
-
-
 
 
 
@@ -455,20 +424,19 @@ Set the ID of the current delivery address
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$deliveryAddressId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbillingaddressid]
 ----
 
-public getBillingAddressId():int
+public getBillingAddressId():link:http://php.net/int[int^]
 
 ----
-
-
 
 
 
@@ -476,14 +444,13 @@ public getBillingAddressId():int
 
 Get the ID of the current invoice address
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setbillingaddressid]
 ----
 
-public setBillingAddressId($billingAddressId):void
+public setBillingAddressId($billingAddressId)
 
 ----
-
-
 
 
 
@@ -494,31 +461,17 @@ Set the ID of the current invoice address
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$billingAddressId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setdefaultshippingcountryid]
 ----
 
-public setDefaultShippingCountryId():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getMaxDeliveryDays():void
+public setDefaultShippingCountryId()
 
 ----
 
@@ -528,16 +481,27 @@ public getMaxDeliveryDays():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getmaxdeliverydays]
 ----
 
-public setReadOnlyCheckout($readonly):void
+public getMaxDeliveryDays()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#setreadonlycheckout]
+----
+
+public setReadOnlyCheckout($readonly)
+
+----
 
 
 
@@ -548,31 +512,17 @@ public setReadOnlyCheckout($readonly):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$readonly`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getreadonlycheckout]
 ----
 
-public getReadOnlyCheckout():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public fromMemoryCache():void
+public getReadOnlyCheckout()
 
 ----
 
@@ -582,16 +532,27 @@ public fromMemoryCache():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
 ----
 
-public resetMemoryCache($key = null):void
+public fromMemoryCache()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -602,7 +563,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

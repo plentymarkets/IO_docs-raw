@@ -21,58 +21,45 @@
 |===
 |Type |Name |Description
 
-| 
-    |classId
-    |
-| 
-    |singleAccess
-    |
-| 
-    |currency
-    |
-| 
-    |plentyId
-    |
-| 
-    |shippingCountryId
-    |
-| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_variation_detectsalespriceservice[`DetectSalesPriceService`]
-    |detectSalesPriceService
-    |
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-    |customerService
-    |
-| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
-    |app
-    |
-|xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
-    |checkoutService
-    |
-|xref:IO/Services/BasketService.adoc#[`BasketService`]
-    |basketService
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
-    |vatService
-    |
-| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_accounting_vatinitservice[`VatInitService`]
-    |vatInitService
-    |
-| 
-    |referrerId
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$classId`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$singleAccess`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$currency`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$plentyId`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$shippingCountryId`
+|| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_variation_detectsalespriceservice[`DetectSalesPriceService`]
+a|`$detectSalesPriceService`
+||xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
+|| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
+a|`$app`
+||xref:IO/Services/CheckoutService.adoc#[`CheckoutService`]
+a|`$checkoutService`
+||xref:IO/Services/BasketService.adoc#[`BasketService`]
+a|`$basketService`
+||xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
+a|`$vatService`
+|| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_accounting_vatinitservice[`VatInitService`]
+a|`$vatInitService`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$referrerId`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($detectSalesPriceService, $customerService, $app, $checkoutService):void
+public __construct($detectSalesPriceService, $customerService, $app, $checkoutService)
 
 ----
-
-
 
 
 
@@ -101,14 +88,13 @@ a|`$checkoutService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getpriceidsforcustomer]
 ----
 
-public getPriceIdsForCustomer():void
+public getPriceIdsForCustomer()
 
 ----
-
-
 
 
 

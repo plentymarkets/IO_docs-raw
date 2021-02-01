@@ -23,22 +23,21 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 |===
 |Type |Name |Description
 
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showcategory]
 ----
 
-public showCategory($lvl1 = null, $lvl2 = null, $lvl3 = null, $lvl4 = null, $lvl5 = null, $lvl6 = null):string
+public showCategory($lvl1 = null, $lvl2 = null, $lvl3 = null, $lvl4 = null, $lvl5 = null, $lvl6 = null):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -49,51 +48,37 @@ Prepare and render the data for categories
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lvl1`
 |Level 1 of category url. Will be null at root page
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lvl2`
 |Level 2 of category url.
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lvl3`
 |Level 3 of category url.
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lvl4`
 |Level 4 of category url.
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lvl5`
 |Level 5 of category url.
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lvl6`
 |Level 6 of category url.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showcategorybyid]
 ----
 
-public showCategoryById():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public redirectToCategory():void
+public showCategoryById()
 
 ----
 
@@ -103,16 +88,27 @@ public redirectToCategory():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#redirecttocategory]
 ----
 
-public redirectRoute():void
+public redirectToCategory()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#redirectroute]
+----
+
+public redirectRoute()
+
+----
 
 
 

@@ -5,14 +5,14 @@
 [[io__variationlist]]
 = VariationList
 
-Search preset for variation lists.
-Available options:
-- variationIds:      List of variations to receive.
-- sorting:           Configuration value to get sorting for.
-- sortingField:      Field to sort items by. Will be appended to sorting list if sorting configuration is defined.
-- sortingOrder:      Order to sort items with (&#039;asc&#039;, &#039;desc&#039;)
-- page:              The current page
-- itemsPerPage:      Number of items per page
+Search preset for variation lists. +
+Available options: +
+- variationIds:      List of variations to receive. +
+- sorting:           Configuration value to get sorting for. +
+- sortingField:      Field to sort items by. Will be appended to sorting list if sorting configuration is defined. +
+- sortingOrder:      Order to sort items with (&#039;asc&#039;, &#039;desc&#039;) +
+- page:              The current page +
+- itemsPerPage:      Number of items per page +
 - excludeFromCache:  Set to true if results should not be linked to response
 
 
@@ -30,14 +30,13 @@ xref:IO/Services/ItemSearch/SearchPresets/SearchPreset.adoc#[`SearchPreset`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsearchfactory]
 ----
 
-public static getSearchFactory($options):void
+public static getSearchFactory($options)
 
 ----
-
-
 
 
 
@@ -48,7 +47,7 @@ public static getSearchFactory($options):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$options`
 |
 |===

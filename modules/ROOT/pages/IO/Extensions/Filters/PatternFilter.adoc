@@ -22,14 +22,13 @@ xref:IO/Extensions/AbstractFilter.adoc#[`AbstractFilter`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfilters]
 ----
 
-public getFilters():array
+public getFilters():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -37,29 +36,27 @@ public getFilters():array
 
 Return the available filter methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getobjectvalue]
 ----
 
-public getObjectValue():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public findPattern($input, $regex):array
+public getObjectValue()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#findpattern]
+----
+
+public findPattern($input, $regex):link:http://php.net/array[array^]
+
+----
 
 
 
@@ -70,11 +67,11 @@ Find matches in input with given regex
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$input`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$regex`
 |
 |===

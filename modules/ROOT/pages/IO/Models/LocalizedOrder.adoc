@@ -17,12 +17,12 @@
 xref:IO/Models/ModelWrapper.adoc#[`ModelWrapper`]
 
 ===== Implements
-Arrayable
-ArrayAccess
-Jsonable
-JsonSerializable
-QueueableEntity
-UrlRoutable
+xref:5.0.0@plugin-illuminate::Illuminate/Contracts/Support/Arrayable.adoc#[`Arrayable`]
+xref:5.0.0@plugin-arrayaccess::ArrayAccess.adoc#[`ArrayAccess`]
+xref:5.0.0@plugin-illuminate::Illuminate/Contracts/Support/Jsonable.adoc#[`Jsonable`]
+xref:5.0.0@plugin-jsonserializable::JsonSerializable.adoc#[`JsonSerializable`]
+xref:5.0.0@plugin-illuminate::Illuminate/Contracts/Queue/QueueableEntity.adoc#[`QueueableEntity`]
+xref:5.0.0@plugin-illuminate::Illuminate/Contracts/Routing/UrlRoutable.adoc#[`UrlRoutable`]
 
 
 .Constants
@@ -30,17 +30,17 @@ UrlRoutable
 |Type |Name |Value |Description
 
 |link:http://php.net/array[array^]
-    |WRAPPED_ORDERITEM_TYPES
-    |[1,2,3,4,5,6,9]
-    |
+a|`WRAPPED_ORDERITEM_TYPES`
+|[1,2,3,4,5,6,9]
+|
 |link:http://php.net/string[string^]
-    |CREATED_AT
-    |'created_at'
-    |
+a|`CREATED_AT`
+|'created_at'
+|
 |link:http://php.net/string[string^]
-    |UPDATED_AT
-    |'updated_at'
-    |
+a|`UPDATED_AT`
+|'updated_at'
+|
 |===
 
 
@@ -48,76 +48,58 @@ UrlRoutable
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
-    |order
-    |
-| 
-    |orderData
-    |
-| 
-    |status
-    |
-| 
-    |shippingProvider
-    |
-| 
-    |shippingProfileName
-    |
-| 
-    |shippingProfileId
-    |
-| 
-    |trackingURL
-    |
-| 
-    |paymentMethodName
-    |
-| 
-    |paymentMethodIcon
-    |
-| 
-    |paymentStatus
-    |
-| 
-    |variations
-    |
-| 
-    |itemURLs
-    |
-| 
-    |itemImages
-    |
-| 
-    |isReturnable
-    |
-| 
-    |highlightNetPrices
-    |
-| 
-    |totals
-    |
-| 
-    |allowPaymentMethodSwitchFrom
-    |
-| 
-    |paymentMethodListForSwitch
-    |
+|xref:stable7@interface::Order.adoc#order_models_order[`Order`]
+a|`$order`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$orderData`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$status`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$shippingProvider`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$shippingProfileName`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$shippingProfileId`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$trackingURL`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$paymentMethodName`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$paymentMethodIcon`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$paymentStatus`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$variations`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$itemURLs`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$itemImages`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$isReturnable`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$highlightNetPrices`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$totals`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$allowPaymentMethodSwitchFrom`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$paymentMethodListForSwitch`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#wrap]
 ----
 
-public static wrap($order, $data):IO\Models\LocalizedOrder
+public static wrap($order, $data):xref:IO/Models/LocalizedOrder.adoc#[LocalizedOrder]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Models/LocalizedOrder.adoc#[`LocalizedOrder`]
 
 
 
@@ -125,39 +107,37 @@ public static wrap($order, $data):IO\Models\LocalizedOrder
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Order.adoc#order_models_order[`Order`]
+|xref:stable7@interface::Order.adoc#order_models_order[`Order`]
 a|`$order`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$data`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#toarray]
 ----
 
-public toArray():array
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public isReturnable():void
+public toArray():link:http://php.net/array[array^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#isreturnable]
+----
+
+public isReturnable()
+
+----
 
 
 

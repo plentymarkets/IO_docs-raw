@@ -21,17 +21,17 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |CATEGORY_ID
-    |'categoryId'
-    |
+a|`CATEGORY_ID`
+|'categoryId'
+|
 |link:http://php.net/string[string^]
-    |POSITION
-    |'position'
-    |
+a|`POSITION`
+|'position'
+|
 |link:http://php.net/string[string^]
-    |NECKERMANN_PRIMARY
-    |'neckermannPrimary'
-    |
+a|`NECKERMANN_PRIMARY`
+|'neckermannPrimary'
+|
 |===
 
 

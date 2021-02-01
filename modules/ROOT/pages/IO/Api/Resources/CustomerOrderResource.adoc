@@ -23,37 +23,35 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |===
 |Type |Name |Description
 
-| 
-    |orderService
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$orderService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public index():void
+public __construct()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#index]
+----
+
+public index()
+
+----
 
 
 

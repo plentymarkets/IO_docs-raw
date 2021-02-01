@@ -22,21 +22,20 @@
 |Type |Name |Description
 
 |xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorageService
-    |
+a|`$sessionStorageService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($sessionStorageService):void
+public __construct($sessionStorageService)
 
 ----
-
-
 
 
 
@@ -53,14 +52,13 @@ a|`$sessionStorageService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getnotifications]
 ----
 
-public getNotifications($clear = true):array
+public getNotifications($clear = true):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -71,20 +69,19 @@ public getNotifications($clear = true):array
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$clear`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#log]
 ----
 
-public log($message, $code, $placeholder = []):void
+public log($message, $code, $placeholder = [])
 
 ----
-
-
 
 
 
@@ -95,28 +92,27 @@ public log($message, $code, $placeholder = []):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$message`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$code`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$placeholder`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#info]
 ----
 
-public info($message, $code, $placeholder = []):void
+public info($message, $code, $placeholder = [])
 
 ----
-
-
 
 
 
@@ -127,28 +123,27 @@ public info($message, $code, $placeholder = []):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$message`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$code`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$placeholder`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#warn]
 ----
 
-public warn($message, $code, $placeholder = []):void
+public warn($message, $code, $placeholder = [])
 
 ----
-
-
 
 
 
@@ -159,28 +154,27 @@ public warn($message, $code, $placeholder = []):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$message`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$code`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$placeholder`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#error]
 ----
 
-public error($message, $code, $placeholder = []):void
+public error($message, $code, $placeholder = [])
 
 ----
-
-
 
 
 
@@ -191,28 +185,27 @@ public error($message, $code, $placeholder = []):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$message`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$code`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$placeholder`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#success]
 ----
 
-public success($message, $code, $placeholder = []):void
+public success($message, $code, $placeholder = [])
 
 ----
-
-
 
 
 
@@ -223,15 +216,15 @@ public success($message, $code, $placeholder = []):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$message`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$code`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$placeholder`
 |
 |===

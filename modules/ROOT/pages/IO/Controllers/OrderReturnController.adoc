@@ -23,22 +23,21 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 |===
 |Type |Name |Description
 
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showorderreturn]
 ----
 
-public showOrderReturn($orderId, $orderAccessKey = null, $category = null):void
+public showOrderReturn($orderId, $orderAccessKey = null, $category = null):link:http://php.net/string[string^] \|  xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
-
-
 
 
 
@@ -49,28 +48,27 @@ Render the order returns view
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$orderId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$orderAccessKey`
 |
 
-| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+|xref:stable7@interface::Category.adoc#category_models_category[`Category`]
 a|`$category`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#redirect]
 ----
 
-public redirect():void
+public redirect()
 
 ----
-
-
 
 
 

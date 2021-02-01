@@ -21,21 +21,21 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/int[int^]
-    |METER
-    |1
-    |
+a|`METER`
+|1
+|
 |link:http://php.net/int[int^]
-    |DECIMETER
-    |2
-    |
+a|`DECIMETER`
+|2
+|
 |link:http://php.net/int[int^]
-    |CENTIMETER
-    |3
-    |
+a|`CENTIMETER`
+|3
+|
 |link:http://php.net/int[int^]
-    |MILLIMETER
-    |4
-    |
+a|`MILLIMETER`
+|4
+|
 |===
 
 
@@ -43,31 +43,27 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Item.adoc#item_contracts_unitnamerepositorycontract[`UnitNameRepositoryContract`]
-    |unitNameRepository
-    |
-| 
-    |defaultLang
-    |
-|link:http://php.net/array[array^]
-    |aMeasureUnits
-    |
-| 
-    |cache
-    |
+|xref:stable7@interface::Item.adoc#item_contracts_unitnamerepositorycontract[`UnitNameRepositoryContract`]
+a|`$unitNameRepository`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$defaultLang`
+||link:http://php.net/array[`array`^]
+a|`$aMeasureUnits`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($unitRepository):void
+public __construct($unitRepository)
 
 ----
-
-
 
 
 
@@ -78,23 +74,22 @@ UnitService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Item.adoc#item_contracts_unitnamerepositorycontract[`UnitNameRepositoryContract`]
+|xref:stable7@interface::Item.adoc#item_contracts_unitnamerepositorycontract[`UnitNameRepositoryContract`]
 a|`$unitRepository`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getunitbyid]
 ----
 
-public getUnitById($unitId, $lang = &quot;de&quot;):Plenty\Modules\Item\Unit\Models\UnitName
+public getUnitById($unitId, $lang = &quot;de&quot;):xref:stable7@interface::Item.adoc#item_models_unitname[UnitName]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Item.adoc#item_models_unitname[`UnitName`]
 
 
 Get the unit by ID
@@ -102,39 +97,37 @@ Get the unit by ID
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$unitId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getunitnamebykey]
 ----
 
-public getUnitNameByKey():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static isValidUnit($sUnit):bool
+public getUnitNameByKey()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#isvalidunit]
+----
+
+public static isValidUnit($sUnit):link:http://php.net/bool[bool^]
+
+----
 
 
 
@@ -145,20 +138,19 @@ Checks if the given string unit is a valid one for the PlentyDimension.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$sUnit`
 |The unit to be checked
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gethtml4unit]
 ----
 
-public static getHTML4Unit($sUnit = &quot;SMM&quot;):string
+public static getHTML4Unit($sUnit = &quot;SMM&quot;):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -169,35 +161,33 @@ Returns HTML code for the unit (&#039;m&#039;,&#039;cm&#039; o&#039;MM&#039;)
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$sUnit`
 |One of 'MTK', 'SCM', 'SMM'
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
 ----
 
-public fromMemoryCache():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public resetMemoryCache($key = null):void
+public fromMemoryCache()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -208,7 +198,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

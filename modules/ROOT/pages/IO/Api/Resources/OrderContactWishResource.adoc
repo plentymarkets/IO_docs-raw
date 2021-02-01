@@ -22,14 +22,13 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response):void
+public __construct($request, $response)
 
 ----
-
-
 
 
 
@@ -50,14 +49,13 @@ a|`$response`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#store]
 ----
 
-public store():void
+public store()
 
 ----
-
-
 
 
 

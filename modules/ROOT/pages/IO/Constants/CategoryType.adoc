@@ -21,25 +21,25 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |ALL
-    |'all'
-    |
+a|`ALL`
+|'all'
+|
 |link:http://php.net/string[string^]
-    |ITEM
-    |'item'
-    |
+a|`ITEM`
+|'item'
+|
 |link:http://php.net/string[string^]
-    |CONTENT
-    |'content'
-    |
+a|`CONTENT`
+|'content'
+|
 |link:http://php.net/string[string^]
-    |BLOG
-    |'blog'
-    |
+a|`BLOG`
+|'blog'
+|
 |link:http://php.net/string[string^]
-    |CONTAINER
-    |'container'
-    |
+a|`CONTAINER`
+|'container'
+|
 |===
 
 

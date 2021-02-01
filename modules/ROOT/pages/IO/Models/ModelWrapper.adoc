@@ -14,15 +14,15 @@
 `IO\Models`
 
 ===== Extends
-Model
+xref:5.0.0@plugin-illuminate::Illuminate/Database/Eloquent/Model.adoc#[`Model`]
 
 ===== Implements
-UrlRoutable
-QueueableEntity
-JsonSerializable
-Jsonable
-ArrayAccess
-Arrayable
+xref:5.0.0@plugin-illuminate::Illuminate/Contracts/Routing/UrlRoutable.adoc#[`UrlRoutable`]
+xref:5.0.0@plugin-illuminate::Illuminate/Contracts/Queue/QueueableEntity.adoc#[`QueueableEntity`]
+xref:5.0.0@plugin-jsonserializable::JsonSerializable.adoc#[`JsonSerializable`]
+xref:5.0.0@plugin-illuminate::Illuminate/Contracts/Support/Jsonable.adoc#[`Jsonable`]
+xref:5.0.0@plugin-arrayaccess::ArrayAccess.adoc#[`ArrayAccess`]
+xref:5.0.0@plugin-illuminate::Illuminate/Contracts/Support/Arrayable.adoc#[`Arrayable`]
 
 
 .Constants
@@ -30,27 +30,26 @@ Arrayable
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |CREATED_AT
-    |'created_at'
-    |
+a|`CREATED_AT`
+|'created_at'
+|
 |link:http://php.net/string[string^]
-    |UPDATED_AT
-    |'updated_at'
-    |
+a|`UPDATED_AT`
+|'updated_at'
+|
 |===
 
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#wrap]
 ----
 
-public static wrap($original, $args):void
+public static wrap($original, $args):link:http://php.net/mixed[mixed^]
 
 ----
-
-
 
 
 
@@ -61,24 +60,23 @@ public static wrap($original, $args):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$original`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$args`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#wraplist]
 ----
 
-public static wrapList($elements, $args):array
+public static wrapList($elements, $args):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -89,27 +87,26 @@ public static wrapList($elements, $args):array
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/array[`array`^] \|          xref:5.0.0@plugin-illuminate::Illuminate/Database/Eloquent/Collection.adoc#[`Collection`]
 a|`$elements`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$args`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#wrappaginated]
 ----
 
-public static wrapPaginated($paginated, $args):Plenty\Repositories\Models\PaginatedResult
+public static wrapPaginated($paginated, $args): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[PaginatedResult]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
 
 
 
@@ -121,7 +118,7 @@ public static wrapPaginated($paginated, $args):Plenty\Repositories\Models\Pagina
 a|`$paginated`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$args`
 |
 |===

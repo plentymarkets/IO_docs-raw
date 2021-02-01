@@ -22,29 +22,27 @@ xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_routeserviceprov
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#register]
 ----
 
-public register():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public map($router, $api):void
+public register()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#map]
+----
+
+public map($router, $api)
+
+----
 
 
 

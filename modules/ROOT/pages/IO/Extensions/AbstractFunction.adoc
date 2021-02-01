@@ -21,22 +21,21 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/array[array^]
-    |functions
-    |
+|link:http://php.net/array[`array`^]
+a|`$functions`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
+public __construct()
 
 ----
-
-
 
 
 
@@ -44,14 +43,13 @@ public __construct():void
 
 AbstractFunction constructor.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfunctions]
 ----
 
-public getFunctions():array
+public getFunctions():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 

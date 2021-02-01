@@ -21,31 +21,27 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
-    |authHelper
-    |
-| xref:stable7@interface::Order.adoc#order_contracts_orderstatusrepositorycontract[`OrderStatusRepositoryContract`]
-    |orderStatusRepo
-    |
-| xref:stable7@interface::Order.adoc#order_contracts_statushistoryrepositorycontract[`StatusHistoryRepositoryContract`]
-    |statusHistoryRepo
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
+a|`$authHelper`
+||xref:stable7@interface::Order.adoc#order_contracts_orderstatusrepositorycontract[`OrderStatusRepositoryContract`]
+a|`$orderStatusRepo`
+||xref:stable7@interface::Order.adoc#order_contracts_statushistoryrepositorycontract[`StatusHistoryRepositoryContract`]
+a|`$statusHistoryRepo`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($authHelper, $orderStatusRepo, $statusHistoryRepo):void
+public __construct($authHelper, $orderStatusRepo, $statusHistoryRepo)
 
 ----
-
-
 
 
 
@@ -56,28 +52,27 @@ OrderStatusService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
+|xref:stable7@interface::Authorization.adoc#authorization_services_authhelper[`AuthHelper`]
 a|`$authHelper`
 |
 
-| xref:stable7@interface::Order.adoc#order_contracts_orderstatusrepositorycontract[`OrderStatusRepositoryContract`]
+|xref:stable7@interface::Order.adoc#order_contracts_orderstatusrepositorycontract[`OrderStatusRepositoryContract`]
 a|`$orderStatusRepo`
 |
 
-| xref:stable7@interface::Order.adoc#order_contracts_statushistoryrepositorycontract[`StatusHistoryRepositoryContract`]
+|xref:stable7@interface::Order.adoc#order_contracts_statushistoryrepositorycontract[`StatusHistoryRepositoryContract`]
 a|`$statusHistoryRepo`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getorderstatus]
 ----
 
-public getOrderStatus($orderId, $orderStatusId):void
+public getOrderStatus($orderId, $orderStatusId):link:http://php.net/mixed[mixed^]
 
 ----
-
-
 
 
 
@@ -88,11 +83,11 @@ public getOrderStatus($orderId, $orderStatusId):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$orderId`
 |
 
-|link:http://php.net/float[float^]
+|link:http://php.net/float[`float`^]
 a|`$orderStatusId`
 |
 |===

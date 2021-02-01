@@ -21,28 +21,25 @@
 |===
 |Type |Name |Description
 
-| 
-    |urlPathMap
-    |
-| 
-    |requestedItems
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$urlPathMap`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$requestedItems`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#fillitemurl]
 ----
 
-public static fillItemUrl($itemData):void
+public static fillItemUrl($itemData)
 
 ----
-
-
 
 
 
@@ -53,23 +50,22 @@ public static fillItemUrl($itemData):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$itemData`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#buildurl]
 ----
 
-public buildUrl($itemId, $variationId, $lang = null):IO\Services\UrlBuilder\UrlQuery
+public buildUrl($itemId, $variationId, $lang = null):xref:IO/Services/UrlBuilder/UrlQuery.adoc#[UrlQuery]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/UrlBuilder/UrlQuery.adoc#[`UrlQuery`]
 
 
 
@@ -77,28 +73,27 @@ public buildUrl($itemId, $variationId, $lang = null):IO\Services\UrlBuilder\UrlQ
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsuffix]
 ----
 
-public getSuffix($itemId, $variationId, $withVariationId = true):string
+public getSuffix($itemId, $variationId, $withVariationId = true):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -109,15 +104,15 @@ public getSuffix($itemId, $variationId, $withVariationId = true):string
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$withVariationId`
 |
 |===

@@ -21,45 +21,45 @@ Base factory to build elastic search requests.
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |SORTING_ORDER_ASC
-    |'asc'
-    |
+a|`SORTING_ORDER_ASC`
+|'asc'
+|
 |link:http://php.net/string[string^]
-    |SORTING_ORDER_DESC
-    |'desc'
-    |
+a|`SORTING_ORDER_DESC`
+|'desc'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_AGGREGATIONS
-    |'aggregations'
-    |
+a|`INHERIT_AGGREGATIONS`
+|'aggregations'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_COLLAPSE
-    |'collapse'
-    |
+a|`INHERIT_COLLAPSE`
+|'collapse'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_EXTENSIONS
-    |'extensions'
-    |
+a|`INHERIT_EXTENSIONS`
+|'extensions'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_FILTERS
-    |'filters'
-    |
+a|`INHERIT_FILTERS`
+|'filters'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_MUTATORS
-    |'mutators'
-    |
+a|`INHERIT_MUTATORS`
+|'mutators'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_PAGINATION
-    |'pagination'
-    |
+a|`INHERIT_PAGINATION`
+|'pagination'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_RESULT_FIELDS
-    |'resultFields'
-    |
+a|`INHERIT_RESULT_FIELDS`
+|'resultFields'
+|
 |link:http://php.net/string[string^]
-    |INHERIT_SORTING
-    |'sorting'
-    |
+a|`INHERIT_SORTING`
+|'sorting'
+|
 |===
 
 
@@ -67,58 +67,46 @@ Base factory to build elastic search requests.
 |===
 |Type |Name |Description
 
-|link:http://php.net/array[array^]
-    |aggregations
-    |
-|link:http://php.net/array[array^]
-    |mutators
-    |
-|link:http://php.net/array[array^]
-    |filters
-    |
-|link:http://php.net/array[array^]
-    |resultFields
-    |
-|link:http://php.net/array[array^]
-    |filterInstances
-    |
-|link:http://php.net/array[array^]
-    |extensions
-    |
-|link:http://php.net/string[string^]
-    |collapseField
-    |
-| xref:stable7@interface::Cloud.adoc#cloud_sorting_multiplesorting[`MultipleSorting`]
-    |sorting
-    |
-| xref:stable7@interface::Cloud.adoc#cloud_scoremodifier_randomscore[`RandomScore`]
-    |randomScoreModifier
-    |
-|link:http://php.net/int[int^]
-    |page
-    |
-|link:http://php.net/int[int^]
-    |itemsPerPage
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|link:http://php.net/array[`array`^]
+a|`$aggregations`
+||link:http://php.net/array[`array`^]
+a|`$mutators`
+||link:http://php.net/array[`array`^]
+a|`$filters`
+||link:http://php.net/array[`array`^]
+a|`$resultFields`
+||link:http://php.net/array[`array`^]
+a|`$filterInstances`
+||link:http://php.net/array[`array`^]
+a|`$extensions`
+||link:http://php.net/string[`string`^]
+a|`$collapseField`
+||xref:stable7@interface::Cloud.adoc#cloud_sorting_multiplesorting[`MultipleSorting`]
+a|`$sorting`
+||xref:stable7@interface::Cloud.adoc#cloud_scoremodifier_randomscore[`RandomScore`]
+a|`$randomScoreModifier`
+||link:http://php.net/int[`int`^]
+a|`$page`
+||link:http://php.net/int[`int`^]
+a|`$itemsPerPage`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#inherit]
 ----
 
-public static inherit($searchBuilder, $inheritedProperties = []):IO\Services\ItemSearch\Factories\BaseSearchFactory
+public static inherit($searchBuilder, $inheritedProperties = []):xref:IO/Services/ItemSearch/Factories/BaseSearchFactory.adoc#[BaseSearchFactory]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories/BaseSearchFactory.adoc#[`BaseSearchFactory`]
 
 
 Create a new factory instance based on properties of an existing factory.
@@ -130,23 +118,22 @@ Create a new factory instance based on properties of an existing factory.
 a|`$searchBuilder`
 |The search factory to inherit properties from.
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$inheritedProperties`
 |List of properties to inherit or null to inherit all properties.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withmutator]
 ----
 
-public withMutator($mutator):IO\Services\ItemSearch\Factories
+public withMutator($mutator):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Add a mutator
@@ -154,23 +141,22 @@ Add a mutator
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Cloud.adoc#cloud_mutator_mutatorinterface[`MutatorInterface`]
+|xref:stable7@interface::Cloud.adoc#cloud_mutator_mutatorinterface[`MutatorInterface`]
 a|`$mutator`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#createfilter]
 ----
 
-public createFilter($filterClass):Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface
+public createFilter($filterClass):xref:stable7@interface::Cloud.adoc#cloud_type_typeinterface[TypeInterface]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Cloud.adoc#cloud_type_typeinterface[`TypeInterface`]
 
 
 Add a filter. Will create a new instance of the filter class if not already created.
@@ -178,23 +164,22 @@ Add a filter. Will create a new instance of the filter class if not already crea
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$filterClass`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withfilter]
 ----
 
-public withFilter($filter):IO\Services\ItemSearch\Factories
+public withFilter($filter):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Add a filter. Will override existing filter instances.
@@ -202,23 +187,22 @@ Add a filter. Will override existing filter instances.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Cloud.adoc#cloud_type_typeinterface[`TypeInterface`]
+|xref:stable7@interface::Cloud.adoc#cloud_type_typeinterface[`TypeInterface`]
 a|`$filter`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withresultfields]
 ----
 
-public withResultFields($fields):IO\Services\ItemSearch\Factories\BaseSearchFactory
+public withResultFields($fields):xref:IO/Services/ItemSearch/Factories/BaseSearchFactory.adoc#[BaseSearchFactory]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories/BaseSearchFactory.adoc#[`BaseSearchFactory`]
 
 
 Set fields to be contained in search result.
@@ -226,38 +210,36 @@ Set fields to be contained in search result.
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[`string`^] \| link:http://php.net/array[`array`^]
 a|`$fields`
 |Reference to a json file to load fields from or a list of field names.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getresultfields]
 ----
 
-public getResultFields():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public withExtension($extensionClass, $extensionParams = []):IO\Services\ItemSearch\Factories
+public getResultFields()
 
 ----
 
 
 
 
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#withextension]
+----
+
+public withExtension($extensionClass, $extensionParams = []):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
+
+----
+
+
+
 
 
 Add an extension.
@@ -265,24 +247,23 @@ Add an extension.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$extensionClass`
 |Extension class to add.
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$extensionParams`
 |Additional parameters to pass to extensions constructor
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getextensions]
 ----
 
-public getExtensions():array
+public getExtensions():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -290,17 +271,16 @@ public getExtensions():array
 
 Get all registered extensions
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#withaggregation]
 ----
 
-public withAggregation($aggregation):IO\Services\ItemSearch\Factories
+public withAggregation($aggregation):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Add an aggregation
@@ -308,23 +288,22 @@ Add an aggregation
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Cloud.adoc#cloud_aggregation_aggregationinterface[`AggregationInterface`]
+|xref:stable7@interface::Cloud.adoc#cloud_aggregation_aggregationinterface[`AggregationInterface`]
 a|`$aggregation`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setpage]
 ----
 
-public setPage($page, $itemsPerPage):IO\Services\ItemSearch\Factories
+public setPage($page, $itemsPerPage):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Set pagination parameters.
@@ -332,27 +311,26 @@ Set pagination parameters.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$page`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemsPerPage`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#sortby]
 ----
 
-public sortBy($field, $order = self::SORTING_ORDER_DESC):IO\Services\ItemSearch\Factories
+public sortBy($field, $order = self::SORTING_ORDER_DESC):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Add sorting parameters
@@ -360,27 +338,26 @@ Add sorting parameters
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$field`
 |The field to order by
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$order`
 |Direction to order results. Possible values: 'asc' or 'desc'
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#sortbymultiple]
 ----
 
-public sortByMultiple($sortingList):IO\Services\ItemSearch\Factories
+public sortByMultiple($sortingList):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Add multiple sorting parameters
@@ -388,20 +365,19 @@ Add multiple sorting parameters
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$sortingList`
 |List of sorting parameters. Each entry should have a 'field' and an 'order' property.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setorder]
 ----
 
-public setOrder($idList):void
+public setOrder($idList)
 
 ----
-
-
 
 
 
@@ -412,23 +388,22 @@ public setOrder($idList):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$idList`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#groupby]
 ----
 
-public groupBy($field):IO\Services\ItemSearch\Factories
+public groupBy($field):xref:IO/Services/ItemSearch/Factories.adoc#[Factories]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/ItemSearch/Factories.adoc#[`Factories`]
 
 
 Group results by field
@@ -436,38 +411,36 @@ Group results by field
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$field`
 |The field to group properties by.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#build]
 ----
 
-public build():Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Document\DocumentSearch
+public build():xref:stable7@interface::Cloud.adoc#cloud_document_documentsearch[DocumentSearch]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Cloud.adoc#cloud_document_documentsearch[`DocumentSearch`]
 
 
 Build the elastic search request.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#preparesearch]
 ----
 
-public prepareSearch($source):Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Document\DocumentSearch
+public prepareSearch($source):xref:stable7@interface::Cloud.adoc#cloud_document_documentsearch[DocumentSearch]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Cloud.adoc#cloud_document_documentsearch[`DocumentSearch`]
 
 
 Build the search instance itself. May be overridden by concrete factories.
@@ -475,7 +448,7 @@ Build the search instance itself. May be overridden by concrete factories.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Cloud.adoc#cloud_source_includesource[`IncludeSource`]
+|xref:stable7@interface::Cloud.adoc#cloud_source_includesource[`IncludeSource`]
 a|`$source`
 |
 |===

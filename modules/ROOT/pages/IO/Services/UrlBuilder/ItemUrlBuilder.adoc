@@ -20,14 +20,13 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#buildurl]
 ----
 
-public buildUrl():void
+public buildUrl()
 
 ----
-
-
 
 
 

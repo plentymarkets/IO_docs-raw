@@ -21,22 +21,21 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Account.adoc#account_contracts_newsletterrepositorycontract[`NewsletterRepositoryContract`]
-    |newsletterRepo
-    |
+|xref:stable7@interface::Account.adoc#account_contracts_newsletterrepositorycontract[`NewsletterRepositoryContract`]
+a|`$newsletterRepo`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($newsletterRepo):void
+public __construct($newsletterRepo)
 
 ----
-
-
 
 
 
@@ -47,31 +46,17 @@ public __construct($newsletterRepo):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$newsletterRepo`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#savenewsletterdata]
 ----
 
-public saveNewsletterData():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public saveMultipleNewsletterData():void
+public saveNewsletterData()
 
 ----
 
@@ -81,31 +66,41 @@ public saveMultipleNewsletterData():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#savemultiplenewsletterdata]
 ----
 
-public updateOptInStatus():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public deleteNewsletterDataByEmail($email, $emailFolder):bool
+public saveMultipleNewsletterData()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#updateoptinstatus]
+----
+
+public updateOptInStatus()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#deletenewsletterdatabyemail]
+----
+
+public deleteNewsletterDataByEmail($email, $emailFolder):link:http://php.net/bool[bool^]
+
+----
 
 
 
@@ -117,11 +112,11 @@ Not passing the optional parameter $emailFolder deletes the recipient from all e
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$email`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$emailFolder`
 |
 |===

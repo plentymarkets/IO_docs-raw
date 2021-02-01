@@ -22,14 +22,13 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showconfirmation]
 ----
 
-public showConfirmation():string
+public showConfirmation():link:http://php.net/string[string^]
 
 ----
-
-
 
 
 

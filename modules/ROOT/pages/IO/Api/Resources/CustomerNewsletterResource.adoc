@@ -24,54 +24,51 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |Type |Name |Description
 
 |xref:IO/Services/CustomerNewsletterService.adoc#[`CustomerNewsletterService`]
-    |newsletterService
-    |
+a|`$newsletterService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public store():Plenty\Plugin\Http\Response
+public __construct()
 
 ----
 
 
 
 
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#store]
+----
+
+public store(): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
+
+----
+
+
+
 
 
 Add an email to a newsletter
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#destroy]
 ----
 
-public destroy($selector):Plenty\Plugin\Http\Response
+public destroy($selector): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Remove an email from the newsletter
@@ -79,7 +76,7 @@ Remove an email from the newsletter
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$selector`
 |the email to be removed
 |===

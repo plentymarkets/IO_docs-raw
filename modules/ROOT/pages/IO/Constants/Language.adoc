@@ -21,153 +21,153 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |CHINESE
-    |'cn'
-    |
+a|`CHINESE`
+|'cn'
+|
 |link:http://php.net/string[string^]
-    |CN
-    |'cn'
-    |
+a|`CN`
+|'cn'
+|
 |link:http://php.net/string[string^]
-    |ZH
-    |'cn'
-    |
+a|`ZH`
+|'cn'
+|
 |link:http://php.net/string[string^]
-    |CZECH
-    |'cz'
-    |
+a|`CZECH`
+|'cz'
+|
 |link:http://php.net/string[string^]
-    |CS
-    |'cz'
-    |
+a|`CS`
+|'cz'
+|
 |link:http://php.net/string[string^]
-    |CZ
-    |'cz'
-    |
+a|`CZ`
+|'cz'
+|
 |link:http://php.net/string[string^]
-    |DANISH
-    |'da'
-    |
+a|`DANISH`
+|'da'
+|
 |link:http://php.net/string[string^]
-    |DA
-    |'da'
-    |
+a|`DA`
+|'da'
+|
 |link:http://php.net/string[string^]
-    |GERMAN
-    |'de'
-    |
+a|`GERMAN`
+|'de'
+|
 |link:http://php.net/string[string^]
-    |DE
-    |'de'
-    |
+a|`DE`
+|'de'
+|
 |link:http://php.net/string[string^]
-    |ENGLISH
-    |'en'
-    |
+a|`ENGLISH`
+|'en'
+|
 |link:http://php.net/string[string^]
-    |EN
-    |'en'
-    |
+a|`EN`
+|'en'
+|
 |link:http://php.net/string[string^]
-    |SPANISH
-    |'es'
-    |
+a|`SPANISH`
+|'es'
+|
 |link:http://php.net/string[string^]
-    |ES
-    |'es'
-    |
+a|`ES`
+|'es'
+|
 |link:http://php.net/string[string^]
-    |FRENCH
-    |'fr'
-    |
+a|`FRENCH`
+|'fr'
+|
 |link:http://php.net/string[string^]
-    |FR
-    |'fr'
-    |
+a|`FR`
+|'fr'
+|
 |link:http://php.net/string[string^]
-    |ITALIAN
-    |'it'
-    |
+a|`ITALIAN`
+|'it'
+|
 |link:http://php.net/string[string^]
-    |IT
-    |'it'
-    |
+a|`IT`
+|'it'
+|
 |link:http://php.net/string[string^]
-    |DUTCH
-    |'nl'
-    |
+a|`DUTCH`
+|'nl'
+|
 |link:http://php.net/string[string^]
-    |NL
-    |'nl'
-    |
+a|`NL`
+|'nl'
+|
 |link:http://php.net/string[string^]
-    |NORWEGIAN
-    |'nn'
-    |
+a|`NORWEGIAN`
+|'nn'
+|
 |link:http://php.net/string[string^]
-    |NN
-    |'nn'
-    |
+a|`NN`
+|'nn'
+|
 |link:http://php.net/string[string^]
-    |NO
-    |'nn'
-    |
+a|`NO`
+|'nn'
+|
 |link:http://php.net/string[string^]
-    |POLISH
-    |'pl'
-    |
+a|`POLISH`
+|'pl'
+|
 |link:http://php.net/string[string^]
-    |PL
-    |'pl'
-    |
+a|`PL`
+|'pl'
+|
 |link:http://php.net/string[string^]
-    |RUSSIAN
-    |'ru'
-    |
+a|`RUSSIAN`
+|'ru'
+|
 |link:http://php.net/string[string^]
-    |RU
-    |'ru'
-    |
+a|`RU`
+|'ru'
+|
 |link:http://php.net/string[string^]
-    |SWEDISH
-    |'se'
-    |
+a|`SWEDISH`
+|'se'
+|
 |link:http://php.net/string[string^]
-    |SE
-    |'se'
-    |
+a|`SE`
+|'se'
+|
 |link:http://php.net/string[string^]
-    |SV
-    |'se'
-    |
+a|`SV`
+|'se'
+|
 |link:http://php.net/string[string^]
-    |SLOVAK
-    |'sk'
-    |
+a|`SLOVAK`
+|'sk'
+|
 |link:http://php.net/string[string^]
-    |SK
-    |'sk'
-    |
+a|`SK`
+|'sk'
+|
 |link:http://php.net/string[string^]
-    |TURKISH
-    |'tr'
-    |
+a|`TURKISH`
+|'tr'
+|
 |link:http://php.net/string[string^]
-    |TR
-    |'tr'
-    |
+a|`TR`
+|'tr'
+|
 |link:http://php.net/string[string^]
-    |VIETNAMESE
-    |'vn'
-    |
+a|`VIETNAMESE`
+|'vn'
+|
 |link:http://php.net/string[string^]
-    |VN
-    |'vn'
-    |
+a|`VN`
+|'vn'
+|
 |link:http://php.net/string[string^]
-    |VI
-    |'vn'
-    |
+a|`VI`
+|'vn'
+|
 |===
 
 

@@ -21,22 +21,21 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#assert]
 ----
 
-public assert():void
+public assert():link:http://php.net/mixed[mixed^]
 
 ----
-
-
 
 
 
@@ -44,14 +43,13 @@ public assert():void
 
 Returned value will be compared with asserted value to decide if it should redirect.
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#assertorredirect]
 ----
 
-public assertOrRedirect($expected, $redirectUri):void
+public assertOrRedirect($expected, $redirectUri)
 
 ----
-
-
 
 
 
@@ -62,24 +60,23 @@ Redirect to given URI if expected value equals return value of AbstractGuard::as
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$expected`
 |The value to compare with return value of AbstractGuard::asssert()
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$redirectUri`
 |The URI to redirect to
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#redirect]
 ----
 
-public static redirect($uri, $params = []):void
+public static redirect($uri, $params = [])
 
 ----
-
-
 
 
 
@@ -90,24 +87,23 @@ Redirect to a given URI. Appends params as query string.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$uri`
 |The URI to redirect to.
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$params`
 |A map of params to append to URI as query string.
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#geturl]
 ----
 
-public static getUrl($uri = null):string
+public static getUrl($uri = null):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -118,7 +114,7 @@ Transform a given URI to an URL by prepending used protocol and server name.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$uri`
 |
 |===

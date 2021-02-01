@@ -21,39 +21,23 @@
 |===
 |Type |Name |Description
 
-| 
-    |legalInformationRepo
-    |
-| 
-    |lang
-    |
-| 
-    |plentyId
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$legalInformationRepo`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$lang`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$plentyId`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getTermsAndConditions():void
+public __construct()
 
 ----
 
@@ -63,27 +47,11 @@ public getTermsAndConditions():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettermsandconditions]
 ----
 
-public getCancellationRights():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getPrivacyPolicy():void
+public getTermsAndConditions()
 
 ----
 
@@ -93,31 +61,55 @@ public getPrivacyPolicy():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcancellationrights]
 ----
 
-public getLegalDisclosure():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getWithdrawalForm():void
+public getCancellationRights()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getprivacypolicy]
+----
+
+public getPrivacyPolicy()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getlegaldisclosure]
+----
+
+public getLegalDisclosure()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getwithdrawalform]
+----
+
+public getWithdrawalForm()
+
+----
 
 
 

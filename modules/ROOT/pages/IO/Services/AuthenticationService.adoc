@@ -21,31 +21,27 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Authentication.adoc#authentication_contracts_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
-    |contactAuthRepository
-    |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorage
-    |
-|xref:IO/Services/CustomerService.adoc#[`CustomerService`]
-    |customerService
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|xref:stable7@interface::Authentication.adoc#authentication_contracts_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
+a|`$contactAuthRepository`
+||xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorage`
+||xref:IO/Services/CustomerService.adoc#[`CustomerService`]
+a|`$customerService`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($contactAuthRepository, $sessionStorage):void
+public __construct($contactAuthRepository, $sessionStorage)
 
 ----
-
-
 
 
 
@@ -56,7 +52,7 @@ AuthenticationService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Authentication.adoc#authentication_contracts_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
+|xref:stable7@interface::Authentication.adoc#authentication_contracts_contactauthenticationrepositorycontract[`ContactAuthenticationRepositoryContract`]
 a|`$contactAuthRepository`
 |
 
@@ -66,14 +62,13 @@ a|`$sessionStorage`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#login]
 ----
 
-public login($email, $password):int
+public login($email, $password):link:http://php.net/int[int^]
 
 ----
-
-
 
 
 
@@ -84,24 +79,23 @@ Perform the login with email and password
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$email`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$password`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#loginwithcontactid]
 ----
 
-public loginWithContactId($contactId, $password):void
+public loginWithContactId($contactId, $password)
 
 ----
-
-
 
 
 
@@ -112,24 +106,23 @@ Perform the login with customer ID and password
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$contactId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$password`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#logout]
 ----
 
-public logout():void
+public logout()
 
 ----
-
-
 
 
 
@@ -137,14 +130,13 @@ public logout():void
 
 Log out the customer
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#checkpassword]
 ----
 
-public checkPassword($password):bool
+public checkPassword($password):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -155,20 +147,19 @@ public checkPassword($password):bool
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$password`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isloggedin]
 ----
 
-public isLoggedIn():bool
+public isLoggedIn():link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 

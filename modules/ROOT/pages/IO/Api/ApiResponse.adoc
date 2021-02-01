@@ -21,37 +21,31 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/array[array^]
-    |eventData
-    |
-| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
-    |dispatcher
-    |
-| 
-    |data
-    |
-|link:http://php.net/array[array^]
-    |headers
-    |
-| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
-    |response
-    |
-|xref:IO/Services/NotificationService.adoc#[`NotificationService`]
-    |notificationService
-    |
+|link:http://php.net/array[`array`^]
+a|`$eventData`
+|| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
+a|`$dispatcher`
+||link:http://php.net/mixed[`mixed`^]
+a|`$data`
+||link:http://php.net/array[`array`^]
+a|`$headers`
+|| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
+a|`$response`
+||xref:IO/Services/NotificationService.adoc#[`NotificationService`]
+a|`$notificationService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($dispatcher, $response, $notificationService):void
+public __construct($dispatcher, $response, $notificationService)
 
 ----
-
-
 
 
 
@@ -76,45 +70,11 @@ a|`$notificationService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#error]
 ----
 
-public error($code, $message = null):IO\Api\ApiResponse
-
-----
-
-[WARNING]
-.Deprecated! 
-====
-
-This method will not be supported in the future. Please refrain from using it as soon as possible.
-
-====
-
-
-
-====== *Return type:*xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-|link:http://php.net/int[int^]
-a|`$code`
-|
-
-| null
-a|`$message`
-|
-|===
-
-
-[source%nowrap, php]
-----
-
-public success($code, $message = null):IO\Api\ApiResponse
+public error($code, $message = null):xref:IO/Api/ApiResponse.adoc#[ApiResponse]
 
 ----
 
@@ -128,28 +88,27 @@ This method will not be supported in the future. Please refrain from using it as
 
 
 
-====== *Return type:*xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
-
 
 
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$code`
 |
 
-| null
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
 a|`$message`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#success]
 ----
 
-public info($code, $message = null):IO\Api\ApiResponse
+public success($code, $message = null):xref:IO/Api/ApiResponse.adoc#[ApiResponse]
 
 ----
 
@@ -163,35 +122,39 @@ This method will not be supported in the future. Please refrain from using it as
 
 
 
-====== *Return type:*xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
-
 
 
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$code`
 |
 
-| null
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
 a|`$message`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#info]
 ----
 
-public header($key, $value):IO\Api\ApiResponse
+public info($code, $message = null):xref:IO/Api/ApiResponse.adoc#[ApiResponse]
 
 ----
 
+[WARNING]
+.Deprecated! 
+====
+
+This method will not be supported in the future. Please refrain from using it as soon as possible.
+
+====
 
 
-
-====== *Return type:*xref:IO/Api/ApiResponse.adoc#[`ApiResponse`]
 
 
 
@@ -199,11 +162,38 @@ public header($key, $value):IO\Api\ApiResponse
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/int[`int`^]
+a|`$code`
+|
+
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
+a|`$message`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#header]
+----
+
+public header($key, $value):xref:IO/Api/ApiResponse.adoc#[ApiResponse]
+
+----
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|link:http://php.net/string[`string`^]
 a|`$key`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$value`
 |
 |===

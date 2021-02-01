@@ -30,14 +30,13 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response):void
+public __construct($request, $response)
 
 ----
-
-
 
 
 
@@ -58,10 +57,11 @@ a|`$response`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#index]
 ----
 
-public index():Plenty\Plugin\Http\Response
+public index(): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
@@ -74,8 +74,6 @@ since 4.4.0
 ====
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Get Facets

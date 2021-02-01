@@ -21,25 +21,23 @@
 |===
 |Type |Name |Description
 
-|link:http://php.net/array[array^]
-    |facetExtensionsList
-    |
-| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
-    |dispatcher
-    |
+|link:http://php.net/array[`array`^]
+a|`$facetExtensionsList`
+|| xref:stable7@interface::Miscellaneous.adoc#miscellaneous_events_dispatcher[`Dispatcher`]
+a|`$dispatcher`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($dispatcher):void
+public __construct($dispatcher)
 
 ----
-
-
 
 
 
@@ -56,29 +54,27 @@ a|`$dispatcher`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfacetextensions]
 ----
 
-public getFacetExtensions():array
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public addFacetExtension($facetExtension):void
+public getFacetExtensions():link:http://php.net/array[array^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#addfacetextension]
+----
+
+public addFacetExtension($facetExtension)
+
+----
 
 
 

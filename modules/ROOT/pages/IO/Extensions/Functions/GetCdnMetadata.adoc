@@ -22,14 +22,13 @@ xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfunctions]
 ----
 
-public getFunctions():array
+public getFunctions():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -37,14 +36,13 @@ public getFunctions():array
 
 Return the available filter methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcdnmetadata]
 ----
 
-public getCdnMetadata($imageUrl, $key = null, $default = null):void
+public getCdnMetadata($imageUrl, $key = null, $default = null):link:http://php.net/mixed[mixed^]
 
 ----
-
-
 
 
 
@@ -55,15 +53,15 @@ Get the metadata for a file stored on plentymarkets cdn
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$imageUrl`
 |Resource url to get metadata for
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$key`
 |Metadata key to get value for
 
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$default`
 |Default value to return if no value is stored in metadata
 |===

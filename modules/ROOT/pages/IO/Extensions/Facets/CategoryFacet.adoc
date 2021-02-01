@@ -23,38 +23,36 @@ xref:IO/Services/ItemSearch/Contracts/FacetExtension.adoc#[`FacetExtension`]
 |Type |Name |Value |Description
 
 |link:http://php.net/int[int^]
-    |MAX_RESULT_COUNT
-    |10
-    |
+a|`MAX_RESULT_COUNT`
+|10
+|
 |===
 
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getaggregation]
 ----
 
-public getAggregation():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public mergeIntoFacetsList($result):void
+public getAggregation()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#mergeintofacetslist]
+----
+
+public mergeIntoFacetsList($result)
+
+----
 
 
 
@@ -65,20 +63,19 @@ public mergeIntoFacetsList($result):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$result`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#extractfilterparams]
 ----
 
-public extractFilterParams($filtersList):void
+public extractFilterParams($filtersList)
 
 ----
-
-
 
 
 
@@ -89,7 +86,7 @@ public extractFilterParams($filtersList):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$filtersList`
 |
 |===

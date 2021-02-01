@@ -21,18 +21,19 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::System.adoc#system_models_webstoreconfiguration[`WebstoreConfiguration`]
-    |webstoreConfig
-    |
+|xref:stable7@interface::System.adoc#system_models_webstoreconfiguration[`WebstoreConfiguration`]
+a|`$webstoreConfig`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getplentyid]
 ----
 
-public getPlentyId():void
+public getPlentyId()
 
 ----
 
@@ -48,18 +49,15 @@ Use IO\Helper\Utils::getPlentyId() instead
 
 
 
-
-
 Get the plenty-id
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getwebstoreconfig]
 ----
 
-public getWebstoreConfig():void
+public getWebstoreConfig()
 
 ----
-
-
 
 
 
@@ -67,14 +65,13 @@ public getWebstoreConfig():void
 
 Get the webstore configuraion
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getactivelanguagelist]
 ----
 
-public getActiveLanguageList():void
+public getActiveLanguageList()
 
 ----
-
-
 
 
 
@@ -82,14 +79,13 @@ public getActiveLanguageList():void
 
 Get the activate languages of the webstore
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getdefaultlanguage]
 ----
 
-public getDefaultLanguage():void
+public getDefaultLanguage()
 
 ----
-
-
 
 
 
@@ -97,14 +93,13 @@ public getDefaultLanguage():void
 
 Get the default language of the webstore
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getdefaultparcelserviceid]
 ----
 
-public getDefaultParcelServiceId():void
+public getDefaultParcelServiceId()
 
 ----
-
-
 
 
 
@@ -112,14 +107,13 @@ public getDefaultParcelServiceId():void
 
 Get the default parcel-service-Id of the webstore
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getdefaultparcelservicepresetid]
 ----
 
-public getDefaultParcelServicePresetId():void
+public getDefaultParcelServicePresetId()
 
 ----
-
-
 
 
 
@@ -127,14 +121,13 @@ public getDefaultParcelServicePresetId():void
 
 Get the default parcel-service-preset-Id of the webstore
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getdefaultshippingcountryid]
 ----
 
-public getDefaultShippingCountryId():void
+public getDefaultShippingCountryId()
 
 ----
-
-
 
 
 

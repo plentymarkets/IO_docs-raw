@@ -21,22 +21,21 @@
 |===
 |Type |Name |Description
 
-| 
-    |isReadonly
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$isReadonly`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($isReadonly):void
+public __construct($isReadonly)
 
 ----
-
-
 
 
 
@@ -47,20 +46,19 @@ public __construct($isReadonly):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$isReadonly`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isreadonlycheckout]
 ----
 
-public isReadOnlyCheckout():void
+public isReadOnlyCheckout()
 
 ----
-
-
 
 
 

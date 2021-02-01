@@ -22,29 +22,27 @@ xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#construct]
 ----
 
-public construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getFunctions():array
+public construct()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getfunctions]
+----
+
+public getFunctions():link:http://php.net/array[array^]
+
+----
 
 
 
@@ -52,14 +50,13 @@ public getFunctions():array
 
 Return the available methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getquerystring]
 ----
 
-public getQueryString($params = []):string
+public getQueryString($params = []):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -70,7 +67,7 @@ public getQueryString($params = []):string
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$params`
 |
 |===

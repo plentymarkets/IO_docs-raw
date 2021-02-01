@@ -23,25 +23,23 @@ xref:IO/Services/ItemSearch/Extensions/ItemSearchExtension.adoc#[`ItemSearchExte
 |===
 |Type |Name |Description
 
-| 
-    |quantities
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$quantities`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($quantities = []):void
+public __construct($quantities = [])
 
 ----
-
-
 
 
 
@@ -52,20 +50,19 @@ public __construct($quantities = []):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$quantities`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsearch]
 ----
 
-public getSearch($parentSearchBuilder):void
+public getSearch($parentSearchBuilder)
 
 ----
-
-
 
 
 
@@ -76,20 +73,19 @@ public getSearch($parentSearchBuilder):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$parentSearchBuilder`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#transformresult]
 ----
 
-public transformResult():void
+public transformResult()
 
 ----
-
-
 
 
 

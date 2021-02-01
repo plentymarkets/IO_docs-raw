@@ -22,29 +22,27 @@ xref:IO/Extensions/AbstractFunction.adoc#[`AbstractFunction`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#construct]
 ----
 
-public construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getFunctions():array
+public construct()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getfunctions]
+----
+
+public getFunctions():link:http://php.net/array[array^]
+
+----
 
 
 
@@ -52,14 +50,13 @@ public getFunctions():array
 
 Return the available methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#generateuniqueid]
 ----
 
-public generateUniqueId($prefix = &quot;&quot;):void
+public generateUniqueId($prefix = &quot;&quot;)
 
 ----
-
-
 
 
 
@@ -70,7 +67,7 @@ public generateUniqueId($prefix = &quot;&quot;):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$prefix`
 |
 |===

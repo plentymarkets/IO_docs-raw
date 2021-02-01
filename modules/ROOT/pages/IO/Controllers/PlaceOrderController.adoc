@@ -23,9 +23,9 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 |Type |Name |Value |Description
 
 |link:http://php.net/int[int^]
-    |ORDER_RETRY_INTERVAL
-    |30
-    |
+a|`ORDER_RETRY_INTERVAL`
+|30
+|
 |===
 
 
@@ -33,25 +33,24 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 |===
 |Type |Name |Description
 
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#placeorder]
 ----
 
-public placeOrder($orderService, $notificationService, $sessionStorageService, $shopUrls):IO\Controllers\Symfony\Component\HttpFoundation\Response
+public placeOrder($orderService, $notificationService, $sessionStorageService, $shopUrls):xref:IO/Controllers/Symfony/Component/HttpFoundation/Response.adoc#[Response]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Controllers/Symfony/Component/HttpFoundation/Response.adoc#[`Response`]
 
 
 
@@ -77,14 +76,13 @@ a|`$shopUrls`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#executepayment]
 ----
 
-public executePayment():void
+public executePayment()
 
 ----
-
-
 
 
 

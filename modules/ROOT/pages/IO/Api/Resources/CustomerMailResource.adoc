@@ -23,22 +23,21 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |===
 |Type |Name |Description
 
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response):void
+public __construct($request, $response)
 
 ----
-
-
 
 
 
@@ -59,29 +58,27 @@ a|`$response`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#store]
 ----
 
-public store():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public update($contactId):void
+public store()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#update]
+----
+
+public update($contactId)
+
+----
 
 
 
@@ -92,7 +89,7 @@ public update($contactId):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$contactId`
 |
 |===

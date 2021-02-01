@@ -21,40 +21,37 @@
 |===
 |Type |Name |Description
 
-| 
-    |locales
-    |
-| 
-    |languages
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$locales`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$languages`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlocale]
 ----
 
-public static getLocale():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static getLanguageCode($countryCode = null):void
+public static getLocale()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getlanguagecode]
+----
+
+public static getLanguageCode($countryCode = null)
+
+----
 
 
 
@@ -65,20 +62,19 @@ public static getLanguageCode($countryCode = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$countryCode`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcountrycode]
 ----
 
-public static getCountryCode($language = null):void
+public static getCountryCode($language = null)
 
 ----
-
-
 
 
 
@@ -89,7 +85,7 @@ public static getCountryCode($language = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$language`
 |
 |===

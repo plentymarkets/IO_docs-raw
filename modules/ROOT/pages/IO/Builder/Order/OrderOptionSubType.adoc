@@ -21,53 +21,53 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/int[int^]
-    |MAIN_VALUE
-    |1
-    |
+a|`MAIN_VALUE`
+|1
+|
 |link:http://php.net/int[int^]
-    |ORIGINAL_VALUE
-    |2
-    |
+a|`ORIGINAL_VALUE`
+|2
+|
 |link:http://php.net/int[int^]
-    |STATUS
-    |3
-    |
+a|`STATUS`
+|3
+|
 |link:http://php.net/int[int^]
-    |SURCHARGE
-    |4
-    |
+a|`SURCHARGE`
+|4
+|
 |link:http://php.net/int[int^]
-    |TYPE
-    |5
-    |
+a|`TYPE`
+|5
+|
 |link:http://php.net/int[int^]
-    |EXTERNAL
-    |6
-    |
+a|`EXTERNAL`
+|6
+|
 |link:http://php.net/int[int^]
-    |NAME
-    |7
-    |
+a|`NAME`
+|7
+|
 |link:http://php.net/int[int^]
-    |CONTENT
-    |8
-    |
+a|`CONTENT`
+|8
+|
 |link:http://php.net/int[int^]
-    |ACCOUNT
-    |9
-    |
+a|`ACCOUNT`
+|9
+|
 |link:http://php.net/int[int^]
-    |FLAG
-    |10
-    |
+a|`FLAG`
+|10
+|
 |link:http://php.net/int[int^]
-    |LANGUAGE
-    |11
-    |
+a|`LANGUAGE`
+|11
+|
 |link:http://php.net/int[int^]
-    |CONSUMER
-    |12
-    |
+a|`CONSUMER`
+|12
+|
 |===
 
 

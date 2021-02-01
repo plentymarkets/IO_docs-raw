@@ -21,46 +21,37 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Category.adoc#category_contracts_categoryrepositorycontract[`CategoryRepositoryContract`]
-    |categoryRepository
-    |
-|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
-    |webstoreConfig
-    |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorageService
-    |
-| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
-    |currentCategory
-    |
-|link:http://php.net/array[array^]
-    |currentCategoryTree
-    |
-| 
-    |authGuard
-    |
-| 
-    |currentItem
-    |
-|link:http://php.net/int[int^]
-    |webstoreId
-    |
-| 
-    |cache
-    |
+|xref:stable7@interface::Category.adoc#category_contracts_categoryrepositorycontract[`CategoryRepositoryContract`]
+a|`$categoryRepository`
+||xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
+a|`$webstoreConfig`
+||xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorageService`
+||xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+a|`$currentCategory`
+||link:http://php.net/array[`array`^]
+a|`$currentCategoryTree`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$authGuard`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$currentItem`
+||link:http://php.net/int[`int`^]
+a|`$webstoreId`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($category):void
+public __construct($category)
 
 ----
-
-
 
 
 
@@ -71,20 +62,19 @@ CategoryService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Category.adoc#category_contracts_categoryrepositorycontract[`CategoryRepositoryContract`]
+|xref:stable7@interface::Category.adoc#category_contracts_categoryrepositorycontract[`CategoryRepositoryContract`]
 a|`$category`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setcurrentcategoryid]
 ----
 
-public setCurrentCategoryID($catID):void
+public setCurrentCategoryID($catID)
 
 ----
-
-
 
 
 
@@ -95,20 +85,19 @@ Set the current category by ID.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$catID`
 |The id of the current category
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setcurrentcategory]
 ----
 
-public setCurrentCategory($cat):void
+public setCurrentCategory($cat)
 
 ----
-
-
 
 
 
@@ -119,38 +108,36 @@ Set the current category by ID.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+|xref:stable7@interface::Category.adoc#category_models_category[`Category`]
 a|`$cat`
 |The current category
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcurrentcategory]
 ----
 
-public getCurrentCategory():Plenty\Modules\Category\Models\Category
-
-----
-
-
-
-
-====== *Return type:* xref:stable7@interface::Category.adoc#category_models_category[`Category`]
-
-
-
-
-[source%nowrap, php]
-----
-
-public get($catID, $lang = null):Plenty\Modules\Category\Models\Category
+public getCurrentCategory():xref:stable7@interface::Category.adoc#category_models_category[Category]
 
 ----
 
 
 
 
-====== *Return type:* xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+
+
+
+[source%nowrap, php, subs=+macros]
+[#get]
+----
+
+public get($catID, $lang = null):xref:stable7@interface::Category.adoc#category_models_category[Category]
+
+----
+
+
+
 
 
 Get a category by ID
@@ -158,35 +145,21 @@ Get a category by ID
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$catID`
 |The category ID
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |The language to get the category
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getforplentyid]
 ----
 
-public getForPlentyId():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getCurrentCategoryChildren():void
+public getForPlentyId()
 
 ----
 
@@ -196,16 +169,27 @@ public getCurrentCategoryChildren():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcurrentcategorychildren]
 ----
 
-public getURL($category, $lang = null, $):string
+public getCurrentCategoryChildren()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#geturl]
+----
+
+public getURL($category, $lang = null, $):link:http://php.net/string[string^]
+
+----
 
 
 
@@ -216,43 +200,41 @@ Return the URL for a given category ID.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+|xref:stable7@interface::Category.adoc#category_models_category[`Category`]
 a|`$category`
 |the category to get the URL for
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |the language to get the URL for
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$`
 ||null $webstoreId
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#geturlbyid]
 ----
 
-public getURLById():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public isCurrent($category):bool
+public getURLById()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#iscurrent]
+----
+
+public isCurrent($category):link:http://php.net/bool[bool^]
+
+----
 
 
 
@@ -263,20 +245,19 @@ Check whether a category is referenced by the current route
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$category`
 |The category to check
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isopen]
 ----
 
-public isOpen($category):bool
+public isOpen($category):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -287,20 +268,19 @@ Check whether any child of a category is referenced by the current route
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$category`
 |The category to check
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isactive]
 ----
 
-public isActive($category = null):bool
+public isActive($category = null):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -311,23 +291,22 @@ Check whether a category or any of its children is referenced by the current rou
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$category`
 |The category to check
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitems]
 ----
 
-public getItems($category = null, $params = [], $page = 1):Plenty\Repositories\Models\PaginatedResult
+public getItems($category = null, $params = [], $page = 1): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[PaginatedResult]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_models_paginatedresult[`PaginatedResult`]
 
 
 
@@ -335,28 +314,27 @@ public getItems($category = null, $params = [], $page = 1):Plenty\Repositories\M
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+|xref:stable7@interface::Category.adoc#category_models_category[`Category`]
 a|`$category`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$params`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$page`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getnavigationtree]
 ----
 
-public getNavigationTree($type = null, $lang = null, $maxLevel = 2, $customerClassId):array
+public getNavigationTree($type = [], $lang = null, $maxLevel = 2, $customerClassId):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -367,47 +345,45 @@ Return the sitemap tree as an array
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[`string`^] \| link:http://php.net/array[`array`^]
 a|`$type`
 |Only return categories of given types
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |The language to get sitemap tree for
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$maxLevel`
 |The deepest category level to load
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$customerClassId`
 |The customer class id to get tree
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getpartialtree]
 ----
 
-public getPartialTree():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getNavigationList($type = &quot;all&quot;, $lang = null):array
+public getPartialTree()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getnavigationlist]
+----
+
+public getNavigationList($type = [], $lang = null):link:http://php.net/array[array^]
+
+----
 
 
 
@@ -418,24 +394,23 @@ Return the sitemap list as an array
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|link:http://php.net/string[`string`^] \| link:http://php.net/array[`array`^]
 a|`$type`
 |Only return categories of given type
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |The language to get sitemap list for
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gethierarchy]
 ----
 
-public getHierarchy($catID, $bottomUp = false, $filterCategories = false):array
+public getHierarchy($catID, $bottomUp = false, $filterCategories = false):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -446,43 +421,41 @@ Returns a list of all parent categories including given category
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$catID`
 |The category Id to get the parents for or 0 to use current category
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$bottomUp`
 |Set true to order result from bottom (deepest category) to top (= level 1)
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$filterCategories`
 |Filter categories
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isvisibleforwebstore]
 ----
 
-public isVisibleForWebstore():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public setCurrentItem($item):void
+public isVisibleForWebstore()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#setcurrentitem]
+----
+
+public setCurrentItem($item)
+
+----
 
 
 
@@ -493,35 +466,33 @@ public setCurrentItem($item):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$item`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcurrentitem]
 ----
 
-public getCurrentItem():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public isHidden($id):void
+public getCurrentItem()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#ishidden]
+----
+
+public isHidden($id)
+
+----
 
 
 
@@ -532,35 +503,33 @@ public isHidden($id):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$id`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
 ----
 
-public fromMemoryCache():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public resetMemoryCache($key = null):void
+public fromMemoryCache()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -571,7 +540,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

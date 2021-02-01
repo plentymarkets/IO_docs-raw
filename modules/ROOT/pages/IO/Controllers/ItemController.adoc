@@ -23,25 +23,23 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 |===
 |Type |Name |Description
 
-| 
-    |plentyId
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$plentyId`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showitem]
 ----
 
-public showItem($slug = &quot;&quot;, $itemId, $variationId, $category = null):string
+public showItem($slug = &quot;&quot;, $itemId, $variationId, $category = null):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -52,32 +50,31 @@ Prepare and render the item data.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$slug`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |The itemId read from current request url. Will be null if item url does not contain a slug.
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 
-| xref:stable7@interface::Category.adoc#category_models_category[`Category`]
+|xref:stable7@interface::Category.adoc#category_models_category[`Category`]
 a|`$category`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showitemwithoutname]
 ----
 
-public showItemWithoutName($itemId, $variationId):string
+public showItemWithoutName($itemId, $variationId):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -88,24 +85,23 @@ public showItemWithoutName($itemId, $variationId):string
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showitemfromadmin]
 ----
 
-public showItemFromAdmin($itemId):string
+public showItemFromAdmin($itemId):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -116,35 +112,33 @@ public showItemFromAdmin($itemId):string
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showitemold]
 ----
 
-public showItemOld():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public showItemForCategory($category):void
+public showItemOld()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#showitemforcategory]
+----
+
+public showItemForCategory($category)
+
+----
 
 
 
@@ -155,7 +149,7 @@ public showItemForCategory($category):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$category`
 |
 |===

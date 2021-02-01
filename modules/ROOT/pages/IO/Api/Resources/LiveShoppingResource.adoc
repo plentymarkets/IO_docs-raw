@@ -24,36 +24,34 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |Type |Name |Description
 
 |xref:IO/Services/LiveShoppingService.adoc#[`LiveShoppingService`]
-    |liveShoppingService
-    |
+a|`$liveShoppingService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public show($liveShoppingId):void
+public __construct()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#show]
+----
+
+public show($liveShoppingId)
+
+----
 
 
 
@@ -64,7 +62,7 @@ public show($liveShoppingId):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$liveShoppingId`
 |
 |===

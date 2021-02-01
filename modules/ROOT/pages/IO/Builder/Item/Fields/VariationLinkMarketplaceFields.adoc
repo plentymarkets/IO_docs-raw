@@ -21,13 +21,13 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |CREATED
-    |'created'
-    |
+a|`CREATED`
+|'created'
+|
 |link:http://php.net/string[string^]
-    |MARKETPLACE_ID
-    |'marketplaceId'
-    |
+a|`MARKETPLACE_ID`
+|'marketplaceId'
+|
 |===
 
 

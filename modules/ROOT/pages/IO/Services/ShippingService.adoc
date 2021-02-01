@@ -21,25 +21,23 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
-    |checkout
-    |
-|link:http://php.net/string[string^]
-    |pluginNamespace
-    |
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
+a|`$checkout`
+||link:http://php.net/string[`string`^]
+a|`$pluginNamespace`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($checkout):void
+public __construct($checkout)
 
 ----
-
-
 
 
 
@@ -50,20 +48,19 @@ ShippingService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
+|xref:stable7@interface::Frontend.adoc#frontend_contracts_checkout[`Checkout`]
 a|`$checkout`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setshippingprofileid]
 ----
 
-public setShippingProfileId($shippingProfileId):void
+public setShippingProfileId($shippingProfileId)
 
 ----
-
-
 
 
 
@@ -74,20 +71,19 @@ Set the ID of the current shipping profile
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$shippingProfileId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getmaxdeliverydays]
 ----
 
-public getMaxDeliveryDays():array
+public getMaxDeliveryDays():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 

@@ -21,9 +21,9 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/array[array^]
-    |ES_LANGUAGES
-    |['german','english','french','bulgarian','italian','spanish','turkish','dutch','portuguese','norwegian','romanian','danish','swedish','czech','russian']
-    |
+a|`ES_LANGUAGES`
+|['german','english','french','bulgarian','italian','spanish','turkish','dutch','portuguese','norwegian','romanian','danish','swedish','czech','russian']
+|
 |===
 
 
@@ -31,64 +31,53 @@
 |===
 |Type |Name |Description
 
-| 
-    |isList
-    |
-| 
-    |range
-    |
-| 
-    |index
-    |
-| 
-    |list
-    |
-| 
-    |lang
-    |
-| 
-    |esLang
-    |
-| 
-    |plentyId
-    |
-| 
-    |globals
-    |
-| 
-    |translationCounter
-    |
-| 
-    |countries
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$isList`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$range`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$index`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$list`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$lang`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$esLang`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$plentyId`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$globals`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$translationCounter`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$countries`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public fill($data):void
+public __construct()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#fill]
+----
+
+public fill($data)
+
+----
 
 
 
@@ -99,20 +88,19 @@ public fill($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$data`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#rand]
 ----
 
-public rand($values):void
+public rand($values)
 
 ----
-
-
 
 
 
@@ -123,31 +111,17 @@ public rand($values):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$values`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#global]
 ----
 
-public global():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static resetGlobals():void
+public global()
 
 ----
 
@@ -157,16 +131,27 @@ public static resetGlobals():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#resetglobals]
 ----
 
-public merge($object, $defaults):void
+public static resetGlobals()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#merge]
+----
+
+public merge($object, $defaults)
+
+----
 
 
 
@@ -177,24 +162,23 @@ Recursively merge values into an existing array
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$object`
 |The original object to merge values into
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$defaults`
 |The values to be merged into the original object if not set
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#get]
 ----
 
-public get($arr, $field):void
+public get($arr, $field):link:http://php.net/mixed[mixed^]
 
 ----
-
-
 
 
 
@@ -205,24 +189,23 @@ Get a nested value from an array by its path (e.g. &quot;path.to.property&quot;)
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$arr`
 |The array to get the nested value from
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$field`
 |The path to the property to read
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#isdefined]
 ----
 
-public isDefined($arr, $field):bool
+public isDefined($arr, $field):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -233,24 +216,23 @@ Check if a nested property is defined in an array
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$arr`
 |The array to search the nested property in
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$field`
 |The path to the property to check
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#hasany]
 ----
 
-public hasAny($arr, $field, $key, $value):bool
+public hasAny($arr, $field, $key, $value):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -261,43 +243,29 @@ Check if any entry of a list has a specific value.
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$arr`
 |The object containing the list to check entries in
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$field`
 |The path to the list inside the object to check entries
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$key`
 |Key inside each list entry to check
 
-| 
+|link:http://php.net/mixed[`mixed`^]
 a|`$value`
 |Expected value of each entry
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#number]
 ----
 
-public number():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public float():void
+public number()
 
 ----
 
@@ -307,27 +275,11 @@ public float():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#float]
 ----
 
-public percentage():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public text():void
+public float()
 
 ----
 
@@ -337,27 +289,11 @@ public text():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#percentage]
 ----
 
-public word():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public trans():void
+public percentage()
 
 ----
 
@@ -367,27 +303,11 @@ public trans():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#text]
 ----
 
-public serial():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public hash():void
+public text()
 
 ----
 
@@ -397,27 +317,11 @@ public hash():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#word]
 ----
 
-public url():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public hexColor():void
+public word()
 
 ----
 
@@ -427,31 +331,97 @@ public hexColor():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#trans]
 ----
 
-public timestamp():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public dateString($format = &quot;Y-m-d H:i:s&quot;):void
+public trans()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#serial]
+----
+
+public serial()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#hash]
+----
+
+public hash()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#url]
+----
+
+public url()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#hexcolor]
+----
+
+public hexColor()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#timestamp]
+----
+
+public timestamp()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#datestring]
+----
+
+public dateString($format = &quot;Y-m-d H:i:s&quot;)
+
+----
 
 
 
@@ -462,35 +432,33 @@ public dateString($format = &quot;Y-m-d H:i:s&quot;):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$format`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#boolean]
 ----
 
-public boolean():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public shopLanguage($skipActiveLang = false):void
+public boolean()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#shoplanguage]
+----
+
+public shopLanguage($skipActiveLang = false)
+
+----
 
 
 
@@ -501,31 +469,17 @@ public shopLanguage($skipActiveLang = false):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$skipActiveLang`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#image]
 ----
 
-public image():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public country():void
+public image()
 
 ----
 
@@ -535,16 +489,27 @@ public country():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#country]
 ----
 
-public unit():void
+public country()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#unit]
+----
+
+public unit()
+
+----
 
 
 

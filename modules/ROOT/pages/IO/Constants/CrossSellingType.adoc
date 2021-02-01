@@ -21,65 +21,65 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |SIMILAR
-    |'Similar'
-    |
+a|`SIMILAR`
+|'Similar'
+|
 |link:http://php.net/string[string^]
-    |EPISODE
-    |'Episode'
-    |
+a|`EPISODE`
+|'Episode'
+|
 |link:http://php.net/string[string^]
-    |SEASON
-    |'Season'
-    |
+a|`SEASON`
+|'Season'
+|
 |link:http://php.net/string[string^]
-    |BUNDLE
-    |'Bundle'
-    |
+a|`BUNDLE`
+|'Bundle'
+|
 |link:http://php.net/string[string^]
-    |COMPONENT
-    |'Component'
-    |
+a|`COMPONENT`
+|'Component'
+|
 |link:http://php.net/string[string^]
-    |VARIATION
-    |'Variation'
-    |
+a|`VARIATION`
+|'Variation'
+|
 |link:http://php.net/string[string^]
-    |DISPLAY_SET
-    |'DisplaySet'
-    |
+a|`DISPLAY_SET`
+|'DisplaySet'
+|
 |link:http://php.net/string[string^]
-    |COLLECTION
-    |'Collection'
-    |
+a|`COLLECTION`
+|'Collection'
+|
 |link:http://php.net/string[string^]
-    |ACCESSORY
-    |'Accessory'
-    |
+a|`ACCESSORY`
+|'Accessory'
+|
 |link:http://php.net/string[string^]
-    |CUSTOMIZED
-    |'Customized'
-    |
+a|`CUSTOMIZED`
+|'Customized'
+|
 |link:http://php.net/string[string^]
-    |PART
-    |'Part'
-    |
+a|`PART`
+|'Part'
+|
 |link:http://php.net/string[string^]
-    |COMPLEMENTS
-    |'Complements'
-    |
+a|`COMPLEMENTS`
+|'Complements'
+|
 |link:http://php.net/string[string^]
-    |PIECE
-    |'Piece'
-    |
+a|`PIECE`
+|'Piece'
+|
 |link:http://php.net/string[string^]
-    |NECCESSARY
-    |'Necessary'
-    |
+a|`NECCESSARY`
+|'Necessary'
+|
 |link:http://php.net/string[string^]
-    |REPLACEMENT_PART
-    |'ReplacementPart'
-    |
+a|`REPLACEMENT_PART`
+|'ReplacementPart'
+|
 |===
 
 

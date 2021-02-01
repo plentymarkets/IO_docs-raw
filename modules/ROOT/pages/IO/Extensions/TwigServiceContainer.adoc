@@ -20,10 +20,11 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getavailability]
 ----
 
-public getAvailability():void
+public getAvailability()
 
 ----
 
@@ -33,16 +34,13 @@ public getAvailability():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbasket]
 ----
 
-public getBasket():void
+public getBasket()
 
 ----
-
-
 
 
 
@@ -50,10 +48,11 @@ public getBasket():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcategory]
 ----
 
-public getCategory():void
+public getCategory()
 
 ----
 
@@ -63,16 +62,13 @@ public getCategory():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcheckout]
 ----
 
-public getCheckout():void
+public getCheckout()
 
 ----
-
-
 
 
 
@@ -80,10 +76,11 @@ public getCheckout():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcountry]
 ----
 
-public getCountry():void
+public getCountry()
 
 ----
 
@@ -93,16 +90,13 @@ public getCountry():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcustomer]
 ----
 
-public getCustomer():void
+public getCustomer()
 
 ----
-
-
 
 
 
@@ -110,10 +104,11 @@ public getCustomer():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitem]
 ----
 
-public getItem():void
+public getItem()
 
 ----
 
@@ -123,16 +118,13 @@ public getItem():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitemlist]
 ----
 
-public getItemList():void
+public getItemList()
 
 ----
-
-
 
 
 
@@ -140,10 +132,11 @@ public getItemList():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getorder]
 ----
 
-public getOrder():void
+public getOrder()
 
 ----
 
@@ -153,16 +146,13 @@ public getOrder():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsessionstorage]
 ----
 
-public getSessionStorage():void
+public getSessionStorage()
 
 ----
-
-
 
 
 
@@ -170,10 +160,11 @@ public getSessionStorage():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getunit]
 ----
 
-public getUnit():void
+public getUnit()
 
 ----
 
@@ -183,16 +174,13 @@ public getUnit():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcontactbank]
 ----
 
-public getContactBank():void
+public getContactBank()
 
 ----
-
-
 
 
 
@@ -200,10 +188,11 @@ public getContactBank():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettag]
 ----
 
-public getTag():void
+public getTag()
 
 ----
 
@@ -213,16 +202,13 @@ public getTag():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettemplate]
 ----
 
-public getTemplate():void
+public getTemplate()
 
 ----
-
-
 
 
 
@@ -230,10 +216,11 @@ public getTemplate():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getnotifications]
 ----
 
-public getNotifications():void
+public getNotifications()
 
 ----
 
@@ -243,16 +230,13 @@ public getNotifications():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getwebstoreconfig]
 ----
 
-public getWebstoreConfig():void
+public getWebstoreConfig()
 
 ----
-
-
 
 
 
@@ -260,10 +244,11 @@ public getWebstoreConfig():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlocalization]
 ----
 
-public getLocalization():void
+public getLocalization()
 
 ----
 
@@ -273,16 +258,13 @@ public getLocalization():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcoupon]
 ----
 
-public getCoupon():void
+public getCoupon()
 
 ----
-
-
 
 
 
@@ -290,10 +272,11 @@ public getCoupon():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlegalinformation]
 ----
 
-public getLegalInformation():void
+public getLegalInformation()
 
 ----
 
@@ -303,16 +286,13 @@ public getLegalInformation():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsalesprice]
 ----
 
-public getSalesPrice():void
+public getSalesPrice()
 
 ----
-
-
 
 
 
@@ -320,10 +300,11 @@ public getSalesPrice():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlastseen]
 ----
 
-public getLastSeen():void
+public getLastSeen()
 
 ----
 
@@ -333,16 +314,13 @@ public getLastSeen():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcrossselling]
 ----
 
-public getCrossSelling():void
+public getCrossSelling()
 
 ----
-
-
 
 
 
@@ -350,10 +328,11 @@ public getCrossSelling():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getwishlist]
 ----
 
-public getWishList():void
+public getWishList()
 
 ----
 
@@ -363,16 +342,13 @@ public getWishList():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcontactmail]
 ----
 
-public getContactMail():void
+public getContactMail()
 
 ----
-
-
 
 
 
@@ -380,10 +356,11 @@ public getContactMail():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettotalsservice]
 ----
 
-public getTotalsService():void
+public getTotalsService()
 
 ----
 
@@ -393,16 +370,13 @@ public getTotalsService():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#geturl]
 ----
 
-public getUrl():void
+public getUrl()
 
 ----
-
-
 
 
 
@@ -410,10 +384,11 @@ public getUrl():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getliveshopping]
 ----
 
-public getLiveShopping():void
+public getLiveShopping()
 
 ----
 
@@ -423,16 +398,13 @@ public getLiveShopping():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getauthentication]
 ----
 
-public getAuthentication():void
+public getAuthentication()
 
 ----
-
-
 
 
 
@@ -440,10 +412,11 @@ public getAuthentication():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getuserdatahash]
 ----
 
-public getUserDataHash():void
+public getUserDataHash()
 
 ----
 
@@ -453,16 +426,13 @@ public getUserDataHash():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfaker]
 ----
 
-public getFaker():void
+public getFaker()
 
 ----
-
-
 
 
 
@@ -470,10 +440,11 @@ public getFaker():void
 
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getpropertyfile]
 ----
 
-public getPropertyFile():void
+public getPropertyFile()
 
 ----
 
@@ -483,16 +454,13 @@ public getPropertyFile():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfacet]
 ----
 
-public getFacet():void
+public getFacet()
 
 ----
-
-
 
 
 

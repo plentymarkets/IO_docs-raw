@@ -21,121 +21,121 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |BASKET
-    |'basket'
-    |
+a|`BASKET`
+|'basket'
+|
 |link:http://php.net/string[string^]
-    |CANCELLATION_RIGHTS
-    |'cancellation-rights'
-    |
+a|`CANCELLATION_RIGHTS`
+|'cancellation-rights'
+|
 |link:http://php.net/string[string^]
-    |CANCELLATION_FORM
-    |'cancellation-form'
-    |
+a|`CANCELLATION_FORM`
+|'cancellation-form'
+|
 |link:http://php.net/string[string^]
-    |CATEGORY
-    |'category'
-    |
+a|`CATEGORY`
+|'category'
+|
 |link:http://php.net/string[string^]
-    |CHANGE_MAIL
-    |'change-mail'
-    |
+a|`CHANGE_MAIL`
+|'change-mail'
+|
 |link:http://php.net/string[string^]
-    |CHECKOUT
-    |'checkout'
-    |
+a|`CHECKOUT`
+|'checkout'
+|
 |link:http://php.net/string[string^]
-    |CONFIRMATION
-    |'confirmation'
-    |
+a|`CONFIRMATION`
+|'confirmation'
+|
 |link:http://php.net/string[string^]
-    |CONTACT
-    |'contact'
-    |
+a|`CONTACT`
+|'contact'
+|
 |link:http://php.net/string[string^]
-    |HOME
-    |'home'
-    |
+a|`HOME`
+|'home'
+|
 |link:http://php.net/string[string^]
-    |ITEM
-    |'item'
-    |
+a|`ITEM`
+|'item'
+|
 |link:http://php.net/string[string^]
-    |LEGAL_DISCLOSURE
-    |'legal-disclosure'
-    |
+a|`LEGAL_DISCLOSURE`
+|'legal-disclosure'
+|
 |link:http://php.net/string[string^]
-    |LOGIN
-    |'login'
-    |
+a|`LOGIN`
+|'login'
+|
 |link:http://php.net/string[string^]
-    |MY_ACCOUNT
-    |'my-account'
-    |
+a|`MY_ACCOUNT`
+|'my-account'
+|
 |link:http://php.net/string[string^]
-    |NEWSLETTER_OPT_IN
-    |'newsletter-opt-in'
-    |
+a|`NEWSLETTER_OPT_IN`
+|'newsletter-opt-in'
+|
 |link:http://php.net/string[string^]
-    |NEWSLETTER_OPT_OUT
-    |'newsletter-opt-out'
-    |
+a|`NEWSLETTER_OPT_OUT`
+|'newsletter-opt-out'
+|
 |link:http://php.net/string[string^]
-    |ORDER_DOCUMENT
-    |'order-document'
-    |
+a|`ORDER_DOCUMENT`
+|'order-document'
+|
 |link:http://php.net/string[string^]
-    |ORDER_PROPERTY_FILE
-    |'order-property-file'
-    |
+a|`ORDER_PROPERTY_FILE`
+|'order-property-file'
+|
 |link:http://php.net/string[string^]
-    |ORDER_RETURN
-    |'order-return'
-    |
+a|`ORDER_RETURN`
+|'order-return'
+|
 |link:http://php.net/string[string^]
-    |ORDER_RETURN_CONFIRMATION
-    |'order-return-confirmation'
-    |
+a|`ORDER_RETURN_CONFIRMATION`
+|'order-return-confirmation'
+|
 |link:http://php.net/string[string^]
-    |PASSWORD_RESET
-    |'password-reset'
-    |
+a|`PASSWORD_RESET`
+|'password-reset'
+|
 |link:http://php.net/string[string^]
-    |PLACE_ORDER
-    |'place-order'
-    |
+a|`PLACE_ORDER`
+|'place-order'
+|
 |link:http://php.net/string[string^]
-    |PRIVACY_POLICY
-    |'privacy-policy'
-    |
+a|`PRIVACY_POLICY`
+|'privacy-policy'
+|
 |link:http://php.net/string[string^]
-    |REGISTER
-    |'register'
-    |
+a|`REGISTER`
+|'register'
+|
 |link:http://php.net/string[string^]
-    |SEARCH
-    |'search'
-    |
+a|`SEARCH`
+|'search'
+|
 |link:http://php.net/string[string^]
-    |TERMS_CONDITIONS
-    |'gtc'
-    |
+a|`TERMS_CONDITIONS`
+|'gtc'
+|
 |link:http://php.net/string[string^]
-    |WISH_LIST
-    |'wish-list'
-    |
+a|`WISH_LIST`
+|'wish-list'
+|
 |link:http://php.net/string[string^]
-    |PAGE_NOT_FOUND
-    |'page-not-found'
-    |
+a|`PAGE_NOT_FOUND`
+|'page-not-found'
+|
 |link:http://php.net/string[string^]
-    |TAGS
-    |'tags'
-    |
+a|`TAGS`
+|'tags'
+|
 |link:http://php.net/array[array^]
-    |ALL
-    |['basket','cancellation-rights','cancellation-form','category','change-mail','checkout','confirmation','contact','home','item','legal-disclosure','login','my-account','newsletter-opt-in','newsletter-opt-out','order-document','order-property-file','order-return','order-return-confirmation','password-reset','place-order','privacy-policy','register','search','tags','gtc','wish-list','page-not-found']
-    |
+a|`ALL`
+|['basket','cancellation-rights','cancellation-form','category','change-mail','checkout','confirmation','contact','home','item','legal-disclosure','login','my-account','newsletter-opt-in','newsletter-opt-out','order-document','order-property-file','order-return','order-return-confirmation','password-reset','place-order','privacy-policy','register','search','tags','gtc','wish-list','page-not-found']
+|
 |===
 
 
@@ -143,40 +143,37 @@
 |===
 |Type |Name |Description
 
-| 
-    |enabledRoutes
-    |
-| 
-    |overrides
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$enabledRoutes`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$overrides`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getenabledroutes]
 ----
 
-public static getEnabledRoutes():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public static isActive($route):void
+public static getEnabledRoutes()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#isactive]
+----
+
+public static isActive($route)
+
+----
 
 
 
@@ -187,20 +184,19 @@ public static isActive($route):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$route`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcategoryid]
 ----
 
-public static getCategoryId($route):void
+public static getCategoryId($route)
 
 ----
-
-
 
 
 
@@ -211,20 +207,19 @@ public static getCategoryId($route):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$route`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#overridecategoryid]
 ----
 
-public static overrideCategoryId():void
+public static overrideCategoryId()
 
 ----
-
-
 
 
 

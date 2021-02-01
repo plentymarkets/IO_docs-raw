@@ -22,33 +22,28 @@
 |Type |Name |Description
 
 | xref:stable7@interface::Miscellaneous.adoc#miscellaneous_plugin_application[`Application`]
-    |app
-    |
-| xref:stable7@interface::Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
-    |itemRepository
-    |
-| 
-    |sessionStorage
-    |SessionStorageService
-|link:http://php.net/array[array^]
-    |additionalItemSortingMap
-    |
-| 
-    |cache
-    |
+a|`$app`
+||xref:stable7@interface::Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
+a|`$itemRepository`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$sessionStorage`
+|SessionStorageService|link:http://php.net/array[`array`^]
+a|`$additionalItemSortingMap`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($app, $itemRepository, $sessionStorage):void
+public __construct($app, $itemRepository, $sessionStorage)
 
 ----
-
-
 
 
 
@@ -63,7 +58,7 @@ ItemService constructor.
 a|`$app`
 |
 
-| xref:stable7@interface::Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
+|xref:stable7@interface::Item.adoc#item_contracts_itemdatalayerrepositorycontract[`ItemDataLayerRepositoryContract`]
 a|`$itemRepository`
 |
 
@@ -73,14 +68,13 @@ a|`$sessionStorage`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitem]
 ----
 
-public getItem($itemId):array
+public getItem($itemId):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -91,20 +85,19 @@ Get an item by ID
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitems]
 ----
 
-public getItems($itemIds):array
+public getItems($itemIds):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -115,20 +108,19 @@ Get a list of items with the specified item IDs
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$itemIds`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitemimage]
 ----
 
-public getItemImage($itemId):string
+public getItemImage($itemId):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -139,20 +131,19 @@ public getItemImage($itemId):string
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getvariation]
 ----
 
-public getVariation($variationId):array
+public getVariation($variationId):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -163,20 +154,19 @@ Get an item variation by ID
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getvariations]
 ----
 
-public getVariations($variationIds):array
+public getVariations($variationIds):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -187,20 +177,19 @@ Get a list of item variations with the specified variation IDs
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$variationIds`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getvariationlist]
 ----
 
-public getVariationList($itemId, $withPrimary = false):array
+public getVariationList($itemId, $withPrimary = false):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -211,20 +200,21 @@ public getVariationList($itemId, $withPrimary = false):array
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$withPrimary`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getvariationimage]
 ----
 
-public getVariationImage($variationId, $imageAccessor = &quot;urlPreview&quot;):string
+public getVariationImage($variationId, $imageAccessor = &quot;urlPreview&quot;):link:http://php.net/string[string^]
 
 ----
 
@@ -241,29 +231,26 @@ This method will not be supported in the future. Please refrain from using it as
 
 
 
-
-
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$imageAccessor`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitemforcategory]
 ----
 
-public getItemForCategory($catID, $params = [], $page = 1):array
+public getItemForCategory($catID, $params = [], $page = 1):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -274,28 +261,27 @@ Get all items for a specific category
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$catID`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$params`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$page`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getvariationattributemap]
 ----
 
-public getVariationAttributeMap($itemId):array
+public getVariationAttributeMap($itemId):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -306,20 +292,19 @@ List the attributes of an item variation
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getvariationissalable]
 ----
 
-public getVariationIsSalable($variationId):bool
+public getVariationIsSalable($variationId):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -330,20 +315,19 @@ public getVariationIsSalable($variationId):bool
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getattributenamemap]
 ----
 
-public getAttributeNameMap($itemId):array
+public getAttributeNameMap($itemId):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -354,16 +338,17 @@ public getAttributeNameMap($itemId):array
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitemurl]
 ----
 
-public getItemURL($itemId):Plenty\Modules\Item\DataLayer\Models\Record
+public getItemURL($itemId):xref:stable7@interface::Item.adoc#item_models_record[Record]
 
 ----
 
@@ -377,28 +362,25 @@ Use UrlService instead
 
 
 
-====== *Return type:* xref:stable7@interface::Item.adoc#item_models_record[`Record`]
-
 
 Get the item URL
 
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getattributename]
 ----
 
-public getAttributeName($attributeId):string
+public getAttributeName($attributeId):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -409,20 +391,19 @@ Get the name of an attribute by ID
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$attributeId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getattributevaluename]
 ----
 
-public getAttributeValueName($attributeValueId):string
+public getAttributeValueName($attributeValueId):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -433,20 +414,19 @@ Get the name of an attribute value by ID
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$attributeValueId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitemcrosssellinglist]
 ----
 
-public getItemCrossSellingList($itemId, $crossSellingType = &quot;similar&quot;):array
+public getItemCrossSellingList($itemId, $crossSellingType = &quot;similar&quot;):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -457,24 +437,23 @@ Get a list of cross-selling items for the specified item ID
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$crossSellingType`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getitemconditiontext]
 ----
 
-public getItemConditionText($conditionId):string
+public getItemConditionText($conditionId):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -485,23 +464,22 @@ public getItemConditionText($conditionId):string
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$conditionId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlatestitems]
 ----
 
-public getLatestItems($limit = 5, $categoryId):Plenty\Modules\Item\DataLayer\Models\RecordList
+public getLatestItems($limit = 5, $categoryId):xref:stable7@interface::Item.adoc#item_models_recordlist[RecordList]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Item.adoc#item_models_recordlist[`RecordList`]
 
 
 
@@ -509,24 +487,23 @@ public getLatestItems($limit = 5, $categoryId):Plenty\Modules\Item\DataLayer\Mod
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$limit`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$categoryId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#searchitems]
 ----
 
-public searchItems($searchString, $params = [], $page = 1):array
+public searchItems($searchString, $params = [], $page = 1):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -537,43 +514,41 @@ public searchItems($searchString, $params = [], $page = 1):array
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$searchString`
 |
 
-|link:http://php.net/array[array^]
+|link:http://php.net/array[`array`^]
 a|`$params`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$page`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getadditionalitemsorting]
 ----
 
-public getAdditionalItemSorting():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public addAdditionalItemSorting($key, $translationKey):void
+public getAdditionalItemSorting()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#addadditionalitemsorting]
+----
+
+public addAdditionalItemSorting($key, $translationKey)
+
+----
 
 
 
@@ -584,39 +559,37 @@ public addAdditionalItemSorting($key, $translationKey):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$key`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$translationKey`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
 ----
 
-public fromMemoryCache():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public resetMemoryCache($key = null):void
+public fromMemoryCache()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -627,7 +600,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

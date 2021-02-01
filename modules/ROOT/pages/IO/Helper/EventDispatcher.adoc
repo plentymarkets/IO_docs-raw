@@ -21,27 +21,26 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |EVENT_PREFIX
-    |'IO.'
-    |
+a|`EVENT_PREFIX`
+|'IO.'
+|
 |link:http://php.net/string[string^]
-    |INTERNAL_PREFIX
-    |'intl.'
-    |
+a|`INTERNAL_PREFIX`
+|'intl.'
+|
 |===
 
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#fire]
 ----
 
-public static fire():void
+public static fire()
 
 ----
-
-
 
 
 

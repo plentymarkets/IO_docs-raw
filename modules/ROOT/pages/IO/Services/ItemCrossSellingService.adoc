@@ -21,25 +21,23 @@
 |===
 |Type |Name |Description
 
-| 
-    |sessionStorage
-    |
-|xref:IO/Services/TemplateConfigService.adoc#[`TemplateConfigService`]
-    |templateConfigService
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$sessionStorage`
+||xref:IO/Services/TemplateConfigService.adoc#[`TemplateConfigService`]
+a|`$templateConfigService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($sessionStorage, $templateConfigService):void
+public __construct($sessionStorage, $templateConfigService)
 
 ----
-
-
 
 
 
@@ -60,14 +58,13 @@ a|`$templateConfigService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#settype]
 ----
 
-public setType($type):void
+public setType($type)
 
 ----
-
-
 
 
 
@@ -78,35 +75,33 @@ public setType($type):void
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$type`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gettype]
 ----
 
-public getType():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public setSorting($sorting):void
+public getType()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#setsorting]
+----
+
+public setSorting($sorting)
+
+----
 
 
 
@@ -117,20 +112,19 @@ public setSorting($sorting):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$sorting`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getsorting]
 ----
 
-public getSorting():void
+public getSorting()
 
 ----
-
-
 
 
 

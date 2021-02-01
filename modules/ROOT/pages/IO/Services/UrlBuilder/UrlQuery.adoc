@@ -21,39 +21,23 @@
 |===
 |Type |Name |Description
 
-| 
-    |domain
-    |
-| 
-    |path
-    |
-| 
-    |lang
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$domain`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$path`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$lang`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#shouldappendtrailingslash]
 ----
 
-public static shouldAppendTrailingSlash():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public __construct():void
+public static shouldAppendTrailingSlash()
 
 ----
 
@@ -63,16 +47,27 @@ public __construct():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public append($suffix):void
+public __construct()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#append]
+----
+
+public append($suffix)
+
+----
 
 
 
@@ -83,20 +78,19 @@ public append($suffix):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$suffix`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#join]
 ----
 
-public join($path):void
+public join($path)
 
 ----
-
-
 
 
 
@@ -107,20 +101,19 @@ public join($path):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$path`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#toabsoluteurl]
 ----
 
-public toAbsoluteUrl($includeLanguage = false):void
+public toAbsoluteUrl($includeLanguage = false)
 
 ----
-
-
 
 
 
@@ -131,20 +124,19 @@ public toAbsoluteUrl($includeLanguage = false):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$includeLanguage`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#torelativeurl]
 ----
 
-public toRelativeUrl($includeLanguage = false):void
+public toRelativeUrl($includeLanguage = false)
 
 ----
-
-
 
 
 
@@ -155,20 +147,19 @@ public toRelativeUrl($includeLanguage = false):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$includeLanguage`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getpath]
 ----
 
-public getPath($includeLanguage = false):void
+public getPath($includeLanguage = false)
 
 ----
-
-
 
 
 
@@ -179,20 +170,19 @@ public getPath($includeLanguage = false):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$includeLanguage`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#equals]
 ----
 
-public equals($path):void
+public equals($path)
 
 ----
-
-
 
 
 
@@ -203,7 +193,7 @@ public equals($path):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$path`
 |
 |===

@@ -22,27 +22,24 @@
 |Type |Name |Description
 
 |xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorage
-    |
-|xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
-    |webstoreConfigurationService
-    |
-| 
-    |cache
-    |
+a|`$sessionStorage`
+||xref:IO/Services/WebstoreConfigurationService.adoc#[`WebstoreConfigurationService`]
+a|`$webstoreConfigurationService`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$cache`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($sessionStorage, $webstoreConfigurationService):void
+public __construct($sessionStorage, $webstoreConfigurationService)
 
 ----
-
-
 
 
 
@@ -63,17 +60,16 @@ a|`$webstoreConfigurationService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcategoryurl]
 ----
 
-public getCategoryURL($categoryId, $lang = null):IO\Services\UrlBuilder\UrlQuery
+public getCategoryURL($categoryId, $lang = null):xref:IO/Services/UrlBuilder/UrlQuery.adoc#[UrlQuery]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/UrlBuilder/UrlQuery.adoc#[`UrlQuery`]
 
 
 Get canonical url for a category
@@ -81,27 +77,26 @@ Get canonical url for a category
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$categoryId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getvariationurl]
 ----
 
-public getVariationURL($itemId, $variationId, $lang = null):IO\Services\UrlBuilder\UrlQuery
+public getVariationURL($itemId, $variationId, $lang = null):xref:IO/Services/UrlBuilder/UrlQuery.adoc#[UrlQuery]
 
 ----
 
 
 
-
-====== *Return type:*xref:IO/Services/UrlBuilder/UrlQuery.adoc#[`UrlQuery`]
 
 
 Get canonical url for a variation
@@ -109,28 +104,27 @@ Get canonical url for a variation
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$itemId`
 |
 
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$variationId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcanonicalurl]
 ----
 
-public getCanonicalURL($lang = null, $ignoreCanonical = false):string
+public getCanonicalURL($lang = null, $ignoreCanonical = false):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -141,24 +135,23 @@ Get canonical url for current page
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |
 
-|link:http://php.net/bool[bool^]
+|link:http://php.net/bool[`bool`^]
 a|`$ignoreCanonical`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#iscanonical]
 ----
 
-public isCanonical($lang = null):bool
+public isCanonical($lang = null):link:http://php.net/bool[bool^]
 
 ----
-
-
 
 
 
@@ -169,20 +162,19 @@ Check if the current URL is canonical
 .*Parameters*
 |===
 |Type |Name |Description
-| null
+|         xref:5.0.0@plugin-null::null.adoc#[`null`]
 a|`$lang`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getlanguageurls]
 ----
 
-public getLanguageURLs():array
+public getLanguageURLs():link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -190,10 +182,11 @@ public getLanguageURLs():array
 
 Get equivalent canonical urls for each active language
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#gethomepageurl]
 ----
 
-public getHomepageURL():string
+public getHomepageURL():link:http://php.net/string[string^]
 
 ----
 
@@ -209,33 +202,29 @@ Use IO\Extensions\Constants\ShopUrls::$home instead.
 
 
 
-
-
 Get language specific homepage url
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#frommemorycache]
 ----
 
-public fromMemoryCache():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public resetMemoryCache($key = null):void
+public fromMemoryCache()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#resetmemorycache]
+----
+
+public resetMemoryCache($key = null)
+
+----
 
 
 
@@ -246,7 +235,7 @@ public resetMemoryCache($key = null):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$key`
 |
 |===

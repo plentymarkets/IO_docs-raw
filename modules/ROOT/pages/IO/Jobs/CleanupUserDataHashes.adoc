@@ -22,14 +22,13 @@ xref:stable7@interface::Cron.adoc#cron_contracts_cronhandler[`CronHandler`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#handle]
 ----
 
-public handle():void
+public handle()
 
 ----
-
-
 
 
 

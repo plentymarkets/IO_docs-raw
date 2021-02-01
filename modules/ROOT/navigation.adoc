@@ -1,5 +1,3 @@
-
-.Plentymarkets plugin documentation
                             * IO
                                                     ** Api
                                                     *** Resources

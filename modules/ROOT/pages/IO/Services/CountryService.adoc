@@ -21,28 +21,25 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Order.adoc#order_contracts_countryrepositorycontract[`CountryRepositoryContract`]
-    |countryRepository
-    |
-|xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
-    |sessionStorageService
-    |
-|link:http://php.net/array[array^]
-    |activeCountries
-    |
+|xref:stable7@interface::Order.adoc#order_contracts_countryrepositorycontract[`CountryRepositoryContract`]
+a|`$countryRepository`
+||xref:IO/Services/SessionStorageService.adoc#[`SessionStorageService`]
+a|`$sessionStorageService`
+||link:http://php.net/array[`array`^]
+a|`$activeCountries`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($countryRepository, $sessionStorageService):void
+public __construct($countryRepository, $sessionStorageService)
 
 ----
-
-
 
 
 
@@ -53,7 +50,7 @@ CountryService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Order.adoc#order_contracts_countryrepositorycontract[`CountryRepositoryContract`]
+|xref:stable7@interface::Order.adoc#order_contracts_countryrepositorycontract[`CountryRepositoryContract`]
 a|`$countryRepository`
 |
 
@@ -63,14 +60,13 @@ a|`$sessionStorageService`
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getactivecountrieslist]
 ----
 
-public getActiveCountriesList($lang = null):array
+public getActiveCountriesList($lang = null):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -81,20 +77,19 @@ List all active countries
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getactivecountrynamemap]
 ----
 
-public getActiveCountryNameMap($language):array
+public getActiveCountryNameMap($language):link:http://php.net/array[array^]
 
 ----
-
-
 
 
 
@@ -105,20 +100,19 @@ Get a list of names for the active countries
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$language`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getshippingcountryid]
 ----
 
-public getShippingCountryId():int
+public getShippingCountryId():link:http://php.net/int[int^]
 
 ----
-
-
 
 
 
@@ -126,14 +120,13 @@ public getShippingCountryId():int
 
 Get the ID of the current shipping country
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#setshippingcountryid]
 ----
 
-public setShippingCountryId($shippingCountryId):void
+public setShippingCountryId($shippingCountryId)
 
 ----
-
-
 
 
 
@@ -144,23 +137,22 @@ Set the ID of the current shipping country
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$shippingCountryId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcountrybyid]
 ----
 
-public getCountryById($countryId):Plenty\Modules\Order\Shipping\Countries\Models\Country
+public getCountryById($countryId):xref:stable7@interface::Order.adoc#order_models_country[Country]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Order.adoc#order_models_country[`Country`]
 
 
 Get a specific country by ID
@@ -168,20 +160,19 @@ Get a specific country by ID
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$countryId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getcountryname]
 ----
 
-public getCountryName($countryId, $lang = null):string
+public getCountryName($countryId, $lang = null):link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -192,11 +183,11 @@ Get the name of specific country
 .*Parameters*
 |===
 |Type |Name |Description
-|link:http://php.net/int[int^]
+|link:http://php.net/int[`int`^]
 a|`$countryId`
 |
 
-|link:http://php.net/string[string^]
+|link:http://php.net/string[`string`^]
 a|`$lang`
 |
 |===

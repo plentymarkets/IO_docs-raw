@@ -21,22 +21,21 @@
 |===
 |Type |Name |Description
 
-| xref:stable7@interface::Document.adoc#document_contracts_documentrepositorycontract[`DocumentRepositoryContract`]
-    |documentRepo
-    |
+|xref:stable7@interface::Document.adoc#document_contracts_documentrepositorycontract[`DocumentRepositoryContract`]
+a|`$documentRepo`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($documentRepo):void
+public __construct($documentRepo)
 
 ----
-
-
 
 
 
@@ -47,7 +46,7 @@ DocumentService constructor.
 .*Parameters*
 |===
 |Type |Name |Description
-| xref:stable7@interface::Document.adoc#document_contracts_documentrepositorycontract[`DocumentRepositoryContract`]
+|xref:stable7@interface::Document.adoc#document_contracts_documentrepositorycontract[`DocumentRepositoryContract`]
 a|`$documentRepo`
 |
 |===

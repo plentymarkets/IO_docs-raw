@@ -21,21 +21,21 @@
 |Type |Name |Value |Description
 
 |link:http://php.net/string[string^]
-    |ITEM_ID
-    |'itemId'
-    |
+a|`ITEM_ID`
+|'itemId'
+|
 |link:http://php.net/string[string^]
-    |CROSS_ITEM_ID
-    |'crossItemId'
-    |
+a|`CROSS_ITEM_ID`
+|'crossItemId'
+|
 |link:http://php.net/string[string^]
-    |RELATIONSHIP
-    |'relationship'
-    |
+a|`RELATIONSHIP`
+|'relationship'
+|
 |link:http://php.net/string[string^]
-    |DYNAMIC
-    |'dynamic'
-    |
+a|`DYNAMIC`
+|'dynamic'
+|
 |===
 
 

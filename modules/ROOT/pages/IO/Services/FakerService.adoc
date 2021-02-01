@@ -20,14 +20,13 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getbasket]
 ----
 
-public getBasket():void
+public getBasket()
 
 ----
-
-
 
 
 
@@ -35,29 +34,27 @@ public getBasket():void
 
 Get a faked basket for shopbuilder basket templates
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfacets]
 ----
 
-public getFacets():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public getSelectedFacetIds($facets):void
+public getFacets()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getselectedfacetids]
+----
+
+public getSelectedFacetIds($facets)
+
+----
 
 
 
@@ -68,7 +65,7 @@ public getSelectedFacetIds($facets):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$facets`
 |
 |===

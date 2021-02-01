@@ -21,36 +21,21 @@
 |===
 |Type |Name |Description
 
-| 
-    |styleTemplates
-    |
-| 
-    |scriptTemplates
-    |
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$styleTemplates`
+||         xref:5.0.0@plugin-::.adoc#[``]
+a|`$scriptTemplates`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getstyletemplates]
 ----
 
-public getStyleTemplates():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public addStyleTemplate():void
+public getStyleTemplates()
 
 ----
 
@@ -60,31 +45,41 @@ public addStyleTemplate():void
 
 
 
-
-
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#addstyletemplate]
 ----
 
-public getScriptTemplates():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public addScriptTemplate():void
+public addStyleTemplate()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#getscripttemplates]
+----
+
+public getScriptTemplates()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#addscripttemplate]
+----
+
+public addScriptTemplate()
+
+----
 
 
 

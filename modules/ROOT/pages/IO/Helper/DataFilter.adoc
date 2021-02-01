@@ -20,14 +20,13 @@
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#getfiltereddata]
 ----
 
-public getFilteredData():void
+public getFilteredData()
 
 ----
-
-
 
 
 

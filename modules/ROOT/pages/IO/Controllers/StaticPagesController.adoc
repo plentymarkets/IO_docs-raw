@@ -22,14 +22,13 @@ xref:IO/Controllers/LayoutController.adoc#[`LayoutController`]
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#showcancellationrights]
 ----
 
-public showCancellationRights():string
+public showCancellationRights():link:http://php.net/string[string^]
 
 ----
-
-
 
 
 
@@ -37,29 +36,27 @@ public showCancellationRights():string
 
 Prepare and render the data for the cancellation rights page
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#redirectcancellationrights]
 ----
 
-public redirectCancellationRights():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public showCancellationForm():string
+public redirectCancellationRights():link:http://php.net/mixed[mixed^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#showcancellationform]
+----
+
+public showCancellationForm():link:http://php.net/string[string^]
+
+----
 
 
 
@@ -67,29 +64,27 @@ public showCancellationForm():string
 
 Prepare and render the data for the cancellation form page
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#redirectcancellationform]
 ----
 
-public redirectCancellationForm():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public showLegalDisclosure():string
+public redirectCancellationForm():link:http://php.net/mixed[mixed^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#showlegaldisclosure]
+----
+
+public showLegalDisclosure():link:http://php.net/string[string^]
+
+----
 
 
 
@@ -97,29 +92,27 @@ public showLegalDisclosure():string
 
 Prepare and render the data for the legal disclosure page
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#redirectlegaldisclosure]
 ----
 
-public redirectLegalDisclosure():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public showPrivacyPolicy():string
+public redirectLegalDisclosure():link:http://php.net/mixed[mixed^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#showprivacypolicy]
+----
+
+public showPrivacyPolicy():link:http://php.net/string[string^]
+
+----
 
 
 
@@ -127,29 +120,27 @@ public showPrivacyPolicy():string
 
 Prepare and render the data for the privacy policy page
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#redirectprivacypolicy]
 ----
 
-public redirectPrivacyPolicy():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public showTermsAndConditions():string
+public redirectPrivacyPolicy():link:http://php.net/mixed[mixed^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#showtermsandconditions]
+----
+
+public showTermsAndConditions():link:http://php.net/string[string^]
+
+----
 
 
 
@@ -157,29 +148,27 @@ public showTermsAndConditions():string
 
 Prepare and render the data for the terms and conditions page
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#redirecttermsandconditions]
 ----
 
-public redirectTermsAndConditions():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public showPageNotFound():string
+public redirectTermsAndConditions():link:http://php.net/mixed[mixed^]
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#showpagenotfound]
+----
+
+public showPageNotFound():link:http://php.net/string[string^]
+
+----
 
 
 
@@ -187,14 +176,13 @@ public showPageNotFound():string
 
 Prepare and render the data for the page not found page
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#redirectpagenotfound]
 ----
 
-public redirectPageNotFound():void
+public redirectPageNotFound():link:http://php.net/mixed[mixed^]
 
 ----
-
-
 
 
 

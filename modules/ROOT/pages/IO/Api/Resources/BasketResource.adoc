@@ -24,24 +24,22 @@ xref:IO/Api/ApiResource.adoc#[`ApiResource`]
 |Type |Name |Description
 
 |xref:IO/Services/BasketService.adoc#[`BasketService`]
-    |basketService
-    |
-| xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
-    |vatService
-    |
+a|`$basketService`
+||xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
+a|`$vatService`
+|
 |===
 
 
 ===== Methods
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public __construct($request, $response, $basketService, $vatService):void
+public __construct($request, $response, $basketService, $vatService)
 
 ----
-
-
 
 
 
@@ -64,23 +62,22 @@ a|`$response`
 a|`$basketService`
 |
 
-| xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
+|xref:stable7@interface::Frontend.adoc#frontend_services_vatservice[`VatService`]
 a|`$vatService`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#index]
 ----
 
-public index():Plenty\Plugin\Http\Response
+public index(): xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[Response]
 
 ----
 
 
 
-
-====== *Return type:* xref:stable7@interface::Miscellaneous.adoc#miscellaneous_http_response[`Response`]
 
 
 Get the basket

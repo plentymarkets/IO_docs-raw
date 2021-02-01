@@ -21,61 +21,21 @@
 |===
 |Type |Name |Description
 
-| 
-    |contactPaymentRepository
-    |
-|===
-
-
-===== Methods
-
-[source%nowrap, php]
-----
-
-public __construct($contactPaymentRepository):void
-
-----
-
-
-
-
-
-
-
-
-
-.*Parameters*
-|===
-|Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$contactPaymentRepository`
 |
 |===
 
 
-[source%nowrap, php]
+===== Methods
+
+[source%nowrap, php, subs=+macros]
+[#__construct]
 ----
 
-public getBanksOfContact():void
+public __construct($contactPaymentRepository)
 
 ----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public createContactBank($data):void
-
-----
-
-
 
 
 
@@ -86,35 +46,70 @@ public createContactBank($data):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
+a|`$contactPaymentRepository`
+|
+|===
+
+
+[source%nowrap, php, subs=+macros]
+[#getbanksofcontact]
+----
+
+public getBanksOfContact()
+
+----
+
+
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#createcontactbank]
+----
+
+public createContactBank($data)
+
+----
+
+
+
+
+
+
+
+.*Parameters*
+|===
+|Type |Name |Description
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$data`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#updatecontactbank]
 ----
 
-public updateContactBank():void
-
-----
-
-
-
-
-
-
-
-
-
-[source%nowrap, php]
-----
-
-public deleteContactBank($contactBankId):void
+public updateContactBank()
 
 ----
 
 
+
+
+
+
+
+[source%nowrap, php, subs=+macros]
+[#deletecontactbank]
+----
+
+public deleteContactBank($contactBankId)
+
+----
 
 
 
@@ -125,20 +120,19 @@ public deleteContactBank($contactBankId):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$contactBankId`
 |
 |===
 
 
-[source%nowrap, php]
+[source%nowrap, php, subs=+macros]
+[#findcontactbankbyid]
 ----
 
-public findContactBankById($contactBankId):void
+public findContactBankById($contactBankId)
 
 ----
-
-
 
 
 
@@ -149,7 +143,7 @@ public findContactBankById($contactBankId):void
 .*Parameters*
 |===
 |Type |Name |Description
-| 
+|         xref:5.0.0@plugin-::.adoc#[``]
 a|`$contactBankId`
 |
 |===
